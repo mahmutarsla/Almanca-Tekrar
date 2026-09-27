@@ -1,0 +1,36 @@
+# Goethe B1 alfabetik listesinde ayrı madde olarak geçmeyen ama sık kullanılan isimler
+# (dişil biçimler, tematik listelerdeki kelimeler). Biçim:  artikel isim, çoğul | seviye | Türkçe
+die Freundin, -nen | 1 | kız arkadaş; arkadaş (kadın)
+die Lehrerin, -nen | 1 | öğretmen (kadın)
+die Kollegin, -nen | 1 | iş arkadaşı (kadın)
+die Chefin, -nen | 1 | patron, şef (kadın)
+die Kellnerin, -nen | 1 | garson (kadın)
+die Studentin, -nen | 1 | üniversite öğrencisi (kadın)
+die Verkäuferin, -nen | 1 | satıcı (kadın)
+der Fisch, -e | 1 | balık
+der Computer, - | 1 | bilgisayar
+das Passwort, ¨-er | 2 | şifre
+der Schreibtisch, -e | 1 | çalışma masası
+die Grammatik, -en | 2 | dilbilgisi
+das Missverständnis, -se | 3 | yanlış anlaşılma
+die E-Mail, -s | 1 | e-posta
+die Telefonnummer, -n | 1 | telefon numarası
+das Treffen, - | 2 | buluşma, toplantı
+die Uni, -s | 2 | üniversite (kısa)
+die Ferien | 1 | tatil (okul, çoğul)
+der Hund, -e | 1 | köpek
+die Katze, -n | 1 | kedi
+das Deutsch | 1 | Almanca
+die Türkei | 1 | Türkiye
+der Tag, -e | 1 | gün
+die Woche, -n | 1 | hafta
+das Jahr, -e | 1 | yıl
+der Monat, -e | 1 | ay
+das Wochenende, -n | 1 | hafta sonu
+der Morgen, - | 1 | sabah
+der Abend, -e | 1 | akşam
+das Rauchen | 2 | sigara içme
+das Frühjahr, -e | 2 | ilkbahar
+die Aussage, -n | 3 | ifade, beyan
+das Taxi, -s | 1 | taksi
+das Portemonnaie, -s | 2 | cüzdan

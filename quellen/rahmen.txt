@@ -1,0 +1,220 @@
+# Cümle üretici kalıpları.  Biçim:   fiil gösterimi (verben.txt ile aynı) : yuva ; yuva ; ...
+# yuva:  A = … (Akk nesne) | D = … (Dat nesne) | auf+A = … (edatlı) | S = … (özne bir isimse: gefallen, schmecken …)
+# T = izin verilen zamanlar (praes, perf, modal), örn. T = praes
+# X = kapatılan özellikler: keinW (wo(r)-sorusu yok), keineZeit (heute/gestern ile başlama yok)
+# İsimler Goethe listesinden, artikelleriyle. İşaretler:
+#   P      = kişi (zamir: mich/dir… ya da kişi ismi: der Freund, meine Mutter …)
+#   0 …    = artikelsiz (um Hilfe, für Musik)
+#   …~     = iyelik olabilir (dein Bruder, meine Wohnung)
+#   …*     = sıfat alabilir (den neuen Film)
+#   …+     = belirsiz artikel olabilir (einen Termin)
+#   …(Pl)  = çoğul kullanılır
+@personen: der Freund~*, die Freundin~*, der Bruder~, die Schwester~, die Mutter~, der Vater~, der Sohn~, die Tochter~, der Lehrer*, die Lehrerin*, der Kollege~*, die Kollegin~*, der Nachbar~*, die Nachbarin~*, der Chef*, die Chefin*, der Arzt, die Ärztin, der Kunde*, die Oma~, der Opa~, der Onkel~, die Tante~, der Student*, die Eltern(Pl)~
+@adjektive_sache: neu=yeni, schön=güzel, groß=büyük, klein=küçük, alt=eski
+@adjektive_person: nett=hoş / sevimli, neu=yeni, jung=genç, alt=yaşlı / eski
+# --- Edatlı fiiller ---
+sich freuen auf: auf+A = die Reise*, der Urlaub*, das Wochenende, die Party*, das Konzert*, der Besuch, die Ferien(Pl), das Essen*, der Geburtstag~
+sich freuen über: über+A = das Geschenk*~, der Brief*, die Nachricht*, die Einladung*, der Erfolg*~, der Besuch
+warten auf: auf+A = der Bus, der Zug, die Straßenbahn, P, die Antwort*, das Paket*, der Termin, das Ergebnis
+warten auf: auf+A = P
+denken an: an+A = P, die Prüfung*, der Termin, der Urlaub*, die Zukunft, das Geschenk*
+glauben an: an+A = P, die Liebe, die Zukunft, der Erfolg~
+sich interessieren für: für+A = 0 die Musik, 0 die Politik, 0 der Sport, die Stelle*, das Angebot*, die Wohnung*, 0 die Kunst, 0 die Geschichte
+sich kümmern um: um+A = P, das Kind~*, die Kinder(Pl)~, der Hund~, die Wohnung~, das Problem*, die Blumen(Pl)~
+sich erinnern an: an+A = P, der Urlaub*, der Name~, die Adresse~, der Termin, das Gespräch*, die Kindheit~
+sich gewöhnen an: an+A = das Wetter, das Leben*, die Arbeit*, das Essen, die Stadt*, der Lärm, das Klima
+achten auf: auf+A = der Verkehr, die Aussprache~, die Gesundheit~, das Gepäck~, der Preis, die Kinder(Pl)~
+aufpassen auf: auf+A = P, das Kind~*, die Tasche~*, das Gepäck~, der Hund~
+sich ärgern über: über+A = der Lärm, der Chef, die Verspätung, der Fehler~, das Wetter, der Nachbar~
+sich beschweren über: über+A = der Lärm, das Essen, der Service, die Verspätung, die Rechnung, das Zimmer
+sich beschweren bei: bei+D = der Chef, der Vermieter~, die Firma, der Hausmeister, die Kellnerin
+sprechen mit: mit+D = P
+sprechen über: über+A = das Problem*, die Arbeit*, der Film*, die Reise*, das Wetter, die Zukunft, das Thema*
+reden über: über+A = das Problem*, der Film*, die Politik, das Wetter, die Arbeit*
+sich unterhalten mit: mit+D = P
+sich unterhalten über: über+A = der Film*, die Arbeit*, das Buch*, die Reise*, das Wetter
+diskutieren über: über+A = das Problem*, die Politik, das Thema*, der Vorschlag*, die Umwelt
+telefonieren mit: mit+D = P
+sich treffen mit: mit+D = P
+sich verabreden mit: mit+D = P
+sich verabschieden von: von+D = P
+sich trennen von: von+D = der Freund~, die Freundin~, der Partner~
+sich streiten mit: mit+D = P
+träumen von: von+D = die Reise*, das Haus*+, die Karriere, der Urlaub*, P
+erzählen von: D = P ; von+D = die Reise*~, der Urlaub*~, die Arbeit~, die Familie~, der Film*
+sich erholen von: von+D = die Arbeit*, die Reise*, der Stress, die Krankheit, die Operation
+anfangen mit: mit+D = die Arbeit*, der Kurs*, der Unterricht, das Studium~, das Essen, die Hausaufgaben(Pl)
+beginnen mit: mit+D = die Arbeit*, der Kurs*, das Projekt*, der Unterricht
+aufhören mit: mit+D = die Arbeit, das Rauchen, das Training, der Sport
+teilnehmen an: an+D = der Kurs*, die Prüfung, das Seminar*, die Diskussion*, der Wettbewerb*, die Party
+sich beteiligen an: an+D = die Diskussion*, das Projekt*, die Kosten(Pl)
+sich bewerben um: um+A = die Stelle*+, der Platz+, das Praktikum*+, die Wohnung*+
+sich bewerben bei: bei+D = die Firma*, die Bank, das Hotel*
+sich vorbereiten auf: auf+A = die Prüfung*, das Gespräch*, die Reise*, der Test, das Vorstellungsgespräch, die Präsentation*
+sich konzentrieren auf: auf+A = die Arbeit*, die Prüfung*, das Studium~, der Text*, die Aufgabe*
+reagieren auf: auf+A = der Brief*, die Frage*, die Kritik, die Nachricht*, die E-Mail*
+antworten auf: auf+A = die Frage*, der Brief*, die Nachricht*, die Einladung*
+antworten: D = P
+hoffen auf: auf+A = das Glück, der Erfolg, die Antwort*, das Wetter
+sich verlassen auf: auf+A = P
+verzichten auf: auf+A = das Auto, der Zucker, das Fleisch, der Urlaub, der Kaffee, das Handy~
+sich entscheiden für: für+A = die Wohnung*, das Angebot*, der Kurs*, das Studium, die Stelle*, das Hotel*
+sich bedanken bei für: bei+D = P ; für+A = das Geschenk*, die Hilfe, die Einladung*, der Brief*
+danken für: D = P ; für+A = das Geschenk*, die Hilfe, die Einladung*, der Brief*, die Blumen(Pl)
+sich entschuldigen bei für: bei+D = P ; für+A = der Fehler, die Verspätung, das Missverständnis
+bitten um: A = P ; um+A = 0 die Hilfe, 0 der Rat, die Erlaubnis, 0 das Geld, die Antwort, 0 die Geduld
+fragen nach: A = P ; nach+D = der Weg, die Adresse, der Name, die Telefonnummer, der Preis
+suchen nach: nach+D = der Schlüssel~, die Brille~, die Lösung*, die Wohnung*+, die Arbeit*+
+sich erkundigen nach: nach+D = der Preis, der Weg, die Abfahrt, der Termin, das Wetter
+gratulieren zu: D = P ; zu+D = der Geburtstag, die Prüfung, der Erfolg, die Hochzeit
+einladen zu: A = P ; zu+D = die Party*~, der Geburtstag~, das Essen*, die Hochzeit~, der Kaffee
+passen zu: S = die Hose*, das Hemd*, der Rock*, die Jacke*, die Farbe ; zu+D = das Kleid~, die Bluse~, der Mantel~, das Hemd~, die Schuhe(Pl)~
+helfen bei: D = P ; bei+D = die Arbeit*, die Hausaufgaben(Pl), der Umzug, die Bewerbung, das Projekt*
+sich bemühen um: um+A = die Stelle*+, der Platz, das Visum
+sich sorgen um: um+A = P, die Gesundheit~, die Zukunft~
+sich fürchten vor: vor+D = der Hund*, die Prüfung*, die Zukunft, das Gewitter, der Arzt
+warnen vor: A = P ; vor+D = die Gefahr, der Hund*, der Sturm, der Dieb
+schützen vor: A = P ; vor+D = die Sonne, der Regen, die Kälte, die Gefahr
+sich wundern über: über+A = das Verhalten~, die Antwort*, der Preis, das Wetter, die Nachricht
+lachen über: über+A = der Witz*, der Film*, die Geschichte*, P
+nachdenken über: über+A = das Problem*, die Zukunft, der Vorschlag*, die Frage*, das Angebot*
+sich informieren über: über+A = der Kurs*, die Stadt*, das Studium, die Wohnung*, das Angebot*
+informieren über: A = P ; über+A = die Änderung*, der Termin, das Ergebnis, der Plan*
+berichten über: über+A = der Unfall*+, die Reise*, das Projekt*, die Arbeit*
+schreiben an: an+A = P, die Firma*, das Amt
+sich wenden an: an+A = der Arzt, die Polizei, der Chef, das Amt, der Hausmeister
+sich verlieben in: in+A = P
+verwechseln mit: A = P ; mit+D = der Bruder~, die Schwester~, der Nachbar~, die Kollegin~
+umgehen mit: mit+D = das Geld, der Computer, der Stress, die Kritik, die Kinder(Pl)
+zurechtkommen mit: mit+D = die Arbeit*, der Computer, das Wetter, der Chef, die Situation*
+rechnen mit: mit+D = der Regen, die Verspätung, der Stau, die Antwort, der Erfolg
+sich beschäftigen mit: mit+D = das Thema*, das Problem*, die Arbeit*, die Frage*, die Geschichte
+zweifeln an: an+D = der Erfolg~, die Aussage, das Ergebnis
+leiden unter: unter+D = der Lärm, der Stress, die Hitze, die Kälte, die Situation
+stammen aus: aus+D = die Türkei, die Stadt, das Dorf ; T = praes ; X = keinW, keineZeit
+# --- Dativ / Akkusativ + Dativ ---
+helfen: D = P
+danken: D = P
+gefallen: S = das Buch*~, der Film*, die Stadt*, die Wohnung*~, das Kleid*~, die Musik, das Geschenk*~ ; D = P
+schmecken: S = das Essen*, die Suppe*, der Kuchen*, der Kaffee, der Salat*, die Pizza* ; D = P
+gehören: S = das Buch, das Auto, der Schlüssel, die Tasche, das Handy, der Hund ; D = P
+passen: S = der Termin, die Hose*, die Jacke*, das Kleid*, die Schuhe(Pl) ; D = P
+fehlen: S = das Geld, die Zeit, die Familie~, die Heimat~ ; D = P
+wehtun: S = der Kopf, der Bauch, der Rücken, der Fuß, das Knie, der Hals, der Zahn ; D = P
+einfallen: S = der Name, die Adresse, die Lösung, das Wort, die Telefonnummer ; D = P
+gelingen: S = der Kuchen*, das Foto*, die Prüfung, das Projekt*, die Arbeit ; D = P
+glauben: D = P
+vertrauen: D = P
+zuhören: D = P
+widersprechen: D = P
+begegnen: D = P
+folgen: D = P
+zustimmen: D = P
+verzeihen: D = P
+geben: D = P ; A = das Buch*~, der Schlüssel~, das Geld~, die Adresse~, die Telefonnummer~, der Stift*+
+bringen: D = P ; A = das Buch*~, der Kaffee+, die Zeitung, das Paket*, das Wasser, die Blumen(Pl)*
+schenken: D = P ; A = das Buch*+, die Blumen(Pl)*, die Uhr*+, das Fahrrad*+, der Kuchen*+, die Tasche*+
+schicken: D = P ; A = der Brief*+, das Paket*+, die Nachricht+, das Foto*+, die Rechnung, die Einladung*+
+zeigen: D = P ; A = die Wohnung*~, das Foto*~, die Stadt*, der Weg, das Zimmer*~, die Bilder(Pl)~
+erklären: D = P ; A = die Aufgabe*, das Problem*, der Weg, die Regel*, das Wort, die Grammatik
+empfehlen: D = P ; A = das Restaurant*+, der Film*+, das Buch*+, der Arzt+, das Hotel*+
+schreiben: D = P ; A = der Brief*+, die Nachricht+, die Karte+, die E-Mail*+
+sagen: D = P ; A = die Wahrheit, die Adresse~, der Name~, die Antwort, das Ergebnis
+versprechen: D = P ; A = das Geschenk*+, die Hilfe, der Besuch
+leihen: D = P ; A = das Fahrrad*~, das Auto*~, das Buch*~, das Geld, der Schirm~, der Stift~
+verkaufen: D = P ; A = das Auto*~, das Fahrrad*~, die Wohnung*~, der Computer~, das Handy~
+anbieten: D = P ; A = der Kaffee, der Tee, das Wasser, die Stelle*+, die Hilfe
+wünschen: D = P ; A = 0 das Glück, 0 der Erfolg, 0 die Gesundheit
+mitteilen: D = P ; A = das Ergebnis, der Termin*, die Adresse~, die Entscheidung~
+vorstellen: D = P ; A = der Freund~, die Freundin~, der Kollege~, die Kollegin~, die Familie~, der Plan*~
+vorschlagen: D = P ; A = das Restaurant*+, der Termin+, die Lösung*+, der Film*+
+# --- Akkusativ ---
+anrufen: A = P
+besuchen: A = P, das Museum*, die Stadt*, der Kurs*, die Oma~, der Opa~
+fragen: A = P
+kennen: A = P, die Stadt*, das Restaurant*, der Weg, das Problem
+kennenlernen: A = P
+treffen: A = P
+abholen: A = P, das Paket*, der Schlüssel~, die Kinder(Pl)~
+begleiten: A = P
+lieben: A = P
+vermissen: A = P, die Familie~, die Heimat~, das Essen~
+heiraten: A = P
+küssen: A = P
+stören: A = P
+wecken: A = P
+begrüßen: A = P, der Gast*, die Gäste(Pl)
+brauchen: A = das Auto*+, die Hilfe, das Geld, der Schlüssel~, die Brille~, der Computer*+, der Pass~, die Wohnung*+
+kaufen: A = das Auto*+, das Brot, die Milch, das Buch*+, die Fahrkarte+, das Geschenk*+, der Computer*+, die Jacke*+
+bestellen: A = die Pizza*+, der Kaffee+, das Essen, das Taxi+, das Buch*+, der Salat*+
+bezahlen: A = die Rechnung, die Miete~, das Essen, das Ticket, der Kaffee
+essen: A = das Brot, der Kuchen*, die Suppe*, der Salat*, das Fleisch, der Fisch, die Pizza*
+trinken: A = der Kaffee, der Tee, das Wasser, die Milch, das Bier, der Saft
+lesen: A = das Buch*~, die Zeitung, der Brief*, der Text*, die Nachricht, der Roman*+
+sehen: A = der Film*, das Foto*, das Meer, der Unfall, P
+schreiben: A = der Brief*+, die E-Mail*+, der Text*+, die Nachricht+, die Hausaufgaben(Pl)
+verstehen: A = P, die Frage*, der Text*, die Aufgabe*, das Problem, die Regel*
+vergessen: A = der Termin, der Schlüssel~, die Adresse~, der Name~, das Handy~, die Hausaufgaben(Pl)~
+verlieren: A = der Schlüssel~, das Handy~, der Pass~, die Tasche~, das Portemonnaie~, das Spiel
+finden: A = der Schlüssel~, die Wohnung*+, die Arbeit*+, das Handy~, die Lösung*+, der Weg
+suchen: A = der Schlüssel~, die Wohnung*+, die Arbeit*+, das Handy~, der Weg, die Brille~
+öffnen: A = das Fenster, die Tür, die Flasche, das Paket, der Brief
+zumachen: A = das Fenster, die Tür, die Flasche, das Buch
+ausmachen: A = das Licht, der Fernseher, das Handy~, das Radio, der Computer
+einschalten: A = das Licht, der Fernseher, das Radio, der Computer, die Heizung
+mieten: A = die Wohnung*+, das Auto*+, das Zimmer*+, das Fahrrad*+
+putzen: A = die Wohnung~, das Bad, die Küche~, das Fenster, das Zimmer~
+waschen: A = die Wäsche, das Auto~, die Hose~, das Hemd~
+reparieren: A = das Auto~, das Fahrrad~, der Computer~, die Heizung, das Handy~
+machen: A = die Hausaufgaben(Pl), der Test, die Prüfung, das Frühstück, die Pause, der Ausflug+, das Foto+
+besichtigen: A = die Stadt*, das Museum*, die Kirche*, die Wohnung*, die Burg*
+buchen: A = die Reise*+, das Hotel*+, der Flug+, das Zimmer*+, das Ticket+
+reservieren: A = der Tisch+, das Zimmer*+, der Platz+
+beantworten: A = die Frage*, der Brief*, die E-Mail*, die Nachricht
+ausfüllen: A = das Formular*, der Antrag*
+unterschreiben: A = der Vertrag*, das Formular*, der Brief
+übersetzen: A = der Text*, der Brief*, das Wort, der Satz
+wiederholen: A = die Frage*, der Satz, das Wort, die Übung*
+korrigieren: A = der Fehler, der Text*~, die Hausaufgaben(Pl)~, der Test
+benutzen: A = das Handy~, der Computer~, das Wörterbuch*, das Auto~
+verpassen: A = der Bus, der Zug, die Straßenbahn, der Termin, der Film
+erreichen: A = der Zug, der Bus, das Ziel~, P
+beenden: A = die Arbeit*~, das Gespräch*, das Studium~, der Kurs*
+gewinnen: A = das Spiel, der Preis+, der Wettbewerb
+feiern: A = der Geburtstag~, das Fest*, die Hochzeit~, das Ende
+verbringen: A = der Urlaub*~, das Wochenende~, die Ferien(Pl)~
+verdienen: A = 0 das Geld
+sparen: A = 0 das Geld, 0 die Zeit, 0 die Energie
+absagen: A = der Termin~, die Party~, der Kurs, die Reise*~
+verschieben: A = der Termin~, die Reise*~, die Prüfung~, das Treffen
+bekommen: A = der Brief*+, die Antwort+, das Paket*+, das Geschenk*+, die Stelle*+, die Nachricht+
+aufräumen: A = das Zimmer~, die Wohnung~, die Küche~, der Keller~, der Schreibtisch~
+anziehen: A = die Jacke*~, der Mantel*~, die Schuhe(Pl)~, das Kleid*~, der Pullover*~
+tragen: A = die Tasche*~, der Koffer*~, die Brille~, das Kleid*, die Jacke*
+holen: A = das Brot, die Zeitung, der Arzt, die Polizei, der Kaffee
+kontrollieren: A = das Ticket, der Pass, die Rechnung, der Text~
+ändern: A = der Plan*~, der Termin, das Passwort~, die Adresse~
+lernen: A = 0 das Deutsch, die Wörter(Pl), die Grammatik, das Gedicht*
+verstehen: A = 0 das Deutsch
+# --- Nesnesiz / yönelme ---
+fahren: mit+D = der Bus, der Zug, das Auto~*, das Fahrrad~*, die Straßenbahn, die U-Bahn
+fahren: zu+D = der Arzt, die Arbeit, der Bahnhof, die Oma~, die Uni
+gehen: zu+D = der Arzt, die Arbeit, der Bahnhof, die Post, die Bank, die Party*~, der Supermarkt
+gehen: in+A = das Kino, das Museum, die Stadt, der Park, das Restaurant*, die Schule
+kommen: zu+D = die Party*~, der Kurs, das Treffen, das Essen, der Termin
+wohnen: bei+D = P
+bleiben: bei+D = P
+arbeiten: bei+D = die Firma*, die Bank, die Post
+aufstehen: -
+einsteigen: in+A = der Bus, der Zug, das Auto~, das Taxi, die Straßenbahn
+umsteigen: in+A = der Bus, der Zug, die Straßenbahn, die U-Bahn
+ankommen: -
+abfahren: -
+sich beeilen: -
+sich ausruhen: -
+sich setzen: -
+sich anziehen: -
+sich erkälten: -
+sich langweilen: -
+sich amüsieren: -
+spazieren gehen: mit+D = P

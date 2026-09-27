@@ -1,0 +1,1450 @@
+# İsim anlamları (Goethe B1 listesi). Biçim:  artikel isim | seviye | Türkçe
+# Aynı isim iki kez geçiyorsa (die Bank / die Bank) sırayla eşlenir.
+# Seviye: 1 = A1, 2 = A2, 3 = B1 (sıralama için tahmini)
+die Abbildung | 3 | resim, şekil (kitapta)
+das Abenteuer | 3 | macera
+die Abfahrt | 2 | kalkış
+der Abfall | 3 | çöp, atık
+der Abfalleimer | 3 | çöp kovası
+das Abitur | 3 | lise bitirme sınavı (Almanya)
+das Abonnement | 3 | abonelik
+der Abschluss | 3 | bitirme, mezuniyet; diploma
+der Abschnitt | 3 | bölüm, kısım
+der Absender | 2 | gönderen
+die Absicht | 3 | niyet
+die Abteilung | 2 | bölüm, departman
+die Adresse | 1 | adres
+die Ahnung | 3 | fikir, sezgi (keine Ahnung = hiç bilmiyorum)
+die Aktion | 3 | kampanya, eylem
+die Aktivität | 3 | etkinlik, faaliyet
+der Alarm | 3 | alarm
+der Alkohol | 2 | alkol
+der Alltag | 3 | gündelik hayat
+das Alphabet | 1 | alfabe
+das Alter | 1 | yaş; yaşlılık
+das Altersheim | 3 | huzurevi
+die Alternative | 3 | alternatif, seçenek
+die Ampel | 2 | trafik ışığı
+das Amt | 2 | resmî daire
+der Anbieter | 3 | sağlayıcı, (hizmet) sunan firma
+das Angebot | 1 | teklif; indirimli ürün
+die Änderung | 3 | değişiklik
+der Anfang | 1 | başlangıç
+die Angabe | 3 | bilgi, beyan
+der Angehörige | 3 | yakın, akraba (erkek)
+die Angehörige | 3 | yakın, akraba (kadın)
+die Angst | 2 | korku
+die Ankunft | 2 | varış
+die Anlage | 3 | tesis; (müzik) sistemi; ek (mektupta)
+die Anleitung | 3 | kullanım talimatı
+die Anmeldung | 1 | kayıt; resepsiyon
+die Annonce | 3 | ilan
+die Anrede | 3 | hitap şekli
+der Anruf | 1 | telefon araması
+der Anrufbeantworter | 2 | telesekreter
+die Ansage | 3 | anons
+der Anschluss | 2 | bağlantı (aktarma treni, hat)
+der Anspruch | 3 | hak, talep
+der Angestellte | 2 | memur, çalışan (erkek)
+die Angestellte | 2 | memur, çalışan (kadın)
+der Antrag | 3 | başvuru, dilekçe
+die Antwort | 1 | cevap
+der Anwalt | 3 | avukat (erkek)
+die Anwältin | 3 | avukat (kadın)
+die Anzeige | 2 | ilan; şikâyet (polise)
+der Anzug | 2 | takım elbise
+das Apartment | 2 | küçük daire
+der Apfel | 1 | elma
+die Apotheke | 1 | eczane
+der Apparat | 2 | cihaz, alet
+der Appetit | 2 | iştah
+die Arbeit | 1 | iş, çalışma
+der Arbeiter | 2 | işçi
+die Arbeitserlaubnis | 3 | çalışma izni
+die Arbeitslosigkeit | 3 | işsizlik
+der Arbeitsplatz | 2 | iş yeri; iş (pozisyon)
+die Arbeitsstelle | 3 | iş yeri, kadro
+der Architekt | 3 | mimar
+der Ärger | 3 | öfke; sıkıntı, dert
+der Arm | 1 | kol
+die Art | 3 | tür, çeşit; tarz
+der Artikel | 2 | makale; artikel
+der Arzt | 1 | doktor (erkek)
+die Ärztin | 1 | doktor (kadın)
+das Asyl | 3 | iltica
+der Atem | 3 | nefes
+der Aufenthalt | 3 | kalış, ikamet
+die Aufforderung | 3 | çağrı, talep
+die Aufgabe | 2 | görev; alıştırma
+die Aufnahme | 3 | kayıt (ses/video); kabul
+der Auftrag | 3 | sipariş, görev
+der Auftritt | 3 | sahneye çıkış, gösteri
+der Aufzug | 2 | asansör
+das Auge | 1 | göz
+der Augenblick | 3 | an
+die Ausbildung | 2 | meslek eğitimi
+der Ausdruck | 3 | ifade
+der Ausdruck | 3 | çıktı (yazıcı)
+die Ausfahrt | 3 | çıkış (otoyol, garaj)
+der Ausflug | 2 | gezi
+die Ausgabe | 3 | harcama; baskı (dergi)
+der Ausgang | 1 | çıkış
+die Aushilfe | 3 | geçici yardımcı eleman
+die Auskunft | 2 | bilgi, danışma
+das Ausland | 2 | yurt dışı
+der Ausländer | 2 | yabancı (erkek)
+die Ausnahme | 3 | istisna
+die Aussicht | 3 | manzara; beklenti
+die Aussprache | 2 | telaffuz
+die Ausstellung | 2 | sergi
+die Auswahl | 3 | seçim, çeşit
+der Ausweis | 1 | kimlik
+das Auto | 1 | araba
+die Autobahn | 1 | otoyol
+der Automat | 2 | otomat
+der Autor | 3 | yazar
+die Bäckerei | 1 | fırın (ekmek)
+das Bad | 1 | banyo
+die Badewanne | 2 | küvet
+die Bahn | 1 | tren, demiryolu
+die Straßenbahn | 2 | tramvay
+die U-Bahn | 1 | metro
+der Bahnhof | 1 | istasyon, gar
+der Bahnsteig | 1 | peron
+der Balkon | 1 | balkon
+der Ball | 2 | top; balo
+das Ballett | 3 | bale
+die Banane | 1 | muz
+die Bank | 1 | banka
+die Bank | 2 | bank (oturak)
+der Bancomat/Bankomat | 3 | bankamatik (A, CH)
+die Bankleitzahl | 3 | banka kodu
+die Bankomat-Karte | 3 | banka kartı (A)
+die Bar | 2 | bar
+das Bargeld | 2 | nakit
+der Bart | 3 | sakal
+der Basketball | 2 | basketbol
+die Batterie | 3 | pil, akü
+der Bauch | 2 | karın
+der Bau | 3 | inşaat, yapı
+die Baustelle | 3 | şantiye
+der Bauer | 3 | çiftçi
+der Baum | 2 | ağaç
+der Beamte | 3 | memur (devlet)
+der Bedarf | 3 | ihtiyaç
+die Bedeutung | 2 | anlam
+die Bedienungsanleitung | 3 | kullanım kılavuzu
+die Bedingung | 3 | koşul, şart
+der Beginn | 2 | başlangıç
+die Begründung | 3 | gerekçe
+die Behörde | 3 | resmî kurum
+das Bein | 1 | bacak
+das Beispiel | 1 | örnek
+der Beitrag | 3 | katkı; aidat; yazı
+der Bekannte | 2 | tanıdık (erkek)
+die Bekannte | 2 | tanıdık (kadın)
+der Beleg | 3 | makbuz, belge
+das Benzin | 2 | benzin
+die Beratung | 3 | danışmanlık
+der Bereich | 3 | alan
+der Berg | 1 | dağ
+der Bericht | 3 | rapor, haber
+der Beruf | 1 | meslek
+die Beschäftigung | 3 | uğraş; istihdam
+der Bescheid | 2 | haber, bildirim (Bescheid sagen = haber vermek)
+die Beschreibung | 3 | tarif, betimleme
+die Besprechung | 3 | toplantı, görüşme
+die Besserung | 3 | iyileşme (Gute Besserung! = geçmiş olsun)
+die Bestätigung | 3 | onay
+der Besuch | 1 | ziyaret; misafir
+der Betrag | 3 | tutar, miktar
+der Betreuer | 3 | bakıcı, sorumlu (erkek)
+die Betreuung | 3 | bakım, gözetim
+der Betrieb | 3 | işletme
+der Betriebsrat | 3 | işçi temsilciliği
+das Bett | 1 | yatak
+die Bevölkerung | 3 | nüfus, halk
+die Bewegung | 3 | hareket
+der Beweis | 3 | kanıt
+die Bewerbung | 2 | iş başvurusu
+der Bewohner | 3 | sakin, oturan
+die Beziehung | 3 | ilişki
+die Bibliothek | 2 | kütüphane
+das Bier | 1 | bira
+das Bild | 1 | resim
+der Bildschirm | 2 | ekran
+die Biologie | 3 | biyoloji
+die Birne | 2 | armut; ampul
+die Bitte | 2 | rica
+das Blatt | 2 | yaprak; kâğıt sayfası
+der Bleistift | 1 | kurşun kalem
+der Blick | 3 | bakış; manzara
+der Blitz | 3 | şimşek
+die Blume | 1 | çiçek
+die Bluse | 2 | bluz
+das Blut | 3 | kan
+der Boden | 2 | zemin, yer; toprak
+der Bogen | 3 | yay; (kâğıt) tabaka
+das Boot | 3 | kayık, tekne
+die Botschaft | 3 | büyükelçilik; mesaj
+der Braten | 3 | kızartma et, rosto
+die Breite | 3 | genişlik
+die Bremse | 3 | fren
+der Brief | 1 | mektup
+der Briefkasten | 2 | posta kutusu
+die Briefmarke | 1 | pul
+der Briefträger | 2 | postacı
+die Brieftasche | 3 | cüzdan
+die Brille | 2 | gözlük
+die Broschüre | 3 | broşür
+das Brot | 1 | ekmek
+das Brötchen | 1 | küçük ekmek
+die Brücke | 2 | köprü
+der Bruder | 1 | erkek kardeş
+die Brust | 3 | göğüs
+das Buch | 1 | kitap
+die Buchhandlung | 2 | kitapçı
+der Buchstabe | 1 | harf
+das Buffet | 3 | açık büfe
+die Bühne | 3 | sahne
+die Burg | 3 | kale, şato
+der Bürger | 3 | vatandaş
+das Büro | 1 | ofis, büro
+die Bürste | 3 | fırça
+die Zahnbürste | 2 | diş fırçası
+der Bus | 1 | otobüs
+die Butter | 1 | tereyağı
+das Café | 1 | kafe
+die Cafeteria | 3 | kafeterya
+die Chance | 3 | şans, fırsat
+der Chef | 1 | patron, şef (erkek)
+der Coiffeur | 3 | kuaför (CH)
+die Couch | 2 | kanepe
+die Creme | 3 | krem
+der Cousin | 2 | kuzen (erkek)
+die Cousine | 2 | kuzen (kadın)
+das Dach | 3 | çatı
+die Dame | 1 | bayan, hanımefendi
+der Dank | 1 | teşekkür
+die Darstellung | 3 | tasvir, sunum
+die Datei | 3 | dosya (bilgisayar)
+das Datum | 1 | tarih (gün)
+die Daten | 3 | veriler (çoğul)
+die Dauer | 3 | süre
+die Decke | 2 | battaniye; tavan
+der Gedanke | 3 | düşünce
+das Denkmal | 3 | anıt
+das Detail | 3 | ayrıntı
+die Diät | 3 | diyet
+der Dialekt | 3 | lehçe, şive
+der Dialog | 3 | diyalog
+der Dieb | 3 | hırsız
+der Dienst | 3 | hizmet; görev
+das Ding | 2 | şey, nesne
+das Diplom | 3 | diploma
+der Direktor | 3 | müdür
+die Diskothek | 2 | diskotek
+die Diskussion | 3 | tartışma
+die Distanz | 3 | mesafe
+der Doktor | 2 | doktor
+das Dokument | 3 | belge
+der Donner | 3 | gök gürültüsü
+das Dorf | 2 | köy
+die Dose | 3 | kutu, konserve kutusu
+der Dreck | 3 | pislik, kir
+die Droge | 3 | uyuşturucu
+die Drogerie | 3 | kozmetik-temizlik mağazası
+der Drucker | 2 | yazıcı
+der Druck | 3 | baskı; basınç
+die Durchsage | 3 | anons
+der Durchschnitt | 3 | ortalama
+der Durst | 1 | susuzluk (Durst haben = susamak)
+die Dusche | 1 | duş
+die Ecke | 2 | köşe
+die Ehe | 3 | evlilik
+die Ehefrau | 2 | eş, karı
+das Ehepaar | 3 | evli çift
+das Ei | 1 | yumurta
+die Eile | 3 | acele
+die Einbahnstraße | 3 | tek yönlü yol
+der Einbrecher | 3 | hırsız (eve giren)
+der Einbruch | 3 | hırsızlık (eve girme)
+der Eindruck | 3 | izlenim
+die Einfahrt | 3 | giriş (araç)
+der Einfall | 3 | aklına gelen fikir
+der Einfluss | 3 | etki
+die Einführung | 3 | giriş, tanıtım
+der Eingang | 1 | giriş
+der Einkauf | 2 | alışveriş
+das Einkommen | 3 | gelir
+die Einladung | 1 | davet
+die Einnahme | 3 | gelir; (ilaç) alımı
+die Einrichtung | 3 | mobilya düzeni; kurum
+das Einschreiben | 3 | taahhütlü mektup
+der Eintritt | 2 | giriş (ücreti)
+der Einwohner | 2 | nüfus (kişi), sakin
+die Einzahlung | 3 | para yatırma
+die Einzelheit | 3 | ayrıntı
+das Eis | 1 | dondurma
+das Eis | 2 | buz
+die Eisenbahn | 3 | demiryolu, tren
+die Eltern | 1 | anne baba (çoğul)
+der Empfang | 3 | resepsiyon; karşılama; çekim (sinyal)
+der Empfänger | 2 | alıcı
+die Empfehlung | 3 | tavsiye
+das Ende1. | 1 | son
+die Energie | 3 | enerji
+der Enkel | 3 | torun (erkek)
+die Entfernung | 3 | uzaklık
+die Entlassung | 3 | işten çıkarma; taburcu
+die Entscheidung | 3 | karar
+die Entschuldigung | 1 | özür; affedersiniz
+die Enttäuschung | 3 | hayal kırıklığı
+die Entwicklung | 3 | gelişme
+die Erde | 3 | dünya; toprak
+das Erdgeschoss/ Ergeschoß | 2 | zemin kat
+das Ereignis | 3 | olay
+die Erfahrung | 2 | deneyim
+die Erfindung | 3 | icat
+der Erfolg | 2 | başarı
+das Ergebnis | 2 | sonuç
+die Erhöhung | 3 | artış
+die Erholung | 3 | dinlenme
+die Erinnerung | 3 | anı; hatırlatma
+die Erkältung | 2 | soğuk algınlığı
+die Erklärung | 3 | açıklama
+die Erlaubnis | 3 | izin
+das Erlebnis | 3 | yaşantı, deneyim
+die Ermäßigung | 2 | indirim
+die Ernährung | 3 | beslenme
+die Ernte | 3 | hasat
+die Eröffnung | 3 | açılış
+der Ersatz | 3 | yedek; tazminat
+der Erwachsene | 2 | yetişkin
+die Erzählung | 3 | öykü
+die Erziehung | 3 | eğitim, terbiye
+das Essen | 1 | yemek
+der Essig | 3 | sirke
+der Experte | 3 | uzman
+der Export | 3 | ihracat
+die Fabrik | 2 | fabrika
+das Fach | 2 | ders, branş; bölme
+der Fachmann | 3 | uzman (erkek)
+die Fachfrau | 3 | uzman (kadın)
+die Fachleute | 3 | uzmanlar (çoğul)
+die Fähigkeit | 3 | yetenek
+die Fähre | 3 | feribot
+die Fahrbahn | 3 | şerit, yol
+der Fahrer | 2 | sürücü
+die Fahrkarte | 1 | bilet (ulaşım)
+der Fahrplan | 1 | sefer tarifesi
+das Fahrrad | 1 | bisiklet
+das Fahrzeug | 3 | taşıt
+der Faktor | 3 | faktör, etken
+der Fall | 3 | durum, vaka
+die Familie | 1 | aile
+die Fantasie/Phantasie | 3 | hayal gücü
+die Farbe | 1 | renk
+der Fasching | 3 | karnaval
+der Fehler | 1 | hata
+die Feier | 2 | kutlama
+der Feierabend | 2 | mesai bitimi
+der Feiertag | 2 | bayram, resmî tatil
+das Feld | 3 | tarla; alan
+das Fenster | 1 | pencere
+die Fernbedienung | 3 | kumanda
+das Fernsehen | 1 | televizyon (yayın)
+der Fernseher | 1 | televizyon (cihaz)
+das Fest | 2 | bayram, şenlik
+die Festplatte | 3 | sabit disk
+das Fett | 3 | yağ
+das Feuer | 2 | ateş
+das Feuerzeug | 3 | çakmak
+die Feuerwehr | 2 | itfaiye
+das Fieber | 2 | ateş (hastalık)
+die Figur | 3 | vücut şekli; figür
+der Film | 1 | film
+der Finger | 2 | parmak
+die Firma | 1 | firma
+die Fläche | 3 | yüzey, alan
+die Flasche | 1 | şişe
+der Fleck | 3 | leke
+das Fleisch | 1 | et
+der Fleischhauer | 3 | kasap (A)
+die Flucht | 3 | kaçış
+der Flohmarkt | 2 | bit pazarı
+die Flöte | 3 | flüt
+der Flug | 1 | uçuş
+der Flughafen | 1 | havalimanı
+das Flugzeug | 1 | uçak
+der Flur | 2 | koridor
+der Fluss | 2 | nehir
+die Flüssigkeit | 3 | sıvı
+die Folge | 3 | sonuç; bölüm (dizi)
+die Forderung | 3 | talep
+die Förderung | 3 | destek, teşvik
+die Form | 3 | biçim, şekil
+das Formular | 1 | form
+die Forschung | 3 | araştırma
+die Fortbildung | 3 | mesleki gelişim kursu
+der Fortschritt | 3 | ilerleme
+die Fortsetzung | 3 | devam (dizinin)
+das Forum | 3 | forum
+das Foto | 1 | fotoğraf
+der Fotoapparat | 2 | fotoğraf makinesi
+der Fotograf | 3 | fotoğrafçı
+die Fotografie | 3 | fotoğrafçılık; fotoğraf
+die Frage | 1 | soru
+die Frau | 1 | kadın; eş; Bayan
+die Freiheit | 3 | özgürlük
+die Freizeit | 1 | boş zaman
+die Freude | 3 | sevinç
+der Freund | 1 | arkadaş; erkek arkadaş
+die Freundschaft | 3 | arkadaşlık
+der Friede | 3 | barış
+der Friseur | 2 | kuaför, berber
+die Frisur | 3 | saç modeli
+die Frist | 3 | süre, son tarih
+die Frucht | 3 | meyve
+das Frühstück | 1 | kahvaltı
+der Führerschein | 2 | ehliyet
+die Führung | 3 | rehberli tur; yönetim
+das Fundbüro | 3 | kayıp eşya bürosu
+der Fuß | 1 | ayak
+der Fußball | 1 | futbol; futbol topu
+der Fußgänger | 3 | yaya
+die Fußgängerzone | 3 | yaya bölgesi
+die Gabel | 2 | çatal
+die Galerie | 3 | galeri
+der Gang | 3 | koridor; vites; (yemek) servis
+die Garage | 2 | garaj
+die Garantie | 3 | garanti
+die Garderobe | 3 | vestiyer
+der Garten | 1 | bahçe
+das Gas | 3 | gaz
+der Gast | 1 | misafir
+die Gaststätte | 3 | lokanta
+das Gebäude | 2 | bina
+das Gebäck | 3 | kurabiye, hamur işi
+das Gebiet | 3 | bölge
+das Gebirge | 3 | dağlık bölge
+die Gebrauchsanweisung | 3 | kullanım talimatı
+die Gebühr | 3 | ücret, harç
+die Geburt | 3 | doğum
+der Geburtstag | 1 | doğum günü
+das Gedicht | 3 | şiir
+die Geduld | 3 | sabır
+die Gefahr | 2 | tehlike
+das Gefängnis | 3 | hapishane
+das Gefühl | 3 | duygu, his
+der Gegner | 3 | rakip
+die Gegend | 2 | bölge, çevre
+der Gegensatz | 3 | zıtlık
+der Gegenstand | 3 | nesne, eşya
+das Gegenteil | 3 | zıt anlam, tersi
+das Gehalt | 3 | maaş
+das Geheimnis | 3 | sır
+der Gehsteig | 3 | kaldırım (A)
+das Geld | 1 | para
+der Geldautomat | 3 | ATM
+die Gelegenheit | 3 | fırsat
+die Gemeinschaft | 3 | topluluk
+das Gemüse | 1 | sebze
+die Generation | 3 | kuşak
+das Gepäck | 1 | bagaj
+das Gerät | 2 | cihaz, alet
+das Gericht | 3 | yemek (tabak); mahkeme
+das Geschäft | 1 | dükkân; iş
+das Geschenk | 1 | hediye
+die Geschichte | 2 | hikâye; tarih
+das Geschirr | 3 | bulaşık, tabak çanak
+das Geschlecht | 3 | cinsiyet
+der Geschmack | 3 | tat; zevk
+die Geschwindigkeit | 3 | hız
+die Geschwindigkeitsbeschränkung | 3 | hız sınırı
+die Geschwister | 1 | kardeşler (çoğul)
+die Gesellschaft | 3 | toplum; şirket
+das Gesetz | 3 | kanun
+das Gesicht | 2 | yüz
+das Gespräch | 2 | konuşma, görüşme
+die Gesundheit | 2 | sağlık
+das Getränk | 1 | içecek
+die Gewalt | 3 | şiddet
+die Gewerkschaft | 3 | sendika
+das Gewicht | 3 | ağırlık
+der Gewinn | 3 | kazanç; ikramiye
+das Gewissen | 3 | vicdan
+das Gewitter | 2 | fırtına (gök gürültülü)
+die Gewohnheit | 3 | alışkanlık
+das Gewürz | 3 | baharat
+das Gift | 3 | zehir
+die Gitarre | 2 | gitar
+das Glas | 1 | bardak; cam
+das Gleis | 1 | peron hattı
+das Glück | 2 | şans; mutluluk
+der Glückwunsch | 1 | tebrik
+das Gold | 3 | altın
+der Gott | 3 | tanrı
+die Grafik | 3 | grafik
+das Gras | 3 | çimen
+die Gratulation | 3 | tebrik
+die Grenze | 2 | sınır
+der Grill | 3 | ızgara, mangal
+die Grippe | 3 | grip
+die Größe | 2 | beden; büyüklük
+der Grund | 2 | sebep
+das Grundstück | 3 | arsa
+die Gruppe | 1 | grup
+der Gruß | 1 | selam
+die Gymnastik | 3 | jimnastik
+das Haar | 1 | saç
+das Hackfleisch | 3 | kıyma
+der Hafen | 3 | liman
+das Hähnchen/Hühnchen | 2 | tavuk (yemek)
+die Halbpension | 3 | yarım pansiyon
+die Hälfte | 2 | yarı
+die Halle | 3 | salon
+das Hallenbad | 3 | kapalı yüzme havuzu
+der Hals | 2 | boyun; boğaz
+der Halt | 3 | durak; tutunma
+die Haltestelle | 1 | durak
+der Hammer | 3 | çekiç
+die Hand | 1 | el
+der Handwerker | 3 | zanaatkâr, usta
+der Handel | 3 | ticaret
+der Händler | 3 | satıcı, tüccar
+das Handy | 1 | cep telefonu
+die Hauptstadt | 2 | başkent
+der Hauptbahnhof | 1 | merkez istasyon
+das Haus | 1 | ev
+die Hausaufgabe | 1 | ödev
+die Hausfrau/der Hausmann | 2 | ev kadını / ev erkeği
+der Haushalt | 3 | ev işleri; bütçe
+der Hausmeister | 3 | kapıcı, apartman görevlisi
+die Haut | 3 | cilt, deri
+das Heft | 1 | defter
+das Heim | 3 | yurt, bakımevi; yuva
+die Heimat | 3 | memleket, vatan
+das Heimweh | 3 | sıla özlemi
+die Heizung | 2 | kalorifer
+der Held | 3 | kahraman
+die Hilfe | 1 | yardım
+das Hemd | 2 | gömlek
+die Herausforderung | 3 | meydan okuma, zorluk
+der Herd | 2 | ocak
+die Herkunft | 3 | köken
+der Herr | 1 | bay, beyefendi
+der Hersteller | 3 | üretici
+das Herz | 2 | kalp
+der Himmel | 2 | gökyüzü
+der Hinweise | 3 | ipucu, uyarı, not
+die Hitze | 3 | sıcaklık (bunaltıcı)
+das Hobby | 1 | hobi
+die Höhe | 3 | yükseklik
+die Hochzeit | 2 | düğün
+der Hof | 3 | avlu
+der Bauernhof | 3 | çiftlik
+die Hoffnung | 3 | umut
+das Holz | 3 | tahta, odun
+der Honig | 3 | bal
+der Hörer | 3 | dinleyici; (telefon) ahize
+der Zuhörer | 3 | dinleyici
+die Hose | 1 | pantolon
+das Hotel | 1 | otel
+der Hügel | 3 | tepe
+der Humor | 3 | mizah
+der Hunger | 1 | açlık (Hunger haben = acıkmak)
+der Husten | 2 | öksürük
+der Hut | 2 | şapka
+die Hütte | 3 | kulübe
+die Idee | 1 | fikir
+der Imbiss | 3 | büfe, atıştırmalık
+der Import | 3 | ithalat
+die Industrie | 3 | sanayi
+die Infektion | 3 | enfeksiyon
+die Information | 1 | bilgi; danışma
+der Ingenieur | 3 | mühendis
+der Inhalt | 3 | içerik
+die Insel | 2 | ada
+das Inserat | 3 | ilan
+das Institut | 3 | enstitü
+das Instrument | 2 | enstrüman, alet
+die Integration | 3 | uyum, entegrasyon
+die Intelligenz | 3 | zekâ
+der Intensivkurs | 3 | yoğun kurs
+das Interesse | 2 | ilgi
+das Interview | 3 | röportaj
+die Jacke | 1 | ceket, mont
+die Jeans | 2 | kot pantolon
+der Journalist | 3 | gazeteci
+die Jugend | 3 | gençlik
+der Jugendliche | 2 | genç (erkek)
+die Jugendliche | 2 | genç (kadın)
+die Jugendherberge | 2 | gençlik hosteli
+der Junge | 1 | erkek çocuk, oğlan
+das Kabel | 3 | kablo
+die Kabine | 3 | kabin
+der Kaffee | 1 | kahve
+der Kakao | 3 | kakao
+der Kalender | 2 | takvim
+die Kälte | 3 | soğuk
+die Kamera | 2 | kamera
+der Kampf | 3 | mücadele, savaş
+der Kanal | 3 | kanal
+der Kandidat | 3 | aday
+die Kanne | 3 | demlik, sürahi
+die Kantine | 2 | yemekhane (iş yeri)
+das Kapitel | 3 | bölüm (kitap)
+die Karotte | 2 | havuç
+die Karriere | 3 | kariyer
+die Karte | 1 | kart; bilet; harita
+die Chipkarte | 3 | çipli kart
+die Fahrkarte | 1 | bilet (ulaşım)
+die Kartoffel | 1 | patates
+der Käse | 1 | peynir
+die Kasse | 1 | kasa
+die Kassette | 3 | kaset
+der Kasten | 3 | kasa, kutu
+der Katalog | 3 | katalog
+die Katastrophe | 3 | felaket
+der Kauf | 3 | satın alma
+der Käufer | 3 | alıcı
+der Keller | 2 | bodrum
+der Kellner | 1 | garson
+die Kenntnisse | 3 | bilgiler, beceriler (çoğul)
+das Kennzeichen | 3 | plaka; özellik
+die Kerze | 3 | mum
+die Kette | 3 | zincir; kolye
+das Kind | 1 | çocuk
+der Kindergarten | 1 | anaokulu
+die Kindheit | 3 | çocukluk
+das Kino | 1 | sinema
+der Kiosk | 3 | büfe, gazete bayisi
+die Kirche | 2 | kilise
+die Kiste | 3 | sandık, kasa
+das Kissen | 3 | yastık
+die Klasse | 1 | sınıf
+die Klassenarbeit | 3 | sınav (okulda yazılı)
+das Klavier | 2 | piyano
+das Kleid | 1 | elbise
+die Kleidung | 2 | giysi
+der Klick | 3 | tıklama
+das Klima | 3 | iklim
+die Klimaanlage | 3 | klima
+die Klingel | 3 | zil
+die Klinik | 2 | klinik
+der Kloß | 3 | köfte biçimli hamur (patates vb.)
+die Kneipe | 3 | birahane
+das Knie | 2 | diz
+der Knochen | 3 | kemik
+der Knödel | 3 | hamur köftesi (A)
+der Knopf | 3 | düğme
+der Koch | 2 | aşçı (erkek)
+die Köchin | 2 | aşçı (kadın)
+der Koffer | 1 | bavul
+der Kollege | 1 | iş arkadaşı (erkek)
+die Kommunikation | 3 | iletişim
+der Kompromiss | 3 | uzlaşma
+die Konferenz | 3 | konferans
+der Konflikt | 3 | çatışma
+der König | 3 | kral
+die Konkurrenz | 3 | rekabet; rakipler
+das Konsulat | 3 | konsolosluk
+der Konsum | 3 | tüketim
+der Kontakt | 2 | iletişim, temas
+das Konto | 1 | hesap (banka)
+das Girokonto | 3 | vadesiz hesap
+die Kontrolle | 2 | kontrol
+das Konzert | 1 | konser
+der Kopf | 1 | baş, kafa
+die Kopie | 2 | fotokopi
+der Kopierer | 3 | fotokopi makinesi
+der Körper | 2 | vücut
+die Kosten | 3 | masraflar (çoğul)
+das Kostüm | 3 | kostüm; etek ceket
+die Kraft | 3 | güç
+das Kraftfahrzeug | 3 | motorlu taşıt
+das Kraftwerk | 3 | santral
+der Kranke | 3 | hasta (erkek)
+die Kranke | 3 | hasta (kadın)
+das Krankenhaus | 1 | hastane
+die Krankenkasse | 2 | sağlık sigortası
+der Krankenpfleger | 3 | hemşire (erkek)
+die Krankenschwester | 2 | hemşire (kadın)
+der Krankenwagen | 2 | ambulans
+die Krankheit | 2 | hastalık
+der Kredit | 3 | kredi
+die Kreditkarte | 2 | kredi kartı
+der Kreis | 3 | daire, çember; ilçe
+das Kreuz | 3 | haç, çarpı işareti
+die Kreuzung | 3 | kavşak
+der Krieg | 3 | savaş
+die Kriminalpolizei | 3 | cinayet masası (polis)
+der Krimi | 3 | polisiye (film, roman)
+die Krise | 3 | kriz
+die Kritik | 3 | eleştiri
+die Küche | 1 | mutfak
+der Kuchen | 1 | kek, pasta
+der Kugelschreiber | 1 | tükenmez kalem
+der Kuli | 1 | tükenmez kalem (günlük dil)
+der Kühlschrank | 1 | buzdolabı
+die Kultur | 3 | kültür
+der Kunde | 2 | müşteri (erkek)
+die Kündigung | 3 | fesih; işten çıkarma
+die Kunst | 3 | sanat
+der Künstler | 3 | sanatçı
+der Kunststoff | 3 | plastik
+der Kurs | 1 | kurs
+der Kursleiter | 2 | kurs öğretmeni (erkek)
+die Kursleiter | 2 | kurs öğretmeni
+die Kurve | 3 | viraj
+der Kuss | 2 | öpücük
+die Küste | 3 | kıyı
+der Laden | 2 | dükkân
+die Lage | 3 | konum; durum
+das Lager | 3 | depo; kamp
+die Lampe | 1 | lamba
+das Land | 1 | ülke; kırsal
+die Landwirtschaft | 3 | tarım
+die Landschaft | 3 | manzara, doğa
+die Landung | 3 | iniş (uçak)
+die Länge | 3 | uzunluk
+die Langeweile | 3 | can sıkıntısı
+der Lärm | 2 | gürültü
+der Laster | 3 | kamyon
+das Laufwerk | 3 | sürücü (bilgisayar)
+die Laune | 3 | ruh hâli, keyif
+der Lautsprecher | 3 | hoparlör
+das Leben | 1 | hayat
+der Lebenslauf | 2 | özgeçmiş
+die Lebensmittel | 1 | gıda maddeleri (çoğul)
+das Leder | 3 | deri
+die Lehre | 3 | çıraklık eğitimi
+die Lehrstelle | 3 | çıraklık yeri
+der Lehrer | 1 | öğretmen (erkek)
+der Lehrling | 3 | çırak
+die Leistung | 3 | başarı, performans
+der Leiter | 3 | yönetici, şef
+die Leitung | 3 | yönetim; hat, boru
+die Leiter | 3 | merdiven (seyyar)
+der Lerner | 3 | öğrenen
+der Leser | 3 | okur
+die Leute | 1 | insanlar (çoğul)
+das Lexikon | 3 | ansiklopedi
+das Licht | 2 | ışık
+die Liebe | 2 | aşk, sevgi
+das Lied | 2 | şarkı
+die Lieferung | 3 | teslimat
+der Lift | 3 | asansör
+die Limonade | 2 | limonata, gazoz
+die Linie | 2 | hat (otobüs); çizgi
+die Lippe | 3 | dudak
+die Liste | 2 | liste
+die Literatur | 3 | edebiyat
+das Loch | 3 | delik
+der Löffel | 2 | kaşık
+der Lohn | 3 | ücret, maaş
+das Lokal | 2 | lokal, restoran
+die Lösung | 2 | çözüm
+die Luft | 2 | hava
+die Lüge | 3 | yalan
+die Lust | 2 | istek, heves (Lust haben = canı istemek)
+das Mädchen | 1 | kız çocuk
+das Magazin | 3 | dergi
+der Magen | 3 | mide
+die Mahlzeit | 3 | öğün
+die Mahnung | 3 | ihtar (ödeme)
+das Mal | 2 | kez, sefer
+der Maler | 3 | ressam; boyacı
+der Mangel | 3 | eksiklik, kusur
+der Mann | 1 | adam; koca
+die Mannschaft | 3 | takım
+der Mantel | 2 | palto
+die Mappe | 3 | dosya, klasör
+das Märchen | 3 | masal
+die Margarine | 3 | margarin
+die Marke | 3 | marka; pul
+der Markt | 1 | pazar
+die Marmelade | 2 | reçel
+die Maschine | 3 | makine
+das Material | 3 | malzeme
+die Mauer | 3 | duvar (dış)
+der Mechaniker | 3 | tamirci
+die Medien | 3 | medya (çoğul)
+das Medikament | 2 | ilaç
+die Medizin | 3 | tıp; ilaç
+das Meer | 1 | deniz
+das Mehl | 3 | un
+die Mehrheit | 3 | çoğunluk
+die Mehrwertsteuer | 3 | KDV
+die Meinung | 2 | fikir, görüş
+der Meister | 3 | usta; şampiyon
+die Meldung | 3 | haber, bildiri
+die Menge | 3 | miktar; kalabalık
+die Mensa | 3 | üniversite yemekhanesi
+der Mensch | 1 | insan
+das Menü | 3 | menü
+die Messe | 3 | fuar
+das Messer | 2 | bıçak
+das Metall | 3 | metal
+die Methode | 3 | yöntem
+die Metropole | 3 | metropol
+der Metzger | 3 | kasap
+die Miete | 1 | kira
+der Mieter | 3 | kiracı
+der Migrant | 3 | göçmen
+die Migration | 3 | göç
+die Milch | 1 | süt
+die Minderheit | 3 | azınlık
+das Mineralwasser | 2 | maden suyu
+der Mitarbeiter | 2 | çalışan, eleman
+das Mitglied | 3 | üye
+die Mitte | 2 | orta
+das Mittel | 3 | araç; ilaç
+das Möbel | 2 | mobilya
+die Mobilbox | 3 | sesli mesaj kutusu
+die Mobilität | 3 | hareketlilik
+das Mobiltelefon | 3 | cep telefonu
+die Mode | 3 | moda
+das Modell | 3 | model
+die Möglichkeit | 3 | imkân
+der Moment | 2 | an
+der Mond | 3 | ay (gök cismi)
+der Monitor | 3 | monitör
+der Motor | 3 | motor
+das Motorrad | 2 | motosiklet
+die Mühe | 3 | zahmet
+der Müll | 2 | çöp
+die Müllabfuhr | 3 | çöp toplama
+die Mülltonne | 3 | çöp bidonu
+der Mund | 2 | ağız
+die Münze | 3 | madeni para
+das Museum | 1 | müze
+die Musik | 1 | müzik
+der Musiker | 3 | müzisyen (erkek)
+die Musikerin | 3 | müzisyen (kadın)
+der Muskel | 3 | kas
+das Müesli/Müsli | 3 | müsli
+der Mut | 3 | cesaret
+die Mutter | 1 | anne
+der Nachbar | 1 | komşu (erkek)
+die Nachbarin | 1 | komşu (kadın)
+die Nachfrage | 3 | talep
+die Nachhilfe | 3 | özel ders (takviye)
+die Nachricht | 2 | haber; mesaj
+die Nachspeise | 3 | tatlı (yemek sonrası)
+der Nachteil | 3 | dezavantaj
+der Nachwuchs | 3 | yeni nesil; çocuk
+die Nadel | 3 | iğne
+der Nagel | 3 | çivi; tırnak
+die Nähe | 2 | yakınlık, civar
+das Nahrungsmittel | 3 | gıda maddesi
+der Name | 1 | isim
+der Familienname | 1 | soyadı
+der Vorname | 1 | ad
+die Nase | 2 | burun
+die Natur | 2 | doğa
+der Nebel | 3 | sis
+der Neffe | 3 | yeğen (erkek)
+der Nerv | 3 | sinir
+das Netz | 3 | ağ, file
+das Netzwerk | 3 | ağ (network)
+die Neuigkeit | 3 | yenilik, haber
+die Nichte | 3 | yeğen (kadın)
+der Nichtraucher | 3 | sigara içmeyen
+die Notaufnahme | 3 | acil servis
+der Notausgang | 3 | acil çıkış
+der Notfall | 3 | acil durum
+der Notruf | 3 | acil çağrı
+die Note | 2 | not (okul)
+die Notiz | 3 | not
+die Nudel | 2 | makarna
+die Nummer | 1 | numara
+der Ober | 3 | garson (resmî)
+das Obst | 1 | meyve
+die Öffentlichkeit | 3 | kamuoyu
+das Ohr | 2 | kulak
+das Öl | 2 | yağ (sıvı)
+die Oma | 1 | büyükanne
+der Onkel | 2 | amca, dayı
+der Opa | 1 | büyükbaba
+die Oper | 3 | opera
+die Operation | 3 | ameliyat
+das Opfer | 3 | kurban, mağdur
+die Orange | 2 | portakal
+das Orchester | 3 | orkestra
+der Ordner | 3 | klasör
+die Ordnung | 3 | düzen
+die Organisation | 3 | organizasyon, kuruluş
+das Original | 3 | orijinal
+der Ort | 2 | yer; kasaba
+der Vorort | 3 | banliyö
+der Wohnort | 2 | ikamet yeri
+der Ozean | 3 | okyanus
+das Paar | 2 | çift
+das Paket | 1 | paket, koli
+die Panne | 3 | arıza (araç)
+das Papier | 1 | kâğıt
+das Parfüm | 3 | parfüm
+der Park | 1 | park
+der Partner | 2 | partner, eş
+die Party | 1 | parti
+der Pass | 1 | pasaport
+der Passagier | 3 | yolcu
+der Patient | 2 | hasta
+die Pause | 1 | mola, teneffüs
+das Pech | 3 | şanssızlık
+die Pension | 3 | pansiyon; emeklilik (A)
+die Person | 1 | kişi
+die Personalien | 3 | kimlik bilgileri (çoğul)
+das Personal | 3 | personel
+der Pfeffer | 3 | biber (karabiber)
+die Pflanze | 2 | bitki
+das Pflaster | 3 | yara bandı
+die Pflaume | 3 | erik
+der Pfleger | 3 | bakıcı, hemşire (erkek)
+die Pflicht | 3 | görev, yükümlülük
+die Phantasie/Fantasie | 3 | hayal gücü
+das Picknick | 3 | piknik
+die Pille | 3 | hap
+der Pilz | 3 | mantar
+die Pizza | 1 | pizza
+das Plakat | 3 | afiş
+der Plan | 2 | plan
+die Planung | 3 | planlama
+das Plastik | 3 | plastik
+der Platz | 1 | yer; meydan
+die Politik | 3 | siyaset
+der Politiker | 3 | politikacı
+die Polizei | 1 | polis (teşkilat)
+der Polizist | 2 | polis memuru
+die Pommes frites | 2 | patates kızartması (çoğul)
+das Portemonnaie/Port- | 3 | cüzdan
+die Portion | 3 | porsiyon
+die Post | 1 | postane; posta
+die Postleitzahl | 1 | posta kodu
+das Praktikum | 2 | staj
+der Praktikant | 3 | stajyer
+die Präsentation | 3 | sunum
+die Praxis | 2 | muayenehane
+die Praxis | 3 | uygulama, pratik
+der Preis | 1 | fiyat; ödül
+die Presse | 3 | basın
+das Problem | 1 | sorun
+das Produkt | 3 | ürün
+die Produktion | 3 | üretim
+der Professor | 3 | profesör
+der Profi | 3 | profesyonel
+der Profisportler | 3 | profesyonel sporcu
+das Programm | 2 | program
+das Projekt | 3 | proje
+der Prospekt | 3 | broşür
+der Protest | 3 | protesto
+der Prozess | 3 | süreç; dava
+die Prüfung | 1 | sınav
+das Publikum | 3 | seyirci
+der Pullover | 1 | kazak
+der Punkt | 2 | nokta; puan
+die Puppe | 3 | oyuncak bebek
+die Qualifikation | 3 | nitelik, yeterlilik
+die Qualität | 3 | kalite
+die Quittung | 3 | makbuz, fiş
+das Quiz | 3 | bilgi yarışması
+der Rabatt | 3 | indirim
+das Rad | 2 | bisiklet (kısa)
+das Rad | 3 | tekerlek
+der Radfahrer | 3 | bisikletli
+das Radio | 1 | radyo
+der Rand | 3 | kenar
+der Rasen | 3 | çim
+der Rat | 3 | tavsiye, öğüt
+das Rätsel | 3 | bilmece
+das Rathaus | 2 | belediye binası
+der Raucher | 3 | sigara içen
+der Raum | 2 | oda, alan
+die Reaktion | 3 | tepki
+die Realität | 3 | gerçeklik
+die Recherche | 3 | araştırma
+der Rechner | 3 | bilgisayar; hesap makinesi
+die Rechnung | 1 | fatura, hesap
+das Recht | 3 | hak; hukuk
+die Rede | 3 | konuşma, söylev
+das Referat | 3 | sunum ödevi
+die Reform | 3 | reform
+das Regal | 2 | raf
+die Regel | 3 | kural
+der Regen | 1 | yağmur
+die Region | 3 | bölge
+der Reifen | 3 | lastik (tekerlek)
+die Reihe | 3 | sıra
+die Reihenfolge | 3 | sıralama
+die Reinigung | 3 | temizleme; kuru temizleme
+der Reis | 1 | pirinç
+die Reise | 1 | seyahat, yolculuk
+das Reisebüro | 1 | seyahat acentesi
+die Reklame | 3 | reklam
+der Rekord | 3 | rekor
+die Religion | 3 | din
+die Rente | 3 | emeklilik; emekli maaşı
+der Rentner | 3 | emekli
+die Reparatur | 3 | tamir
+die Reportage | 3 | röportaj, haber programı
+der Reporter | 3 | muhabir
+die Reservierung | 3 | rezervasyon
+der Respekt | 3 | saygı
+der Rest | 3 | kalan, artık
+das Restaurant | 1 | restoran
+das Rezept | 2 | reçete; tarif
+die Rezeption/Reception | 2 | resepsiyon
+der Richter | 3 | hâkim
+die Richtung | 2 | yön
+das Rind | 3 | sığır
+der Ring | 3 | yüzük
+das Risiko | 3 | risk
+der Rock | 2 | etek
+die Rolle | 3 | rol
+der Roman | 3 | roman
+die Rose | 3 | gül
+der Rucksack | 2 | sırt çantası
+die Rückkehr | 3 | dönüş
+der Rücken | 2 | sırt
+die Rücksicht | 3 | saygı, düşünceli davranma
+die Rufnummer | 3 | telefon numarası
+die Ruhe | 2 | sessizlik, huzur
+die Runde | 3 | tur
+die Rundfahrt | 3 | (şehir) turu
+der Saal | 3 | salon
+die Sache | 2 | şey; mesele
+der Sack | 3 | çuval
+der Saft | 1 | meyve suyu
+die Saison | 3 | sezon
+der Salat | 1 | salata
+die Salbe | 3 | merhem
+der Salon | 3 | salon
+das Salz | 1 | tuz
+der Sand | 3 | kum
+der Sänger | 3 | şarkıcı
+der Satz | 1 | cümle
+die Schachtel | 3 | kutu (karton)
+der Schaden | 3 | hasar, zarar
+der Schalter | 2 | gişe; şalter
+der Schatten | 3 | gölge
+das Schaufenster | 3 | vitrin
+der Schauspieler | 3 | oyuncu (erkek)
+die Scheibe | 3 | dilim; cam
+die Scheidung | 3 | boşanma
+der Schein | 3 | kâğıt para; belge
+die Schere | 3 | makas
+das Schiff | 2 | gemi
+das Schild | 2 | tabela
+der Schinken | 2 | jambon
+der Schirm | 2 | şemsiye
+der Schlaf | 3 | uyku
+die Schlange | 3 | yılan; kuyruk (sıra)
+das Schloss | 3 | şato; kilit
+der Schluss | 2 | son
+der Schlüssel | 1 | anahtar
+der Schmerz | 2 | ağrı
+das Schmerzmittel | 3 | ağrı kesici
+der Schmuck | 3 | takı
+der Schmutz | 3 | kir
+der Schnee | 1 | kar
+das Schnitzel | 2 | şinitzel
+der Schnupfen | 3 | nezle
+die Schokolade | 1 | çikolata
+der Schreck | 3 | korku, dehşet
+das Schreiben | 3 | yazı, mektup (resmî)
+die Schrift | 3 | yazı, el yazısı
+der Schriftsteller | 3 | yazar
+der Schritt | 3 | adım
+der Schuh | 1 | ayakkabı
+die Schuld | 3 | suç, kabahat
+die Schulden | 3 | borçlar (çoğul)
+die Schule | 1 | okul
+der Schüler | 1 | öğrenci (okul, erkek)
+die Schulter | 3 | omuz
+die Schüssel | 3 | kâse
+der Schutz | 3 | koruma
+die Schwangerschaft | 3 | hamilelik
+die Schwester | 1 | kız kardeş
+die Schwierigkeit | 3 | zorluk
+das Schwimmbad | 1 | yüzme havuzu
+der See | 1 | göl
+die See | 3 | deniz
+die Nord-/Ostsee | 3 | Kuzey / Baltık Denizi
+die Sehenswürdigkeit | 2 | görülecek yer
+die Seife | 2 | sabun
+die Seite | 1 | sayfa; taraf
+der Sekretär | 3 | sekreter (erkek)
+das Semester | 3 | dönem (üniversite)
+das Seminar | 3 | seminer
+der Sender | 3 | kanal, istasyon (TV/radyo)
+die Sendung | 3 | yayın, program
+die Senioren | 3 | yaşlılar (çoğul)
+die Serie | 3 | dizi
+der Service | 3 | hizmet, servis
+der Serviceangestellte | 3 | garson (CH)
+die Sicherheit | 3 | güvenlik
+der Sieg | 3 | zafer
+der Sieger | 3 | kazanan
+der Sinn | 3 | anlam; duyu
+die Situation | 3 | durum
+der Sitz | 3 | koltuk; merkez
+der Ski/Schi | 2 | kayak
+die Socke | 2 | çorap
+das Sofa | 2 | kanepe
+der Sohn | 1 | oğul
+das Sonderangebot | 2 | özel indirim
+die Sonne | 1 | güneş
+die Sorge | 3 | endişe, kaygı
+die Soße/Sauce | 3 | sos
+das Souvenir | 3 | hatıra eşya
+der Sozialarbeiter | 3 | sosyal hizmet uzmanı
+der Spaß | 1 | eğlence (Spaß machen = eğlenceli olmak)
+der Spaziergang | 2 | yürüyüş, gezinti
+die Speisekarte | 2 | yemek menüsü
+der Speisewagen | 3 | yemekli vagon
+der Spezialist | 3 | uzman
+der Spiegel | 3 | ayna
+das Spiel | 1 | oyun; maç
+der Spieler | 3 | oyuncu
+der Spielplatz | 2 | oyun parkı
+das Spielzeug | 3 | oyuncak
+der Sport | 1 | spor
+die Sportart | 3 | spor dalı
+der Sportler | 3 | sporcu
+die Sprache | 1 | dil
+die Fremdsprache | 2 | yabancı dil
+die Muttersprache | 2 | ana dil
+die Zweitsprache | 3 | ikinci dil
+die Sprechstunde | 3 | görüşme saati, muayene saati
+die Spritze | 3 | iğne, enjeksiyon
+die Spur | 3 | iz
+das Stadion | 3 | stadyum
+die Stadt | 1 | şehir
+der Stadtplan | 1 | şehir haritası
+der Standpunkt | 3 | bakış açısı
+der Star | 3 | yıldız (ünlü)
+der Start | 3 | başlangıç; kalkış
+die Station | 3 | istasyon; (hastanede) servis
+die Statistik | 3 | istatistik
+der Stau | 2 | trafik sıkışıklığı
+der Staub | 3 | toz
+die Steckdose | 3 | priz
+der Stecker | 3 | fiş
+der Stein | 3 | taş
+die Stelle | 2 | yer; iş, pozisyon
+der Stempel | 3 | mühür, kaşe
+der Stern | 3 | yıldız
+die Steuer | 3 | vergi
+der Steward | 3 | kabin memuru (erkek)
+die Stewardess | 3 | hostes
+der Stift | 2 | kalem
+der Stil | 3 | tarz, üslup
+der Stiefel | 3 | çizme
+die Stimme | 3 | ses; oy
+die Stimmung | 3 | hava, atmosfer; ruh hâli
+das Stockwerk | 2 | kat
+der Stoff | 3 | kumaş; madde; konu
+die Störung | 3 | arıza; rahatsızlık
+die Strafe | 3 | ceza
+der Strafzettel | 3 | trafik cezası kâğıdı
+der Strand | 2 | plaj
+die Straße | 1 | cadde, sokak
+die Straßenbahn | 2 | tramvay
+die Strecke | 3 | güzergâh, mesafe
+das Streichholz | 3 | kibrit
+der Streik | 3 | grev
+der Streit | 3 | kavga, tartışma
+der Stress | 2 | stres
+der Strom | 2 | elektrik; akıntı
+der Strumpf | 3 | çorap (uzun)
+das Stück/-stück | 2 | parça, tane; (tiyatro) oyun
+die Studie | 3 | araştırma, çalışma
+der Student | 1 | üniversite öğrencisi (erkek)
+der Studierende | 3 | üniversite öğrencisi (erkek)
+die Studierende | 3 | üniversite öğrencisi (kadın)
+das Studium | 2 | üniversite eğitimi
+das Studio | 3 | stüdyo
+die Stufe | 3 | basamak; seviye
+der Stuhl | 1 | sandalye
+die Stunde | 1 | saat (süre); ders saati
+der Sturm | 3 | fırtına
+die Sucht | 3 | bağımlılık
+das Suchtmittel | 3 | bağımlılık yapıcı madde
+die Summe | 3 | toplam
+der Supermarkt | 1 | süpermarket
+die Suppe | 1 | çorba
+das Symbol | 3 | sembol
+das System | 3 | sistem
+die Szene | 3 | sahne
+die Tabelle | 3 | tablo, çizelge
+die Tablette | 2 | tablet (ilaç)
+die Tafel | 3 | tahta (okul); tablet (çikolata)
+der Tagesablauf | 3 | günlük program
+das Tal | 3 | vadi
+das Talent | 3 | yetenek
+die Tankstelle | 2 | benzin istasyonu
+die Tante | 2 | teyze, hala
+der Tanz | 3 | dans
+die Tasche | 1 | çanta; cep
+das Taschengeld | 3 | harçlık
+das Taschentuch | 3 | mendil
+die Tasse | 1 | fincan
+die Tastatur | 3 | klavye
+die Taste | 3 | tuş
+die Tat | 3 | eylem, suç
+der Täter | 3 | fail
+die Tätigkeit | 3 | faaliyet, iş
+die Tatsache | 3 | gerçek, olgu
+die Technik | 3 | teknik; teknoloji
+die Technologie | 3 | teknoloji
+der Tee | 1 | çay
+das Teil | 3 | parça (yedek parça)
+der Teil | 2 | kısım, bölüm
+die Teilzeit | 3 | yarı zamanlı
+die Teilnahme | 3 | katılım
+der Teilnehmer | 3 | katılımcı
+das Telefon | 1 | telefon
+der Teller | 2 | tabak
+die Temperatur | 2 | sıcaklık
+das Tempo | 3 | hız, tempo
+das Tennis | 2 | tenis
+der Teppich | 2 | halı
+der Termin | 1 | randevu
+der Terminkalender | 3 | ajanda
+die Terrasse | 2 | teras
+der Test | 2 | test
+der Text | 1 | metin
+das Theater | 2 | tiyatro
+das Thema | 2 | konu
+die Theorie | 3 | teori
+die Therapie | 3 | terapi
+das Ticket | 1 | bilet
+das Tier | 1 | hayvan
+das Haustier | 2 | evcil hayvan
+der Tierpark | 3 | hayvanat bahçesi
+der Tipp | 2 | ipucu, tavsiye
+der Tisch | 1 | masa
+der Titel | 3 | başlık; unvan
+die Tochter | 1 | kız evlat
+der Tod | 3 | ölüm
+die Toilette | 1 | tuvalet
+die Tomate | 1 | domates
+der Topf | 3 | tencere
+das Tor | 3 | kapı (büyük); gol
+die Torte | 2 | yaş pasta
+der Tote | 3 | ölü (erkek)
+die Tote | 3 | ölü (kadın)
+der Tourismus | 3 | turizm
+der Tourist | 2 | turist
+die Tradition | 3 | gelenek
+der Trainer | 3 | antrenör
+das Training | 3 | antrenman
+die Träne | 3 | gözyaşı
+der Transport | 3 | taşıma, nakliye
+der Traum | 2 | rüya; hayal
+der Treffpunkt | 3 | buluşma yeri
+die Trennung | 3 | ayrılık
+die Treppe | 2 | merdiven
+das Treppenhaus | 3 | merdiven boşluğu
+das Trinkgeld | 2 | bahşiş
+die Tropfen | 3 | damla (ilaç, çoğul)
+das Trottoir | 3 | kaldırım (CH)
+das Tuch | 3 | bez, örtü
+die Tür | 1 | kapı
+der Turm | 3 | kule
+die Tüte | 2 | poşet
+der Typ | 3 | tip; adam (günlük dil)
+die U-Bahn | 1 | metro
+die Übung | 2 | alıştırma
+die Übernachtung | 2 | konaklama (gece)
+die Überraschung | 3 | sürpriz
+die Überschrift | 3 | başlık
+der Übersetzer | 3 | çevirmen
+die Übersetzung | 3 | çeviri
+die Überstunde | 3 | fazla mesai
+die Überweisung | 3 | havale; sevk (doktor)
+die Überzeugung | 3 | inanç, kanaat
+das Ufer | 3 | kıyı (nehir, göl)
+die Uhr | 1 | saat
+die Umfrage | 3 | anket
+die Umgebung | 3 | çevre
+die Umleitung | 3 | yol değişikliği (trafik)
+der Umtausch | 3 | değiştirme (ürün)
+die Umwelt | 2 | çevre (doğa)
+der Umweltschutz | 3 | çevre koruma
+die Umweltverschmutzung | 3 | çevre kirliliği
+der Umzug | 2 | taşınma
+der Unfall | 2 | kaza
+das Unglück | 3 | talihsizlik; kaza
+die Uniform | 3 | üniforma
+die Universität | 2 | üniversite
+die Unterhaltung | 3 | sohbet; eğlence
+die Unterkunft | 3 | konaklama yeri
+die Unterlagen | 3 | belgeler (çoğul)
+der Unternehmer | 3 | girişimci
+der Unterricht | 1 | ders
+der Unterschied | 2 | fark
+die Unterschrift | 2 | imza
+die Unterstützung | 3 | destek
+die Untersuchung | 3 | muayene; inceleme
+die Urkunde | 3 | resmî belge
+der Urlaub | 1 | tatil (izin)
+die Ursache | 3 | sebep
+das Urteil | 3 | hüküm, karar
+die Vase | 3 | vazo
+der Vater | 1 | baba
+die Verabredung | 3 | buluşma, randevu
+der Abschied | 3 | veda
+die Veranstaltung | 3 | etkinlik
+die Verantwortung | 3 | sorumluluk
+das Verbot | 3 | yasak
+die Verbindung | 3 | bağlantı
+der Verbrecher | 3 | suçlu
+der Verdacht | 3 | şüphe
+der Verein | 2 | dernek, kulüp
+die Vergangenheit | 3 | geçmiş
+der Vergleich | 3 | karşılaştırma
+das Vergnügen | 3 | zevk, keyif
+das Verhalten | 3 | davranış
+das Verhältnis | 3 | ilişki; oran
+der Verkäufer | 1 | satıcı
+der Verkehr | 2 | trafik
+das Verkehrsmittel | 2 | ulaşım aracı
+der Verlag | 3 | yayınevi
+die Verletzung | 3 | yaralanma
+der Verlierer | 3 | kaybeden
+der Verlust | 3 | kayıp
+der Vermieter | 2 | ev sahibi (kiraya veren)
+die Vermietung | 3 | kiralama
+die Vermittlung | 3 | aracılık
+die Versammlung | 3 | toplantı
+die Versichertenkarte | 3 | sigorta kartı
+die Versicherung | 2 | sigorta
+die Verspätung | 2 | gecikme
+das Verständnis | 3 | anlayış
+der Versuch | 3 | deneme
+der Vertrag | 2 | sözleşme
+das Vertrauen | 3 | güven
+der Vertreter | 3 | temsilci
+die Vertretung | 3 | vekil, vekâlet
+die Verwaltung | 3 | idare, yönetim
+der Verwandte | 2 | akraba (erkek)
+die Verwandte | 2 | akraba (kadın)
+das Video | 2 | video
+das Viertel | 2 | çeyrek; semt
+der Virus | 3 | virüs
+die Visitenkarte | 3 | kartvizit
+das Visum | 3 | vize
+das Vitamin | 3 | vitamin
+die Vollzeit | 3 | tam zamanlı
+die Voraussetzung | 3 | ön koşul
+die Vorbereitung | 3 | hazırlık
+die Vorfahrt | 3 | geçiş önceliği
+der Vorort | 3 | banliyö
+der Vorschlag | 3 | öneri
+die Vorschrift | 3 | yönetmelik, kural
+die Vorsicht | 2 | dikkat
+die Vorstellung | 3 | gösteri; tanıtım; hayal
+das Vorstellungsgespräch | 3 | iş görüşmesi
+der Vorteil | 3 | avantaj
+der Vortrag | 3 | konferans, sunum
+die Vorwahl | 3 | alan kodu (telefon)
+der Vorwurf | 3 | suçlama, sitem
+der Wagen | 2 | araba; vagon
+die Wahl | 3 | seçim
+die Wahrheit | 3 | gerçek
+der Wald | 2 | orman
+die Wand | 2 | duvar
+die Wanderung | 3 | doğa yürüyüşü
+die Ware | 3 | mal, ürün
+die Wärme | 3 | sıcaklık
+die Wäsche | 2 | çamaşır
+das Waschmittel | 3 | deterjan
+das Wasser | 1 | su
+der Wecker | 2 | çalar saat
+der Weg | 1 | yol
+der Wein | 1 | şarap
+die Weiterbildung | 3 | mesleki gelişim
+die Welt | 2 | dünya
+die Werbung | 3 | reklam
+das Werk | 3 | eser; fabrika
+die Werkstatt | 3 | atölye, tamirhane
+das Werkzeug | 3 | alet
+der Wert | 3 | değer
+der Wettbewerb | 3 | yarışma
+das Wetter | 1 | hava (durumu)
+der Wetterbericht | 3 | hava raporu
+die Wettervorhersage | 3 | hava tahmini
+die Wiederholung | 3 | tekrar
+die Wiese | 2 | çayır
+der Wind | 2 | rüzgâr
+die Wirkung | 3 | etki
+die Wirklichkeit | 3 | gerçeklik
+der Wirt | 3 | lokanta sahibi
+die Wirtschaft | 3 | ekonomi
+das Wissen | 3 | bilgi
+die Wissenschaft | 3 | bilim
+der Wissenschaftler | 3 | bilim insanı
+der Witz | 3 | fıkra, espri
+der Wohnort | 2 | ikamet yeri
+der Wohnsitz | 3 | ikametgâh
+die Wohnung | 1 | daire, ev
+das Wohnzimmer | 1 | oturma odası
+die Wolke | 3 | bulut
+die Wolle | 3 | yün
+das Wort | 1 | kelime
+das Wort | 3 | söz
+das Wörterbuch | 2 | sözlük
+die Wunde | 3 | yara
+das Wunder | 3 | mucize
+der Wunsch | 2 | dilek, istek
+die Wurst | 1 | sucuk, sosis
+die Zahl | 1 | sayı
+die Anzahl | 3 | sayı, miktar
+die Zahlung | 3 | ödeme
+der Zahn | 2 | diş
+die Zahncreme/-pasta | 3 | diş macunu
+die Zange | 3 | pense
+das Zeichen | 3 | işaret
+das Verkehrszeichen | 3 | trafik işareti
+die Zeichnung | 3 | çizim
+die Zeile | 3 | satır
+die Zeit | 1 | zaman
+der Zeitpunkt | 3 | an, zaman noktası
+die Zeitschrift | 2 | dergi
+die Zeitung | 1 | gazete
+das Zelt | 3 | çadır
+das Zentrum | 2 | merkez
+das Zertifikat | 3 | sertifika
+der Zettel | 2 | not kâğıdı
+das Zeug/-zeug | 3 | şey, eşya (günlük dil)
+der Zeuge | 3 | tanık
+das Zeugnis | 3 | karne; referans belgesi
+das Ziel | 3 | hedef
+die Zigarette | 2 | sigara
+das Zimmer | 1 | oda
+die Zinsen | 3 | faiz (çoğul)
+der Zirkus | 3 | sirk
+die Zitrone | 2 | limon
+der Zoll | 3 | gümrük
+die Zone | 3 | bölge
+der Zoo | 2 | hayvanat bahçesi
+der Zucker | 1 | şeker
+der Zufall | 3 | tesadüf
+der Zugang | 3 | erişim, giriş
+der Zug | 1 | tren
+das Zuhause | 3 | ev, yuva
+der Zuhörer | 3 | dinleyici
+die Zukunft | 2 | gelecek
+die Zusammenarbeit | 3 | işbirliği
+der Zusammenhang | 3 | bağlam
+der Zuschauer | 3 | seyirci
+der Zuschlag | 3 | ek ücret
+der Zustand | 3 | durum
+die Zustimmung | 3 | onay
+die Zutaten | 3 | malzemeler (yemek, çoğul)
+der Zweck | 3 | amaç
+der Zweifel | 3 | şüphe
+die Zwiebel | 3 | soğan

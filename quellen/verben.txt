@@ -1,0 +1,675 @@
+# Fiil anlamları (Goethe B1 listesindeki fiiller + edatlı kullanımlar)
+# Biçim:  gösterim | hâl/edat | seviye(1=A1,2=A2,3=B1) | Türkçe | [çekim düzeltmesi: 3.tekil, Präteritum, Perfekt]
+# hâl/edat: A = Akkusativ nesne, D = Dativ nesne, auf+A = edat + hâl, - = nesnesiz. Sıra Almanca kalıptaki sıradır.
+# gösterimde "sich" = Akk dönüşlü, "sich(D)" = Dativ dönüşlü.
+abbiegen | - | 2 | (bir yöne) dönmek, sapmak
+abfahren | - | 1 | (araç) kalkmak, yola çıkmak
+abgeben | A | 2 | teslim etmek, vermek
+abhängen von | von+D | 3 | (bir şeye) bağlı olmak
+abheben | A | 3 | (para) çekmek; (telefonu) açmak
+abholen | A | 1 | (birini / bir şeyi) gidip almak
+abschreiben | A | 3 | kopya çekmek; (bir metni) aynen yazmak
+ablehnen | A | 3 | reddetmek
+abmachen | A | 3 | kararlaştırmak; (bir şeyi) çıkarmak, sökmek
+abnehmen | - | 2 | kilo vermek
+abonnieren | A | 3 | (bir şeye) abone olmak
+absagen | A | 2 | iptal etmek (randevu, davet)
+abstimmen über | über+A | 3 | (bir şey hakkında) oylama yapmak
+abwaschen | A | 2 | (bulaşık) yıkamak
+achten auf | auf+A | 3 | (bir şeye) dikkat etmek
+akzeptieren | A | 3 | kabul etmek
+sich amüsieren | - | 3 | eğlenmek
+analysieren | A | 3 | analiz etmek
+anbieten | D A | 2 | (birine bir şey) teklif etmek, ikram etmek
+ändern | A | 2 | değiştirmek
+anerkennen | A | 3 | tanımak, kabul etmek (diploma vb.)
+anfangen mit | mit+D | 1 | (bir şeye) başlamak
+angeben | A | 3 | belirtmek, bildirmek
+anhaben | A | 2 | (üstünde bir şey) giymiş olmak
+anklicken | A | 2 | (bir şeye) tıklamak
+ankommen | - | 1 | varmak, gelmek
+ankommen auf | auf+A | 3 | (bir şeye) bağlı olmak (Es kommt darauf an.)
+ankündigen | A | 3 | duyurmak, önceden haber vermek
+sich anmelden für | für+A | 2 | (bir şeye) kaydolmak
+annehmen | A | 3 | kabul etmek; varsaymak
+anrufen | A | 1 | (birini) telefonla aramak
+anschaffen | A | 3 | satın almak, edinmek
+anschließen | A | 3 | (cihaz) bağlamak
+sich anschnallen | - | 3 | emniyet kemerini takmak
+sich(D) ansehen | A | 2 | (bir şeye) bakmak, izlemek
+ansprechen | A | 3 | (birine) hitap etmek, laf atmak; (bir konuyu) açmak
+anstellen | A | 3 | işe almak; (cihazı) açmak
+sich anstrengen | - | 3 | çabalamak, gayret etmek
+anwenden | A | 3 | uygulamak, kullanmak
+antworten | D | 1 | (birine) cevap vermek
+antworten auf | auf+A | 2 | (bir şeye) cevap vermek
+anzeigen | A | 3 | (polise) ihbar etmek; göstermek
+anziehen | A | 1 | (bir şey) giymek
+sich anziehen | - | 1 | giyinmek
+arbeiten | - | 1 | çalışmak
+arbeiten an | an+D | 3 | (bir şey) üzerinde çalışmak
+ärgern | A | 2 | (birini) kızdırmak
+sich ärgern über | über+A | 2 | (bir şeye) sinirlenmek
+atmen | - | 3 | nefes almak
+auffallen | D | 3 | (birinin) dikkatini çekmek, gözüne çarpmak
+auffordern zu | A zu+D | 3 | (birini bir şeye) çağırmak, davet etmek
+aufführen | A | 3 | sahnelemek
+aufgeben | A | 2 | vazgeçmek, bırakmak; (paketi) postaya vermek
+aufhalten | A | 3 | alıkoymak, oyalamak
+aufheben | A | 3 | (yerden) kaldırmak; saklamak
+aufhören mit | mit+D | 2 | (bir şeyi) bırakmak, (bir şeye) son vermek
+aufladen | A | 3 | şarj etmek
+auflösen | A | 3 | çözmek, eritmek; dağıtmak
+aufnehmen | A | 3 | kaydetmek (ses, video); kabul etmek
+aufpassen auf | auf+A | 2 | (birine / bir şeye) dikkat etmek, göz kulak olmak
+aufräumen | A | 2 | toplamak, düzenlemek (oda)
+sich aufregen über | über+A | 3 | (bir şeye) sinirlenmek, heyecanlanmak
+aufstehen | - | 1 | kalkmak (yataktan, oturduğu yerden)
+auftreten | - | 3 | sahneye çıkmak; ortaya çıkmak
+aufwachen | - | 2 | uyanmak
+ausdrucken | A | 2 | yazıcıdan çıkarmak
+ausfallen | - | 2 | iptal olmak (ders, tren); arıza yapmak
+ausfüllen | A | 1 | doldurmak (form)
+ausgeben für | A für+A | 2 | (bir şeye para) harcamak
+ausgehen | - | 2 | (eğlenmeye) dışarı çıkmak
+ausmachen | A | 2 | kapatmak (ışık, cihaz); kararlaştırmak
+ausreichen | - | 3 | yetmek, yeterli olmak
+ausrichten | D A | 3 | (birine bir mesajı) iletmek
+sich ausruhen | - | 2 | dinlenmek
+ausschließen | A | 3 | dışlamak, hariç tutmak
+aussehen | - | 1 | görünmek (… görünmek)
+aussprechen | A | 2 | telaffuz etmek
+ausstellen | A | 3 | sergilemek; (belge) düzenlemek
+sich(D) aussuchen | A | 2 | (kendine bir şey) seçmek
+auswählen | A | 2 | seçmek
+ausziehen | - | 2 | (evden) taşınıp çıkmak
+sich ausziehen | - | 2 | soyunmak
+backen | A | 2 | (fırında) pişirmek
+baden | - | 2 | banyo yapmak, yıkanmak
+basteln | A | 3 | el işi yapmak
+bauen | A | 2 | inşa etmek, yapmak
+beachten | A | 3 | dikkate almak, uymak
+beantragen | A | 3 | (resmî bir şey için) başvurmak
+beantworten | A | 2 | (bir şeyi) cevaplamak
+sich bedanken bei für | bei+D für+A | 2 | (birine bir şey için) teşekkür etmek
+bedeuten | A | 2 | anlamına gelmek
+bedienen | A | 3 | (birine) hizmet etmek; (makineyi) kullanmak
+sich beeilen | - | 2 | acele etmek
+beenden | A | 2 | bitirmek, sona erdirmek
+sich befinden | - | 3 | bulunmak
+begegnen | D | 3 | (birine) rastlamak
+beginnen mit | mit+D | 1 | (bir şeye) başlamak
+begleiten | A | 3 | (birine) eşlik etmek
+begründen | A | 3 | gerekçelendirmek
+begrüßen | A | 2 | selamlamak, karşılamak
+behalten | A | 3 | (elinde) tutmak, saklamak
+behandeln | A | 3 | tedavi etmek; (birine) davranmak
+behaupten | A | 3 | iddia etmek
+behindern | A | 3 | engellemek
+beißen | A | 3 | ısırmak
+bekannt geben | A | 3 | duyurmak, ilan etmek
+bekommen | A | 1 | almak (verilen bir şeyi), elde etmek
+beleidigen | A | 3 | (birine) hakaret etmek
+bemerken | A | 3 | fark etmek
+sich bemühen um | um+A | 3 | (bir şey için) çabalamak
+benötigen | A | 3 | (bir şeye) ihtiyaç duymak
+benutzen | A | 2 | kullanmak
+beobachten | A | 3 | gözlemlemek
+beraten | A | 3 | (birine) danışmanlık yapmak
+berechnen | A | 3 | hesaplamak
+berichten über | über+A | 3 | (bir şey hakkında) haber vermek, anlatmak
+beruhigen | A | 3 | sakinleştirmek
+sich beruhigen | - | 3 | sakinleşmek
+beschädigen | A | 3 | (bir şeye) hasar vermek
+sich beschäftigen mit | mit+D | 3 | (bir şeyle) uğraşmak, ilgilenmek
+beschließen | A | 3 | karar vermek
+beschreiben | A | 2 | tarif etmek, betimlemek
+sich beschweren über | über+A | 2 | (bir şeyden) şikâyet etmek
+sich beschweren bei | bei+D | 3 | (birine) şikâyette bulunmak
+besetzen | A | 3 | (yer) tutmak, işgal etmek
+besichtigen | A | 2 | (görülecek yeri) gezmek
+besitzen | A | 3 | sahip olmak
+besorgen | A | 3 | temin etmek, alıp getirmek
+besprechen | A | 3 | (bir şeyi) görüşmek, konuşmak
+bestätigen | A | 3 | onaylamak, teyit etmek
+bestehen | A | 2 | (sınavı) geçmek
+bestehen aus | aus+D | 3 | (bir şeyden) oluşmak
+bestellen | A | 1 | sipariş etmek
+bestrafen | A | 3 | cezalandırmak
+besuchen | A | 1 | ziyaret etmek
+sich beteiligen an | an+D | 3 | (bir şeye) katılmak
+betreuen | A | 3 | (birine) bakmak, ilgilenmek (çocuk, hasta)
+betrügen | A | 3 | aldatmak, dolandırmak
+bewegen | A | 3 | hareket ettirmek
+sich bewegen | - | 3 | hareket etmek
+beweisen | A | 3 | kanıtlamak
+sich bewerben um | um+A | 2 | (bir işe / yere) başvurmak
+sich bewerben bei | bei+D | 2 | (bir firmaya) başvurmak
+bezahlen | A | 1 | ödemek
+bieten | D A | 3 | (birine bir şey) sunmak, teklif etmek
+bitten um | A um+A | 2 | (birinden bir şey) rica etmek, istemek
+bleiben | - | 1 | kalmak
+blitzen | - | 3 | şimşek çakmak
+blühen | - | 3 | çiçek açmak
+bluten | - | 3 | kanamak
+braten | A | 3 | kızartmak
+brauchen | A | 1 | (bir şeye) ihtiyaç duymak
+brechen | A | 3 | kırmak
+bremsen | - | 3 | fren yapmak
+brennen | - | 3 | yanmak
+bringen | D A | 1 | (birine bir şey) getirmek
+buchen | A | 2 | rezervasyon yapmak
+buchstabieren | A | 1 | harf harf söylemek, kodlamak
+danken | D | 1 | (birine) teşekkür etmek
+danken für | D für+A | 1 | (birine bir şey için) teşekkür etmek
+darstellen | A | 3 | göstermek, canlandırmak
+dauern | - | 2 | sürmek (zaman olarak)
+dekorieren | A | 3 | süslemek
+denken | - | 1 | düşünmek, sanmak
+denken an | an+A | 2 | (birini / bir şeyi) düşünmek, aklında tutmak
+dienen | D | 3 | (birine / bir şeye) hizmet etmek, yaramak
+diskutieren über | über+A | 2 | (bir şeyi) tartışmak
+donnern | - | 3 | gök gürlemek
+drehen | A | 3 | çevirmek; (film) çekmek
+drucken | A | 2 | basmak, yazdırmak
+drücken | A | 2 | bastırmak, basmak (düğme)
+dürfen | - | 1 | -ebilmek (izinli olmak)
+duschen | - | 1 | duş almak
+duzen | A | 3 | (birine) "sen" diye hitap etmek
+sich eignen für | für+A | 3 | (bir şeye) uygun olmak
+eilen | - | 3 | acele etmek; acil olmak
+einbrechen | - | 3 | (hırsızlık için bir yere) girmek
+einfallen | D | 3 | (birinin) aklına gelmek
+beeinflussen | A | 3 | etkilemek
+einfügen | A | 3 | eklemek, yapıştırmak
+einführen | A | 3 | (yeni bir şeyi) getirmek, başlatmak; ithal etmek
+sich einigen auf | auf+A | 3 | (bir şeyde) anlaşmak, uzlaşmak
+einkaufen | - | 1 | alışveriş yapmak
+einladen zu | A zu+D | 1 | (birini bir şeye) davet etmek
+einnehmen | A | 3 | (ilaç) almak
+einpacken | A | 2 | paketlemek, (çantaya) koymak
+einrichten | A | 3 | (evi) döşemek
+einschalten | A | 2 | açmak (cihaz)
+einsetzen | A | 3 | kullanmak, devreye sokmak
+einsteigen | - | 1 | (araca) binmek
+einstellen | A | 3 | ayarlamak; işe almak
+eintragen | A | 3 | (listeye) yazmak, kaydetmek
+eintreten | - | 3 | içeri girmek
+einzahlen | A | 3 | (para) yatırmak
+einziehen | - | 2 | (yeni eve) taşınmak
+empfangen | A | 3 | karşılamak; (yayın) almak
+empfehlen | D A | 2 | (birine bir şey) tavsiye etmek
+enden | - | 2 | bitmek, sona ermek
+entdecken | A | 3 | keşfetmek
+entfernen | A | 3 | çıkarmak, gidermek
+enthalten | A | 3 | içermek
+entlassen | A | 3 | işten çıkarmak; taburcu etmek
+entscheiden | A | 3 | (bir şeye) karar vermek
+sich entscheiden für | für+A | 3 | (bir şeyde) karar kılmak, (bir şeyi) seçmek
+sich entschließen zu | zu+D | 3 | (bir şeye) karar vermek
+entschuldigen | A | 2 | affetmek, mazur görmek
+sich entschuldigen bei für | bei+D für+A | 2 | (birinden bir şey için) özür dilemek
+entsorgen | A | 3 | (çöpü) atmak, bertaraf etmek
+entstehen | - | 3 | oluşmak, ortaya çıkmak
+enttäuschen | A | 3 | hayal kırıklığına uğratmak
+entwickeln | A | 3 | geliştirmek
+sich ereignen | - | 3 | meydana gelmek
+erfahren von | von+D | 3 | (bir şeyi) öğrenmek, haber almak
+erfinden | A | 3 | icat etmek
+erfordern | A | 3 | gerektirmek
+erfüllen | A | 3 | yerine getirmek (dilek, koşul)
+ergänzen | A | 2 | tamamlamak
+erhalten | A | 3 | almak (resmî dil)
+erhöhen | A | 3 | artırmak, yükseltmek
+sich erholen von | von+D | 2 | (bir şeyden sonra) dinlenmek, kendine gelmek
+erinnern an | A an+A | 3 | (birine bir şeyi) hatırlatmak
+sich erinnern an | an+A | 2 | (birini / bir şeyi) hatırlamak
+sich erkälten | - | 2 | üşütmek, soğuk algınlığına yakalanmak | erkältet, erkältete, hat erkältet
+erkennen | A | 3 | tanımak, fark etmek
+erklären | D A | 2 | (birine bir şeyi) açıklamak
+sich erkundigen nach | nach+D | 3 | (bir şeyi) sormak, hakkında bilgi almak
+erlauben | D A | 2 | (birine bir şeye) izin vermek
+erleben | A | 3 | yaşamak, deneyimlemek
+erledigen | A | 3 | halletmek
+erleichtern | A | 3 | kolaylaştırmak
+sich ernähren | - | 3 | beslenmek
+eröffnen | A | 3 | açmak (dükkân, hesap)
+erreichen | A | 2 | ulaşmak; (trene) yetişmek
+erschrecken | - | 3 | korkmak, irkilmek
+ersetzen | A | 3 | (bir şeyin) yerine koymak; tazmin etmek
+erstellen | A | 3 | oluşturmak, hazırlamak
+erwarten | A | 3 | beklemek (ummak)
+erzählen von | D von+D | 1 | (birine bir şeyden) bahsetmek, anlatmak
+erziehen | A | 3 | (çocuk) yetiştirmek, eğitmek
+essen | A | 1 | yemek
+fahren | - | 1 | (araçla) gitmek
+fallen | - | 2 | düşmek
+fangen | A | 3 | yakalamak
+fassen | A | 3 | tutmak, kavramak
+faulenzen | - | 3 | tembellik etmek, yan gelip yatmak
+fehlen | D | 2 | (birine) eksik olmak; (biri) tarafından özlenmek
+feiern | A | 1 | kutlamak
+fernsehen | - | 1 | televizyon izlemek
+festhalten | A | 3 | sıkıca tutmak
+festlegen | A | 3 | belirlemek
+festnehmen | A | 3 | gözaltına almak | nimmt fest, nahm fest, hat festgenommen
+festsetzen | A | 3 | (tarih, fiyat) belirlemek
+feststehen | - | 3 | kesinleşmiş olmak
+feststellen | A | 3 | tespit etmek
+finanzieren | A | 3 | finanse etmek
+finden | A | 1 | bulmak; (bir şeyi) … bulmak
+fliegen | - | 1 | uçmak, uçakla gitmek
+fliehen | - | 3 | kaçmak
+fließen | - | 3 | akmak
+folgen | D | 3 | (birini) takip etmek
+fordern | A | 3 | talep etmek
+fördern | A | 3 | desteklemek, teşvik etmek
+fortsetzen | A | 3 | devam ettirmek
+fotografieren | A | 2 | (bir şeyin) fotoğrafını çekmek
+fragen | A | 1 | (birine) sormak
+fragen nach | A nach+D | 2 | (birine bir şeyi) sormak
+fressen | A | 3 | (hayvan) yemek
+sich freuen auf | auf+A | 2 | (bir şeyi) dört gözle beklemek
+sich freuen über | über+A | 2 | (bir şeye) sevinmek
+frieren | - | 3 | üşümek; donmak
+frühstücken | - | 1 | kahvaltı yapmak
+sich fühlen | - | 2 | kendini … hissetmek
+fühlen | A | 3 | hissetmek
+führen | A | 3 | yönetmek; (birini bir yere) götürmek
+funktionieren | - | 2 | çalışmak (cihaz)
+sich fürchten vor | vor+D | 3 | (bir şeyden) korkmak
+füttern | A | 3 | (hayvanı) beslemek
+garantieren | D A | 3 | (birine bir şeyi) garanti etmek
+geben | D A | 1 | (birine bir şey) vermek
+gebrauchen | A | 3 | kullanmak
+gefallen | D | 1 | (birinin) hoşuna gitmek
+gehen | - | 1 | gitmek; yürümek
+gehören | D | 2 | (birine) ait olmak
+gehören zu | zu+D | 3 | (bir şeye) dahil olmak
+gelingen | D | 3 | (birinin) başarması (Es gelingt mir.)
+gelten | - | 3 | geçerli olmak
+genehmigen | A | 3 | onaylamak, izin vermek
+genießen | A | 3 | (bir şeyin) tadını çıkarmak
+genügen | D | 3 | (birine) yetmek
+geschehen | - | 3 | olmak, meydana gelmek
+gewinnen | A | 2 | kazanmak (oyun, ödül)
+sich gewöhnen an | an+A | 3 | (bir şeye) alışmak
+gießen | A | 3 | (çiçek) sulamak; dökmek
+glauben | D | 1 | (birine) inanmak
+glauben an | an+A | 3 | (bir şeye / birine) inanmak (varlığına, başarısına)
+gratulieren zu | D zu+D | 2 | (birini bir şeyden dolayı) tebrik etmek
+greifen | A | 3 | tutmak, kapmak
+grillen | A | 2 | ızgara yapmak, mangal yapmak
+gründen | A | 3 | kurmak (şirket, dernek)
+grüßen | A | 2 | selamlamak
+gucken | - | 2 | bakmak
+haben | A | 1 | sahip olmak, (bir şeyi) olmak
+hageln | - | 3 | dolu yağmak
+halten | A | 2 | tutmak
+halten von | A von+D | 3 | (bir şey hakkında) … düşünmek (Was hältst du davon?)
+handeln von | von+D | 3 | (bir şeyi) konu almak (Es handelt von …)
+hängen | - | 2 | asılı olmak, asılı durmak
+hassen | A | 2 | (bir şeyden) nefret etmek
+heben | A | 3 | kaldırmak
+heiraten | A | 2 | (biriyle) evlenmek
+heißen | - | 1 | adı … olmak
+heizen | - | 3 | ısıtmak
+helfen | D | 1 | (birine) yardım etmek
+helfen bei | D bei+D | 2 | (birine bir şeyde) yardım etmek
+herstellen | A | 3 | üretmek
+hinterlassen | A | 3 | (geride) bırakmak (mesaj)
+hinweisen auf | auf+A | 3 | (bir şeye) dikkat çekmek
+hochladen | A | 3 | (internete) yüklemek
+hoffen auf | auf+A | 2 | (bir şeyi) ummak
+holen | A | 2 | gidip getirmek
+hören | A | 1 | duymak, dinlemek
+hupen | - | 3 | korna çalmak
+husten | - | 3 | öksürmek
+informieren über | A über+A | 3 | (birini bir şey hakkında) bilgilendirmek
+sich informieren über | über+A | 3 | (bir şey hakkında) bilgi edinmek
+installieren | A | 3 | (program) kurmak
+integrieren | A | 3 | entegre etmek, uyum sağlatmak
+sich interessieren für | für+A | 2 | (bir şeyle) ilgilenmek
+sich irren | - | 3 | yanılmak
+kämpfen für | für+A | 3 | (bir şey için) mücadele etmek
+kaufen | A | 1 | satın almak
+kennen | A | 1 | tanımak, bilmek
+kennenlernen | A | 1 | (biriyle) tanışmak
+klagen über | über+A | 3 | (bir şeyden) yakınmak
+klappen | - | 3 | yolunda gitmek, olmak
+klären | A | 3 | açıklığa kavuşturmak
+kleben | A | 3 | yapıştırmak
+klettern | - | 3 | tırmanmak
+klicken | - | 2 | tıklamak
+klingeln | - | 2 | (zil) çalmak
+klingen | - | 3 | kulağa … gelmek
+klopfen | - | 3 | (kapıyı) çalmak, vurmak
+kochen | A | 1 | (yemek) pişirmek
+kommen | - | 1 | gelmek
+können | - | 1 | -ebilmek
+konsumieren | A | 3 | tüketmek
+kontrollieren | A | 2 | kontrol etmek
+sich konzentrieren auf | auf+A | 3 | (bir şeye) odaklanmak
+korrigieren | A | 2 | düzeltmek
+kosten | A | 1 | (fiyatı) … olmak, tutmak
+kriegen | A | 3 | almak (günlük dil)
+kritisieren | A | 3 | eleştirmek
+sich kümmern um | um+A | 2 | (biriyle / bir şeyle) ilgilenmek, bakmak
+kündigen | A | 3 | (sözleşmeyi) feshetmek, (işten) ayrılmak
+küssen | A | 2 | öpmek
+lächeln | - | 2 | gülümsemek
+lachen über | über+A | 2 | (bir şeye) gülmek
+landen | - | 2 | iniş yapmak
+sich langweilen | - | 2 | sıkılmak
+lassen | A | 2 | bırakmak; yaptırmak
+laufen | - | 1 | koşmak; yürümek
+leben | - | 1 | yaşamak
+legen | A | 2 | (yatay olarak) koymak
+leiden unter | unter+D | 3 | (bir şeyden) acı çekmek, muzdarip olmak
+leihen | D A | 3 | (birine bir şeyi) ödünç vermek
+sich(D) leisten | A | 3 | (bir şeye) parası yetmek, kendine … almak
+leiten | A | 3 | yönetmek
+lernen | A | 1 | öğrenmek
+lesen | A | 1 | okumak
+lieben | A | 1 | sevmek
+liefern | A | 3 | teslim etmek (sipariş)
+liegen | - | 1 | (yatay) durmak, yatmak, bulunmak
+loben | A | 3 | övmek
+sich lohnen | - | 3 | (zahmetine) değmek
+losfahren | - | 3 | yola çıkmak
+löschen | A | 3 | silmek; (yangını) söndürmek
+lösen | A | 2 | çözmek
+lügen | - | 3 | yalan söylemek
+machen | A | 1 | yapmak
+malen | A | 2 | resim yapmak, boyamak
+markieren | A | 2 | işaretlemek
+meinen | A | 2 | kastetmek; düşünmek
+sich melden bei | bei+D | 3 | (birine) haber vermek, ulaşmak
+sich(D) merken | A | 3 | aklında tutmak
+messen | A | 3 | ölçmek
+mieten | A | 2 | kiralamak
+mischen | A | 3 | karıştırmak
+mitteilen | D A | 3 | (birine bir şeyi) bildirmek
+möchten | A | 1 | istemek (kibar)
+mögen | A | 1 | sevmek, hoşlanmak
+müssen | - | 1 | zorunda olmak, -meli
+nachdenken über | über+A | 3 | (bir şey hakkında) düşünmek, kafa yormak
+nachschlagen | A | 3 | (sözlükte) bakmak
+nähen | A | 3 | dikiş dikmek
+sich nähern | D | 3 | (bir şeye) yaklaşmak
+nehmen | A | 1 | almak
+nennen | A | 3 | adlandırmak, söylemek
+nutzen | A | 3 | kullanmak, yararlanmak
+nützen | D | 3 | (birine) yararı olmak
+veröffentlichen | A | 3 | yayımlamak
+öffnen | A | 1 | açmak
+operieren | A | 3 | ameliyat etmek
+ordnen | A | 3 | düzenlemek, sıralamak
+organisieren | A | 2 | düzenlemek, organize etmek
+packen | A | 2 | (bavul) hazırlamak, toplamak
+parken | - | 1 | park etmek
+passen | D | 2 | (birine) uymak (beden, zaman)
+passen zu | zu+D | 2 | (bir şeye) uymak, yakışmak
+passieren | D | 2 | (birinin başına) gelmek, olmak
+pflanzen | A | 3 | (bitki) dikmek
+pflegen | A | 3 | (hastaya) bakmak
+planen | A | 2 | planlamak
+probieren | A | 2 | denemek, tadına bakmak
+produzieren | A | 3 | üretmek
+protestieren gegen | gegen+A | 3 | (bir şeyi) protesto etmek
+prüfen | A | 3 | kontrol etmek, sınamak
+putzen | A | 2 | temizlemek
+sich rasieren | - | 3 | tıraş olmak
+raten | D | 3 | (birine) tavsiye etmek; tahmin etmek
+rauchen | - | 1 | sigara içmek
+reagieren auf | auf+A | 3 | (bir şeye) tepki vermek
+realisieren | A | 3 | gerçekleştirmek
+rechnen mit | mit+D | 3 | (bir şeyi) hesaba katmak, beklemek
+reden über | über+A | 2 | (bir şey hakkında) konuşmak
+reduzieren | A | 3 | azaltmak, indirmek
+regeln | A | 3 | düzenlemek, halletmek
+regnen | - | 1 | yağmur yağmak
+reichen | - | 3 | yetmek
+reinigen | A | 3 | temizlemek
+reisen | - | 1 | seyahat etmek
+reiten | - | 3 | ata binmek
+rennen | - | 3 | koşmak
+reparieren | A | 2 | tamir etmek
+reservieren | A | 2 | rezerve etmek, ayırtmak
+retten | A | 3 | kurtarmak
+riechen nach | nach+D | 3 | (bir şey gibi) kokmak
+rufen | A | 2 | çağırmak, seslenmek
+sagen | D A | 1 | (birine bir şey) söylemek
+sammeln | A | 2 | toplamak, biriktirmek
+schaden | D | 3 | (birine) zarar vermek
+schaffen | A | 3 | başarmak, yetiştirmek
+schalten | - | 3 | vites değiştirmek
+schätzen | A | 3 | tahmin etmek; takdir etmek
+schauen | - | 2 | bakmak
+scheinen | - | 2 | (güneş) parlamak; … gibi görünmek
+schenken | D A | 1 | (birine bir şey) hediye etmek
+schicken | D A | 1 | (birine bir şey) göndermek
+schieben | A | 3 | itmek
+schießen | - | 3 | ateş etmek; şut çekmek
+schimpfen über | über+A | 3 | (bir şeye) söylenmek, kızmak
+schlafen | - | 1 | uyumak
+schlagen | A | 3 | vurmak, dövmek
+schließen | A | 2 | kapatmak
+schmecken | D | 1 | (birinin) hoşuna gitmek (tat olarak)
+sich schminken | - | 3 | makyaj yapmak
+verschmutzen | A | 3 | kirletmek
+schneien | - | 1 | kar yağmak
+schneiden | A | 2 | kesmek
+schreiben | D A | 1 | (birine bir şey) yazmak
+schreiben an | an+A | 2 | (birine) yazmak (mektup vb.)
+schreien | - | 3 | bağırmak
+schütteln | A | 3 | sallamak
+schützen vor | A vor+D | 3 | (birini bir şeyden) korumak
+schweigen | - | 3 | susmak
+schwimmen | - | 1 | yüzmek
+schwitzen | - | 3 | terlemek
+sehen | A | 1 | görmek
+sein | - | 1 | olmak
+senden | D A | 3 | (birine bir şey) göndermek
+setzen | A | 2 | oturtmak, koymak
+sich setzen | - | 2 | oturmak (oturmak eylemi)
+sichern | A | 3 | güvenceye almak; (dosyayı) kaydetmek
+siegen | - | 3 | galip gelmek
+siezen | A | 3 | (birine) "siz" diye hitap etmek
+singen | A | 2 | şarkı söylemek
+sinken | - | 3 | batmak; düşmek (fiyat)
+sitzen | - | 1 | oturuyor olmak
+sollen | - | 2 | -meli, -mesi gerekmek
+sorgen für | für+A | 3 | (bir şeyi) sağlamak; (birine) bakmak
+sich sorgen um | um+A | 3 | (biri için) endişelenmek
+sparen | A | 2 | biriktirmek, tasarruf etmek
+spazieren gehen | - | 1 | yürüyüşe çıkmak
+speichern | A | 2 | (dosya) kaydetmek
+spielen | A | 1 | oynamak; (enstrüman) çalmak
+sprechen mit | mit+D | 1 | (biriyle) konuşmak
+sprechen über | über+A | 2 | (bir şey hakkında) konuşmak
+springen | - | 3 | atlamak
+spülen | A | 3 | (bulaşık) yıkamak; durulamak
+spüren | A | 3 | hissetmek
+stammen aus | aus+D | 3 | (bir yerden) gelmek, kökenli olmak
+starten | - | 3 | başlamak; (uçak) kalkmak
+stattfinden | - | 2 | gerçekleşmek, yapılmak (etkinlik)
+staubsaugen | - | 3 | elektrik süpürgesi çekmek
+stechen | A | 3 | sokmak (arı), batmak
+stecken | A | 3 | sokmak, takmak
+stehen | - | 1 | ayakta durmak; (metinde) yazmak
+stehlen | D A | 3 | (birinden bir şey) çalmak
+steigen | - | 3 | çıkmak, tırmanmak; artmak
+stellen | A | 2 | (dik olarak) koymak
+sterben an | an+D | 3 | (bir şeyden) ölmek
+stimmen | - | 2 | doğru olmak
+stinken | - | 3 | kötü kokmak
+stoppen | A | 3 | durdurmak
+stören | A | 2 | rahatsız etmek
+stoßen | A | 3 | itmek, çarpmak
+streiken | - | 3 | grev yapmak
+sich streiten mit | mit+D | 3 | (biriyle) kavga etmek, tartışmak
+studieren | A | 1 | (üniversitede) okumak
+stürzen | - | 3 | düşmek
+suchen | A | 1 | aramak
+suchen nach | nach+D | 2 | (bir şeyi) aramak
+tanken | - | 2 | benzin almak
+tanzen | - | 1 | dans etmek
+tauchen | - | 3 | dalmak
+tauschen | A | 3 | değiş tokuş etmek
+teilen | A | 3 | paylaşmak, bölmek
+teilnehmen an | an+D | 2 | (bir şeye) katılmak
+telefonieren mit | mit+D | 1 | (biriyle) telefonda konuşmak
+testen | A | 3 | test etmek
+tippen | A | 3 | (klavyede) yazmak
+tragen | A | 2 | taşımak; giymek
+trainieren | - | 2 | antrenman yapmak
+transportieren | A | 3 | taşımak (nakliye)
+träumen von | von+D | 2 | (bir şeyi) hayal etmek, rüyasında görmek
+treffen | A | 1 | (biriyle) buluşmak, karşılaşmak
+sich treffen mit | mit+D | 2 | (biriyle) buluşmak
+treiben | A | 3 | (spor) yapmak
+sich trennen von | von+D | 3 | (birinden) ayrılmak
+treten | - | 3 | basmak, adım atmak
+trinken | A | 1 | içmek
+trocknen | A | 3 | kurutmak
+tun | A | 2 | yapmak
+überfahren | A | 3 | (araçla) ezmek
+überholen | A | 3 | sollamak
+sich(D) überlegen | A | 3 | (bir şeyi) düşünüp taşınmak
+übernachten | - | 2 | geceyi geçirmek, konaklamak
+übernehmen | A | 3 | üstlenmek, devralmak
+überprüfen | A | 3 | kontrol etmek, gözden geçirmek
+überqueren | A | 3 | (karşıya) geçmek
+überraschen | A | 3 | şaşırtmak, sürpriz yapmak
+überreden | A | 3 | (birini) kandırıp ikna etmek
+übersetzen | A | 2 | (dil) çevirmek
+übertreiben | A | 3 | abartmak | übertreibt, übertrieb, hat übertrieben
+überweisen | D A | 3 | (birine para) havale etmek
+überzeugen von | A von+D | 3 | (birini bir şeye) ikna etmek
+umarmen | A | 3 | (birine) sarılmak
+sich umdrehen | - | 3 | arkasını dönmek
+umgehen mit | mit+D | 3 | (bir şeyle / biriyle) başa çıkmak, davranmak
+umsteigen | - | 2 | aktarma yapmak
+umtauschen | A | 3 | (mağazada) değiştirmek
+umziehen | - | 2 | taşınmak (ev)
+sich umziehen | - | 3 | üstünü değiştirmek
+unterbrechen | A | 3 | (sözünü) kesmek, ara vermek
+sich unterhalten mit | mit+D | 2 | (biriyle) sohbet etmek
+sich unterhalten über | über+A | 2 | (bir şey hakkında) sohbet etmek
+unternehmen | A | 3 | (bir şey) yapmak, girişmek
+unterrichten | A | 3 | ders vermek
+unterscheiden | A | 3 | ayırt etmek
+unterschreiben | A | 2 | imzalamak
+unterstreichen | A | 2 | altını çizmek
+unterstützen | A | 3 | desteklemek
+untersuchen | A | 3 | muayene etmek, incelemek
+verursachen | A | 3 | (bir şeye) sebep olmak
+sich verabreden mit | mit+D | 2 | (biriyle) buluşmak için sözleşmek
+sich verabschieden von | von+D | 2 | (biriyle) vedalaşmak
+verändern | A | 3 | değiştirmek
+sich verändern | - | 3 | değişmek
+verbessern | A | 2 | düzeltmek, iyileştirmek
+verbieten | D A | 3 | (birine bir şeyi) yasaklamak
+verbinden | A | 3 | bağlamak; (yarayı) sarmak
+verbrauchen | A | 3 | tüketmek
+verbrennen | A | 3 | yakmak
+verbringen | A | 2 | (zaman) geçirmek
+verdienen | A | 2 | (para) kazanmak
+vereinbaren | A | 3 | kararlaştırmak
+vergessen | A | 1 | unutmak
+vergleichen mit | A mit+D | 3 | (bir şeyi bir şeyle) karşılaştırmak
+sich vergnügen | - | 3 | eğlenmek
+vergrößern | A | 3 | büyütmek
+verhaften | A | 3 | tutuklamak
+sich verhalten | - | 3 | davranmak
+verhindern | A | 3 | engellemek, önlemek
+verkaufen | D A | 1 | (birine bir şey) satmak
+verlangen | A | 3 | talep etmek
+verlängern | A | 3 | uzatmak
+verlassen | A | 3 | (bir yeri / birini) terk etmek
+sich verlassen auf | auf+A | 3 | (birine / bir şeye) güvenmek
+sich verlaufen | - | 3 | (yürürken) yolunu kaybetmek
+verletzen | A | 3 | yaralamak
+sich verletzen | - | 3 | yaralanmak
+sich verlieben in | in+A | 2 | (birine) âşık olmak
+verlieren | A | 2 | kaybetmek
+vermeiden | A | 3 | (bir şeyden) kaçınmak
+vermieten | D A | 3 | (birine bir şeyi) kiraya vermek
+vermissen | A | 2 | özlemek
+vermuten | A | 3 | tahmin etmek, sanmak
+verpacken | A | 3 | paketlemek
+verpassen | A | 2 | kaçırmak (tren, fırsat)
+verraten | D A | 3 | (birine bir şeyi) söylemek, ele vermek (sır)
+verreisen | - | 3 | seyahate çıkmak
+versäumen | A | 3 | kaçırmak, ihmal etmek
+verschieben | A | 3 | ertelemek
+verschreiben | D A | 3 | (birine ilaç) yazmak
+verschwinden | - | 3 | kaybolmak, ortadan kaybolmak
+versichern | A | 3 | sigortalamak
+versprechen | D A | 2 | (birine bir şey) söz vermek
+verstecken | A | 3 | saklamak, gizlemek
+verstehen | A | 1 | anlamak
+versuchen | A | 2 | denemek
+verteilen | A | 3 | dağıtmak
+vertrauen | D | 3 | (birine) güvenmek
+vertreten | A | 3 | temsil etmek; (birine) vekâlet etmek
+verurteilen | A | 3 | mahkûm etmek
+verwechseln mit | A mit+D | 3 | (bir şeyi bir şeyle) karıştırmak
+verwenden | A | 3 | kullanmak
+verzeihen | D | 3 | (birini) affetmek
+verzichten auf | auf+A | 3 | (bir şeyden) vazgeçmek
+vorbereiten | A | 2 | hazırlamak
+sich vorbereiten auf | auf+A | 2 | (bir şeye) hazırlanmak
+vorhaben | A | 2 | niyetinde olmak, planlamak
+vorkommen | - | 3 | olmak, rastlanmak
+vorlesen | D A | 3 | (birine bir şeyi) sesli okumak
+vorschlagen | D A | 3 | (birine bir şeyi) önermek
+vorstellen | D A | 2 | (birine birini) tanıştırmak, tanıtmak
+sich vorstellen | - | 2 | kendini tanıtmak
+sich(D) vorstellen | A | 3 | (bir şeyi) hayal etmek, gözünde canlandırmak
+wachsen | - | 3 | büyümek
+wählen | A | 2 | seçmek; oy vermek
+wandern | - | 2 | doğa yürüyüşü yapmak
+warnen vor | A vor+D | 3 | (birini bir şeye karşı) uyarmak
+warten auf | auf+A | 1 | (birini / bir şeyi) beklemek
+waschen | A | 1 | yıkamak
+sich waschen | - | 1 | yıkanmak
+wechseln | A | 2 | değiştirmek; (para) bozdurmak
+wecken | A | 2 | uyandırmak
+wehtun | D | 2 | (birinin bir yeri) acımak
+sich weigern | - | 3 | (yapmayı) reddetmek
+weinen | - | 2 | ağlamak
+sich wenden an | an+A | 3 | (birine) başvurmak
+werden | - | 1 | olmak (… hâline gelmek)
+werfen | A | 3 | atmak, fırlatmak
+wetten | - | 3 | iddiaya girmek
+widersprechen | D | 3 | (birine) itiraz etmek, karşı çıkmak
+wiederholen | A | 2 | tekrarlamak
+wiegen | A | 3 | tartmak; … ağırlığında olmak
+winken | D | 3 | (birine) el sallamak
+wirken | - | 3 | etki etmek; … görünmek
+wissen | A | 1 | bilmek
+wohnen | - | 1 | oturmak, ikamet etmek
+wollen | A | 1 | istemek
+sich wundern über | über+A | 3 | (bir şeye) şaşırmak
+wünschen | D A | 2 | (birine bir şey) dilemek
+sich(D) wünschen | A | 2 | (bir şeyi) istemek, dilemek
+zahlen | A | 1 | ödemek
+zählen | A | 3 | saymak
+zeichnen | A | 2 | çizmek
+zeigen | D A | 1 | (birine bir şey) göstermek
+zelten | - | 3 | çadırda kamp yapmak
+zerstören | A | 3 | yok etmek, tahrip etmek
+ziehen | A | 3 | çekmek
+zubereiten | A | 3 | (yemek) hazırlamak
+zuhören | D | 2 | (birini) dinlemek
+zumachen | A | 1 | kapatmak
+zunehmen | - | 2 | kilo almak
+zurechtkommen mit | mit+D | 3 | (bir şeyle / biriyle) başa çıkmak
+zusagen | D | 3 | (birinin davetine) evet demek
+zusammenfassen | A | 3 | özetlemek
+zuschauen | D | 3 | (birini) seyretmek
+zustimmen | D | 3 | (birine) katılmak, onaylamak
+zweifeln an | an+D | 3 | (bir şeyden) şüphe etmek
+zwingen zu | A zu+D | 3 | (birini bir şeye) zorlamak
