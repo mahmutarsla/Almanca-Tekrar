@@ -92,10 +92,26 @@
   // ================= Durum =================
   const KEY = 'almanca-tekrar-v1';
   const DEF = { karten: {}, items: {}, tage: {}, log: [], pending: [], kontext: {},
-    einst: { ziel: 20, neuV: 5, neuN: 5, ret: 0.9 }, version: 1 };
+    einst: { ret: 0.9, modi: {} }, version: 2 };
+  // Bölümler: her birinin kendi günlük hedefi (soru) ve yeni öğe sınırı.
+  // Varsayılanlar: Anki'nin önerdiği gibi günde ~10 yeni kart; bir fiil 4-5 kart açtığı için fiilde sayı düşük.
+  const MODI = {
+    normal: { ad: 'Karışık', ziel: 20, neu: 6, neuTr: 'yeni öğe (fiil + isim yarı yarıya)' },
+    verben: { ad: 'Fiiller', ziel: 20, neu: 3, neuTr: 'yeni fiil' },
+    woerter: { ad: 'Kelimeler (isimler)', ziel: 20, neu: 10, neuTr: 'yeni isim' },
+    ndek: { ad: 'n-Deklination', ziel: 15, neu: 5, neuTr: 'yeni n-Deklination ismi' },
+    refl: { ad: 'Dönüşlü fiiller', ziel: 15, neu: 3, neuTr: 'yeni dönüşlü fiil' },
+    zayif: { ad: 'Zayıflar', ziel: 10, neu: 0, neuTr: '' },
+  };
   let S;
   try { S = Object.assign({}, DEF, JSON.parse(localStorage.getItem(KEY) || '{}')); } catch (e) { S = JSON.parse(JSON.stringify(DEF)); }
   S.einst = Object.assign({}, DEF.einst, S.einst);
+  S.einst.modi = S.einst.modi || {};
+  Object.keys(MODI).forEach(m => { S.einst.modi[m] = Object.assign({ ziel: MODI[m].ziel, neu: MODI[m].neu }, S.einst.modi[m]); });
+  const ziel = m => S.einst.modi[m].ziel;
+  const neuMax = m => S.einst.modi[m].neu;
+  // bugünün bölüm sayacı
+  const heuteM = m => { const d = heute(); d.modi = d.modi || {}; return d.modi[m] || (d.modi[m] = { n: 0, richtig: 0, fast: 0, falsch: 0, neu: 0 }); };
   function save() {
     try {
       if (S.log.length > 3000) S.log = S.log.slice(-3000);
@@ -135,6 +151,7 @@
     S.items[id] = { seit: t };
     const d = heute();
     if (id[0] === 'v') d.neuV++; else d.neuN++;
+    heuteM(session.modus).neu++;
     // fiil: önce anlamı hatırla, sonra tam ipuçlu cümle kur, sonra yardımsız anlam
     const us = id[0] === 'v' ? ['abr'].concat(unitsOf(id).includes('satz') ? ['satz'] : [], ['bed']) : unitsOf(id);
     if (bekannt) {
@@ -149,13 +166,16 @@
 
   // ================= Oturum / kuyruk =================
   // modus: normal (karışık) · zayif · ndek (n-Deklination odak) · refl (dönüşlü fiiller odak)
-  const session = { q: 0, cats: { satz: 0, wort: 0, anlam: 0 }, letzte: [], requeue: [], modus: 'normal', zielGesehen: false, extra: false };
+  // modus: normal · verben · woerter · ndek · refl · zayif
+  const session = { q: 0, cats: { satz: 0, wort: 0, anlam: 0 }, letzte: [], requeue: [], modus: 'normal', zielGesehen: {}, extra: false };
   const NDEK_ORDER = NOUN_ORDER.filter(n => n.weak).concat(NOUN_ORDER.filter(n => n.falle));
   // tuzak isimleri araya serpiştir: 3 n-Deklination, 1 tuzak
   (function () { const w = NDEK_ORDER.filter(n => n.weak), f = NDEK_ORDER.filter(n => n.falle); NDEK_ORDER.length = 0;
     while (w.length || f.length) { NDEK_ORDER.push(...w.splice(0, 3)); if (f.length) NDEK_ORDER.push(f.shift()); } })();
   const REFL_ORDER = VERB_ORDER.filter(v => v.refl);
   const FILTER = {
+    verben: u => itemOf(u)[0] === 'v',
+    woerter: u => itemOf(u)[0] !== 'v' && typOf(u) === 'wort',
     zayif: u => schwach(itemOf(u)),
     ndek: u => istNdek(itemOf(u)),
     refl: u => istRefl(itemOf(u)),
@@ -177,15 +197,22 @@
     return Object.keys(S.karten).filter(u => S.karten[u].due <= t && (!filterFn || filterFn(u)));
   }
 
+  // bölümün sırasındaki yeni öğe (bugünkü sınır dolmadıysa)
   function naechsteNeu() {
-    const d = heute();
-    const extra = session.extra ? 5 : 0;
-    const wantV = d.neuV < S.einst.neuV + extra, wantN = d.neuN < S.einst.neuN + extra;
-    if (!wantV && !wantN) return null;
-    const v = wantV && VERB_ORDER.find(x => !S.items[x.id]);
-    const n = wantN && NOUN_ORDER.find(x => !S.items[x.id]);
-    if (v && n) return (d.neuV <= d.neuN) ? v.id : n.id;
-    return (v && v.id) || (n && n.id) || null;
+    const m = session.modus, hm = heuteM(m);
+    const max = neuMax(m) + (session.extra ? 5 : 0);
+    if (hm.neu >= max) return null;
+    const frei = order => { const x = order.find(x => !S.items[x.id]); return x && x.id; };
+    if (m === 'verben') return frei(VERB_ORDER);
+    if (m === 'woerter') return frei(NOUN_ORDER);
+    if (m === 'ndek') return frei(NDEK_ORDER);
+    if (m === 'refl') return frei(REFL_ORDER);
+    if (m === 'normal') {
+      // karışıkta fiil ve isim sırayla
+      const v = frei(VERB_ORDER), n = frei(NOUN_ORDER);
+      return hm.neu % 2 === 0 ? (v || n) : (n || v);
+    }
+    return null;
   }
 
   function schwach(id) {
@@ -200,22 +227,11 @@
     const filter = FILTER[session.modus] || null;
     let due = faellig(filter);
 
-    // 2) yeni öğe: hiç vade yoksa ya da her 5 soruda bir (kota dolmadıysa)
-    if (session.modus === 'normal') {
-      const neu = naechsteNeu();
-      if (neu && (due.length === 0 || session.q - (session.letzteNeu ?? -99) >= 5)) {
-        session.letzteNeu = session.q;
-        return { neu };
-      }
-    }
-    // odak modunda kota yok: vade azsa sıradaki n-Deklination ismi / dönüşlü fiil tanıtılır (her 3 soruda bir)
-    if (session.modus === 'ndek' || session.modus === 'refl') {
-      const order = session.modus === 'ndek' ? NDEK_ORDER : REFL_ORDER;
-      const neu = order.find(x => !S.items[x.id]);
-      if (neu && (due.length < 3 || session.q - (session.letzteNeu ?? -99) >= 3)) {
-        session.letzteNeu = session.q;
-        return { neu: neu.id };
-      }
+    // 2) yeni öğe: vade azsa ya da her 4 soruda bir (bölümün günlük sınırı dolmadıysa)
+    const neu = naechsteNeu();
+    if (neu && (due.length < 2 || session.q - (session.letzteNeu ?? -99) >= 4)) {
+      session.letzteNeu = session.q;
+      return { neu };
     }
     if (!due.length) {
       // öğrenme aşamasındaki kartlar (yeni ya da az önce yanlış) 15 dk içindeyse öne çekilir
@@ -223,7 +239,7 @@
       if (bald.length) due = bald;
     }
     if (!due.length) {
-      if (session.modus !== 'normal') {
+      if (session.modus === 'zayif' || (session.extra && filter)) {
         const pool = Object.keys(S.karten).filter(u => filter(u) && typOf(u) !== 'bed');
         if (!pool.length) return null;
         pool.sort((a, b) => FSRS.currentR(S.karten[a], now()) - FSRS.currentR(S.karten[b], now()));
@@ -575,11 +591,11 @@
 
   function zeige() {
     renderHedef();
-    const d = heute();
-    if (d.n >= S.einst.ziel && !session.zielGesehen && session.modus === 'normal') {
-      session.zielGesehen = true;
+    const d = heuteM(session.modus);
+    if (d.n >= ziel(session.modus) && !session.zielGesehen[session.modus]) {
+      session.zielGesehen[session.modus] = true;
       kart.innerHTML = `<div class="bos"><div class="buyuk">Bugünlük tamam.</div>
-        <div class="soluk">${d.n} soru, ${d.richtig} doğru, ${d.fast} küçük hata, ${d.falsch} yanlış.</div>
+        <div class="soluk">${esc(MODI[session.modus].ad)}: ${d.n} soru, ${d.richtig} doğru, ${d.fast} küçük hata, ${d.falsch} yanlış.</div>
         <div class="sira"><button class="btn ana" data-act="weiter" type="button">Devam et</button></div></div>`;
       aktuell = { typ: 'pause' };
       $('#durum-satiri').innerHTML = '';
@@ -589,10 +605,11 @@
     $('#durum-satiri').innerHTML = '';
     if (!sel) {
       aktuell = { typ: 'leer' };
-      kart.innerHTML = session.modus !== 'normal'
-        ? `<div class="bos"><div class="buyuk">${{ zayif: 'Zayıf öğe yok.', ndek: 'n-Deklination: şimdilik hepsi tamam.', refl: 'Dönüşlü fiiller: şimdilik hepsi tamam.' }[session.modus]}</div><div class="soluk">Sıradaki tekrar: ${naechsteFaelligkeit()}.</div><button class="btn ana" data-act="normal" type="button">Karışık çalışmaya dön</button></div>`
-        : `<div class="bos"><div class="buyuk">Şu an tekrar edilecek bir şey yok.</div>
-          <div class="soluk">Sıradaki tekrar: ${naechsteFaelligkeit()}. İstersen ekstra çalış: 5 yeni fiil / isim ya da unutmaya en yakın kartlar.</div>
+      const m = session.modus, hm = heuteM(m);
+      kart.innerHTML = m === 'zayif'
+        ? `<div class="bos"><div class="buyuk">Zayıf öğe yok.</div><div class="soluk">Yanlış yaptıkların burada toplanır.</div><button class="btn ana" data-act="normal" type="button">Karışık çalışmaya dön</button></div>`
+        : `<div class="bos"><div class="buyuk">${esc(MODI[m].ad)}: şu an tekrar yok.</div>
+          <div class="soluk">Bugün ${hm.n} soru, ${hm.neu} / ${neuMax(m)} ${esc(MODI[m].neuTr)}. Sıradaki tekrar: ${naechsteFaelligkeit()}.<br>İstersen ekstra çalış: bu bölümden 5 yeni öğe ya da unutmaya en yakın kartlar.</div>
           <button class="btn ana" data-act="extra" type="button">Ekstra çalış</button></div>`;
       return;
     }
@@ -702,6 +719,7 @@
     const urteil = g === 3 ? 'richtig' : g === 2 ? 'fast' : 'falsch';
     const d = heute();
     d.n++; d[urteil]++;
+    const dm = heuteM(session.modus); dm.n++; dm[urteil]++;
     d[CAT[q.typ]] = (d[CAT[q.typ]] || 0) + 1;
     session.q++;
     session.cats[CAT[q.typ]]++;
@@ -829,12 +847,14 @@
   }
 
   // ================= Görünümler =================
+  // üstteki sayaç: seçili bölümün bugünkü hedefi
   function renderHedef() {
-    const d = heute();
+    const m = session.modus, d = heuteM(m), z = ziel(m);
     $('#hedef-n').textContent = d.n;
-    $('#hedef-z').textContent = S.einst.ziel;
-    $('#hedef-dolu').style.width = Math.min(100, d.n / S.einst.ziel * 100) + '%';
-    $('#hedef').classList.toggle('tamam', d.n >= S.einst.ziel);
+    $('#hedef-z').textContent = z;
+    $('#hedef-dolu').style.width = Math.min(100, d.n / z * 100) + '%';
+    $('#hedef').classList.toggle('tamam', d.n >= z);
+    $('#hedef').title = `${MODI[m].ad}: bugün ${d.n} / ${z} soru · yeni ${d.neu} / ${neuMax(m)}`;
   }
 
   function itemStatus(id) {
@@ -887,15 +907,16 @@
     const sitzt = Object.keys(S.items).filter(id => itemStatus(id) === 'sitzt').length;
     const d = heute();
     const ges = Object.values(S.tage).reduce((a, x) => a + x.n, 0);
-    $('#ozet').innerHTML = [[d.n + ' / ' + S.einst.ziel, 'bugün'], [streak, 'gün seri'], [items, 'öğrenilen öğe'], [sitzt, 'oturmuş (21+ gün)'], [ges, 'toplam cevap']]
+    const bolum = x => Object.keys(MODI).filter(m => x.modi && x.modi[m] && x.modi[m].n)
+      .map(m => `${esc(MODI[m].ad)} ${x.modi[m].n}/${ziel(m)}${x.modi[m].n >= ziel(m) ? ' ✓' : ''}`).join(' · ');
+    $('#ozet').innerHTML = Object.keys(MODI).map(m => { const b = heuteM(m); return `<div class="tile"><div class="sayi">${b.n} / ${ziel(m)}</div><div class="et">bugün · ${esc(MODI[m].ad)}${m !== 'zayif' ? ` · yeni ${b.neu}/${neuMax(m)}` : ''}</div></div>`; }).join('') + [[streak, 'gün seri'], [items, 'öğrenilen öğe'], [sitzt, 'oturmuş (21+ gün)'], [ges, 'toplam cevap']]
       .map(([n, l]) => `<div class="tile"><div class="sayi">${n}</div><div class="et">${l}</div></div>`).join('');
     // grafik
     const W = 640, H = 170, pad = 24, bw = (W - pad * 2) / tage.length;
-    const max = Math.max(S.einst.ziel, ...tage.map(x => x[1].n)) || 1;
+    const max = Math.max(10, ...tage.map(x => x[1].n)) || 1;
     const y = v => H - pad - v / max * (H - pad * 2);
     let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Son 21 günde cevap sayısı">`;
-    svg += `<line x1="${pad}" x2="${W - pad}" y1="${y(S.einst.ziel)}" y2="${y(S.einst.ziel)}" stroke="var(--accent)" stroke-dasharray="4 4" stroke-width="1"/>`;
-    svg += `<text x="${W - pad}" y="${y(S.einst.ziel) - 4}" text-anchor="end">hedef ${S.einst.ziel}</text>`;
+    svg += `<text x="${pad}" y="${pad - 8}">en çok ${max} cevap</text>`;
     tage.forEach(([k, x], i) => {
       const x0 = pad + i * bw + 2, w = bw - 4;
       let acc = 0;
@@ -908,8 +929,8 @@
     });
     svg += `<line x1="${pad}" x2="${W - pad}" y1="${H - pad}" y2="${H - pad}" stroke="var(--line)"/></svg>`;
     $('#grafik').innerHTML = svg;
-    $('#gun-tablo').innerHTML = `<thead><tr><th>gün</th><th class="num">cevap</th><th class="num">cümle</th><th class="num">kelime</th><th class="num">anlam</th><th class="num">doğru</th><th class="num">küçük h.</th><th class="num">yanlış</th><th class="num">yeni</th><th>hedef</th></tr></thead><tbody>` +
-      tage.slice().reverse().filter(([, x]) => x.n || x.neuV || x.neuN).map(([k, x]) => `<tr><td>${k}</td><td class="num">${x.n}</td><td class="num">${x.satz || 0}</td><td class="num">${x.wort || 0}</td><td class="num">${x.anlam || 0}</td><td class="num e-richtig">${x.richtig}</td><td class="num e-fast">${x.fast}</td><td class="num e-falsch">${x.falsch}</td><td class="num">${(x.neuV || 0) + (x.neuN || 0)}</td><td>${x.n >= S.einst.ziel ? '✓' : ''}</td></tr>`).join('') + '</tbody>';
+    $('#gun-tablo').innerHTML = `<thead><tr><th>gün</th><th class="num">cevap</th><th class="num">cümle</th><th class="num">kelime</th><th class="num">anlam</th><th class="num">doğru</th><th class="num">küçük h.</th><th class="num">yanlış</th><th class="num">yeni</th><th>bölümler</th></tr></thead><tbody>` +
+      tage.slice().reverse().filter(([, x]) => x.n || x.neuV || x.neuN).map(([k, x]) => `<tr><td>${k}</td><td class="num">${x.n}</td><td class="num">${x.satz || 0}</td><td class="num">${x.wort || 0}</td><td class="num">${x.anlam || 0}</td><td class="num e-richtig">${x.richtig}</td><td class="num e-fast">${x.fast}</td><td class="num e-falsch">${x.falsch}</td><td class="num">${(x.neuV || 0) + (x.neuN || 0)}</td><td>${bolum(x)}</td></tr>`).join('') + '</tbody>';
     $('#feedback').innerHTML = FEEDBACK.length ? FEEDBACK.slice().reverse().slice(0, 60).map(f => `<div class="oge"><span class="de">${esc(f.antwort || '')} → ${deHTML(f.richtig || '')}</span><span class="tr">${esc(f.text || '')}</span><span class="yan"><span class="durum-pil ${f.urteil === 'richtig' ? 'sitzt' : f.urteil === 'falsch' ? 'schwach' : 'lernt'}">${esc(f.zeit || '')}</span></span></div>`).join('')
       : '<div class="oge"><span class="tr">Henüz yok. Log dosyasını pushlayıp Claude\'a "sonuçlarıma bak" de.</span></div>';
     $('#son-tablo').innerHTML = `<thead><tr><th>zaman</th><th>tür</th><th>öğe</th><th>cevap</th><th>sonuç</th><th>doğrusu</th></tr></thead><tbody>` +
@@ -917,7 +938,10 @@
   }
 
   function renderAyar() {
-    $('#a-ziel').value = S.einst.ziel; $('#a-nv').value = S.einst.neuV; $('#a-nn').value = S.einst.neuN;
+    $('#a-modi').innerHTML = `<thead><tr><th>bölüm</th><th class="num">günlük hedef (soru)</th><th class="num">günde yeni</th></tr></thead><tbody>` +
+      Object.keys(MODI).map(m => `<tr><td>${esc(MODI[m].ad)}</td>
+        <td class="num"><input type="number" min="5" max="300" id="z-${m}" value="${ziel(m)}" aria-label="${esc(MODI[m].ad)} hedef"></td>
+        <td class="num">${m === 'zayif' ? '—' : `<input type="number" min="0" max="50" id="n-${m}" value="${neuMax(m)}" aria-label="${esc(MODI[m].ad)} yeni"> <span class="soluk">${esc(MODI[m].neuTr)}</span>`}</td></tr>`).join('') + '</tbody>';
     $('#a-ret').value = String(S.einst.ret);
   }
 
@@ -998,17 +1022,27 @@
     einfuehren(b.dataset.add, false);
     renderListe();
   });
-  function setModus(m) { session.modus = m; session.letzteNeu = null; session.cats = { satz: 0, wort: 0, anlam: 0 }; session.letzte = []; $('#odak').value = m; if (m === 'ndek' || m === 'refl') modulEinheiten(); }
+  function setModus(m) {
+    if (!MODI[m]) m = 'normal';
+    session.modus = m; session.letzteNeu = null; session.extra = false;
+    session.cats = { satz: 0, wort: 0, anlam: 0 }; session.letzte = []; session.requeue = [];
+    $('#odak').value = m;
+    if (m === 'ndek' || m === 'refl') modulEinheiten();
+    try { localStorage.setItem('almanca-tekrar-bolum', m); } catch (e) { /* yok */ }
+    renderHedef();
+  }
   $('#zayif-basla').addEventListener('click', () => { setModus('zayif'); zeigView('calis'); zeige(); });
   $('#odak').addEventListener('change', e => { setModus(e.target.value); zeige(); });
 
-  ['a-ziel', 'a-nv', 'a-nn', 'a-ret'].forEach(id => $('#' + id).addEventListener('change', () => {
-    S.einst.ziel = Math.max(5, +$('#a-ziel').value || 20);
-    S.einst.neuV = Math.max(0, +$('#a-nv').value || 0);
-    S.einst.neuN = Math.max(0, +$('#a-nn').value || 0);
-    S.einst.ret = +$('#a-ret').value || 0.9;
+  $('#v-ayar').addEventListener('change', e => {
+    const id = e.target.id || '';
+    const m = id.slice(2);
+    if (id.startsWith('z-') && MODI[m]) S.einst.modi[m].ziel = Math.max(5, Math.round(+e.target.value) || MODI[m].ziel);
+    else if (id.startsWith('n-') && MODI[m]) S.einst.modi[m].neu = Math.max(0, Math.round(+e.target.value) || 0);
+    else if (id === 'a-ret') S.einst.ret = +e.target.value || 0.9;
+    else return;
     save(); renderHedef();
-  }));
+  });
   $('#klasor').addEventListener('click', ordnerVerbinden);
   $('#log-indir').addEventListener('click', () => herunterladen('log.csv', '﻿' + CSV_KOPF + '\n' + S.log.map(csvZeile).join('\n') + '\n', 'text/csv;charset=utf-8'));
   $('#yedek-indir').addEventListener('click', () => herunterladen('zustand.json', JSON.stringify(S), 'application/json'));
@@ -1026,6 +1060,7 @@
   // ================= Başlat =================
   const start = (location.hash || '').replace('#', '');
   zeigView(['calis', 'zayif', 'liste', 'gecmis', 'ayar'].includes(start) ? start : 'calis');
+  try { setModus(localStorage.getItem('almanca-tekrar-bolum') || 'normal'); } catch (e) { setModus('normal'); }
   zeige();
   ordnerLaden();
   window.__tekrar = { get S() { return S; }, get aktuell() { return aktuell; }, VERBEN, byId, G,

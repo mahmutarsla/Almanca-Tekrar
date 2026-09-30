@@ -30,7 +30,7 @@
   - modus: `abr` (TR→DE fiil), `bed` (DE→TR anlam), `frm` (çekim), `satz` (cümle kur), `luecke` (Goethe boşluk), `wort` (isim), `ndek` (n-Deklination), `refl` (dönüşlü zamir), `yeni`
   - ergebnis: `richtig`, `fast`, `falsch`, `neu`, `bekannt`
   - notiz: hata etiketleri, `öneri:X` (sistem önerisi kendi notundan farklıysa), `sek:N`, `ipucu:N`
-- `log/zustand.json`: ilerleme yedeği (FSRS kartları).
+- `log/zustand.json`: ilerleme yedeği (FSRS kartları). Bölümler (`MODI` in `js/app.js`): normal, verben, woerter, ndek, refl, zayif; her birinin hedefi/yeni sınırı ayrı, günlük sayaçlar `tage[gün].modi[bölüm]`.
 - Mimari ve gerekçeler: `TASARIM.md`.
 
 ## "Sonuçlarıma bak" dendiğinde

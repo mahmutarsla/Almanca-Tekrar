@@ -18,11 +18,20 @@ A2 → B1 için yerel çalışma uygulaması. Kelimeler Goethe-Zertifikat B1 lis
 ## Sekmeler
 
 - **Çalış:** karışık sorular. Yeni fiil ya da isim önce tanıtılır, bir kez yazarsın ("Zaten biliyorum" ile atlayabilirsin).
-  Üstteki **Odak** menüsü: Karışık · **n-Deklination** (den Kollegen, des Namens + tuzaklar: der Lehrer) · **Dönüşlü fiiller** (wir freuen uns, Beeil dich!, ich sehe es mir an) · Zayıflar.
+  Üstteki **Bölüm** menüsü, her birinin kendi günlük hedefi ve yeni sınırı var (Ayarlar'dan değişir):
+
+  | Bölüm | Hedef (soru) | Günde yeni |
+  |---|---|---|
+  | Karışık | 20 | 6 (fiil + isim) |
+  | Fiiller | 20 | 3 fiil (her fiil ~5 soru açar) |
+  | Kelimeler (isimler) | 20 | 10 isim |
+  | n-Deklination | 15 | 5 isim |
+  | Dönüşlü fiiller | 15 | 3 fiil |
+  | Zayıflar | 10 | — |
 - **Zayıflar:** yanlış yaptıkların, yeni cümlelerde tekrar.
 - **Kelimeler:** bütün liste, durumlarıyla. İstediğini "Ekle" ile hemen öğrenmeye alabilirsin.
 - **Geçmiş:** günlük hedef, son 21 gün, Claude'un düzeltmeleri, son cevaplar.
-- **Ayarlar:** günlük hedef, günde kaç yeni fiil/isim, log klasörü, yedek.
+- **Ayarlar:** bölüm başına günlük hedef ve yeni sınırı, log klasörü, yedek.
 
 ## Kısayollar
 

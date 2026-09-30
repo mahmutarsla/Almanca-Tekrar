@@ -32,9 +32,11 @@
 <main>
   <section id="v-calis" class="view">
     <div class="odak-satir">
-      <label for="odak">Odak</label>
+      <label for="odak">Bölüm</label>
       <select id="odak">
         <option value="normal">Karışık (hepsi)</option>
+        <option value="verben">Fiiller</option>
+        <option value="woerter">Kelimeler (isimler)</option>
         <option value="ndek">n-Deklination</option>
         <option value="refl">Dönüşlü fiiller</option>
         <option value="zayif">Zayıflar</option>
@@ -89,10 +91,9 @@
 
   <section id="v-ayar" class="view" hidden>
     <h1>Ayarlar</h1>
+    <p class="aciklama">Her bölümün kendi günlük hedefi ve yeni öğe sınırı var. Birinde çalışınca diğerinin sayacı değişmez; ama öğrendiğin kelimeler Karışık'ta da tekrar gelir.</p>
+    <div class="tablo-kap"><table class="tablo ayar-tablo" id="a-modi"></table></div>
     <div class="form">
-      <label for="a-ziel">Günlük hedef (soru)</label><input id="a-ziel" type="number" min="5" max="200">
-      <label for="a-nv">Günde yeni fiil</label><input id="a-nv" type="number" min="0" max="50">
-      <label for="a-nn">Günde yeni isim</label><input id="a-nn" type="number" min="0" max="50">
       <label for="a-ret">Hedef hatırlama</label>
       <select id="a-ret"><option value="0.85">%85 (daha az tekrar)</option><option value="0.9">%90 (önerilen)</option><option value="0.95">%95 (daha sık tekrar)</option></select>
     </div>
