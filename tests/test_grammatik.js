@@ -73,6 +73,23 @@ const abfahren = { inf: 'abfahren', base: 'fahren', pre: 'ab', sp: '', p3: 'fäh
 eq(G.luecke(abfahren, 'Wann fährt der Zug ab?').answer, 'fährt ab', 'luecke sep');
 eq(G.luecke(abfahren, 'Der Zug ist schon abgefahren.').answer, 'abgefahren', 'luecke p2');
 
+// n-Deklination, Genitiv
+eq(G.np(N('der', 'Name', { weak: true, gen: 'Namens' }), 'G', { det: 'def' }).join(' '), 'des Namens', 'Genitiv Namens');
+eq(G.np(N('der', 'Student', { weak: true, gen: 'Studenten' }), 'A', { det: 'indef' }).join(' '), 'einen Studenten', 'einen Studenten');
+eq(G.np(N('der', 'Lehrer', { gen: 'Lehrers' }), 'D', { det: 'poss', poss: 'ich' }).join(' '), 'meinem Lehrer', 'kein n bei Lehrer');
+eq(G.np(N('der', 'Arzt', { gen: 'Arztes' }), 'G', { det: 'def' }).join(' '), 'des Arztes', 'des Arztes');
+
+// Dönüşlü: emir kipi
+const IV = (base, p3, x) => Object.assign({ base, p3, pre: '', sp: '' }, x || {});
+eq(G.imperativDu(IV('beeilen', 'beeilt')), 'beeil', 'beeil dich');
+eq(G.imperativDu(IV('beruhigen', 'beruhigt')), 'beruhige', 'beruhige dich');
+eq(G.imperativDu(IV('bewerben', 'bewirbt')), 'bewirb', 'bewirb dich');
+eq(G.imperativDu(IV('sehen', 'sieht', { pre: 'an' })), 'sieh', 'sieh es dir an');
+eq(G.imperativDu(IV('konzentrieren', 'konzentriert')), 'konzentrier', 'konzentrier dich');
+eq(G.imperativDu(IV('kümmern', 'kümmert')), 'kümmere', 'kümmere dich');
+eq(G.imperativDu(IV('ziehen', 'zieht', { pre: 'an' })), 'zieh', 'zieh dich an');
+eq(G.imperativDu(IV('lesen', 'liest')), 'lies', 'lies');
+
 // FSRS
 let c = FSRS.review({}, 3, 0);
 eq(Math.round(c.S * 100) / 100, 2.31, 'S0 good');

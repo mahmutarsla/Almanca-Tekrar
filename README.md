@@ -17,7 +17,8 @@ A2 → B1 için yerel çalışma uygulaması. Kelimeler Goethe-Zertifikat B1 lis
 
 ## Sekmeler
 
-- **Çalış:** karışık sorular. Yeni fiil ya da isim önce tanıtılır ("Zaten biliyorum" ile atlayabilirsin).
+- **Çalış:** karışık sorular. Yeni fiil ya da isim önce tanıtılır, bir kez yazarsın ("Zaten biliyorum" ile atlayabilirsin).
+  Üstteki **Odak** menüsü: Karışık · **n-Deklination** (den Kollegen, des Namens + tuzaklar: der Lehrer) · **Dönüşlü fiiller** (wir freuen uns, Beeil dich!, ich sehe es mir an) · Zayıflar.
 - **Zayıflar:** yanlış yaptıkların, yeni cümlelerde tekrar.
 - **Kelimeler:** bütün liste, durumlarıyla. İstediğini "Ekle" ile hemen öğrenmeye alabilirsin.
 - **Geçmiş:** günlük hedef, son 21 gün, Claude'un düzeltmeleri, son cevaplar.
@@ -25,7 +26,7 @@ A2 → B1 için yerel çalışma uygulaması. Kelimeler Goethe-Zertifikat B1 lis
 
 ## Kısayollar
 
-`Enter` kontrol / geç · `1` `2` `3` not (yanlış / küçük hata / doğru) · `Boşluk` anlamı göster · `B` zaten biliyorum ·
+`Enter` kontrol / geç · `1` `2` `3` not (yanlış / küçük hata / doğru) ·
 `a:` → ä, `o:` → ö, `u:` → ü, `s:` → ß
 
 Artikel renkleri: <b>der</b> mavi · <b>die</b> kırmızı · <b>das</b> yeşil · çoğul mor.

@@ -216,3 +216,10 @@ main { max-width: 860px; margin: 0 auto; padding: 1.5rem 16px 4rem; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
 .bosluk { color: var(--accent); font-weight: 700; letter-spacing: .05em; }
 .btn.ana kbd { background: transparent; color: inherit; border-color: color-mix(in srgb, var(--accent-ink) 45%, transparent); }
+.odak-satir { display: flex; gap: .6rem; align-items: center; flex-wrap: wrap; margin-bottom: .6rem; }
+.odak-satir label { font-family: var(--f-mono); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.odak-satir select { padding: .35rem .5rem; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); }
+.odak-satir .ust-bilgi { margin: 0; }
+.kural { background: var(--accent-soft); border-radius: 8px; padding: .5rem .75rem; font-size: .95rem; }
+/* Türkçe sayfada uppercase Almanca "i"yi "İ" yapıyor (WİR, İHR): bu etiketler küçük harf kalır */
+.tur, .formlar .et, .gorev-satir .et, .satir .et { text-transform: none; letter-spacing: .02em; }

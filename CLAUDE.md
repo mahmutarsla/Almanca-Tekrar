@@ -27,7 +27,7 @@
 - Üretilen: `daten/verben.js`, `daten/nomen.js` → **elle düzenleme**, `python3 tools/build.py` çalıştır.
 - `daten/feedback.js`: Claude'un düzeltmeleri, uygulamada Geçmiş sekmesinde görünür.
 - `log/log.csv` (uygulama yazar, `;` ayırıcı, UTF-8 BOM): `zeit;modus;id;item;frage;antwort;ergebnis;loesung;notiz`
-  - modus: `abr` (TR→DE fiil), `bed` (DE→TR anlam, sözlü), `frm` (çekim), `satz` (cümle kur), `luecke` (Goethe boşluk), `wort` (isim), `yeni`
+  - modus: `abr` (TR→DE fiil), `bed` (DE→TR anlam), `frm` (çekim), `satz` (cümle kur), `luecke` (Goethe boşluk), `wort` (isim), `ndek` (n-Deklination), `refl` (dönüşlü zamir), `yeni`
   - ergebnis: `richtig`, `fast`, `falsch`, `neu`, `bekannt`
   - notiz: hata etiketleri, `öneri:X` (sistem önerisi kendi notundan farklıysa), `sek:N`, `ipucu:N`
 - `log/zustand.json`: ilerleme yedeği (FSRS kartları).
@@ -45,11 +45,14 @@
 5. `VERLAUF.md`'ye tarihli not düş: ne yapıldı, hatalar, eklenenler, son incelenen log satırı (zaman damgası).
 6. Doğrula ve pushla:
    ```
-   python3 tools/build.py && node tests/test_grammatik.js && node tools/stichprobe.js 1
+   python3 tools/build.py && node tests/test_grammatik.js && node tools/stichprobe.js 1 && node tools/stichprobe_module.js refl
    ```
    Build hata verirse (yanlış artikel, bulunamayan isim) düzelt. Yeni kalıpların örnek cümlelerini gözle kontrol et.
 
 ## İçerik eklerken
+
+- n-Deklination listesi: `tools/build.py` içinde `WEAK_LIST` (bileşikler otomatik), tuzaklar `FALLE`. Cümle şablonları `js/grammatik.js` → `ND_PERSON / ND_TIER / ND_SACHE`.
+- Dönüşlü alıştırmadan çıkarılan fiiller: `REFL_AUS` (tümleç zorunlu ya da öznesi şey). Emir kipi yalnız `IMP_OK` fiillerinde.
 
 - Yeni isim Goethe listesinde yoksa `quellen/nomen_extra.txt`'e çoğuluyla ekle.
 - Kalıp satırı biçimi `quellen/rahmen.txt` başında anlatılıyor (`P` kişi, `0` artikelsiz, `~` iyelik, `*` sıfat, `+` belirsiz, `(Pl)` çoğul, `T =` zamanlar, `X =` kapatılan özellikler).

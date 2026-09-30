@@ -31,6 +31,25 @@ fiili gerçekten bilip bilmediğin ölçülmüyor. Buna "kalıp okuma" diyorsun.
 | Karışık | Tür oranı cümle 5 : kelime 3 : anlam 2, aynı tür en fazla 2 kez üst üste, aynı öğe arka arkaya gelmez. |
 | Artikel | Her isim her yerde artikel rengiyle: **der mavi, die kırmızı, das yeşil, çoğul mor**. Kelime sorusunda artikel yanlışsa cevap yanlış sayılır. |
 
+## Odak modülleri
+
+- **n-Deklination:** 50 zayıf eril isim (Goethe listesi + Präsident, Dozent, Kommilitone, milliyetler, hayvanlar) ve 20 tuzak isim
+  (der Lehrer, der Professor, der Käse, der See … n almaz). Tanıtımda çekim tablosu. Alıştırma: cümlede boşluğa isim öbeği
+  (Ich helfe ___ → dem Kollegen); hâli cümleden çıkarırsın (ipucu seviyesi 0'da hâl yazılır). der / ein / mein- dönüşümlü;
+  Genitiv dahil (des Namens, des Herrn). Her 3 n-Deklination isminden sonra bir tuzak gelir.
+- **Dönüşlü fiiller:** 77 dönüşlü fiil. Tanıtımda zamir tablosu. Alıştırma: kişi + zaman (Präsens, Perfekt, emir kipi) ile
+  kısa cümle; edatlı olanlarda nesne de (Wir freuen uns auf die Reise). Dativ dönüşlülerde `es` (Ich sehe es mir an).
+  Dönüşlü fiiller Perfekt'te hep haben (Wir haben uns umgezogen).
+- Odak modunda her iki sorudan biri doğrudan odak alıştırması, kota yok (yeni öğe her 3 soruda bir).
+
+## Mantık kuralları (denetimde düzeltilenler)
+
+- Aynı Türkçe karşılığı olan kelimeler (111 fiil, 162 isim): TR→DE sorusunda anlamdaşı yazarsan yanlış sayılmaz,
+  "bu da doğru ama aranan başka" deyip tekrar sorar; soruda ayırt edici baş gösterilir (be… → benötigen).
+- Tanıtım kartı sadece okutmaz: kelimeyi bir kez yazdırır. Anlam kartında Türkçesini yazabilirsin.
+- Goethe boşluğunda cevap mastar ise mastar ipucu gösterilmez.
+- Tekrar eden (tramvay, metro, bilet …) ve bölgesel (Knödel, Trottoir …) maddeler öğretilmez.
+
 ## Cevap kontrolü
 
 - Cümleler kelime kelime karşılaştırılır. Eksik kelime yeşil, fazla ya da yanlış kelime kırmızı ve üstü çizili gösterilir.

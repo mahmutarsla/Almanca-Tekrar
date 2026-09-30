@@ -1,7 +1,7 @@
 # Cümle üretici kalıpları.  Biçim:   fiil gösterimi (verben.txt ile aynı) : yuva ; yuva ; ...
 # yuva:  A = … (Akk nesne) | D = … (Dat nesne) | auf+A = … (edatlı) | S = … (özne bir isimse: gefallen, schmecken …)
 # T = izin verilen zamanlar (praes, perf, modal), örn. T = praes
-# X = kapatılan özellikler: keinW (wo(r)-sorusu yok), keineZeit (heute/gestern ile başlama yok)
+# X = kapatılan özellikler: keinW (wo(r)-sorusu yok), keineZeit (heute/gestern ile başlama yok), plSubj (sadece çoğul özne)
 # İsimler Goethe listesinden, artikelleriyle. İşaretler:
 #   P      = kişi (zamir: mich/dir… ya da kişi ismi: der Freund, meine Mutter …)
 #   0 …    = artikelsiz (um Hilfe, für Musik)
@@ -218,3 +218,34 @@ sich erkälten: -
 sich langweilen: -
 sich amüsieren: -
 spazieren gehen: mit+D = P
+# --- Dönüşlü fiiller ---
+sich anmelden: -
+sich duschen: -
+sich verstehen mit: mit+D = P ; T = praes, perf
+sich anschnallen: -
+sich anstrengen: -
+sich aufregen über: über+A = der Lärm, die Verspätung, der Chef, das Wetter, die Politik, der Nachbar~
+sich ausziehen: -
+sich beruhigen: -
+sich bewegen: -
+sich einigen auf: auf+A = der Termin+, der Preis, der Plan*, die Lösung*+ ; X = plSubj
+sich eignen für: S = das Buch*, die Wohnung*, der Kurs*, das Spiel* ; für+A = die Kinder(Pl), die Familie ; X = keinW
+sich irren: -
+sich lohnen: S = die Reise*, der Kurs*, das Angebot*, der Besuch, das Studium ; X = keinW
+sich melden bei: bei+D = P
+sich rasieren: -
+sich schminken: -
+sich umdrehen: -
+sich umziehen: -
+sich verlaufen: - ; T = perf, praes
+sich verletzen: - ; T = perf
+sich verändern: - ; T = perf, praes
+sich waschen: -
+sich vorstellen: -
+sich(D) ansehen: A = der Film*, das Foto*, die Wohnung*, die Stadt*, das Museum*
+sich(D) aussuchen: A = das Kleid*+, die Farbe, das Geschenk*+, der Platz+
+sich(D) leisten: A = das Auto*+, die Reise+, die Wohnung*, der Urlaub
+sich(D) merken: A = die Adresse~, der Name~, die Telefonnummer~, das Wort, die Regel*
+sich(D) überlegen: A = das Angebot*, der Vorschlag*, die Frage*
+sich(D) vorstellen: A = das Leben*, die Zukunft, die Situation*
+sich(D) wünschen: A = das Fahrrad*+, das Buch*+, die Reise*+, der Hund+, das Handy*+

@@ -34,3 +34,23 @@ das Frühjahr, -e | 2 | ilkbahar
 die Aussage, -n | 3 | ifade, beyan
 das Taxi, -s | 1 | taksi
 das Portemonnaie, -s | 2 | cüzdan
+# n-Deklination: listede olmayan sık eril isimler
+der Präsident, -en | 3 | cumhurbaşkanı, başkan
+der Dozent, -en | 3 | öğretim görevlisi (üniversite)
+der Kommilitone, -n | 3 | sınıf arkadaşı (üniversite)
+der Assistent, -en | 3 | asistan
+der Soldat, -en | 3 | asker
+der Pilot, -en | 3 | pilot
+der Psychologe, -n | 3 | psikolog
+der Biologe, -n | 3 | biyolog
+der Affe, -n | 2 | maymun
+der Hase, -n | 2 | tavşan
+der Löwe, -n | 2 | aslan
+der Bär, -en | 2 | ayı
+der Elefant, -en | 2 | fil
+der Türke, -n | 1 | Türk (erkek)
+der Franzose, -n | 2 | Fransız (erkek)
+der Grieche, -n | 2 | Yunan (erkek)
+der Russe, -n | 2 | Rus (erkek)
+der Pole, -n | 2 | Polonyalı (erkek)
+der Chinese, -n | 2 | Çinli (erkek)

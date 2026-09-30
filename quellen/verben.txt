@@ -30,6 +30,7 @@ anklicken | A | 2 | (bir şeye) tıklamak
 ankommen | - | 1 | varmak, gelmek
 ankommen auf | auf+A | 3 | (bir şeye) bağlı olmak (Es kommt darauf an.)
 ankündigen | A | 3 | duyurmak, önceden haber vermek
+sich anmelden | - | 2 | kaydolmak, kayıt yaptırmak
 sich anmelden für | für+A | 2 | (bir şeye) kaydolmak
 annehmen | A | 3 | kabul etmek; varsaymak
 anrufen | A | 1 | (birini) telefonla aramak
@@ -175,6 +176,7 @@ drucken | A | 2 | basmak, yazdırmak
 drücken | A | 2 | bastırmak, basmak (düğme)
 dürfen | - | 1 | -ebilmek (izinli olmak)
 duschen | - | 1 | duş almak
+sich duschen | - | 1 | duş almak (kendini yıkamak)
 duzen | A | 3 | (birine) "sen" diye hitap etmek
 sich eignen für | für+A | 3 | (bir şeye) uygun olmak
 eilen | - | 3 | acele etmek; acil olmak
@@ -610,6 +612,7 @@ versichern | A | 3 | sigortalamak
 versprechen | D A | 2 | (birine bir şey) söz vermek
 verstecken | A | 3 | saklamak, gizlemek
 verstehen | A | 1 | anlamak
+sich verstehen mit | mit+D | 2 | (biriyle) anlaşmak, iyi geçinmek
 versuchen | A | 2 | denemek
 verteilen | A | 3 | dağıtmak
 vertrauen | D | 3 | (birine) güvenmek

@@ -31,7 +31,16 @@
 
 <main>
   <section id="v-calis" class="view">
-    <div class="ust-bilgi" id="durum-satiri"></div>
+    <div class="odak-satir">
+      <label for="odak">Odak</label>
+      <select id="odak">
+        <option value="normal">Karışık (hepsi)</option>
+        <option value="ndek">n-Deklination</option>
+        <option value="refl">Dönüşlü fiiller</option>
+        <option value="zayif">Zayıflar</option>
+      </select>
+      <span class="ust-bilgi" id="durum-satiri"></span>
+    </div>
     <div id="kart" class="kart" aria-live="polite"></div>
     <div class="klavye" id="umlaut">
       <button type="button" data-c="ä">ä</button><button type="button" data-c="ö">ö</button>
@@ -55,6 +64,7 @@
       <input id="ara" type="search" placeholder="Ara: Almanca ya da Türkçe" autocomplete="off">
       <select id="tur" aria-label="Tür">
         <option value="alle">Hepsi</option><option value="v">Fiiller</option><option value="n">İsimler</option>
+        <option value="ndek">n-Deklination (+ tuzaklar)</option><option value="refl">Dönüşlü fiiller</option>
       </select>
       <select id="durum" aria-label="Durum">
         <option value="alle">Her durum</option><option value="neu">Yeni</option><option value="lernt">Öğreniliyor</option>

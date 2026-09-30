@@ -53,7 +53,8 @@ WEAK_LIST = {"Mensch", "Herr", "Nachbar", "Bauer", "Bär", "Held", "Prinz", "Gra
              "Soldat", "Automat", "Kandidat", "Pilot", "Architekt", "Präsident", "Student", "Patient",
              "Assistent", "Dozent", "Journalist", "Polizist", "Tourist", "Spezialist", "Praktikant",
              "Elefant", "Migrant", "Fotograf", "Typ", "Kunde", "Kollege", "Junge", "Name", "Experte",
-             "Zeuge", "Neffe", "Affe", "Hase", "Löwe", "Gedanke", "Buchstabe", "Friede"}
+             "Zeuge", "Neffe", "Affe", "Hase", "Löwe", "Gedanke", "Buchstabe", "Friede",
+             "Kommilitone", "Psychologe", "Biologe", "Türke", "Franzose", "Grieche", "Russe", "Pole", "Chinese"}
 NOT_WEAK = {"See", "Käse", "Staat", "Schmerz", "Professor", "Doktor", "Motor", "Autor", "Direktor",
             "Angehörige", "Angestellte", "Bekannte", "Erwachsene", "Beamte", "Jugendliche", "Kranke",
             "Tote", "Verwandte", "Studierende", "Serviceangestellte"}
@@ -64,7 +65,52 @@ ADJ_NOUNS = {"Angehörige", "Angestellte", "Bekannte", "Erwachsene", "Beamte", "
 def is_weak(art, lemma, pl):
     if art != "der" or lemma in NOT_WEAK:
         return False
-    return lemma in WEAK_LIST
+    if lemma in WEAK_LIST:
+        return True
+    # bileşik isimler: Geldautomat, Vorname, Familienname …
+    return pl in ("-n", "-en") and any(lemma.endswith(w.lower()) and len(lemma) > len(w) for w in WEAK_LIST)
+
+
+GEN_NS = ("Name", "Gedanke", "Buchstabe", "Friede", "Glaube", "Wille")
+# n almayan eril isimler: n-Deklination alıştırmasında tuzak olarak sorulur
+FALLE = {"Lehrer", "Freund", "Arzt", "Chef", "Professor", "Doktor", "Autor", "Direktor", "Sohn", "Onkel",
+         "Bruder", "Vater", "Mann", "Kellner", "Partner", "Käse", "See", "Schüler", "Bus", "Hund"}
+
+
+def genitiv(art, lemma, weak):
+    if art == "die":
+        return lemma
+    if weak:
+        if lemma == "Herr":
+            return "Herrn"
+        if any(lemma.endswith(w.lower()) or lemma == w for w in GEN_NS):
+            return lemma + "ns"
+        return lemma + ("n" if lemma.endswith("e") or lemma in ("Nachbar", "Bauer") else "en")
+    if re.search(r"(s|ß|x|z|sch)$", lemma):
+        return lemma + ("ses" if lemma.endswith("us") else "es")
+    if re.search(r"[aeiouäöü]$", lemma):
+        return lemma + "s"  # des Sees, des Käses → Käse: -s
+    # tek heceli: des Arztes, des Mannes (‑s de olur: des Manns)
+    if len(re.findall(r"[aeiouäöü]+", lemma.lower())) == 1:
+        return lemma + "es"
+    return lemma + "s"
+
+
+def genitiv_alt(art, lemma, weak, gen):
+    if art == "die" or weak or not gen.endswith("es") or re.search(r"(s|ß|x|z|sch)$", lemma):
+        return None
+    return lemma + "s"
+
+
+# Goethe'deki bozuk / bölgesel / tekrar eden maddeler (kimlikler sabit kalsın diye silinmez, atlanır)
+LEMMA_FIX = {"Hinweise": "Hinweis", "Erdgeschoss/ Ergeschoß": "Erdgeschoss", "Hausfrau/der Hausmann": "Hausfrau",
+             "Stück/-stück": "Stück", "Zeug/-zeug": "Zeug", "Zahncreme/-pasta": "Zahncreme",
+             "Hähnchen/Hühnchen": "Hähnchen", "Müesli/Müsli": "Müsli", "Soße/Sauce": "Soße", "Ski/Schi": "Ski",
+             "Fantasie/Phantasie": "Fantasie", "Rezeption/Reception": "Rezeption"}
+LEMMA_ALT = {"Zahncreme": ["Zahnpasta"], "Hähnchen": ["Hühnchen"], "Soße": ["Sauce"], "Ski": ["Schi"],
+             "Fantasie": ["Phantasie"], "Erdgeschoss": ["Erdgeschoß"], "Müsli": ["Müesli"]}
+SKIP = {"Bancomat/Bankomat", "Bankomat-Karte", "Coiffeur", "Fleischhauer", "Gehsteig", "Knödel", "Trottoir",
+        "Serviceangestellte", "Portemonnaie/Port-", "Nord-/Ostsee", "Phantasie/Fantasie"}
 
 
 nomen = []
@@ -78,8 +124,15 @@ for (n, s), g in zip(tr_lines, g_nouns):
         errors.append(f"nomen.txt:{n}: '{key}' ≠ Goethe '{g['art']} {g['lemma']}'")
         continue
     lemma = re.sub(r"\d+\.$", "", g["lemma"]).strip()
+    skip = lemma in SKIP or any(x["art"] == g["art"] and x["lemma"] == LEMMA_FIX.get(lemma, lemma) and x["tr"] == tr for x in nomen)
+    lemma = LEMMA_FIX.get(lemma, lemma)
     pl = g.get("pl")
+    if lemma == "Hinweis":
+        pl = "-e"
     plural_only = pl is None and "çoğul" in tr
+    if skip:
+        nomen.append({"id": f"n{len(nomen) + 1:04d}", "art": g["art"], "lemma": lemma, "tr": tr, "skip": True, "tier": tier})
+        continue
     nomen.append({
         "id": f"n{len(nomen) + 1:04d}", "art": g["art"], "lemma": lemma, "pl": pl,
         "plf": plural_form(lemma, pl), "tr": tr, "tier": tier,
@@ -104,12 +157,25 @@ for n, s in lines(P("quellen", "nomen_extra.txt")):
     })
     known.add((art, lemma))
 
+for x in nomen:
+    if x.get("skip"):
+        continue
+    x["gen"] = genitiv(x["art"], x["lemma"], x.get("weak"))
+    ga = genitiv_alt(x["art"], x["lemma"], x.get("weak"), x["gen"])
+    if ga:
+        x["genAlt"] = ga
+    if x["lemma"] in LEMMA_ALT:
+        x["alt"] = LEMMA_ALT[x["lemma"]]
+    if x["art"] == "der" and x["lemma"] in FALLE:
+        x["falle"] = True
+
 by_key = {}
 for x in nomen:
-    by_key.setdefault((x["art"], x["lemma"]), x)
+    if not x.get("skip"):
+        by_key.setdefault((x["art"], x["lemma"]), x)
 by_plural = {}
 for x in nomen:
-    if x["plf"]:
+    if x.get("plf") and not x.get("skip"):
         by_plural.setdefault(x["plf"], x)
 
 
@@ -171,10 +237,20 @@ for n, s in lines(P("quellen", "verben.txt")):
     base = inf[len(pre):].strip() if pre else inf
     if pre and not inf.startswith(pre):
         errors.append(f"verben.txt:{n}: ön ek '{pre}' mastarda yok ({inf})")
+    # yardımcı fiil: dönüşlü fiiller hep haben; Goethe'de "hat/ist" olanlarda ikincisi de kabul
+    raw_perf = (override.split(",")[-1] if override else g["perf"]).strip()
+    aux_alt = None
+    m2 = re.match(r"^(hat|ist)/(hat|ist)\s", raw_perf)
+    if m2:
+        aux_alt = m2.group(2)
+    if refl:
+        aux, aux_alt = "hat", None
+    elif lemma == "ausziehen":  # (evden) taşınıp çıkmak
+        aux, aux_alt = "ist", None
     v = {
         "id": f"v{len(verben) + 1:03d}", "anz": anz, "tr": tr, "tier": int(tier),
         "inf": inf, "base": base, "pre": pre, "sp": sp, "p3": finite, "pt3": pt[0] if pt else "",
-        "aux": aux, "p2": p2, "refl": refl, "obj": objs,
+        "aux": aux, "auxAlt": aux_alt, "p2": p2, "refl": refl, "obj": objs,
         "bsp": (g["bsp"][:4] if g else []), "goethe": (g["head"] if g else ""),
     }
     if not re.match(r"^(hat|ist)$", aux):
@@ -280,6 +356,8 @@ for n, s in lines(P("quellen", "rahmen.txt")):
     for slot in body.split(";"):
         key, _, vals = slot.partition("=")
         key = key.strip()
+        if key == "-":  # nesnesiz kalıp + seçenekler ("- ; T = perf")
+            continue
         if key == "T":  # izin verilen zamanlar: praes, perf, modal
             fr["t"] = [x.strip() for x in vals.split(",") if x.strip()]
             continue

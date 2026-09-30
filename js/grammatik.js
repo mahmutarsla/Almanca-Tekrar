@@ -90,16 +90,16 @@
   }
 
   // ---------- İsim öbeği ----------
-  const DEF = { m: { N: 'der', A: 'den', D: 'dem' }, f: { N: 'die', A: 'die', D: 'der' },
-    n: { N: 'das', A: 'das', D: 'dem' }, pl: { N: 'die', A: 'die', D: 'den' } };
-  const EIN_END = { m: { N: '', A: 'en', D: 'em' }, f: { N: 'e', A: 'e', D: 'er' },
-    n: { N: '', A: '', D: 'em' }, pl: { N: 'e', A: 'e', D: 'en' } };
+  const DEF = { m: { N: 'der', A: 'den', D: 'dem', G: 'des' }, f: { N: 'die', A: 'die', D: 'der', G: 'der' },
+    n: { N: 'das', A: 'das', D: 'dem', G: 'des' }, pl: { N: 'die', A: 'die', D: 'den', G: 'der' } };
+  const EIN_END = { m: { N: '', A: 'en', D: 'em', G: 'es' }, f: { N: 'e', A: 'e', D: 'er', G: 'er' },
+    n: { N: '', A: '', D: 'em', G: 'es' }, pl: { N: 'e', A: 'e', D: 'en', G: 'er' } };
   const ADJ_W = { m: { N: 'e', A: 'en', D: 'en' }, f: { N: 'e', A: 'e', D: 'en' },
     n: { N: 'e', A: 'e', D: 'en' }, pl: { N: 'en', A: 'en', D: 'en' } };
   const ADJ_M = { m: { N: 'er', A: 'en', D: 'en' }, f: { N: 'e', A: 'e', D: 'en' },
     n: { N: 'es', A: 'es', D: 'en' }, pl: { N: 'en', A: 'en', D: 'en' } };
   const GEN = { der: 'm', die: 'f', das: 'n' };
-  const KASUS_TR = { N: 'Nominativ', A: 'Akkusativ', D: 'Dativ' };
+  const KASUS_TR = { N: 'Nominativ', A: 'Akkusativ', D: 'Dativ', G: 'Genitiv' };
 
   function adjStem(a) {
     if (a === 'hoch') return 'hoh';
@@ -127,6 +127,7 @@
       const p = noun.plf || noun.lemma;
       return kasus === 'D' && !/[ns]$/.test(p) ? p + 'n' : p;
     }
+    if (kasus === 'G' && noun.art !== 'die') return noun.gen || noun.lemma + 's';
     if (noun.weak && kasus !== 'N') {
       if (/(e|Herr|Nachbar|Bauer)$/.test(noun.lemma)) return noun.lemma + 'n';
       return noun.lemma + 'en';
@@ -289,10 +290,14 @@
   function bauen(cfg) {
     const seen = new Set(), alts = [];
     const hasName = !!(cfg.subj.name || cfg.subj.np);
-    for (const pronFirst of hasName ? [true, false] : [false]) {
-      for (const kontr of [true, false]) {
-        const s = render(cfg, { pronFirst, kontr });
-        if (!seen.has(s)) { seen.add(s); alts.push(s); }
+    const auxe = cfg.tempus === 'perf' && cfg.v.auxAlt ? [cfg.v.aux, cfg.v.auxAlt] : [null];
+    for (const aux of auxe) {
+      const c = aux ? Object.assign({}, cfg, { v: Object.assign({}, cfg.v, { aux }) }) : cfg;
+      for (const pronFirst of hasName ? [true, false] : [false]) {
+        for (const kontr of [true, false]) {
+          const s = render(c, { pronFirst, kontr });
+          if (!seen.has(s)) { seen.add(s); alts.push(s); }
+        }
       }
     }
     return { de: alts[0], alts: alts.slice(1), erkl: erklaeren(cfg) };
@@ -327,12 +332,13 @@
     else cfg.typ = 'aussage';
 
     // özne
-    const subjPool = Object.keys(PERS).filter(p => !(cfg.typ === 'frage' || cfg.typ === 'wfrage') || p !== 'ich');
+    const subjPool = Object.keys(PERS).filter(p => (!(cfg.typ === 'frage' || cfg.typ === 'wfrage') || p !== 'ich') &&
+      (!aus.includes('plSubj') || PERS[p].k.endsWith('pl')));
     if (fr.s) {
       const n = pick(fr.s, rnd);
       const pl = !!n.plural;
       cfg.subj = { np: { noun: n, det: n.poss && rnd() < 0.5 ? 'poss' : 'def', poss: pick(Object.keys(PERS), rnd), plural: pl }, k: pl ? '3pl' : '3sg' };
-    } else if (rnd() < 0.2 && cfg.typ !== 'frage') {
+    } else if (rnd() < 0.2 && cfg.typ !== 'frage' && !aus.includes('plSubj')) {
       const nm = pick(NAMEN, rnd); cfg.subj = { name: nm.name, k: nm.k, pk: nm.pk };
     } else cfg.subj = { pk: pick(subjPool, rnd) };
     const subjPk = cfg.subj.pk;
@@ -427,6 +433,169 @@
     });
   }
 
+  // ---------- n-Deklination alıştırması ----------
+  const ND_PERSON = {
+    N: [['___ kommt heute nicht.', 'özne'], ['___ wartet schon draußen.', 'özne'], ['Wo ist ___?', 'özne']],
+    A: [['Ich frage ___.', 'fragen + Akk'], ['Kennst du ___?', 'kennen + Akk'], ['Wir warten auf ___.', 'warten auf + Akk'],
+      ['Das Geschenk ist für ___.', 'für + Akk'], ['Ich rufe ___ morgen an.', 'anrufen + Akk'], ['Ich besuche ___ am Wochenende.', 'besuchen + Akk']],
+    D: [['Ich helfe ___.', 'helfen + Dat'], ['Ich spreche mit ___.', 'mit + Dat'], ['Das Handy gehört ___.', 'gehören + Dat'],
+      ['Ich habe ___ eine Nachricht geschickt.', 'schicken: kişi Dat'], ['Wir gehen mit ___ essen.', 'mit + Dat'], ['Ich danke ___.', 'danken + Dat']],
+    G: [['Das ist das Auto ___.', 'kimin? → Genitiv'], ['Die Tasche ___ ist rot.', 'kimin? → Genitiv'], ['Ich kenne die Adresse ___ nicht.', 'kimin? → Genitiv']],
+  };
+  const ND_TIER = {
+    N: [['___ schläft.', 'özne'], ['Wo ist ___?', 'özne']],
+    A: [['Im Zoo sehen wir ___.', 'sehen + Akk'], ['Das Kind füttert ___.', 'füttern + Akk']],
+    D: [['Das Kind gibt ___ eine Banane.', 'geben: alan Dat'], ['Wir haben Angst vor ___.', 'Angst vor + Dat']],
+    G: [['Das Foto ___ ist schön.', 'kimin? → Genitiv']],
+  };
+  const ND_SACHE = {
+    Name: { N: [['___ ist zu lang.', 'özne']], A: [['Ich habe ___ vergessen.', 'vergessen + Akk'], ['Wie schreibt man ___?', 'schreiben + Akk']], D: [['Unter ___ finde ich nichts.', 'unter (nerede?) + Dat']], G: [['Die Bedeutung ___ ist schön.', 'neyin? → Genitiv']] },
+    Buchstabe: { N: [['___ ist schwer zu lesen.', 'özne']], A: [['Ich kann ___ nicht lesen.', 'lesen + Akk']], D: [['Das Wort beginnt mit ___.', 'mit + Dat']], G: [['Die Form ___ ist komisch.', 'neyin? → Genitiv']] },
+    Gedanke: { N: [['___ ist gut.', 'özne']], A: [['Ich finde ___ interessant.', 'finden + Akk'], ['Ich denke oft an ___.', 'denken an + Akk']], D: [['Ich bin mit ___ nicht einverstanden.', 'mit + Dat']] },
+    Automat: { N: [['___ ist kaputt.', 'özne']], A: [['Ich suche ___.', 'suchen + Akk']], D: [['Ich stehe vor ___.', 'vor (nerede?) + Dat']], G: [['Der Bildschirm ___ ist dunkel.', 'neyin? → Genitiv']] },
+    Friede: { N: [['___ ist wichtig.', 'özne']], A: [['Alle wünschen sich ___.', 'wünschen + Akk']] },
+    Käse: { N: [['___ ist lecker.', 'özne']], A: [['Ich kaufe ___.', 'kaufen + Akk']], D: [['Was machst du mit ___?', 'mit + Dat']], G: [['Der Preis ___ ist hoch.', 'neyin? → Genitiv']] },
+    See: { N: [['___ ist kalt.', 'özne']], A: [['Wir sehen ___.', 'sehen + Akk']], D: [['Wir wohnen neben ___.', 'neben (nerede?) + Dat']], G: [['Das Wasser ___ ist klar.', 'neyin? → Genitiv']] },
+    Bus: { N: [['___ kommt gleich.', 'özne']], A: [['Ich nehme ___.', 'nehmen + Akk']], D: [['Ich fahre mit ___.', 'mit + Dat']], G: [['Der Fahrer ___ ist nett.', 'neyin? → Genitiv']] },
+  };
+  const TIERE = ['Affe', 'Hase', 'Löwe', 'Bär', 'Elefant', 'Hund'];
+  function ndTemplates(n) {
+    const key = Object.keys(ND_SACHE).find(k => n.lemma === k || n.lemma.endsWith(k.toLowerCase()));
+    if (key) return { tpl: ND_SACHE[key], sache: true };
+    return { tpl: TIERE.includes(n.lemma) ? ND_TIER : ND_PERSON, sache: false };
+  }
+  const DET_TR = { def: 'belirli artikel (der/den/dem/des)', indef: 'belirsiz (ein/einen/einem/eines)' };
+  function ndekAufgabe(n, rnd, level) {
+    rnd = rnd || Math.random;
+    const { tpl, sache } = ndTemplates(n);
+    const kase = Object.keys(tpl);
+    // Nominativ az sorulur (tuzak: orada -n yok), en çok Akk/Dat
+    const gew = kase.map(k => k === 'N' ? 1 : k === 'G' ? 1.5 : 3);
+    let r = rnd() * gew.reduce((a, b) => a + b, 0), k = kase[0];
+    for (let i = 0; i < kase.length; i++) { r -= gew[i]; if (r <= 0) { k = kase[i]; break; } }
+    const [text, why] = pick(tpl[k], rnd);
+    // artikel seçimi isme göre: aile → der/mein, meslek → der/ein, bazıları iyelikle de doğal
+    const FAMILIE = ['Bruder', 'Sohn', 'Vater', 'Onkel', 'Neffe', 'Mann', 'Partner', 'Junge'];
+    const POSS_OK = FAMILIE.concat(['Kollege', 'Nachbar', 'Freund', 'Chef', 'Lehrer', 'Arzt', 'Professor', 'Dozent',
+      'Kommilitone', 'Hund', 'Name', 'Vorname', 'Familienname', 'Schüler', 'Kunde', 'Patient']);
+    const dets = ['def', 'def'];
+    if (!FAMILIE.includes(n.lemma) && (!sache || n.lemma === 'Käse' || n.lemma === 'Bus')) dets.push('indef');
+    if (POSS_OK.includes(n.lemma)) dets.push('poss', 'poss');
+    const det = pick(dets, rnd);
+    const poss = pick(['ich', 'du', 'er', 'sie', 'wir', 'ihr'], rnd);
+    const antwort = np(n, k, { det, poss }).join(' ');
+    const alts = [];
+    if (k === 'G' && !n.weak && n.genAlt) alts.push(np(Object.assign({}, n, { gen: n.genAlt }), k, { det, poss }).join(' '));
+    const satz = cap(text.replace('___', antwort));
+    const erkl = [];
+    erkl.push(`${KASUS_TR[k]}: ${why}`);
+    if (n.weak) {
+      const sp = n.gen && /ns$/.test(n.gen);
+      erkl.push(`<b>${n.art} ${n.lemma}</b> n-Deklination: Nominativ dışında hep <b>-${nounForm(n, 'A').slice(n.lemma.length)}</b> → den / dem ${n.lemma === 'Herr' ? 'Herrn' : nounForm(n, 'A')}, des ${n.gen}${sp ? ' (Genitiv\'de ayrıca -s)' : ''}`);
+      if (k === 'N') erkl.push('Nominativ\'de ek yok: ' + n.art + ' ' + n.lemma);
+    } else {
+      erkl.push(`<b>${n.art} ${n.lemma}</b> n-Deklination DEĞİL: den ${n.lemma}, dem ${n.lemma}, des ${n.gen}`);
+    }
+    return {
+      text, antwort, alts, satz, kasus: k, det, poss, erkl,
+      detTr: det === 'poss' ? POSS_TR[poss] + ' (' + PERS[poss].poss + '-)' : DET_TR[det],
+    };
+  }
+
+  // ---------- Dönüşlü fiil alıştırması ----------
+  const IMP_OK = ['beeilen', 'setzen', 'anziehen', 'ausziehen', 'umziehen', 'ausruhen', 'beruhigen', 'anschnallen',
+    'anstrengen', 'konzentrieren', 'bewegen', 'vorbereiten', 'entscheiden', 'entschuldigen', 'bedanken', 'melden',
+    'anmelden', 'informieren', 'kümmern', 'merken', 'ansehen', 'aussuchen', 'überlegen', 'vorstellen', 'waschen',
+    'duschen', 'freuen', 'erholen'];
+  const NUR_3 = ['ereignen', 'lohnen', 'eignen'];
+  // tek başına cümle kurmayan (tümleç zorunlu, kalıbı yok) ya da öznesi şey olan fiiller: bu alıştırmada yok
+  const REFL_AUS = NUR_3.concat(['befinden', 'verhalten', 'fühlen', 'ernähren', 'entschließen', 'nähern']);
+  function imperativDu(v) {
+    const f = praesensForms(v), reg = regular(v.base), st = stemOf(v.base);
+    if (IRR[v.base]) return null;
+    if (f[1] !== reg[1]) {
+      // e → i / ie: gib, nimm, sieh, lies; a → ä: fahr, lauf (umlaut düşer)
+      const stamm = f[2].replace(/t$/, '');
+      if (/ä|äu|ö/.test(f[2]) && !/ä|ö/.test(st)) return st;
+      if (/(s|ß|ss)t$/.test(f[2]) && /(s|ß|z)$/.test(st)) return f[2].replace(/t$/, '');
+      return f[1].replace(/st$/, '') || stamm;
+    }
+    if (/el$/.test(st) && /eln$/.test(v.base)) return st.slice(0, -2) + 'le';
+    if (/ig$|[dt]$|[^aeiouäöülrhmn][mn]$/.test(st) || (/er$/.test(st) && /ern$/.test(v.base))) return st + 'e';
+    return st;
+  }
+  // edatlı dönüşlü fiillerde kalıptan bir edatlı nesne: "für die Musik", "mit dem Freund"
+  function reflObjekt(v, rnd, opts) {
+    const po = (v.obj || []).find(o => o.p);
+    if (!po || !v.rahmen) return null;
+    const slots = [];
+    v.rahmen.forEach(fr => fr.o.forEach(sl => { if (sl.p === po.p && sl.k === po.k) slots.push(sl); }));
+    if (!slots.length) return null;
+    const sl = pick(slots, rnd);
+    const things = sl.n.filter(x => x !== 'P');
+    // kişi yalnızca kalıp kişi alıyorsa (P): "sich beteiligen am Onkel" gibi saçmalık olmasın
+    const kannPerson = sl.n.includes('P') && opts && opts.personen;
+    let noun = things.length && (!kannPerson || rnd() < 0.6) ? pick(things, rnd) : null;
+    if (!noun && kannPerson) noun = pick(opts.personen.filter(x => !x.plural), rnd);
+    if (!noun) return null;
+    const det = noun.bare ? 'none' : 'def';
+    return { de: withPrep(po.p, np(noun, po.k, { det, plural: !!noun.plural }), true).join(' '), noun, p: po.p, k: po.k,
+      zeig: `${po.p} + ${noun.bare ? '' : (noun.plural ? 'die' : noun.art) + ' '}${noun.plural ? noun.plf || noun.lemma : noun.lemma}${noun.bare ? ' (artikelsiz)' : ''}` };
+  }
+  function reflAufgabe(v, rnd, opts) {
+    rnd = rnd || Math.random;
+    const obj = reflObjekt(v, rnd, opts);
+    const po = obj ? [obj.de] : [];
+    const nur3 = NUR_3.includes(v.base);
+    const plur = v.base === 'einigen';
+    const pool = nur3 ? ['er', 'sie', 'sie_pl'] : plur ? ['wir', 'ihr', 'sie_pl', 'Sie'] : Object.keys(PERS);
+    const typs = ['praes', 'praes', 'perf', 'perf'];
+    const impOk = IMP_OK.includes(v.base) && !nur3;
+    if (impOk) typs.push('imp', 'imp');
+    const typ = pick(typs, rnd);
+    const es = v.refl === 'D' ? ['es'] : [];
+    let pk, satz, tr;
+    const alts = [];
+    if (typ === 'imp') {
+      pk = pick(plur ? ['ihr', 'Sie'] : ['du', 'ihr', 'Sie'], rnd);
+      const p = PERS[pk], r = v.refl === 'D' ? p.rD : p.rA;
+      let fin;
+      if (pk === 'du') fin = imperativDu(v);
+      else if (pk === 'ihr') fin = praesens(v, '2pl');
+      else fin = praesens(v, '3pl');
+      const bau = f => cap((pk === 'Sie' ? [f, 'Sie'] : [f]).concat(es, [r], po, v.pre ? [v.pre] : []).join(' ')) + '!';
+      satz = bau(fin);
+      // du-emirde -e isteğe bağlı (Beeil dich! / Beeile dich!), e→i değişen fiillerde değil
+      if (pk === 'du' && praesensForms(v)[1] === regular(v.base)[1]) alts.push(bau(/e$/.test(fin) ? fin.slice(0, -1) : fin + 'e'));
+      tr = 'emir kipi · ' + (pk === 'du' ? 'sen' : pk === 'ihr' ? 'siz (samimi)' : 'siz (resmi)');
+    } else {
+      pk = pick(pool, rnd);
+      const p = PERS[pk], r = v.refl === 'D' ? p.rD : p.rA;
+      if (typ === 'praes') {
+        satz = [p.nom, praesens(v, p.k)].concat(es, [r], po, v.pre ? [v.pre] : []).join(' ');
+        tr = PERS[pk].tr + ' · Präsens';
+      } else {
+        const aux = praesens({ base: v.aux === 'ist' ? 'sein' : 'haben' }, p.k);
+        satz = [p.nom, aux].concat(es, [r], po, [v.p2]).join(' ');
+        tr = PERS[pk].tr + ' · Perfekt';
+      }
+      satz = cap(satz) + '.';
+    }
+    const p = PERS[pk];
+    const erkl = [
+      `Dönüşlü zamir (${v.refl === 'D' ? 'Dativ' : 'Akkusativ'}): ${pk === 'Sie' ? 'Sie' : p.nom} → <b>${v.refl === 'D' ? p.rD : p.rA}</b>`,
+      v.refl === 'D' ? 'Dativ dönüşlü: mir, dir, sich, uns, euch, sich (nesne Akk: es / den Film …). Akk nesne zamirse zamirden önce gelir: es mir' :
+        'Akkusativ dönüşlü: mich, dich, sich, uns, euch, sich',
+    ];
+    if (typ === 'perf') erkl.push(`Perfekt: ${v.aux === 'ist' ? 'sein' : 'haben'} + ${v.p2} (dönüşlü fiiller çoğunlukla haben alır)`);
+    if (typ === 'imp') erkl.push(pk === 'du' ? 'du emir: -st düşer, özne yok (Beeil dich!)' : pk === 'ihr' ? 'ihr emir: ihr-biçimi, özne yok (Beeilt euch!)' : 'Sie emir: fiil + Sie + sich (Beeilen Sie sich!)');
+    if (obj) erkl.push(`${obj.p} + ${KASUS_TR[obj.k]} → <b>${obj.de}</b>`);
+    if (v.pre) erkl.push(`Ayrılan ön ek sona: … ${v.pre}`);
+    // kaynaşmamış edat da kabul (an dem / am)
+    if (obj) { const unk = obj.de.replace(/^(am|ans|im|ins|zum|zur|vom|beim)\b/, m => ({ am: 'an dem', ans: 'an das', im: 'in dem', ins: 'in das', zum: 'zu dem', zur: 'zu der', vom: 'von dem', beim: 'bei dem' }[m])); if (unk !== obj.de) alts.push(satz.replace(obj.de, unk)); }
+    return { satz, alts, tr, typ, pk, erkl, esHinweis: v.refl === 'D', objZeig: obj && obj.zeig };
+  }
+
   // ---------- Goethe örnek cümlesinden boşluk ----------
   function verbFormen(v) {
     const s = new Set();
@@ -440,6 +609,7 @@
     const clean = t => t.replace(/^[„“"(]+|[.,!?;:“"”)…]+$/g, '');
     const finite = verbFormen(v);
     const whole = new Set([v.inf, v.p2, v.pre ? v.pre + 'zu' + v.base : 'zu ' + v.base].filter(Boolean));
+    if (v.pre && !v.sp) finite.forEach(f => whole.add(v.pre + f));
     const hits = [];
     toks.forEach((t, i) => {
       const c = clean(t);
@@ -543,7 +713,7 @@
   const api = {
     PERS, NAMEN, MODAL, IRR, praesens, praesensForms, praeteritumForms, regular, stemOf,
     np, pluralForm, umlaut, withPrep, woWort, bauen, uebung, luecke, pruefen, norm, diff, toks,
-    objMuster, KASUS_TR, POSS_TR, PREP_CASE, rahmenAufloesen,
+    objMuster, KASUS_TR, POSS_TR, PREP_CASE, rahmenAufloesen, ndekAufgabe, reflAufgabe, imperativDu, NUR_3, REFL_AUS,
   };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.G = api;
