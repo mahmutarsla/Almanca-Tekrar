@@ -394,6 +394,138 @@ for n, s in lines(P("quellen", "rahmen.txt")):
                 warnings.append(f"{where}: {anz} için {o} yuvası kalıpta yok")
     v.setdefault("rahmen", []).append(fr)
 
+# ---------------- Diğer kelimeler (sıfat, zarf, bağlaç, edat …) ----------------
+goethe_andere = set()
+goethe_stamm = set()
+for e in goethe:
+    if e["typ"] == "andere":
+        h = re.sub(r"\d+\.?$", "", e["head"].lower().replace("(", "").replace(")", ""))
+        for teil in re.split(r",\s*|/", h):
+            teil = teil.strip()
+            goethe_andere.add(teil)
+            goethe_andere.add(re.split(r"\s", teil)[0])
+            if teil.endswith("-"):
+                goethe_stamm.add(teil[:-1])
+woerter = []
+w_key = {}
+KLASSEN = {"adj", "adv", "konj", "präp", "pron", "andere"}
+for n, s_ in lines(P("quellen", "woerter.txt")):
+    parts = [x.strip() for x in s_.split("|")]
+    if len(parts) != 4 or parts[1] not in KLASSEN:
+        errors.append(f"woerter.txt:{n}: biçim hatalı: {s_}")
+        continue
+    de, kl, tier, tr = parts
+    w = {"id": f"w{len(woerter) + 1:04d}", "de": de, "kl": kl, "tier": int(tier), "tr": tr}
+    if de in w_key:
+        errors.append(f"woerter.txt:{n}: '{de}' iki kez")
+    w_key[de] = w
+    first = re.split(r"[\s…]", de.lower())[0]
+    if de.lower() not in goethe_andere and first not in goethe_andere and de.lower() not in ("morgen", "nah") \
+            and not any(first.startswith(st) and len(first) - len(st) <= 2 for st in goethe_stamm):
+        warnings.append(f"woerter.txt:{n}: '{de}' Goethe listesinde bulunamadı (kontrol et)")
+    # Goethe örnek cümleleri (aynı başlık)
+    for e in goethe:
+        if e["typ"] == "andere":
+            h = re.sub(r"\d+\.?$", "", e["head"]).strip()
+            if h.lower() == de.lower() or h.lower().rstrip("-") == de.lower() or (h.endswith("-") and de.lower().startswith(h.lower()[:-1])):
+                if e["bsp"]:
+                    w["bsp"] = e["bsp"][:3]
+                    break
+    woerter.append(w)
+
+# ---------------- Artikel kuralları (sonek → artikel, veriden) ----------------
+SUFFIXE = ["ung", "heit", "keit", "schaft", "ion", "tät", "ei", "ik", "enz", "anz", "ur", "ie", "e",
+           "chen", "lein", "ment", "um", "nis", "ma", "ling", "ismus", "ig", "or", "ent", "ant", "ist", "er", "ich", "en", "el"]
+lern = [x for x in nomen if not x.get("skip") and not x.get("plOnly") and not x.get("adjN")]
+stat = {}
+for suf in SUFFIXE:
+    hits = [x for x in lern if x["lemma"].lower().endswith(suf) and len(x["lemma"]) > len(suf) + 2]
+    if len(hits) < 5:
+        continue
+    cnt = {}
+    for x in hits:
+        cnt[x["art"]] = cnt.get(x["art"], 0) + 1
+    art, k = max(cnt.items(), key=lambda kv: kv[1])
+    acc = k / len(hits)
+    if acc >= 0.75:
+        stat[suf] = (art, round(acc * 100), len(hits))
+regel_n = 0
+for x in lern:
+    best = None
+    for suf in sorted(stat, key=len, reverse=True):
+        if x["lemma"].lower().endswith(suf) and len(x["lemma"]) > len(suf) + 2:
+            best = suf
+            break
+    if best:
+        art, pct, cnt = stat[best]
+        x["regel"] = [best, art, pct, cnt]
+        regel_n += 1
+
+# ---------------- Paketler ----------------
+pakete = []
+item_by_key = {}
+for x in nomen:
+    if not x.get("skip"):
+        item_by_key.setdefault(f"{x['art']} {x['lemma']}", x["id"])
+for v in verben:
+    item_by_key.setdefault(v["anz"], v["id"])
+for w in woerter:
+    item_by_key.setdefault(w["de"], w["id"])
+pk = None
+modus = None
+for n, raw in enumerate(open(P("quellen", "pakete.txt"), encoding="utf-8"), 1):
+    line = raw.rstrip("\n")
+    if line.startswith("#") and not line.startswith("## "):
+        continue
+    if line.startswith("## "):
+        parts = [x.strip() for x in line[3:].split("|")]
+        pk = {"id": parts[0], "titel": parts[1], "titelTr": parts[2], "items": [], "de": "", "tr": "", "zeile": n}
+        pakete.append(pk)
+        modus = None
+        continue
+    if pk is None or not line.strip():
+        continue
+    if line.startswith("wörter:"):
+        for k in [x.strip() for x in line.split(":", 1)[1].split(";") if x.strip()]:
+            if k not in item_by_key:
+                errors.append(f"pakete.txt:{n}: '{k}' bulunamadı")
+            else:
+                pk["items"].append(item_by_key[k])
+        continue
+    if line.strip() in ("de:", "tr:"):
+        modus = line.strip()[:-1]
+        continue
+    if modus:
+        pk[modus] = (pk[modus] + " " + line.strip()).strip()
+for pk in pakete:
+    teile, luecken = [], []
+    pos = 0
+    for m in re.finditer(r"\[\[([^|\]]+)\|([^\]]+)\]\]", pk["de"]):
+        teile.append(pk["de"][pos:m.start()])
+        form, key = m.group(1), m.group(2)
+        iid = item_by_key.get(key)
+        if not iid:
+            errors.append(f"pakete.txt {pk['id']}: boşluk anahtarı '{key}' bulunamadı")
+        elif iid not in pk["items"]:
+            errors.append(f"pakete.txt {pk['id']}: '{key}' wörter listesinde yok")
+        teile.append(len(luecken))
+        luecken.append({"form": form, "id": iid})
+        pos = m.end()
+    teile.append(pk["de"][pos:])
+    for iid in pk["items"]:
+        if not any(l["id"] == iid for l in luecken):
+            errors.append(f"pakete.txt {pk['id']}: {iid} metinde boşluk olarak geçmiyor")
+    if "[[" in "".join(t for t in teile if isinstance(t, str)):
+        errors.append(f"pakete.txt {pk['id']}: kapanmamış [[ ]]")
+    if not pk["tr"]:
+        errors.append(f"pakete.txt {pk['id']}: Türkçe çeviri yok")
+    pk["teile"] = teile
+    pk["luecken"] = luecken
+    del pk["de"], pk["zeile"]
+ids = [p_["id"] for p_ in pakete]
+if len(ids) != len(set(ids)):
+    errors.append("pakete.txt: paket kimliği tekrar ediyor")
+
 # ---------------- Çıktı ----------------
 for x in nomen:
     x.pop("g", None)
@@ -416,9 +548,13 @@ for v in verben:
                 if x != "P" and x["id"] in person_ids:
                     x["person"] = True
 dump("nomen.js", "NOMEN", {"liste": nomen, "personen": personen, "adjSache": adj_sache, "adjPerson": adj_person})
+dump("woerter.js", "WOERTER", woerter)
+dump("pakete.js", "PAKETE", pakete)
 
 print(f"{len(verben)} fiil anlamı ({sum(1 for v in verben if v.get('rahmen'))} kalıplı), "
-      f"{len(nomen)} isim, {len(personen)} kişi, {len(adj_sache) + len(adj_person)} sıfat")
+      f"{len(nomen)} isim, {len(personen)} kişi, {len(adj_sache) + len(adj_person)} sıfat, "
+      f"{len(woerter)} diğer kelime, {len(pakete)} paket, {regel_n} isimde artikel kuralı")
+print("artikel kuralları:", ", ".join(f"-{k}→{v[0]} %{v[1]} ({v[2]})" for k, v in sorted(stat.items(), key=lambda kv: -kv[1][1])))
 for w in warnings:
     print("uyarı:", w)
 for e in errors:

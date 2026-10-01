@@ -1,0 +1,596 @@
+# Goethe B1 listesindeki sıfat, zarf, bağlaç, edat ve diğer kelimeler.
+# Biçim:  kelime | tür | seviye | Türkçe
+# tür: adj (sıfat), adv (zarf), konj (bağlaç), präp (edat), pron (zamir/belirleyici), andere (diğer)
+# Yeni kelimeyi EN SONA ekle (kimlikler satır sırasından gelir, ilerleme kaybolmasın).
+ab | präp | 2 | -den itibaren (ab Montag)
+aber | konj | 1 | ama, fakat
+abhängig | adj | 3 | bağımlı (von: -e)
+absolut | adj | 3 | kesinlikle, mutlak
+abwärts | adv | 3 | aşağı doğru
+abwesend | adj | 3 | orada değil, yok
+ähnlich | adj | 2 | benzer
+aktiv | adj | 2 | aktif, etkin
+aktuell | adj | 3 | güncel
+allein | adv | 1 | yalnız, tek başına
+allerdings | adv | 3 | ancak, gerçi
+allgemein | adj | 3 | genel
+alltäglich | adj | 3 | gündelik, sıradan
+als | konj | 2 | -dığında (geçmişte bir kez); -den (karşılaştırma)
+als ob | konj | 3 | sanki
+also | adv | 1 | yani, demek ki
+alt | adj | 1 | yaşlı; eski
+alternativ | adj | 3 | alternatif
+andere | pron | 2 | diğer, başka
+andererseits | adv | 3 | öte yandan
+anders | adv | 2 | farklı, başka türlü
+anfangs | adv | 3 | başlangıçta
+angenehm | adj | 2 | hoş, rahat
+ängstlich | adj | 3 | korkak, ürkek
+anstrengend | adj | 3 | yorucu
+anwesend | adj | 3 | orada bulunan, hazır
+arbeitslos | adj | 2 | işsiz
+ärgerlich | adj | 3 | sinir bozucu
+arm | adj | 2 | fakir
+auch | adv | 1 | de, da, dahi
+aufmerksam | adj | 3 | dikkatli
+aufwärts | adv | 3 | yukarı doğru
+ausgebildet | adj | 3 | meslek eğitimi almış
+auseinander | adv | 3 | ayrı, birbirinden uzak
+ausgezeichnet | adj | 2 | mükemmel
+ausländisch | adj | 2 | yabancı (ülkeden)
+ausreichend | adj | 3 | yeterli
+ausschließlich | adv | 3 | yalnızca
+außen | adv | 3 | dışarıda, dışta
+außerhalb | präp | 3 | dışında (+ Gen)
+außer | präp | 3 | hariç, -den başka (+ D)
+außerdem | adv | 2 | ayrıca, bunun dışında
+automatisch | adj | 3 | otomatik
+bald | adv | 1 | yakında
+bar | adj | 2 | nakit (bar bezahlen)
+befriedigend | adj | 3 | tatmin edici; orta (not)
+begeistert | adj | 3 | hevesli, büyülenmiş
+begrenzt | adj | 3 | sınırlı
+behindert | adj | 3 | engelli
+bei | präp | 1 | -de, yanında (+ D)
+beide | pron | 2 | her ikisi
+beinahe | adv | 3 | neredeyse
+bekannt | adj | 2 | tanınmış, bilinen
+beliebt | adj | 3 | sevilen, popüler
+bequem | adj | 2 | rahat
+bereit | adj | 3 | hazır
+bereits | adv | 3 | zaten, çoktan
+beruflich | adj | 3 | mesleki
+berufstätig | adj | 3 | çalışan (bir işi olan)
+berühmt | adj | 2 | ünlü
+besonders | adv | 2 | özellikle
+bestimmt | adv | 2 | kesinlikle; belirli
+betrunken | adj | 3 | sarhoş
+bevor | konj | 3 | -meden önce
+billig | adj | 1 | ucuz
+bis | präp | 1 | -e kadar
+bisher | adv | 3 | şimdiye kadar
+ein bisschen | adv | 1 | biraz
+bitte | andere | 1 | lütfen; buyurun
+bitter | adj | 3 | acı (tat)
+blass | adj | 3 | solgun
+blind | adj | 3 | kör
+blond | adj | 2 | sarışın
+bloß | adv | 3 | sadece, yalnızca
+böse | adj | 2 | kötü; kızgın
+breit | adj | 2 | geniş
+bunt | adj | 2 | renkli
+da | adv | 1 | orada; o zaman
+dabei | adv | 3 | bu sırada; yanında
+dafür | adv | 2 | bunun için
+dagegen | adv | 3 | buna karşı
+daher | adv | 3 | bu yüzden; oradan
+damals | adv | 2 | o zamanlar
+damit | konj | 3 | -sın diye
+danach | adv | 2 | ondan sonra
+daneben | adv | 3 | yanında
+dankbar | adj | 3 | minnettar
+danke | andere | 1 | teşekkürler
+dann | adv | 1 | sonra, o zaman
+dass | konj | 2 | ki (yan cümle: -dığını)
+dauernd | adv | 3 | sürekli
+denn | konj | 2 | çünkü (ana cümle)
+deshalb | adv | 2 | bu yüzden
+deswegen | adv | 3 | bu nedenle
+deutlich | adj | 3 | açık, belirgin
+dicht | adj | 3 | sık, yoğun
+dick | adj | 1 | şişman; kalın
+dieser | pron | 1 | bu (diese, dieses)
+diesmal | adv | 3 | bu sefer
+digital | adj | 3 | dijital
+direkt | adj | 2 | doğrudan
+doch | adv | 2 | yine de; (olumsuz soruya) evet
+doppelt | adj | 3 | çift, iki kat
+dort | adv | 1 | orada
+dorthin | adv | 3 | oraya
+draußen | adv | 2 | dışarıda
+dringend | adj | 2 | acil
+drinnen | adv | 3 | içeride
+drüben | adv | 3 | karşıda, öte tarafta
+dumm | adj | 2 | aptal
+dunkel | adj | 2 | karanlık; koyu
+dünn | adj | 2 | ince; zayıf
+durch | präp | 2 | içinden, -den geçerek (+ A)
+durcheinander | adv | 3 | karmakarışık
+durchschnittlich | adj | 3 | ortalama
+durstig | adj | 2 | susamış
+eben | adv | 3 | az önce; işte
+ebenfalls | adv | 3 | aynı şekilde, keza
+eher | adv | 3 | daha çok, daha ziyade
+ehrlich | adj | 3 | dürüst
+eigentlich | adv | 2 | aslında
+eilig | adj | 3 | acele, acil
+eindeutig | adj | 3 | açık, net
+einerseits | adv | 3 | bir yandan
+einfach | adj | 1 | kolay, basit
+einige | pron | 2 | birkaç, bazı
+einmal | adv | 1 | bir kez; bir zamanlar
+einsam | adj | 3 | yalnız (yalnızlık hisseden)
+einschließlich | präp | 3 | dahil (+ Gen)
+einverstanden | adj | 2 | razı (einverstanden sein: kabul etmek)
+einzeln | adj | 3 | tek tek, ayrı ayrı
+einzig | adj | 3 | tek, biricik
+elegant | adj | 3 | zarif
+elektrisch | adj | 3 | elektrikli
+endgültig | adj | 3 | kesin, nihai
+endlich | adv | 2 | nihayet, sonunda
+eng | adj | 2 | dar
+entlang | präp | 3 | boyunca (die Straße entlang)
+entschlossen | adj | 3 | kararlı
+entspannend | adj | 3 | rahatlatıcı
+entweder … oder | konj | 3 | ya … ya da
+erfolgreich | adj | 3 | başarılı
+erforderlich | adj | 3 | gerekli (resmî)
+erkältet | adj | 2 | üşütmüş, nezle
+ernst | adj | 3 | ciddi
+erschöpft | adj | 3 | bitkin
+erst | adv | 2 | ancak, daha (erst morgen); önce
+erwachsen | adj | 3 | yetişkin
+etwa | adv | 3 | yaklaşık
+etwas | pron | 1 | bir şey; biraz
+eventuell | adv | 3 | belki, gerekirse
+ewig | adj | 3 | sonsuz
+extra | adv | 3 | ayrıca, ekstra
+extrem | adj | 3 | aşırı
+fair | adj | 3 | adil
+fällig | adj | 3 | vadesi gelmiş
+falls | konj | 3 | eğer, … olursa
+falsch | adj | 1 | yanlış
+fantastisch | adj | 3 | harika
+fast | adv | 2 | neredeyse
+faul | adj | 2 | tembel; çürük
+fertig | adj | 1 | hazır, bitmiş
+fest | adj | 3 | sağlam, sabit
+fett | adj | 3 | yağlı
+feucht | adj | 3 | nemli
+finanziell | adj | 3 | maddi, mali
+flach | adj | 3 | düz, yassı
+fleißig | adj | 2 | çalışkan
+flexibel | adj | 3 | esnek
+fließend | adj | 3 | akıcı
+folgend | adj | 3 | aşağıdaki, sonraki
+frech | adj | 3 | arsız, şımarık
+frei | adj | 1 | boş; özgür; ücretsiz
+freiwillig | adj | 3 | gönüllü
+fremd | adj | 2 | yabancı
+freundlich | adj | 1 | cana yakın, nazik
+frisch | adj | 2 | taze
+froh | adj | 2 | memnun
+fröhlich | adj | 2 | neşeli
+früh | adj | 1 | erken
+früher | adv | 2 | eskiden
+für | präp | 1 | için (+ A)
+furchtbar | adj | 3 | korkunç
+ganz | adv | 1 | tamamen, bütün
+gar nicht | adv | 2 | hiç (değil)
+geehrt | adj | 3 | sayın (Sehr geehrte …)
+geeignet | adj | 3 | uygun
+gefährlich | adj | 2 | tehlikeli
+gegen | präp | 2 | karşı (+ A); sularında (gegen 8 Uhr)
+gegenüber | präp | 2 | karşısında (+ D)
+geheim | adj | 3 | gizli
+gemeinsam | adj | 2 | ortak; birlikte
+gemütlich | adj | 2 | rahat, keyifli
+genau | adj | 1 | tam, kesin
+genauso | adv | 3 | tıpkı, aynı şekilde
+genug | adv | 2 | yeterince
+gerade | adv | 1 | şu anda; düz
+geradeaus | adv | 1 | dümdüz
+gerecht | adj | 3 | adaletli
+gering | adj | 3 | az, düşük
+gern | adv | 1 | seve seve, memnuniyetle
+geschieden | adj | 2 | boşanmış
+gespannt | adj | 3 | merakla bekleyen
+gestern | adv | 1 | dün
+gesund | adj | 1 | sağlıklı
+gewohnt | adj | 3 | alışık
+gewöhnlich | adj | 3 | olağan, alışılmış
+giftig | adj | 3 | zehirli
+glatt | adj | 3 | kaygan; pürüzsüz
+gleich | adv | 1 | hemen; aynı
+gleichfalls | adv | 3 | size de (karşılık)
+gleichberechtigt | adj | 3 | eşit haklı
+gleichzeitig | adj | 3 | aynı anda
+glücklich | adj | 2 | mutlu
+gratis | adj | 3 | bedava
+groß | adj | 1 | büyük
+gründlich | adj | 3 | esaslı, titiz
+gültig | adj | 2 | geçerli
+günstig | adj | 2 | uygun fiyatlı
+gut | adj | 1 | iyi
+halb | adj | 1 | yarım
+halbtags | adv | 3 | yarım gün
+hallo | andere | 1 | merhaba
+haltbar | adj | 3 | dayanıklı; uzun süre bozulmayan
+hart | adj | 2 | sert
+hässlich | adj | 2 | çirkin
+häufig | adj | 3 | sık
+heimlich | adj | 3 | gizlice
+heiß | adj | 1 | sıcak
+hell | adj | 2 | aydınlık; açık (renk)
+herzlich | adj | 2 | içten
+heute | adv | 1 | bugün
+hier | adv | 1 | burada
+hierher | adv | 3 | buraya
+hinten | adv | 2 | arkada
+hinter | präp | 2 | arkasında (+ D) / arkasına (+ A)
+historisch | adj | 3 | tarihi
+hoch | adj | 1 | yüksek
+höchstens | adv | 3 | en fazla
+hoffentlich | adv | 2 | umarım
+höflich | adj | 2 | kibar
+hübsch | adj | 2 | güzel, sevimli
+hungrig | adj | 2 | aç
+ideal | adj | 3 | ideal
+illegal | adj | 3 | yasa dışı
+immer | adv | 1 | her zaman
+in | präp | 1 | içinde (+ D) / içine (+ A)
+indem | konj | 3 | -erek (yaparak)
+individuell | adj | 3 | bireysel
+inklusive | präp | 3 | dahil
+innen | adv | 3 | içeride
+innerhalb | präp | 3 | içinde (süre ya da yer, + Gen)
+insgesamt | adv | 3 | toplamda
+intelligent | adj | 3 | zeki
+intensiv | adj | 3 | yoğun
+interessant | adj | 1 | ilginç
+interessiert | adj | 3 | ilgili, meraklı
+international | adj | 3 | uluslararası
+inzwischen | adv | 3 | bu arada; artık
+irgendwann | adv | 3 | bir gün, bir ara
+ja | andere | 1 | evet
+je … desto | konj | 3 | ne kadar … o kadar
+jeder | pron | 1 | her (jede, jedes)
+jederzeit | adv | 3 | her an
+jedes Mal | adv | 3 | her seferinde
+jedoch | adv | 3 | ancak
+jemals | adv | 3 | hiç (bir zaman)
+jemand | pron | 2 | biri, birisi
+jetzt | adv | 1 | şimdi
+jeweils | adv | 3 | her biri için
+jung | adj | 1 | genç
+kalt | adj | 1 | soğuk
+kaputt | adj | 1 | bozuk
+kaum | adv | 3 | neredeyse hiç
+kein | pron | 1 | hiç … yok (kein Geld)
+klar | adj | 2 | açık, net; tabii
+klein | adj | 1 | küçük
+klug | adj | 3 | akıllı
+knapp | adj | 3 | kıt; ucu ucuna
+komisch | adj | 2 | tuhaf; komik
+komplett | adj | 3 | eksiksiz
+kompliziert | adj | 2 | karmaşık
+körperlich | adj | 3 | bedensel
+korrekt | adj | 3 | doğru, usulüne uygun
+kostenlos | adj | 2 | ücretsiz
+kräftig | adj | 3 | güçlü, kuvvetli
+krank | adj | 1 | hasta
+kreativ | adj | 3 | yaratıcı
+kritisch | adj | 3 | eleştirel
+kühl | adj | 2 | serin
+kulturell | adj | 3 | kültürel
+künstlich | adj | 3 | yapay
+kurz | adj | 1 | kısa
+kürzlich | adv | 3 | geçenlerde
+lang | adj | 1 | uzun
+lange | adv | 1 | uzun süre
+langsam | adj | 1 | yavaş
+längst | adv | 3 | çoktan
+langweilig | adj | 1 | sıkıcı
+laut | adj | 1 | yüksek sesli, gürültülü
+lecker | adj | 1 | lezzetli
+ledig | adj | 1 | bekâr
+leer | adj | 2 | boş
+leicht | adj | 2 | kolay; hafif
+leider | adv | 1 | maalesef
+leise | adj | 2 | sessiz, alçak sesle
+letzte | adj | 2 | son; geçen (letzte Woche)
+lieb | adj | 2 | sevgili, tatlı
+links | adv | 1 | solda, sola
+locker | adj | 3 | gevşek; rahat
+lustig | adj | 2 | komik, eğlenceli
+mager | adj | 3 | yağsız; sıska
+mal | adv | 1 | bir (Komm mal!); kere
+man | pron | 1 | insan (genel özne: man sagt)
+manche | pron | 3 | bazı
+manchmal | adv | 1 | bazen
+männlich | adj | 2 | erkek, eril
+maximal | adv | 3 | en fazla
+mehr | adv | 1 | daha fazla
+mehrere | pron | 3 | birkaç, birçok
+meinetwegen | adv | 3 | bana göre olur
+meistens | adv | 2 | çoğunlukla
+menschlich | adj | 3 | insani
+merkwürdig | adj | 3 | tuhaf
+mild | adj | 3 | ılık; yumuşak
+mindestens | adv | 3 | en az
+mit | präp | 1 | ile (+ D)
+miteinander | adv | 3 | birbiriyle
+mitten | adv | 3 | ortasında (mitten in)
+mittlerweile | adv | 3 | bu arada, artık
+möbliert | adj | 3 | eşyalı
+modern | adj | 2 | modern
+möglich | adj | 1 | mümkün
+möglichst | adv | 3 | mümkün olduğunca
+müde | adj | 1 | yorgun
+mündlich | adj | 2 | sözlü
+mutig | adj | 3 | cesur
+nach | präp | 1 | sonra; -e (şehir, ülke) (+ D)
+nachdem | konj | 3 | -dıktan sonra
+nachher | adv | 2 | sonra
+nächste | adj | 1 | gelecek, bir sonraki
+nah | adj | 2 | yakın
+nämlich | adv | 3 | çünkü, yani (açıklama)
+nass | adj | 2 | ıslak
+national | adj | 3 | ulusal
+natürlich | adv | 1 | tabii ki; doğal
+neben | präp | 2 | yanında (+ D) / yanına (+ A)
+nebenan | adv | 3 | yan tarafta
+negativ | adj | 3 | olumsuz
+nein | andere | 1 | hayır
+nervös | adj | 2 | gergin
+nett | adj | 1 | hoş, kibar
+neu | adj | 1 | yeni
+neugierig | adj | 3 | meraklı
+neulich | adv | 3 | geçenlerde (yakın zamanda)
+nicht | adv | 1 | değil
+nichts | pron | 1 | hiçbir şey
+nie | adv | 1 | asla, hiç
+niedrig | adj | 3 | alçak, düşük
+niemand | pron | 2 | hiç kimse
+nirgends | adv | 3 | hiçbir yerde
+noch | adv | 1 | hâlâ; daha
+noch mal | adv | 1 | bir kez daha
+normal | adj | 2 | normal
+normalerweise | adv | 2 | normalde
+nötig | adj | 3 | gerekli
+notwendig | adj | 3 | zorunlu
+nun | adv | 3 | şimdi, işte
+nur | adv | 1 | sadece
+nützlich | adj | 3 | faydalı
+ob | konj | 2 | -ip -mediğini (Ich weiß nicht, ob …)
+oben | adv | 1 | yukarıda
+obwohl | konj | 3 | -mesine rağmen
+oder | konj | 1 | veya
+offen | adj | 2 | açık
+öffentlich | adj | 3 | kamusal, halka açık
+offiziell | adj | 3 | resmî
+oft | adv | 1 | sık sık
+ohne | präp | 2 | -sız, olmadan (+ A)
+optimistisch | adj | 3 | iyimser
+ordentlich | adj | 3 | düzenli, derli toplu
+ein paar | pron | 1 | birkaç
+peinlich | adj | 3 | utanç verici
+per | präp | 3 | ile, yoluyla (per E-Mail)
+perfekt | adj | 2 | mükemmel
+persönlich | adj | 2 | kişisel; bizzat
+plötzlich | adv | 2 | aniden
+politisch | adj | 3 | siyasi
+positiv | adj | 3 | olumlu
+praktisch | adj | 2 | pratik, kullanışlı
+preiswert | adj | 3 | fiyatına göre ucuz
+prima | adj | 1 | süper, harika
+privat | adj | 2 | özel
+pro | präp | 2 | başına (pro Person)
+pünktlich | adj | 1 | dakik, zamanında
+realistisch | adj | 3 | gerçekçi
+rechts | adv | 1 | sağda, sağa
+rechtzeitig | adv | 3 | vaktinde
+regelmäßig | adj | 2 | düzenli
+reich | adj | 2 | zengin
+reif | adj | 3 | olgun
+richtig | adj | 1 | doğru
+riesig | adj | 3 | kocaman
+roh | adj | 3 | çiğ
+rückwärts | adv | 3 | geriye doğru
+ruhig | adj | 2 | sakin, sessiz
+rund | adj | 3 | yuvarlak; yaklaşık
+salzig | adj | 3 | tuzlu
+satt | adj | 2 | tok
+sauber | adj | 1 | temiz
+sauer | adj | 3 | ekşi; kızgın
+schade | adj | 1 | yazık
+schädlich | adj | 3 | zararlı
+scharf | adj | 2 | acı (yemek); keskin
+schlank | adj | 2 | ince, zayıf (vücut)
+schlecht | adj | 1 | kötü
+schließlich | adv | 3 | sonunda; sonuçta
+schlimm | adj | 2 | kötü, berbat
+schmal | adj | 3 | dar
+schmutzig | adj | 2 | kirli
+schnell | adj | 1 | hızlı
+schon | adv | 1 | zaten, çoktan
+schön | adj | 1 | güzel
+schrecklich | adj | 2 | korkunç
+schriftlich | adj | 2 | yazılı
+schuld | adj | 3 | suçlu (schuld sein)
+schwach | adj | 3 | zayıf, güçsüz
+schwanger | adj | 3 | hamile
+schwer | adj | 1 | zor; ağır
+schwierig | adj | 2 | zor
+sehr | adv | 1 | çok
+seit | präp | 2 | -den beri (+ D)
+seitdem | konj | 3 | -dığından beri
+selbst | adv | 2 | kendisi; bile
+selbstständig | adj | 3 | bağımsız; serbest çalışan
+selbstverständlich | adv | 3 | elbette
+selten | adv | 2 | nadiren
+seltsam | adj | 3 | garip
+sicher | adj | 1 | emin; güvenli
+sinnvoll | adj | 3 | anlamlı, mantıklı
+so | adv | 1 | böyle, öyle
+sobald | konj | 3 | -er -mez
+sodass | konj | 3 | öyle ki, böylece
+sofort | adv | 1 | hemen
+sogar | adv | 3 | hatta, bile
+solange | konj | 3 | -dığı sürece
+sondern | konj | 2 | aksine (nicht … sondern)
+sonnig | adj | 2 | güneşli
+sonst | adv | 2 | yoksa; başka
+sowieso | adv | 3 | zaten, nasılsa
+sowohl … als auch | konj | 3 | hem … hem de
+sozial | adj | 3 | sosyal
+spannend | adj | 2 | heyecanlı, sürükleyici
+sparsam | adj | 3 | tutumlu
+spät | adj | 1 | geç
+spätestens | adv | 3 | en geç
+speziell | adj | 3 | özel
+sportlich | adj | 2 | sportif
+ständig | adj | 3 | sürekli
+stark | adj | 2 | güçlü
+statt | präp | 3 | yerine (+ Gen)
+steil | adj | 3 | dik
+still | adj | 3 | sessiz, durgun
+stolz | adj | 3 | gururlu (auf: ile)
+streng | adj | 3 | sıkı, katı
+super | adj | 1 | süper
+süß | adj | 2 | tatlı
+sympathisch | adj | 2 | sempatik
+tatsächlich | adv | 3 | gerçekten de
+technisch | adj | 3 | teknik
+teuer | adj | 1 | pahalı
+tief | adj | 3 | derin
+tolerant | adj | 3 | hoşgörülü
+toll | adj | 1 | harika
+tot | adj | 3 | ölü
+traditionell | adj | 3 | geleneksel
+traurig | adj | 2 | üzgün
+treu | adj | 3 | sadık
+trocken | adj | 2 | kuru
+trotz | präp | 3 | -e rağmen (+ Gen)
+trotzdem | adv | 2 | yine de
+typisch | adj | 2 | tipik
+über | präp | 1 | üstünde (+ D) / üstüne (+ A); hakkında
+überall | adv | 2 | her yerde
+überhaupt | adv | 3 | hiç (überhaupt nicht); zaten
+übermorgen | adv | 1 | öbür gün
+üblich | adj | 3 | olağan
+übrigens | adv | 3 | bu arada
+um | präp | 1 | saat (um 8 Uhr); etrafında (+ A)
+um … zu | konj | 3 | -mek için
+umgekehrt | adv | 3 | tam tersi
+umsonst | adv | 3 | bedava; boşuna
+unbedingt | adv | 3 | mutlaka
+und | konj | 1 | ve
+ungefähr | adv | 2 | yaklaşık
+ungewöhnlich | adj | 3 | alışılmadık
+unglaublich | adj | 3 | inanılmaz
+unten | adv | 1 | aşağıda
+unter | präp | 2 | altında (+ D) / altına (+ A)
+unterschiedlich | adj | 3 | farklı, çeşitli
+unterwegs | adv | 3 | yolda
+ursprünglich | adv | 3 | aslında, başlangıçta
+vegetarisch | adj | 3 | vejetaryen
+verantwortlich | adj | 3 | sorumlu
+verboten | adj | 2 | yasak
+vergeblich | adj | 3 | boşuna
+verheiratet | adj | 1 | evli
+verliebt | adj | 2 | âşık
+vermutlich | adv | 3 | muhtemelen
+vernünftig | adj | 3 | akıllıca, mantıklı
+verpflichtet | adj | 3 | yükümlü
+verrückt | adj | 3 | deli
+verschieden | adj | 2 | farklı, çeşitli
+verständlich | adj | 3 | anlaşılır
+verwandt | adj | 3 | akraba
+viel | adv | 1 | çok
+vielleicht | adv | 1 | belki
+voll | adj | 2 | dolu
+völlig | adv | 3 | tamamen
+von | präp | 1 | -den; -in (+ D)
+vor | präp | 1 | önünde (+ D) / önüne (+ A); önce
+vor allem | adv | 3 | özellikle, her şeyden önce
+voraussichtlich | adv | 3 | tahminen
+vorbei | adv | 2 | geçti, bitti
+vorgestern | adv | 2 | evvelsi gün
+vorher | adv | 2 | önceden
+vorhin | adv | 3 | az önce
+vorläufig | adj | 3 | geçici
+vorne | adv | 2 | önde
+vorsichtig | adj | 2 | dikkatli (tedbirli)
+wach | adj | 3 | uyanık
+wahr | adj | 3 | gerçek, doğru
+während | präp | 3 | sırasında (+ Gen); -iken
+wahrscheinlich | adv | 2 | muhtemelen
+wann | andere | 1 | ne zaman
+warm | adj | 1 | sıcak, ılık
+warum | andere | 1 | neden
+was | pron | 1 | ne
+weder … noch | konj | 3 | ne … ne de
+weg | adv | 2 | gitmiş, yok (weg sein)
+wegen | präp | 3 | yüzünden (+ Gen)
+weiblich | adj | 2 | kadın, dişil
+weich | adj | 3 | yumuşak
+weil | konj | 2 | çünkü (yan cümle, fiil sonda)
+weit | adj | 2 | uzak; geniş
+welcher | pron | 1 | hangi (welche, welches)
+weltweit | adj | 3 | dünya çapında
+wenig | adj | 2 | az
+wenigstens | adv | 3 | hiç değilse
+wenn | konj | 1 | eğer; -dığında (her seferinde)
+wer | pron | 1 | kim
+wertvoll | adj | 3 | değerli
+wichtig | adj | 1 | önemli
+wie | andere | 1 | nasıl; gibi
+wieder | adv | 1 | tekrar
+wild | adj | 3 | vahşi
+wieso | andere | 3 | neden, nasıl olur da
+wie viel | andere | 1 | ne kadar, kaç
+willkommen | adj | 1 | hoş geldin(iz)
+windig | adj | 2 | rüzgârlı
+wirklich | adv | 1 | gerçekten
+wo | andere | 1 | nerede
+woher | andere | 1 | nereden
+wohin | andere | 1 | nereye
+wohl | adv | 3 | muhtemelen; iyi (sich wohl fühlen)
+bewölkt | adj | 2 | bulutlu
+wunderbar | adj | 2 | harika
+wunderschön | adj | 2 | çok güzel
+wütend | adj | 3 | öfkeli
+zahlreich | adj | 3 | çok sayıda
+zentral | adj | 3 | merkezi
+ziemlich | adv | 2 | oldukça
+zu | präp | 1 | -e (kişi / yer) (+ D); fazla (zu teuer)
+zuerst | adv | 2 | önce, ilk olarak
+zufällig | adv | 3 | tesadüfen
+zufrieden | adj | 2 | memnun
+zukünftig | adj | 3 | gelecekteki
+zuletzt | adv | 3 | en son
+zumindest | adv | 3 | en azından
+zunächst | adv | 3 | ilk önce
+zurück | adv | 2 | geri
+zurzeit | adv | 3 | şu sıralar
+zusammen | adv | 1 | birlikte
+zusätzlich | adj | 3 | ek, ilave
+zuständig | adj | 3 | yetkili, sorumlu (bir işten)
+zuverlässig | adj | 3 | güvenilir
+zwar … aber | konj | 3 | gerçi … ama
+zwischen | präp | 2 | arasında (+ D) / arasına (+ A)
+an | präp | 1 | -de (yanında, dikey yüzeyde) (+ D) / -e (+ A)
+auf | präp | 1 | üstünde (+ D) / üstüne (+ A)
+aus | präp | 1 | -den (içinden; memleket) (+ D)
+morgen | adv | 1 | yarın

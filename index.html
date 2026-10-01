@@ -31,18 +31,28 @@
 
 <main>
   <section id="v-calis" class="view">
+    <nav id="plan" class="plan" aria-label="Bugünün planı"></nav>
     <div class="odak-satir">
       <label for="odak">Bölüm</label>
       <select id="odak">
-        <option value="normal">Karışık (hepsi)</option>
-        <option value="verben">Fiiller</option>
-        <option value="woerter">Kelimeler (isimler)</option>
-        <option value="ndek">n-Deklination</option>
-        <option value="refl">Dönüşlü fiiller</option>
+        <optgroup label="Ezber (hızlı)">
+          <option value="blitz">Hızlı tur</option>
+          <option value="paket">Paketler</option>
+        </optgroup>
+        <optgroup label="Yazarak">
+          <option value="normal">Karışık</option>
+          <option value="verben">Fiiller</option>
+          <option value="woerter">Kelimeler (yazarak)</option>
+        </optgroup>
+        <optgroup label="Dilbilgisi">
+          <option value="ndek">n-Deklination</option>
+          <option value="refl">Dönüşlü fiiller</option>
+        </optgroup>
         <option value="zayif">Zayıflar</option>
       </select>
       <span class="ust-bilgi" id="durum-satiri"></span>
     </div>
+    <div id="hinweis" class="hinweis" role="status" hidden></div>
     <div id="kart" class="kart" aria-live="polite"></div>
     <div class="klavye" id="umlaut">
       <button type="button" data-c="ä">ä</button><button type="button" data-c="ö">ö</button>
@@ -55,7 +65,7 @@
 
   <section id="v-zayif" class="view" hidden>
     <h1>Zayıflar</h1>
-    <p class="aciklama">Yanlış yaptığın ya da zorlandığın fiil ve kelimeler. Burada yeni cümlelerde, boşluk doldurarak tekrar edilir.</p>
+    <p class="aciklama">Yanlış yaptığın ya da zorlandığın fiil ve kelimeler. Burada yeni cümlelerde, boşluk doldurarak tekrar edilir. Üç ayrı günde yanlış yaptıkların 🪝 ile işaretlenir: "sonuçlarıma bak" dediğinde Claude bunlara hafıza kancası yazar.</p>
     <div class="sira"><button class="btn ana" id="zayif-basla" type="button">Zayıfları çalış</button><span id="zayif-say" class="soluk"></span></div>
     <div id="zayif-liste" class="liste"></div>
   </section>
@@ -66,6 +76,7 @@
       <input id="ara" type="search" placeholder="Ara: Almanca ya da Türkçe" autocomplete="off">
       <select id="tur" aria-label="Tür">
         <option value="alle">Hepsi</option><option value="v">Fiiller</option><option value="n">İsimler</option>
+        <option value="w">Diğer (sıfat, zarf, bağlaç…)</option>
         <option value="ndek">n-Deklination (+ tuzaklar)</option><option value="refl">Dönüşlü fiiller</option>
       </select>
       <select id="durum" aria-label="Durum">
@@ -120,6 +131,9 @@
 
 <script src="daten/verben.js"></script>
 <script src="daten/nomen.js"></script>
+<script src="daten/woerter.js"></script>
+<script src="daten/pakete.js"></script>
+<script src="daten/kancalar.js"></script>
 <script src="daten/feedback.js"></script>
 <script src="js/fsrs.js"></script>
 <script src="js/grammatik.js"></script>

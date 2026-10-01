@@ -1,0 +1,93 @@
+# Konulu kelime paketleri (sahne + kısa B1 metni).
+# Biçim:
+#   ## <id> | <Almanca başlık> | <Türkçe başlık>
+#   wörter: anahtar; anahtar; …   (isim: "der Termin", fiil: verben.txt gösterimi, diğer: woerter.txt kelimesi)
+#   de:
+#   metin; boşluk: [[metindeki biçim|anahtar]]
+#   tr:
+#   Türkçe çevirisi
+# Yeni paketi EN SONA ekle. Her kelime metinde en az bir kez boşluk olmalı (build kontrol eder).
+
+## p01 | Beim Arzt | Doktorda
+wörter: das Fieber; der Schmerz; die Praxis; der Termin; die Versichertenkarte; untersuchen; verschreiben; das Rezept; die Apotheke; die Tablette
+de:
+Seit gestern habe ich [[Fieber|das Fieber]] und starke [[Schmerzen|der Schmerz]] im Hals. Deshalb rufe ich heute Morgen in der [[Praxis|die Praxis]] von Dr. Becker an und bekomme zum Glück noch einen [[Termin|der Termin]] für 10 Uhr. An der Anmeldung zeige ich meine [[Versichertenkarte|die Versichertenkarte]]. Die Ärztin [[untersucht|untersuchen]] mich gründlich und sagt: „Sie haben eine Erkältung, aber nichts Schlimmes.“ Sie [[verschreibt|verschreiben]] mir ein Medikament und gibt mir ein [[Rezept|das Rezept]]. Danach gehe ich direkt zur [[Apotheke|die Apotheke]] am Marktplatz. Der Apotheker erklärt mir: „Nehmen Sie dreimal am Tag eine [[Tablette|die Tablette]] nach dem Essen.“ Jetzt liege ich im Bett und trinke viel Tee.
+tr:
+Dünden beri ateşim ve boğazımda şiddetli ağrılar var. Bu yüzden sabah Dr. Becker'in muayenehanesini arıyorum ve neyse ki saat 10 için hâlâ bir randevu buluyorum. Kayıtta sigorta kartımı gösteriyorum. Doktor beni dikkatlice muayene ediyor ve diyor ki: “Soğuk algınlığınız var ama ciddi bir şey değil.” Bana bir ilaç yazıyor ve bir reçete veriyor. Sonra doğrudan Marktplatz'taki eczaneye gidiyorum. Eczacı bana açıklıyor: “Günde üç kez yemekten sonra bir tablet alın.” Şimdi yatakta yatıyorum ve bol çay içiyorum.
+
+## p02 | Wohnungssuche | Ev arama
+wörter: die Wohnung; die Anzeige; das Zimmer; der Balkon; die Miete; der Vermieter; besichtigen; der Vertrag; unterschreiben; einziehen
+de:
+Ich suche schon seit Wochen eine [[Wohnung|die Wohnung]] in Bremen. Gestern habe ich im Internet eine interessante [[Anzeige|die Anzeige]] gefunden: zwei [[Zimmer|das Zimmer]], Küche, Bad und ein kleiner [[Balkon|der Balkon]] in der Neustadt. Die [[Miete|die Miete]] beträgt 650 Euro warm. Das ist nicht billig, aber in Ordnung. Ich habe sofort den [[Vermieter|der Vermieter]] angerufen. Heute Nachmittag konnte ich die Wohnung [[besichtigen|besichtigen]]. Sie ist hell und ruhig, und ich habe mich sofort wohlgefühlt. Morgen bekomme ich den [[Vertrag|der Vertrag]]. Wenn alles klappt, [[unterschreibe|unterschreiben]] ich ihn am Freitag und kann am 1. November [[einziehen|einziehen]].
+tr:
+Haftalardır Bremen'de bir daire arıyorum. Dün internette ilginç bir ilan buldum: iki oda, mutfak, banyo ve Neustadt'ta küçük bir balkon. Kira ısınma dahil 650 Euro. Ucuz değil ama idare eder. Hemen ev sahibini aradım. Bugün öğleden sonra daireyi gezebildim. Aydınlık ve sakin, hemen kendimi iyi hissettim. Yarın sözleşmeyi alıyorum. Her şey yolunda giderse cuma günü imzalıyorum ve 1 Kasım'da taşınabiliyorum.
+
+## p03 | Anmeldung beim Bürgeramt | Belediyede ikamet kaydı
+wörter: die Anmeldung; das Amt; das Formular; ausfüllen; der Pass; die Unterschrift; die Bestätigung; der Wohnsitz; die Behörde; beantragen
+de:
+In Deutschland muss man sich nach dem Umzug innerhalb von zwei Wochen beim Bürgeramt anmelden. Für die [[Anmeldung|die Anmeldung]] braucht man einen Termin, deshalb habe ich ihn online gebucht. Im [[Amt|das Amt]] war es sehr voll. Zuerst musste ich ein [[Formular|das Formular]] [[ausfüllen|ausfüllen]]: Name, Geburtsdatum, alte und neue Adresse. Dann habe ich meinen [[Pass|der Pass]] und das Schreiben vom Vermieter gezeigt. Die Mitarbeiterin hat alles kontrolliert. Am Ende brauchte sie noch meine [[Unterschrift|die Unterschrift]]. Danach habe ich eine [[Bestätigung|die Bestätigung]] über meinen neuen [[Wohnsitz|der Wohnsitz]] bekommen. Mit diesem Papier kann ich jetzt auch bei anderen [[Behörden|die Behörde]] zum Beispiel eine Steuernummer [[beantragen|beantragen]].
+tr:
+Almanya'da taşındıktan sonra iki hafta içinde belediyenin vatandaş bürosuna kayıt yaptırmak gerekiyor. Kayıt için randevu lazım, bu yüzden internetten aldım. Dairede çok kalabalıktı. Önce bir form doldurmam gerekti: ad, doğum tarihi, eski ve yeni adres. Sonra pasaportumu ve ev sahibinden gelen yazıyı gösterdim. Görevli her şeyi kontrol etti. Sonunda bir de imzama ihtiyacı vardı. Ardından yeni ikametgâhım hakkında bir onay belgesi aldım. Bu kâğıtla artık başka resmî kurumlarda da örneğin vergi numarası için başvurabiliyorum.
+
+## p04 | An der Uni | Üniversitede
+wörter: das Semester; die Universität; sich anmelden für; das Seminar; der Dozent; das Referat; die Prüfung; der Kommilitone; die Mensa; die Bibliothek
+de:
+Das neue [[Semester|das Semester]] an der [[Universität|die Universität]] Bremen beginnt im Oktober. In der ersten Woche muss ich mich für meine Kurse [[anmelden|sich anmelden für]]. Montags habe ich ein [[Seminar|das Seminar]] über deutsche Grammatik. Unser [[Dozent|der Dozent]] ist sehr freundlich, aber er erwartet viel. Jeder Student muss ein [[Referat|das Referat]] halten und am Ende eine schriftliche [[Prüfung|die Prüfung]] schreiben. Mittags esse ich mit meinen [[Kommilitonen|der Kommilitone]] in der [[Mensa|die Mensa]], weil das Essen dort günstig ist. Nachmittags lerne ich meistens in der [[Bibliothek|die Bibliothek]], denn zu Hause ist es zu laut.
+tr:
+Bremen Üniversitesi'nde yeni dönem ekimde başlıyor. İlk hafta derslerime kaydolmam gerekiyor. Pazartesileri Almanca dilbilgisi üzerine bir seminerim var. Öğretim görevlimiz çok cana yakın ama çok şey bekliyor. Her öğrenci bir sunum yapmak ve sonunda yazılı bir sınava girmek zorunda. Öğlenleri sınıf arkadaşlarımla yemekhanede yiyorum, çünkü yemek orada ucuz. Öğleden sonraları çoğunlukla kütüphanede çalışıyorum, çünkü evde çok gürültü var.
+
+## p05 | Im Supermarkt | Süpermarkette
+wörter: einkaufen; der Supermarkt; das Gemüse; das Sonderangebot; der Preis; die Kasse; das Bargeld; bezahlen; die Tüte; die Quittung
+de:
+Am Samstag gehe ich immer [[einkaufen|einkaufen]]. Der [[Supermarkt|der Supermarkt]] in meiner Straße ist nicht groß, aber er hat alles, was ich brauche. Zuerst nehme ich frisches [[Gemüse|das Gemüse]] und Obst. Diese Woche gibt es Käse im [[Sonderangebot|das Sonderangebot]]: Der [[Preis|der Preis]] ist zwanzig Prozent niedriger als sonst. An der [[Kasse|die Kasse]] ist eine lange Schlange. Ich habe kein [[Bargeld|das Bargeld]] dabei, deshalb [[bezahle|bezahlen]] ich mit Karte. Die Kassiererin fragt: „Brauchen Sie eine [[Tüte|die Tüte]]?“ – „Nein, danke, ich habe meine Tasche dabei.“ Die [[Quittung|die Quittung]] nehme ich mit, falls ich etwas umtauschen muss.
+tr:
+Cumartesi günleri hep alışverişe giderim. Sokağımdaki süpermarket büyük değil ama ihtiyacım olan her şey var. Önce taze sebze ve meyve alıyorum. Bu hafta peynir indirimde: fiyatı her zamankinden yüzde yirmi düşük. Kasada uzun bir kuyruk var. Yanımda nakit yok, bu yüzden kartla ödüyorum. Kasiyer soruyor: “Poşet ister misiniz?” – “Hayır, teşekkürler, çantam yanımda.” Bir şeyi değiştirmem gerekirse diye fişi alıyorum.
+
+## p06 | Mit der Bahn | Trenle yolculuk
+wörter: der Zug; die Fahrkarte; der Bahnhof; abfahren; das Gleis; die Durchsage; die Verspätung; umsteigen; der Anschluss; ankommen
+de:
+Am Freitag fahre ich mit dem [[Zug|der Zug]] von Bremen nach Lübeck. Die [[Fahrkarte|die Fahrkarte]] habe ich schon online gekauft. Ich bin früh am [[Bahnhof|der Bahnhof]], denn der Zug soll um 8:15 Uhr von [[Gleis|das Gleis]] 4 [[abfahren|abfahren]]. Plötzlich kommt eine [[Durchsage|die Durchsage]]: „Der Zug hat zwanzig Minuten [[Verspätung|die Verspätung]].“ So ein Pech! In Hamburg muss ich [[umsteigen|umsteigen]], und jetzt verpasse ich vielleicht meinen [[Anschluss|der Anschluss]]. Zum Glück wartet der andere Zug, und ich kann fast pünktlich in Lübeck [[ankommen|ankommen]].
+tr:
+Cuma günü trenle Bremen'den Lübeck'e gidiyorum. Bileti internetten çoktan aldım. İstasyona erken geliyorum, çünkü tren 4. perondan 8.15'te kalkacak. Birden bir anons geliyor: “Trenin yirmi dakika gecikmesi var.” Ne şanssızlık! Hamburg'da aktarma yapmam gerekiyor ve şimdi belki bağlantı trenimi kaçıracağım. Neyse ki diğer tren bekliyor ve Lübeck'e neredeyse zamanında varabiliyorum.
+
+## p07 | Bei der Bank | Bankada
+wörter: das Konto; eröffnen; der Ausweis; die Gebühr; der Geldautomat; abheben; die Kreditkarte; die Überweisung; überweisen; die Bank
+de:
+Für das Studium brauche ich ein deutsches [[Konto|das Konto]]. Deshalb gehe ich zur Sparkasse in der Innenstadt, um ein Konto zu [[eröffnen|eröffnen]]. Der Berater möchte meinen [[Ausweis|der Ausweis]] und meine Meldebestätigung sehen. Er erklärt mir, dass Studenten für das Girokonto keine [[Gebühr|die Gebühr]] bezahlen müssen. Mit der Bankkarte kann ich an jedem [[Geldautomaten|der Geldautomat]] der Sparkasse kostenlos Geld [[abheben|abheben]]. Eine [[Kreditkarte|die Kreditkarte]] bekomme ich erst später. Die Miete zahle ich jeden Monat per [[Überweisung|die Überweisung]]. Ich muss nur die IBAN des Vermieters eingeben und den Betrag [[überweisen|überweisen]]. Die [[Bank|die Bank]] schickt mir die Karte in einer Woche per Post.
+tr:
+Okul için bir Alman banka hesabına ihtiyacım var. Bu yüzden hesap açmak için şehir merkezindeki Sparkasse'ye gidiyorum. Danışman kimliğimi ve ikamet kayıt belgemi görmek istiyor. Öğrencilerin vadesiz hesap için hiç ücret ödemesi gerekmediğini açıklıyor. Banka kartıyla Sparkasse'nin her ATM'sinden ücretsiz para çekebiliyorum. Kredi kartını ancak daha sonra alacağım. Kirayı her ay havaleyle ödüyorum. Sadece ev sahibinin IBAN'ını girip tutarı göndermem gerekiyor. Banka, kartı bana bir hafta içinde postayla gönderecek.
+
+## p08 | Die Bewerbung | İş başvurusu
+wörter: die Stelle; die Firma; sich bewerben um; die Bewerbung; der Lebenslauf; die Ausbildung; die Erfahrung; das Praktikum; das Vorstellungsgespräch; das Gehalt
+de:
+Neben dem Studium möchte ich in Bremen arbeiten. Im Internet habe ich eine interessante [[Stelle|die Stelle]] gefunden: Eine [[Firma|die Firma]] sucht Studenten für die Kundenbetreuung. Ich möchte mich um diese Stelle [[bewerben|sich bewerben um]]. Für die [[Bewerbung|die Bewerbung]] brauche ich ein Anschreiben und einen [[Lebenslauf|der Lebenslauf]] auf Deutsch. Darin schreibe ich über meine [[Ausbildung|die Ausbildung]] und meine [[Erfahrung|die Erfahrung]]: In der Türkei habe ich ein [[Praktikum|das Praktikum]] in einem Hotel gemacht. Zwei Wochen später bekomme ich eine E-Mail. Die Firma lädt mich zu einem [[Vorstellungsgespräch|das Vorstellungsgespräch]] ein! Dort fragen sie mich auch, welches [[Gehalt|das Gehalt]] ich mir vorstelle.
+tr:
+Okulun yanında Bremen'de çalışmak istiyorum. İnternette ilginç bir iş ilanı buldum: Bir firma müşteri hizmetleri için öğrenci arıyor. Bu işe başvurmak istiyorum. Başvuru için bir ön yazıya ve Almanca bir özgeçmişe ihtiyacım var. Özgeçmişimde eğitimimden ve deneyimimden bahsediyorum: Türkiye'de bir otelde staj yaptım. İki hafta sonra bir e-posta geliyor. Firma beni iş görüşmesine davet ediyor! Orada bana ne kadar maaş düşündüğümü de soruyorlar.
+
+## p09 | Eine Verabredung | Bir buluşma
+wörter: die Lust; das Konzert; die Karte; sich verabreden mit; der Treffpunkt; die Verabredung; absagen; schade; der Vorschlag; pünktlich
+de:
+Am Wochenende möchte ich etwas mit meiner Freundin Elif unternehmen. Ich schreibe ihr: „Hast du [[Lust|die Lust]], am Samstag ins [[Konzert|das Konzert]] zu gehen?“ Sie antwortet sofort: „Gerne! Ich kaufe die [[Karten|die Karte]] online.“ Wir [[verabreden|sich verabreden mit]] uns für 19 Uhr am Hauptbahnhof. Das ist ein guter [[Treffpunkt|der Treffpunkt]], weil wir beide mit der Straßenbahn kommen. Am Samstagmittag ruft Elif an. Ihr Bruder ist krank, und sie muss die [[Verabredung|die Verabredung]] leider [[absagen|absagen]]. „Wie [[schade|schade]]!“, sage ich. Dann macht sie einen [[Vorschlag|der Vorschlag]]: „Wir gehen nächste Woche zusammen, okay?“ Diesmal will ich [[pünktlich|pünktlich]] sein, denn letztes Mal habe ich sie warten lassen.
+tr:
+Hafta sonu arkadaşım Elif'le bir şey yapmak istiyorum. Ona yazıyorum: “Cumartesi konsere gitmek ister misin?” Hemen cevap veriyor: “Seve seve! Biletleri internetten alırım.” Saat 19.00'da ana istasyonda buluşmak üzere sözleşiyoruz. Bu iyi bir buluşma yeri, çünkü ikimiz de tramvayla geliyoruz. Cumartesi öğlen Elif arıyor. Erkek kardeşi hasta ve maalesef buluşmayı iptal etmek zorunda. “Ne yazık!” diyorum. Sonra bir öneri getiriyor: “Gelecek hafta birlikte gideriz, tamam mı?” Bu sefer dakik olmak istiyorum, çünkü geçen sefer onu beklettim.
+
+## p10 | Das Wetter in Bremen | Bremen'de hava
+wörter: das Wetter; die Wettervorhersage; bewölkt; regnen; die Temperatur; der Wind; scheinen; der Regen; das Gewitter; nass
+de:
+In Bremen ist das [[Wetter|das Wetter]] oft wechselhaft. Heute Morgen habe ich die [[Wettervorhersage|die Wettervorhersage]] im Radio gehört: Am Vormittag ist es [[bewölkt|bewölkt]], am Nachmittag soll es [[regnen|regnen]]. Die [[Temperatur|die Temperatur]] liegt bei zwölf Grad. Außerdem gibt es starken [[Wind|der Wind]] von der Nordsee. Ich nehme also meinen Regenschirm mit. Aber auf dem Weg zur Uni [[scheint|scheinen]] plötzlich die Sonne! Am Abend kommt dann doch der [[Regen|der Regen]], und es gibt sogar ein [[Gewitter|das Gewitter]]. Zu Hause bin ich völlig [[nass|nass]], weil der Wind meinen Schirm kaputtgemacht hat.
+tr:
+Bremen'de hava sık sık değişkendir. Bu sabah radyoda hava tahminini dinledim: Öğleden önce bulutlu, öğleden sonra yağmur yağacakmış. Sıcaklık on iki derece civarında. Ayrıca Kuzey Denizi'nden sert bir rüzgâr esiyor. Yani şemsiyemi yanıma alıyorum. Ama üniversiteye giderken birden güneş açıyor! Akşam yine de yağmur geliyor, hatta gök gürültülü fırtına çıkıyor. Eve vardığımda sırılsıklamım, çünkü rüzgâr şemsiyemi bozmuş.
+
+## p11 | Im Restaurant | Restoranda
+wörter: das Restaurant; reservieren; der Tisch; der Kellner; die Speisekarte; das Getränk; bestellen; die Nachspeise; die Rechnung; das Trinkgeld
+de:
+Zum Geburtstag meiner Mutter möchte ich sie in ein [[Restaurant|das Restaurant]] einladen. Ich rufe an und [[reserviere|reservieren]] einen [[Tisch|der Tisch]] für zwei Personen um 19 Uhr. Am Abend bringt uns der [[Kellner|der Kellner]] die [[Speisekarte|die Speisekarte]]. Zuerst wählen wir die [[Getränke|das Getränk]]: ein Glas Wein für meine Mutter und eine Apfelschorle für mich. Dann [[bestellen|bestellen]] wir Fisch mit Kartoffeln. Das Essen ist sehr lecker. Als [[Nachspeise|die Nachspeise]] nehmen wir ein Eis. Am Ende bitte ich um die [[Rechnung|die Rechnung]]. Sie beträgt 68 Euro. Ich bezahle 75 Euro, der Rest ist [[Trinkgeld|das Trinkgeld]] für den Kellner.
+tr:
+Annemin doğum günü için onu bir restorana davet etmek istiyorum. Arayıp saat 19.00 için iki kişilik bir masa ayırtıyorum. Akşam garson bize menüyü getiriyor. Önce içecekleri seçiyoruz: annem için bir kadeh şarap, benim için elmalı soda. Sonra patatesli balık sipariş ediyoruz. Yemek çok lezzetli. Tatlı olarak dondurma alıyoruz. Sonunda hesabı istiyorum. Hesap 68 Euro tutuyor. 75 Euro ödüyorum, gerisi garsona bahşiş.
+
+## p12 | Post und Pakete | Postane ve kargo
+wörter: das Paket; schicken; der Empfänger; der Absender; die Post; der Brief; das Einschreiben; die Briefmarke; der Briefkasten; abholen
+de:
+Meine Schwester in Izmir hat bald Geburtstag. Ich möchte ihr ein [[Paket|das Paket]] mit Bremer Schokolade [[schicken|schicken]]. Auf das Paket schreibe ich die Adresse vom [[Empfänger|der Empfänger]], also ihre, und die Adresse vom [[Absender|der Absender]], also meine. Bei der [[Post|die Post]] wird das Paket gewogen, und ich bezahle 17 Euro. Außerdem schicke ich einen [[Brief|der Brief]] an die Ausländerbehörde. Weil er wichtig ist, schicke ich ihn als [[Einschreiben|das Einschreiben]]. Für eine Postkarte kaufe ich noch eine [[Briefmarke|die Briefmarke]] und werfe die Karte draußen in den gelben [[Briefkasten|der Briefkasten]]. Zu Hause finde ich einen Zettel: Ein Paket für mich liegt beim Nachbarn. Ich kann es heute Abend bei ihm [[abholen|abholen]].
+tr:
+İzmir'deki kız kardeşimin yakında doğum günü. Ona Bremen çikolatası dolu bir koli göndermek istiyorum. Kolinin üzerine alıcının adresini, yani onunkini, ve göndericinin adresini, yani benimkini yazıyorum. Postanede koli tartılıyor ve 17 Euro ödüyorum. Ayrıca yabancılar dairesine bir mektup gönderiyorum. Önemli olduğu için taahhütlü gönderiyorum. Bir kartpostal için de bir pul alıyorum ve kartı dışarıdaki sarı posta kutusuna atıyorum. Evde bir not buluyorum: Bana gelen bir koli komşuda duruyor. Akşam ondan gidip alabilirim.
