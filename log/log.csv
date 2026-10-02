@@ -253,3 +253,13 @@
 2026-10-02 12:00:20;pretest;n0248:erk;der Donner;der Donner;gök gürültüsü;neu;gök gürültüsü;yavaş
 2026-10-02 12:00:29;art;n1376:art;die Wettervorhersage;Wettervorhersage;die;fast;die Wettervorhersage;sek:7 | ipucu:0
 2026-10-02 12:00:32;pretest;n0474:erk;das Gewitter;das Gewitter;fırtına;bekannt;fırtına (gök gürültülü);sek:2
+2026-10-02 12:00:56;erk;n0248:erk;der Donner;der Donner;gök gürültüsü;fast;gök gürültüsü;yavaş | sek:23 | ipucu:0
+2026-10-02 12:00:59;art;n1375:art;der Wetterbericht;Wetterbericht;der;richtig;der Wetterbericht;sek:2 | ipucu:0
+2026-10-02 12:01:04;art;n0587:art;die Kälte;Kälte;die;fast;die Kälte;sek:4 | ipucu:0
+2026-10-02 12:01:16;pretest;v447:bed;scheinen;scheinen;parlamak;neu;(güneş) parlamak;yavaş
+2026-10-02 12:01:23;art;n1028:art;der Schatten;Schatten;der;richtig;der Schatten;sek:3 | ipucu:0
+2026-10-02 12:01:29;art;n0844:art;der Nebel;Nebel;das;falsch;der Nebel;artikel: das → der | sek:4 | ipucu:0
+2026-10-02 12:01:32;bed;v447:bed;scheinen;scheinen;parlamak;richtig;(güneş) parlamak;sek:2 | ipucu:0
+2026-10-02 12:01:36;pretest;n1038:erk;der Schirm;der Schirm;şemsiye;bekannt;şemsiye;sek:4
+2026-10-02 12:01:40;pretest;w0560:erk;windig;windig;rüzgârlı;bekannt;rüzgârlı;sek:3
+2026-10-02 12:01:56;art;n1359:art;die Wärme;Wärme;die;richtig;die Wärme;sek:3 | ipucu:0
