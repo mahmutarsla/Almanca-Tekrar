@@ -406,3 +406,13 @@
 2026-10-02 12:33:37;satz;v111:satz;sich bemühen um;Bir randevu almaya çalışacağım.;Ich werde mich um einen Termin bemühen.;richtig;Ich werde mich um einen Termin bemühen.;sek:20 | ipucu:0
 2026-10-02 12:33:49;abr;v620:abr;verzichten auf;(bir şeyden) vazgeçmek;versichte an d;falsch;verzichten auf (auf + Akk);edat, artikel/çekim | sek:9 | ipucu:0
 2026-10-02 12:34:09;abr;v111:abr;sich bemühen um;(bir şey için) çabalamak;sich berühmen um ;falsch;sich bemühen um (um + Akk);farklı | sek:18 | ipucu:0
+2026-10-02 23:33:06;art;n1048:art;der Schnee;Schnee;der;fast;der Schnee;sek:4 | ipucu:0
+2026-10-02 23:33:10;art;n0973:art;der Regen;Regen;das;falsch;der Regen;artikel: das → der | sek:3 | ipucu:0
+2026-10-02 23:33:13;art;n0617:art;die Kindheit;Kindheit;die;richtig;die Kindheit;sek:2 | ipucu:0
+2026-10-02 23:33:19;bed;v626:bed;vorschlagen;vorschlagen;önermek;richtig;(birine bir şeyi) önermek;sek:5 | ipucu:0
+2026-10-02 23:33:22;art;n0957:art;der Rat;Rat;das;falsch;der Rat;artikel: das → der | sek:2 | ipucu:0
+2026-10-02 23:33:25;art;n0028:art;die Änderung;Änderung;die;richtig;die Änderung;sek:2 | ipucu:0
+2026-10-02 23:33:28;art;n0973:art;der Regen;Regen;das;falsch;der Regen;artikel: das → der | sek:2 | ipucu:0
+2026-10-02 23:33:34;art;n0972:art;die Regel;Regel;das;falsch;die Regel;artikel: das → die | sek:5 | ipucu:0
+2026-10-02 23:33:36;art;n1354:art;die Wahrheit;Wahrheit;die;richtig;die Wahrheit;sek:2 | ipucu:0
+2026-10-02 23:33:41;art;n0957:art;der Rat;Rat;das;falsch;der Rat;artikel: das → der | sek:2 | ipucu:0
