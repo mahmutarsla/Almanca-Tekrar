@@ -1,0 +1,309 @@
+# Dönüşlü fiil çeviri cümleleri: fiil | Almanca | Türkçe (kişi ve zaman çeşitli). Yeni satır sona.
+v017 | Wir haben uns auf der Party gut amüsiert. | Partide çok iyi eğlendik.
+v017 | Amüsierst du dich auf dem Fest? | Şenlikte eğleniyor musun?
+v017 | Die Kinder amüsieren sich im Park. | Çocuklar parkta eğleniyor.
+v017 | Ich glaube, dass er sich gut amüsiert hat. | Sanırım o (erkek) iyi eğlendi.
+v029 | Ich habe mich für den Deutschkurs angemeldet. | Almanca kursuna kaydoldum.
+v029 | Hast du dich für die Prüfung angemeldet? | Sınava kaydoldun mu?
+v029 | Ihr müsst euch bis Freitag anmelden. | Siz (hepiniz) cumaya kadar kaydolmak zorundasınız.
+v029 | Sie meldet sich morgen beim Sportverein an. | O (kadın) yarın spor kulübüne kaydoluyor.
+v035 | Schnall dich bitte an! | Lütfen kemerini tak!
+v035 | Ich schnalle mich im Auto immer an. | Arabada her zaman kemerimi takarım.
+v035 | Hat er sich angeschnallt? | O (erkek) kemerini taktı mı?
+v035 | Wir müssen uns im Flugzeug anschnallen. | Uçakta kemerlerimizi takmak zorundayız.
+v036 | Ich sehe mir heute Abend einen Film an. | Bu akşam bir film izliyorum.
+v036 | Hast du dir die Wohnung angesehen? | Daireye baktın mı?
+v036 | Wir haben uns gestern das Museum angesehen. | Dün müzeyi gezip gördük.
+v036 | Sehen Sie sich bitte dieses Foto an! | Lütfen bu fotoğrafa bakın (siz, kibar).
+v039 | Du musst dich mehr anstrengen. | Daha çok çabalaman gerekiyor.
+v039 | Ich habe mich bei der Prüfung sehr angestrengt. | Sınavda çok çabaladım.
+v039 | Er strengt sich in der Schule nicht an. | O (erkek) okulda çabalamıyor.
+v039 | Wir strengen uns an, weil wir die Prüfung bestehen wollen. | Sınavı geçmek istediğimiz için çabalıyoruz.
+v045 | Ich ziehe mich schnell an. | Hızlıca giyiniyorum.
+v045 | Zieh dich warm an, es ist kalt! | Sıkı giyin, hava soğuk!
+v045 | Hat sich das Kind angezogen? | Çocuk giyindi mi?
+v045 | Sie zieht sich für die Party schick an. | O (kadın) parti için şık giyiniyor.
+v049 | Ich ärgere mich über den Lärm. | Gürültüye sinirleniyorum.
+v049 | Er hat sich über seinen Chef geärgert. | O (erkek) patronuna sinirlendi.
+v049 | Ärgerst du dich über die Verspätung? | Gecikmeye sinirleniyor musun?
+v049 | Wir ärgern uns, weil der Bus nicht kommt. | Otobüs gelmediği için sinirleniyoruz.
+v063 | Reg dich nicht auf! | Sinirlenme!
+v063 | Sie hat sich über die hohe Miete aufgeregt. | O (kadın) yüksek kiraya sinirlendi.
+v063 | Warum regt ihr euch über das Wetter auf? | Siz (ikiniz) neden havaya sinirleniyorsunuz?
+v063 | Ich rege mich auf, wenn jemand zu spät kommt. | Biri geç kalınca sinirleniyorum.
+v075 | Ich muss mich ein bisschen ausruhen. | Biraz dinlenmem gerekiyor.
+v075 | Hast du dich am Wochenende ausgeruht? | Hafta sonu dinlendin mi?
+v075 | Ruhen Sie sich nach der Operation aus! | Ameliyattan sonra dinlenin (siz, kibar).
+v075 | Wir ruhen uns nach dem Essen kurz aus. | Yemekten sonra kısa bir süre dinleniyoruz.
+v080 | Such dir ein Buch aus! | Kendine bir kitap seç!
+v080 | Ich habe mir ein neues Handy ausgesucht. | Kendime yeni bir cep telefonu seçtim.
+v080 | Hat sie sich ein Kleid ausgesucht? | O (kadın) kendine bir elbise seçti mi?
+v080 | Wir suchen uns ein Hotel am Meer aus. | Kendimize deniz kenarında bir otel seçiyoruz.
+v083 | Ich ziehe mich aus und gehe ins Bett. | Soyunuyorum ve yatağa gidiyorum.
+v083 | Zieh dich bitte aus, der Arzt kommt gleich. | Lütfen soyun, doktor birazdan geliyor.
+v083 | Er hat sich schnell ausgezogen. | O (erkek) hızlıca soyundu.
+v083 | Die Kinder ziehen sich am Strand aus. | Çocuklar plajda soyunuyor.
+v091 | Ich bedanke mich bei dir für das Geschenk. | Hediye için sana teşekkür ederim.
+v091 | Hast du dich bei deiner Oma bedankt? | Büyükannene teşekkür ettin mi?
+v091 | Wir haben uns beim Lehrer für die Hilfe bedankt. | Yardımı için öğretmene teşekkür ettik.
+v091 | Sie bedankt sich bei ihren Kollegen für die Blumen. | O (kadın) çiçekler için iş arkadaşlarına teşekkür ediyor.
+v094 | Beeil dich, der Zug fährt gleich! | Acele et, tren birazdan kalkıyor!
+v094 | Wir müssen uns beeilen. | Acele etmemiz gerekiyor.
+v094 | Ich habe mich beeilt, aber der Bus war schon weg. | Acele ettim ama otobüs çoktan gitmişti.
+v094 | Beeilt euch bitte! | Lütfen acele edin (ikiniz)!
+v096 | Das Büro befindet sich im zweiten Stock. | Ofis ikinci katta bulunuyor.
+v096 | Wo befindet sich der Bahnhof? | Tren istasyonu nerede bulunuyor?
+v096 | Ich befinde mich gerade in Bremen. | Şu anda Bremen'de bulunuyorum.
+v096 | Das Hotel hat sich früher am Markt befunden. | Otel eskiden pazar yerinde bulunuyordu.
+v111 | Ich bemühe mich um einen Studienplatz. | Üniversitede bir yer bulmak için çabalıyorum.
+v111 | Er hat sich sehr um seine Gäste bemüht. | O (erkek) misafirleri için çok çaba gösterdi.
+v111 | Bemühen Sie sich bitte nicht! | Lütfen zahmet etmeyin (siz, kibar).
+v111 | Wir bemühen uns, pünktlich zu sein. | Dakik olmaya çabalıyoruz.
+v119 | Beruhige dich doch! | Sakinleş artık!
+v119 | Sie hat sich schnell beruhigt. | O (kadın) çabuk sakinleşti.
+v119 | Ich beruhige mich, wenn ich Musik höre. | Müzik dinlediğimde sakinleşiyorum.
+v119 | Hat sich das Baby beruhigt? | Bebek sakinleşti mi?
+v121 | Ich beschäftige mich gern mit Computern. | Bilgisayarlarla uğraşmayı severim.
+v121 | Womit beschäftigst du dich in deiner Freizeit? | Boş zamanında neyle uğraşıyorsun?
+v121 | Wir haben uns lange mit dem Problem beschäftigt. | Uzun süre bu sorunla uğraştık.
+v121 | Er beschäftigt sich viel mit seinen Kindern. | O (erkek) çocuklarıyla çok ilgileniyor.
+v124 | Ich beschwere mich über das kalte Essen. | Soğuk yemekten şikâyet ediyorum.
+v124 | Die Nachbarn haben sich über die laute Musik beschwert. | Komşular yüksek sesli müzikten şikâyet etti.
+v124 | Warum beschwerst du dich immer? | Neden hep şikâyet ediyorsun?
+v124 | Er beschwert sich, weil das Zimmer schmutzig ist. | O (erkek) oda kirli olduğu için şikâyet ediyor.
+v137 | Ich beteilige mich am Projekt. | Projeye katılıyorum.
+v137 | Hast du dich an der Diskussion beteiligt? | Tartışmaya katıldın mı?
+v137 | Viele Studenten haben sich an der Umfrage beteiligt. | Pek çok öğrenci ankete katıldı.
+v137 | Wir beteiligen uns an den Kosten. | Masraflara katılıyoruz.
+v141 | Du musst dich mehr bewegen. | Daha çok hareket etmen gerekiyor.
+v141 | Ich bewege mich jeden Tag eine Stunde. | Her gün bir saat hareket ediyorum.
+v141 | Er hat sich nach dem Unfall nicht bewegt. | O (erkek) kazadan sonra hareket etmedi.
+v141 | Bewegt euch nicht! | Kıpırdamayın (hepiniz)!
+v143 | Ich bewerbe mich um eine Stelle bei der Post. | Postanede bir iş için başvuruyorum.
+v143 | Sie hat sich um einen Studienplatz in Bremen beworben. | O (kadın) Bremen'de bir üniversite yeri için başvurdu.
+v143 | Hast du dich um das Praktikum beworben? | Staja başvurdun mu?
+v143 | Wir bewerben uns, weil wir Geld brauchen. | Paraya ihtiyacımız olduğu için başvuruyoruz.
+v175 | Ich dusche mich jeden Morgen. | Her sabah duş alıyorum.
+v175 | Hast du dich nach dem Sport geduscht? | Spordan sonra duş aldın mı?
+v175 | Er duscht sich immer kalt. | O (erkek) hep soğuk suyla duş alıyor.
+v175 | Wir haben uns im Hotel geduscht. | Otelde duş aldık.
+v177 | Das Buch eignet sich gut für Anfänger. | Kitap yeni başlayanlar için çok uygun.
+v177 | Eignet sich die Wohnung für eine Familie? | Daire bir aile için uygun mu?
+v177 | Ich eigne mich nicht für diesen Beruf. | Bu meslek için uygun değilim.
+v177 | Der Raum hat sich gut für die Feier geeignet. | Oda kutlama için çok uygun oldu.
+v184 | Wir haben uns auf einen Termin geeinigt. | Bir randevu tarihinde anlaştık.
+v184 | Habt ihr euch auf ein Restaurant geeinigt? | Siz (ikiniz) bir restoranda anlaştınız mı?
+v184 | Die Kollegen einigen sich auf einen Plan. | İş arkadaşları bir plan üzerinde anlaşıyor.
+v184 | Ich hoffe, dass wir uns schnell einigen. | Umarım çabuk anlaşırız.
+v206 | Ich habe mich für das blaue Hemd entschieden. | Mavi gömlekte karar kıldım.
+v206 | Hast du dich entschieden? | Karar verdin mi?
+v206 | Sie entscheidet sich für ein Studium in Bremen. | O (kadın) Bremen'de okumayı seçiyor.
+v206 | Wir entscheiden uns für den Zug, weil er billiger ist. | Daha ucuz olduğu için treni seçiyoruz.
+v207 | Er hat sich zu einer Reise entschlossen. | O (erkek) bir yolculuğa çıkmaya karar verdi.
+v207 | Ich habe mich entschlossen, Deutsch zu lernen. | Almanca öğrenmeye karar verdim.
+v207 | Wir entschließen uns zum Umzug. | Taşınmaya karar veriyoruz.
+v207 | Hast du dich zu einem Sprachkurs entschlossen? | Bir dil kursuna gitmeye karar verdin mi?
+v209 | Ich entschuldige mich für die Verspätung. | Gecikme için özür dilerim.
+v209 | Hast du dich bei ihr entschuldigt? | Ondan (kadın) özür diledin mi?
+v209 | Er hat sich bei seinem Freund für den Fehler entschuldigt. | O (erkek) hata için arkadaşından özür diledi.
+v209 | Entschuldigen Sie sich bitte bei der Nachbarin! | Lütfen (kadın) komşudan özür dileyin (siz, kibar).
+v214 | Der Unfall hat sich gestern Abend ereignet. | Kaza dün akşam meydana geldi.
+v214 | Wo hat sich das ereignet? | Bu nerede meydana geldi?
+v214 | Solche Dinge ereignen sich leider oft. | Böyle şeyler maalesef sık sık meydana geliyor.
+v214 | Weißt du, wann sich der Unfall ereignet hat? | Kazanın ne zaman meydana geldiğini biliyor musun?
+v222 | Ich habe mich im Urlaub gut erholt. | Tatilde iyi dinlendim.
+v222 | Hast du dich von der Grippe erholt? | Gripten sonra kendine geldin mi?
+v222 | Er erholt sich langsam von der Operation. | O (erkek) ameliyattan sonra yavaş yavaş kendine geliyor.
+v222 | Wir müssen uns vom Stress erholen. | Stresten sonra dinlenmemiz gerekiyor.
+v224 | Ich erinnere mich gut an meine Kindheit. | Çocukluğumu iyi hatırlıyorum.
+v224 | Erinnerst du dich an mich? | Beni hatırlıyor musun?
+v224 | Sie hat sich nicht an den Namen erinnert. | O (kadın) adı hatırlamadı.
+v224 | Wir erinnern uns gern an den Urlaub in Italien. | İtalya'daki tatili severek hatırlıyoruz.
+v225 | Ich habe mich erkältet. | Üşüttüm.
+v225 | Zieh eine Jacke an, sonst erkältest du dich! | Ceket giy, yoksa üşütürsün!
+v225 | Er erkältet sich jeden Winter. | O (erkek) her kış üşütüyor.
+v225 | Die Kinder haben sich im Schwimmbad erkältet. | Çocuklar yüzme havuzunda üşüttü.
+v228 | Ich erkundige mich nach dem Weg. | Yolu soruyorum.
+v228 | Hast du dich nach den Preisen erkundigt? | Fiyatları sordun mu?
+v228 | Sie hat sich nach meiner Mutter erkundigt. | O (kadın) annemi sordu.
+v228 | Erkundigen Sie sich bitte am Schalter! | Lütfen gişeden bilgi alın (siz, kibar).
+v233 | Ich ernähre mich gesund. | Sağlıklı besleniyorum.
+v233 | Ernährst du dich vegetarisch? | Vejetaryen mi besleniyorsun?
+v233 | Er hat sich lange nur von Pizza ernährt. | O (erkek) uzun süre sadece pizzayla beslendi.
+v233 | Wir müssen uns besser ernähren. | Daha iyi beslenmemiz gerekiyor.
+v270 | Ich freue mich auf das Wochenende. | Hafta sonunu dört gözle bekliyorum.
+v270 | Freust du dich auf die Ferien? | Tatili dört gözle bekliyor musun?
+v270 | Die Kinder haben sich sehr auf Weihnachten gefreut. | Çocuklar Noel'i dört gözle bekledi.
+v270 | Wir freuen uns auf deinen Besuch. | Ziyaretini dört gözle bekliyoruz.
+v274 | Ich fühle mich heute nicht gut. | Bugün kendimi iyi hissetmiyorum.
+v274 | Wie fühlst du dich? | Kendini nasıl hissediyorsun?
+v274 | Sie hat sich in Bremen sofort wohl gefühlt. | O (kadın) Bremen'de kendini hemen rahat hissetti.
+v274 | Fühlen Sie sich besser? | Kendinizi daha iyi hissediyor musunuz (siz, kibar)?
+v278 | Ich fürchte mich vor Hunden. | Köpeklerden korkuyorum.
+v278 | Fürchtest du dich vor der Prüfung? | Sınavdan korkuyor musun?
+v278 | Das Kind hat sich vor dem Gewitter gefürchtet. | Çocuk fırtınadan korktu.
+v278 | Wir fürchten uns nicht vor der Dunkelheit. | Karanlıktan korkmuyoruz.
+v294 | Ich habe mich an das Wetter in Bremen gewöhnt. | Bremen'deki havaya alıştım.
+v294 | Hast du dich an die neue Arbeit gewöhnt? | Yeni işe alıştın mı?
+v294 | Er gewöhnt sich langsam an das deutsche Essen. | O (erkek) Alman yemeklerine yavaş yavaş alışıyor.
+v294 | Wir müssen uns an die neuen Regeln gewöhnen. | Yeni kurallara alışmamız gerekiyor.
+v327 | Ich informiere mich im Internet über die Uni. | İnternette üniversite hakkında bilgi ediniyorum.
+v327 | Hast du dich über die Kurse informiert? | Kurslar hakkında bilgi edindin mi?
+v327 | Sie hat sich über die Preise informiert. | O (kadın) fiyatlar hakkında bilgi edindi.
+v327 | Informieren Sie sich bitte über die Öffnungszeiten! | Lütfen açılış saatleri hakkında bilgi edinin (siz, kibar).
+v330 | Ich interessiere mich für Musik. | Müzikle ilgileniyorum.
+v330 | Wofür interessierst du dich? | Neyle ilgileniyorsun?
+v330 | Er hat sich früher sehr für Fußball interessiert. | O (erkek) eskiden futbolla çok ilgilendi.
+v330 | Wir interessieren uns für die Wohnung. | Daireyle ilgileniyoruz.
+v331 | Ich habe mich geirrt. | Yanıldım.
+v331 | Du irrst dich! | Yanılıyorsun!
+v331 | Sie irrt sich nie. | O (kadın) asla yanılmaz.
+v331 | Ich glaube, dass Sie sich irren. | Sanırım yanılıyorsunuz (siz, kibar).
+v350 | Ich kann mich nicht auf die Arbeit konzentrieren. | İşe odaklanamıyorum.
+v350 | Konzentrier dich auf die Prüfung! | Sınava odaklan!
+v350 | Er hat sich ganz auf das Spiel konzentriert. | O (erkek) tamamen oyuna odaklandı.
+v350 | Wir konzentrieren uns jetzt auf die Grammatik. | Şimdi dilbilgisine odaklanıyoruz.
+v355 | Ich kümmere mich um die Kinder. | Çocuklarla ilgileniyorum.
+v355 | Wer kümmert sich um den Hund? | Köpekle kim ilgileniyor?
+v355 | Sie hat sich um ihre kranke Mutter gekümmert. | O (kadın) hasta annesine baktı.
+v355 | Kümmert euch bitte um die Pflanzen! | Lütfen bitkilerle ilgilenin (ikiniz)!
+v361 | Ich langweile mich im Unterricht. | Derste sıkılıyorum.
+v361 | Langweilst du dich? | Sıkılıyor musun?
+v361 | Wir haben uns auf der Party gelangweilt. | Partide sıkıldık.
+v361 | Er langweilt sich, weil er nichts zu tun hat. | O (erkek) yapacak bir şeyi olmadığı için sıkılıyor.
+v368 | Ich kann mir kein Auto leisten. | Araba almaya param yetmiyor.
+v368 | Wir haben uns einen schönen Urlaub geleistet. | Kendimize güzel bir tatil ısmarladık.
+v368 | Kannst du dir die Wohnung leisten? | Daireye paran yetiyor mu?
+v368 | Sie leistet sich jeden Monat ein neues Kleid. | O (kadın) her ay kendine yeni bir elbise alıyor.
+v376 | Die Reise hat sich gelohnt. | Yolculuk zahmetine değdi.
+v376 | Lohnt sich das? | Buna değer mi?
+v376 | Es lohnt sich, früh aufzustehen. | Erken kalkmaya değer.
+v376 | Ich glaube, dass sich der Kurs lohnt. | Sanırım kurs buna değer.
+v385 | Ich melde mich morgen bei dir. | Yarın sana haber veririm.
+v385 | Hast du dich bei deinen Eltern gemeldet? | Ailene haber verdin mi?
+v385 | Er hat sich lange nicht bei mir gemeldet. | O (erkek) uzun zamandır bana ulaşmadı.
+v385 | Melden Sie sich bitte bei der Sekretärin! | Lütfen (kadın) sekretere haber verin (siz, kibar).
+v386 | Ich kann mir die Wörter nicht merken. | Kelimeleri aklımda tutamıyorum.
+v386 | Merk dir das! | Bunu aklında tut!
+v386 | Hast du dir die Telefonnummer gemerkt? | Telefon numarasını aklında tuttun mu?
+v386 | Er merkt sich alle Namen. | O (erkek) bütün isimleri aklında tutuyor.
+v397 | Der Zug nähert sich dem Bahnhof. | Tren istasyona yaklaşıyor.
+v397 | Ein Hund hat sich dem Kind genähert. | Bir köpek çocuğa yaklaştı.
+v397 | Wir nähern uns langsam dem Ziel. | Yavaş yavaş hedefe yaklaşıyoruz.
+v397 | Nähern Sie sich dem Tier nicht! | Hayvana yaklaşmayın (siz, kibar)!
+v420 | Ich rasiere mich jeden Morgen. | Her sabah tıraş oluyorum.
+v420 | Hast du dich heute rasiert? | Bugün tıraş oldun mu?
+v420 | Er rasiert sich nur am Wochenende. | O (erkek) sadece hafta sonu tıraş oluyor.
+v420 | Ich habe keine Zeit, weil ich mich noch rasieren muss. | Vaktim yok, çünkü daha tıraş olmam gerekiyor.
+v457 | Sie schminkt sich vor dem Spiegel. | O (kadın) aynanın önünde makyaj yapıyor.
+v457 | Hast du dich heute geschminkt? | Bugün makyaj yaptın mı?
+v457 | Ich schminke mich nur selten. | Sadece nadiren makyaj yapıyorum.
+v457 | Die Schauspielerinnen haben sich vor der Show geschminkt. | Kadın oyuncular gösteriden önce makyaj yaptı.
+v473 | Setz dich bitte! | Lütfen otur!
+v473 | Darf ich mich zu Ihnen setzen? | Yanınıza oturabilir miyim (siz, kibar)?
+v473 | Er hat sich neben mich gesetzt. | O (erkek) yanıma oturdu.
+v473 | Wir setzen uns ans Fenster. | Pencerenin yanına oturuyoruz.
+v482 | Ich sorge mich um meine Mutter. | Annem için endişeleniyorum.
+v482 | Sie hat sich um ihren Sohn gesorgt. | O (kadın) oğlu için endişelendi.
+v482 | Sorgst du dich um deine Gesundheit? | Sağlığın için endişeleniyor musun?
+v482 | Wir sorgen uns, weil er nicht anruft. | O (erkek) aramadığı için endişeleniyoruz.
+v509 | Ich habe mich mit meinem Bruder gestritten. | Erkek kardeşimle kavga ettim.
+v509 | Streitest du dich oft mit deiner Schwester? | Kız kardeşinle sık sık tartışır mısın?
+v509 | Die Nachbarn streiten sich jeden Abend. | Komşular her akşam kavga ediyor.
+v509 | Streitet euch nicht! | Kavga etmeyin (ikiniz)!
+v528 | Ich treffe mich heute mit Freunden. | Bugün arkadaşlarla buluşuyorum.
+v528 | Wann triffst du dich mit Anna? | Anna'yla ne zaman buluşuyorsun?
+v528 | Wir haben uns im Café getroffen. | Kafede buluştuk.
+v528 | Er trifft sich jeden Freitag mit seinen Kollegen. | O (erkek) her cuma iş arkadaşlarıyla buluşuyor.
+v530 | Sie hat sich von ihrem Freund getrennt. | O (kadın) erkek arkadaşından ayrıldı.
+v530 | Warum trennst du dich von ihm? | Neden ondan (erkek) ayrılıyorsun?
+v530 | Wir trennen uns am Bahnhof. | İstasyonda ayrılıyoruz.
+v530 | Ich habe gehört, dass sich die beiden getrennt haben. | İkisinin ayrıldığını duydum.
+v537 | Ich überlege mir das noch. | Bunu biraz daha düşünüyorum.
+v537 | Hast du dir das gut überlegt? | Bunu iyice düşündün mü?
+v537 | Wir haben uns eine Lösung überlegt. | Bir çözüm düşündük.
+v537 | Überlegen Sie sich das bitte bis morgen! | Lütfen bunu yarına kadar düşünün (siz, kibar).
+v549 | Er hat sich plötzlich umgedreht. | O (erkek) aniden arkasını döndü.
+v549 | Dreh dich bitte um! | Lütfen arkanı dön!
+v549 | Ich drehe mich um und sehe meinen Lehrer. | Arkamı dönüyorum ve öğretmenimi görüyorum.
+v549 | Warum drehst du dich immer um? | Neden hep arkanı dönüyorsun?
+v554 | Ich ziehe mich schnell um. | Hızlıca üstümü değiştiriyorum.
+v554 | Hast du dich nach dem Sport umgezogen? | Spordan sonra üstünü değiştirdin mi?
+v554 | Sie zieht sich für das Konzert um. | O (kadın) konser için üstünü değiştiriyor.
+v554 | Wir müssen uns vor dem Essen umziehen. | Yemekten önce üstümüzü değiştirmemiz gerekiyor.
+v556 | Ich habe mich lange mit meiner Nachbarin unterhalten. | (Kadın) komşumla uzun uzun sohbet ettim.
+v556 | Worüber unterhaltet ihr euch? | Siz (ikiniz) ne hakkında sohbet ediyorsunuz?
+v556 | Er unterhält sich gern mit älteren Menschen. | O (erkek) yaşlı insanlarla sohbet etmeyi sever.
+v556 | Wir unterhalten uns auf Deutsch. | Almanca sohbet ediyoruz.
+v566 | Ich habe mich mit Lisa zum Essen verabredet. | Lisa'yla yemek için sözleştim.
+v566 | Verabredest du dich oft mit Kollegen? | Sık sık iş arkadaşlarınla buluşmak için sözleşir misin?
+v566 | Wir verabreden uns für Samstag. | Cumartesi için sözleşiyoruz.
+v566 | Sie hat sich mit einer Freundin im Park verabredet. | O (kadın) bir kız arkadaşıyla parkta buluşmak için sözleşti.
+v567 | Ich verabschiede mich von meinen Gästen. | Misafirlerimle vedalaşıyorum.
+v567 | Hast du dich von deiner Familie verabschiedet? | Ailenle vedalaştın mı?
+v567 | Er hat sich nicht verabschiedet. | O (erkek) vedalaşmadı.
+v567 | Wir verabschieden uns am Flughafen. | Havalimanında vedalaşıyoruz.
+v569 | Die Stadt hat sich sehr verändert. | Şehir çok değişti.
+v569 | Du hast dich gar nicht verändert! | Hiç değişmemişsin!
+v569 | Ich glaube, dass sich das Wetter bald verändert. | Sanırım hava yakında değişecek.
+v569 | Wir verändern uns mit der Zeit. | Zamanla değişiyoruz.
+v580 | Die Kinder vergnügen sich im Schwimmbad. | Çocuklar yüzme havuzunda eğleniyor.
+v580 | Wir haben uns auf dem Volksfest vergnügt. | Halk şenliğinde eğlendik.
+v580 | Habt ihr euch gut vergnügt? | Siz (hepiniz) iyi eğlendiniz mi?
+v580 | Er vergnügt sich am Wochenende mit Freunden. | O (erkek) hafta sonu arkadaşlarıyla eğleniyor.
+v583 | Er hat sich sehr komisch verhalten. | O (erkek) çok tuhaf davrandı.
+v583 | Verhalte dich bitte ruhig! | Lütfen sakin davran!
+v583 | Wie verhältst du dich in so einer Situation? | Böyle bir durumda nasıl davranırsın?
+v583 | Die Kinder verhalten sich im Unterricht gut. | Çocuklar derste iyi davranıyor.
+v589 | Du kannst dich auf mich verlassen. | Bana güvenebilirsin.
+v589 | Ich verlasse mich auf meine Freunde. | Arkadaşlarıma güveniyorum.
+v589 | Er hat sich auf den Wetterbericht verlassen. | O (erkek) hava raporuna güvendi.
+v589 | Kann man sich auf den Bus verlassen? | Otobüse güvenilebilir mi?
+v590 | Ich habe mich in der Stadt verlaufen. | Şehirde yolumu kaybettim.
+v590 | Hast du dich verlaufen? | Yolunu mu kaybettin?
+v590 | Die Touristen verlaufen sich oft in der Altstadt. | Turistler eski şehirde sık sık yollarını kaybediyor.
+v590 | Wir haben uns im Wald verlaufen. | Ormanda yolumuzu kaybettik.
+v592 | Ich habe mich beim Sport verletzt. | Spor yaparken yaralandım.
+v592 | Hast du dich verletzt? | Yaralandın mı?
+v592 | Pass auf, sonst verletzt du dich! | Dikkat et, yoksa yaralanırsın!
+v592 | Er hat sich am Bein verletzt. | O (erkek) bacağından yaralandı.
+v593 | Er hat sich in seine Kollegin verliebt. | O (erkek) kadın iş arkadaşına âşık oldu.
+v593 | Ich habe mich sofort in die Stadt verliebt. | Şehre hemen âşık oldum.
+v593 | Verliebst du dich schnell? | Çabuk âşık olur musun?
+v593 | Sie verliebt sich in einen Studenten aus Spanien. | O (kadın) İspanyalı bir öğrenciye âşık oluyor.
+v611 | Ich verstehe mich gut mit meiner Mitbewohnerin. | (Kadın) ev arkadaşımla iyi anlaşıyorum.
+v611 | Verstehst du dich mit deinen Kollegen? | İş arkadaşlarınla anlaşıyor musun?
+v611 | Wir haben uns von Anfang an gut verstanden. | Baştan beri iyi anlaştık.
+v611 | Er versteht sich nicht mit seinem Vater. | O (erkek) babasıyla anlaşamıyor.
+v622 | Ich bereite mich auf die Prüfung vor. | Sınava hazırlanıyorum.
+v622 | Hast du dich auf das Gespräch vorbereitet? | Görüşmeye hazırlandın mı?
+v622 | Wir müssen uns gut auf die Reise vorbereiten. | Yolculuğa iyi hazırlanmamız gerekiyor.
+v622 | Sie hat sich nicht vorbereitet, weil sie krank war. | O (kadın) hasta olduğu için hazırlanmadı.
+v628 | Darf ich mich vorstellen? | Kendimi tanıtabilir miyim?
+v628 | Stell dich bitte kurz vor! | Lütfen kendini kısaca tanıt!
+v628 | Er hat sich beim Chef vorgestellt. | O (erkek) kendini patrona tanıttı.
+v628 | Wir stellen uns der Klasse vor. | Kendimizi sınıfa tanıtıyoruz.
+v629 | Ich kann mir das nicht vorstellen. | Bunu hayal edemiyorum.
+v629 | Stell dir vor, ich habe eine Wohnung gefunden! | Düşünsene, bir daire buldum!
+v629 | Hast du dir das so vorgestellt? | Bunu böyle mi hayal etmiştin?
+v629 | Er stellt sich sein Leben in Deutschland schön vor. | O (erkek) Almanya'daki hayatını güzel hayal ediyor.
+v636 | Ich wasche mich mit kaltem Wasser. | Soğuk suyla yıkanıyorum.
+v636 | Hast du dich gewaschen? | Yıkandın mı?
+v636 | Die Katze wäscht sich. | Kedi kendini yıkıyor.
+v636 | Er hat sich nach der Arbeit gewaschen. | O (erkek) işten sonra yıkandı.
+v640 | Er weigert sich, das Zimmer aufzuräumen. | O (erkek) odayı toplamayı reddediyor.
+v640 | Ich habe mich geweigert, mehr zu bezahlen. | Daha fazla ödemeyi reddettim.
+v640 | Warum weigerst du dich, mitzukommen? | Neden birlikte gelmeyi reddediyorsun?
+v640 | Die Arbeiter weigern sich, am Sonntag zu arbeiten. | İşçiler pazar günü çalışmayı reddediyor.
+v642 | Wenden Sie sich bitte an die Information! | Lütfen danışmaya başvurun (siz, kibar).
+v642 | Ich habe mich an meinen Lehrer gewendet. | Öğretmenime başvurdum.
+v642 | An wen kann ich mich wenden? | Kime başvurabilirim?
+v642 | Wende dich an den Hausmeister, wenn die Heizung kaputt ist! | Kalorifer bozuksa kapıcıya başvur!
+v654 | Ich wundere mich über das Wetter. | Havaya şaşırıyorum.
+v654 | Er hat sich über die hohe Rechnung gewundert. | O (erkek) yüksek faturaya şaşırdı.
+v654 | Wunderst du dich nicht? | Şaşırmıyor musun?
+v654 | Wir wundern uns, dass er nicht gekommen ist. | Onun (erkek) gelmemesine şaşırıyoruz.
+v656 | Ich wünsche mir ein Fahrrad zum Geburtstag. | Doğum günüm için bir bisiklet istiyorum.
+v656 | Was wünschst du dir zu Weihnachten? | Noel için ne istiyorsun?
+v656 | Sie hat sich immer einen Hund gewünscht. | O (kadın) hep bir köpek istedi.
+v656 | Wir wünschen uns mehr Zeit für die Familie. | Aile için daha fazla zaman istiyoruz.

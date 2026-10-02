@@ -25,6 +25,7 @@
 - `index.html` + `js/app.js` (arayüz, kuyruk, log) · `js/grammatik.js` (çekim, cümle üretimi, kontrol) · `js/fsrs.js`
 - Elle düzenlenen kaynaklar: `quellen/verben.txt`, `quellen/nomen.txt`, `quellen/nomen_extra.txt`, `quellen/rahmen.txt`,
   `quellen/woerter.txt` (sıfat/zarf/bağlaç…, **yalnız sona ekle**: kimlik satır sırasından), `quellen/pakete.txt` (konulu paketler, yeni paket sona),
+  `quellen/saetze_refl.txt` (dönüşlü fiil çeviri cümleleri), `quellen/aufgaben.txt` (serbest yazma görevleri, sona ekle),
   `quellen/themen.txt` (17 B1 konusu ve öğe → konu ataması; "Konu" bölümü bunu kullanır),
   `quellen/saetze.txt` (çeviri cümleleri: `fiil | Almanca | Türkçe`; cümle sorusu Türkçeyi gösterir, Almancasını yazdırır)
 - Üretilen: `daten/verben.js`, `daten/nomen.js`, `daten/woerter.js`, `daten/pakete.js`, `daten/saetze.js` → **elle düzenleme**, `python3 tools/build.py` çalıştır.
@@ -32,6 +33,8 @@
 - `log/log.csv` (uygulama yazar, `;` ayırıcı, UTF-8 BOM): `zeit;modus;id;item;frage;antwort;ergebnis;loesung;notiz`
   - Yazarak: `abr` (TR→DE fiil), `frm` (çekim), `satz` (cümle kur), `luecke` (Goethe boşluk), `wort` (isim TR→DE, artikelli), `prod` (diğer kelime TR→DE), `ndek` (n-Deklination), `refl` (dönüşlü zamir), `yeni` (derin tanıtım)
   - Seçmeli (Hızlı tur): `erk` (isim/diğer DE→TR), `bed` (fiil DE→TR; sadece fiil + edat gösterilir), `art` (der/die/das), `pretest` (yeni kelime ön testi: ergebnis `bekannt` = biliyordu, `neu` = tanıtıldı)
+  - Düzensiz fiil: `stamm` (cevap "Präteritum, Perfekt": ging, ist gegangen)
+  - Serbest yazma: `text` (id `a07` = `quellen/aufgaben.txt` görevi; antwort = metin, paragraflar ` ¶ `; notiz: kelime sayısı, zorunlu kelimeler)
   - Paket: `paket` (id `p01:3` = 1. paketin 4. boşluğu; paket sonu `p01:pak`, notiz `puan:%`, `önce okudu`)
   - Durum: `dikkat` (ergebnis `bas-gec` = çok hızlı/boş, `cok-yanlis`), `leech` (ergebnis `takiliyor`: üç ayrı günde yanlış → kanca yaz)
   - ergebnis: `richtig`, `fast`, `falsch`, `neu`, `bekannt`
@@ -58,6 +61,11 @@
 5. `leech` satırlarındaki her kelimeye `daten/kancalar.js`'e kısa Türkçe hafıza kancası yaz (anahtar: öğe kimliği, log'daki `id`):
    Almanca kelimenin sesine benzeyen Türkçe kelime + anlamla birleşen bir sahne; isimde artikel için kural ya da renk ipucu
    (der mavi, die kırmızı, das yeşil). Tek satır, emin olmadığın Almanca bilgi ekleme.
+5b. `text` satırlarındaki her metni cümle cümle düzelt (kendi cümlesi → doğrusu → kısa açıklama), sonunda B1 Schreiben
+   ölçütüne göre kısa değerlendirme (görev maddeleri, bağlaçlar, hitap/kapanış) ve düzeltilmiş tam metin. `daten/feedback.js`'e de ekle.
+5c. Son günlerde öğrendiği kelime ve fiillerden (log'daki `pretest`/`yeni`/`erk` satırları) 10–20 yeni çeviri cümlesi yaz,
+   `quellen/saetze.txt`'e ekle: her cümlede bir fiil + en az bir yeni isim ya da kelime; fiil kimliği cümlenin ana fiili.
+   Dönüşlü fiil cümleleri `quellen/saetze_refl.txt`'e.
 6. Paketler bittiyse ya da "yeni paket yaz" denirse `quellen/pakete.txt`'nin sonuna yeni paket ekle: bir sahne (konu değil:
    "postanede", "ev arkadaşıyla" gibi), 10 kelime (Goethe B1 listesinden; zayıf / takılan kelimelere öncelik), ~90–110 kelimelik
    B1 metni (Präsens / Perfekt, yan cümle), Türkçesi. Biçim dosyanın başında.

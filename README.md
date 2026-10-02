@@ -29,6 +29,8 @@ Uygulama yeni günde planın ilk bitmemiş adımıyla açılır. En az 10 sayıl
 | Bölüm | Grup | Hedef | Günde yeni | Ne yapar |
 |---|---|---|---|---|
 | Hızlı tur | Ezber | 40 | 10 bilinmeyen kelime | Seçmeli anlam + der/die/das. Yeni kelime önce sınanır: biliyorsan tekrar yükü olmadan geçer. |
+| Düzensiz fiiller | Dilbilgisi | 20 | 5 fiil | gehen → ging, ist gegangen; anlamıyla birlikte. |
+| Yazma | Yazma | 1 metin | 3–4 günde bir | B1 Schreiben tarzı görev + öğrendiğin 5 kelime; Claude düzeltir. |
 | Konu | Ezber | 30 | 15 kelime | Seçtiğin B1 konusunun (Hava, Sağlık, Ev, İş … 17 konu) kelime ve fiilleri; sadece o konu. |
 | Paketler | Ezber | 10 | 1 paket | Bir sahnenin 10 kelimesi + kısa B1 metni, sonra metinde boşluk doldurma. |
 | Karışık | Yazarak | 20 | 4 öğe | Türkçe cümleyi Almancaya çevirme (849 cümle), TR→DE kelime / fiil, çekim, Goethe boşlukları. |
