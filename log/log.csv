@@ -244,3 +244,12 @@
 2026-10-02 11:58:58;pretest;n1169:erk;der Sturm;der Sturm;fırtına;bekannt;fırtına;sek:4
 2026-10-02 11:59:01;pretest;n0629:erk;das Klima;das Klima;iklim;bekannt;iklim;sek:2
 2026-10-02 11:59:09;bed;v169:bed;donnern;donnern;dolu yağmak;falsch;gök gürlemek;sek:4 | ipucu:0
+2026-10-02 11:59:12;pretest;w0209:erk;glatt;glatt;kaygan;bekannt;kaygan;sek:3
+2026-10-02 11:59:17;pretest;n0179:erk;der Blitz;der Blitz;fırtına;neu;şimşek;
+2026-10-02 11:59:58;pretest;v305:bed;hageln;hageln;gök gürlemek;neu;dolu yağmak;
+2026-10-02 12:00:03;pretest;n1392:erk;die Wolke;die Wolke;bulut;bekannt;bulut;sek:3
+2026-10-02 12:00:10;erk;n0179:erk;der Blitz;der Blitz;şimşek;fast;şimşek;yavaş | sek:5 | ipucu:0
+2026-10-02 12:00:13;bed;v305:bed;hageln;hageln;dolu yağmak;richtig;dolu yağmak;sek:2 | ipucu:0
+2026-10-02 12:00:20;pretest;n0248:erk;der Donner;der Donner;gök gürültüsü;neu;gök gürültüsü;yavaş
+2026-10-02 12:00:29;art;n1376:art;die Wettervorhersage;Wettervorhersage;die;fast;die Wettervorhersage;sek:7 | ipucu:0
+2026-10-02 12:00:32;pretest;n0474:erk;das Gewitter;das Gewitter;fırtına;bekannt;fırtına (gök gürültülü);sek:2
