@@ -446,3 +446,5 @@
 2026-10-02 23:35:42;art;n0055:art;die Apotheke;Apotheke;die;richtig;die Apotheke;sek:2 | ipucu:0
 2026-10-02 23:35:44;art;n1179:art;die Tablette;Tablette;die;richtig;die Tablette;sek:1 | ipucu:0
 2026-10-02 23:35:46;art;n0432:art;das Gedicht;Gedicht;das;richtig;das Gedicht;sek:2 | ipucu:0
+2026-10-02 23:35:50;art;n0433:art;die Geduld;Geduld;das;falsch;die Geduld;artikel: das → die | sek:3 | ipucu:0
+2026-10-02 23:35:57;bed;v620:bed;verzichten auf;verzichten auf;vazgeçmek;fast;(bir şeyden) vazgeçmek;yavaş | sek:6 | ipucu:0
