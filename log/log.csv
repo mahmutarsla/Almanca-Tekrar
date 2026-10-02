@@ -359,3 +359,18 @@
 2026-10-02 12:11:21;erk;w0109:erk;drüben;drüben;karşıda, öte tarafta;richtig;karşıda, öte tarafta;sek:3 | ipucu:0
 2026-10-02 12:11:24;pretest;n0617:erk;die Kindheit;die Kindheit;çocukluk;bekannt;çocukluk;sek:3
 2026-10-02 12:11:29;art;n0207:art;die Burg;Burg;der;falsch;die Burg;artikel: der → die | sek:2 | ipucu:0
+2026-10-02 12:11:36;art;n0313:art;die Erlaubnis;Erlaubnis;die;fast;die Erlaubnis;sek:5 | ipucu:0
+2026-10-02 12:11:40;erk;w0119:erk;eher;eher;daha çok, daha ziyade;richtig;daha çok, daha ziyade;sek:4 | ipucu:0
+2026-10-02 12:11:52;pretest;w0108:erk;drinnen;drinnen;karşıda, öte tarafta;neu;içeride;
+2026-10-02 12:11:57;art;n0297:art;die Entscheidung;Entscheidung;die;richtig;die Entscheidung;sek:2 | ipucu:0
+2026-10-02 12:11:59;art;n0207:art;die Burg;Burg;die;richtig;die Burg;sek:2 | ipucu:0
+2026-10-02 12:12:02;erk;w0108:erk;drinnen;drinnen;içeride;richtig;içeride;sek:2 | ipucu:0
+2026-10-02 12:12:06;pretest;n0957:erk;der Rat;der Rat;tavsiye, öğüt;bekannt;tavsiye, öğüt;sek:4
+2026-10-02 12:12:09;art;n1373:art;der Wettbewerb;Wettbewerb;der;richtig;der Wettbewerb;sek:1 | ipucu:0
+2026-10-02 12:12:11;art;n0293:art;die Energie;Energie;die;richtig;die Energie;sek:1 | ipucu:0
+2026-10-02 12:12:13;art;n1307:art;das Verhalten;Verhalten;das;richtig;das Verhalten;sek:2 | ipucu:0
+2026-10-02 12:12:16;pretest;n0028:erk;die Änderung;die Änderung;değişiklik;bekannt;değişiklik;sek:3
+2026-10-02 12:12:21;art;n1240:art;das Training;Training;die;falsch;das Training;artikel: die → das | sek:2 | ipucu:0
+2026-10-02 12:12:24;pretest;w0169:erk;flexibel;flexibel;esnek;bekannt;esnek;sek:3
+2026-10-02 12:12:28;pretest;v672:bed;zustimmen;zustimmen;katılmak, onaylamak;bekannt;(birine) katılmak, onaylamak;sek:3
+2026-10-02 12:12:32;pretest;n0972:erk;die Regel;die Regel;kural;bekannt;kural;sek:3
