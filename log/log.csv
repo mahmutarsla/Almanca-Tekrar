@@ -263,3 +263,17 @@
 2026-10-02 12:01:36;pretest;n1038:erk;der Schirm;der Schirm;şemsiye;bekannt;şemsiye;sek:4
 2026-10-02 12:01:40;pretest;w0560:erk;windig;windig;rüzgârlı;bekannt;rüzgârlı;sek:3
 2026-10-02 12:01:56;art;n1359:art;die Wärme;Wärme;die;richtig;die Wärme;sek:3 | ipucu:0
+2026-10-02 12:02:00;art;n0844:art;der Nebel;Nebel;das;falsch;der Nebel;artikel: das → der | sek:2 | ipucu:0
+2026-10-02 12:02:02;art;n0538:art;die Hitze;Hitze;die;richtig;die Hitze;sek:1 | ipucu:0
+2026-10-02 12:02:06;pretest;w0566:erk;bewölkt;bewölkt;bulutlu;bekannt;bulutlu;sek:4
+2026-10-02 12:02:09;art;n1169:art;der Sturm;Sturm;der;richtig;der Sturm;sek:2 | ipucu:0
+2026-10-02 12:02:11;pretest;n0746:erk;die Luft;die Luft;hava;bekannt;hava;sek:2
+2026-10-02 12:02:17;art;n0844:art;der Nebel;Nebel;das;falsch;der Nebel;artikel: das → der | sek:3 | ipucu:0
+2026-10-02 12:02:19;pretest;w0448:erk;sonnig;sonnig;güneşli;bekannt;güneşli;sek:2
+2026-10-02 12:02:24;art;n0629:art;das Klima;Klima;das;richtig;das Klima;sek:3 | ipucu:0
+2026-10-02 12:02:29;pretest;w0479:erk;trocken;trocken;kuru;neu;kuru;yavaş
+2026-10-02 12:02:38;pretest;n0286:erk;das Eis;das Eis;buz;bekannt;buz;sek:3
+2026-10-02 12:02:41;pretest;n1207:erk;die Temperatur;die Temperatur;sıcaklık;bekannt;sıcaklık;sek:2
+2026-10-02 12:02:49;erk;w0479:erk;trocken;trocken;kuru;fast;kuru;yavaş | sek:6 | ipucu:0
+2026-10-02 12:02:53;pretest;n0536:erk;der Himmel;der Himmel;gökyüzü;bekannt;gökyüzü;sek:4
+2026-10-02 12:02:57;pretest;w0344:erk;nass;nass;kaygan;neu;ıslak;
