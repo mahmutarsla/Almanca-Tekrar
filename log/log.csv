@@ -175,3 +175,13 @@
 2026-10-02 11:33:51;art;n1373:art;der Wettbewerb;Wettbewerb;die;falsch;der Wettbewerb;artikel: die → der | sek:4 | ipucu:0
 2026-10-02 11:33:53;art;n0293:art;die Energie;Energie;die;richtig;die Energie;sek:1 | ipucu:0
 2026-10-02 11:34:00;art;n1307:art;das Verhalten;Verhalten;der;falsch;das Verhalten;artikel: der → das | sek:6 | ipucu:0
+2026-10-02 11:35:26;paket;p01:0;das Fieber;Beim Arzt;Fieber;richtig;Fieber;
+2026-10-02 11:35:34;paket;p01:1;der Schmerz;Beim Arzt;schmerzen;fast;Schmerzen;groß/klein: isim büyük harfle
+2026-10-02 11:35:50;paket;p01:2;die Praxis;Beim Arzt;praxis;fast;Praxis;groß/klein: isim büyük harfle
+2026-10-02 11:35:57;paket;p01:3;der Termin;Beim Arzt;Termin;richtig;Termin;
+2026-10-02 11:36:03;paket;p01:4;die Versichertenkarte;Beim Arzt;Versichertenkarte;richtig;Versichertenkarte;
+2026-10-02 11:36:10;paket;p01:5;untersuchen;Beim Arzt;untersucht;richtig;untersucht;
+2026-10-02 11:36:20;paket;p01:6;verschreiben;Beim Arzt;verschriebt;fast;verschreibt;biçim: metinde verschreibt
+2026-10-02 11:36:26;paket;p01:7;das Rezept;Beim Arzt;Rezept;richtig;Rezept;
+2026-10-02 11:36:33;paket;p01:8;die Apotheke;Beim Arzt;Apotheke;richtig;Apotheke;
+2026-10-02 11:36:36;paket;p01:9;die Tablette;Beim Arzt;Tablette;richtig;Tablette;
