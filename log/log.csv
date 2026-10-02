@@ -233,3 +233,14 @@
 2026-10-02 11:57:53;pretest;v272:bed;frieren;frieren;üşümek;neu;üşümek;yavaş
 2026-10-02 11:57:58;pretest;n0844:erk;der Nebel;der Nebel;sis;bekannt;sis;sek:2
 2026-10-02 11:58:03;pretest;n1359:erk;die Wärme;die Wärme;sıcaklık;bekannt;sıcaklık;sek:4
+2026-10-02 11:58:10;erk;w0165:erk;feucht;feucht;nemli;fast;nemli;yavaş | sek:5 | ipucu:0
+2026-10-02 11:58:14;bed;v272:bed;frieren;frieren;üşümek;richtig;üşümek;sek:3 | ipucu:0
+2026-10-02 11:58:16;pretest;v169:bed;donnern;donnern;üşümek;neu;gök gürlemek;
+2026-10-02 11:58:23;pretest;v149:bed;blitzen;blitzen;şimşek çakmak;bekannt;şimşek çakmak;sek:4
+2026-10-02 11:58:31;pretest;n0538:erk;die Hitze;die Hitze;sıcaklık;neu;sıcaklık (bunaltıcı);yavaş
+2026-10-02 11:58:48;bed;v169:bed;donnern;donnern;dolu yağmak;falsch;gök gürlemek;sek:7 | ipucu:0
+2026-10-02 11:58:50;pretest;w0325:erk;mild;mild;ılık;bekannt;ılık;sek:3
+2026-10-02 11:58:54;erk;n0538:erk;die Hitze;die Hitze;sıcaklık;richtig;sıcaklık (bunaltıcı);sek:2 | ipucu:0
+2026-10-02 11:58:58;pretest;n1169:erk;der Sturm;der Sturm;fırtına;bekannt;fırtına;sek:4
+2026-10-02 11:59:01;pretest;n0629:erk;das Klima;das Klima;iklim;bekannt;iklim;sek:2
+2026-10-02 11:59:09;bed;v169:bed;donnern;donnern;dolu yağmak;falsch;gök gürlemek;sek:4 | ipucu:0
