@@ -3,7 +3,13 @@
 A2 → B1 için yerel çalışma uygulaması. Kelimeler Goethe-Zertifikat B1 listesinden, tekrar zamanlaması FSRS
 (Anki'nin algoritması). Cümleler her seferinde yeniden üretilir, böylece cümleyi ezberleyemezsin, fiili bilmen gerekir.
 
-## Kullanım
+## Kullanım (site)
+
+Uygulama GitHub Pages'ta: **https://mahmutarsla.github.io/Almanca-Tekrar/** — Claude pushlayınca kendiliğinden güncellenir,
+sayfayı yenilemen yeter. Ayarlar → **GitHub'a otomatik kayıt**'a bir kez anahtar girersen cevaplar ve ilerleme repoya yazılır;
+sonra Claude'a "sonuçlarıma bak" demen yeter (push yok, telefonda da çalışır).
+
+## Kullanım (yerel, eski yol)
 
 1. Repoyu indir (`git clone` ya da GitHub'dan ZIP).
 2. `index.html`'i **Chrome ya da Edge** ile aç.

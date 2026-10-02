@@ -43,7 +43,7 @@
 
 ## "Sonuçlarıma bak" dendiğinde
 
-1. `git pull`. `VERLAUF.md`'deki son notta yazan satırdan sonraki `log/log.csv` satırlarını oku.
+1. `git pull --rebase` (uygulama `log/` dosyalarını GitHub API ile doğrudan bu dala commit eder; pushlamadan önce de çek). `VERLAUF.md`'deki son notta yazan satırdan sonraki `log/log.csv` satırlarını oku.
 2. `satz`, `luecke`, `abr`, `frm`, `wort`, `prod`, `paket` denemelerinin her biri için (özellikle `falsch` / `fast`) düzeltmeyi
    tam liste olarak yaz: kendi cevabı, doğrusu (isimler artikelli), kısa açıklama.
    Aynılarını `daten/feedback.js`'e ekle: `{ zeit, id, antwort, richtig, urteil, text }`.

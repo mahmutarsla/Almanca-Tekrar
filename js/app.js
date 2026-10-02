@@ -135,7 +135,7 @@
 
   // ================= Durum =================
   const KEY = 'almanca-tekrar-v1';
-  const DEF = { karten: {}, items: {}, pakete: {}, tage: {}, log: [], pending: [], kontext: {},
+  const DEF = { karten: {}, items: {}, pakete: {}, tage: {}, log: [], pending: [], ghPending: [], kontext: {},
     einst: { ret: 0.9, modi: {} }, version: 3 };
   // Bölümler: her birinin kendi günlük hedefi (soru) ve yeni öğe sınırı.
   const MODI = {
@@ -154,7 +154,7 @@
   function normalize(x) {
     const s = Object.assign({}, DEF, x || {});
     ['karten', 'items', 'pakete', 'tage', 'kontext'].forEach(k => { s[k] = s[k] || {}; });
-    ['log', 'pending'].forEach(k => { s[k] = s[k] || []; });
+    ['log', 'pending', 'ghPending'].forEach(k => { s[k] = s[k] || []; });
     s.einst = Object.assign({ ret: 0.9 }, s.einst);
     s.einst.modi = s.einst.modi || {};
     if ((x && x.version || 0) < 3) {
@@ -1367,6 +1367,7 @@
     e.zeit = zeitStr(now());
     S.log.push(e);
     S.pending.push(e);
+    if (ghToken()) { (S.ghPending = S.ghPending || []).push(e); if (S.ghPending.length >= 10) ghSync(S.ghPending.length >= 20 || session.q % 30 === 0); }
     save();
     dateiSchreiben();
   }
@@ -1431,7 +1432,78 @@
     } catch (e) { console.warn('log yazılamadı', e); $('#klasor-durum').textContent = 'Yazılamadı: ' + e.message; }
     schreibt = false;
   }
-  document.addEventListener('visibilitychange', () => { if (document.hidden) dateiSchreiben(true); });
+  document.addEventListener('visibilitychange', () => { if (document.hidden) { dateiSchreiben(true); ghSync(true); } });
+
+  // ---- GitHub'a doğrudan kayıt (site olarak açıldığında push gerekmez) ----
+  const GH = { repo: 'mahmutarsla/Almanca-Tekrar', branch: 'claude/chat-session-1vghmx' };
+  const ghToken = () => { try { return localStorage.getItem('almanca-tekrar-gh') || ''; } catch (e) { return ''; } };
+  const b64enc = s => btoa(unescape(encodeURIComponent(s)));
+  const b64dec = s => decodeURIComponent(escape(atob(s.replace(/\n/g, ''))));
+  const ghDurum = t => { const el = $('#gh-durum'); if (el) el.textContent = t; };
+  async function ghApi(path, opt) {
+    const r = await fetch(`https://api.github.com/repos/${GH.repo}${path}`, Object.assign({}, opt, {
+      headers: { Authorization: 'Bearer ' + ghToken(), Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' } }));
+    if (r.status === 404) return null;
+    if (!r.ok) throw new Error(`${r.status} ${(await r.text()).slice(0, 120)}`);
+    return r.json();
+  }
+  async function ghLesen(datei) {
+    const m = await ghApi(`/contents/${datei}?ref=${encodeURIComponent(GH.branch)}`);
+    if (!m) return { text: null, sha: null };
+    // 1 MB üstü dosyalarda içerik gelmez: blob'dan oku
+    const b64 = m.content && m.encoding === 'base64' ? m.content : (await ghApi(`/git/blobs/${m.sha}`)).content;
+    return { text: b64dec(b64), sha: m.sha };
+  }
+  async function ghSchreiben(datei, text, sha, msg) {
+    return ghApi(`/contents/${datei}`, { method: 'PUT', body: JSON.stringify({ message: msg, content: b64enc(text), branch: GH.branch, sha: sha || undefined }) });
+  }
+  let ghLaeuft = false, ghZuletzt = 0;
+  async function ghSync(zustandAuch) {
+    if (!ghToken() || ghLaeuft) return;
+    const batch = (S.ghPending || []).slice();
+    if (!batch.length && !zustandAuch) return;
+    ghLaeuft = true;
+    try {
+      if (batch.length) {
+        for (let versuch = 0; versuch < 2; versuch++) {
+          try {
+            const alt = await ghLesen('log/log.csv');
+            // zaten dosyada olan satırları tekrar yazma (ilk bağlanışta eski log da gönderilir)
+            const vorhanden = new Set((alt.text || '').split('\n'));
+            const neu = batch.map(csvZeile).filter(l => !vorhanden.has(l));
+            if (!neu.length) break;
+            const basis = alt.text ? alt.text.replace(/\n?$/, '\n') : '\uFEFF' + CSV_KOPF + '\n';
+            const text = basis + neu.join('\n') + '\n';
+            await ghSchreiben('log/log.csv', text, alt.sha, `log: ${batch.length} cevap`);
+            break;
+          } catch (e) { if (versuch || !/^(409|422)/.test(e.message)) throw e; }
+        }
+        S.ghPending.splice(0, batch.length);
+        save();
+      }
+      if (zustandAuch) {
+        const alt = await ghLesen('log/zustand.json');
+        await ghSchreiben('log/zustand.json', JSON.stringify(Object.assign({}, S, { log: [], pending: [], ghPending: [], gespeichert: zeitStr(now()) })), alt.sha, 'ilerleme');
+      }
+      ghZuletzt = now();
+      ghDurum(`GitHub'a kaydedildi (${zeitStr(now()).slice(11, 16)}).`);
+    } catch (e) { ghDurum('GitHub\'a yazılamadı: ' + e.message); console.warn(e); }
+    ghLaeuft = false;
+    renderPlan();
+  }
+  // 10 cevapta bir ya da 3 dakikada bir
+  setInterval(() => { if ((S.ghPending || []).length && now() - ghZuletzt > 180000) ghSync(true); }, 30000);
+  async function ghLaden() {
+    if (!ghToken()) { ghDurum('Önce anahtarı kaydet.'); return; }
+    try {
+      const z = await ghLesen('log/zustand.json');
+      if (!z.text) { ghDurum('GitHub\'da kayıtlı ilerleme yok.'); return; }
+      const neu = normalize(JSON.parse(z.text));
+      neu.log = S.log; neu.ghPending = S.ghPending || []; neu.pending = S.pending;
+      S = neu; save(); renderAyar(); renderHedef(); zeige();
+      ghDurum(`İlerleme GitHub'dan alındı (${(JSON.parse(z.text).gespeichert) || ''}).`);
+    } catch (e) { ghDurum('Alınamadı: ' + e.message); }
+  }
 
   function herunterladen(name, text, type) {
     const a = document.createElement('a');
@@ -1460,9 +1532,9 @@
     }).join('');
     const sayildi = d.n >= MIN_TAG;
     const bitti = PLAN.every(m => heuteM(m).n >= ziel(m));
-    const min = bitti ? `✓ plan tamam${ordner ? ' · log\'u pushla, Claude\'a "sonuçlarıma bak" de' : ''}` : sayildi ? '✓ gün sayıldı' : `gün için ${MIN_TAG - d.n} cevap daha`;
+    const min = bitti ? `✓ plan tamam${ghToken() ? ' · Claude\'a "sonuçlarıma bak" de' : ordner ? ' · log\'u pushla, Claude\'a "sonuçlarıma bak" de' : ''}` : sayildi ? '✓ gün sayıldı' : `gün için ${MIN_TAG - d.n} cevap daha`;
     // log klasörü bağlı değilse cevaplar dosyaya yazılmaz, Claude göremez
-    const logUyari = ordner ? '' : `<button class="plan-log" type="button" data-git="ayar" title="Cevaplar log/log.csv'ye yazılmıyor">log kaydedilmiyor: klasörü bağla</button>`;
+    const logUyari = ordner || ghToken() ? '' : `<button class="plan-log" type="button" data-git="ayar" title="Cevaplar log/log.csv'ye yazılmıyor">log kaydedilmiyor: Ayarlar'dan bağla</button>`;
     $('#plan').innerHTML = `<span class="plan-et">bugün</span>${chips}<span class="plan-min ${sayildi ? 'ok' : ''}" title="En az ${MIN_TAG} sayılan cevap: gün seriye sayılır">${min}</span>${logUyari}`;
   }
 
@@ -1697,6 +1769,19 @@
     save(); renderHedef(); renderPlan();
   });
   $('#klasor').addEventListener('click', ordnerVerbinden);
+  $('#gh-token').value = ghToken() ? '••••••••' : '';
+  if (ghToken()) ghDurum('Anahtar kayıtlı: cevaplar GitHub\'a yazılıyor.');
+  $('#gh-kaydet').addEventListener('click', async () => {
+    const v = $('#gh-token').value.trim();
+    if (!v || v.startsWith('•')) return;
+    try { localStorage.setItem('almanca-tekrar-gh', v); } catch (e) { /* yok */ }
+    $('#gh-token').value = '••••••••';
+    ghDurum('Deneniyor…');
+    try { await ghApi(''); S.ghPending = S.log.slice(); save(); await ghSync(true); }
+    catch (e) { ghDurum('Anahtar çalışmadı: ' + e.message); }
+  });
+  $('#gh-simdi').addEventListener('click', () => ghSync(true));
+  $('#gh-yukle').addEventListener('click', ghLaden);
   $('#log-indir').addEventListener('click', () => herunterladen('log.csv', '﻿' + CSV_KOPF + '\n' + S.log.map(csvZeile).join('\n') + '\n', 'text/csv;charset=utf-8'));
   $('#yedek-indir').addEventListener('click', () => herunterladen('zustand.json', JSON.stringify(S), 'application/json'));
   $('#yedek-yukle').addEventListener('change', async e => {

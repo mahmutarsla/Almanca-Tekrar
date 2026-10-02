@@ -108,7 +108,17 @@
       <label for="a-ret">Hedef hatırlama</label>
       <select id="a-ret"><option value="0.85">%85 (daha az tekrar)</option><option value="0.9">%90 (önerilen)</option><option value="0.95">%95 (daha sık tekrar)</option></select>
     </div>
-    <h2>Log ve yedek</h2>
+    <h2>GitHub'a otomatik kayıt</h2>
+    <p class="aciklama">Anahtarı bir kez girersen cevapların (<code>log/log.csv</code>) ve ilerlemen (<code>log/zustand.json</code>) kendiliğinden repoya yazılır; push gerekmez, telefonda da çalışır. Anahtar sadece bu tarayıcıda saklanır.</p>
+    <div class="sira">
+      <input id="gh-token" type="password" placeholder="github_pat_…" autocomplete="off" style="flex:1 1 16rem;padding:.55rem .8rem;border-radius:10px;border:1px solid var(--line);background:var(--surface)">
+      <button class="btn ana" id="gh-kaydet" type="button">Kaydet</button>
+      <button class="btn" id="gh-simdi" type="button">Şimdi gönder</button>
+      <button class="btn" id="gh-yukle" type="button">İlerlemeyi GitHub'dan al</button>
+    </div>
+    <div id="gh-durum" class="soluk"></div>
+    <details class="ceviri"><summary>Anahtar nasıl alınır?</summary><p>GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token. Repository access: <b>Only select repositories → Almanca-Tekrar</b>. Permissions → Repository permissions → <b>Contents: Read and write</b>. Oluşan anahtarı buraya yapıştır.</p></details>
+    <h2>Log ve yedek (klasör)</h2>
     <p class="aciklama">Klasörü bağlarsan her cevap <code>log/log.csv</code> dosyasına yazılır, ilerleme de <code>log/zustand.json</code> olarak yedeklenir. Repo klasörünü seç, sonra commit edip pushla. "Sonuçlarıma bak" dediğinde Claude bu dosyayı okur. Chrome ya da Edge gerekir.</p>
     <div class="sira">
       <button class="btn ana" id="klasor" type="button">Klasörü bağla</button>
