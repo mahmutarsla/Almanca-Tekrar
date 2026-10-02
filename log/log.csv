@@ -213,3 +213,13 @@
 2026-10-02 11:46:18;erk;n1376:erk;die Wettervorhersage;die Wettervorhersage;hava tahmini;richtig;hava tahmini;sek:2 | ipucu:0
 2026-10-02 11:46:23;erk;n1028:erk;der Schatten;der Schatten;gölge;richtig;gölge;sek:5 | ipucu:0
 2026-10-02 11:46:26;bed;v272:bed;frieren;frieren;üşümek;richtig;üşümek;sek:2 | ipucu:0
+2026-10-02 11:46:42;pretest;n0844:erk;der Nebel;der Nebel;sis;neu;sis;yavaş
+2026-10-02 11:46:57;pretest;n1359:erk;die Wärme;die Wärme;sıcaklık;neu;sıcaklık;yavaş
+2026-10-02 11:47:06;pretest;v169:bed;donnern;donnern;gök gürlemek;neu;gök gürlemek;yavaş
+2026-10-02 11:47:18;erk;n0844:erk;der Nebel;der Nebel;sis;fast;sis;yavaş | sek:7 | ipucu:0
+2026-10-02 11:47:22;erk;n1359:erk;die Wärme;die Wärme;sis;falsch;sıcaklık;sek:2 | ipucu:0
+2026-10-02 11:47:34;bed;v169:bed;donnern;donnern;gök gürlemek;fast;gök gürlemek;yavaş | sek:11 | ipucu:0
+2026-10-02 11:47:37;pretest;v149:bed;blitzen;blitzen;şimşek çakmak;bekannt;şimşek çakmak;sek:3
+2026-10-02 11:47:42;pretest;n0538:erk;die Hitze;die Hitze;sıcaklık;bekannt;sıcaklık (bunaltıcı);sek:4
+2026-10-02 11:47:47;pretest;w0325:erk;mild;mild;ılık;bekannt;ılık;sek:4
+2026-10-02 11:47:50;erk;n1359:erk;die Wärme;die Wärme;sıcaklık;richtig;sıcaklık;sek:2 | ipucu:0
