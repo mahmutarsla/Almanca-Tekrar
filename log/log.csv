@@ -157,3 +157,13 @@
 2026-10-02 11:31:42;pretest;n0297:erk;die Entscheidung;die Entscheidung;karar;bekannt;karar;sek:4
 2026-10-02 11:31:46;bed;v629:bed;sich(D) vorstellen;sich(D) vorstellen;hayal etmek, gözünde canlandırmak;richtig;(bir şeyi) hayal etmek, gözünde canlandırmak;sek:3 | ipucu:0
 2026-10-02 11:31:58;pretest;n1373:erk;der Wettbewerb;der Wettbewerb;karar;neu;yarışma;
+2026-10-02 11:32:19;pretest;w0118:erk;ebenfalls;ebenfalls;aynı şekilde, keza;neu;aynı şekilde, keza;yavaş
+2026-10-02 11:32:28;pretest;v119:bed;sich beruhigen;sich beruhigen;sakinleşmek;neu;sakinleşmek;yavaş
+2026-10-02 11:32:38;erk;n1373:erk;der Wettbewerb;der Wettbewerb;karar;falsch;yarışma;sek:3 | ipucu:0
+2026-10-02 11:32:42;erk;w0118:erk;ebenfalls;ebenfalls;aynı şekilde, keza;richtig;aynı şekilde, keza;sek:3 | ipucu:0
+2026-10-02 11:32:44;bed;v119:bed;sich beruhigen;sich beruhigen;sakinleşmek;richtig;sakinleşmek;sek:2 | ipucu:0
+2026-10-02 11:32:47;pretest;n0293:erk;die Energie;die Energie;enerji;bekannt;enerji;sek:3
+2026-10-02 11:32:52;pretest;n1307:erk;das Verhalten;das Verhalten;davranış;bekannt;davranış;sek:4
+2026-10-02 11:33:00;erk;n1373:erk;der Wettbewerb;der Wettbewerb;yarışma;fast;yarışma;yavaş | sek:6 | ipucu:0
+2026-10-02 11:33:06;pretest;w0199:erk;gerecht;gerecht;adaletli;neu;adaletli;yavaş
+2026-10-02 11:33:15;pretest;v654:bed;sich wundern über;sich wundern über;şaşırmak;neu;(bir şeye) şaşırmak;yavaş
