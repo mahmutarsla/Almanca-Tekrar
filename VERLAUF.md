@@ -52,3 +52,12 @@ Son incelenen log satırı en alttaki notta yazar.
   büyük/küçük harf farkı "umlaut" sayılıyordu, tek harf yazım hatası "çekim" sayılıyordu, pakette doğru kelime yanlış biçim → küçük hata,
   artikel 3,5 sn'ye kadar doğru, Familienname için Nachname kabul, Vorname Türkçesi "ön ad".
 - Son incelenen log satırı: 2026-10-02 11:13:05.
+
+## 2026-10-02 — log incelemesi (11:13 – 12:34) + ilk yazma metni
+
+- İlk metin (a01, hava, 114 kelime) düzeltildi: wurde/wollte, wenn/als, sıfat çekimi (des schlechten Wetters, das traditionelle Essen),
+  sich vorstellen, Hoffe-cümlesinde fiil yeri; 3. madde (öneri) somut değil.
+- Hatalar: widersprechen (Dat: Ihnen, Partizip widersprochen), vorschlagen (ayrılan; Prät. schlug), verzichten auf, sich bemühen um,
+  artikel: der Nebel (3 kez das), der Schnee/Regen/Himmel, die Wolke/Luft, das Eis/Frühjahr/Training, die Kritik.
+- Eklendi: 13 çeviri + 4 dönüşlü cümle (yeni öğrenilen kelimelerle), der Nebel için kanca.
+- Son incelenen log satırı: 2026-10-02 12:34:09.

@@ -849,3 +849,16 @@ v671 | Willst du mitspielen? – Nein, ich schaue lieber nur zu. | Oynamak ister
 v672 | Ich stimme dir in dieser Sache völlig zu. | Bu konuda sana tamamen katılıyorum.
 v673 | Ich zweifle nicht daran, dass Sie recht haben. | Haklı olduğunuzdan şüphem yok.
 v674 | Bitte zwing mich nicht etwas zu essen. Ich bin wirklich nicht hungrig. | Lütfen beni bir şey yemeye zorlama. Gerçekten aç değilim.
+v646 | Ich muss dir leider widersprechen, das Training war nicht zu schwer. | Maalesef sana itiraz etmem lazım, antrenman çok zor değildi.
+v646 | Niemand hat dem Chef widersprochen, obwohl die Kritik unfair war. | Eleştiri haksız olduğu hâlde kimse şefe itiraz etmedi.
+v626 | Ich schlage vor, dass wir die Kosten teilen. | Masrafları paylaşmamızı öneriyorum.
+v626 | Der Trainer hat vorgeschlagen, dass wir zweimal pro Woche trainieren. | Antrenör haftada iki kez antrenman yapmamızı önerdi.
+v626 | Was schlägst du bei diesem Wetter vor? | Bu havada ne önerirsin?
+v620 | Wegen der hohen Kosten verzichten wir dieses Jahr auf den Urlaub. | Yüksek masraflar yüzünden bu yıl tatilden vazgeçiyoruz.
+v620 | Bei diesem Regen verzichte ich auf den Ausflug. | Bu yağmurda geziden vazgeçiyorum.
+v620 | Sie hat auf ihre Karriere verzichtet, weil sie bei ihren Kindern bleiben wollte. | Çocuklarının yanında kalmak istediği için kariyerinden vazgeçti.
+v673 | Ich zweifle nicht an deiner Geduld. | Sabrından şüphe etmiyorum.
+v673 | Viele Leute zweifeln an der Wettervorhersage für das Wochenende. | Birçok kişi hafta sonu için hava tahmininden şüphe ediyor.
+v371 | Im Unterricht haben wir ein Gedicht über den Regen gelesen. | Derste yağmur hakkında bir şiir okuduk.
+v354 | Der Lehrer hat mein Referat kritisiert, aber die Kritik war fair. | Öğretmen sunumumu eleştirdi ama eleştiri adildi.
+v524 | Bei Nebel trainieren wir lieber in der Halle. | Sisli havada salonda antrenman yapmayı tercih ediyoruz.

@@ -307,3 +307,7 @@ v656 | Ich wünsche mir ein Fahrrad zum Geburtstag. | Doğum günüm için bir b
 v656 | Was wünschst du dir zu Weihnachten? | Noel için ne istiyorsun?
 v656 | Sie hat sich immer einen Hund gewünscht. | O (kadın) hep bir köpek istedi.
 v656 | Wir wünschen uns mehr Zeit für die Familie. | Aile için daha fazla zaman istiyoruz.
+v111 | Ich bemühe mich um eine Stelle in Bremen. | Bremen'de bir iş bulmaya uğraşıyorum.
+v111 | Er hat sich sehr um eine gute Note bemüht. | İyi bir not için çok çabaladı.
+v642 | Mit Fragen zu den Kosten wenden Sie sich bitte an das Sekretariat. | Masraflarla ilgili sorularınız için lütfen sekreterliğe başvurun.
+v642 | Wegen der Kritik habe ich mich an meinen Lehrer gewendet. | Eleştiri yüzünden öğretmenime başvurdum.
