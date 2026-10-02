@@ -167,3 +167,11 @@
 2026-10-02 11:33:00;erk;n1373:erk;der Wettbewerb;der Wettbewerb;yarışma;fast;yarışma;yavaş | sek:6 | ipucu:0
 2026-10-02 11:33:06;pretest;w0199:erk;gerecht;gerecht;adaletli;neu;adaletli;yavaş
 2026-10-02 11:33:15;pretest;v654:bed;sich wundern über;sich wundern über;şaşırmak;neu;(bir şeye) şaşırmak;yavaş
+2026-10-02 11:33:23;art;n0313:art;die Erlaubnis;Erlaubnis;die;richtig;die Erlaubnis;sek:3 | ipucu:0
+2026-10-02 11:33:29;erk;w0199:erk;gerecht;gerecht;adaletli;fast;adaletli;yavaş | sek:5 | ipucu:0
+2026-10-02 11:33:33;bed;v654:bed;sich wundern über;sich wundern über;şaşırmak;richtig;(bir şeye) şaşırmak;sek:3 | ipucu:0
+2026-10-02 11:33:38;art;n0207:art;die Burg;Burg;die;fast;die Burg;sek:5 | ipucu:0
+2026-10-02 11:33:44;art;n0297:art;die Entscheidung;Entscheidung;die;fast;die Entscheidung;sek:5 | ipucu:0
+2026-10-02 11:33:51;art;n1373:art;der Wettbewerb;Wettbewerb;die;falsch;der Wettbewerb;artikel: die → der | sek:4 | ipucu:0
+2026-10-02 11:33:53;art;n0293:art;die Energie;Energie;die;richtig;die Energie;sek:1 | ipucu:0
+2026-10-02 11:34:00;art;n1307:art;das Verhalten;Verhalten;der;falsch;das Verhalten;artikel: der → das | sek:6 | ipucu:0
