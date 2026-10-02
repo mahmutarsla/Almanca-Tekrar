@@ -288,3 +288,16 @@
 2026-10-02 12:03:53;erk;x1478:erk;das Frühjahr;das Frühjahr;ilkbahar;richtig;ilkbahar;sek:3 | ipucu:0
 2026-10-02 12:03:55;pretest;n1379:erk;der Wind;der Wind;rüzgâr;bekannt;rüzgâr;sek:3
 2026-10-02 12:03:59;art;n1392:art;die Wolke;Wolke;die;richtig;die Wolke;sek:2 | ipucu:0
+2026-10-02 12:04:02;pretest;n1374:erk;das Wetter;das Wetter;hava;bekannt;hava (durumu);sek:3
+2026-10-02 12:04:06;pretest;v429:bed;regnen;regnen;yağmur yağmak;bekannt;yağmur yağmak;sek:3
+2026-10-02 12:04:11;pretest;n1048:erk;der Schnee;der Schnee;kar;bekannt;kar;sek:4
+2026-10-02 12:04:14;pretest;n1095:erk;die Sonne;die Sonne;güneş;bekannt;güneş;sek:3
+2026-10-02 12:04:18;pretest;n0973:erk;der Regen;der Regen;yağmur;bekannt;yağmur;sek:2
+2026-10-02 12:04:25;pretest;v459:bed;schneien;schneien;kar yağmak;neu;kar yağmak;yavaş
+2026-10-02 12:04:33;pretest;w0536:erk;warm;warm;sıcak, ılık;bekannt;sıcak, ılık;sek:5
+2026-10-02 12:04:36;pretest;w0272:erk;kalt;kalt;soğuk;bekannt;soğuk;sek:3
+2026-10-02 12:04:41;bed;v459:bed;schneien;schneien;kar yağmak;richtig;kar yağmak;sek:3 | ipucu:0
+2026-10-02 12:04:45;art;n0474:art;das Gewitter;Gewitter;das;richtig;das Gewitter;sek:3 | ipucu:0
+2026-10-02 12:04:48;pretest;w0229:erk;heiß;heiß;sıcak;bekannt;sıcak;sek:3
+2026-10-02 12:04:51;art;n1038:art;der Schirm;Schirm;der;richtig;der Schirm;sek:1 | ipucu:0
+2026-10-02 12:05:00;bed;v169:bed;donnern;donnern;gök gürlemek;fast;gök gürlemek;yavaş | sek:8 | ipucu:0
