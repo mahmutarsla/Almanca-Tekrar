@@ -380,3 +380,13 @@
 2026-10-02 12:15:19;art;n0596:art;die Karriere;Karriere;die;richtig;die Karriere;sek:2 | ipucu:0
 2026-10-02 12:15:25;pretest;w0172:erk;frech;frech;arsız, şımarık;neu;arsız, şımarık;yavaş
 2026-10-02 12:15:31;bed;v646:bed;widersprechen;widersprechen;itiraz etmek, karşı çıkmak;richtig;(birine) itiraz etmek, karşı çıkmak;sek:3 | ipucu:0
+2026-10-02 12:16:08;paket;p01:0;das Fieber;Beim Arzt;Fieber;richtig;Fieber;
+2026-10-02 12:16:13;paket;p01:1;der Schmerz;Beim Arzt;Schmerzen;richtig;Schmerzen;
+2026-10-02 12:16:17;paket;p01:2;die Praxis;Beim Arzt;Praxis;richtig;Praxis;
+2026-10-02 12:16:20;paket;p01:3;der Termin;Beim Arzt;Termin;richtig;Termin;
+2026-10-02 12:16:25;paket;p01:4;die Versichertenkarte;Beim Arzt;Versichertenkarte;richtig;Versichertenkarte;
+2026-10-02 12:16:30;paket;p01:5;untersuchen;Beim Arzt;untersucht;richtig;untersucht;
+2026-10-02 12:16:36;paket;p01:6;verschreiben;Beim Arzt;verschreiben;fast;verschreibt;biçim: metinde verschreibt
+2026-10-02 12:16:40;paket;p01:7;das Rezept;Beim Arzt;Rezept;richtig;Rezept;
+2026-10-02 12:16:44;paket;p01:8;die Apotheke;Beim Arzt;Apotheke;richtig;Apotheke;
+2026-10-02 12:16:48;paket;p01:9;die Tablette;Beim Arzt;Tablette;richtig;Tablette;
