@@ -430,3 +430,19 @@
 2026-10-02 23:34:35;art;n1044:art;der Schmerz;Schmerz;der;richtig;der Schmerz;sek:2 | ipucu:0
 2026-10-02 23:34:40;erk;n1044:erk;der Schmerz;der Schmerz;ağrı;richtig;ağrı;sek:4 | ipucu:0
 2026-10-02 23:34:44;erk;n1320:erk;die Versichertenkarte;sigorta kartı;die Versichertenkarte;richtig;die Versichertenkarte;sek:4 | ipucu:0
+2026-10-02 23:34:49;art;n0361:art;das Fieber;Fieber;das;fast;das Fieber;sek:4 | ipucu:0
+2026-10-02 23:34:52;art;n0926:art;die Praxis;Praxis;der;falsch;die Praxis;artikel: der → die | sek:2 | ipucu:0
+2026-10-02 23:34:57;bed;v564:bed;untersuchen;untersuchen;muayene etmek, incelemek;richtig;muayene etmek, incelemek;sek:5 | ipucu:0
+2026-10-02 23:34:59;art;n1211:art;der Termin;Termin;der;richtig;der Termin;sek:2 | ipucu:0
+2026-10-02 23:35:05;bed;v605:bed;verschreiben;verschreiben;yazmak;richtig;(birine ilaç) yazmak;sek:5 | ipucu:0
+2026-10-02 23:35:11;art;n1320:art;die Versichertenkarte;Versichertenkarte;das;falsch;die Versichertenkarte;artikel: das → die | sek:2 | ipucu:0
+2026-10-02 23:35:15;art;n0926:art;die Praxis;Praxis;der;falsch;die Praxis;artikel: der → die | sek:3 | ipucu:0
+2026-10-02 23:35:20;erk;n0994:erk;das Rezept;reçete;das Rezept;richtig;das Rezept;sek:4 | ipucu:0
+2026-10-02 23:35:24;erk;n0055:erk;die Apotheke;die Apotheke;eczane;richtig;eczane;sek:3 | ipucu:0
+2026-10-02 23:35:28;erk;n1179:erk;die Tablette;die Tablette;tablet;richtig;tablet (ilaç);sek:3 | ipucu:0
+2026-10-02 23:35:30;art;n1320:art;die Versichertenkarte;Versichertenkarte;die;richtig;die Versichertenkarte;sek:2 | ipucu:0
+2026-10-02 23:35:37;art;n0926:art;die Praxis;Praxis;der;falsch;die Praxis;artikel: der → die | sek:6 | ipucu:0
+2026-10-02 23:35:39;art;n0994:art;das Rezept;Rezept;das;richtig;das Rezept;sek:1 | ipucu:0
+2026-10-02 23:35:42;art;n0055:art;die Apotheke;Apotheke;die;richtig;die Apotheke;sek:2 | ipucu:0
+2026-10-02 23:35:44;art;n1179:art;die Tablette;Tablette;die;richtig;die Tablette;sek:1 | ipucu:0
+2026-10-02 23:35:46;art;n0432:art;das Gedicht;Gedicht;das;richtig;das Gedicht;sek:2 | ipucu:0
