@@ -374,3 +374,9 @@
 2026-10-02 12:12:24;pretest;w0169:erk;flexibel;flexibel;esnek;bekannt;esnek;sek:3
 2026-10-02 12:12:28;pretest;v672:bed;zustimmen;zustimmen;katılmak, onaylamak;bekannt;(birine) katılmak, onaylamak;sek:3
 2026-10-02 12:12:32;pretest;n0972:erk;die Regel;die Regel;kural;bekannt;kural;sek:3
+2026-10-02 12:12:36;pretest;n1354:erk;die Wahrheit;die Wahrheit;gerçek;bekannt;gerçek;sek:4
+2026-10-02 12:15:08;art;n1240:art;das Training;Training;das;fast;das Training;sek:150 | ipucu:0
+2026-10-02 12:15:17;erk;w0344:erk;nass;nass;ıslak;fast;ıslak;yavaş | sek:8 | ipucu:0
+2026-10-02 12:15:19;art;n0596:art;die Karriere;Karriere;die;richtig;die Karriere;sek:2 | ipucu:0
+2026-10-02 12:15:25;pretest;w0172:erk;frech;frech;arsız, şımarık;neu;arsız, şımarık;yavaş
+2026-10-02 12:15:31;bed;v646:bed;widersprechen;widersprechen;itiraz etmek, karşı çıkmak;richtig;(birine) itiraz etmek, karşı çıkmak;sek:3 | ipucu:0
