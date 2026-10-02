@@ -64,7 +64,7 @@
   VERBEN.forEach(v => addSyn(v.id, v.tr));
   NL.forEach(n => addSyn(n.id, n.tr));
   WOERTER.forEach(w => addSyn(w.id, w.tr));
-  const synOf = id => (SYN.get(trKey(trOf(id))) || []).filter(x => x !== id);
+  const synOf = id => (SYN.get(trKey(trOf(id))) || []).filter(x => x !== id && kind(x) === kind(id));
   // anlamdaşlardan ayıran en kısa baş (benötigen / brauchen → "be…")
   const kern = id => ({ v: () => vById[id].anz.replace(/^sich(\(D\))? /, ''), w: () => wById[id].de, n: () => byId[id].lemma, p: () => '' })[kind(id)]();
   function synPraefix(id, syn) {
@@ -609,9 +609,11 @@
 
   // ---------- Üretim (yazarak) ----------
   function frageWort(n, lv) {
-    const ex = (n.bsp || []).find(b => b.includes(n.lemma) || (n.plf && b.includes(n.plf)));
     const lem = n.lemma.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const hint = lv === 0 && ex ? `<div class="soluk">Örnek: ${esc(ex.replace(new RegExp('\\b(?:(?:der|die|das|den|dem|des|ein|eine|einen|einem|einer)\\s+)?' + lem + '\\w*', 'g'), '_____'))}</div>` : '';
+    // örnek ipucu yalnız artikel doğrudan ismin önündeyse (eine alte ___ gibi örnekler "artikel gerekmez" sandırıyordu)
+    const detRe = new RegExp('\\b(?:der|die|das|den|dem|des|ein|eine|einen|einem|einer|eines)\\s+' + lem + '\\w*', 'gi');
+    const ex = (n.bsp || []).find(b => { detRe.lastIndex = 0; return detRe.test(b) && !new RegExp('\\b' + lem, 'g').test(b.replace(detRe, '')); });
+    const hint = lv === 0 && ex ? `<div class="soluk">Örnek: ${esc(ex.replace(detRe, '_____'))} <span class="soluk">(boşluk = artikel + isim)</span></div>` : '';
     const syn = synOf(n.id);
     const synHint = syn.length ? `<div class="soluk">Anlamdaşı var · başı: <code>${esc(synPraefix(n.id, syn))}…</code></div>` : '';
     return {
@@ -635,7 +637,7 @@
       const nounOk = G.pruefen(rest, n.lemma).urteil !== 'falsch';
       if (nounOk && art !== (n.plOnly ? 'die' : n.art)) {
         r.urteil = 'falsch';
-        r.tags = [art && /^(der|die|das)$/.test(art) ? `artikel: ${art} → ${n.plOnly ? 'die' : n.art}` : 'artikel eksik'];
+        r.tags = [art && /^(der|die|das)$/.test(art) ? `artikel: ${art} → ${n.plOnly ? 'die' : n.art}` : 'artikel eksik: isimle birlikte yaz'];
       } else if (!nounOk) r.tags = ['kelime yanlış'].concat(art && /^(der|die|das)$/.test(art) && art !== (n.plOnly ? 'die' : n.art) ? [`artikel: ${n.plOnly ? 'die' : n.art}`] : []);
     }
     return r;
@@ -1229,7 +1231,8 @@
     const q = aktuell;
     if (!q || q.done) return;
     // anlamdaşı yazdıysa: yanlış sayma, tekrar sor
-    const syn = !weissNicht && q.syn && q.syn(input);
+    // önce kendi cevabı: doğruysa anlamdaş kontrolüne hiç girme
+    const syn = !weissNicht && q.syn && q.pruef(input).urteil !== 'richtig' && q.syn(input);
     if (syn) {
       $('#sonuc').innerHTML = `<div class="sonuc fast"><div class="baslik">≈ ${esc(syn)} da bu anlama geliyor, ama aranan başka bir kelime. Tekrar dene.</div></div>`;
       const i = $('#cevap'); i.value = ''; i.focus();
