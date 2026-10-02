@@ -34,3 +34,11 @@ Son incelenen log satırı en alttaki notta yazar.
 - Takılan kelime: üç ayrı günde yanlış → log'a `leech`, Claude kanca yazar.
 - Düzeltilen eski hata: kartın üstündeki durum satırı TR→DE sorularında cevabı (öğenin Almancasını) gösteriyordu.
 - Son incelenen log satırı: yok (log henüz boş).
+
+## 2026-10-02 — cümle sorusu: tam Türkçe cümle → Almanca; B1 önce
+
+- Cümle sorusu artık özne / nesne / fiil parçaları yerine tam Türkçe cümle gösteriyor (`quellen/saetze.txt`: 849 Goethe örneği,
+  612 fiil, elle çevrildi). İpucu: seviye 0'da Almanca fiil + hâller, 1'de sadece hâl kalıbı, sonra yok. Kalıp üretici yalnız yedek.
+- Yeni kelime sırası B1 → A2 → A1 (Hızlı tur, Karışık, Kelimeler).
+- Düzeltmeler: `essen` yazınca "das Essen anlamdaşı" uyarısı (doğru cevap önce kontrol edilir); isim örneğinde boşluk artikel + isim.
+- Son incelenen log satırı: yok.

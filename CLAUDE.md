@@ -24,8 +24,9 @@
 
 - `index.html` + `js/app.js` (arayüz, kuyruk, log) · `js/grammatik.js` (çekim, cümle üretimi, kontrol) · `js/fsrs.js`
 - Elle düzenlenen kaynaklar: `quellen/verben.txt`, `quellen/nomen.txt`, `quellen/nomen_extra.txt`, `quellen/rahmen.txt`,
-  `quellen/woerter.txt` (sıfat/zarf/bağlaç…, **yalnız sona ekle**: kimlik satır sırasından), `quellen/pakete.txt` (konulu paketler, yeni paket sona)
-- Üretilen: `daten/verben.js`, `daten/nomen.js`, `daten/woerter.js`, `daten/pakete.js` → **elle düzenleme**, `python3 tools/build.py` çalıştır.
+  `quellen/woerter.txt` (sıfat/zarf/bağlaç…, **yalnız sona ekle**: kimlik satır sırasından), `quellen/pakete.txt` (konulu paketler, yeni paket sona),
+  `quellen/saetze.txt` (çeviri cümleleri: `fiil | Almanca | Türkçe`; cümle sorusu Türkçeyi gösterir, Almancasını yazdırır)
+- Üretilen: `daten/verben.js`, `daten/nomen.js`, `daten/woerter.js`, `daten/pakete.js`, `daten/saetze.js` → **elle düzenleme**, `python3 tools/build.py` çalıştır.
 - Elle: `daten/feedback.js` (Claude'un düzeltmeleri, Geçmiş sekmesinde görünür), `daten/kancalar.js` (takılan kelimelere hafıza kancası).
 - `log/log.csv` (uygulama yazar, `;` ayırıcı, UTF-8 BOM): `zeit;modus;id;item;frage;antwort;ergebnis;loesung;notiz`
   - Yazarak: `abr` (TR→DE fiil), `frm` (çekim), `satz` (cümle kur), `luecke` (Goethe boşluk), `wort` (isim TR→DE, artikelli), `prod` (diğer kelime TR→DE), `ndek` (n-Deklination), `refl` (dönüşlü zamir), `yeni` (derin tanıtım)
@@ -48,7 +49,8 @@
    Aynılarını `daten/feedback.js`'e ekle: `{ zeit, id, antwort, richtig, urteil, text }`.
    Seçmeli (`erk`, `bed`, `art`) yanlışlarını tek tek yazma: hangi kelimeler ve hangi artikeller karışıyor, toplu söyle.
 3. Tekrarlayan hata etiketlerini say (dönüşlü zamir, edat, artikel/çekim, yardımcı fiil, kelime sırası …).
-   Gerekirse `quellen/rahmen.txt`'e o hatayı hedefleyen kalıp ya da isim ekle (Goethe B1 listesinden, artikelli).
+   Gerekirse o hatayı hedefleyen çeviri cümlesi ekle (`quellen/saetze.txt`, doğal Türkçe + doğru Almanca); kalıp üretici
+   (`quellen/rahmen.txt`) yalnız çeviri cümlesi ve Goethe boşluğu olmayan fiillerde kullanılır. Yeni kelimeler B1 (seviye 3) önce gelir.
 4. Kendine verdiği notu kontrol et (`öneri:` olan satırlar): fazla cömert ya da sert olduğu yerleri söyle.
    Baştan savma işaretleri: `sayılmadı`, `dikkat` satırları, çok kısa `sek:`; varsa kısaca ve suçlamadan söyle.
    `pretest` ile "biliyor" denip sonra yazmada (`wort`/`prod`/`abr`) hep yanlış olan kelimeleri belirt (yanlışlıkla bilinen sayılmış).

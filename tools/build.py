@@ -551,9 +551,30 @@ dump("nomen.js", "NOMEN", {"liste": nomen, "personen": personen, "adjSache": adj
 dump("woerter.js", "WOERTER", woerter)
 dump("pakete.js", "PAKETE", pakete)
 
+# Çeviri cümleleri: fiil kimliği | Almanca | Türkçe  (Goethe örnekleri, elle çevrildi)
+saetze = {}
+vid_set = {v["id"] for v in verben}
+sp = P("quellen", "saetze.txt")
+if os.path.exists(sp):
+    for i, line in enumerate(open(sp, encoding="utf-8"), 1):
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        parts = [x.strip() for x in line.split("|")]
+        if len(parts) != 3 or not all(parts):
+            errors.append(f"saetze.txt:{i}: biçim 'fiil | Almanca | Türkçe' olmalı")
+            continue
+        vid, de, tr = parts
+        if vid not in vid_set:
+            errors.append(f"saetze.txt:{i}: bilinmeyen fiil {vid}")
+            continue
+        saetze.setdefault(vid, []).append({"de": de, "tr": tr})
+dump("saetze.js", "SAETZE", saetze)
+
 print(f"{len(verben)} fiil anlamı ({sum(1 for v in verben if v.get('rahmen'))} kalıplı), "
       f"{len(nomen)} isim, {len(personen)} kişi, {len(adj_sache) + len(adj_person)} sıfat, "
-      f"{len(woerter)} diğer kelime, {len(pakete)} paket, {regel_n} isimde artikel kuralı")
+      f"{len(woerter)} diğer kelime, {len(pakete)} paket, {regel_n} isimde artikel kuralı, "
+      f"{sum(len(x) for x in saetze.values())} çeviri cümlesi ({len(saetze)} fiil)")
 print("artikel kuralları:", ", ".join(f"-{k}→{v[0]} %{v[1]} ({v[2]})" for k, v in sorted(stat.items(), key=lambda kv: -kv[1][1])))
 for w in warnings:
     print("uyarı:", w)

@@ -24,7 +24,7 @@ Uygulama yeni günde planın ilk bitmemiş adımıyla açılır. En az 10 sayıl
 |---|---|---|---|---|
 | Hızlı tur | Ezber | 40 | 10 bilinmeyen kelime | Seçmeli anlam + der/die/das. Yeni kelime önce sınanır: biliyorsan tekrar yükü olmadan geçer. |
 | Paketler | Ezber | 10 | 1 paket | Bir sahnenin 10 kelimesi + kısa B1 metni, sonra metinde boşluk doldurma. |
-| Karışık | Yazarak | 20 | 4 öğe | Cümle kurma, TR→DE kelime / fiil, çekim, Goethe boşlukları. |
+| Karışık | Yazarak | 20 | 4 öğe | Türkçe cümleyi Almancaya çevirme (849 cümle), TR→DE kelime / fiil, çekim, Goethe boşlukları. |
 | Fiiller | Yazarak | 20 | 3 fiil | Yalnız fiiller (her fiil ~4 soru açar). |
 | Kelimeler (yazarak) | Yazarak | 20 | 0 | Tanıdığın isim ve kelimeleri artikeliyle yazma. Hızlı tur'da öğrendiklerin buraya kendiliğinden gelir. |
 | n-Deklination | Dilbilgisi | 15 | 5 isim | den Kollegen, dem Studenten … |
@@ -33,7 +33,7 @@ Uygulama yeni günde planın ilk bitmemiş adımıyla açılır. En az 10 sayıl
 
 Hedefler ve sınırlar Ayarlar'dan değişir. Bir bölümde çalışınca diğerinin sayacı değişmez.
 
-Yeni kelime yolu: **tanı → seçmeli tekrar → (oturunca) yazarak üret**. Tanıma kartı birkaç gün dayanınca aynı kelimenin
+Yeni kelimeler önce B1 seviyesinden gelir (sonra A2, A1). Yeni kelime yolu: **tanı → seçmeli tekrar → (oturunca) yazarak üret**. Tanıma kartı birkaç gün dayanınca aynı kelimenin
 yazma sorusu Karışık / Kelimeler'de açılır. Fiillerde yazma hemen açılır, çünkü cümle alıştırmaları fiilden gelir.
 
 ## Baştan savma günleri için

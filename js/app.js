@@ -36,6 +36,7 @@
   const pById = Object.fromEntries(PAKETE.map(p => [p.id, p]));
   const FEEDBACK = window.FEEDBACK || [];
   const KANCA = window.KANCA || {};
+  const SAETZE = window.SAETZE || {};   // fiil → [{de, tr}] Goethe örnekleri, elle çevrildi
 
   // Öğe türü: v fiil · n isim (n…/x…) · w diğer kelime · p paket
   const kind = id => id[0] === 'v' ? 'v' : id[0] === 'w' ? 'w' : id[0] === 'p' ? 'p' : 'n';
@@ -122,12 +123,12 @@
   OPTS.personen.forEach(p => inFrames.add(p.id));
   // Seviye içinde sabit karıştırma: benzer kelimeler (abfahren, abholen …) art arda gelmesin
   const mix = id => { let h = 2166136261; for (const ch of id) { h ^= ch.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; };
-  const VERB_ORDER = VERBEN.slice().sort((a, b) => a.tier - b.tier || (b.rahmen ? 1 : 0) - (a.rahmen ? 1 : 0) || mix(a.id) - mix(b.id));
-  const NOUN_ORDER = NL.slice().sort((a, b) => a.tier - b.tier || (inFrames.has(b.id) ? 1 : 0) - (inFrames.has(a.id) ? 1 : 0) || mix(a.id) - mix(b.id));
-  const WORT_ORDER = WOERTER.slice().sort((a, b) => a.tier - b.tier || mix(a.id) - mix(b.id));
-  // Hızlı tur sırası: seviye seviye, 2 isim : 1 diğer kelime : 1 fiil
+  const VERB_ORDER = VERBEN.slice().sort((a, b) => b.tier - a.tier || (b.rahmen ? 1 : 0) - (a.rahmen ? 1 : 0) || mix(a.id) - mix(b.id));
+  const NOUN_ORDER = NL.slice().sort((a, b) => b.tier - a.tier || (inFrames.has(b.id) ? 1 : 0) - (inFrames.has(a.id) ? 1 : 0) || mix(a.id) - mix(b.id));
+  const WORT_ORDER = WOERTER.slice().sort((a, b) => b.tier - a.tier || mix(a.id) - mix(b.id));
+  // Hızlı tur sırası: önce B1 (seviye 3), sonra A2, A1; 2 isim : 1 diğer kelime : 1 fiil
   const BLITZ_ORDER = [];
-  [1, 2, 3].forEach(t => {
+  [3, 2, 1].forEach(t => {
     const n = NOUN_ORDER.filter(x => x.tier === t), w = WORT_ORDER.filter(x => x.tier === t), v = VERB_ORDER.filter(x => x.tier === t && x.frmDrill);
     while (n.length || w.length || v.length) { BLITZ_ORDER.push(...n.splice(0, 2), ...w.splice(0, 1), ...v.splice(0, 1)); }
   });
@@ -191,7 +192,7 @@
     const k = kind(id);
     if (k === 'v') {
       const v = vById[id];
-      return ['bed', 'abr'].concat(v.frmDrill ? ['frm'] : [], v.rahmen || v.lueckenListe.length ? ['satz'] : [], v.reflDrill ? ['refl'] : []);
+      return ['bed', 'abr'].concat(v.frmDrill ? ['frm'] : [], v.rahmen || v.lueckenListe.length || SAETZE[id] ? ['satz'] : [], v.reflDrill ? ['refl'] : []);
     }
     if (k === 'w') return ['erk', 'prod'];
     if (k === 'p') return ['pak'];
@@ -749,9 +750,12 @@
     };
   }
 
+  // Cümle: çoğunlukla tam Türkçe cümleyi Almancaya çevir; bazen Goethe boşluğu; ikisi de yoksa kalıptan üretilen görev
   function frageSatz(v, lv) {
     const hist = S.kontext[v.id] || [];
-    const useLuecke = v.lueckenListe.length && (!v.rahmen || Math.random() < 0.3);
+    const ue = SAETZE[v.id] || [];
+    if (ue.length && (!v.lueckenListe.length || Math.random() < 0.75)) return frageUebersetzen(v, lv, ue, hist);
+    const useLuecke = v.lueckenListe.length > 0;
     if (!useLuecke && v.rahmen) {
       let u = null;
       for (let i = 0; i < 6; i++) { u = G.uebung(v, lv, Math.random, OPTS); if (u && !hist.includes(u.de)) break; }
@@ -768,6 +772,24 @@
       loesungHTML: () => { const w = l.answer.split(' '); let i = 0; return deHTML(l.text.replace(/_____/g, () => w[i++] || '')); },
       erkl: () => [`${esc(v.anz)}: ${esc(v.tr)}`],
       frageText: l.text,
+    };
+  }
+
+  function frageUebersetzen(v, lv, ue, hist) {
+    const frei = ue.filter(x => !hist.includes(x.de));
+    const x = frei.length ? pick(frei) : pick(ue);
+    // ipucu azalır: 0 → Almanca fiil + hâller, 1 → sadece hâl kalıbı, 2+ → yok
+    const ipucu = lv === 0 ? `<span class="chip vurgu">${esc(v.anz)}${v.obj.length ? ' · ' + esc(G.objMuster(v)) : ''}</span>`
+      : lv === 1 && v.obj.length ? `<span class="chip">${esc(G.objMuster(v))}</span>` : '';
+    return {
+      html: `<div class="tur"><span>cümle · Almancaya çevir</span></div>
+        <div class="soru">${esc(x.tr)}</div>
+        ${ipucu ? `<div class="chips">${ipucu}</div>` : ''}`,
+      ziel: x.de, input: true, placeholder: 'Almanca cümle', kontext: x.de, modus: 'satz',
+      pruef: inp => G.pruefen(inp, x.de),
+      loesungHTML: () => deHTML(x.de),
+      erkl: () => [`<b>${esc(v.anz)}</b>${v.obj.length ? ' · ' + esc(G.objMuster(v)) : ''}: ${esc(v.tr)}`, 'Farklı ama doğru bir çeviri yazdıysan kendine 3 ver (Claude log\'dan kontrol eder).'],
+      frageText: x.tr,
     };
   }
 
