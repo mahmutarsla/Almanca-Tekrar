@@ -339,3 +339,13 @@
 2026-10-02 12:08:05;erk;w0199:erk;gerecht;gerecht;adaletli;richtig;adaletli;sek:2 | ipucu:0
 2026-10-02 12:08:07;pretest;v642:bed;sich wenden an;sich wenden an;başvurmak;bekannt;(birine) başvurmak;sek:3
 2026-10-02 12:08:19;yeni;v646;widersprechen;;;neu;;
+2026-10-02 12:08:25;yeni;n0682;die Kritik;;;neu;;
+2026-10-02 12:08:32;yeni;v626;vorschlagen;;;neu;;
+2026-10-02 12:08:37;abr;v646:abr;widersprechen;(birine) itiraz etmek, karşı çıkmak;widersprechen;richtig;widersprechen (Dat);sek:4 | ipucu:0
+2026-10-02 12:08:39;yeni;n0660;die Kosten;;;neu;;
+2026-10-02 12:08:44;abr;v626:abr;vorschlagen;(birine bir şeyi) önermek;vorschlagen;richtig;vorschlagen (Dat, Akk);sek:4 | ipucu:0
+2026-10-02 12:08:57;wort;n0660:wort;die Kosten;masraflar (çoğul);;falsch;die Kosten;bilmiyorum | sek:11 | ipucu:0
+2026-10-02 12:09:18;satz;v646:satz;widersprechen;Burada size itiraz etmek zorundayım.;Da muss ich Ihren widersprechen.;fast;Da muss ich Ihnen widersprechen.;artikel/çekim | öneri:falsch | sek:18 | ipucu:0
+2026-10-02 12:09:39;satz;v626:satz;vorschlagen;Ara vermemizi öneriyorum.;Ich vorschlage, dass ei;falsch;Ich schlage vor, dass wir eine Pause machen.;edat, artikel/çekim | sek:10 | ipucu:0
+2026-10-02 12:09:54;wort;n0682:wort;die Kritik;eleştiri;der Vorschlag;falsch;die Kritik;kelime yanlış, artikel: die | sek:10 | ipucu:0
+2026-10-02 12:10:04;frm;v646:frm;widersprechen;widersprechen — du Präsens;widersprichst;richtig;widersprichst;sek:9 | ipucu:0
