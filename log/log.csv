@@ -301,3 +301,20 @@
 2026-10-02 12:04:48;pretest;w0229:erk;heiß;heiß;sıcak;bekannt;sıcak;sek:3
 2026-10-02 12:04:51;art;n1038:art;der Schirm;Schirm;der;richtig;der Schirm;sek:1 | ipucu:0
 2026-10-02 12:05:00;bed;v169:bed;donnern;donnern;gök gürlemek;fast;gök gürlemek;yavaş | sek:8 | ipucu:0
+2026-10-02 12:05:04;art;n0844:art;der Nebel;Nebel;der;richtig;der Nebel;sek:3 | ipucu:0
+2026-10-02 12:05:10;art;n0746:art;die Luft;Luft;der;falsch;die Luft;artikel: der → die | sek:2 | ipucu:0
+2026-10-02 12:05:13;art;n0286:art;das Eis;Eis;der;falsch;das Eis;artikel: der → das | sek:2 | ipucu:0
+2026-10-02 12:05:16;art;n1207:art;die Temperatur;Temperatur;die;richtig;die Temperatur;sek:2 | ipucu:0
+2026-10-02 12:05:19;art;n0536:art;der Himmel;Himmel;das;falsch;der Himmel;artikel: das → der | sek:2 | ipucu:0
+2026-10-02 12:05:22;art;x1478:art;das Frühjahr;Frühjahr;die;falsch;das Frühjahr;artikel: die → das | sek:1 | ipucu:0
+2026-10-02 12:05:25;art;n0746:art;die Luft;Luft;die;richtig;die Luft;sek:3 | ipucu:0
+2026-10-02 12:05:27;art;n0286:art;das Eis;Eis;das;richtig;das Eis;sek:1 | ipucu:0
+2026-10-02 12:05:28;art;n1379:art;der Wind;Wind;der;richtig;der Wind;sek:1 | ipucu:0
+2026-10-02 12:05:31;art;n0536:art;der Himmel;Himmel;der;richtig;der Himmel;sek:1 | ipucu:0
+2026-10-02 12:05:33;art;x1478:art;das Frühjahr;Frühjahr;das;richtig;das Frühjahr;sek:1 | ipucu:0
+2026-10-02 12:05:35;art;n1374:art;das Wetter;Wetter;das;richtig;das Wetter;sek:2 | ipucu:0
+2026-10-02 12:05:38;art;n1048:art;der Schnee;Schnee;die;falsch;der Schnee;artikel: die → der | sek:1 | ipucu:0
+2026-10-02 12:05:40;art;n1095:art;die Sonne;Sonne;die;richtig;die Sonne;sek:1 | ipucu:0
+2026-10-02 12:05:44;art;n0973:art;der Regen;Regen;das;falsch;der Regen;artikel: das → der | sek:1 | ipucu:0
+2026-10-02 12:05:56;pretest;n0313:erk;die Erlaubnis;die Erlaubnis;izin;neu;izin;yavaş
+2026-10-02 12:06:01;pretest;n0207:erk;die Burg;die Burg;kale, şato;bekannt;kale, şato;sek:2
