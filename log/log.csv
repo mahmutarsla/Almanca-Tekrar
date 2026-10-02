@@ -204,3 +204,12 @@
 2026-10-02 11:40:40;wort;n1240:wort;das Training;antrenman;die Training;fast;das Training;artikel: die → das | öneri:falsch | sek:6 | ipucu:0
 2026-10-02 11:44:51;pretest;n1376:erk;die Wettervorhersage;die Wettervorhersage;hava tahmini;neu;hava tahmini;yavaş
 2026-10-02 11:44:59;pretest;n1375:erk;der Wetterbericht;der Wetterbericht;hava raporu;bekannt;hava raporu;sek:4
+2026-10-02 11:45:10;pretest;w0165:erk;feucht;feucht;ılık;neu;nemli;
+2026-10-02 11:45:17;erk;n1376:erk;die Wettervorhersage;die Wettervorhersage;muayenehane;falsch;hava tahmini;sek:4 | ipucu:0
+2026-10-02 11:45:20;pretest;n0587:erk;die Kälte;die Kälte;soğuk;bekannt;soğuk;sek:3
+2026-10-02 11:45:36;erk;w0165:erk;feucht;feucht;nemli;fast;nemli;yavaş | sek:14 | ipucu:0
+2026-10-02 11:45:58;pretest;n1028:erk;der Schatten;der Schatten;;neu;gölge;bilmiyorum
+2026-10-02 11:46:11;pretest;v272:bed;frieren;frieren;üşümek;neu;üşümek;yavaş
+2026-10-02 11:46:18;erk;n1376:erk;die Wettervorhersage;die Wettervorhersage;hava tahmini;richtig;hava tahmini;sek:2 | ipucu:0
+2026-10-02 11:46:23;erk;n1028:erk;der Schatten;der Schatten;gölge;richtig;gölge;sek:5 | ipucu:0
+2026-10-02 11:46:26;bed;v272:bed;frieren;frieren;üşümek;richtig;üşümek;sek:2 | ipucu:0
