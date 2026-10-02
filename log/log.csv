@@ -277,3 +277,14 @@
 2026-10-02 12:02:49;erk;w0479:erk;trocken;trocken;kuru;fast;kuru;yavaş | sek:6 | ipucu:0
 2026-10-02 12:02:53;pretest;n0536:erk;der Himmel;der Himmel;gökyüzü;bekannt;gökyüzü;sek:4
 2026-10-02 12:02:57;pretest;w0344:erk;nass;nass;kaygan;neu;ıslak;
+2026-10-02 12:03:09;pretest;w0290:erk;kühl;kühl;serin;neu;serin;yavaş
+2026-10-02 12:03:14;art;n0179:art;der Blitz;Blitz;der;richtig;der Blitz;sek:2 | ipucu:0
+2026-10-02 12:03:21;erk;w0344:erk;nass;nass;nemli;falsch;ıslak;sek:6 | ipucu:0
+2026-10-02 12:03:28;erk;w0290:erk;kühl;kühl;serin;fast;serin;yavaş | sek:6 | ipucu:0
+2026-10-02 12:03:35;pretest;x1478:erk;das Frühjahr;das Frühjahr;ilkbahar;neu;ilkbahar;yavaş
+2026-10-02 12:03:42;art;n1392:art;die Wolke;Wolke;das;falsch;die Wolke;artikel: das → die | sek:2 | ipucu:0
+2026-10-02 12:03:44;art;n0248:art;der Donner;Donner;der;richtig;der Donner;sek:2 | ipucu:0
+2026-10-02 12:03:49;erk;w0344:erk;nass;nass;kaygan;falsch;ıslak;sek:3 | ipucu:0
+2026-10-02 12:03:53;erk;x1478:erk;das Frühjahr;das Frühjahr;ilkbahar;richtig;ilkbahar;sek:3 | ipucu:0
+2026-10-02 12:03:55;pretest;n1379:erk;der Wind;der Wind;rüzgâr;bekannt;rüzgâr;sek:3
+2026-10-02 12:03:59;art;n1392:art;die Wolke;Wolke;die;richtig;die Wolke;sek:2 | ipucu:0
