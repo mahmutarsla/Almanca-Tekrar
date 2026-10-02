@@ -448,3 +448,13 @@
 2026-10-02 23:35:46;art;n0432:art;das Gedicht;Gedicht;das;richtig;das Gedicht;sek:2 | ipucu:0
 2026-10-02 23:35:50;art;n0433:art;die Geduld;Geduld;das;falsch;die Geduld;artikel: das → die | sek:3 | ipucu:0
 2026-10-02 23:35:57;bed;v620:bed;verzichten auf;verzichten auf;vazgeçmek;fast;(bir şeyden) vazgeçmek;yavaş | sek:6 | ipucu:0
+2026-10-02 23:41:30;bed;v111:bed;sich bemühen um;sich bemühen um;başvurmak;falsch;(bir şey için) çabalamak;sek:5 | ipucu:0
+2026-10-02 23:41:34;bed;v673:bed;zweifeln an;zweifeln an;şüphe etmek;richtig;(bir şeyden) şüphe etmek;sek:3 | ipucu:0
+2026-10-02 23:41:38;art;n0957:art;der Rat;Rat;das;falsch;der Rat;artikel: das → der | sek:3 | ipucu:0
+2026-10-02 23:41:41;art;n0433:art;die Geduld;Geduld;die;richtig;die Geduld;sek:2 | ipucu:0
+2026-10-02 23:41:44;art;n0926:art;die Praxis;Praxis;der;falsch;die Praxis;artikel: der → die | sek:2 | ipucu:0
+2026-10-02 23:41:56;bed;v111:bed;sich bemühen um;sich bemühen um;çabalamak;fast;(bir şey için) çabalamak;yavaş | sek:11 | ipucu:0
+2026-10-02 23:41:58;art;n0617:art;die Kindheit;Kindheit;die;richtig;die Kindheit;sek:1 | ipucu:0
+2026-10-02 23:42:02;art;n0957:art;der Rat;Rat;der;richtig;der Rat;sek:3 | ipucu:0
+2026-10-02 23:42:07;bed;v626:bed;vorschlagen;vorschlagen;önermek;richtig;(birine bir şeyi) önermek;sek:5 | ipucu:0
+2026-10-02 23:42:12;art;n0926:art;die Praxis;Praxis;die;fast;die Praxis;sek:4 | ipucu:0
