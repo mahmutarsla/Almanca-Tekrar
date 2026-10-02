@@ -1,0 +1,148 @@
+﻿zeit;modus;id;item;frage;antwort;ergebnis;loesung;notiz
+2026-09-30 17:12:12;yeni;v652;wohnen;;;neu;;
+2026-09-30 17:12:17;abr;v652:abr;wohnen;oturmak, ikamet etmek;wohnen;richtig;wohnen;sek:4 | ipucu:0
+2026-09-30 17:12:21;yeni;n0445;das Geld;;;neu;;
+2026-09-30 17:12:25;wort;n0445:wort;das Geld;para;Geld;richtig;das Geld;artikel eksik | öneri:falsch | sek:2 | ipucu:0
+2026-09-30 17:12:31;yeni;v175;sich duschen;;;neu;;
+2026-09-30 17:12:40;abr;v175:abr;sich duschen;duş almak (kendini yıkamak);sich Duschen;richtig;sich duschen;groß/klein | öneri:fast | sek:3 | ipucu:0
+2026-09-30 17:12:43;yeni;n0292;das Ende;;;neu;;
+2026-09-30 17:12:48;wort;n0292:wort;das Ende;son;das Ende;richtig;das Ende;sek:4 | ipucu:0
+2026-09-30 17:12:51;yeni;v449;schicken;;;neu;;
+2026-09-30 17:12:55;abr;v449:abr;schicken;(birine bir şey) göndermek;schicken;richtig;schicken (Dat, Akk);sek:3 | ipucu:0
+2026-09-30 17:12:59;yeni;n1364;der Weg;;;neu;;
+2026-09-30 17:13:02;wort;n1364:wort;der Weg;yol;der Weg;richtig;der Weg;sek:2 | ipucu:0
+2026-09-30 17:13:30;yeni;v448;schenken;;;neu;;
+2026-09-30 17:13:35;abr;v448:abr;schenken;(birine bir şey) hediye etmek;schenken;richtig;schenken (Dat, Akk);sek:2 | ipucu:0
+2026-09-30 17:13:36;yeni;n1215;der Text;;;bekannt;;
+2026-09-30 17:13:38;yeni;v440;sagen;;;bekannt;;
+2026-09-30 17:13:40;yeni;n1374;das Wetter;;;bekannt;;
+2026-09-30 17:13:48;luecke;v652:satz;wohnen;_____ du noch bei deinen Eltern?;Wohnst;richtig;Wohnst;sek:8 | ipucu:0
+2026-09-30 17:14:09;satz;v175:satz;sich duschen;duş almak (kendini yıkamak) | biz |  | -mek zorunda (müssen);Wir müssen uns duschen.;richtig;Wir müssen uns duschen.;sek:19 | ipucu:0
+2026-09-30 17:14:27;bed;v652:bed;wohnen;wohnen;Yaşamak/konaklamak;richtig;oturmak, ikamet etmek;sek:14 | ipucu:0
+2026-09-30 17:14:41;luecke;v449:satz;schicken;Ich habe meinen Freunden eine Einladung zur Hochzeit _____.;geschickt;richtig;geschickt;sek:12 | ipucu:0
+2026-09-30 17:15:12;satz;v448:satz;schenken;(birine bir şey) hediye etmek | ben | siz (resmi), kitap | şimdiki / geniş zaman · Präsens;Ich schicke ihnen das Buch.;richtig;Ich schenke Ihnen ein Buch.;artikel/çekim, umlaut/ß | öneri:falsch | sek:21 | ipucu:0
+2026-09-30 17:15:19;bed;v175:bed;sich duschen;sich duschen;yıkanmak;richtig;duş almak (kendini yıkamak);sek:5 | ipucu:0
+2026-09-30 17:15:25;bed;v449:bed;schicken;schicken;göndermek;richtig;(birine bir şey) göndermek;sek:3 | ipucu:0
+2026-09-30 17:15:46;frm;v652:frm;wohnen;wohnen — er / sie Perfekt;sind gewohnt;fast;hat gewohnt;yardımcı fiil | öneri:falsch | sek:17 | ipucu:0
+2026-09-30 17:15:53;bed;v448:bed;schenken;schenken;hediye etmek;richtig;(birine bir şey) hediye etmek;sek:5 | ipucu:0
+2026-09-30 17:16:03;frm;v175:frm;sich duschen;sich duschen — er / sie Perfekt;hat sich geduscht;richtig;hat sich geduscht;sek:8 | ipucu:0
+2026-09-30 17:16:11;frm;v449:frm;schicken;schicken — er / sie Perfekt;hat geschickt;richtig;hat geschickt;sek:8 | ipucu:0
+2026-09-30 17:16:19;frm;v448:frm;schenken;schenken — er / sie Perfekt;hat geschickt;fast;hat geschenkt;artikel/çekim | öneri:falsch | sek:5 | ipucu:0
+2026-09-30 17:16:39;refl;v175:refl;sich duschen;sich duschen | o (erkek) · Präsens;Er duscht sich. ;richtig;Er duscht sich.;sek:20 | ipucu:0
+2026-09-30 17:16:53;yeni;v520;telefonieren mit;;;bekannt;;
+2026-10-02 10:55:14;pretest;w0198:erk;geradeaus;geradeaus;dümdüz;neu;dümdüz;yavaş
+2026-10-02 10:55:30;pretest;w0184:erk;ganz;ganz;çoğunlukla;neu;tamamen, bütün;
+2026-10-02 10:55:38;pretest;n1267:erk;die Uhr;die Uhr;saat;bekannt;saat;sek:3
+2026-10-02 10:55:42;erk;w0198:erk;geradeaus;geradeaus;dümdüz;richtig;dümdüz;sek:2 | ipucu:0
+2026-10-02 10:55:46;erk;w0184:erk;ganz;ganz;tamamen, bütün;richtig;tamamen, bütün;sek:3 | ipucu:0
+2026-10-02 10:55:48;pretest;w0173:erk;frei;frei;boş;bekannt;boş;sek:3
+2026-10-02 10:55:51;pretest;n0338:erk;das Fahrrad;das Fahrrad;bisiklet;bekannt;bisiklet;sek:2
+2026-10-02 10:55:55;pretest;n0323:erk;das Essen;das Essen;yemek;bekannt;yemek;sek:2
+2026-10-02 10:55:58;pretest;w0176:erk;freundlich;freundlich;cana yakın, nazik;bekannt;cana yakın, nazik;sek:3
+2026-10-02 10:56:04;pretest;n1211:erk;der Termin;der Termin;randevu;neu;randevu;yavaş
+2026-10-02 10:56:11;pretest;n1362:erk;das Wasser;das Wasser;su;bekannt;su;sek:2
+2026-10-02 10:56:15;pretest;w0104:erk;dort;dort;orada;bekannt;orada;sek:3
+2026-10-02 10:56:21;erk;n1211:erk;der Termin;der Termin;randevu;richtig;randevu;sek:4 | ipucu:0
+2026-10-02 10:56:25;pretest;n0399:erk;der Freund;der Freund;arkadaş;bekannt;arkadaş;sek:4
+2026-10-02 10:56:28;pretest;n0410:erk;der Fuß;der Fuß;ayak;bekannt;ayak;sek:2
+2026-10-02 10:56:33;pretest;w0044:erk;bald;bald;yakında;bekannt;yakında;sek:4
+2026-10-02 10:56:36;pretest;n0344:erk;die Farbe;die Farbe;renk;bekannt;renk;sek:3
+2026-10-02 10:56:40;pretest;n0384:erk;das Formular;das Formular;form;bekannt;form;sek:3
+2026-10-02 10:56:46;pretest;w0162:erk;fertig;fertig;hazır, bitmiş;neu;hazır, bitmiş;yavaş
+2026-10-02 10:56:54;pretest;v585:bed;verkaufen;verkaufen;satmak;bekannt;(birine bir şey) satmak;sek:2
+2026-10-02 10:56:59;pretest;n0597:erk;die Karte;die Karte;kart;bekannt;kart;sek:4
+2026-10-02 10:57:03;erk;w0162:erk;fertig;fertig;hazır, bitmiş;richtig;hazır, bitmiş;sek:3 | ipucu:0
+2026-10-02 10:57:07;pretest;n0346:erk;der Fehler;der Fehler;hata;bekannt;hata;sek:4
+2026-10-02 10:57:13;pretest;w0078:erk;da;da;orada;neu;orada;yavaş
+2026-10-02 10:57:20;pretest;v527:bed;treffen;treffen;buluşmak, karşılaşmak;bekannt;(biriyle) buluşmak, karşılaşmak;sek:4
+2026-10-02 10:57:24;pretest;n0390:erk;das Foto;das Foto;fotoğraf;bekannt;fotoğraf;sek:3
+2026-10-02 10:57:28;erk;w0078:erk;da;da;orada;richtig;orada;sek:2 | ipucu:0
+2026-10-02 10:57:31;pretest;n1252:erk;die Tür;die Tür;kapı;bekannt;kapı;sek:2
+2026-10-02 10:57:35;pretest;w0050:erk;bei;bei;-de, yanında;bekannt;-de, yanında (+ D);sek:3
+2026-10-02 10:57:39;pretest;v267:bed;fragen;fragen;sormak;bekannt;(birine) sormak;sek:3
+2026-10-02 10:57:43;pretest;n0336:erk;die Fahrkarte;die Fahrkarte;bilet;bekannt;bilet (ulaşım);sek:3
+2026-10-02 10:57:46;pretest;n1294:erk;der Vater;der Vater;baba;bekannt;baba;sek:2
+2026-10-02 10:57:50;pretest;w0098:erk;dieser;dieser;bu;bekannt;bu (diese, dieses);sek:3
+2026-10-02 10:57:53;pretest;v512:bed;suchen;suchen;aramak;bekannt;aramak;sek:2
+2026-10-02 10:57:56;pretest;n0342:erk;die Familie;die Familie;aile;bekannt;aile;sek:2
+2026-10-02 10:57:59;pretest;n0394:erk;die Frage;die Frage;soru;bekannt;soru;sek:2
+2026-10-02 10:58:03;pretest;w0097:erk;dick;dick;şişman;bekannt;şişman;sek:3
+2026-10-02 10:58:07;pretest;v249:bed;feiern;feiern;kutlamak;bekannt;kutlamak;sek:3
+2026-10-02 10:58:11;pretest;n1284:erk;der Unterricht;der Unterricht;ders;bekannt;ders;sek:3
+2026-10-02 10:58:16;art;n0445:art;das Geld;Geld;das;fast;das Geld;sek:3 | ipucu:0
+2026-10-02 10:58:18;art;n1267:art;die Uhr;Uhr;die;richtig;die Uhr;sek:1 | ipucu:0
+2026-10-02 10:58:23;art;n0338:art;das Fahrrad;Fahrrad;das;fast;das Fahrrad;sek:4 | ipucu:0
+2026-10-02 10:58:25;art;n0323:art;das Essen;Essen;das;richtig;das Essen;sek:1 | ipucu:0
+2026-10-02 10:58:26;art;n1211:art;der Termin;Termin;der;richtig;der Termin;sek:1 | ipucu:0
+2026-10-02 10:58:29;art;n1362:art;das Wasser;Wasser;das;richtig;das Wasser;sek:1 | ipucu:0
+2026-10-02 11:00:11;paket;p01:0;das Fieber;Beim Arzt;Fieber;richtig;Fieber;
+2026-10-02 11:00:26;paket;p01:1;der Schmerz;Beim Arzt;Schmerz;falsch;Schmerzen;artikel/çekim
+2026-10-02 11:00:33;paket;p01:2;die Praxis;Beim Arzt;Praxis;richtig;Praxis;
+2026-10-02 11:00:38;paket;p01:3;der Termin;Beim Arzt;Termin;richtig;Termin;
+2026-10-02 11:00:45;paket;p01:4;die Versichertenkarte;Beim Arzt;Versichertenkarte;richtig;Versichertenkarte;
+2026-10-02 11:00:54;paket;p01:5;untersuchen;Beim Arzt;untersuchen;falsch;untersucht;artikel/çekim
+2026-10-02 11:01:03;paket;p01:6;verschreiben;Beim Arzt;schreibt;falsch;verschreibt;farklı
+2026-10-02 11:01:10;paket;p01:7;das Rezept;Beim Arzt;Rezept;richtig;Rezept;
+2026-10-02 11:01:13;paket;p01:8;die Apotheke;Beim Arzt;Apoteke;falsch;Apotheke;artikel/çekim
+2026-10-02 11:01:20;paket;p01:9;die Tablette;Beim Arzt;Tablette;richtig;Tablette;
+2026-10-02 11:01:21;paket;p01:pak;Beim Arzt;yeni paket;;fast;;puan:60
+2026-10-02 11:01:29;yeni;v243;fahren;;;neu;;
+2026-10-02 11:01:36;frm;v652:frm;wohnen;wohnen — er / sie Perfekt;Wohnen;falsch;hat gewohnt;yardımcı fiil | sek:2 | ipucu:0
+2026-10-02 11:01:44;frm;v448:frm;schenken;schenken — er / sie Perfekt;er hat geschenkt;richtig;hat geschenkt;sek:7 | ipucu:0
+2026-10-02 11:01:50;yeni;n1121;die Stadt;;;neu;;
+2026-10-02 11:01:52;yeni;v242;essen;;;neu;;
+2026-10-02 11:01:57;abr;v243:abr;fahren;(araçla) gitmek;fahren ;richtig;fahren;sek:4 | ipucu:0
+2026-10-02 11:02:01;yeni;n1290;der Urlaub;;;neu;;
+2026-10-02 11:02:38;abr;v242:abr;essen;yemek;;falsch;essen (Akk);bilmiyorum | sek:27 | ipucu:0
+2026-10-02 11:02:48;luecke;v243:satz;fahren;Wir sind mit dem Zug _____.;gefahrt;fast;gefahren;artikel/çekim | öneri:falsch | sek:8 | ipucu:0
+2026-10-02 11:02:54;frm;v652:frm;wohnen;wohnen — er / sie Perfekt;hat gewohnt;richtig;hat gewohnt;sek:5 | ipucu:0
+2026-10-02 11:03:01;luecke;v242:satz;essen;Was gibt es heute zu _____?;Essen;richtig;essen;sek:6 | ipucu:0
+2026-10-02 11:04:44;wort;n1121:wort;die Stadt;şehir;Stadt;richtig;die Stadt;artikel eksik | öneri:falsch | sek:7 | ipucu:0
+2026-10-02 11:05:15;abr;v242:abr;essen;yemek;;falsch;essen (Akk);bilmiyorum | sek:30 | ipucu:0
+2026-10-02 11:05:28;wort;n1290:wort;der Urlaub;tatil (izin);Urlaub;falsch;der Urlaub;artikel eksik | sek:6 | ipucu:0
+2026-10-02 11:05:33;abr;v242:abr;essen;yemek;;falsch;essen (Akk);bilmiyorum | sek:4 | ipucu:0
+2026-10-02 11:06:22;wort;n1290:wort;der Urlaub;tatil (izin);der Urlaub;richtig;der Urlaub;sek:48 | ipucu:0
+2026-10-02 11:06:30;abr;v242:abr;essen;yemek;;falsch;essen (Akk);bilmiyorum | sek:7 | ipucu:0
+2026-10-02 11:06:42;frm;v243:frm;fahren;fahren — du Präsens;du fahrst;fast;fährst;umlaut/ß | sek:11 | ipucu:0
+2026-10-02 11:08:26;dikkat;;;;;cok-yanlis;;son8 yanlış:5 hızlı/boş:0
+2026-10-02 11:08:26;abr;v242:abr;essen;yemek;;falsch;essen (Akk);bilmiyorum | sek:2 | ipucu:0
+2026-10-02 11:08:32;abr;v242:abr;essen;yemek;;falsch;essen (Akk);bilmiyorum | sek:5 | ipucu:0
+2026-10-02 11:08:33;abr;v242:abr;essen;yemek;;falsch;essen (Akk);bilmiyorum | sek:1 | ipucu:0
+2026-10-02 11:08:35;abr;v242:abr;essen;yemek;;falsch;essen (Akk);bilmiyorum | sek:1 | ipucu:0
+2026-10-02 11:08:46;abr;v242:abr;essen;yemek;;falsch;essen (Akk);bilmiyorum | sek:2 | ipucu:0
+2026-10-02 11:09:10;art;n0399:art;der Freund;Freund;der;fast;der Freund;sek:4 | ipucu:0
+2026-10-02 11:09:12;art;n1294:art;der Vater;Vater;der;richtig;der Vater;sek:1 | ipucu:0
+2026-10-02 11:09:20;ndek;n0399:ndek;der Freund;Ich spreche mit ___. [belirli artikel (der/den/dem/des)];dem Freund;richtig;dem Freund;sek:7 | ipucu:0
+2026-10-02 11:09:30;ndek;n1294:ndek;der Vater;___ wartet schon draußen. [belirli artikel (der/den/dem/des)];Der Vater;richtig;der Vater;sek:10 | ipucu:0
+2026-10-02 11:09:36;art;n0399:art;der Freund;Freund;der;richtig;der Freund;sek:1 | ipucu:0
+2026-10-02 11:09:38;art;n1294:art;der Vater;Vater;der;richtig;der Vater;sek:1 | ipucu:0
+2026-10-02 11:09:56;yeni;n0642;der Kollege;;;neu;;
+2026-10-02 11:09:59;yeni;n1161;der Student;;;neu;;
+2026-10-02 11:10:03;art;n0642:art;der Kollege;Kollege;der;richtig;der Kollege;sek:2 | ipucu:0
+2026-10-02 11:10:07;yeni;n0839;der Name;;;neu;;
+2026-10-02 11:10:10;art;n1161:art;der Student;Student;der;richtig;der Student;sek:2 | ipucu:0
+2026-10-02 11:10:13;yeni;n0827;der Nachbar;;;neu;;
+2026-10-02 11:10:17;art;n0839:art;der Name;Name;der;richtig;der Name;sek:1 | ipucu:0
+2026-10-02 11:10:20;yeni;n0204;der Buchstabe;;;neu;;
+2026-10-02 11:10:22;art;n0827:art;der Nachbar;Nachbar;der;richtig;der Nachbar;sek:1 | ipucu:0
+2026-10-02 11:10:24;yeni;n0581;der Junge;;;neu;;
+2026-10-02 11:10:28;art;n0204:art;der Buchstabe;Buchstabe;der;richtig;der Buchstabe;sek:2 | ipucu:0
+2026-10-02 11:10:31;yeni;n0841;der Vorname;;;neu;;
+2026-10-02 11:10:34;art;n0581:art;der Junge;Junge;der;richtig;der Junge;sek:1 | ipucu:0
+2026-10-02 11:10:40;yeni;n0840;der Familienname;;;neu;;
+2026-10-02 11:10:45;art;n0841:art;der Vorname;Vorname;die;falsch;der Vorname;artikel: die → der | sek:4 | ipucu:0
+2026-10-02 11:11:23;wort;n0642:wort;der Kollege;iş arkadaşı (erkek);der Kollege;richtig;der Kollege;sek:32 | ipucu:0
+2026-10-02 11:11:26;wort;n1161:wort;der Student;üniversite öğrencisi (erkek);der Student;richtig;der Student;sek:3 | ipucu:0
+2026-10-02 11:11:28;wort;n0839:wort;der Name;isim;der Name;richtig;der Name;sek:2 | ipucu:0
+2026-10-02 11:11:33;wort;n0827:wort;der Nachbar;komşu (erkek);Der nachbar;richtig;der Nachbar;groß/klein | öneri:fast | sek:3 | ipucu:0
+2026-10-02 11:11:37;wort;n0204:wort;der Buchstabe;harf;der Buchstabe;richtig;der Buchstabe;sek:3 | ipucu:0
+2026-10-02 11:11:39;wort;n0581:wort;der Junge;erkek çocuk, oğlan;der Junge;richtig;der Junge;sek:2 | ipucu:0
+2026-10-02 11:11:44;wort;n0841:wort;der Vorname;ad;der Name;richtig;der Vorname;kelime yanlış | öneri:falsch | sek:2 | ipucu:0
+2026-10-02 11:11:49;wort;n0840:wort;der Familienname;soyadı;der Nachname;richtig;der Familienname;kelime yanlış | öneri:falsch | sek:3 | ipucu:0
+2026-10-02 11:12:08;yeni;v240;erzählen von;;;neu;;
+2026-10-02 11:12:10;yeni;v346;kommen;;;bekannt;;
+2026-10-02 11:12:15;yeni;v002;abfahren;;;neu;;
+2026-10-02 11:12:31;abr;v240:abr;erzählen von;(birine bir şeyden) bahsetmek, anlatmak;etwas sagen;fast;erzählen von (Dat, von + Dat);edat | öneri:falsch | sek:12 | ipucu:0
+2026-10-02 11:12:34;abr;v002:abr;abfahren;(araç) kalkmak, yola çıkmak;abfahren;richtig;abfahren;sek:2 | ipucu:0
+2026-10-02 11:12:46;luecke;v240:satz;erzählen von;Mein Mann hat mir schon viel von Ihnen _____.;erzählt;richtig;erzählt;sek:12 | ipucu:0
+2026-10-02 11:13:05;satz;v002:satz;abfahren;(araç) kalkmak, yola çıkmak | biz |  | şimdiki / geniş zaman · Präsens, evet/hayır sorusu;Wir fahren ab;fast;Fahren wir ab?;umlaut/ß | öneri:falsch | sek:13 | ipucu:0

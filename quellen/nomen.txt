@@ -841,7 +841,7 @@ die Nähe | 2 | yakınlık, civar
 das Nahrungsmittel | 3 | gıda maddesi
 der Name | 1 | isim
 der Familienname | 1 | soyadı
-der Vorname | 1 | ad
+der Vorname | 1 | ön ad (soyadı değil)
 die Nase | 2 | burun
 die Natur | 2 | doğa
 der Nebel | 3 | sis

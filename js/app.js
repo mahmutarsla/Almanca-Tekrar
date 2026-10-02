@@ -371,7 +371,8 @@
     }
     if (!due.length) {
       // öğrenme aşamasındaki kartlar (yeni ya da az önce yanlış) 15 dk içindeyse öne çekilir
-      const bald = Object.keys(S.karten).filter(u => { const c = S.karten[u]; return (c.neu || c.lastG === 1) && c.due - now() < 15 * 60000 && filter(u) && gueltig(u); });
+      // az önce cevaplanan kart (2 dk) ve son öğe hemen geri gelmez; aynı soruyu art arda sormasın
+      const bald = Object.keys(S.karten).filter(u => { const c = S.karten[u]; return (c.neu || c.lastG === 1) && c.due - now() < 15 * 60000 && !(c.last && now() - c.last < 120000) && itemOf(u) !== session.sonItem && filter(u) && gueltig(u); });
       if (bald.length) due = bald;
     }
     if (!due.length) {
@@ -962,6 +963,11 @@
     const p = pById[q.pid], l = p.luecken[q.i];
     const leer = istMuell(input);
     const r = leer ? { urteil: 'falsch', tags: ['boş / rastgele'] } : G.pruefen(input, l.form);
+    // doğru kelime, yanlış biçim (Schmerz → Schmerzen, untersuchen → untersucht): küçük hata
+    if (r.urteil === 'falsch' && !leer) {
+      const a = G.norm(input).toLowerCase(), b = l.form.toLowerCase(), n = Math.min(5, b.length - 1);
+      if (a.length >= 4 && !a.includes(' ') && a.slice(0, n) === b.slice(0, n)) { r.urteil = 'fast'; r.tags = [`biçim: metinde ${l.form}`]; }
+    }
     // isim küçük harfle yazıldıysa: küçük hata (pruefen ilk harfi cümle başı sayıp affeder)
     if (r.urteil === 'richtig' && kind(l.id) === 'n' && /^[a-zäöü]/.test(input.trim()) && /^[A-ZÄÖÜ]/.test(l.form)) { r.urteil = 'fast'; r.tags = ['groß/klein: isim büyük harfle']; }
     q.erg[q.i] = { urteil: r.urteil, input };
@@ -1194,7 +1200,7 @@
     clearTimers();
     const n = byId[q.id], t = now();
     const ok = a === n.art, rt = t - q.start;
-    let g = !ok ? 1 : rt <= 2500 ? 3 : 2;
+    let g = !ok ? 1 : rt <= 3500 ? 3 : 2;
     if (rt < 450) { q.ungezaehlt = true; if (g > 2) g = 2; }
     q.note = g; q.antwort = a; q.sek = Math.round(rt / 1000);
     q.res = { urteil: g === 3 ? 'richtig' : g === 2 ? 'fast' : 'falsch', tags: ok ? [] : [`artikel: ${a} → ${n.art}`] };

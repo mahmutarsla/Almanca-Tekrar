@@ -686,7 +686,8 @@
     } else {
       const dels = df.filter(x => x.op === 'del').map(x => x.t);
       const ins = df.filter(x => x.op === 'ins').map(x => x.t);
-      if (ut.length === zt.length && [...ut].sort().join(' ') === [...zt].sort().join(' ')) tags.add('kelime sırası');
+      const low = a => a.map(x => x.toLowerCase()).sort().join(' ');
+      if (ut.length === zt.length && low(ut) === low(zt)) tags.add('kelime sırası');
       dels.forEach(t => {
         if (/^(sich|mich|dich|uns|euch|mir|dir)$/.test(t) && !ins.some(x => /^(sich|mich|dich|uns|euch|mir|dir)$/.test(x))) tags.add('dönüşlü zamir');
         else if (PRAEP.test(t)) tags.add('edat');
@@ -695,9 +696,13 @@
         else if (t === 'nicht') tags.add('nicht');
       });
       // aynı kök, farklı son → çekim hatası
+      // tek harf yazım hatası, son ek aynıysa (Apoteke → Apotheke); son ek farklıysa çekim hatasıdır (mache → macht)
+      const yazim = (t, x) => lev(t.toLowerCase(), x.toLowerCase()) === 1 && t.length > 3 && t.slice(-2).toLowerCase() === x.slice(-2).toLowerCase();
       dels.forEach(t => ins.forEach(x => {
         if (x !== t && x.length > 2 && t.slice(0, 3).toLowerCase() === x.slice(0, 3).toLowerCase()) {
-          if (fold(x) === fold(t)) tags.add('umlaut/ß'); else tags.add('artikel/çekim');
+          if (x.toLowerCase() === t.toLowerCase()) tags.add('groß/klein');
+          else if (fold(x) === fold(t)) tags.add('umlaut/ß');
+          else if (!yazim(t, x)) tags.add('artikel/çekim');
         }
       }));
       const nonTrivial = dels.length + ins.length;

@@ -108,7 +108,8 @@ LEMMA_FIX = {"Hinweise": "Hinweis", "Erdgeschoss/ Ergeschoß": "Erdgeschoss", "H
              "Hähnchen/Hühnchen": "Hähnchen", "Müesli/Müsli": "Müsli", "Soße/Sauce": "Soße", "Ski/Schi": "Ski",
              "Fantasie/Phantasie": "Fantasie", "Rezeption/Reception": "Rezeption"}
 LEMMA_ALT = {"Zahncreme": ["Zahnpasta"], "Hähnchen": ["Hühnchen"], "Soße": ["Sauce"], "Ski": ["Schi"],
-             "Fantasie": ["Phantasie"], "Erdgeschoss": ["Erdgeschoß"], "Müsli": ["Müesli"]}
+             "Fantasie": ["Phantasie"], "Erdgeschoss": ["Erdgeschoß"], "Müsli": ["Müesli"],
+             "Familienname": ["Nachname"]}
 SKIP = {"Bancomat/Bankomat", "Bankomat-Karte", "Coiffeur", "Fleischhauer", "Gehsteig", "Knödel", "Trottoir",
         "Serviceangestellte", "Portemonnaie/Port-", "Nord-/Ostsee", "Phantasie/Fantasie"}
 
