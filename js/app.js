@@ -1107,11 +1107,14 @@
     if (anders && session.aufgabe) { const f = c.filter(a => a.id !== session.aufgabe.id); if (f.length) c = f; }
     return pick(c);
   }
+  // zorunlu kelimeler yalnız görevin konusundan: önce öğrendiklerin (yeniler önde), eksikse konunun diğer kelimeleri
   function pflichtWoerter(a) {
-    const t = now();
-    const neu = Object.keys(S.items).filter(id => kind(id) !== 'p' && gueltig(id + ':x') && t - S.items[id].seit < 14 * DAY);
-    const thema = neu.filter(id => (THEMA_VON[id] || []).includes(a.thema));
-    return shuffle(thema).concat(shuffle(neu.filter(id => !thema.includes(id)))).slice(0, 5);
+    const th = thById[a.thema];
+    if (!th) return [];
+    const ids = th.items.filter(id => gueltig(id + ':x'));
+    const gelernt = ids.filter(id => S.items[id]).sort((x, y) => S.items[y].seit - S.items[x].seit);
+    const rest = shuffle(ids.filter(id => !S.items[id]));
+    return shuffle(gelernt.slice(0, 8)).slice(0, 5).concat(rest).slice(0, 5);
   }
   function yazmaRender(anders) {
     if (!AUFGABEN.length) { kart.innerHTML = '<div class="bos">Yazma görevi yok.</div>'; return; }
