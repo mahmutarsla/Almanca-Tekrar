@@ -416,3 +416,17 @@
 2026-10-02 23:33:34;art;n0972:art;die Regel;Regel;das;falsch;die Regel;artikel: das → die | sek:5 | ipucu:0
 2026-10-02 23:33:36;art;n1354:art;die Wahrheit;Wahrheit;die;richtig;die Wahrheit;sek:2 | ipucu:0
 2026-10-02 23:33:41;art;n0957:art;der Rat;Rat;das;falsch;der Rat;artikel: das → der | sek:2 | ipucu:0
+2026-10-02 23:33:45;dikkat;;;;;cok-yanlis;;son8 yanlış:5 hızlı/boş:0
+2026-10-02 23:33:47;erk;w0172:erk;frech;arsız, şımarık;;falsch;frech;bilmiyorum | sek:4 | ipucu:0
+2026-10-02 23:33:55;art;n0973:art;der Regen;Regen;der;fast;der Regen;sek:6 | ipucu:0
+2026-10-02 23:33:57;art;n0972:art;die Regel;Regel;die;richtig;die Regel;sek:2 | ipucu:0
+2026-10-02 23:34:05;erk;n0361:erk;das Fieber;das Fieber;ateş;fast;ateş (hastalık);yavaş | sek:7 | ipucu:0
+2026-10-02 23:34:08;art;n0957:art;der Rat;Rat;das;falsch;der Rat;artikel: das → der | sek:2 | ipucu:0
+2026-10-02 23:34:11;erk;w0172:erk;frech;frech;arsız, şımarık;richtig;arsız, şımarık;sek:3 | ipucu:0
+2026-10-02 23:34:19;erk;n1044:erk;der Schmerz;der Schmerz;doktor;falsch;ağrı;sek:4 | ipucu:0
+2026-10-02 23:34:23;erk;n0926:erk;die Praxis;die Praxis;muayenehane;richtig;muayenehane;sek:4 | ipucu:0
+2026-10-02 23:34:28;art;n0361:art;das Fieber;Fieber;der;falsch;das Fieber;artikel: der → das | sek:4 | ipucu:0
+2026-10-02 23:34:33;erk;n1211:erk;der Termin;der Termin;randevu;richtig;randevu;sek:4 | ipucu:0
+2026-10-02 23:34:35;art;n1044:art;der Schmerz;Schmerz;der;richtig;der Schmerz;sek:2 | ipucu:0
+2026-10-02 23:34:40;erk;n1044:erk;der Schmerz;der Schmerz;ağrı;richtig;ağrı;sek:4 | ipucu:0
+2026-10-02 23:34:44;erk;n1320:erk;die Versichertenkarte;sigorta kartı;die Versichertenkarte;richtig;die Versichertenkarte;sek:4 | ipucu:0
