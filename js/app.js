@@ -36,7 +36,9 @@
   const pById = Object.fromEntries(PAKETE.map(p => [p.id, p]));
   const FEEDBACK = window.FEEDBACK || [];
   const KANCA = window.KANCA || {};
-  const SAETZE = window.SAETZE || {};   // fiil → [{de, tr}] Goethe örnekleri, elle çevrildi
+  const SAETZE = window.SAETZE || {};
+  const THEMEN = window.THEMEN || [];   // Goethe B1 konuları: [{id, de, tr, items}]
+  const thById = Object.fromEntries(THEMEN.map(t => [t.id, t]));   // fiil → [{de, tr}] Goethe örnekleri, elle çevrildi
 
   // Öğe türü: v fiil · n isim (n…/x…) · w diğer kelime · p paket
   const kind = id => id[0] === 'v' ? 'v' : id[0] === 'w' ? 'w' : id[0] === 'p' ? 'p' : 'n';
@@ -146,6 +148,7 @@
     woerter: { ad: 'Kelimeler (yazarak)', grup: 'Yazarak', ziel: 20, neu: 0, neuTr: 'yeni isim (0: Hızlı tur\'da öğrendiklerin buraya kendiliğinden gelir)' },
     ndek: { ad: 'n-Deklination', grup: 'Dilbilgisi', ziel: 15, neu: 5, neuTr: 'yeni n-Deklination ismi' },
     refl: { ad: 'Dönüşlü fiiller', grup: 'Dilbilgisi', ziel: 15, neu: 3, neuTr: 'yeni dönüşlü fiil' },
+    thema: { ad: 'Konu', grup: 'Ezber', ziel: 30, neu: 15, neuTr: 'seçili konudan yeni kelime' },
     zayif: { ad: 'Zayıflar', grup: '', ziel: 10, neu: 0, neuTr: '' },
   };
   const PLAN = ['blitz', 'paket', 'normal'];
@@ -293,7 +296,16 @@
     zayif: u => typOf(u) !== 'pak' && schwach(itemOf(u)),
     ndek: u => istNdek(itemOf(u)),
     refl: u => istRefl(itemOf(u)),
+    thema: u => typOf(u) !== 'pak' && themaSet().has(itemOf(u)),
   };
+  // seçili konu
+  const themaId = () => (thById[S.einst.thema] ? S.einst.thema : (THEMEN[0] && THEMEN[0].id));
+  let _thSet = null, _thFor = null;
+  const themaSet = () => { const id = themaId(); if (_thFor !== id) { _thFor = id; _thSet = new Set(thById[id] ? thById[id].items : []); } return _thSet; };
+  // konu sırası: önce B1, sonra A2, A1; fiil / isim / diğer karışık
+  const tierOf = id => ({ v: () => vById[id].tier, w: () => wById[id].tier, p: () => 2, n: () => byId[id].tier })[kind(id)]();
+  const themaOrder = () => (thById[themaId()] ? thById[themaId()].items : []).filter(id => gueltig(id + ':x'))
+    .slice().sort((a, b) => tierOf(b) - tierOf(a) || mix(a) - mix(b));
   // odakta daha önce tanıtılmış ama modül birimi olmayan öğelere birimi ekle
   function modulEinheiten() {
     const t = now();
@@ -334,6 +346,7 @@
     if (hm.neu >= max) return null;
     const frei = order => { const x = order.find(x => !S.items[x.id]); return x && x.id; };
     if (m === 'blitz') { if (hm.bekannt >= Math.round(30 * (1 - yuk))) return null; const id = frei(BLITZ_ORDER); return id && { pretest: id }; }
+    if (m === 'thema') { const id = themaOrder().find(x => !S.items[x]); return id && { pretest: id }; }
     if (m === 'paket') { const p = PAKETE.find(p => !S.pakete[p.id]); return p && { paket: p.id }; }
     let id = null;
     if (m === 'verben') id = frei(VERB_ORDER);
@@ -1070,6 +1083,7 @@
     clearTimers();
     renderHedef();
     renderPlan();
+    themaUI();
     const m = session.modus, d = heuteM(m);
     if (d.n >= ziel(m) && !session.zielGesehen[m]) {
       session.zielGesehen[m] = true;
@@ -1220,10 +1234,10 @@
 
   // Ön test sonucu: biliyorsa tekrar yükü olmadan geçer, bilmiyorsa hafif tanıtım
   function pretestErgebnis(q, gewusst) {
-    const id = q.id, hm = heuteM('blitz');
+    const id = q.id, hm = heuteM(session.modus);
     dikkatNotieren(gewusst || !q.ungezaehlt, q.ungezaehlt);
     if (gewusst) {
-      leichtEinfuehren(id, { bekannt: true, quelle: 'blitz' });
+      leichtEinfuehren(id, { bekannt: true, quelle: session.modus });
       hm.bekannt++;
       zaehlen({ ungezaehlt: false, typ: kind(id) === 'v' ? 'bed' : 'erk' }, 'richtig');
       session.q++;
@@ -1247,7 +1261,7 @@
     const q = aktuell;
     if (!q || q.typ !== 'licht') return;
     if (now() < q.lichtAb) { flash('Bir kez oku, sonra devam.'); return; }
-    leichtEinfuehren(q.id, { quelle: 'blitz' });
+    leichtEinfuehren(q.id, { quelle: session.modus });
     session.requeue.push({ uid: q.uid, nach: session.q + 3, mal: 0, neu: true });
     session.q++;
     save();
@@ -1752,10 +1766,20 @@
     session.modus = m; session.letzteNeu = null; session.extra = false;
     session.cats = { satz: 0, wort: 0, anlam: 0 }; session.letzte = []; session.requeue = [];
     $('#odak').value = m;
+    themaUI();
     if (m === 'ndek' || m === 'refl') modulEinheiten();
     try { localStorage.setItem('almanca-tekrar-bolum', JSON.stringify({ m, tag: tag() })); } catch (e) { /* yok */ }
     renderHedef();
   }
+  function themaUI() {
+    const sel = $('#thema-sec');
+    if (!sel) return;
+    sel.hidden = session.modus !== 'thema';
+    if (sel.hidden) return;
+    sel.innerHTML = THEMEN.map(t => { const n = t.items.filter(id => S.items[id]).length; return `<option value="${t.id}">${esc(t.tr)} · ${esc(t.de)} (${n}/${t.items.length})</option>`; }).join('');
+    sel.value = themaId();
+  }
+  $('#thema-sec').addEventListener('change', e => { S.einst.thema = e.target.value; save(); session.requeue = []; session.letzteNeu = null; themaUI(); zeige(); });
   $('#zayif-basla').addEventListener('click', () => { setModus('zayif'); zeigView('calis'); zeige(); });
   $('#odak').addEventListener('change', e => { setModus(e.target.value); zeige(); });
 

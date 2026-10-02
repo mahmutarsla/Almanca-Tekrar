@@ -311,3 +311,4 @@ main { max-width: 860px; margin: 0 auto; padding: 1.5rem 16px 4rem; }
 .pk-satz .bosluk { display: inline-block; min-width: 4em; border-bottom: 2px solid var(--line); color: transparent; line-height: 1.2; }
 .pk-satz .bosluk.aktiv { border-bottom-color: var(--accent); background: var(--accent-soft); }
 .plan-log { border: 1px dashed var(--warn); background: var(--warn-soft); color: var(--ink); border-radius: 99px; padding: .25rem .65rem; font-size: .8rem; cursor: pointer; }
+#thema-sec { max-width: 100%; min-width: 0; }

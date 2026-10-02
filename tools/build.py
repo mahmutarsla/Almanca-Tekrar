@@ -572,10 +572,36 @@ if os.path.exists(sp):
         saetze.setdefault(vid, []).append({"de": de, "tr": tr})
 dump("saetze.js", "SAETZE", saetze)
 
+# Konular (Goethe/telc B1 Themen): "@ id | Almanca | Türkçe" tanımlar, "öğe | konu1,konu2" atamalar
+themen, th_by = [], {}
+tp = P("quellen", "themen.txt")
+alle_ids = {n["id"] for n in nomen if not n.get("skip")} | {v["id"] for v in verben} | {w["id"] for w in woerter}
+if os.path.exists(tp):
+    for i, line in enumerate(open(tp, encoding="utf-8"), 1):
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        if line.startswith("@"):
+            tid, de, tr = [x.strip() for x in line[1:].split("|")]
+            th_by[tid] = {"id": tid, "de": de, "tr": tr, "items": []}
+            themen.append(th_by[tid])
+            continue
+        iid, ts = [x.strip() for x in line.split("|")]
+        if iid not in alle_ids:
+            warnings.append(f"themen.txt:{i}: bilinmeyen öğe {iid}")
+            continue
+        for t in [x.strip() for x in ts.split(",") if x.strip() and x.strip() != "-"]:
+            if t not in th_by:
+                errors.append(f"themen.txt:{i}: bilinmeyen konu {t}")
+            else:
+                th_by[t]["items"].append(iid)
+dump("themen.js", "THEMEN", themen)
+
 print(f"{len(verben)} fiil anlamı ({sum(1 for v in verben if v.get('rahmen'))} kalıplı), "
       f"{len(nomen)} isim, {len(personen)} kişi, {len(adj_sache) + len(adj_person)} sıfat, "
       f"{len(woerter)} diğer kelime, {len(pakete)} paket, {regel_n} isimde artikel kuralı, "
-      f"{sum(len(x) for x in saetze.values())} çeviri cümlesi ({len(saetze)} fiil)")
+      f"{sum(len(x) for x in saetze.values())} çeviri cümlesi ({len(saetze)} fiil), "
+      f"{len(themen)} konu: " + ", ".join(f"{t['id']} {len(t['items'])}" for t in themen))
 print("artikel kuralları:", ", ".join(f"-{k}→{v[0]} %{v[1]} ({v[2]})" for k, v in sorted(stat.items(), key=lambda kv: -kv[1][1])))
 for w in warnings:
     print("uyarı:", w)
