@@ -399,3 +399,10 @@
 2026-10-02 12:31:57;yeni;v111;sich bemühen um;;;neu;;
 2026-10-02 12:32:02;abr;v620:abr;verzichten auf;(bir şeyden) vazgeçmek;;falsch;verzichten auf (auf + Akk);bilmiyorum | sek:4 | ipucu:0
 2026-10-02 12:32:09;yeni;n0433;die Geduld;;;neu;;
+2026-10-02 12:32:25;yeni;v673;zweifeln an;;;neu;;
+2026-10-02 12:32:33;abr;v111:abr;sich bemühen um;(bir şey için) çabalamak;Sich bedichten um;falsch;sich bemühen um (um + Akk);dönüşlü zamir, groß/klein | sek:6 | ipucu:0
+2026-10-02 12:33:01;abr;v673:abr;zweifeln an;(bir şeyden) şüphe etmek;zweifeln an;richtig;zweifeln an (an + Dat);hâl yazılmadı (an + Dat) | öneri:fast | sek:7 | ipucu:0
+2026-10-02 12:33:15;luecke;v620:satz;verzichten auf;Ich _____ heute auf den Kaffee.;verzihte;fast;verzichte;yazım | sek:7 | ipucu:0
+2026-10-02 12:33:37;satz;v111:satz;sich bemühen um;Bir randevu almaya çalışacağım.;Ich werde mich um einen Termin bemühen.;richtig;Ich werde mich um einen Termin bemühen.;sek:20 | ipucu:0
+2026-10-02 12:33:49;abr;v620:abr;verzichten auf;(bir şeyden) vazgeçmek;versichte an d;falsch;verzichten auf (auf + Akk);edat, artikel/çekim | sek:9 | ipucu:0
+2026-10-02 12:34:09;abr;v111:abr;sich bemühen um;(bir şey için) çabalamak;sich berühmen um ;falsch;sich bemühen um (um + Akk);farklı | sek:18 | ipucu:0
