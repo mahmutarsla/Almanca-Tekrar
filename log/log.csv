@@ -458,3 +458,17 @@
 2026-10-02 23:42:02;art;n0957:art;der Rat;Rat;der;richtig;der Rat;sek:3 | ipucu:0
 2026-10-02 23:42:07;bed;v626:bed;vorschlagen;vorschlagen;önermek;richtig;(birine bir şeyi) önermek;sek:5 | ipucu:0
 2026-10-02 23:42:12;art;n0926:art;die Praxis;Praxis;die;fast;die Praxis;sek:4 | ipucu:0
+2026-10-02 23:42:14;art;n0028:art;die Änderung;Änderung;die;richtig;die Änderung;sek:1 | ipucu:0
+2026-10-02 23:42:15;art;n1354:art;die Wahrheit;Wahrheit;die;richtig;die Wahrheit;sek:1 | ipucu:0
+2026-10-02 23:42:20;art;n0972:art;die Regel;Regel;der;falsch;die Regel;artikel: der → die | sek:3 | ipucu:0
+2026-10-02 23:42:25;erk;n0361:erk;das Fieber;das Fieber;ateş;richtig;ateş (hastalık);sek:5 | ipucu:0
+2026-10-02 23:42:30;erk;w0172:erk;frech;frech;arsız, şımarık;richtig;arsız, şımarık;sek:4 | ipucu:0
+2026-10-02 23:42:34;erk;n0926:erk;die Praxis;die Praxis;muayenehane;richtig;muayenehane;sek:3 | ipucu:0
+2026-10-02 23:42:38;erk;n1211:erk;der Termin;randevu;der Termin;richtig;der Termin;sek:4 | ipucu:0
+2026-10-02 23:42:43;art;n0972:art;die Regel;Regel;die;fast;die Regel;sek:4 | ipucu:0
+2026-10-02 23:42:46;art;n1044:art;der Schmerz;Schmerz;der;richtig;der Schmerz;sek:2 | ipucu:0
+2026-10-02 23:42:50;erk;n1320:erk;die Versichertenkarte;die Versichertenkarte;sigorta kartı;richtig;sigorta kartı;sek:4 | ipucu:0
+2026-10-02 23:42:57;erk;n1044:erk;der Schmerz;der Schmerz;ağrı;fast;ağrı;yavaş | sek:6 | ipucu:0
+2026-10-02 23:43:02;art;n0361:art;das Fieber;Fieber;das;fast;das Fieber;sek:4 | ipucu:0
+2026-10-02 23:43:09;bed;v564:bed;untersuchen;untersuchen;muayene etmek, incelemek;fast;muayene etmek, incelemek;yavaş | sek:6 | ipucu:0
+2026-10-02 23:43:12;art;n1211:art;der Termin;Termin;der;richtig;der Termin;sek:1 | ipucu:0
