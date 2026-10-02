@@ -587,6 +587,22 @@ if os.path.exists(rp):
         saetze_refl.setdefault(parts[0], []).append({"de": parts[1], "tr": parts[2]})
 dump("saetze_refl.js", "SAETZE_REFL", saetze_refl)
 
+# Kelime cümleleri: öğe | hedef kelime | Almanca | Türkçe (isim ve diğer kelimeler; Goethe örnekleri)
+nsaetze = {}
+np_ = P("quellen", "wort_saetze.txt")
+w_ids = {n["id"] for n in nomen} | {w["id"] for w in woerter}
+if os.path.exists(np_):
+    for i, line in enumerate(open(np_, encoding="utf-8"), 1):
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        parts = [x.strip() for x in line.split("|")]
+        if len(parts) != 4 or not all(parts) or parts[0] not in w_ids:
+            errors.append(f"wort_saetze.txt:{i}: biçim ya da öğe hatalı")
+            continue
+        nsaetze.setdefault(parts[0], []).append({"de": parts[2], "tr": parts[3]})
+dump("nsaetze.js", "NSAETZE", nsaetze)
+
 # Serbest yazma görevleri
 aufgaben = []
 ap = P("quellen", "aufgaben.txt")
@@ -631,7 +647,7 @@ print(f"{len(verben)} fiil anlamı ({sum(1 for v in verben if v.get('rahmen'))} 
       f"{len(nomen)} isim, {len(personen)} kişi, {len(adj_sache) + len(adj_person)} sıfat, "
       f"{len(woerter)} diğer kelime, {len(pakete)} paket, {regel_n} isimde artikel kuralı, "
       f"{sum(len(x) for x in saetze.values())} çeviri cümlesi ({len(saetze)} fiil), "
-      f"{sum(len(x) for x in saetze_refl.values())} dönüşlü cümle, {len(aufgaben)} yazma görevi, "
+      f"{sum(len(x) for x in saetze_refl.values())} dönüşlü cümle, {sum(len(x) for x in nsaetze.values())} kelime cümlesi, {len(aufgaben)} yazma görevi, "
       f"{len(themen)} konu: " + ", ".join(f"{t['id']} {len(t['items'])}" for t in themen))
 print("artikel kuralları:", ", ".join(f"-{k}→{v[0]} %{v[1]} ({v[2]})" for k, v in sorted(stat.items(), key=lambda kv: -kv[1][1])))
 for w in warnings:
