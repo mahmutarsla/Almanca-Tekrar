@@ -195,3 +195,10 @@
 2026-10-02 11:38:01;yeni;n0596;die Karriere;;;neu;;
 2026-10-02 11:38:07;abr;v646:abr;widersprechen;(birine) itiraz etmek, karşı çıkmak;wenden;falsch;widersprechen (Dat);farklı | sek:4 | ipucu:0
 2026-10-02 11:38:52;satz;v642:satz;sich wenden an;(birine) başvurmak | siz (resmi) | resmî daire | şimdiki / geniş zaman · Präsens, evet/hayır sorusu, olumsuz;Wenden Sie nicht an das Amt?;fast;Wenden Sie sich nicht ans Amt?;dönüşlü zamir | öneri:falsch | sek:41 | ipucu:0
+2026-10-02 11:39:41;satz;v646:satz;widersprechen;Burada size itiraz etmek zorundayım.;Ich muss hier Ihnen widersprechen;fast;Da muss ich Ihnen widersprechen.;groß/klein | öneri:falsch | sek:38 | ipucu:0
+2026-10-02 11:39:57;wort;n1240:wort;das Training;antrenman;;falsch;das Training;bilmiyorum | sek:13 | ipucu:0
+2026-10-02 11:40:01;wort;n0596:wort;die Karriere;kariyer;die Karriere;richtig;die Karriere;sek:3 | ipucu:0
+2026-10-02 11:40:09;abr;v646:abr;widersprechen;(birine) itiraz etmek, karşı çıkmak;widersprechen;richtig;widersprechen (Dat);sek:8 | ipucu:0
+2026-10-02 11:40:20;frm;v642:frm;sich wenden an;sich wenden an — er / sie Perfekt;er hat sich gewendet ;richtig;hat sich gewendet;sek:10 | ipucu:0
+2026-10-02 11:40:31;frm;v646:frm;widersprechen;widersprechen — er / sie Perfekt;er hat widersprecht;falsch;hat widersprochen;artikel/çekim | sek:8 | ipucu:0
+2026-10-02 11:40:40;wort;n1240:wort;das Training;antrenman;die Training;fast;das Training;artikel: die → das | öneri:falsch | sek:6 | ipucu:0
