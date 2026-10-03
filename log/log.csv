@@ -668,3 +668,7 @@
 2026-10-03 12:56:24;erk;n0660:erk;die Kosten;masraflar (çoğul);die Kosten;richtig;die Kosten;sek:3 | ipucu:0
 2026-10-03 12:56:27;erk;n1179:erk;die Tablette;tablet (ilaç);die Tablette;richtig;die Tablette;sek:3 | ipucu:0
 2026-10-03 13:00:06;satz;v125:satz;sich beschweren bei;(birine) şikâyette bulunmak | biz | patron, şef (erkek) | geçmiş · Perfekt, evet/hayır sorusu;;falsch;Haben wir uns beim Chef beschwert?;bilmiyorum | sek:5 | ipucu:0
+2026-10-03 13:02:37;lesen;p01:0;Beim Arzt;Die Person ist seit gestern krank.;richtig;richtig;richtig;
+2026-10-03 13:02:40;lesen;p01:1;Beim Arzt;Der Termin beim Arzt ist um 10 Uhr.;richtig;richtig;richtig;
+2026-10-03 13:02:44;lesen;p01:2;Beim Arzt;Die Ärztin sagt, dass die Krankheit gefährlich ist.;falsch;richtig;falsch;
+2026-10-03 13:02:47;lesen;p01:3;Beim Arzt;Die Tabletten soll man vor dem Essen nehmen.;falsch;richtig;falsch;
