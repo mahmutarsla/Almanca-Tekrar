@@ -716,6 +716,17 @@ print(f"{len(verben)} fiil anlamı ({sum(1 for v in verben if v.get('rahmen'))} 
       f"{sum(len(x) for x in saetze_refl.values())} dönüşlü cümle, {sum(len(x) for x in nsaetze.values())} kelime cümlesi, {len(aufgaben)} yazma görevi, "
       f"{len(themen)} konu: " + ", ".join(f"{t['id']} {len(t['items'])}" for t in themen))
 print("artikel kuralları:", ", ".join(f"-{k}→{v[0]} %{v[1]} ({v[2]})" for k, v in sorted(stat.items(), key=lambda kv: -kv[1][1])))
+# index.html: js/css/daten dosyalarına içerik özeti (?v=) → tarayıcı önbelleği eski sürümü göstermez
+import hashlib
+def _surum(m):
+    f = P(m.group(2))
+    if not os.path.exists(f): return m.group(0)
+    return m.group(1) + m.group(2) + "?v=" + hashlib.md5(open(f, "rb").read()).hexdigest()[:8] + '"'
+_ih = P("index.html")
+_alt = open(_ih, encoding="utf-8").read()
+_neu = re.sub(r'((?:src|href)=")((?:js|css|daten)/[^"?]+)(?:\?v=[0-9a-f]+)?"', _surum, _alt)
+if _neu != _alt:
+    open(_ih, "w", encoding="utf-8").write(_neu)
 for w in warnings:
     print("uyarı:", w)
 for e in errors:
