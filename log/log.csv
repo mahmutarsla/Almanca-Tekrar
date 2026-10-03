@@ -524,3 +524,11 @@
 2026-10-03 12:02:44;paket;p02:0;die Wohnung;Wohnungssuche;Wohnung;richtig;Wohnung;
 2026-10-03 12:02:49;paket;p02:1;die Anzeige;Wohnungssuche;Angebote;falsch;Anzeige;farklı
 2026-10-03 12:03:00;paket;p02:2;das Zimmer;Wohnungssuche;Zimmer;richtig;Zimmer;
+2026-10-03 12:03:05;paket;p02:3;der Balkon;Wohnungssuche;Balkon;richtig;Balkon;
+2026-10-03 12:03:09;paket;p02:4;die Miete;Wohnungssuche;Miete;richtig;Miete;
+2026-10-03 12:03:13;paket;p02:5;der Vermieter;Wohnungssuche;Vermieter;richtig;Vermieter;
+2026-10-03 12:03:22;paket;p02:6;besichtigen;Wohnungssuche;besichtige;fast;besichtigen;biçim: metinde besichtigen
+2026-10-03 12:03:31;paket;p02:7;der Vertrag;Wohnungssuche;Vertrag;richtig;Vertrag;
+2026-10-03 12:03:38;paket;p02:8;unterschreiben;Wohnungssuche;verschreibe;falsch;unterschreibe;farklı
+2026-10-03 12:03:46;paket;p02:9;einziehen;Wohnungssuche;einzeiehen;fast;einziehen;yazım
+2026-10-03 12:03:53;paket;p02:pak;Wohnungssuche;yeni paket;;fast;;puan:72
