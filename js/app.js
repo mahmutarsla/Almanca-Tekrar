@@ -1324,7 +1324,7 @@
   }
 
   // ================= Kalıplar =================
-  // Fiillerin günlük kullanımı (soru yok): öğrendiğin fiiller önce; ★ ile işaretlediklerin yazma ekranında da çıkar
+  // Fiillerin günlük kullanımı (soru yok): öğrendiğin fiiller önce; "yazmaya ekle" dediklerin yazma ekranında da çıkar
   const KAL = window.KALIPLAR || { yazma: {}, fiil: {} };
   function kalipFiiller() {
     // şimdilik yalnız B1 fiilleri (A1/A2 yok); en son öğrendiğin önce, sonra henüz öğrenmediğin B1 fiilleri
@@ -1339,18 +1339,18 @@
     const N = 12, teil = ids.slice(seite * N, seite * N + N);
     kart.innerHTML = `<div class="tur"><span class="yeni">kalıplar</span><span>${ids.length} fiil · ${seite * N + 1}–${Math.min(ids.length, seite * N + N)} · B1 fiilleri, son öğrendiğin önce</span></div>
       <div class="kalip-grid">${teil.map(id => `<div class="kalip-fiil"><div class="soru de" style="font-size:1.2rem">${esc(vById[id].anz)} <span class="soluk" style="font-weight:400">${esc(vById[id].tr)}</span></div>
-        <ul class="ornekler">${KAL.fiil[id].map((k, i) => `<li><button class="btn mini" data-fav="${id}:${i}" type="button" title="Yazmada göster">${fav[id + ':' + i] ? '★' : '☆'}</button> ${deHTML(k.de)}<br><span class="soluk">${esc(k.tr)}</span></li>`).join('')}</ul></div>`).join('')}</div>
+        <ul class="ornekler">${KAL.fiil[id].map((k, i) => `<li>${deHTML(k.de)}<br><span class="soluk">${esc(k.tr)}</span> <button class="fav-btn${fav[id + ':' + i] ? ' an' : ''}" data-fav="${id}:${i}" type="button" title="Yazma ekranında göster">${fav[id + ':' + i] ? '✓ yazmada' : '+ yazmaya ekle'}</button></li>`).join('')}</ul></div>`).join('')}</div>
       <div class="sira">${seite ? '<button class="btn" data-act="kalip-zurueck" type="button">← Önceki</button>' : ''}${(seite + 1) * N < ids.length ? `<button class="btn ana" data-act="kalip-weiter" type="button">Sonraki ${N} fiil →</button>` : ''}</div>`;
     tastatur();
     if (!session.kalipGesehen) { session.kalipGesehen = true; heuteM('kalip').n++; save(); }
   }
-  // yazma ekranı için: görev türü + konu + ★ kalıplar
+  // yazma ekranı için: görev türü + konu + eklenen fiil kalıpları
   function yazmaKalipHTML(a) {
     const fav = S.kalipFav || {};
     const fl = Object.keys(fav).filter(k => fav[k]).map(k => { const [id, i] = k.split(':'); return (KAL.fiil[id] || [])[+i]; }).filter(Boolean);
     const blok = (titel, l) => l && l.length ? `<div class="soluk" style="margin-top:.4rem">${esc(titel)}</div><div class="chips">${l.map(k => `<button class="chip" data-einfuegen="${esc(k.de)}" type="button" title="${esc(k.tr)}">${esc(k.de)}</button>`).join('')}</div>` : '';
     return blok({ email: 'E-posta kalıpları', forum: 'Görüş kalıpları', formell: 'Resmî e-posta kalıpları' }[a.typ] || 'Kalıplar', KAL.yazma[a.typ]) +
-      blok(`Konu: ${thById[a.thema] ? thById[a.thema].tr : a.thema}`, KAL.yazma[a.thema]) + blok('★ İşaretlediğin fiil kalıpları', fl);
+      blok(`Konu: ${thById[a.thema] ? thById[a.thema].tr : a.thema}`, KAL.yazma[a.thema]) + blok('Eklediğin fiil kalıpları', fl);
   }
 
   // ================= Okuma =================
@@ -2135,7 +2135,7 @@
   });
   kart.addEventListener('click', e => {
     const fv = e.target.closest('[data-fav]');
-    if (fv) { const f = S.kalipFav = S.kalipFav || {}; f[fv.dataset.fav] = !f[fv.dataset.fav]; fv.textContent = f[fv.dataset.fav] ? '★' : '☆'; save(); return; }
+    if (fv) { const f = S.kalipFav = S.kalipFav || {}; f[fv.dataset.fav] = !f[fv.dataset.fav]; fv.textContent = f[fv.dataset.fav] ? '✓ yazmada' : '+ yazmaya ekle'; fv.classList.toggle('an', !!f[fv.dataset.fav]); save(); return; }
     const ef = e.target.closest('[data-einfuegen]');
     if (ef) { const ta = $('#metin'); if (ta) { const p0 = ta.selectionStart || ta.value.length; const t = ef.dataset.einfuegen.split(' / ')[0].replace(/ …$|…/g, ''); ta.value = ta.value.slice(0, p0) + t + ' ' + ta.value.slice(p0); ta.focus(); ta.dispatchEvent(new Event('input')); } return; }
     const lw = e.target.closest('.lw');
