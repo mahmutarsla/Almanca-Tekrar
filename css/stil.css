@@ -315,3 +315,10 @@ main { max-width: 860px; margin: 0 auto; padding: 1.5rem 16px 4rem; }
 .lw { cursor: pointer; border-radius: 3px; }
 .lw:hover { background: var(--accent-soft); }
 .lw.aktiv { background: var(--warn-soft); }
+.gl-aufgaben { display: grid; gap: .7rem; margin: .8rem 0; }
+.gl-auf { display: grid; gap: .3rem; }
+.gl-opts { line-height: 2; }
+.gl-opt.ok { background: var(--ok-soft); border-color: var(--ok); }
+.gl-opt.yanlis { background: var(--bad-soft); border-color: var(--bad); }
+.gl-auf span.ok { color: var(--ok); } .gl-auf span.yanlis { color: var(--bad); }
+.gl-opt:disabled { opacity: 1; cursor: default; }

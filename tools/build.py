@@ -648,6 +648,9 @@ for x in dw:
     if ps and ps[0].strip() == x["titel"].strip():
         x["text"] = "\n".join(ps[1:])
 dump("lesetexte_dw.js", "LESETEXTE_DW", dw)
+# Goethe Zertifikat B1 Übungssatz, Lesen Teil 1–5 (izinle): orijinal sorular + çözümler
+gl = P("quellen", "goethe_lesen.json")
+dump("goethe_lesen.js", "GOETHE_LESEN", json.load(open(gl, encoding="utf-8")) if os.path.exists(gl) else [])
 
 # Kalıplar: yazma (tür / konu) ve fiil kalıpları
 redemittel, kaliplar = {}, {}

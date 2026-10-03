@@ -1372,32 +1372,35 @@
   const wortSuchen = t => { const c = t.replace(/^[„“"(]+|[.,!?;:“"”)…]+$/g, ''); const m = formIdx(); return m.get(c) || m.get(c.charAt(0).toLowerCase() + c.slice(1)) || null; };
   // Okuma metinleri Klexikon'dan (sade Almanca ansiklopedi, CC BY-SA 4.0); seçili konu ve son öğrendiğin kelimelerin konusu önce
   const LT = (window.LESETEXTE || []).map((t, i) => Object.assign({ id: 'k' + i, quelle: 'Klexikon', lizenz: 'CC BY-SA 4.0, kısaltıldı' }, t))
-    .concat((window.LESETEXTE_DW || []).map(t => Object.assign({}, t, { id: 'dw' + t.id, lizenz: 'izinle, ticari olmayan kullanım' })));
+    .concat((window.LESETEXTE_DW || []).map(t => Object.assign({}, t, { id: 'dw' + t.id, lizenz: 'izinle, ticari olmayan kullanım' })))
+    .concat((window.GOETHE_LESEN || []).map(t => Object.assign({}, t, { lizenz: 'izinle, ticari olmayan kullanım' })));
+  const GL_OPT = { rf: () => [['richtig', 'Richtig'], ['falsch', 'Falsch']], jn: () => [['ja', 'Ja'], ['nein', 'Nein']],
+    abc: a => a.o.map((o, i) => ['abc'[i], 'abc'[i] + ') ' + o]), zu: () => 'abcdefghi0'.split('').map(x => [x, x]) };
   function lesenWaehlen(anders) {
     const t = now(), g = S.gelesen || {};
     const son = {};
     Object.entries(S.items).forEach(([id, it]) => { if (t - (it.seit || 0) < 3 * DAY) (THEMA_VON[id] || []).forEach(th => { son[th] = (son[th] || 0) + 1; }); });
     const c = LT.filter(x => !g[x.id] && !(anders && session.lesen && session.lesen.id === x.id));
     const pool = c.length ? c : LT;
-    // DW (B1 haber metinleri) ile Klexikon dönüşümlü; konu eşleşirse öne
-    const puan = x => (x.thema && x.thema === S.einst.thema ? 5 : 0) + (son[x.thema] || 0) + ((x.quelle === 'Klexikon') === !!session.lesenDW ? 4 : 0) + Math.random() * 2;
+    // Goethe (sınav görevleri), DW (B1 haber metinleri), Klexikon dönüşümlü; konu eşleşirse öne
+    const puan = x => (x.thema && x.thema === S.einst.thema ? 5 : 0) + (son[x.thema] || 0) + (x.quelle !== session.lesenQ ? 4 : 0) + (x.aufgaben ? 1 : 0) + Math.random() * 2;
     return pool.slice().sort((a, b) => puan(b) - puan(a))[0];
   }
   function lesenRender(anders) {
-    if (!session.lesen || anders) { session.lesen = lesenWaehlen(anders); session.lesenDW = session.lesen && session.lesen.quelle !== 'Klexikon'; }
+    if (!session.lesen || anders) { session.lesen = lesenWaehlen(anders); session.lesenQ = session.lesen && session.lesen.quelle; session.lesenCevap = {}; }
     aktuell = { typ: 'lesen' };
     $('#durum-satiri').innerHTML = '';
     const L = session.lesen;
     if (!L) { kart.innerHTML = '<div class="bos">Okuma metni yok.</div>'; return; }
     const text = L.text.split('\n').map(par => '<p>' + esc(par).split(/(\s+)/).map(w => /\S/.test(w) ? `<span class="lw">${w}</span>` : w).join('') + '</p>').join('');
     const gl = (L.glossar || []).length ? `<details class="ceviri"><summary>DW sözlüğü (${L.glossar.length} kelime, Almanca açıklama)</summary><ul class="erkl">${L.glossar.map(g => `<li><b>${esc(g.de)}</b>: ${esc(g.erkl)}</li>`).join('')}</ul></details>` : '';
-    kart.innerHTML = `<div class="tur"><span class="yeni">okuma</span><span>${esc(L.quelle)}${thById[L.thema] ? ' · ' + esc(thById[L.thema].tr) : ''} · bilmediğin kelimeye bas</span></div>
-      <div class="soru">${esc(L.titel)}</div>
+    kart.innerHTML = `<div class="tur"><span class="yeni">okuma</span><span>${esc(L.reihe || L.quelle)}${thById[L.thema] ? ' · ' + esc(thById[L.thema].tr) : ''} · bilmediğin kelimeye bas</span></div>
+      <div class="soru">${esc(L.titel)}</div>${L.anweisung ? `<div class="soluk">${esc(L.anweisung)}${L.beispiel ? '<br>Beispiel: ' + esc(L.beispiel) : ''}</div>` : ''}
       <div class="paket-text" id="lesen-text">${text}</div>
       <div id="lesen-wort" class="kural" hidden></div>
-      ${gl}
-      <div class="soluk">Kaynak: <a href="${esc(L.url)}" target="_blank" rel="noopener">${esc(L.quelle)}: ${esc(L.titel)}</a> (${esc(L.lizenz)})</div>
-      <div class="sira"><button class="btn ana" data-act="lesen-fertig" type="button">Okudum</button><button class="btn" data-act="lesen-baska" type="button">Başka metin</button></div>`;
+      ${gl}${L.aufgaben ? goetheAufgabenHTML(L) : ''}
+      <div class="soluk">Kaynak: ${L.url ? `<a href="${esc(L.url)}" target="_blank" rel="noopener">${esc(L.quelle)}: ${esc(L.titel)}</a>` : esc(L.quelle) + ', ' + esc(L.reihe)} (${esc(L.lizenz)})</div>
+      <div class="sira">${L.aufgaben ? '' : '<button class="btn ana" data-act="lesen-fertig" type="button">Okudum</button>'}<button class="btn${L.aufgaben && Object.keys(session.lesenCevap).length === L.aufgaben.length ? ' ana' : ''}" data-act="lesen-baska" type="button">Başka metin</button></div>`;
     tastatur();
   }
   function lesenWort(el) {
@@ -1414,13 +1417,33 @@
     box.innerHTML = `${deItemHTML(id)} = <b>${esc(trOf(id))}</b>${S.items[id] ? '' : ` <button class="btn mini" data-lernen="${id}" type="button">Öğrenmeye ekle</button>`}`;
     logEintrag({ modus: 'lesen-wort', id, item: label(id), frage: session.lesen.titel, antwort: '', ergebnis: S.items[id] ? 'bekannt' : 'neu', loesung: trOf(id), notiz: '' });
   }
-  function lesenAntwort(i, r) {
-    const L = session.lesen, q = LESEN[L.pid][i];
-    if (!L || L.cevap[i] != null) return;
-    L.cevap[i] = r;
-    logEintrag({ modus: 'lesen', id: L.pid + ':' + i, item: pById[L.pid].titel, frage: q.s, antwort: r ? 'richtig' : 'falsch', ergebnis: r === q.r ? 'richtig' : 'falsch', loesung: q.r ? 'richtig' : 'falsch', notiz: '' });
-    if (Object.keys(L.cevap).length === LESEN[L.pid].length) { (S.gelesen = S.gelesen || {})[L.pid] = now(); heuteM('lesen').n++; save(); renderPlan(); }
-    lesenRender();
+  // Goethe Übungssatz: orijinal sorular, çözüm cevap kağıdından
+  function goetheAufgabenHTML(L) {
+    const C = session.lesenCevap, fertig = Object.keys(C).length === L.aufgaben.length;
+    const h = L.aufgaben.map((a, i) => {
+      const c = C[i], opts = GL_OPT[L.art](a);
+      const btn = opts.map(([v, t]) => {
+        const kl = c == null ? '' : v === a.l ? ' ok' : v === c ? ' yanlis' : '';
+        return `<button class="btn mini gl-opt${kl}" data-ga="${i}:${v}" type="button"${c != null ? ' disabled' : ''}>${esc(t)}</button>`;
+      }).join(L.art === 'abc' ? '<br>' : ' ');
+      return `<div class="gl-auf"><div><b>${a.n}</b> ${esc(a.s)}${c == null ? '' : c === a.l ? ' <span class="ok">✓</span>' : ` <span class="yanlis">✗ doğrusu: ${esc(a.l)}</span>`}</div><div class="gl-opts">${btn}</div></div>`;
+    }).join('');
+    const r = L.aufgaben.filter((a, i) => C[i] === a.l).length;
+    return `<div class="gl-aufgaben">${h}</div>${fertig ? `<div class="kural"><b>${r} / ${L.aufgaben.length}</b> doğru</div>` : ''}`;
+  }
+  function goetheAntwort(i, v) {
+    const L = session.lesen, C = session.lesenCevap;
+    if (!L || !L.aufgaben || C[i] != null) return;
+    C[i] = v;
+    const a = L.aufgaben[i];
+    logEintrag({ modus: 'lesen', id: L.id + ':' + a.n, item: L.titel, frage: a.s, antwort: v, ergebnis: v === a.l ? 'richtig' : 'falsch', loesung: a.l, notiz: L.reihe });
+    if (Object.keys(C).length === L.aufgaben.length) {
+      const r = L.aufgaben.filter((x, j) => C[j] === x.l).length;
+      (S.gelesen = S.gelesen || {})[L.id] = now(); heuteM('lesen').n++;
+      logEintrag({ modus: 'lesen', id: L.id, item: L.titel, frage: L.reihe, antwort: '', ergebnis: 'gelesen', loesung: '', notiz: `puan:${r}/${L.aufgaben.length}` });
+      save(); renderPlan();
+    }
+    const y = window.scrollY; lesenRender(); window.scrollTo(0, y);
   }
 
   // ================= Baştan savmaya karşı =================
@@ -2115,8 +2138,8 @@
     if (ef) { const ta = $('#metin'); if (ta) { const p0 = ta.selectionStart || ta.value.length; const t = ef.dataset.einfuegen.split(' / ')[0].replace(/ …$|…/g, ''); ta.value = ta.value.slice(0, p0) + t + ' ' + ta.value.slice(p0); ta.focus(); ta.dispatchEvent(new Event('input')); } return; }
     const lw = e.target.closest('.lw');
     if (lw) { lesenWort(lw); return; }
-    const rf = e.target.closest('[data-rf]');
-    if (rf) { const [i, r] = rf.dataset.rf.split(':'); lesenAntwort(+i, r === '1'); return; }
+    const ga = e.target.closest('[data-ga]');
+    if (ga) { const [i, v] = ga.dataset.ga.split(':'); goetheAntwort(+i, v); return; }
     const ln = e.target.closest('[data-lernen]');
     if (ln) { leichtEinfuehren(ln.dataset.lernen, { quelle: 'lesen', spaeter: 0 }); save(); ln.replaceWith(Object.assign(document.createElement('span'), { className: 'soluk', textContent: ' eklendi ✓' })); return; }
     const n = e.target.closest('[data-note]');
