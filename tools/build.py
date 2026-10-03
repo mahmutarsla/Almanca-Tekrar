@@ -617,6 +617,27 @@ if os.path.exists(gp):
             glossen[de] = g
 dump("glossen.js", "GLOSSEN", glossen)
 
+# Okuma soruları: "## p01" + "ifade | r/f"
+lesen, cur = {}, None
+lp = P("quellen", "lesen.txt")
+if os.path.exists(lp):
+    for i, line in enumerate(open(lp, encoding="utf-8"), 1):
+        line = line.strip()
+        if not line or (line.startswith("#") and not line.startswith("##")):
+            continue
+        if line.startswith("##"):
+            cur = line[2:].strip()
+            if cur not in {p["id"] for p in pakete}:
+                errors.append(f"lesen.txt:{i}: bilinmeyen paket {cur}")
+            lesen[cur] = []
+            continue
+        satz, rf = [x.strip() for x in line.rsplit("|", 1)]
+        if rf not in ("r", "f") or cur is None:
+            errors.append(f"lesen.txt:{i}: 'ifade | r/f' olmalı")
+            continue
+        lesen[cur].append({"s": satz, "r": rf == "r"})
+dump("lesen.js", "LESEN", lesen)
+
 # Serbest yazma görevleri
 aufgaben = []
 ap = P("quellen", "aufgaben.txt")

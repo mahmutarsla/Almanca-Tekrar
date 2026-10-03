@@ -1,0 +1,62 @@
+# Okuma soruları (Goethe B1 Lesen tarzı richtig / falsch). Metin quellen/pakete.txt'teki paketten gelir.
+# Biçim:  ## paket-id   ardından   Almanca ifade | r (richtig) ya da f (falsch)
+## p01
+Die Person ist seit gestern krank. | r
+Der Termin beim Arzt ist um 10 Uhr. | r
+Die Ärztin sagt, dass die Krankheit gefährlich ist. | f
+Die Tabletten soll man vor dem Essen nehmen. | f
+## p02
+Die Wohnung hat drei Zimmer. | f
+Die Miete kostet 650 Euro warm. | r
+Die Person hat die Wohnung schon besichtigt. | r
+Der Umzug ist im Dezember. | f
+## p03
+Man muss sich innerhalb von zwei Wochen anmelden. | r
+Für die Anmeldung braucht man keinen Termin. | f
+Die Person musste ein Formular ausfüllen. | r
+Am Ende hat sie eine Bestätigung bekommen. | r
+## p04
+Das Semester beginnt im Oktober. | r
+Der Dozent erwartet nicht viel. | f
+Jeder Student muss ein Referat halten. | r
+Zu Hause kann die Person gut lernen. | f
+## p05
+Die Person kauft am Samstag ein. | r
+Der Supermarkt ist sehr groß. | f
+Die Person bezahlt mit Bargeld. | f
+Die Person braucht keine Tüte. | r
+## p06
+Die Person fährt von Bremen nach Lübeck. | r
+Die Fahrkarte kauft sie am Bahnhof. | f
+Der Zug hat Verspätung. | r
+Die Person verpasst ihren Anschluss in Hamburg. | f
+## p07
+Die Person möchte ein Konto eröffnen. | r
+Studenten müssen für das Girokonto eine Gebühr bezahlen. | f
+Eine Kreditkarte bekommt sie sofort. | f
+Die Miete zahlt sie per Überweisung. | r
+## p08
+Die Person sucht eine Arbeit neben dem Studium. | r
+Die Firma sucht Studenten für die Kundenbetreuung. | r
+Die Person hat in Deutschland ein Praktikum gemacht. | f
+Die Firma hat die Person zu einem Vorstellungsgespräch eingeladen. | r
+## p09
+Die Person und Elif wollen ins Konzert gehen. | r
+Sie treffen sich am Hauptbahnhof. | r
+Elif ist krank. | f
+Sie wollen nächste Woche zusammen gehen. | r
+## p10
+Am Nachmittag soll es regnen. | r
+Es ist sehr warm. | f
+Auf dem Weg zur Uni scheint die Sonne. | r
+Am Abend ist der Regenschirm kaputt. | r
+## p11
+Die Person lädt ihre Mutter zum Geburtstag ein. | r
+Sie haben einen Tisch für vier Personen reserviert. | f
+Als Nachspeise essen sie Kuchen. | f
+Die Rechnung beträgt 68 Euro. | r
+## p12
+Die Schwester wohnt in Izmir. | r
+Das Paket kostet 17 Euro. | r
+Der Brief an die Ausländerbehörde ist ein Einschreiben. | r
+Das Paket für die Person liegt bei der Post. | f
