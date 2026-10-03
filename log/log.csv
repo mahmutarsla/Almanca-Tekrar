@@ -504,3 +504,13 @@
 2026-10-03 11:59:29;art;n0926:art;die Praxis;Praxis;der;falsch;die Praxis;artikel: der → die | sek:2 | ipucu:0
 2026-10-03 11:59:31;art;n0433:art;die Geduld;Geduld;die;richtig;die Geduld;sek:2 | ipucu:0
 2026-10-03 11:59:37;bed;v117:bed;berichten über;berichten über;haber vermek, anlatmak;richtig;(bir şey hakkında) haber vermek, anlatmak;sek:5 | ipucu:0
+2026-10-03 11:59:40;pretest;n0691:erk;die Kunst;die Kunst;sanat;bekannt;sanat;sek:3
+2026-10-03 11:59:44;pretest;w0170:erk;fließend;fließend;akıcı;bekannt;akıcı;sek:3
+2026-10-03 11:59:47;art;n0926:art;die Praxis;Praxis;die;richtig;die Praxis;sek:1 | ipucu:0
+2026-10-03 11:59:57;pretest;v177:bed;sich eignen für;sich eignen für;;neu;(bir şeye) uygun olmak;bilmiyorum
+2026-10-03 12:00:04;pretest;n1003:erk;der Roman;der Roman;roman;bekannt;roman;sek:4
+2026-10-03 12:00:08;pretest;n1077:erk;das Seminar;das Seminar;seminer;bekannt;seminer;sek:4
+2026-10-03 12:00:17;bed;v177:bed;sich eignen für;sich eignen für;uygun olmak;fast;(bir şeye) uygun olmak;yavaş | sek:7 | ipucu:0
+2026-10-03 12:00:31;erk;w0165:erk;feucht;feucht;kaygan;falsch;nemli;sek:12 | ipucu:0
+2026-10-03 12:00:35;erk;n0179:erk;der Blitz;der Blitz;şimşek;richtig;şimşek;sek:4 | ipucu:0
+2026-10-03 12:00:38;pretest;w0115:erk;durchschnittlich;durchschnittlich;ortalama;bekannt;ortalama;sek:3
