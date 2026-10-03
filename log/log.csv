@@ -559,3 +559,13 @@
 2026-10-03 12:10:12;yeni;v242:stamm;essen;düzensiz fiil;;neu;aß, hat gegessen;
 2026-10-03 12:10:19;yeni;v346:stamm;kommen;düzensiz fiil;;neu;kam, ist gekommen;
 2026-10-03 12:10:26;stamm;v242:stamm;essen;essen — Präteritum, Perfekt;aß, hat gegessen;richtig;aß, hat gegessen;sek:7 | ipucu:0
+2026-10-03 12:10:39;stamm;v527:stamm;treffen;treffen — Präteritum, Perfekt;traf, hat getroffen;richtig;traf, hat getroffen;sek:12 | ipucu:0
+2026-10-03 12:10:46;stamm;v346:stamm;kommen;kommen — Präteritum, Perfekt;kam, ist gekommen;richtig;kam, ist gekommen;sek:7 | ipucu:0
+2026-10-03 12:10:59;yeni;v347:stamm;können;düzensiz fiil;;neu;konnte, hat gekonnt;
+2026-10-03 12:11:08;yeni;v610:stamm;verstehen;düzensiz fiil;;neu;verstand, hat verstanden;
+2026-10-03 12:11:17;stamm;v347:stamm;können;können — Präteritum, Perfekt;konnte, hat gekonnt;richtig;konnte, hat gekonnt;sek:9 | ipucu:0
+2026-10-03 12:11:27;stamm;v610:stamm;verstehen;verstehen — Präteritum, Perfekt;verstand, hat verstanden ;richtig;verstand, hat verstanden;sek:9 | ipucu:0
+2026-10-03 12:11:37;yeni;v157:stamm;bringen;düzensiz fiil;;neu;brachte, hat gebracht;
+2026-10-03 12:11:48;yeni;v148:stamm;bleiben;düzensiz fiil;;neu;blieb, ist geblieben;
+2026-10-03 12:12:06;stamm;v157:stamm;bringen;bringen — Präteritum, Perfekt;brach, hat gebrachen;falsch;brachte, hat gebracht;Präteritum: brachte, Perfekt: hat gebracht | sek:14 | ipucu:0
+2026-10-03 12:12:18;stamm;v148:stamm;bleiben;bleiben — Präteritum, Perfekt;bleib, ist geblieben;fast;blieb, ist geblieben;Präteritum: blieb | öneri:falsch | sek:6 | ipucu:0
