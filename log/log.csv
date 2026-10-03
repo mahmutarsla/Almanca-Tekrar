@@ -549,3 +549,13 @@
 2026-10-03 12:08:16;bed;v447:bed;scheinen;scheinen;parlamak;richtig;(güneş) parlamak;sek:4 | ipucu:0
 2026-10-03 12:08:21;bed;v626:bed;vorschlagen;vorschlagen;önermek;richtig;(birine bir şeyi) önermek;sek:4 | ipucu:0
 2026-10-03 12:08:35;yeni;v643:stamm;werden;düzensiz fiil;;neu;wurde, ist geworden;
+2026-10-03 12:08:46;yeni;v173:stamm;dürfen;düzensiz fiil;;neu;durfte, hat gedurft;
+2026-10-03 12:09:05;stamm;v643:stamm;werden;werden — Präteritum, Perfekt;wurde, ist gewurden;fast;wurde, ist geworden;Perfekt: ist geworden | sek:16 | ipucu:0
+2026-10-03 12:09:20;stamm;v173:stamm;dürfen;dürfen — Präteritum, Perfekt;durfte, hat gedurften;fast;durfte, hat gedurft;Perfekt: hat gedurft | öneri:falsch | sek:11 | ipucu:0
+2026-10-03 12:09:25;yeni;v527:stamm;treffen;düzensiz fiil;;neu;traf, hat getroffen;
+2026-10-03 12:09:31;yeni;v243:stamm;fahren;düzensiz fiil;;neu;fuhr, ist gefahren;
+2026-10-03 12:09:51;stamm;v527:stamm;treffen;treffen — Präteritum, Perfekt;traf, ist getraffen;falsch;traf, hat getroffen;Perfekt: hat getroffen | sek:8 | ipucu:0
+2026-10-03 12:10:00;stamm;v243:stamm;fahren;fahren — Präteritum, Perfekt;fuhr, ist gefahren;richtig;fuhr, ist gefahren;sek:9 | ipucu:0
+2026-10-03 12:10:12;yeni;v242:stamm;essen;düzensiz fiil;;neu;aß, hat gegessen;
+2026-10-03 12:10:19;yeni;v346:stamm;kommen;düzensiz fiil;;neu;kam, ist gekommen;
+2026-10-03 12:10:26;stamm;v242:stamm;essen;essen — Präteritum, Perfekt;aß, hat gegessen;richtig;aß, hat gegessen;sek:7 | ipucu:0
