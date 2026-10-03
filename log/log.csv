@@ -582,3 +582,16 @@
 2026-10-03 12:27:39;abr;v620:abr;verzichten auf;(bir şeyden) vazgeçmek;verzcihten auf a;fast;verzichten auf (auf + Akk);artikel/çekim | öneri:falsch | sek:19 | ipucu:0
 2026-10-03 12:28:29;yeni;v425;rechnen mit;;;neu;;
 2026-10-03 12:28:45;erk;w0165:erk;feucht;nemli;feucht;richtig;feucht;sek:5 | ipucu:0
+2026-10-03 12:28:57;bed;v169:bed;donnern;donnern;gök gürlemek;fast;gök gürlemek;yavaş | sek:11 | ipucu:0
+2026-10-03 12:29:02;erk;n0248:erk;der Donner;gök gürültüsü;das Donner;falsch;der Donner;sek:3 | ipucu:0
+2026-10-03 12:29:04;art;n0587:art;die Kälte;Kälte;die;richtig;die Kälte;sek:1 | ipucu:0
+2026-10-03 12:29:08;art;n0524:art;die Heimat;Heimat;das;falsch;die Heimat;artikel: das → die | sek:3 | ipucu:0
+2026-10-03 12:29:10;art;n0691:art;die Kunst;Kunst;der;falsch;die Kunst;artikel: der → die | sek:2 | ipucu:0
+2026-10-03 12:29:19;erk;w0479:erk;trocken;trocken;kuru;fast;kuru;yavaş | sek:7 | ipucu:0
+2026-10-03 12:29:25;erk;n0248:erk;der Donner;der Donner;gök gürültüsü;richtig;gök gürültüsü;sek:5 | ipucu:0
+2026-10-03 12:29:26;art;n1003:art;der Roman;Roman;der;richtig;der Roman;sek:1 | ipucu:0
+2026-10-03 12:29:28;art;n0524:art;die Heimat;Heimat;die;richtig;die Heimat;sek:1 | ipucu:0
+2026-10-03 12:29:30;art;n0691:art;die Kunst;Kunst;die;richtig;die Kunst;sek:2 | ipucu:0
+2026-10-03 12:29:33;art;n1077:art;das Seminar;Seminar;der;falsch;das Seminar;artikel: der → das | sek:1 | ipucu:0
+2026-10-03 12:29:41;erk;w0290:erk;kühl;kühl;serin;fast;serin;yavaş | sek:6 | ipucu:0
+2026-10-03 12:29:47;art;n1392:art;die Wolke;Wolke;die;fast;die Wolke;sek:6 | ipucu:0
