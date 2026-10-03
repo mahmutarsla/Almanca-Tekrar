@@ -1371,28 +1371,32 @@
   }
   const wortSuchen = t => { const c = t.replace(/^[„“"(]+|[.,!?;:“"”)…]+$/g, ''); const m = formIdx(); return m.get(c) || m.get(c.charAt(0).toLowerCase() + c.slice(1)) || null; };
   // Okuma metinleri Klexikon'dan (sade Almanca ansiklopedi, CC BY-SA 4.0); seçili konu ve son öğrendiğin kelimelerin konusu önce
-  const LT = (window.LESETEXTE || []).map((t, i) => Object.assign({ id: 'k' + i }, t));
+  const LT = (window.LESETEXTE || []).map((t, i) => Object.assign({ id: 'k' + i, quelle: 'Klexikon', lizenz: 'CC BY-SA 4.0, kısaltıldı' }, t))
+    .concat((window.LESETEXTE_DW || []).map(t => Object.assign({}, t, { id: 'dw' + t.id, lizenz: 'izinle, ticari olmayan kullanım' })));
   function lesenWaehlen(anders) {
     const t = now(), g = S.gelesen || {};
     const son = {};
     Object.entries(S.items).forEach(([id, it]) => { if (t - (it.seit || 0) < 3 * DAY) (THEMA_VON[id] || []).forEach(th => { son[th] = (son[th] || 0) + 1; }); });
     const c = LT.filter(x => !g[x.id] && !(anders && session.lesen && session.lesen.id === x.id));
     const pool = c.length ? c : LT;
-    const puan = x => (x.thema === S.einst.thema ? 5 : 0) + (son[x.thema] || 0) + Math.random() * 2;
+    // DW (B1 haber metinleri) ile Klexikon dönüşümlü; konu eşleşirse öne
+    const puan = x => (x.thema && x.thema === S.einst.thema ? 5 : 0) + (son[x.thema] || 0) + ((x.quelle === 'Klexikon') === !!session.lesenDW ? 4 : 0) + Math.random() * 2;
     return pool.slice().sort((a, b) => puan(b) - puan(a))[0];
   }
   function lesenRender(anders) {
-    if (!session.lesen || anders) session.lesen = lesenWaehlen(anders);
+    if (!session.lesen || anders) { session.lesen = lesenWaehlen(anders); session.lesenDW = session.lesen && session.lesen.quelle !== 'Klexikon'; }
     aktuell = { typ: 'lesen' };
     $('#durum-satiri').innerHTML = '';
     const L = session.lesen;
     if (!L) { kart.innerHTML = '<div class="bos">Okuma metni yok.</div>'; return; }
     const text = L.text.split('\n').map(par => '<p>' + esc(par).split(/(\s+)/).map(w => /\S/.test(w) ? `<span class="lw">${w}</span>` : w).join('') + '</p>').join('');
-    kart.innerHTML = `<div class="tur"><span class="yeni">okuma</span><span>${esc(thById[L.thema] ? thById[L.thema].tr : L.thema)} · bilmediğin kelimeye bas</span></div>
+    const gl = (L.glossar || []).length ? `<details class="ceviri"><summary>DW sözlüğü (${L.glossar.length} kelime, Almanca açıklama)</summary><ul class="erkl">${L.glossar.map(g => `<li><b>${esc(g.de)}</b>: ${esc(g.erkl)}</li>`).join('')}</ul></details>` : '';
+    kart.innerHTML = `<div class="tur"><span class="yeni">okuma</span><span>${esc(L.quelle)}${thById[L.thema] ? ' · ' + esc(thById[L.thema].tr) : ''} · bilmediğin kelimeye bas</span></div>
       <div class="soru">${esc(L.titel)}</div>
       <div class="paket-text" id="lesen-text">${text}</div>
       <div id="lesen-wort" class="kural" hidden></div>
-      <div class="soluk">Kaynak: <a href="${esc(L.url)}" target="_blank" rel="noopener">Klexikon: ${esc(L.titel)}</a> (CC BY-SA 4.0, kısaltıldı)</div>
+      ${gl}
+      <div class="soluk">Kaynak: <a href="${esc(L.url)}" target="_blank" rel="noopener">${esc(L.quelle)}: ${esc(L.titel)}</a> (${esc(L.lizenz)})</div>
       <div class="sira"><button class="btn ana" data-act="lesen-fertig" type="button">Okudum</button><button class="btn" data-act="lesen-baska" type="button">Başka metin</button></div>`;
     tastatur();
   }
@@ -1401,7 +1405,12 @@
     document.querySelectorAll('#lesen-text .lw.aktiv').forEach(x => x.classList.remove('aktiv'));
     el.classList.add('aktiv');
     box.hidden = false;
-    if (!id) { box.innerHTML = `<b>${esc(el.textContent.replace(/[.,!?;:“"”„]/g, ''))}</b>: listede yok`; return; }
+    if (!id) {
+      const w = el.textContent.replace(/[.,!?;:“"”„()]/g, '').toLowerCase();
+      const g = ((session.lesen || {}).glossar || []).find(x => { const h = x.de.split(/[ ,(]/)[0].replace(/\|/g, '').toLowerCase(); return h.length > 3 && (w.startsWith(h.slice(0, Math.max(4, h.length - 2))) || h.startsWith(w)); });
+      box.innerHTML = g ? `<b>${esc(g.de)}</b>: ${esc(g.erkl)} <span class="soluk">(DW sözlüğü)</span>` : `<b>${esc(el.textContent.replace(/[.,!?;:“"”„]/g, ''))}</b>: listede yok`;
+      return;
+    }
     box.innerHTML = `${deItemHTML(id)} = <b>${esc(trOf(id))}</b>${S.items[id] ? '' : ` <button class="btn mini" data-lernen="${id}" type="button">Öğrenmeye ekle</button>`}`;
     logEintrag({ modus: 'lesen-wort', id, item: label(id), frage: session.lesen.titel, antwort: '', ergebnis: S.items[id] ? 'bekannt' : 'neu', loesung: trOf(id), notiz: '' });
   }

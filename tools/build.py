@@ -640,6 +640,14 @@ dump("lesen.js", "LESEN", lesen)
 # Okuma metinleri: Klexikon (CC BY-SA 4.0), tools ile çekildi
 lt = P("quellen", "lesetexte.json")
 dump("lesetexte.js", "LESETEXTE", json.load(open(lt, encoding="utf-8")) if os.path.exists(lt) else [])
+# DW Top-Thema (izinle, ticari olmayan kullanım): tools/dw_topthema.py
+lt2 = P("quellen", "lesetexte_dw.json")
+dw = json.load(open(lt2, encoding="utf-8")) if os.path.exists(lt2) else []
+for x in dw:
+    ps = x["text"].split("\n")
+    if ps and ps[0].strip() == x["titel"].strip():
+        x["text"] = "\n".join(ps[1:])
+dump("lesetexte_dw.js", "LESETEXTE_DW", dw)
 
 # Kalıplar: yazma (tür / konu) ve fiil kalıpları
 redemittel, kaliplar = {}, {}
