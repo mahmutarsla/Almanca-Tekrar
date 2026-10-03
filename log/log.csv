@@ -475,3 +475,7 @@
 2026-10-02 23:43:17;bed;v605:bed;verschreiben;verschreiben;yazmak;richtig;(birine ilaç) yazmak;sek:5 | ipucu:0
 2026-10-02 23:43:20;erk;n0994:erk;das Rezept;das Rezept;reçete;richtig;reçete;sek:3 | ipucu:0
 2026-10-02 23:43:27;erk;n0055:erk;die Apotheke;eczane;der Apotheke;falsch;die Apotheke;sek:3 | ipucu:0
+2026-10-03 11:57:15;pretest;w0103:erk;doppelt;doppelt;çift, iki kat;neu;çift, iki kat;yavaş
+2026-10-03 11:57:22;erk;n0055:erk;die Apotheke;die Apotheke;eczane;richtig;eczane;sek:3 | ipucu:0
+2026-10-03 11:57:26;erk;n1179:erk;die Tablette;tablet (ilaç);das Tablette;falsch;die Tablette;sek:3 | ipucu:0
+2026-10-03 11:57:30;erk;w0103:erk;doppelt;doppelt;çift, iki kat;richtig;çift, iki kat;sek:3 | ipucu:0
