@@ -672,3 +672,9 @@
 2026-10-03 13:02:40;lesen;p01:1;Beim Arzt;Der Termin beim Arzt ist um 10 Uhr.;richtig;richtig;richtig;
 2026-10-03 13:02:44;lesen;p01:2;Beim Arzt;Die Ärztin sagt, dass die Krankheit gefährlich ist.;falsch;richtig;falsch;
 2026-10-03 13:02:47;lesen;p01:3;Beim Arzt;Die Tabletten soll man vor dem Essen nehmen.;falsch;richtig;falsch;
+2026-10-03 13:03:25;lesen-wort;n1374;das Wetter;p10;;bekannt;hava (durumu);
+2026-10-03 13:03:27;lesen-wort;n1374;das Wetter;p10;;bekannt;hava (durumu);
+2026-10-03 13:04:19;lesen;p10:0;Das Wetter in Bremen;Am Nachmittag soll es regnen.;richtig;richtig;richtig;
+2026-10-03 13:04:32;lesen;p10:1;Das Wetter in Bremen;Es ist sehr warm.;falsch;richtig;falsch;
+2026-10-03 13:04:33;lesen;p10:2;Das Wetter in Bremen;Auf dem Weg zur Uni scheint die Sonne.;richtig;richtig;richtig;
+2026-10-03 13:04:36;lesen;p10:3;Das Wetter in Bremen;Am Abend ist der Regenschirm kaputt.;richtig;richtig;richtig;
