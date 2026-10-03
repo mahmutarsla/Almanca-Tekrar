@@ -322,3 +322,8 @@ main { max-width: 860px; margin: 0 auto; padding: 1.5rem 16px 4rem; }
 .gl-opt.yanlis { background: var(--bad-soft); border-color: var(--bad); }
 .gl-auf span.ok { color: var(--ok); } .gl-auf span.yanlis { color: var(--bad); }
 .gl-opt:disabled { opacity: 1; cursor: default; }
+/* Kalıplar: geniş sayfa, fiiller sütun sütun */
+body.genis main { max-width: 1500px; }
+body.genis #v-calis { max-width: none; }
+.kalip-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr)); gap: 1.2rem 1.6rem; margin: .6rem 0 1rem; }
+.kalip-fiil { min-width: 0; }

@@ -114,7 +114,7 @@
       const a = FORM.get(w);
       if (!a || a === '?') return w;
       const isStart = off === 0 || /[.!?„]\s*$/.test(full.slice(0, off));
-      if (isStart && /^(Die|Der|Das|Sie|Ihr|Ihre|Essen|Leben)$/.test(w)) return w;
+      if (isStart && /^(Die|Der|Das|Sie|Ihr|Ihre|Essen|Leben|Bitte|Danke|Morgen|Abend|Recht)$/.test(w)) return w;
       if (/^(Frau|Herr|Herrn)$/.test(w) && /^\s+[A-ZÄÖÜ]/.test(full.slice(off + w.length))) return w;
       return `<span class="n ${a}">${w}<sup>${a === 'pl' ? 'Pl.' : a}</sup></span>`;
     });
@@ -1327,7 +1327,8 @@
   // Fiillerin günlük kullanımı (soru yok): öğrendiğin fiiller önce; ★ ile işaretlediklerin yazma ekranında da çıkar
   const KAL = window.KALIPLAR || { yazma: {}, fiil: {} };
   function kalipFiiller() {
-    const ids = Object.keys(KAL.fiil).filter(id => vById[id]);
+    // şimdilik yalnız B1 fiilleri (A1/A2 yok); en son öğrendiğin önce, sonra henüz öğrenmediğin B1 fiilleri
+    const ids = Object.keys(KAL.fiil).filter(id => vById[id] && vById[id].tier === 3);
     const gelernt = ids.filter(id => S.items[id]).sort((a, b) => (S.items[b].seit || 0) - (S.items[a].seit || 0));
     return gelernt.concat(ids.filter(id => !S.items[id]));
   }
@@ -1335,11 +1336,11 @@
     aktuell = { typ: 'kalip' };
     $('#durum-satiri').innerHTML = '';
     const ids = kalipFiiller(), seite = session.kalipSeite || 0, fav = S.kalipFav || {};
-    const teil = ids.slice(seite * 5, seite * 5 + 5);
-    kart.innerHTML = `<div class="tur"><span class="yeni">kalıplar</span><span>${ids.length} fiil · ${seite * 5 + 1}–${Math.min(ids.length, seite * 5 + 5)} · öğrendiğin fiiller önce</span></div>
-      ${teil.map(id => `<div><div class="soru de" style="font-size:1.2rem">${esc(vById[id].anz)} <span class="soluk" style="font-weight:400">${esc(vById[id].tr)}</span></div>
-        <ul class="ornekler">${KAL.fiil[id].map((k, i) => `<li><button class="btn mini" data-fav="${id}:${i}" type="button" title="Yazmada göster">${fav[id + ':' + i] ? '★' : '☆'}</button> ${deHTML(k.de)}<br><span class="soluk">${esc(k.tr)}</span></li>`).join('')}</ul></div>`).join('')}
-      <div class="sira">${seite ? '<button class="btn" data-act="kalip-zurueck" type="button">← Önceki</button>' : ''}${(seite + 1) * 5 < ids.length ? '<button class="btn ana" data-act="kalip-weiter" type="button">Sonraki 5 fiil →</button>' : ''}</div>`;
+    const N = 12, teil = ids.slice(seite * N, seite * N + N);
+    kart.innerHTML = `<div class="tur"><span class="yeni">kalıplar</span><span>${ids.length} fiil · ${seite * N + 1}–${Math.min(ids.length, seite * N + N)} · B1 fiilleri, son öğrendiğin önce</span></div>
+      <div class="kalip-grid">${teil.map(id => `<div class="kalip-fiil"><div class="soru de" style="font-size:1.2rem">${esc(vById[id].anz)} <span class="soluk" style="font-weight:400">${esc(vById[id].tr)}</span></div>
+        <ul class="ornekler">${KAL.fiil[id].map((k, i) => `<li><button class="btn mini" data-fav="${id}:${i}" type="button" title="Yazmada göster">${fav[id + ':' + i] ? '★' : '☆'}</button> ${deHTML(k.de)}<br><span class="soluk">${esc(k.tr)}</span></li>`).join('')}</ul></div>`).join('')}</div>
+      <div class="sira">${seite ? '<button class="btn" data-act="kalip-zurueck" type="button">← Önceki</button>' : ''}${(seite + 1) * N < ids.length ? `<button class="btn ana" data-act="kalip-weiter" type="button">Sonraki ${N} fiil →</button>` : ''}</div>`;
     tastatur();
     if (!session.kalipGesehen) { session.kalipGesehen = true; heuteM('kalip').n++; save(); }
   }
@@ -1519,6 +1520,7 @@
     renderHedef();
     renderPlan();
     themaUI();
+    document.body.classList.toggle('genis', session.modus === 'kalip');
     if (session.modus === 'yazma') { yazmaRender(); return; }
     if (session.modus === 'lesen') { lesenRender(); return; }
     if (session.modus === 'kalip') { kalipRender(); return; }
