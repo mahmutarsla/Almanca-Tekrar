@@ -1,0 +1,170 @@
+# Yazma kalıpları. Biçim: tür ya da konu | Almanca | Türkçe
+# tür: email (arkadaşa e-posta), forum (görüş), formell (resmî e-posta); konu: quellen/themen.txt kimlikleri
+email | Liebe Anna, / Lieber Jonas, | Sevgili Anna, / Sevgili Jonas, (hitap)
+email | wie geht es dir? Mir geht es gut. | nasılsın? Ben iyiyim.
+email | Vielen Dank für deine Mail. | E-postan için çok teşekkürler.
+email | Ich möchte dir erzählen, dass … | Sana … olduğunu anlatmak istiyorum.
+email | Stell dir vor, … | Düşünsene, … / Tahmin et, …
+email | Leider konnte ich nicht kommen, weil … | Maalesef gelemedim, çünkü …
+email | Hast du Lust, am Wochenende … zu …? | Hafta sonu … ister misin?
+email | Was hältst du davon, wenn wir …? | … yapsak ne dersin?
+email | Ich schlage vor, dass wir … | … yapmamızı öneriyorum.
+email | Wie wäre es mit …? | … nasıl olur?
+email | Ich freue mich schon auf … | … için şimdiden sevinçliyim / sabırsızlanıyorum.
+email | Schreib mir bald! / Melde dich bald! | Bana yakında yaz! / Haber ver!
+email | Viele Grüße / Liebe Grüße, dein Tuna | Selamlar / Sevgiler, Tuna (kapanış, virgülsüz isim)
+forum | Ich habe den Beitrag gelesen und möchte meine Meinung sagen. | Yazıyı okudum ve fikrimi söylemek istiyorum.
+forum | Meiner Meinung nach … / Ich finde, dass … | Bence … / … olduğunu düşünüyorum.
+forum | Ich bin der Meinung, dass … | … kanısındayım.
+forum | Ich bin (nicht) damit einverstanden, dass … | … konusunda (değil) hemfikirim.
+forum | Einerseits …, andererseits … | Bir yandan …, öte yandan …
+forum | Ein Vorteil ist, dass … Ein Nachteil ist, dass … | Bir avantajı … Bir dezavantajı …
+forum | Zum Beispiel … / In meinem Heimatland … | Örneğin … / Benim ülkemde …
+forum | Ich habe selbst die Erfahrung gemacht, dass … | Ben de … deneyimini yaşadım.
+forum | Außerdem … / Trotzdem … / Deshalb … | Ayrıca … / Yine de … / Bu yüzden … (fiil 2. sırada!)
+forum | Zum Schluss möchte ich sagen, dass … | Son olarak … demek istiyorum.
+formell | Sehr geehrte Damen und Herren, / Sehr geehrter Herr Müller, | Sayın yetkili, / Sayın Bay Müller,
+formell | Ich schreibe Ihnen, weil … | Size … nedeniyle yazıyorum.
+formell | Leider kann ich am … nicht kommen. | Maalesef …’de gelemiyorum.
+formell | Es tut mir leid, dass … / Entschuldigen Sie bitte, dass … | … için özür dilerim.
+formell | Könnten Sie mir bitte sagen, ob …? | Bana … olup olmadığını söyleyebilir misiniz?
+formell | Ich möchte einen neuen Termin vereinbaren. | Yeni bir randevu almak istiyorum.
+formell | Ich bitte Sie um eine kurze Antwort. | Kısa bir cevap rica ediyorum.
+formell | Vielen Dank im Voraus. | Şimdiden teşekkürler.
+formell | Mit freundlichen Grüßen / (Ad Soyad) | Saygılarımla / (ad soyad) (kapanış)
+wetter | Es hat den ganzen Tag geregnet. | Bütün gün yağmur yağdı.
+wetter | Wegen des schlechten Wetters mussten wir zu Hause bleiben. | Kötü hava yüzünden evde kalmak zorunda kaldık.
+wetter | Die Sonne schien, und es war angenehm warm. | Güneş parlıyordu ve hava hoş bir şekilde ılıktı.
+wetter | Bei schönem Wetter gehen wir gern spazieren. | Hava güzel olunca yürüyüşe çıkmayı severiz.
+wetter | Laut Wetterbericht soll es morgen schneien. | Hava raporuna göre yarın kar yağacakmış.
+wetter | Es war so kalt, dass ich eine dicke Jacke anziehen musste. | O kadar soğuktu ki kalın bir mont giymek zorunda kaldım.
+wetter | Hoffentlich bleibt das Wetter am Wochenende gut. | Umarım hafta sonu hava güzel kalır.
+wetter | Leider ist das Wetter in Bremen oft grau und windig. | Maalesef Bremen'de hava çoğu zaman gri ve rüzgârlı.
+umwelt | Ich versuche, möglichst wenig Müll zu produzieren. | Mümkün olduğunca az çöp üretmeye çalışıyorum.
+umwelt | Wir trennen zu Hause den Müll. | Evde çöpleri ayırıyoruz.
+umwelt | Statt mit dem Auto fahre ich lieber mit dem Fahrrad. | Araba yerine bisikletle gitmeyi tercih ediyorum.
+umwelt | Man sollte Strom und Wasser sparen. | İnsan elektrik ve su tasarrufu yapmalı.
+umwelt | Der Klimawandel ist ein großes Problem für uns alle. | İklim değişikliği hepimiz için büyük bir sorun.
+umwelt | Jeder kann etwas für die Umwelt tun. | Herkes çevre için bir şey yapabilir.
+umwelt | Am Wochenende waren wir in der Natur wandern. | Hafta sonu doğada yürüyüş yaptık.
+umwelt | Ich kaufe nach Möglichkeit Produkte aus der Region. | Elimden geldiğince yöresel ürünler alıyorum.
+wohnen | Ich suche eine kleine Wohnung in der Nähe der Uni. | Üniversitenin yakınında küçük bir daire arıyorum.
+wohnen | Die Miete beträgt 450 Euro warm. | Kira, ısınma dahil 450 Euro.
+wohnen | Ich wohne mit zwei Mitbewohnern in einer WG. | İki ev arkadaşıyla bir paylaşımlı evde oturuyorum.
+wohnen | Nächsten Monat ziehe ich in eine neue Wohnung um. | Gelecek ay yeni bir daireye taşınıyorum.
+wohnen | Die Heizung in meinem Zimmer funktioniert nicht. | Odamdaki kalorifer çalışmıyor.
+wohnen | Könnten Sie bitte jemanden vorbeischicken, der das repariert? | Lütfen bunu tamir edecek birini gönderebilir misiniz?
+wohnen | Die Nachbarn sind sehr nett, aber manchmal etwas laut. | Komşular çok iyi ama bazen biraz gürültülüler.
+wohnen | Die Wohnung ist hell und hat einen kleinen Balkon. | Daire aydınlık ve küçük bir balkonu var.
+person | Ich komme aus der Türkei und lebe seit einem Jahr in Bremen. | Türkiye'denim ve bir yıldır Bremen'de yaşıyorum.
+person | Ich bin 22 Jahre alt und studiere bald Informatik. | 22 yaşındayım ve yakında bilgisayar bilimi okuyacağım.
+person | Meine Familie wohnt noch in Istanbul. | Ailem hâlâ İstanbul'da oturuyor.
+person | Ich habe einen älteren Bruder und eine jüngere Schwester. | Bir ağabeyim ve bir küçük kız kardeşim var.
+person | Mein Vater arbeitet als Ingenieur. | Babam mühendis olarak çalışıyor.
+person | In meiner Freizeit lese ich gern und treffe Freunde. | Boş zamanımda okumayı ve arkadaşlarla buluşmayı severim.
+person | Ich vermisse meine Familie manchmal sehr. | Bazen ailemi çok özlüyorum.
+person | Ich bin eher ruhig, aber sehr hilfsbereit. | Daha çok sakin biriyim ama çok yardımseverim.
+beziehungen | Vielen Dank für deine Einladung! | Davetin için çok teşekkürler!
+beziehungen | Ich komme sehr gern zu deiner Party. | Partine seve seve gelirim.
+beziehungen | Leider kann ich am Samstag nicht kommen, weil ich arbeiten muss. | Maalesef cumartesi gelemiyorum, çünkü çalışmam gerekiyor.
+beziehungen | Soll ich etwas mitbringen? | Bir şey getireyim mi?
+beziehungen | Ich möchte dich zu meinem Geburtstag einladen. | Seni doğum günüme davet etmek istiyorum.
+beziehungen | Hast du am Freitagabend Zeit? | Cuma akşamı vaktin var mı?
+beziehungen | Wir kennen uns schon seit der Schulzeit. | Okul zamanından beri tanışıyoruz.
+beziehungen | Ich habe mich sehr gefreut, wieder von dir zu hören. | Senden tekrar haber almak beni çok sevindirdi.
+gefuehle | Meiner Meinung nach ist das eine gute Idee. | Bence bu iyi bir fikir.
+gefuehle | Ich finde es wichtig, dass man ehrlich ist. | İnsanın dürüst olmasını önemli buluyorum.
+gefuehle | Ich bin damit nicht einverstanden. | Buna katılmıyorum.
+gefuehle | Ich habe mich sehr darüber gefreut. | Buna çok sevindim.
+gefuehle | Ich habe mich über den Lärm geärgert. | Gürültüye sinirlendim.
+gefuehle | Es tut mir leid, dass ich mich so spät melde. | Bu kadar geç haber verdiğim için özür dilerim.
+gefuehle | Einerseits ist das praktisch, andererseits ist es teuer. | Bir yandan pratik, öte yandan pahalı.
+gefuehle | Ich mache mir Sorgen um meine Prüfung. | Sınavım için endişeleniyorum.
+gesundheit | Ich fühle mich seit gestern nicht gut. | Dünden beri kendimi iyi hissetmiyorum.
+gesundheit | Ich habe Kopfschmerzen und Fieber. | Başım ağrıyor ve ateşim var.
+gesundheit | Ich möchte einen Termin beim Arzt vereinbaren. | Doktordan randevu almak istiyorum.
+gesundheit | Der Arzt hat mich für drei Tage krankgeschrieben. | Doktor bana üç gün rapor verdi.
+gesundheit | Ich muss die Tabletten dreimal täglich nehmen. | İlaçları günde üç kez almam gerekiyor.
+gesundheit | Gute Besserung! | Geçmiş olsun!
+gesundheit | Ich treibe regelmäßig Sport, um fit zu bleiben. | Formda kalmak için düzenli spor yapıyorum.
+gesundheit | Ich habe mich erkältet. | Üşüttüm.
+essen | Ich möchte für Samstagabend einen Tisch für vier Personen reservieren. | Cumartesi akşamı için dört kişilik bir masa ayırtmak istiyorum.
+essen | Was können Sie empfehlen? | Ne tavsiye edersiniz?
+essen | Ich hätte gern eine Tomatensuppe als Vorspeise. | Başlangıç olarak bir domates çorbası almak isterim.
+essen | Das Essen hat sehr gut geschmeckt. | Yemek çok lezzetliydi.
+essen | Wir mussten fast eine Stunde auf das Essen warten. | Yemeği neredeyse bir saat beklemek zorunda kaldık.
+essen | Die Rechnung, bitte. Wir möchten zusammen zahlen. | Hesap lütfen. Birlikte ödemek istiyoruz.
+essen | Ich esse kein Fleisch, weil ich Vegetarier bin. | Et yemiyorum, çünkü vejetaryenim.
+essen | Am liebsten koche ich mit Freunden. | En çok arkadaşlarla yemek yapmayı severim.
+einkaufen | Ich habe letzte Woche eine Jacke bei Ihnen gekauft. | Geçen hafta sizden bir mont satın aldım.
+einkaufen | Leider ist die Hose zu klein. Kann ich sie umtauschen? | Maalesef pantolon çok küçük. Değiştirebilir miyim?
+einkaufen | Ich möchte mein Geld zurückhaben. | Paramı geri almak istiyorum.
+einkaufen | Haben Sie diesen Pullover auch in Größe M? | Bu kazağın M bedeni de var mı?
+einkaufen | Kann ich das mal anprobieren? | Bunu bir deneyebilir miyim?
+einkaufen | Das Angebot gilt nur bis Ende der Woche. | Kampanya yalnızca hafta sonuna kadar geçerli.
+einkaufen | Ich kaufe oft im Internet ein, weil es bequem ist. | Rahat olduğu için sık sık internetten alışveriş yapıyorum.
+einkaufen | Die Ware ist leider kaputt angekommen. | Ürün maalesef bozuk geldi.
+reisen | Der Zug hatte eine Stunde Verspätung. | Trenin bir saat rötarı vardı.
+reisen | Ich habe meinen Anschlusszug verpasst. | Aktarma trenimi kaçırdım.
+reisen | Ich möchte ein Zimmer für zwei Nächte buchen. | İki gecelik bir oda ayırtmak istiyorum.
+reisen | Wir sind mit dem Flugzeug nach Berlin geflogen. | Uçakla Berlin'e uçtuk.
+reisen | Ich fahre jeden Tag mit dem Bus zur Uni. | Her gün otobüsle üniversiteye gidiyorum.
+reisen | Im Urlaub haben wir viele Sehenswürdigkeiten besichtigt. | Tatilde birçok görülecek yeri gezdik.
+reisen | Wo muss ich umsteigen? | Nerede aktarma yapmam gerekiyor?
+reisen | Die Reise hat sich wirklich gelohnt. | Yolculuk gerçekten değdi.
+dienst | Ich möchte mich in Bremen anmelden. | Bremen'de ikametimi kaydettirmek istiyorum.
+dienst | Ich möchte ein Konto eröffnen. | Bir hesap açmak istiyorum.
+dienst | Welche Unterlagen muss ich mitbringen? | Hangi belgeleri getirmem gerekiyor?
+dienst | Ich muss das Formular ausfüllen und unterschreiben. | Formu doldurup imzalamam gerekiyor.
+dienst | Ich möchte dieses Paket in die Türkei schicken. | Bu paketi Türkiye'ye göndermek istiyorum.
+dienst | Ich habe meine Bankkarte verloren und möchte sie sperren lassen. | Banka kartımı kaybettim ve bloke ettirmek istiyorum.
+dienst | Mein Aufenthaltstitel läuft bald ab. | Oturma iznimin süresi yakında doluyor.
+dienst | Ich warte schon seit drei Wochen auf eine Antwort. | Üç haftadır bir cevap bekliyorum.
+arbeit | Ich bewerbe mich um die Stelle als Aushilfe. | Yardımcı eleman pozisyonuna başvuruyorum.
+arbeit | Ich habe Ihre Anzeige im Internet gelesen. | İlanınızı internette okudum.
+arbeit | Ich habe schon Erfahrung im Verkauf. | Satışta zaten deneyimim var.
+arbeit | Ich arbeite zwanzig Stunden pro Woche in einem Café. | Haftada yirmi saat bir kafede çalışıyorum.
+arbeit | Ich verdiene nicht viel, aber die Arbeit macht mir Spaß. | Çok kazanmıyorum ama iş hoşuma gidiyor.
+arbeit | Ich würde mich über eine Einladung zum Vorstellungsgespräch freuen. | Bir iş görüşmesine davet edilirsem sevinirim.
+arbeit | Leider kann ich morgen nicht zur Arbeit kommen, weil ich krank bin. | Maalesef yarın işe gelemiyorum, çünkü hastayım.
+arbeit | Mein Kollege hat mir bei der Arbeit sehr geholfen. | İş arkadaşım bana işte çok yardım etti.
+ausbildung | Ich besuche zurzeit einen Deutschkurs. | Şu anda bir Almanca kursuna gidiyorum.
+ausbildung | Ich bereite mich auf die B1-Prüfung vor. | B1 sınavına hazırlanıyorum.
+ausbildung | Ich habe die Prüfung bestanden. | Sınavı geçtim.
+ausbildung | Leider bin ich durch die Prüfung gefallen. | Maalesef sınavdan kaldım.
+ausbildung | Nach dem Kurs möchte ich an der Uni studieren. | Kurstan sonra üniversitede okumak istiyorum.
+ausbildung | Ich habe mich für einen Studienplatz beworben. | Bir üniversite kontenjanına başvurdum.
+ausbildung | Ich habe heute leider den Unterricht verpasst. | Bugün maalesef dersi kaçırdım.
+ausbildung | Könnten Sie mir bitte die Hausaufgaben schicken? | Bana lütfen ev ödevlerini gönderebilir misiniz?
+sprache | Ich lerne seit einem Jahr Deutsch. | Bir yıldır Almanca öğreniyorum.
+sprache | Am Anfang hatte ich Probleme mit der Grammatik. | Başta dilbilgisiyle sorun yaşadım.
+sprache | Könnten Sie bitte etwas langsamer sprechen? | Lütfen biraz daha yavaş konuşabilir misiniz?
+sprache | Ich habe Sie leider nicht verstanden. | Maalesef sizi anlamadım.
+sprache | Wie sagt man das auf Deutsch? | Bu Almancada nasıl söylenir?
+sprache | Ich übe jeden Tag neue Wörter. | Her gün yeni kelimeler çalışıyorum.
+sprache | Am besten lernt man eine Sprache im Ausland. | Bir dil en iyi yurt dışında öğrenilir.
+sprache | Ich spreche Türkisch, Englisch und ein bisschen Deutsch. | Türkçe, İngilizce ve biraz Almanca konuşuyorum.
+medien | Ich bin jeden Tag mehrere Stunden im Internet. | Her gün birkaç saat internetteyim.
+medien | Die Nachrichten lese ich meistens auf dem Handy. | Haberleri çoğunlukla telefonda okuyorum.
+medien | Soziale Medien haben Vor- und Nachteile. | Sosyal medyanın avantajları ve dezavantajları var.
+medien | Man sollte nicht alles glauben, was im Internet steht. | İnternette yazan her şeye inanmamak lazım.
+medien | Ich habe eine interessante Sendung im Fernsehen gesehen. | Televizyonda ilginç bir program izledim.
+medien | Mit meiner Familie telefoniere ich oft per Video. | Ailemle sık sık görüntülü konuşuyorum.
+medien | Kinder sollten nicht zu lange vor dem Bildschirm sitzen. | Çocuklar ekran başında çok uzun oturmamalı.
+medien | Ich habe mir eine neue App heruntergeladen. | Yeni bir uygulama indirdim.
+freizeit | In meiner Freizeit spiele ich gern Fußball. | Boş zamanımda futbol oynamayı severim.
+freizeit | Am Wochenende gehe ich oft ins Kino oder ins Museum. | Hafta sonları sık sık sinemaya ya da müzeye giderim.
+freizeit | Ich interessiere mich sehr für Musik. | Müzikle çok ilgileniyorum.
+freizeit | Ich bin Mitglied in einem Sportverein. | Bir spor kulübüne üyeyim.
+freizeit | Wir haben uns ein Konzert angesehen. | Bir konser izledik.
+freizeit | Hast du Lust, mit mir schwimmen zu gehen? | Benimle yüzmeye gitmek ister misin?
+freizeit | Leider habe ich wegen der Arbeit wenig Freizeit. | Maalesef iş yüzünden az boş vaktim var.
+freizeit | Ich habe mich beim Kurs angemeldet. | Kursa kaydoldum.
+gesellschaft | Viele Menschen engagieren sich ehrenamtlich. | Birçok insan gönüllü olarak çalışıyor.
+gesellschaft | Ich finde, dass die Regierung mehr für junge Leute tun sollte. | Bence hükümet gençler için daha fazla şey yapmalı.
+gesellschaft | In Deutschland darf man ab 18 Jahren wählen. | Almanya'da 18 yaşından itibaren oy kullanılabilir.
+gesellschaft | Es gibt immer mehr ältere Menschen in unserer Gesellschaft. | Toplumumuzda giderek daha fazla yaşlı insan var.
+gesellschaft | Die Mieten in den Großstädten werden immer teurer. | Büyük şehirlerde kiralar giderek pahalılaşıyor.
+gesellschaft | Man sollte Menschen aus anderen Ländern offen begegnen. | Başka ülkelerden gelen insanlara açık davranmak gerekir.
+gesellschaft | Ich habe an einer Demonstration teilgenommen. | Bir gösteriye katıldım.
+gesellschaft | Darüber wird in Deutschland viel diskutiert. | Almanya'da bu konu çok tartışılıyor.

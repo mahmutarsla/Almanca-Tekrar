@@ -165,6 +165,7 @@
     refl: { ad: 'Dönüşlü fiiller', grup: 'Dilbilgisi', ziel: 15, neu: 3, neuTr: 'yeni dönüşlü fiil' },
     thema: { ad: 'Konu', grup: 'Ezber', ziel: 30, neu: 15, neuTr: 'seçili konudan yeni kelime' },
     stark: { ad: 'Düzensiz fiiller', grup: 'Dilbilgisi', ziel: 20, neu: 5, neuTr: 'yeni düzensiz fiil (Präteritum + Perfekt)' },
+    kalip: { ad: 'Kalıplar', grup: 'Yazma', ziel: 1, neu: 1, neuTr: 'okuma (soru yok)' },
     lesen: { ad: 'Okuma', grup: 'Yazma', ziel: 1, neu: 1, neuTr: 'metin + doğru/yanlış soruları' },
     yazma: { ad: 'Yazma', grup: 'Yazma', ziel: 1, neu: 1, neuTr: 'metin (3–4 günde bir)' },
     zayif: { ad: 'Zayıflar', grup: '', ziel: 10, neu: 0, neuTr: '' },
@@ -328,6 +329,7 @@
     stark: u => typOf(u) === 'stamm' || (typOf(u) === 'bed' && kind(itemOf(u)) === 'v' && !!(vById[itemOf(u)] || {}).stark),
     yazma: () => false,
     lesen: () => false,
+    kalip: () => false,
   };
   // seçili konu
   const themaId = () => (thById[S.einst.thema] ? S.einst.thema : (THEMEN[0] && THEMEN[0].id));
@@ -1291,7 +1293,9 @@
       <textarea id="metin" rows="9" spellcheck="false" placeholder="Liebe / Lieber …, Sehr geehrte Damen und Herren, …" style="width:100%;font:inherit;font-size:1.05rem;padding:.7rem .9rem;border-radius:10px;border:2px solid var(--line);background:var(--surface-2)"></textarea>
       <div class="sira" style="margin:0"><span class="soluk" id="metin-say">0 kelime</span>
         <button class="btn ana" data-act="metin-gonder" type="button">Gönder</button>
-        <button class="btn" data-act="metin-baska" type="button">Başka konu</button></div>`;
+        <button class="btn" data-act="metin-baska" type="button">Başka konu</button>
+        <button class="btn" data-act="kalip-panel" type="button">Kalıplar</button></div>
+      <div id="kalip-panel" hidden><div class="soluk">Kalıba bas: metne eklenir. Üzerine gelince Türkçesi görünür.</div>${yazmaKalipHTML(a)}</div>`;
     tastatur();
     const ta = $('#metin');
     try { ta.value = localStorage.getItem('almanca-tekrar-taslak-' + a.id) || ''; } catch (e) { /* yok */ }
@@ -1317,6 +1321,35 @@
     kart.innerHTML = `<div class="bos"><div class="buyuk">Gönderildi ✓</div><div class="soluk">${n} kelime. Claude'a "sonuçlarıma bak" de: hatalarını tek tek düzeltir, düzeltmeler Geçmiş'te görünür.</div>
       <div class="sira"><button class="btn ana" data-modus="blitz" type="button">Hızlı tur'a dön</button></div></div>`;
     renderPlan();
+  }
+
+  // ================= Kalıplar =================
+  // Fiillerin günlük kullanımı (soru yok): öğrendiğin fiiller önce; ★ ile işaretlediklerin yazma ekranında da çıkar
+  const KAL = window.KALIPLAR || { yazma: {}, fiil: {} };
+  function kalipFiiller() {
+    const ids = Object.keys(KAL.fiil).filter(id => vById[id]);
+    const gelernt = ids.filter(id => S.items[id]).sort((a, b) => (S.items[b].seit || 0) - (S.items[a].seit || 0));
+    return gelernt.concat(ids.filter(id => !S.items[id]));
+  }
+  function kalipRender() {
+    aktuell = { typ: 'kalip' };
+    $('#durum-satiri').innerHTML = '';
+    const ids = kalipFiiller(), seite = session.kalipSeite || 0, fav = S.kalipFav || {};
+    const teil = ids.slice(seite * 5, seite * 5 + 5);
+    kart.innerHTML = `<div class="tur"><span class="yeni">kalıplar</span><span>${ids.length} fiil · ${seite * 5 + 1}–${Math.min(ids.length, seite * 5 + 5)} · öğrendiğin fiiller önce</span></div>
+      ${teil.map(id => `<div><div class="soru de" style="font-size:1.2rem">${esc(vById[id].anz)} <span class="soluk" style="font-weight:400">${esc(vById[id].tr)}</span></div>
+        <ul class="ornekler">${KAL.fiil[id].map((k, i) => `<li><button class="btn mini" data-fav="${id}:${i}" type="button" title="Yazmada göster">${fav[id + ':' + i] ? '★' : '☆'}</button> ${deHTML(k.de)}<br><span class="soluk">${esc(k.tr)}</span></li>`).join('')}</ul></div>`).join('')}
+      <div class="sira">${seite ? '<button class="btn" data-act="kalip-zurueck" type="button">← Önceki</button>' : ''}${(seite + 1) * 5 < ids.length ? '<button class="btn ana" data-act="kalip-weiter" type="button">Sonraki 5 fiil →</button>' : ''}</div>`;
+    tastatur();
+    if (!session.kalipGesehen) { session.kalipGesehen = true; heuteM('kalip').n++; save(); }
+  }
+  // yazma ekranı için: görev türü + konu + ★ kalıplar
+  function yazmaKalipHTML(a) {
+    const fav = S.kalipFav || {};
+    const fl = Object.keys(fav).filter(k => fav[k]).map(k => { const [id, i] = k.split(':'); return (KAL.fiil[id] || [])[+i]; }).filter(Boolean);
+    const blok = (titel, l) => l && l.length ? `<div class="soluk" style="margin-top:.4rem">${esc(titel)}</div><div class="chips">${l.map(k => `<button class="chip" data-einfuegen="${esc(k.de)}" type="button" title="${esc(k.tr)}">${esc(k.de)}</button>`).join('')}</div>` : '';
+    return blok({ email: 'E-posta kalıpları', forum: 'Görüş kalıpları', formell: 'Resmî e-posta kalıpları' }[a.typ] || 'Kalıplar', KAL.yazma[a.typ]) +
+      blok(`Konu: ${thById[a.thema] ? thById[a.thema].tr : a.thema}`, KAL.yazma[a.thema]) + blok('★ İşaretlediğin fiil kalıpları', fl);
   }
 
   // ================= Okuma =================
@@ -1458,6 +1491,7 @@
     themaUI();
     if (session.modus === 'yazma') { yazmaRender(); return; }
     if (session.modus === 'lesen') { lesenRender(); return; }
+    if (session.modus === 'kalip') { kalipRender(); return; }
     const m = session.modus, d = heuteM(m);
     if (d.n >= ziel(m) && !session.zielGesehen[m]) {
       session.zielGesehen[m] = true;
@@ -2068,6 +2102,10 @@
     auswerten(inp.value);
   });
   kart.addEventListener('click', e => {
+    const fv = e.target.closest('[data-fav]');
+    if (fv) { const f = S.kalipFav = S.kalipFav || {}; f[fv.dataset.fav] = !f[fv.dataset.fav]; fv.textContent = f[fv.dataset.fav] ? '★' : '☆'; save(); return; }
+    const ef = e.target.closest('[data-einfuegen]');
+    if (ef) { const ta = $('#metin'); if (ta) { const p0 = ta.selectionStart || ta.value.length; const t = ef.dataset.einfuegen.split(' / ')[0].replace(/ …$|…/g, ''); ta.value = ta.value.slice(0, p0) + t + ' ' + ta.value.slice(p0); ta.focus(); ta.dispatchEvent(new Event('input')); } return; }
     const lw = e.target.closest('.lw');
     if (lw) { lesenWort(lw); return; }
     const rf = e.target.closest('[data-rf]');
@@ -2092,6 +2130,9 @@
     else if (act === 'paket-weiter') paketWeiter();
     else if (act === 'metin-gonder') metinGonder();
     else if (act === 'lesen-baska') lesenRender(true);
+    else if (act === 'kalip-weiter') { session.kalipSeite = (session.kalipSeite || 0) + 1; kalipRender(); window.scrollTo(0, 0); }
+    else if (act === 'kalip-zurueck') { session.kalipSeite = Math.max(0, (session.kalipSeite || 0) - 1); kalipRender(); window.scrollTo(0, 0); }
+    else if (act === 'kalip-panel') { const pn = $('#kalip-panel'); pn.hidden = !pn.hidden; }
     else if (act === 'metin-baska') yazmaRender(true);
     else if (act === 'paket-lesen') { aktuell.schritt = 'lesen'; aktuell.gelesen = true; aktuell.schrittStart = now(); paketRender(aktuell); }
     else if (act === 'weiter') zeige();
@@ -2111,7 +2152,7 @@
     if ($('#v-calis').hidden || !aktuell) return;
     const q = aktuell;
     const inInput = /^(INPUT|SELECT|TEXTAREA)$/.test(e.target.tagName);
-    if (q.typ === 'yazma' || q.typ === 'lesen') return;
+    if (q.typ === 'yazma' || q.typ === 'lesen' || q.typ === 'kalip') return;
     if ((q.typ === 'pause' || q.typ === 'leer') && e.key === 'Enter' && !inInput) {
       e.preventDefault();
       if (q.naechst) setModus(q.naechst);

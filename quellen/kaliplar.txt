@@ -1,0 +1,598 @@
+# Fiil kalıpları: fiil | Almanca kalıp / örnek | Türkçe. "Kalıplar" bölümü ve yazma ekranı (★) kullanır.
+v002 | pünktlich abfahren | zamanında kalkmak
+v002 | Der Zug fährt um 8 Uhr ab. | Tren saat 8'de kalkıyor.
+v002 | Wann fährt der nächste Bus ab? | Bir sonraki otobüs ne zaman kalkıyor?
+v002 | Der Bus ist schon abgefahren. | Otobüs çoktan kalktı.
+v006 | jemanden vom Bahnhof abholen | birini istasyondan almak
+v006 | Ich hole dich um sechs ab. | Seni altıda alırım.
+v006 | Kannst du das Paket bei der Post abholen? | Paketi postaneden alabilir misin?
+v006 | Ich habe meine Tochter vom Kindergarten abgeholt. | Kızımı anaokulundan aldım.
+v022 | mit der Arbeit anfangen | işe başlamak
+v022 | Wann fängst du mit dem Kurs an? | Kursa ne zaman başlıyorsun?
+v022 | Ich fange morgen mit dem Training an. | Yarın antrenmana başlıyorum.
+v022 | Wir haben schon mit dem Essen angefangen. | Yemeğe çoktan başladık.
+v026 | pünktlich ankommen | zamanında varmak
+v026 | Wann kommt der Zug in Bremen an? | Tren Bremen'e ne zaman varıyor?
+v026 | Ich bin gut zu Hause angekommen. | Eve sağ salim vardım.
+v026 | Das Paket ist gestern angekommen. | Paket dün geldi.
+v032 | beim Arzt anrufen | doktoru aramak
+v032 | Ich rufe dich heute Abend an. | Seni bu akşam ararım.
+v032 | Hat jemand für mich angerufen? | Beni arayan oldu mu?
+v032 | Ruf mich bitte zurück! | Lütfen beni geri ara!
+v041 | auf eine E-Mail antworten | bir e-postaya cevap vermek
+v041 | Er antwortet mir nicht. | Bana cevap vermiyor.
+v041 | Ich habe ihr noch nicht geantwortet. | Ona henüz cevap vermedim.
+v041 | Bitte antworten Sie bis Freitag. | Lütfen cuma gününe kadar cevap verin.
+v044 | eine Jacke anziehen | ceket giymek
+v044 | Zieh dir eine warme Jacke an! | Kalın bir ceket giy!
+v044 | Was ziehst du heute Abend an? | Bu akşam ne giyiyorsun?
+v044 | Ich habe meine neuen Schuhe angezogen. | Yeni ayakkabılarımı giydim.
+v045 | sich schnell anziehen | hızlıca giyinmek
+v045 | Ich ziehe mich schnell an. | Hızlıca giyiniyorum.
+v045 | Zieh dich warm an, es ist kalt! | Sıkı giyin, hava soğuk!
+v045 | Die Kinder haben sich schon angezogen. | Çocuklar çoktan giyindi.
+v046 | als Kellner arbeiten | garson olarak çalışmak
+v046 | Ich arbeite bei einer kleinen Firma. | Küçük bir şirkette çalışıyorum.
+v046 | Sie arbeitet Teilzeit im Supermarkt. | Süpermarkette yarı zamanlı çalışıyor.
+v046 | Gestern habe ich bis acht gearbeitet. | Dün sekize kadar çalıştım.
+v064 | früh aufstehen | erken kalkmak
+v064 | Ich stehe jeden Tag um sieben auf. | Her gün yedide kalkarım.
+v064 | Am Sonntag bin ich spät aufgestanden. | Pazar günü geç kalktım.
+v064 | Bitte stehen Sie kurz auf. | Lütfen kısa bir an ayağa kalkın.
+v069 | ein Formular ausfüllen | bir form doldurmak
+v069 | Bitte füllen Sie dieses Formular aus. | Lütfen bu formu doldurun.
+v069 | Ich habe den Antrag schon ausgefüllt. | Başvuru formunu çoktan doldurdum.
+v069 | Kannst du mir beim Ausfüllen helfen? | Doldurmama yardım edebilir misin?
+v098 | mit dem Unterricht beginnen | derse başlamak
+v098 | Der Kurs beginnt um neun Uhr. | Kurs saat dokuzda başlıyor.
+v098 | Wir beginnen mit einer kurzen Übung. | Kısa bir alıştırmayla başlıyoruz.
+v098 | Sie hat mit dem Studium begonnen. | Üniversiteye başladı.
+v108 | eine Antwort bekommen | bir cevap almak
+v108 | Ich habe deine Nachricht bekommen. | Mesajını aldım.
+v108 | Was bekommen Sie? | Ne alırsınız? (kafede / dükkânda)
+v108 | Er bekommt jeden Monat sein Gehalt. | Her ay maaşını alıyor.
+v134 | etwas online bestellen | bir şeyi internetten sipariş etmek
+v134 | Ich möchte eine Pizza bestellen. | Bir pizza sipariş etmek istiyorum.
+v134 | Haben Sie schon bestellt? | Siparişinizi verdiniz mi?
+v134 | Ich habe ein Taxi bestellt. | Bir taksi çağırdım.
+v136 | einen Kurs besuchen | bir kursa gitmek
+v136 | Am Wochenende besuche ich meine Eltern. | Hafta sonu ailemi ziyaret ediyorum.
+v136 | Ich besuche einen Deutschkurs in Bremen. | Bremen'de bir Almanca kursuna gidiyorum.
+v136 | Wir haben gestern ein Museum besucht. | Dün bir müzeyi gezdik.
+v145 | bar bezahlen | nakit ödemek
+v145 | Kann ich mit Karte bezahlen? | Kartla ödeyebilir miyim?
+v145 | Ich bezahle die Rechnung. | Hesabı ben ödüyorum.
+v145 | Hast du die Miete schon bezahlt? | Kirayı ödedin mi?
+v148 | zu Hause bleiben | evde kalmak
+v148 | Heute bleibe ich zu Hause. | Bugün evde kalıyorum.
+v148 | Wie lange bleibst du in Bremen? | Bremen'de ne kadar kalacaksın?
+v148 | Wir sind drei Tage in Berlin geblieben. | Berlin'de üç gün kaldık.
+v153 | Hilfe brauchen | yardıma ihtiyaç duymak
+v153 | Brauchst du Hilfe? | Yardıma ihtiyacın var mı?
+v153 | Ich brauche einen neuen Laptop. | Yeni bir dizüstü bilgisayara ihtiyacım var.
+v153 | Für den Weg brauche ich zwanzig Minuten. | Yol için yirmi dakikam gerekiyor.
+v157 | jemanden nach Hause bringen | birini eve bırakmak
+v157 | Kannst du mir ein Glas Wasser bringen? | Bana bir bardak su getirebilir misin?
+v157 | Ich bringe die Kinder zur Schule. | Çocukları okula götürüyorum.
+v157 | Er hat mir Blumen mitgebracht. | Bana çiçek getirdi.
+v160 | Danke schön! | Çok teşekkürler!
+v160 | Ich danke dir sehr. | Sana çok teşekkür ederim.
+v160 | Wir danken Ihnen herzlich. | Size içtenlikle teşekkür ederiz.
+v161 | jemandem für die Hilfe danken | birine yardımı için teşekkür etmek
+v161 | Ich danke dir für deine Hilfe. | Yardımın için sana teşekkür ederim.
+v161 | Vielen Dank für Ihre E-Mail. | E-postanız için çok teşekkürler.
+v161 | Sie hat mir für das Geschenk gedankt. | Hediye için bana teşekkür etti.
+v175 | sich kalt duschen | soğuk duş almak
+v175 | Ich dusche mich jeden Morgen. | Her sabah duş alıyorum.
+v175 | Er hat sich nach dem Sport geduscht. | Spordan sonra duş aldı.
+v175 | Duschst du dich abends oder morgens? | Akşamları mı duş alırsın, sabahları mı?
+v186 | jemanden zum Essen einladen | birini yemeğe davet etmek
+v186 | Ich lade dich zu meiner Party ein. | Seni partime davet ediyorum.
+v186 | Sie hat uns zum Kaffee eingeladen. | Bizi kahveye davet etti.
+v186 | Danke für die Einladung! | Davet için teşekkürler!
+v192 | in den Bus einsteigen | otobüse binmek
+v192 | Bitte schnell einsteigen! | Lütfen çabuk binin!
+v192 | Wir steigen in die Straßenbahn ein. | Tramvaya biniyoruz.
+v192 | Ich bin in den falschen Zug eingestiegen. | Yanlış trene bindim.
+v240 | von seiner Reise erzählen | yolculuğundan bahsetmek
+v240 | Erzähl mal von deinem Wochenende! | Hafta sonunu anlatsana!
+v240 | Sie hat mir von ihrer Familie erzählt. | Bana ailesinden bahsetti.
+v240 | Er erzählt gern von seiner Heimat. | Memleketinden bahsetmeyi sever.
+v242 | zu Mittag essen | öğle yemeği yemek
+v242 | Was isst du gern? | Ne yemeyi seversin?
+v242 | Ich esse kein Fleisch. | Et yemem.
+v242 | Wir haben im Restaurant gegessen. | Restoranda yemek yedik.
+v243 | mit dem Fahrrad fahren | bisikletle gitmek
+v243 | Ich fahre mit der Straßenbahn zur Uni. | Üniversiteye tramvayla gidiyorum.
+v243 | Im Sommer fahren wir nach Italien. | Yazın İtalya'ya gidiyoruz.
+v243 | Bist du mit dem Auto gefahren? | Arabayla mı gittin?
+v249 | Geburtstag feiern | doğum günü kutlamak
+v249 | Wir feiern am Samstag eine Party. | Cumartesi parti veriyoruz.
+v249 | Wie feiert ihr Silvester? | Yılbaşını nasıl kutluyorsunuz?
+v249 | Wir haben bis spät in die Nacht gefeiert. | Gece geç saatlere kadar eğlendik.
+v258 | eine Wohnung finden | bir ev bulmak
+v258 | Ich finde meinen Schlüssel nicht. | Anahtarımı bulamıyorum.
+v258 | Wie findest du den Film? | Filmi nasıl buluyorsun?
+v258 | Ich finde, du hast recht. | Bence haklısın.
+v267 | nach dem Weg fragen | yol sormak
+v267 | Darf ich Sie etwas fragen? | Size bir şey sorabilir miyim?
+v267 | Frag doch den Lehrer! | Öğretmene sorsana!
+v267 | Sie hat mich nach meiner Nummer gefragt. | Bana numaramı sordu.
+v281 | jemandem eine Chance geben | birine bir şans vermek
+v281 | Kannst du mir bitte das Salz geben? | Bana tuzu verebilir misin lütfen?
+v281 | Es gibt hier einen guten Bäcker. | Burada iyi bir fırın var.
+v281 | Er hat mir seine Telefonnummer gegeben. | Bana telefon numarasını verdi.
+v283 | Das gefällt mir. | Bu hoşuma gidiyor.
+v283 | Wie gefällt dir Bremen? | Bremen'i nasıl buldun?
+v283 | Die Wohnung gefällt uns sehr gut. | Ev çok hoşumuza gidiyor.
+v283 | Der Film hat mir nicht gefallen. | Film hoşuma gitmedi.
+v284 | zu Fuß gehen | yürüyerek gitmek
+v284 | Wie geht es dir? | Nasılsın?
+v284 | Ich gehe heute Abend ins Kino. | Bu akşam sinemaya gidiyorum.
+v284 | Wir sind am Fluss spazieren gegangen. | Nehir kenarında yürüyüşe çıktık.
+v296 | Ich glaube schon. | Sanırım öyle.
+v296 | Ich glaube, er kommt heute nicht. | Sanırım bugün gelmiyor.
+v296 | Glaub mir, das stimmt! | İnan bana, bu doğru!
+v296 | Ich glaube nicht an Horoskope. | Burçlara inanmam.
+v315 | jemandem beim Umzug helfen | birine taşınmada yardım etmek
+v315 | Kann ich Ihnen helfen? | Size yardım edebilir miyim?
+v315 | Hilf mir bitte mit den Taschen! | Çantalara yardım et lütfen!
+v315 | Mein Nachbar hat mir sehr geholfen. | Komşum bana çok yardım etti.
+v333 | Lebensmittel kaufen | yiyecek almak
+v333 | Ich kaufe Brot beim Bäcker. | Fırından ekmek alıyorum.
+v333 | Wo hast du die Jacke gekauft? | Ceketi nereden aldın?
+v333 | Wir möchten ein Auto kaufen. | Bir araba almak istiyoruz.
+v334 | jemanden gut kennen | birini iyi tanımak
+v334 | Kennst du ihn? | Onu tanıyor musun?
+v334 | Ich kenne ein gutes Restaurant hier. | Burada iyi bir restoran biliyorum.
+v334 | Wir kennen uns seit zehn Jahren. | On yıldır tanışıyoruz.
+v335 | neue Leute kennenlernen | yeni insanlarla tanışmak
+v335 | Freut mich, Sie kennenzulernen. | Sizinle tanıştığıma memnun oldum.
+v335 | Wo habt ihr euch kennengelernt? | Nerede tanıştınız?
+v335 | Im Kurs habe ich viele Leute kennengelernt. | Kursta birçok insanla tanıştım.
+v346 | nach Hause kommen | eve gelmek
+v346 | Woher kommst du? | Nerelisin?
+v346 | Ich komme aus der Türkei. | Türkiye'den geliyorum.
+v346 | Er ist zu spät gekommen. | Geç geldi.
+v370 | Deutsch lernen | Almanca öğrenmek
+v370 | Ich lerne seit einem Jahr Deutsch. | Bir yıldır Almanca öğreniyorum.
+v370 | Wir lernen zusammen für die Prüfung. | Sınava birlikte çalışıyoruz.
+v370 | Wo hast du Kochen gelernt? | Yemek yapmayı nerede öğrendin?
+v371 | Zeitung lesen | gazete okumak
+v371 | Ich lese gern Krimis. | Polisiye okumayı severim.
+v371 | Liest du gerade ein Buch? | Şu an bir kitap mı okuyorsun?
+v371 | Hast du meine Nachricht gelesen? | Mesajımı okudun mu?
+v372 | Ich liebe dich. | Seni seviyorum.
+v372 | Sie liebt ihre Arbeit. | İşini seviyor.
+v372 | Ich liebe es, am Meer zu sein. | Deniz kenarında olmayı çok severim.
+v381 | Hausaufgaben machen | ödev yapmak
+v381 | Was machst du am Wochenende? | Hafta sonu ne yapıyorsun?
+v381 | Das macht nichts. | Önemli değil.
+v381 | Ich habe einen Fehler gemacht. | Bir hata yaptım.
+v403 | das Fenster öffnen | pencereyi açmak
+v403 | Kannst du bitte die Tür öffnen? | Kapıyı açabilir misin lütfen?
+v403 | Der Supermarkt öffnet um acht Uhr. | Süpermarket saat sekizde açılıyor.
+v403 | Ich habe die Datei nicht geöffnet. | Dosyayı açmadım.
+v440 | die Wahrheit sagen | doğruyu söylemek
+v440 | Was hast du gesagt? | Ne dedin?
+v440 | Kannst du mir sagen, wie spät es ist? | Bana saatin kaç olduğunu söyleyebilir misin?
+v440 | Sag ihm bitte Bescheid. | Lütfen ona haber ver.
+v448 | jemandem etwas zum Geburtstag schenken | birine doğum gününde bir şey hediye etmek
+v448 | Was schenkst du deiner Mutter? | Annene ne hediye ediyorsun?
+v448 | Ich habe ihm ein Buch geschenkt. | Ona bir kitap hediye ettim.
+v448 | Meine Freunde haben mir Blumen geschenkt. | Arkadaşlarım bana çiçek hediye etti.
+v449 | eine Nachricht schicken | bir mesaj göndermek
+v449 | Ich schicke dir die Adresse per WhatsApp. | Adresi sana WhatsApp'tan gönderiyorum.
+v449 | Hast du die E-Mail schon geschickt? | E-postayı gönderdin mi?
+v449 | Sie schickt ihrer Oma ein Paket. | Büyükannesine bir paket gönderiyor.
+v456 | Lass es dir schmecken! | Afiyet olsun!
+v456 | Schmeckt dir die Suppe? | Çorbayı beğendin mi?
+v456 | Das schmeckt sehr gut! | Bunun tadı çok güzel!
+v456 | Der Kuchen hat mir nicht geschmeckt. | Pastanın tadını beğenmedim.
+v461 | eine E-Mail schreiben | bir e-posta yazmak
+v461 | Ich schreibe dir morgen eine Nachricht. | Sana yarın bir mesaj yazarım.
+v461 | Wie schreibt man das? | Bu nasıl yazılıyor?
+v461 | Sie hat mir einen langen Brief geschrieben. | Bana uzun bir mektup yazdı.
+v469 | einen Film sehen | bir film izlemek
+v469 | Wir sehen uns morgen! | Yarın görüşürüz!
+v469 | Siehst du das Schild dort? | Oradaki tabelayı görüyor musun?
+v469 | Ich habe ihn lange nicht gesehen. | Onu uzun zamandır görmedim.
+v484 | am Abend spazieren gehen | akşam yürüyüşe çıkmak
+v484 | Wir gehen am Sonntag im Park spazieren. | Pazar günü parkta yürüyüşe çıkıyoruz.
+v484 | Ich bin gestern an der Weser spazieren gegangen. | Dün Weser kıyısında yürüyüşe çıktım.
+v484 | Gehst du mit dem Hund spazieren? | Köpeği gezdirmeye çıkıyor musun?
+v487 | mit dem Chef sprechen | patronla konuşmak
+v487 | Kann ich kurz mit Ihnen sprechen? | Sizinle kısaca konuşabilir miyim?
+v487 | Ich habe schon mit meiner Lehrerin gesprochen. | Öğretmenimle zaten konuştum.
+v487 | Wir müssen mal darüber sprechen. | Bunu bir konuşmamız lazım.
+v512 | eine Wohnung suchen | ev aramak
+v512 | Ich suche einen Job in Bremen. | Bremen'de iş arıyorum.
+v512 | Was suchst du denn? | Ne arıyorsun?
+v512 | Ich habe meinen Schlüssel überall gesucht. | Anahtarımı her yerde aradım.
+v520 | mit der Familie telefonieren | aileyle telefonda konuşmak
+v520 | Ich telefoniere jeden Abend mit meiner Mutter. | Her akşam annemle telefonda konuşuyorum.
+v520 | Er telefoniert gerade, bitte warte kurz. | O şu an telefonda, lütfen biraz bekle.
+v520 | Hast du schon mit dem Vermieter telefoniert? | Ev sahibiyle telefonda konuştun mu?
+v527 | sich mit Freunden treffen | arkadaşlarla buluşmak
+v527 | Wir treffen uns um acht am Bahnhof. | Saat sekizde garda buluşuyoruz.
+v527 | Ich habe gestern zufällig meinen Nachbarn getroffen. | Dün tesadüfen komşumla karşılaştım.
+v527 | eine Entscheidung treffen | bir karar vermek
+v532 | einen Kaffee trinken | bir kahve içmek
+v532 | Was möchtest du trinken? | Ne içmek istersin?
+v532 | Ich trinke morgens nur Tee. | Sabahları sadece çay içerim.
+v532 | Wir haben zusammen ein Bier getrunken. | Birlikte bir bira içtik.
+v578 | den Termin vergessen | randevuyu unutmak
+v578 | Ich habe meine Hausaufgaben vergessen. | Ödevimi unuttum.
+v578 | Vergiss nicht, die Tür abzuschließen! | Kapıyı kilitlemeyi unutma!
+v578 | Das vergesse ich nie. | Bunu asla unutmam.
+v585 | das alte Fahrrad verkaufen | eski bisikleti satmak
+v585 | Ich habe mein Auto im Internet verkauft. | Arabamı internette sattım.
+v585 | Was verkauft man auf diesem Markt? | Bu pazarda ne satılıyor?
+v585 | Er verkauft mir sein Handy für 100 Euro. | Bana telefonunu 100 avroya satıyor.
+v610 | kein Wort verstehen | tek kelime anlamamak
+v610 | Entschuldigung, das habe ich nicht verstanden. | Pardon, onu anlamadım.
+v610 | Verstehen Sie mich? | Beni anlıyor musunuz?
+v610 | Ich verstehe mich gut mit meiner Mitbewohnerin. | Ev arkadaşımla iyi anlaşıyorum.
+v634 | auf den Bus warten | otobüsü beklemek
+v634 | Ich warte schon seit zwanzig Minuten auf dich. | Yirmi dakikadır seni bekliyorum.
+v634 | Worauf wartest du noch? | Daha neyi bekliyorsun?
+v634 | Wir haben lange auf die Antwort gewartet. | Cevabı uzun süre bekledik.
+v635 | die Wäsche waschen | çamaşır yıkamak
+v635 | Ich wasche heute meine Kleidung. | Bugün kıyafetlerimi yıkıyorum.
+v635 | Hast du das Auto schon gewaschen? | Arabayı yıkadın mı?
+v635 | Kannst du bitte das Gemüse waschen? | Sebzeleri yıkayabilir misin lütfen?
+v636 | sich die Hände waschen | ellerini yıkamak
+v636 | Vor dem Essen wasche ich mir die Hände. | Yemekten önce ellerimi yıkarım.
+v636 | Das Kind wäscht sich allein. | Çocuk kendi kendine yıkanıyor.
+v636 | Ich habe mich schnell gewaschen. | Hızlıca yıkandım.
+v652 | in einer WG wohnen | öğrenci evinde oturmak
+v652 | Ich wohne seit einem Jahr in Bremen. | Bir yıldır Bremen'de oturuyorum.
+v652 | Wo wohnst du? | Nerede oturuyorsun?
+v652 | Wir wohnen im dritten Stock. | Üçüncü katta oturuyoruz.
+v660 | den Ausweis zeigen | kimliği göstermek
+v660 | Kannst du mir den Weg zeigen? | Bana yolu gösterebilir misin?
+v660 | Ich zeige dir meine Fotos. | Sana fotoğraflarımı gösteriyorum.
+v660 | Er hat mir die Stadt gezeigt. | Bana şehri gezdirdi.
+v666 | das Fenster zumachen | pencereyi kapatmak
+v666 | Mach bitte die Tür zu! | Kapıyı kapat lütfen!
+v666 | Der Laden macht um acht zu. | Dükkân sekizde kapanıyor.
+v666 | Ich habe die Augen zugemacht. | Gözlerimi kapattım.
+v077 | müde aussehen | yorgun görünmek
+v077 | Du siehst heute gut aus. | Bugün iyi görünüyorsun.
+v077 | Es sieht nach Regen aus. | Yağmur yağacak gibi görünüyor.
+v077 | Wie sieht dein neuer Freund aus? | Yeni erkek arkadaşın neye benziyor?
+v159 | den Namen buchstabieren | adı harf harf söylemek
+v159 | Können Sie das bitte buchstabieren? | Bunu harf harf söyler misiniz lütfen?
+v159 | Ich buchstabiere: A wie Anton. | Kodluyorum: Anton'un A'sı.
+v159 | Er hat seine Adresse langsam buchstabiert. | Adresini yavaşça harf harf söyledi.
+v165 | an die Familie denken | aileyi düşünmek
+v165 | Ich denke, das ist eine gute Idee. | Bence bu iyi bir fikir.
+v165 | Was denkst du darüber? | Bu konuda ne düşünüyorsun?
+v165 | Ich habe oft an dich gedacht. | Seni sık sık düşündüm.
+v173 | Darf ich? | İzin var mı?
+v173 | Darf ich hier rauchen? | Burada sigara içebilir miyim?
+v173 | Hier darf man nicht parken. | Burada park etmek yasak.
+v173 | Was darf es sein? | Ne alırsınız?
+v174 | kalt duschen | soğuk duş almak
+v174 | Ich dusche jeden Morgen. | Her sabah duş alırım.
+v174 | Nach dem Sport habe ich geduscht. | Spordan sonra duş aldım.
+v174 | Kann ich bei dir duschen? | Sende duş alabilir miyim?
+v185 | im Supermarkt einkaufen | süpermarkette alışveriş yapmak
+v185 | Ich kaufe am Samstag ein. | Cumartesi alışveriş yapıyorum.
+v185 | Hast du schon eingekauft? | Alışveriş yaptın mı?
+v185 | einkaufen gehen | alışverişe gitmek
+v250 | am Abend fernsehen | akşam televizyon izlemek
+v250 | Ich sehe nicht oft fern. | Sık televizyon izlemem.
+v250 | Die Kinder haben zu lange ferngesehen. | Çocuklar çok uzun süre televizyon izledi.
+v250 | Siehst du heute Abend fern? | Bu akşam televizyon izliyor musun?
+v259 | nach Istanbul fliegen | İstanbul'a uçmak
+v259 | Ich fliege im Sommer in die Türkei. | Yazın Türkiye'ye uçuyorum.
+v259 | Wir sind mit Turkish Airlines geflogen. | Turkish Airlines ile uçtuk.
+v259 | Wann fliegt dein Flugzeug? | Uçağın ne zaman kalkıyor?
+v273 | zusammen frühstücken | birlikte kahvaltı yapmak
+v273 | Ich frühstücke um sieben Uhr. | Saat yedide kahvaltı yaparım.
+v273 | Hast du schon gefrühstückt? | Kahvaltı yaptın mı?
+v273 | Am Sonntag frühstücken wir lange. | Pazar günü uzun kahvaltı yaparız.
+v304 | Zeit haben | vakti olmak
+v304 | Hast du morgen Zeit? | Yarın vaktin var mı?
+v304 | Ich habe Kopfschmerzen. | Başım ağrıyor.
+v304 | Wir haben keine Lust. | Canımız istemiyor.
+v313 | Wie heißt du? | Adın ne?
+v313 | Ich heiße Tuna. | Benim adım Tuna.
+v313 | Wie heißt das auf Deutsch? | Bunun Almancası ne?
+v313 | Was heißt das? | Bu ne demek?
+v323 | Musik hören | müzik dinlemek
+v323 | Ich höre gern Radio. | Radyo dinlemeyi severim.
+v323 | Hörst du mich? | Beni duyuyor musun?
+v323 | Ich habe nichts gehört. | Hiçbir şey duymadım.
+v345 | Tee kochen | çay demlemek
+v345 | Heute koche ich Linsensuppe. | Bugün mercimek çorbası pişiriyorum.
+v345 | Wer hat das Essen gekocht? | Yemeği kim pişirdi?
+v345 | Das Wasser kocht schon. | Su kaynıyor bile.
+v347 | gut Deutsch können | iyi Almanca bilmek
+v347 | Kannst du mir helfen? | Bana yardım edebilir misin?
+v347 | Ich kann heute leider nicht kommen. | Maalesef bugün gelemiyorum.
+v347 | Können Sie das wiederholen? | Bunu tekrarlayabilir misiniz?
+v352 | viel Geld kosten | çok para tutmak
+v352 | Was kostet das? | Bu ne kadar?
+v352 | Das Ticket kostet zwanzig Euro. | Bilet yirmi avro.
+v352 | Wie viel hat die Jacke gekostet? | Ceket kaça mal oldu?
+v363 | zu Fuß laufen | yürümek
+v363 | Ich laufe jeden Morgen im Park. | Her sabah parkta koşuyorum.
+v363 | Wir sind nach Hause gelaufen. | Eve yürüyerek gittik.
+v363 | Wie läuft es bei dir? | Senin işler nasıl gidiyor?
+v364 | allein leben | yalnız yaşamak
+v364 | Ich lebe seit 2025 in Deutschland. | 2025'ten beri Almanya'da yaşıyorum.
+v364 | Meine Großeltern leben noch. | Büyükannem ve büyükbabam hâlâ hayatta.
+v364 | In Bremen lebt man gut. | Bremen'de iyi yaşanır.
+v374 | im Bett liegen | yatakta yatmak
+v374 | Das Buch liegt auf dem Tisch. | Kitap masanın üstünde duruyor.
+v374 | Bremen liegt im Norden. | Bremen kuzeyde bulunuyor.
+v374 | Ich habe den ganzen Tag im Bett gelegen. | Bütün gün yatakta yattım.
+v391 | Ich möchte bitte … | … istiyorum lütfen
+v391 | Ich möchte einen Kaffee, bitte. | Bir kahve istiyorum lütfen.
+v391 | Möchtest du etwas trinken? | Bir şey içmek ister misin?
+v391 | Ich möchte einen Termin vereinbaren. | Randevu almak istiyorum.
+v392 | Ich mag … nicht. | … sevmem.
+v392 | Ich mag Schokolade. | Çikolatayı severim.
+v392 | Magst du Fußball? | Futbolu sever misin?
+v392 | Ich mag meine Kollegen sehr. | İş arkadaşlarımı çok severim.
+v393 | Ich muss los. | Gitmem lazım.
+v393 | Ich muss morgen früh aufstehen. | Yarın erken kalkmam lazım.
+v393 | Du musst das nicht machen. | Bunu yapmak zorunda değilsin.
+v393 | Wir mussten lange warten. | Uzun süre beklemek zorunda kaldık.
+v398 | den Bus nehmen | otobüse binmek
+v398 | Ich nehme die Suppe. | Ben çorbayı alıyorum.
+v398 | Nimm doch noch ein Stück Kuchen! | Bir dilim daha pasta alsana!
+v398 | Er hat ein Taxi genommen. | Taksiye bindi.
+v408 | vor dem Haus parken | evin önüne park etmek
+v408 | Wo kann ich hier parken? | Burada nereye park edebilirim?
+v408 | Ich habe in der Garage geparkt. | Garaja park ettim.
+v408 | Hier ist Parken verboten. | Burada park etmek yasak.
+v422 | mit dem Rauchen aufhören | sigarayı bırakmak
+v422 | Ich rauche nicht. | Sigara içmiyorum.
+v422 | Er raucht zu viel. | Çok fazla sigara içiyor.
+v422 | Hier darf man nicht rauchen. | Burada sigara içilmez.
+v429 | Es regnet. | Yağmur yağıyor.
+v429 | In Bremen regnet es oft. | Bremen'de sık sık yağmur yağar.
+v429 | Gestern hat es den ganzen Tag geregnet. | Dün bütün gün yağmur yağdı.
+v429 | Regnet es morgen? | Yarın yağmur yağacak mı?
+v432 | gern reisen | seyahat etmeyi sevmek
+v432 | Ich reise gern mit dem Zug. | Trenle seyahat etmeyi severim.
+v432 | Wir sind durch Italien gereist. | İtalya'yı gezdik.
+v432 | Reist du allein oder mit Freunden? | Yalnız mı seyahat ediyorsun, arkadaşlarla mı?
+v453 | gut schlafen | iyi uyumak
+v453 | Schlaf gut! | İyi uykular!
+v453 | Ich habe heute schlecht geschlafen. | Bugün kötü uyudum.
+v453 | Am Wochenende schlafe ich lange. | Hafta sonu geç saate kadar uyurum.
+v459 | Es schneit. | Kar yağıyor.
+v459 | Im Winter schneit es hier selten. | Burada kışın nadiren kar yağar.
+v459 | Letzte Nacht hat es geschneit. | Dün gece kar yağdı.
+v467 | im Meer schwimmen | denizde yüzmek
+v467 | Ich gehe am Samstag schwimmen. | Cumartesi yüzmeye gidiyorum.
+v467 | Kannst du schwimmen? | Yüzme biliyor musun?
+v467 | Wir sind im See geschwommen. | Gölde yüzdük.
+v470 | müde sein | yorgun olmak
+v470 | Ich bin Student. | Ben öğrenciyim.
+v470 | Wo bist du gerade? | Şu an neredesin?
+v470 | Ich bin gestern zu Hause gewesen. | Dün evdeydim.
+v479 | am Schreibtisch sitzen | masada oturmak
+v479 | Ich sitze im Bus. | Otobüste oturuyorum.
+v479 | Ist dieser Platz frei? Hier sitzt niemand. | Bu yer boş mu? Burada kimse oturmuyor.
+v479 | Wir haben lange im Café gesessen. | Kafede uzun süre oturduk.
+v486 | Fußball spielen | futbol oynamak
+v486 | Ich spiele seit drei Jahren Gitarre. | Üç yıldır gitar çalıyorum.
+v486 | Die Kinder spielen im Garten. | Çocuklar bahçede oynuyor.
+v486 | Wir haben gestern Karten gespielt. | Dün kâğıt oynadık.
+v498 | an der Haltestelle stehen | durakta durmak
+v498 | Was steht im Brief? | Mektupta ne yazıyor?
+v498 | Ich habe im Bus gestanden. | Otobüste ayakta durdum.
+v498 | Das Auto steht vor der Tür. | Araba kapının önünde duruyor.
+v510 | Medizin studieren | tıp okumak
+v510 | Ich möchte in Bremen Informatik studieren. | Bremen'de bilgisayar bilimi okumak istiyorum.
+v510 | Was studierst du? | Ne okuyorsun?
+v510 | Sie hat in Berlin studiert. | Berlin'de üniversite okudu.
+v515 | gern tanzen | dans etmeyi sevmek
+v515 | Tanzt du mit mir? | Benimle dans eder misin?
+v515 | Wir haben die ganze Nacht getanzt. | Bütün gece dans ettik.
+v515 | Ich gehe am Freitag tanzen. | Cuma günü dansa gidiyorum.
+v643 | müde werden | yorulmak
+v643 | Es wird langsam dunkel. | Hava yavaş yavaş kararıyor.
+v643 | Ich möchte Krankenpfleger werden. | Hemşire olmak istiyorum.
+v643 | Mein Bruder ist letzte Woche 20 geworden. | Kardeşim geçen hafta 20 yaşına girdi.
+v651 | Bescheid wissen | haberdar olmak
+v651 | Das weiß ich leider nicht. | Maalesef bunu bilmiyorum.
+v651 | Weißt du, wann der Bus kommt? | Otobüsün ne zaman geleceğini biliyor musun?
+v651 | Ich habe das nicht gewusst. | Bunu bilmiyordum.
+v653 | etwas unbedingt wollen | bir şeyi mutlaka istemek
+v653 | Was willst du heute machen? | Bugün ne yapmak istiyorsun?
+v653 | Ich will nächstes Jahr in Bremen studieren. | Seneye Bremen'de üniversite okumak istiyorum.
+v653 | Wir wollten eigentlich ins Kino gehen. | Aslında sinemaya gitmek istiyorduk.
+v657 | bar oder mit Karte zahlen | nakit ya da kartla ödemek
+v657 | Ich möchte bitte zahlen. | Hesabı ödemek istiyorum lütfen.
+v657 | Wie viel Miete zahlst du im Monat? | Ayda ne kadar kira ödüyorsun?
+v657 | Ich habe die Rechnung schon gezahlt. | Faturayı zaten ödedim.
+v012 | einen Termin absagen | bir randevuyu iptal etmek
+v012 | Ich muss leider für morgen absagen. | Maalesef yarını iptal etmem gerekiyor.
+v012 | Sie hat die Party abgesagt. | Partiyi iptal etti.
+v012 | Kann ich den Kurs noch absagen? | Kursu hâlâ iptal edebilir miyim?
+v019 | Hilfe anbieten | yardım teklif etmek
+v019 | Darf ich Ihnen einen Kaffee anbieten? | Size bir kahve ikram edebilir miyim?
+v019 | Die Firma hat mir eine Stelle angeboten. | Şirket bana bir iş teklif etti.
+v019 | Die Uni bietet viele Sprachkurse an. | Üniversite birçok dil kursu sunuyor.
+v020 | seine Meinung ändern | fikrini değiştirmek
+v020 | Kann man den Termin noch ändern? | Randevuyu hâlâ değiştirmek mümkün mü?
+v020 | Ich habe meine Adresse geändert. | Adresimi değiştirdim.
+v020 | Daran kann man nichts ändern. | Buna yapılacak bir şey yok.
+v029 | sich für einen Kurs anmelden | bir kursa kaydolmak
+v029 | Hast du dich schon für die Prüfung angemeldet? | Sınava kaydoldun mu?
+v029 | Ich muss mich in Bremen anmelden. | Bremen'de ikamet kaydı yaptırmam gerekiyor.
+v029 | Wo kann ich mich anmelden? | Nereden kaydolabilirim?
+v036 | sich einen Film ansehen | bir film izlemek
+v036 | Ich sehe mir die Wohnung morgen an. | Daireye yarın bakacağım.
+v036 | Hast du dir das Video schon angesehen? | Videoyu izledin mi?
+v036 | Das muss ich mir genauer ansehen. | Buna daha dikkatli bakmam lazım.
+v042 | auf eine E-Mail antworten | bir e-postaya cevap vermek
+v042 | Bitte antworten Sie bis Freitag. | Lütfen cumaya kadar cevap verin.
+v042 | Er hat nicht auf meine Frage geantwortet. | Soruma cevap vermedi.
+v042 | Ich antworte dir morgen. | Sana yarın cevap veririm.
+v049 | sich über den Lärm ärgern | gürültüye sinirlenmek
+v049 | Ärger dich nicht! | Sinirlenme!
+v049 | Ich habe mich über die Verspätung geärgert. | Gecikmeye sinirlendim.
+v049 | Worüber ärgerst du dich? | Neye sinirleniyorsun?
+v057 | mit dem Rauchen aufhören | sigarayı bırakmak
+v057 | Hör auf damit! | Kes şunu!
+v057 | Der Regen hat endlich aufgehört. | Yağmur sonunda durdu.
+v057 | Wann hörst du mit der Arbeit auf? | İşi ne zaman bitiriyorsun?
+v061 | auf die Kinder aufpassen | çocuklara göz kulak olmak
+v061 | Pass auf, da kommt ein Auto! | Dikkat et, araba geliyor!
+v061 | Kannst du kurz auf meine Tasche aufpassen? | Çantama biraz göz kulak olabilir misin?
+v061 | Im Unterricht muss man gut aufpassen. | Derste iyi dikkat etmek gerekir.
+v062 | das Zimmer aufräumen | odayı toplamak
+v062 | Ich muss heute meine Wohnung aufräumen. | Bugün evimi toplamam lazım.
+v062 | Hast du die Küche schon aufgeräumt? | Mutfağı topladın mı?
+v062 | Nach der Party räumen wir zusammen auf. | Partiden sonra birlikte toparlarız.
+v072 | das Licht ausmachen | ışığı kapatmak
+v072 | Mach bitte den Fernseher aus. | Lütfen televizyonu kapat.
+v072 | Wir haben einen Termin ausgemacht. | Bir randevu kararlaştırdık.
+v072 | Macht es dir etwas aus? | Senin için sorun olur mu?
+v075 | sich am Wochenende ausruhen | hafta sonu dinlenmek
+v075 | Ich muss mich kurz ausruhen. | Biraz dinlenmem lazım.
+v075 | Hast du dich gut ausgeruht? | İyi dinlendin mi?
+v075 | Ruh dich erst mal aus! | Önce bir dinlen!
+v080 | sich etwas aussuchen | kendine bir şey seçmek
+v080 | Such dir einen Platz aus! | Kendine bir yer seç!
+v080 | Ich habe mir ein neues Handy ausgesucht. | Kendime yeni bir telefon seçtim.
+v080 | Hier kann man sich die Kurse selbst aussuchen. | Burada dersleri insan kendisi seçebiliyor.
+v083 | sich beim Arzt ausziehen | doktorda soyunmak
+v083 | Bitte ziehen Sie sich aus. | Lütfen soyunun.
+v083 | Das Kind zieht sich allein aus. | Çocuk tek başına soyunuyor.
+v083 | Ich habe mich ausgezogen und bin ins Bett gegangen. | Soyundum ve yatağa girdim.
+v090 | eine Frage beantworten | bir soruyu cevaplamak
+v090 | Können Sie mir bitte eine Frage beantworten? | Bir soruma cevap verebilir misiniz lütfen?
+v090 | Ich habe alle E-Mails beantwortet. | Bütün e-postaları cevapladım.
+v090 | Diese Frage ist schwer zu beantworten. | Bu soruyu cevaplamak zor.
+v091 | sich herzlich bedanken | içtenlikle teşekkür etmek
+v091 | Ich möchte mich für Ihre Hilfe bedanken. | Yardımınız için teşekkür etmek istiyorum.
+v091 | Hast du dich bei Oma bedankt? | Babaannene teşekkür ettin mi?
+v091 | Ich bedanke mich bei dir für das Geschenk. | Hediye için sana teşekkür ederim.
+v094 | Beeil dich! | Acele et!
+v094 | Wir müssen uns beeilen, sonst verpassen wir den Zug. | Acele etmeliyiz, yoksa treni kaçıracağız.
+v094 | Ich habe mich beeilt, aber der Bus war weg. | Acele ettim ama otobüs gitmişti.
+v094 | Sie brauchen sich nicht zu beeilen. | Acele etmenize gerek yok.
+v095 | das Studium beenden | üniversiteyi bitirmek
+v095 | Ich habe meine Ausbildung letztes Jahr beendet. | Meslek eğitimimi geçen yıl bitirdim.
+v095 | Wir beenden die Besprechung um 12 Uhr. | Toplantıyı saat 12'de bitiriyoruz.
+v095 | Wann beendest du deinen Sprachkurs? | Dil kursunu ne zaman bitiriyorsun?
+v101 | die Gäste begrüßen | misafirleri karşılamak
+v101 | Ich begrüße Sie herzlich zu unserem Kurs. | Kursumuza hepiniz hoş geldiniz.
+v101 | Er hat mich freundlich begrüßt. | Beni güler yüzle selamladı.
+v101 | Ich begrüße diese Idee sehr. | Bu fikri çok olumlu karşılıyorum.
+v113 | das Handy benutzen | cep telefonunu kullanmak
+v113 | Darf ich kurz dein Handy benutzen? | Telefonunu biraz kullanabilir miyim?
+v113 | Ich benutze jeden Tag das Fahrrad. | Her gün bisiklet kullanıyorum.
+v113 | Hast du das Wörterbuch benutzt? | Sözlüğü kullandın mı?
+v124 | sich beim Vermieter beschweren | ev sahibine şikâyet etmek
+v124 | Ich möchte mich über den Lärm beschweren. | Gürültüden şikâyet etmek istiyorum.
+v124 | Die Nachbarn haben sich über uns beschwert. | Komşular bizden şikâyet etti.
+v124 | Worüber beschwerst du dich denn? | Neden şikâyet ediyorsun ki?
+v127 | eine Wohnung besichtigen | bir daireyi görmeye gitmek
+v127 | Wir haben gestern das Rathaus besichtigt. | Dün belediye binasını gezdik.
+v127 | Kann man die Kirche auch innen besichtigen? | Kilisenin içi de gezilebiliyor mu?
+v127 | Am Samstag besichtigen wir die Altstadt. | Cumartesi eski şehri geziyoruz.
+v143 | sich um eine Stelle bewerben | bir iş için başvurmak
+v143 | Ich bewerbe mich um einen Studienplatz. | Üniversitede okumak için başvuruyorum.
+v143 | Hast du dich um das Praktikum beworben? | Staja başvurdun mu?
+v143 | Er bewirbt sich um ein Stipendium. | Bir burs için başvuruyor.
+v144 | sich bei einer Firma bewerben | bir firmaya başvurmak
+v144 | Ich habe mich bei einer Bank beworben. | Bir bankaya başvurdum.
+v144 | Bei welchen Firmen bewirbst du dich? | Hangi firmalara başvuruyorsun?
+v144 | Sie bewirbt sich bei der Uni Bremen. | Bremen Üniversitesi'ne başvuruyor.
+v147 | um Hilfe bitten | yardım istemek
+v147 | Darf ich Sie um einen Gefallen bitten? | Sizden bir ricada bulunabilir miyim?
+v147 | Ich bitte um eine kurze Antwort. | Kısa bir cevap rica ediyorum.
+v147 | Er hat mich um Geld gebeten. | Benden para istedi.
+v158 | einen Flug buchen | uçuş rezervasyonu yapmak
+v158 | Ich habe ein Hotelzimmer gebucht. | Bir otel odası ayırttım.
+v158 | Hast du die Zugtickets schon gebucht? | Tren biletlerini aldın mı?
+v158 | Man kann den Kurs online buchen. | Kursa internetten kaydolunabiliyor.
+v166 | an die Prüfung denken | sınavı düşünmek
+v166 | Ich denke oft an meine Familie. | Ailemi sık sık düşünüyorum.
+v166 | Denk bitte an den Termin morgen! | Yarınki randevuyu unutma lütfen!
+v166 | Daran habe ich nicht gedacht. | Bunu düşünmemiştim.
+v168 | über ein Thema diskutieren | bir konuyu tartışmak
+v168 | Wir haben lange über Politik diskutiert. | Uzun süre siyaset tartıştık.
+v168 | Darüber müssen wir noch diskutieren. | Bunu daha konuşmamız lazım.
+v168 | Im Kurs diskutieren wir über Umweltschutz. | Kursta çevre korumayı tartışıyoruz.
+v190 | den Computer einschalten | bilgisayarı açmak
+v190 | Kannst du bitte das Licht einschalten? | Işığı açabilir misin lütfen?
+v190 | Ich habe die Heizung eingeschaltet. | Kaloriferi açtım.
+v190 | Schalt den Fernseher ein, das Spiel beginnt! | Televizyonu aç, maç başlıyor!
+v199 | ein Restaurant empfehlen | bir restoran tavsiye etmek
+v199 | Können Sie mir ein gutes Buch empfehlen? | Bana iyi bir kitap tavsiye edebilir misiniz?
+v199 | Der Arzt hat mir viel Ruhe empfohlen. | Doktor bana bol bol dinlenmemi tavsiye etti.
+v199 | Ich empfehle dir diesen Kurs. | Bu kursu sana tavsiye ederim.
+v209 | sich für die Verspätung entschuldigen | gecikme için özür dilemek
+v209 | Ich möchte mich bei Ihnen entschuldigen. | Sizden özür dilemek istiyorum.
+v209 | Hast du dich bei ihr entschuldigt? | Ondan özür diledin mi?
+v209 | Ich entschuldige mich für den Fehler. | Hata için özür dilerim.
+v222 | sich gut erholen | iyice dinlenmek
+v222 | Hast du dich im Urlaub gut erholt? | Tatilde iyi dinlendin mi?
+v222 | Ich muss mich von der Prüfung erholen. | Sınavdan sonra kendime gelmem lazım.
+v222 | Er hat sich schnell von der Grippe erholt. | Gripten çabuk iyileşti.
+v224 | sich gut an etwas erinnern | bir şeyi iyi hatırlamak
+v224 | Erinnerst du dich an mich? | Beni hatırlıyor musun?
+v224 | Ich kann mich nicht an seinen Namen erinnern. | Adını hatırlayamıyorum.
+v224 | Daran erinnere ich mich gern. | Bunu severek hatırlıyorum.
+v225 | sich leicht erkälten | kolay üşütmek
+v225 | Ich habe mich erkältet. | Üşüttüm.
+v225 | Zieh eine Jacke an, sonst erkältest du dich! | Ceket giy, yoksa üşütürsün!
+v225 | Im Winter erkälte ich mich oft. | Kışın sık sık üşütürüm.
+v227 | etwas genau erklären | bir şeyi ayrıntılı açıklamak
+v227 | Können Sie das bitte noch einmal erklären? | Bunu lütfen bir kez daha açıklayabilir misiniz?
+v227 | Die Lehrerin hat uns die Grammatik erklärt. | Öğretmen bize dilbilgisini açıkladı.
+v227 | Ich erkläre dir den Weg. | Sana yolu tarif edeyim.
+v235 | den Zug erreichen | trene yetişmek
+v235 | Wie kann ich Sie erreichen? | Size nasıl ulaşabilirim?
+v235 | Ich habe dich gestern nicht erreicht. | Dün sana ulaşamadım.
+v235 | Er hat sein Ziel erreicht. | Hedefine ulaştı.
+v248 | Was fehlt Ihnen? | Neyiniz var? (doktorda)
+v248 | Du fehlst mir sehr. | Seni çok özledim.
+v248 | Mir fehlt noch ein Formular. | Hâlâ bir formum eksik.
+v248 | Er hat gestern im Kurs gefehlt. | Dün kursa gelmedi.
+v268 | nach dem Weg fragen | yol sormak
+v268 | Ich habe nach dem Preis gefragt. | Fiyatı sordum.
+v268 | Er fragt oft nach dir. | Sık sık seni soruyor.
+v268 | Darf ich nach Ihrem Namen fragen? | Adınızı sorabilir miyim?
+v270 | sich auf das Wochenende freuen | hafta sonunu dört gözle beklemek
+v270 | Ich freue mich auf deinen Besuch. | Ziyaretini dört gözle bekliyorum.
+v270 | Ich freue mich auf Ihre Antwort. | Cevabınızı bekliyorum.
+v270 | Freust du dich schon auf die Ferien? | Tatili dört gözle bekliyor musun?
+v271 | sich über ein Geschenk freuen | bir hediyeye sevinmek
+v271 | Ich habe mich sehr über deine Nachricht gefreut. | Mesajına çok sevindim.
+v271 | Sie freut sich über die gute Note. | İyi nota seviniyor.
+v271 | Darüber freue ich mich sehr. | Buna çok seviniyorum.
+v285 | Wem gehört das? | Bu kimin?
+v285 | Das Fahrrad gehört meinem Bruder. | Bisiklet kardeşime ait.
+v285 | Gehört die Tasche dir? | Bu çanta senin mi?
+v285 | Das gehört zu meinen Aufgaben. | Bu benim görevlerim arasında.
+v293 | ein Spiel gewinnen | bir maçı kazanmak
+v293 | Werder Bremen hat gestern gewonnen. | Werder Bremen dün kazandı.
+v293 | Sie hat einen Preis gewonnen. | Bir ödül kazandı.
+v293 | Wer gewinnt, bekommt ein Eis. | Kazanan dondurma alır.
+v298 | zum Geburtstag gratulieren | doğum gününü kutlamak
+v298 | Ich gratuliere dir zur bestandenen Prüfung! | Sınavı geçtiğin için seni tebrik ederim!
+v298 | Wir haben ihr zur Hochzeit gratuliert. | Onu düğünü için tebrik ettik.
+v298 | Darf ich Ihnen gratulieren? | Sizi tebrik edebilir miyim?
+v312 | jung heiraten | genç yaşta evlenmek
+v312 | Meine Schwester heiratet im Sommer. | Kız kardeşim yazın evleniyor.
+v312 | Sie haben letztes Jahr geheiratet. | Geçen yıl evlendiler.
+v312 | Willst du mich heiraten? | Benimle evlenir misin?
+v316 | bei den Hausaufgaben helfen | ödevlerde yardım etmek
+v316 | Kannst du mir beim Umzug helfen? | Taşınırken bana yardım edebilir misin?
+v316 | Ich helfe dir gern. | Sana seve seve yardım ederim.
+v316 | Er hat mir bei der Bewerbung geholfen. | Başvuruda bana yardım etti.
+v321 | auf gutes Wetter hoffen | iyi hava ummak
+v321 | Wir hoffen auf eine schnelle Antwort. | Hızlı bir cevap umuyoruz.
+v321 | Ich hoffe, es geht dir gut. | Umarım iyisindir.
+v321 | Ich hoffe auf deine Hilfe. | Yardımını umuyorum.

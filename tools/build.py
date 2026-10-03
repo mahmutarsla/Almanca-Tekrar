@@ -638,6 +638,23 @@ if os.path.exists(lp):
         lesen[cur].append({"s": satz, "r": rf == "r"})
 dump("lesen.js", "LESEN", lesen)
 
+# Kalıplar: yazma (tür / konu) ve fiil kalıpları
+redemittel, kaliplar = {}, {}
+for fn, ziel, gecerli in (("redemittel.txt", redemittel, None), ("kaliplar.txt", kaliplar, vid_set)):
+    fp = P("quellen", fn)
+    if not os.path.exists(fp):
+        continue
+    for i, line in enumerate(open(fp, encoding="utf-8"), 1):
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        parts = [x.strip() for x in line.split("|")]
+        if len(parts) != 3 or not all(parts) or (gecerli is not None and parts[0] not in gecerli):
+            errors.append(f"{fn}:{i}: 'anahtar | Almanca | Türkçe' olmalı")
+            continue
+        ziel.setdefault(parts[0], []).append({"de": parts[1], "tr": parts[2]})
+dump("kaliplar.js", "KALIPLAR", {"yazma": redemittel, "fiil": kaliplar})
+
 # Serbest yazma görevleri
 aufgaben = []
 ap = P("quellen", "aufgaben.txt")
