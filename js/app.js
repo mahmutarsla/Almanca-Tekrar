@@ -362,9 +362,18 @@
 
   // bölümün sırasındaki yeni öğe (bugünkü sınır dolmadıysa)
   const paketFertig = pid => !!(S.pakete[pid] && (S.pakete[pid].fertig || S.karten[pid + ':pak']));
-  const neuGesamt = () => S.einst.neuGesamt || 30;
-  const neuHeute = () => { const d = tag(); return Object.values(S.items).filter(it => it.seit && tag(it.seit) === d && !it.bekannt).length; };
+  // günlük net sınırlar: yeni kelime (isim + diğer) ve yeni fiil ayrı (bilinen sayılanlar hariç)
+  const neuGrenze = k => k === 'v' ? (S.einst.neuVerben || 5) : (S.einst.neuWoerter || 25);
+  const neuHeute = k => { const d = tag(); return Object.entries(S.items).filter(([id, it]) => it.seit && tag(it.seit) === d && !it.bekannt && (k === 'v') === (kind(id) === 'v') && kind(id) !== 'p').length; };
   function naechsteNeu() {
+    const r = naechsteNeuRoh();
+    if (!r) return null;
+    const id = r.neu || r.pretest || r.stammNeu, extra = session.extra ? 5 : 0;
+    const k = r.paket ? 'n' : kind(id), voll = r.paket ? neuHeute('n') > neuGrenze('n') - 8 : neuHeute(k) >= neuGrenze(k) + extra;
+    if (voll) { if (!session.vollGemeldet) { session.vollGemeldet = true; session.vollBis = session.q + 3; } return null; }
+    return r;
+  }
+  function naechsteNeuRoh() {
     const m = session.modus, hm = heuteM(m);
     // yarıda bırakılmış yeni paket önce bitirilir (sınırdan düşmez)
     if (m === 'paket') { const offen = PAKETE.find(p => S.pakete[p.id] && !paketFertig(p.id)); if (offen) return { paket: offen.id }; }
@@ -378,9 +387,6 @@
     const max = Math.round((neuMax(m) + (session.extra ? (m === 'paket' ? 1 : 5) : 0)) * faktor);
     if (hm.neu >= max) return null;
     // bütün bölümler için ortak sınır: bugün yeni öğrenilen (bilinmeyen) kelime sayısı
-    const bugunNeu = neuHeute();
-    if (bugunNeu >= neuGesamt() + (session.extra ? 10 : 0) || (m === 'paket' && bugunNeu > neuGesamt() - 5)) { session.gesamtVoll = true; return null; }
-    session.gesamtVoll = false;
     const frei = order => { const x = order.find(x => !S.items[x.id]); return x && x.id; };
     if (m === 'blitz') { if (hm.bekannt >= Math.round(30 * (1 - yuk))) return null; const id = frei(BLITZ_ORDER); return id && { pretest: id }; }
     if (m === 'thema') { const id = themaOrder().find(x => !S.items[x]); return id && { pretest: id }; }
@@ -402,6 +408,13 @@
     // 1) oturum içi yanlışların tekrarı (4 soru sonra)
     const rq = session.requeue.findIndex(r => r.nach <= session.q && S.karten[r.uid] && FILTER[m](r.uid));
     if (rq >= 0) { const r = session.requeue.splice(rq, 1)[0]; return { uid: r.uid, requeue: r }; }
+    // 1b) her ~6 soruda bir: bugün öğrendiğin bir kelimeyi Türkçeden Almancaya yazdır (kelime başına günde en çok 2)
+    if (session.q > 0 && session.q % 6 === 5 && session.letzteHeute !== session.q && m !== 'paket') {
+      session.letzteHeute = session.q;
+      const d = tag(), gf = session.heuteGefragt = session.heuteGefragt || {};
+      const c = Object.entries(S.items).filter(([id, it]) => it.seit && tag(it.seit) === d && !it.bekannt && !it.a1 && kind(id) !== 'p' && gueltig(id + ':x') && (gf[id] || 0) < 2 && id !== session.sonItem && now() - it.seit > 120000).map(([id]) => id);
+      if (c.length) { const id = pick(c); gf[id] = (gf[id] || 0) + 1; return { uid: id + ':' + ({ n: 'wort', w: 'prod', v: 'abr' })[kind(id)], heute: true }; }
+    }
 
     const filter = FILTER[m];
     let due = faellig(filter);
@@ -475,7 +488,7 @@
     if (sel.paket) return paketNeu(sel.paket);
     const uid = sel.uid, id = itemOf(uid), typ = typOf(uid), card = S.karten[uid];
     const lv = level(card);
-    const base = { uid, id, typ, lv, start: now(), requeue: sel.requeue };
+    const base = { uid, id, typ, lv, start: now(), requeue: sel.requeue, heute: sel.heute };
     if (typ === 'pak') return Object.assign(base, paketWiederholung(id));
     if (typ === 'erk' || typ === 'bed') return Object.assign(base, frageErkennen(id));
     if (typ === 'art') return Object.assign(base, frageArtikel(byId[id]));
@@ -1432,7 +1445,7 @@
     if (session.hinweis && session.q < (session.hinweisBis || 0)) msgs.push(session.hinweis);
     if (session.stau) msgs.push(`${session.stau} tekrar birikmiş: ${STAU}'in altına inene kadar yeni kelime yok. Önce hâlâ hatırladıkların geliyor.`);
     if (session.schreibStau) msgs.push(`Karışık'ta ${session.schreibStau} yazma tekrarı bekliyor: azalana kadar burada yeni kelime yok. Tanıdığını yazamıyorsan öğrenmiş sayılmazsın.`);
-    if (session.gesamtVoll) msgs.push(`Bugünkü yeni kelime sınırı doldu (${neuGesamt()}). Şimdi tekrarlar: yeni kelimeyi ilk gün 3 kez görmen, ertesi gün tekrar etmen, 88 yenisinden daha çok işe yarar.`);
+    if (session.vollBis > session.q) msgs.push('Bugünkü yeni sınırına ulaştın. Bundan sonra tekrarlar geliyor.');
     if (session.willkommen && session.q < 8) msgs.push(session.willkommen);
     h.hidden = !msgs.length;
     h.innerHTML = msgs.map(m => `<div>${esc(m)}</div>`).join('');
@@ -1486,6 +1499,7 @@
 
   function render(q) {
     const info = [];
+    if (q.heute) info.push('<span class="chip vurgu">bugün öğrendin: Almancası?</span>');
     if (q.requeue) info.push(`<span class="chip">${q.requeue.neu ? 'az önce öğrendin: hatırla' : 'tekrar: az önce yanlış'}</span>`);
     // öğenin adı burada gösterilmez: TR→DE sorularında cevabı ele verir
     if (q.input && q.typ !== 'einf') { const c = S.karten[q.uid]; if (c && c.S) info.push(`<span class="soluk">ipucu seviyesi ${q.lv}/3</span>`); }
@@ -1932,7 +1946,8 @@
     const min = bitti ? `✓ plan tamam${ghToken() ? ' · Claude\'a "sonuçlarıma bak" de' : ordner ? ' · log\'u pushla, Claude\'a "sonuçlarıma bak" de' : ''}` : sayildi ? '✓ gün sayıldı' : `gün için ${MIN_TAG - d.n} cevap daha`;
     // log klasörü bağlı değilse cevaplar dosyaya yazılmaz, Claude göremez
     const logUyari = ordner || ghToken() ? '' : `<button class="plan-log" type="button" data-git="ayar" title="Cevaplar log/log.csv'ye yazılmıyor">log kaydedilmiyor: Ayarlar'dan bağla</button>`;
-    $('#plan').innerHTML = `<span class="plan-et">bugün</span>${chips}<span class="plan-min ${sayildi ? 'ok' : ''}" title="En az ${MIN_TAG} sayılan cevap: gün seriye sayılır">${min}</span>${logUyari}`;
+    const neuInfo = `<span class="plan-et" title="Günlük yeni sınırı (Ayarlar'dan)">yeni: kelime ${neuHeute('n')}/${neuGrenze('n')} · fiil ${neuHeute('v')}/${neuGrenze('v')}</span>`;
+    $('#plan').innerHTML = `<span class="plan-et">bugün</span>${chips}${neuInfo}<span class="plan-min ${sayildi ? 'ok' : ''}" title="En az ${MIN_TAG} sayılan cevap: gün seriye sayılır">${min}</span>${logUyari}`;
   }
 
   function itemStatus(id) {
@@ -2026,7 +2041,7 @@
       Object.keys(MODI).map(m => `<tr><td>${esc(MODI[m].ad)}${MODI[m].grup ? ` <span class="soluk">· ${esc(MODI[m].grup)}</span>` : ''}</td>
         <td class="num"><input type="number" min="5" max="300" id="z-${m}" value="${ziel(m)}" aria-label="${esc(MODI[m].ad)} hedef"></td>
         <td>${m === 'zayif' ? '—' : `<input type="number" min="0" max="50" id="n-${m}" value="${neuMax(m)}" aria-label="${esc(MODI[m].ad)} yeni"> <span class="soluk">${esc(MODI[m].neuTr)}</span>`}</td></tr>`).join('') + '</tbody>';
-    $('#a-modi').innerHTML += `<tbody><tr><td><b>Tüm bölümler</b></td><td></td><td><input type="number" min="5" max="100" id="n-gesamt" value="${neuGesamt()}" aria-label="Günde en çok yeni kelime"> <span class="soluk">günde en çok yeni kelime (bütün bölümler toplamı; bugün ${neuHeute()})</span></td></tr></tbody>`;
+    $('#a-modi').innerHTML += `<tbody><tr><td><b>Tüm bölümler</b></td><td></td><td><input type="number" min="0" max="100" id="n-gw" value="${neuGrenze('n')}" aria-label="Günde yeni kelime"> <span class="soluk">yeni kelime / gün (bugün ${neuHeute('n')})</span><br><input type="number" min="0" max="30" id="n-gv" value="${neuGrenze('v')}" aria-label="Günde yeni fiil"> <span class="soluk">yeni fiil / gün (bugün ${neuHeute('v')})</span></td></tr></tbody>`;
     $('#a-ret').value = String(S.einst.ret);
   }
 
@@ -2181,7 +2196,8 @@
     const id = e.target.id || '';
     const m = id.slice(2);
     if (id.startsWith('z-') && MODI[m]) S.einst.modi[m].ziel = Math.max(5, Math.round(+e.target.value) || MODI[m].ziel);
-    else if (id === 'n-gesamt') S.einst.neuGesamt = Math.max(5, Math.round(+e.target.value) || 30);
+    else if (id === 'n-gw') S.einst.neuWoerter = Math.max(0, Math.round(+e.target.value));
+    else if (id === 'n-gv') S.einst.neuVerben = Math.max(0, Math.round(+e.target.value));
     else if (id.startsWith('n-') && MODI[m]) S.einst.modi[m].neu = Math.max(0, Math.round(+e.target.value) || 0);
     else if (id === 'a-ret') S.einst.ret = +e.target.value || 0.9;
     else return;
