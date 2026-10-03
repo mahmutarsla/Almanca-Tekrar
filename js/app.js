@@ -2126,22 +2126,43 @@
     catch (e) { ghDurum('Anahtar çalışmadı: ' + e.message); }
   });
   $('#gh-simdi').addEventListener('click', () => ghSync(true));
-  // A1 + modal fiiller: bilinen say; isimde yalnız artikel (2 haftaya yayılı), fiilde çekim (1 aya yayılı)
+  // A1 + modal fiiller: bilinen say (öğrencinin bilmediği dört kelime hariç). İsimlerde yalnız artikel sorulur,
+  // ama bariz artikeller atlanır: -e / -ung / -heit / -keit / -ion … kuralına uyan die'ler, -in ile biten kadın isimleri,
+  // erkek meslek ve aile isimleri (der), das Bier / das Wasser. Fiilde çekim (1 aya yayılı). Tekrar basılırsa düzeltir.
+  const A1_HARIC = new Set(['Bahnsteig', 'Gleis', 'Postleitzahl', 'Stadtplan']);
+  const A1_DER_PERSON = new Set(['Arzt', 'Chef', 'Kellner', 'Kollege', 'Lehrer', 'Schüler', 'Student', 'Verkäufer', 'Mann', 'Herr', 'Junge', 'Vater', 'Bruder', 'Sohn', 'Opa', 'Freund', 'Nachbar', 'Türke']);
+  function artikelBariz(n) {
+    if (n.regel && n.regel[1] === n.art && ['e', 'ung', 'heit', 'keit', 'schaft', 'ion', 'tät', 'ei'].includes(n.regel[0])) return true;
+    if (n.art === 'die' && /in$/.test(n.lemma) && NL.some(m => m.art === 'der' && m.lemma + 'in' === n.lemma.replace(/ä/, 'a'))) return true;
+    if (n.art === 'die' && /in$/.test(n.lemma) && NL.some(m => m.art === 'der' && n.lemma.startsWith(m.lemma.replace(/e$/, '')))) return true;
+    if (n.art === 'der' && A1_DER_PERSON.has(n.lemma)) return true;
+    return n.art === 'das' && /^(Bier|Wasser)$/.test(n.lemma);
+  }
   $('#a1-bekannt').addEventListener('click', () => {
     const t = now();
     const modal = /^(können|müssen|dürfen|sollen|wollen|mögen|möchten)$/;
     const ids = NL.filter(n => n.tier === 1).map(n => n.id).concat(VERBEN.filter(v => v.tier === 1 || modal.test(v.inf)).map(v => v.id), WOERTER.filter(w => w.tier === 1).map(w => w.id));
-    let n = 0, art = 0, stamm = 0;
+    let n = 0, art = 0, bariz = 0, stamm = 0;
     ids.forEach((id, i) => {
-      if (S.items[id]) { S.items[id].a1 = true; return; }
-      S.items[id] = { seit: t, bekannt: true, a1: true, quelle: 'a1' };
-      n++;
-      if (kind(id) === 'n' && !byId[id].plOnly) { neueKarte(id + ':art', t + (art++ % 14) * DAY + (i % 24) * 3600000); }
-      if (kind(id) === 'v' && vById[id].frmDrill) { neueKarte(id + ':stamm', t + (stamm++ % 30) * DAY + (i % 24) * 3600000); }
+      const k = kind(id);
+      if (k === 'n' && A1_HARIC.has(byId[id].lemma)) {
+        // daha önce yanlışlıkla bilinen sayıldıysa geri al: normal yeni kelime olarak gelsin
+        if (S.items[id] && S.items[id].quelle === 'a1') { delete S.items[id]; Object.keys(S.karten).filter(u => itemOf(u) === id).forEach(u => delete S.karten[u]); }
+        return;
+      }
+      if (S.items[id] && S.items[id].quelle !== 'a1') { S.items[id].a1 = true; return; }
+      if (!S.items[id]) { S.items[id] = { seit: t, bekannt: true, a1: true, quelle: 'a1' }; n++; }
+      if (k === 'n' && !byId[id].plOnly) {
+        const c = S.karten[id + ':art'];
+        if (artikelBariz(byId[id])) { bariz++; if (c && !c.S) delete S.karten[id + ':art']; }
+        else if (!c) { neueKarte(id + ':art', t + (art % 14) * DAY + (i % 24) * 3600000); art++; }
+        else art++;
+      }
+      if (k === 'v' && vById[id].frmDrill && !S.karten[id + ':stamm']) { neueKarte(id + ':stamm', t + (stamm++ % 30) * DAY + (i % 24) * 3600000); }
     });
     save();
-    logEintrag({ modus: 'a1', id: '', item: '', frage: '', antwort: '', ergebnis: 'bekannt', loesung: '', notiz: `${n} öğe bilinen sayıldı` });
-    $('#a1-durum').textContent = `${n} öğe bilinen sayıldı (${art} artikel, ${stamm} fiil çekimi yayıldı).`;
+    logEintrag({ modus: 'a1', id: '', item: '', frage: '', antwort: '', ergebnis: 'bekannt', loesung: '', notiz: `${n} öğe bilinen sayıldı; ${art} artikel sorulacak, ${bariz} bariz artikel atlandı` });
+    $('#a1-durum').textContent = `${n} öğe bilinen sayıldı. ${art} ismin artikeli 2 haftaya yayılarak sorulacak, ${bariz} bariz artikel atlandı. Bahnsteig, Gleis, Postleitzahl, Stadtplan normal öğrenilecek.`;
   });
   $('#gh-yukle').addEventListener('click', ghLaden);
   $('#log-indir').addEventListener('click', () => herunterladen('log.csv', '﻿' + CSV_KOPF + '\n' + S.log.map(csvZeile).join('\n') + '\n', 'text/csv;charset=utf-8'));
