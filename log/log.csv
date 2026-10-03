@@ -514,3 +514,13 @@
 2026-10-03 12:00:31;erk;w0165:erk;feucht;feucht;kaygan;falsch;nemli;sek:12 | ipucu:0
 2026-10-03 12:00:35;erk;n0179:erk;der Blitz;der Blitz;şimşek;richtig;şimşek;sek:4 | ipucu:0
 2026-10-03 12:00:38;pretest;w0115:erk;durchschnittlich;durchschnittlich;ortalama;bekannt;ortalama;sek:3
+2026-10-03 12:00:44;art;n1376:art;die Wettervorhersage;Wettervorhersage;die;fast;die Wettervorhersage;sek:4 | ipucu:0
+2026-10-03 12:00:52;pretest;v121:bed;sich beschäftigen mit;sich beschäftigen mit;uğraşmak, ilgilenmek;neu;(bir şeyle) uğraşmak, ilgilenmek;yavaş
+2026-10-03 12:01:00;erk;w0165:erk;feucht;feucht;kaygan;falsch;nemli;sek:4 | ipucu:0
+2026-10-03 12:01:03;art;n1336:art;das Visum;Visum;das;richtig;das Visum;sek:3 | ipucu:0
+2026-10-03 12:01:07;bed;v121:bed;sich beschäftigen mit;sich beschäftigen mit;uğraşmak, ilgilenmek;richtig;(bir şeyle) uğraşmak, ilgilenmek;sek:4 | ipucu:0
+2026-10-03 12:01:12;pretest;n1088:erk;die Situation;die Situation;durum;bekannt;durum;sek:5
+2026-10-03 12:01:15;art;n0520:art;der Hausmeister;Hausmeister;der;richtig;der Hausmeister;sek:1 | ipucu:0
+2026-10-03 12:02:44;paket;p02:0;die Wohnung;Wohnungssuche;Wohnung;richtig;Wohnung;
+2026-10-03 12:02:49;paket;p02:1;die Anzeige;Wohnungssuche;Angebote;falsch;Anzeige;farklı
+2026-10-03 12:03:00;paket;p02:2;das Zimmer;Wohnungssuche;Zimmer;richtig;Zimmer;
