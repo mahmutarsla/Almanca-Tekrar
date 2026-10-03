@@ -637,3 +637,19 @@
 2026-10-03 12:54:35;art;n1240:art;das Training;Training;die;falsch;das Training;artikel: die → das | sek:1 | ipucu:0
 2026-10-03 12:54:41;erk;w0344:erk;nass;ıslak;feucht;falsch;nass;sek:4 | ipucu:0
 2026-10-03 12:54:46;erk;n1390:erk;die Wohnung;daire, ev;die Wohnung;richtig;die Wohnung;sek:4 | ipucu:0
+2026-10-03 12:54:50;art;n0313:art;die Erlaubnis;Erlaubnis;die;richtig;die Erlaubnis;sek:3 | ipucu:0
+2026-10-03 12:54:53;art;n0207:art;die Burg;Burg;die;richtig;die Burg;sek:2 | ipucu:0
+2026-10-03 12:54:54;art;n1240:art;das Training;Training;das;richtig;das Training;sek:1 | ipucu:0
+2026-10-03 12:55:00;erk;w0344:erk;nass;ıslak;nass;richtig;nass;sek:5 | ipucu:0
+2026-10-03 12:55:07;erk;n0432:erk;das Gedicht;şiir;der Gedicht;falsch;das Gedicht;sek:5 | ipucu:0
+2026-10-03 12:55:13;erk;n0433:erk;die Geduld;sabır;die Geduld;richtig;die Geduld;sek:5 | ipucu:0
+2026-10-03 12:55:18;erk;n0051:erk;die Anzeige;ilan;die Anzeige;richtig;die Anzeige;sek:5 | ipucu:0
+2026-10-03 12:55:22;erk;n1424:erk;das Zimmer;oda;das Zimmer;richtig;das Zimmer;sek:3 | ipucu:0
+2026-10-03 12:55:24;art;n1390:art;die Wohnung;Wohnung;die;richtig;die Wohnung;sek:1 | ipucu:0
+2026-10-03 12:55:27;erk;n0432:erk;das Gedicht;das Gedicht;şiir;richtig;şiir;sek:3 | ipucu:0
+2026-10-03 12:55:31;erk;n0111:erk;der Balkon;balkon;der Balkon;richtig;der Balkon;sek:4 | ipucu:0
+2026-10-03 12:55:33;art;n0051:art;die Anzeige;Anzeige;die;richtig;die Anzeige;sek:1 | ipucu:0
+2026-10-03 12:55:39;erk;n0790:erk;die Miete;die Miete;kira;richtig;kira;sek:5 | ipucu:0
+2026-10-03 12:55:41;art;n1424:art;das Zimmer;Zimmer;das;richtig;das Zimmer;sek:1 | ipucu:0
+2026-10-03 12:55:45;erk;n1316:erk;der Vermieter;ev sahibi (kiraya veren);der Vermieter;richtig;der Vermieter;sek:4 | ipucu:0
+2026-10-03 12:55:48;art;n0111:art;der Balkon;Balkon;der;richtig;der Balkon;sek:1 | ipucu:0
