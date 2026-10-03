@@ -479,3 +479,17 @@
 2026-10-03 11:57:22;erk;n0055:erk;die Apotheke;die Apotheke;eczane;richtig;eczane;sek:3 | ipucu:0
 2026-10-03 11:57:26;erk;n1179:erk;die Tablette;tablet (ilaç);das Tablette;falsch;die Tablette;sek:3 | ipucu:0
 2026-10-03 11:57:30;erk;w0103:erk;doppelt;doppelt;çift, iki kat;richtig;çift, iki kat;sek:3 | ipucu:0
+2026-10-03 11:57:33;pretest;n1336:erk;das Visum;das Visum;vize;bekannt;vize;sek:4
+2026-10-03 11:57:37;art;n1320:art;die Versichertenkarte;Versichertenkarte;die;richtig;die Versichertenkarte;sek:2 | ipucu:0
+2026-10-03 11:57:41;art;n0994:art;das Rezept;Rezept;das;richtig;das Rezept;sek:3 | ipucu:0
+2026-10-03 11:57:45;erk;n1179:erk;die Tablette;tablet (ilaç);die Tablette;richtig;die Tablette;sek:3 | ipucu:0
+2026-10-03 11:57:49;pretest;n0520:erk;der Hausmeister;der Hausmeister;kapıcı, apartman görevlisi;bekannt;kapıcı, apartman görevlisi;sek:4
+2026-10-03 11:57:52;art;n0055:art;die Apotheke;Apotheke;die;richtig;die Apotheke;sek:1 | ipucu:0
+2026-10-03 11:57:54;art;n1179:art;die Tablette;Tablette;die;richtig;die Tablette;sek:1 | ipucu:0
+2026-10-03 11:57:56;art;n0432:art;das Gedicht;Gedicht;das;richtig;das Gedicht;sek:1 | ipucu:0
+2026-10-03 11:58:02;pretest;w0114:erk;durcheinander;durcheinander;aynı şekilde, keza;neu;karmakarışık;
+2026-10-03 11:58:16;bed;v620:bed;verzichten auf;verzichten auf;vazgeçmek;richtig;(bir şeyden) vazgeçmek;sek:3 | ipucu:0
+2026-10-03 11:58:21;bed;v673:bed;zweifeln an;zweifeln an;şüphe etmek;richtig;(bir şeyden) şüphe etmek;sek:4 | ipucu:0
+2026-10-03 11:58:25;erk;w0114:erk;durcheinander;durcheinander;karmakarışık;richtig;karmakarışık;sek:4 | ipucu:0
+2026-10-03 11:58:30;pretest;n0524:erk;die Heimat;die Heimat;memleket, vatan;bekannt;memleket, vatan;sek:4
+2026-10-03 11:58:34;art;n0433:art;die Geduld;Geduld;der;falsch;die Geduld;artikel: der → die | sek:2 | ipucu:0
