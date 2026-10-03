@@ -894,7 +894,7 @@
     WOERTER.forEach(w => _lemmaIdx.set(w.de, w.id));
     return _lemmaIdx;
   }
-  const gutBekannt = id => !!S.items[id] && unitsOf(id).some(u => (S.karten[id + ':' + u] || {}).S >= 10);
+  const gutBekannt = id => !!S.items[id] && (!!S.items[id].a1 || unitsOf(id).some(u => (S.karten[id + ':' + u] || {}).S >= 10));
   function hilfeHTML(de, zielId) {
     const g = GLOSSEN[de];
     if (!g) return '';
@@ -2126,6 +2126,23 @@
     catch (e) { ghDurum('Anahtar çalışmadı: ' + e.message); }
   });
   $('#gh-simdi').addEventListener('click', () => ghSync(true));
+  // A1 + modal fiiller: bilinen say; isimde yalnız artikel (2 haftaya yayılı), fiilde çekim (1 aya yayılı)
+  $('#a1-bekannt').addEventListener('click', () => {
+    const t = now();
+    const modal = /^(können|müssen|dürfen|sollen|wollen|mögen|möchten)$/;
+    const ids = NL.filter(n => n.tier === 1).map(n => n.id).concat(VERBEN.filter(v => v.tier === 1 || modal.test(v.inf)).map(v => v.id), WOERTER.filter(w => w.tier === 1).map(w => w.id));
+    let n = 0, art = 0, stamm = 0;
+    ids.forEach((id, i) => {
+      if (S.items[id]) { S.items[id].a1 = true; return; }
+      S.items[id] = { seit: t, bekannt: true, a1: true, quelle: 'a1' };
+      n++;
+      if (kind(id) === 'n' && !byId[id].plOnly) { neueKarte(id + ':art', t + (art++ % 14) * DAY + (i % 24) * 3600000); }
+      if (kind(id) === 'v' && vById[id].frmDrill) { neueKarte(id + ':stamm', t + (stamm++ % 30) * DAY + (i % 24) * 3600000); }
+    });
+    save();
+    logEintrag({ modus: 'a1', id: '', item: '', frage: '', antwort: '', ergebnis: 'bekannt', loesung: '', notiz: `${n} öğe bilinen sayıldı` });
+    $('#a1-durum').textContent = `${n} öğe bilinen sayıldı (${art} artikel, ${stamm} fiil çekimi yayıldı).`;
+  });
   $('#gh-yukle').addEventListener('click', ghLaden);
   $('#log-indir').addEventListener('click', () => herunterladen('log.csv', '﻿' + CSV_KOPF + '\n' + S.log.map(csvZeile).join('\n') + '\n', 'text/csv;charset=utf-8'));
   $('#yedek-indir').addEventListener('click', () => herunterladen('zustand.json', JSON.stringify(S), 'application/json'));
