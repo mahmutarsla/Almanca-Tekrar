@@ -532,3 +532,10 @@
 2026-10-03 12:03:38;paket;p02:8;unterschreiben;Wohnungssuche;verschreibe;falsch;unterschreibe;farklı
 2026-10-03 12:03:46;paket;p02:9;einziehen;Wohnungssuche;einzeiehen;fast;einziehen;yazım
 2026-10-03 12:03:53;paket;p02:pak;Wohnungssuche;yeni paket;;fast;;puan:72
+2026-10-03 12:04:21;yeni;v125;sich beschweren bei;;;neu;;
+2026-10-03 12:04:58;satz;v673:satz;zweifeln an;Haklı olduğunuzdan şüphem yok.;Ich zweifele an ihren nicht.;falsch;Ich zweifle nicht daran, dass Sie recht haben.;yardımcı fiil | sek:31 | ipucu:0
+2026-10-03 12:05:13;abr;v620:abr;verzichten auf;(bir şeyden) vazgeçmek;vershreieb;falsch;verzichten auf (auf + Akk);edat, artikel/çekim | sek:13 | ipucu:0
+2026-10-03 12:06:06;nsatz;n0682:nsatz;die Kritik;Bu film çok iyi eleştiriler aldı.;Der Film hat viele gute Kritik bekommen.;falsch;Dieser Film hat sehr gute Kritiken bekommen.;artikel/çekim | sek:44 | ipucu:0
+2026-10-03 12:06:24;dikkat;;;;;cok-yanlis;;son8 yanlış:5 hızlı/boş:0
+2026-10-03 12:06:24;abr;v111:abr;sich bemühen um;(bir şey için) çabalamak;sich bewerben um a;falsch;sich bemühen um (um + Akk);farklı | sek:13 | ipucu:0
+2026-10-03 12:06:58;nsatz;n0660:nsatz;die Kosten;Yolculuğun masraflarını firmadan alıyorum.;;falsch;Die Kosten für die Reise bekomme ich von der Firma.;bilmiyorum | sek:29 | ipucu:0
