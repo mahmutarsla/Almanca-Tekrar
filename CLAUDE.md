@@ -70,6 +70,8 @@
 5c. Son günlerde öğrendiği kelime ve fiillerden (log'daki `pretest`/`yeni`/`erk` satırları) 10–20 yeni çeviri cümlesi yaz,
    `quellen/saetze.txt`'e (fiil) ya da `quellen/wort_saetze.txt`'e (isim / kelime) ekle: her cümlede bir fiil + en az bir yeni isim ya da kelime; fiil kimliği cümlenin ana fiili.
    Dönüşlü fiil cümleleri `quellen/saetze_refl.txt`'e.
+   Her yeni cümle için `quellen/glossen.txt`'e de satır ekle: `Almanca cümle | die Regierung = hükümet; …` (hedef kelime ve A1 kelimeleri hariç;
+   tam cümle sorusunda öğrencinin bilmediği kelimeler bu sözlükten gösterilir).
 6. Paketler bittiyse ya da "yeni paket yaz" denirse `quellen/pakete.txt`'nin sonuna yeni paket ekle: bir sahne (konu değil:
    "postanede", "ev arkadaşıyla" gibi), 10 kelime (Goethe B1 listesinden; zayıf / takılan kelimelere öncelik), ~90–110 kelimelik
    B1 metni (Präsens / Perfekt, yan cümle), Türkçesi. Biçim dosyanın başında.

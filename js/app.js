@@ -42,7 +42,8 @@
   const THEMA_VON = {};   // öğe → konular (çeldiriciler aynı konudan)
   THEMEN.forEach(t => t.items.forEach(id => (THEMA_VON[id] = THEMA_VON[id] || []).push(t.id)));
   const SAETZE_REFL = window.SAETZE_REFL || {};
-  const NSAETZE = window.NSAETZE || {};            // isim / diğer kelime → çeviri cümleleri   // dönüşlü fiil → çeviri cümleleri
+  const NSAETZE = window.NSAETZE || {};
+  const GLOSSEN = window.GLOSSEN || {};            // Almanca cümle → "die Regierung = hükümet; …"            // isim / diğer kelime → çeviri cümleleri   // dönüşlü fiil → çeviri cümleleri
   const AUFGABEN = window.AUFGABEN || [];         // serbest yazma görevleri   // fiil → [{de, tr}] Goethe örnekleri, elle çevrildi
 
   // Öğe türü: v fiil · n isim (n…/x…) · w diğer kelime · p paket
@@ -883,6 +884,27 @@
     if (i < 0) return null;
     return { text: toks.map((t, j) => j === i ? t.replace(clean(t), '_____') : t).join(' '), answer: clean(toks[i]), n: 1 };
   }
+  // tam cümle sorusunda: cümlede geçen, iyi bilmediğin kelimeler (hedef kelime hariç) Almanca = Türkçe
+  let _lemmaIdx = null;
+  function lemmaIdx() {
+    if (_lemmaIdx) return _lemmaIdx;
+    _lemmaIdx = new Map();
+    NL.forEach(n => { _lemmaIdx.set((n.plOnly ? 'die ' : n.art + ' ') + n.lemma, n.id); });
+    VERBEN.forEach(v => { _lemmaIdx.set(v.inf, v.id); _lemmaIdx.set(v.anz.replace('sich(D)', 'sich'), v.id); });
+    WOERTER.forEach(w => _lemmaIdx.set(w.de, w.id));
+    return _lemmaIdx;
+  }
+  const gutBekannt = id => !!S.items[id] && unitsOf(id).some(u => (S.karten[id + ':' + u] || {}).S >= 10);
+  function hilfeHTML(de, zielId) {
+    const g = GLOSSEN[de];
+    if (!g) return '';
+    const teile = g.split(/\s*;\s*/).map(x => x.split(/\s*=\s*/)).filter(x => x.length === 2).filter(([d]) => {
+      const id = lemmaIdx().get(d.trim());
+      return id !== zielId && !(id && gutBekannt(id));
+    });
+    if (!teile.length) return '';
+    return `<div class="chips"><span class="soluk">Yardım:</span>${teile.map(([d, t]) => `<span class="chip">${deHTML(d)} = ${esc(t)}</span>`).join('')}</div>`;
+  }
   const STUFE_TR = ['aşama 1/3 · boşluk (ipuçlu)', 'aşama 2/3 · boşluk', 'aşama 3/3 · tam cümle'];
   function frageLueckeStufe(id, x, lv, hinweisHTML, modus) {
     const l = wortLuecke(id, x.de);
@@ -912,7 +934,7 @@
       : lv === 1 && v.obj.length ? `<span class="chip">${esc(G.objMuster(v))}</span>` : '';
     return {
       html: `<div class="tur"><span>${lv >= 2 ? STUFE_TR[2] : 'cümle'} · Almancaya çevir</span></div>
-        <div class="soru">${esc(x.tr)}</div>
+        <div class="soru">${esc(x.tr)}</div>${hilfeHTML(x.de, v.id)}
         ${ipucu ? `<div class="chips">${ipucu}</div>` : ''}`,
       ziel: x.de, input: true, placeholder: 'Almanca cümle', kontext: x.de, modus: 'satz',
       pruef: inp => G.pruefen(inp, x.de),
@@ -940,7 +962,7 @@
       : lv === 1 && art ? `<span class="chip">${esc(kurzTr(trOf(id)))}: <span class="art art-${art.startsWith('die (') ? 'pl' : art}">${esc(art)}</span> …</span>` : '';
     return {
       html: `<div class="tur"><span>${esc(STUFE_TR[2])} · Almancaya çevir</span></div>
-        <div class="soru">${esc(x.tr)}</div>
+        <div class="soru">${esc(x.tr)}</div>${hilfeHTML(x.de, id)}
         ${ipucu ? `<div class="chips">${ipucu}</div>` : ''}`,
       ziel: x.de, input: true, placeholder: 'Almanca cümle', kontext: x.de, modus: 'nsatz',
       pruef: inp => G.pruefen(inp, x.de),

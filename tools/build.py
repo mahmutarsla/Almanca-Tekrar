@@ -603,6 +603,20 @@ if os.path.exists(np_):
         nsaetze.setdefault(parts[0], []).append({"de": parts[2], "tr": parts[3]})
 dump("nsaetze.js", "NSAETZE", nsaetze)
 
+# Cümle sözlüğü: Almanca cümle | "die Regierung = hükümet; …" (tam cümle sorusunda bilinmeyen kelimelere yardım)
+glossen = {}
+gp = P("quellen", "glossen.txt")
+if os.path.exists(gp):
+    for line in open(gp, encoding="utf-8"):
+        line = line.rstrip("\n")
+        if not line.strip() or line.startswith("#") or "|" not in line:
+            continue
+        de, g = line.rsplit("|", 1)
+        de, g = de.strip(), g.strip()
+        if g and g != "-":
+            glossen[de] = g
+dump("glossen.js", "GLOSSEN", glossen)
+
 # Serbest yazma görevleri
 aufgaben = []
 ap = P("quellen", "aufgaben.txt")
