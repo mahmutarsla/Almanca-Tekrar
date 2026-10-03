@@ -539,3 +539,13 @@
 2026-10-03 12:06:24;dikkat;;;;;cok-yanlis;;son8 yanlış:5 hızlı/boş:0
 2026-10-03 12:06:24;abr;v111:abr;sich bemühen um;(bir şey için) çabalamak;sich bewerben um a;falsch;sich bemühen um (um + Akk);farklı | sek:13 | ipucu:0
 2026-10-03 12:06:58;nsatz;n0660:nsatz;die Kosten;Yolculuğun masraflarını firmadan alıyorum.;;falsch;Die Kosten für die Reise bekomme ich von der Firma.;bilmiyorum | sek:29 | ipucu:0
+2026-10-03 12:07:14;satz;v673:satz;zweifeln an;Sabrından şüphe etmiyorum.;;falsch;Ich zweifle nicht an deiner Geduld.;bilmiyorum | sek:15 | ipucu:0
+2026-10-03 12:07:19;abr;v620:abr;verzichten auf;(bir şeyden) vazgeçmek;;falsch;verzichten auf (auf + Akk);bilmiyorum | sek:4 | ipucu:0
+2026-10-03 12:07:49;bed;v626:bed;vorschlagen;vorschlagen;önermek;fast;(birine bir şeyi) önermek;yavaş | sek:7 | ipucu:0
+2026-10-03 12:07:53;bed;v605:bed;verschreiben;verschreiben;yazmak;richtig;(birine ilaç) yazmak;sek:3 | ipucu:0
+2026-10-03 12:08:00;bed;v272:bed;frieren;frieren;dolu yağmak;falsch;üşümek;sek:6 | ipucu:0
+2026-10-03 12:08:08;bed;v447:bed;scheinen;scheinen;kar yağmak;falsch;(güneş) parlamak;sek:7 | ipucu:0
+2026-10-03 12:08:12;bed;v272:bed;frieren;frieren;üşümek;richtig;üşümek;sek:3 | ipucu:0
+2026-10-03 12:08:16;bed;v447:bed;scheinen;scheinen;parlamak;richtig;(güneş) parlamak;sek:4 | ipucu:0
+2026-10-03 12:08:21;bed;v626:bed;vorschlagen;vorschlagen;önermek;richtig;(birine bir şeyi) önermek;sek:4 | ipucu:0
+2026-10-03 12:08:35;yeni;v643:stamm;werden;düzensiz fiil;;neu;wurde, ist geworden;
