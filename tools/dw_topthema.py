@@ -1,5 +1,5 @@
 # DW Top-Thema (B1) metinlerini çeker: RSS'teki son dersler → tam metin + DW sözlüğü.
-# İzinle (ticari olmayan kullanım), kaynak her metnin altında. Kullanım: python3 tools/dw_topthema.py
+# Kaynak her metnin altında. Kullanım: python3 tools/dw_topthema.py
 import json, re, html, os, urllib.request, urllib.parse
 UA = {'User-Agent': 'Mozilla/5.0'}
 get = lambda u: urllib.request.urlopen(urllib.request.Request(urllib.parse.quote(u, safe=':/?=&%'), headers=UA), timeout=30).read().decode('utf-8', 'ignore')

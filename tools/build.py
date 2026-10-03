@@ -637,10 +637,10 @@ if os.path.exists(lp):
             continue
         lesen[cur].append({"s": satz, "r": rf == "r"})
 dump("lesen.js", "LESEN", lesen)
-# Okuma metinleri: Klexikon (CC BY-SA 4.0), tools ile çekildi
+# Okuma metinleri: Klexikon, tools ile çekildi
 lt = P("quellen", "lesetexte.json")
 dump("lesetexte.js", "LESETEXTE", json.load(open(lt, encoding="utf-8")) if os.path.exists(lt) else [])
-# DW Top-Thema (izinle, ticari olmayan kullanım): tools/dw_topthema.py
+# DW Top-Thema: tools/dw_topthema.py
 lt2 = P("quellen", "lesetexte_dw.json")
 dw = json.load(open(lt2, encoding="utf-8")) if os.path.exists(lt2) else []
 for x in dw:
@@ -648,7 +648,7 @@ for x in dw:
     if ps and ps[0].strip() == x["titel"].strip():
         x["text"] = "\n".join(ps[1:])
 dump("lesetexte_dw.js", "LESETEXTE_DW", dw)
-# Goethe Zertifikat B1 Übungssatz, Lesen Teil 1–5 (izinle): orijinal sorular + çözümler
+# Goethe Zertifikat B1 Übungssatz, Lesen Teil 1–5: orijinal sorular + çözümler
 gl = P("quellen", "goethe_lesen.json")
 dump("goethe_lesen.js", "GOETHE_LESEN", json.load(open(gl, encoding="utf-8")) if os.path.exists(gl) else [])
 

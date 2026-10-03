@@ -1,4 +1,4 @@
-# Okuma metinlerini Klexikon'dan (CC BY-SA 4.0) çeker: python3 tools/klexikon.py  (kx.py'deki konu → başlık listesi aşağıda)
+# Okuma metinlerini Klexikon'dan çeker: python3 tools/klexikon.py  (kx.py'deki konu → başlık listesi aşağıda)
 import json, urllib.request, urllib.parse
 T = {
  'wetter': ['Wetter','Regen','Gewitter','Schnee','Klima','Wind'],

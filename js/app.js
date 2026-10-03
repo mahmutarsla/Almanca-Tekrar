@@ -1370,10 +1370,10 @@
     return m;
   }
   const wortSuchen = t => { const c = t.replace(/^[„“"(]+|[.,!?;:“"”)…]+$/g, ''); const m = formIdx(); return m.get(c) || m.get(c.charAt(0).toLowerCase() + c.slice(1)) || null; };
-  // Okuma metinleri Klexikon'dan (sade Almanca ansiklopedi, CC BY-SA 4.0); seçili konu ve son öğrendiğin kelimelerin konusu önce
-  const LT = (window.LESETEXTE || []).map((t, i) => Object.assign({ id: 'k' + i, quelle: 'Klexikon', lizenz: 'CC BY-SA 4.0, kısaltıldı' }, t))
-    .concat((window.LESETEXTE_DW || []).map(t => Object.assign({}, t, { id: 'dw' + t.id, lizenz: 'izinle, ticari olmayan kullanım' })))
-    .concat((window.GOETHE_LESEN || []).map(t => Object.assign({}, t, { lizenz: 'izinle, ticari olmayan kullanım' })));
+  // Okuma metinleri Klexikon, DW ve Goethe'den; seçili konu ve son öğrendiğin kelimelerin konusu önce
+  const LT = (window.LESETEXTE || []).map((t, i) => Object.assign({ id: 'k' + i, quelle: 'Klexikon' }, t))
+    .concat((window.LESETEXTE_DW || []).map(t => Object.assign({}, t, { id: 'dw' + t.id })))
+    .concat((window.GOETHE_LESEN || []));
   const GL_OPT = { rf: () => [['richtig', 'Richtig'], ['falsch', 'Falsch']], jn: () => [['ja', 'Ja'], ['nein', 'Nein']],
     abc: a => a.o.map((o, i) => ['abc'[i], 'abc'[i] + ') ' + o]), zu: () => 'abcdefghi0'.split('').map(x => [x, x]) };
   function lesenWaehlen(anders) {
@@ -1399,7 +1399,7 @@
       <div class="paket-text" id="lesen-text">${text}</div>
       <div id="lesen-wort" class="kural" hidden></div>
       ${gl}${L.aufgaben ? goetheAufgabenHTML(L) : ''}
-      <div class="soluk">Kaynak: ${L.url ? `<a href="${esc(L.url)}" target="_blank" rel="noopener">${esc(L.quelle)}: ${esc(L.titel)}</a>` : esc(L.quelle) + ', ' + esc(L.reihe)} (${esc(L.lizenz)})</div>
+      <div class="soluk">Kaynak: ${L.url ? `<a href="${esc(L.url)}" target="_blank" rel="noopener">${esc(L.quelle)}: ${esc(L.titel)}</a>` : esc(L.quelle) + ', ' + esc(L.reihe)}</div>
       <div class="sira">${L.aufgaben ? '' : '<button class="btn ana" data-act="lesen-fertig" type="button">Okudum</button>'}<button class="btn${L.aufgaben && Object.keys(session.lesenCevap).length === L.aufgaben.length ? ' ana' : ''}" data-act="lesen-baska" type="button">Başka metin</button></div>`;
     tastatur();
   }
