@@ -493,3 +493,14 @@
 2026-10-03 11:58:25;erk;w0114:erk;durcheinander;durcheinander;karmakarışık;richtig;karmakarışık;sek:4 | ipucu:0
 2026-10-03 11:58:30;pretest;n0524:erk;die Heimat;die Heimat;memleket, vatan;bekannt;memleket, vatan;sek:4
 2026-10-03 11:58:34;art;n0433:art;die Geduld;Geduld;der;falsch;die Geduld;artikel: der → die | sek:2 | ipucu:0
+2026-10-03 11:58:40;bed;v111:bed;sich bemühen um;sich bemühen um;çabalamak;fast;(bir şey için) çabalamak;yavaş | sek:6 | ipucu:0
+2026-10-03 11:58:44;art;n0957:art;der Rat;Rat;der;richtig;der Rat;sek:2 | ipucu:0
+2026-10-03 11:58:57;pretest;w0138:erk;entlang;entlang;boyunca;neu;boyunca (die Straße entlang);yavaş
+2026-10-03 11:59:05;art;n0926:art;die Praxis;Praxis;der;falsch;die Praxis;artikel: der → die | sek:2 | ipucu:0
+2026-10-03 11:59:08;art;n0433:art;die Geduld;Geduld;der;falsch;die Geduld;artikel: der → die | sek:2 | ipucu:0
+2026-10-03 11:59:12;erk;w0138:erk;entlang;entlang;boyunca;richtig;boyunca (die Straße entlang);sek:3 | ipucu:0
+2026-10-03 11:59:18;pretest;v117:bed;berichten über;berichten über;haber vermek, anlatmak;neu;(bir şey hakkında) haber vermek, anlatmak;yavaş
+2026-10-03 11:59:26;art;n0972:art;die Regel;Regel;die;richtig;die Regel;sek:2 | ipucu:0
+2026-10-03 11:59:29;art;n0926:art;die Praxis;Praxis;der;falsch;die Praxis;artikel: der → die | sek:2 | ipucu:0
+2026-10-03 11:59:31;art;n0433:art;die Geduld;Geduld;die;richtig;die Geduld;sek:2 | ipucu:0
+2026-10-03 11:59:37;bed;v117:bed;berichten über;berichten über;haber vermek, anlatmak;richtig;(bir şey hakkında) haber vermek, anlatmak;sek:5 | ipucu:0
