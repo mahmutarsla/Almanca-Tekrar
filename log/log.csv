@@ -576,3 +576,7 @@
 2026-10-03 12:13:28;frm;v673:frm;zweifeln an;zweifeln an — er / sie Perfekt;hat geweifelnt;fast;hat gezweifelt;farklı | öneri:falsch | sek:13 | ipucu:0
 2026-10-03 12:17:14;bed;v169:bed;donnern;donnern;dolu yağmak;falsch;gök gürlemek;sek:225 | ipucu:0
 2026-10-03 12:25:57;yeni;n1082;der Service;;;bekannt;;
+2026-10-03 12:26:54;nsatz;n0682:nsatz;die Kritik;Hükümetin politikasına çok eleştiri var.;;falsch;Es gibt viel Kritik an der Politik der Regierung.;bilmiyorum | sek:55 | ipucu:0
+2026-10-03 12:27:08;abr;v111:abr;sich bemühen um;(bir şey için) çabalamak;sich bemühen um;fast;sich bemühen um (um + Akk);hâl yazılmadı (um + Akk) | sek:6 | ipucu:0
+2026-10-03 12:27:13;nsatz;n0660:nsatz;die Kosten;Yolculuğun masraflarını firmadan alıyorum.;;falsch;Die Kosten für die Reise bekomme ich von der Firma.;bilmiyorum | sek:4 | ipucu:0
+2026-10-03 12:27:39;abr;v620:abr;verzichten auf;(bir şeyden) vazgeçmek;verzcihten auf a;fast;verzichten auf (auf + Akk);artikel/çekim | öneri:falsch | sek:19 | ipucu:0
