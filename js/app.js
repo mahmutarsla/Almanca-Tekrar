@@ -1370,32 +1370,30 @@
     return m;
   }
   const wortSuchen = t => { const c = t.replace(/^[„“"(]+|[.,!?;:“"”)…]+$/g, ''); const m = formIdx(); return m.get(c) || m.get(c.charAt(0).toLowerCase() + c.slice(1)) || null; };
-  function lesenText(pid) {
-    const p = pById[pid];
-    return p.teile.map(x => typeof x === 'string' ? x : p.luecken[x].form).join('');
-  }
+  // Okuma metinleri Klexikon'dan (sade Almanca ansiklopedi, CC BY-SA 4.0); seçili konu ve son öğrendiğin kelimelerin konusu önce
+  const LT = (window.LESETEXTE || []).map((t, i) => Object.assign({ id: 'k' + i }, t));
   function lesenWaehlen(anders) {
     const t = now(), g = S.gelesen || {};
-    const c = PAKETE.filter(p => LESEN[p.id] && (!g[p.id] || t - g[p.id] > 14 * DAY) && !(anders && session.lesen && session.lesen.pid === p.id));
-    const pool = c.length ? c : PAKETE.filter(p => LESEN[p.id]);
-    const puan = p => p.items.reduce((a, id) => a + (S.items[id] ? (t - S.items[id].seit < 3 * DAY ? 3 : 1) : 0), 0) + Math.random();
-    return pool.sort((a, b) => puan(b) - puan(a))[0];
+    const son = {};
+    Object.entries(S.items).forEach(([id, it]) => { if (t - (it.seit || 0) < 3 * DAY) (THEMA_VON[id] || []).forEach(th => { son[th] = (son[th] || 0) + 1; }); });
+    const c = LT.filter(x => !g[x.id] && !(anders && session.lesen && session.lesen.id === x.id));
+    const pool = c.length ? c : LT;
+    const puan = x => (x.thema === S.einst.thema ? 5 : 0) + (son[x.thema] || 0) + Math.random() * 2;
+    return pool.slice().sort((a, b) => puan(b) - puan(a))[0];
   }
   function lesenRender(anders) {
-    if (!session.lesen || anders) { const p = lesenWaehlen(anders); session.lesen = p && { pid: p.id, cevap: {} }; }
+    if (!session.lesen || anders) session.lesen = lesenWaehlen(anders);
     aktuell = { typ: 'lesen' };
     $('#durum-satiri').innerHTML = '';
-    if (!session.lesen) { kart.innerHTML = '<div class="bos">Okuma metni yok.</div>'; return; }
-    const L = session.lesen, p = pById[L.pid], fr = LESEN[L.pid];
-    const text = esc(lesenText(L.pid)).split(/(\s+)/).map(t => /\S/.test(t) ? `<span class="lw">${t}</span>` : t).join('');
-    kart.innerHTML = `<div class="tur"><span class="yeni">okuma</span><span>${esc(p.titel)} · bilmediğin kelimeye bas</span></div>
+    const L = session.lesen;
+    if (!L) { kart.innerHTML = '<div class="bos">Okuma metni yok.</div>'; return; }
+    const text = L.text.split('\n').map(par => '<p>' + esc(par).split(/(\s+)/).map(w => /\S/.test(w) ? `<span class="lw">${w}</span>` : w).join('') + '</p>').join('');
+    kart.innerHTML = `<div class="tur"><span class="yeni">okuma</span><span>${esc(thById[L.thema] ? thById[L.thema].tr : L.thema)} · bilmediğin kelimeye bas</span></div>
+      <div class="soru">${esc(L.titel)}</div>
       <div class="paket-text" id="lesen-text">${text}</div>
       <div id="lesen-wort" class="kural" hidden></div>
-      <div class="soru" style="font-size:1.05rem">Richtig oder falsch?</div>
-      ${fr.map((q, i) => { const a = L.cevap[i]; return `<div class="satir" style="grid-template-columns:1fr auto"><span>${i + 1}. ${esc(q.s)}${a != null ? ` <b class="${a === q.r ? 'e-richtig' : 'e-falsch'}">${a === q.r ? '✓' : '✗ ' + (q.r ? 'richtig' : 'falsch')}</b>` : ''}</span>
-        <span class="sira" style="margin:0">${a == null ? `<button class="btn mini" data-rf="${i}:1" type="button">richtig</button><button class="btn mini" data-rf="${i}:0" type="button">falsch</button>` : ''}</span></div>`; }).join('')}
-      ${Object.keys(L.cevap).length === fr.length ? `<div class="sonuc richtig"><div class="baslik">${fr.filter((q, i) => L.cevap[i] === q.r).length} / ${fr.length} doğru</div><details class="ceviri"><summary>Türkçesi</summary><p>${esc(p.tr)}</p></details></div>` : ''}
-      <div class="sira"><button class="btn" data-act="lesen-baska" type="button">Başka metin</button></div>`;
+      <div class="soluk">Kaynak: <a href="${esc(L.url)}" target="_blank" rel="noopener">Klexikon: ${esc(L.titel)}</a> (CC BY-SA 4.0, kısaltıldı)</div>
+      <div class="sira"><button class="btn ana" data-act="lesen-fertig" type="button">Okudum</button><button class="btn" data-act="lesen-baska" type="button">Başka metin</button></div>`;
     tastatur();
   }
   function lesenWort(el) {
@@ -1405,7 +1403,7 @@
     box.hidden = false;
     if (!id) { box.innerHTML = `<b>${esc(el.textContent.replace(/[.,!?;:“"”„]/g, ''))}</b>: listede yok`; return; }
     box.innerHTML = `${deItemHTML(id)} = <b>${esc(trOf(id))}</b>${S.items[id] ? '' : ` <button class="btn mini" data-lernen="${id}" type="button">Öğrenmeye ekle</button>`}`;
-    logEintrag({ modus: 'lesen-wort', id, item: label(id), frage: session.lesen.pid, antwort: '', ergebnis: S.items[id] ? 'bekannt' : 'neu', loesung: trOf(id), notiz: '' });
+    logEintrag({ modus: 'lesen-wort', id, item: label(id), frage: session.lesen.titel, antwort: '', ergebnis: S.items[id] ? 'bekannt' : 'neu', loesung: trOf(id), notiz: '' });
   }
   function lesenAntwort(i, r) {
     const L = session.lesen, q = LESEN[L.pid][i];
@@ -1974,7 +1972,7 @@
     const chips = PLAN.map((m, i) => {
       const b = heuteM(m), z = ziel(m), ok = b.n >= z;
       return `<button class="plan-chip ${ok ? 'ok' : ''} ${session.modus === m ? 'aktif' : ''}" data-modus="${m}" type="button"><span class="no">${ok ? '✓' : i + 1}</span>${esc(MODI[m].ad)} <span class="sayi">${b.n}/${z}</span></button>`;
-    }).join('') + (yazmaFaellig() || heuteM('yazma').n ? `<button class="plan-chip ${heuteM('yazma').n ? 'ok' : ''} ${session.modus === 'yazma' ? 'aktif' : ''}" data-modus="yazma" type="button"><span class="no">${heuteM('yazma').n ? '✓' : 4}</span>Yazma <span class="sayi">metin</span></button>` : '') + `<button class="plan-chip ${heuteM('lesen').n ? 'ok' : ''} ${session.modus === 'lesen' ? 'aktif' : ''}" data-modus="lesen" type="button"><span class="no">${heuteM('lesen').n ? '✓' : '+'}</span>Okuma <span class="sayi">metin</span></button>`;
+    }).join('') + (yazmaFaellig() || heuteM('yazma').n ? `<button class="plan-chip ${heuteM('yazma').n ? 'ok' : ''} ${session.modus === 'yazma' ? 'aktif' : ''}" data-modus="yazma" type="button"><span class="no">${heuteM('yazma').n ? '✓' : 4}</span>Yazma <span class="sayi">metin</span></button>` : '') + `<button class="plan-chip ${heuteM('lesen').n ? 'ok' : ''} ${session.modus === 'lesen' ? 'aktif' : ''}" data-modus="lesen" type="button"><span class="no">${heuteM('lesen').n ? '✓' : '+'}</span>Okuma <span class="sayi">metin</span></button>` + `<button class="plan-chip ${session.modus === 'kalip' ? 'aktif' : ''}" data-modus="kalip" type="button"><span class="no">+</span>Kalıplar</button>`;
     const sayildi = d.n >= MIN_TAG;
     const bitti = PLAN.every(m => heuteM(m).n >= ziel(m));
     const min = bitti ? `✓ plan tamam${ghToken() ? ' · Claude\'a "sonuçlarıma bak" de' : ordner ? ' · log\'u pushla, Claude\'a "sonuçlarıma bak" de' : ''}` : sayildi ? '✓ gün sayıldı' : `gün için ${MIN_TAG - d.n} cevap daha`;
@@ -2130,6 +2128,7 @@
     else if (act === 'paket-weiter') paketWeiter();
     else if (act === 'metin-gonder') metinGonder();
     else if (act === 'lesen-baska') lesenRender(true);
+    else if (act === 'lesen-fertig') { const L = session.lesen; (S.gelesen = S.gelesen || {})[L.id] = now(); heuteM('lesen').n++; logEintrag({ modus: 'lesen', id: L.id, item: L.titel, frage: L.thema, antwort: '', ergebnis: 'gelesen', loesung: '', notiz: L.url }); save(); renderPlan(); lesenRender(true); flash('Okundu ✓ Sıradaki metin.'); }
     else if (act === 'kalip-weiter') { session.kalipSeite = (session.kalipSeite || 0) + 1; kalipRender(); window.scrollTo(0, 0); }
     else if (act === 'kalip-zurueck') { session.kalipSeite = Math.max(0, (session.kalipSeite || 0) - 1); kalipRender(); window.scrollTo(0, 0); }
     else if (act === 'kalip-panel') { const pn = $('#kalip-panel'); pn.hidden = !pn.hidden; }

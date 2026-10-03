@@ -637,6 +637,9 @@ if os.path.exists(lp):
             continue
         lesen[cur].append({"s": satz, "r": rf == "r"})
 dump("lesen.js", "LESEN", lesen)
+# Okuma metinleri: Klexikon (CC BY-SA 4.0), tools ile çekildi
+lt = P("quellen", "lesetexte.json")
+dump("lesetexte.js", "LESETEXTE", json.load(open(lt, encoding="utf-8")) if os.path.exists(lt) else [])
 
 # Kalıplar: yazma (tür / konu) ve fiil kalıpları
 redemittel, kaliplar = {}, {}

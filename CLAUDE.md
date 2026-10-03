@@ -38,7 +38,7 @@
   - Cümle aşamaları (`satz`, `nsatz`): ipucu seviyesi 0 → ipuçlu boşluk, 1 → boşluk, 2+ → tam cümle çevirisi
   - Serbest yazma: `text` (id `a07` = `quellen/aufgaben.txt` görevi; antwort = metin, paragraflar ` ¶ `; notiz: kelime sayısı, zorunlu kelimeler)
   - Kalıplar: `quellen/kaliplar.txt` (fiil | Almanca | Türkçe; "Kalıplar" bölümü, ★ ile yazma ekranına), `quellen/redemittel.txt` (yazma türü / konu kalıpları)
-  - Okuma: `lesen` (id `p03:2` = p03 metninin 3. doğru/yanlış sorusu), `lesen-wort` (metinde anlamına baktığı kelime: bilmediği kelimeler!)
+  - Okuma: `lesen` (Klexikon metni okundu; metinler `quellen/lesetexte.json`, `python3 tools/klexikon.py` ile çekilir — okuma metnini Claude yazmaz), `lesen-wort` (metinde anlamına baktığı kelime: bilmediği kelimeler!)
   - Paket: `paket` (id `p01:3` = 1. paketin 4. boşluğu; paket sonu `p01:pak`, notiz `puan:%`, `önce okudu`)
   - Durum: `dikkat` (ergebnis `bas-gec` = çok hızlı/boş, `cok-yanlis`), `leech` (ergebnis `takiliyor`: üç ayrı günde yanlış → kanca yaz)
   - ergebnis: `richtig`, `fast`, `falsch`, `neu`, `bekannt`
