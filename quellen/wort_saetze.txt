@@ -2496,3 +2496,9 @@ w0590 | auf | Deine Brille liegt auf dem Schreibtisch. | Gözlüğün çalışma
 w0590 | auf | Die Kinder spielen unten auf der Straße. | Çocuklar aşağıda sokakta oynuyor.
 w0591 | aus | Frau Müller geht jeden Morgen um 8 Uhr aus dem Haus. | Bayan Müller her sabah saat 8'de evden çıkıyor.
 w0591 | aus | Frau Özgen kommt aus der Türkei. | Bayan Özgen Türkiye'den geliyor.
+n1320 | die Versichertenkarte | Bitte bringen Sie zum Termin Ihre Versichertenkarte mit. | Lütfen randevuya sigorta kartınızı getirin.
+n0994 | das Rezept | Mit diesem Rezept bekommen Sie die Tabletten in jeder Apotheke. | Bu reçeteyle hapları her eczaneden alabilirsiniz.
+n1336 | das Visum | Für das Studium in Deutschland brauche ich ein Visum. | Almanya'da okumak için vizeye ihtiyacım var.
+w0165 | feucht | Die Wäsche ist noch feucht, sie muss noch trocknen. | Çamaşırlar hâlâ nemli, biraz daha kuruması lazım.
+w0138 | entlang | Gehen Sie die Straße entlang bis zur Apotheke. | Eczaneye kadar cadde boyunca yürüyün.
+w0103 | doppelt | In der Stadt ist die Miete fast doppelt so hoch wie auf dem Land. | Şehirde kira, kırsaldakinin neredeyse iki katı.

@@ -61,3 +61,13 @@ Son incelenen log satırı en alttaki notta yazar.
   artikel: der Nebel (3 kez das), der Schnee/Regen/Himmel, die Wolke/Luft, das Eis/Frühjahr/Training, die Kritik.
 - Eklendi: 13 çeviri + 4 dönüşlü cümle (yeni öğrenilen kelimelerle), der Nebel için kanca.
 - Son incelenen log satırı: 2026-10-02 12:34:09.
+
+## 2026-10-03 — log incelemesi (2026-10-02 12:34 – 2026-10-03 12:13) + yapı değişiklikleri
+
+- Hatalar: zweifeln an (daran, dass), verzichten auf, sich bemühen um ↔ bewerben, die Kritiken, Partizip'ler (geworden, getroffen + hat,
+  brachte/gebracht, blieb), p02 (Anzeige, unterschreiben). Artikel: die Praxis (6× der), der Rat (4× das), der Regen, die Regel, die Geduld.
+- Kendine not: 4 satırın hepsinde cömert (fast yerine falsch olmalıydı).
+- Yapı: Hızlı tur'da fiil yok; Fiiller günlük plana girdi; çekim sorusu bütün fiillere (er-Präsens, Präteritum, Perfekt; modalda Perfekt yok);
+  cümle aşamaları (ipuçlu boşluk → boşluk → tam cümle); Türkçe → Almanca seçmeli %75; yazma her gün; yazma birimi tanımadan bir gün sonra açılır.
+- Eklendi: 6 fiil + 6 kelime cümlesi, die Praxis ve der Rat için kanca.
+- Son incelenen log satırı: 2026-10-03 12:13:28.

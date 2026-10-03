@@ -862,3 +862,9 @@ v673 | Viele Leute zweifeln an der Wettervorhersage für das Wochenende. | Birç
 v371 | Im Unterricht haben wir ein Gedicht über den Regen gelesen. | Derste yağmur hakkında bir şiir okuduk.
 v354 | Der Lehrer hat mein Referat kritisiert, aber die Kritik war fair. | Öğretmen sunumumu eleştirdi ama eleştiri adildi.
 v524 | Bei Nebel trainieren wir lieber in der Halle. | Sisli havada salonda antrenman yapmayı tercih ediyoruz.
+v605 | Der Arzt hat mir gegen das Fieber Tabletten verschrieben. | Doktor bana ateş için hap yazdı.
+v564 | Die Ärztin hat mich in ihrer Praxis gründlich untersucht. | Doktor beni muayenehanesinde iyice muayene etti.
+v117 | Im Seminar hat sie über ihre Heimat berichtet. | Seminerde memleketini anlattı.
+v626 | Der Hausmeister hat vorgeschlagen, dass wir den Keller zusammen aufräumen. | Kapıcı bodrumu birlikte toparlamamızı önerdi.
+v620 | Wegen der Schmerzen verzichte ich heute auf das Training. | Ağrılar yüzünden bugün antrenmandan vazgeçiyorum.
+v673 | Niemand zweifelt an ihrem Talent für die Kunst. | Kimse onun sanat yeteneğinden şüphe etmiyor.
