@@ -735,3 +735,13 @@
 2026-10-04 11:54:43;paket;p03:8;die Behörde;Anmeldung beim Bürgeramt;Behörde;fast;Behörden;biçim: metinde Behörden
 2026-10-04 11:54:54;paket;p03:9;beantragen;Anmeldung beim Bürgeramt;beantragen;richtig;beantragen;
 2026-10-04 11:54:54;paket;p03:pak;Anmeldung beim Bürgeramt;yeni paket;;fast;;puan:78
+2026-10-04 11:55:12;wort;n0025:wort;das Amt;resmî daire;das Amt;richtig;das Amt;sek:11 | ipucu:0
+2026-10-04 11:55:20;yeni;v420;sich rasieren;;;bekannt;;
+2026-10-04 11:56:10;satz;v125:satz;sich beschweren bei;(birine) şikâyette bulunmak | biz | ev sahibi (kiraya veren) | şimdiki / geniş zaman · Präsens, evet/hayır sorusu, olumsuz;Beschweren wir uns nicht bei unserem Vermieter?;richtig;Beschweren wir uns nicht bei unserem Vermieter?;sek:48 | ipucu:0
+2026-10-04 11:56:16;bed;v177:bed;sich eignen für;sich eignen für;kalmak;falsch;(bir şeye) uygun olmak;sek:3 | ipucu:0
+2026-10-04 11:56:29;luecke;v646:satz;widersprechen;Da muss ich Ihnen _____.;wiedersagen;fast;widersprechen;farklı | öneri:falsch | sek:11 | ipucu:0
+2026-10-04 11:56:58;satz;v626:satz;vorschlagen;Der Hausmeister hat _____, dass wir den Keller zusammen aufräumen.;vorgeschlagt;falsch;vorgeschlagen;artikel/çekim | sek:25 | ipucu:0
+2026-10-04 11:57:05;yeni;v592;sich verletzen;;;neu;;
+2026-10-04 11:57:10;abr;v149:abr;blitzen;şimşek çakmak;blitzen;richtig;blitzen;sek:4 | ipucu:0
+2026-10-04 11:57:47;wort;n0037:wort;die Anmeldung;"kayıt; resepsiyon";anmeldung;fast;die Anmeldung;artikel eksik: isimle birlikte yaz | öneri:falsch | sek:24 | ipucu:0
+2026-10-04 11:57:54;bed;v177:bed;sich eignen für;sich eignen für;uygun olmak;fast;(bir şeye) uygun olmak;yavaş | sek:7 | ipucu:0
