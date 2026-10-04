@@ -725,3 +725,13 @@
 2026-10-04 11:51:30;wort;n0869:wort;die Operation;ameliyat;die Operation;richtig;die Operation;sek:5 | ipucu:0
 2026-10-04 11:51:33;art;n1048:art;der Schnee;Schnee;der;richtig;der Schnee;sek:2 | ipucu:0
 2026-10-04 11:53:12;paket;p03:0;die Anmeldung;Anmeldung beim Bürgeramt;anmeldung;fast;Anmeldung;groß/klein: isim büyük harfle
+2026-10-04 11:53:20;paket;p03:1;das Amt;Anmeldung beim Bürgeramt;Ämt;fast;Amt;umlaut/ß
+2026-10-04 11:53:31;paket;p03:2;das Formular;Anmeldung beim Bürgeramt;Formular;richtig;Formular;
+2026-10-04 11:53:38;paket;p03:3;ausfüllen;Anmeldung beim Bürgeramt;ausfüllen;richtig;ausfüllen;
+2026-10-04 11:53:41;paket;p03:4;der Pass;Anmeldung beim Bürgeramt;Pass;richtig;Pass;
+2026-10-04 11:53:46;paket;p03:5;die Unterschrift;Anmeldung beim Bürgeramt;Unterschrift;richtig;Unterschrift;
+2026-10-04 11:53:54;paket;p03:6;die Bestätigung;Anmeldung beim Bürgeramt;Bestätigung;richtig;Bestätigung;
+2026-10-04 11:54:32;paket;p03:7;der Wohnsitz;Anmeldung beim Bürgeramt;wohnung;falsch;Wohnsitz;artikel/çekim
+2026-10-04 11:54:43;paket;p03:8;die Behörde;Anmeldung beim Bürgeramt;Behörde;fast;Behörden;biçim: metinde Behörden
+2026-10-04 11:54:54;paket;p03:9;beantragen;Anmeldung beim Bürgeramt;beantragen;richtig;beantragen;
+2026-10-04 11:54:54;paket;p03:pak;Anmeldung beim Bürgeramt;yeni paket;;fast;;puan:78
