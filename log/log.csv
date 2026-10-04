@@ -711,3 +711,17 @@
 2026-10-04 11:50:11;art;n0028:art;die Änderung;Änderung;die;richtig;die Änderung;sek:1 | ipucu:0
 2026-10-04 11:50:13;art;n1354:art;die Wahrheit;Wahrheit;die;richtig;die Wahrheit;sek:1 | ipucu:0
 2026-10-04 11:50:34;wort;n0869:wort;die Operation;ameliyat;das Operation;fast;die Operation;artikel: das → die | öneri:falsch | sek:11 | ipucu:0
+2026-10-04 11:50:41;erk;n0361:erk;das Fieber;ateş (hastalık);das Fieber;fast;das Fieber;yavaş | sek:6 | ipucu:0
+2026-10-04 11:50:45;erk;w0172:erk;frech;frech;arsız, şımarık;richtig;arsız, şımarık;sek:4 | ipucu:0
+2026-10-04 11:50:49;erk;n0926:erk;die Praxis;muayenehane;die Praxis;richtig;die Praxis;sek:3 | ipucu:0
+2026-10-04 11:50:54;erk;n1211:erk;der Termin;der Termin;randevu;richtig;randevu;sek:4 | ipucu:0
+2026-10-04 11:50:56;art;n1044:art;der Schmerz;Schmerz;der;richtig;der Schmerz;sek:1 | ipucu:0
+2026-10-04 11:51:05;prod;w0171:prod;folgend;aşağıdaki, sonraki;folgende;fast;folgend;artikel/çekim | öneri:falsch | sek:5 | ipucu:0
+2026-10-04 11:51:10;erk;n1320:erk;die Versichertenkarte;sigorta kartı;die Versichertenkarte;richtig;die Versichertenkarte;sek:4 | ipucu:0
+2026-10-04 11:51:14;erk;n1044:erk;der Schmerz;ağrı;der Schmerz;richtig;der Schmerz;sek:3 | ipucu:0
+2026-10-04 11:51:16;art;n0361:art;das Fieber;Fieber;das;richtig;das Fieber;sek:2 | ipucu:0
+2026-10-04 11:51:18;art;n1211:art;der Termin;Termin;der;richtig;der Termin;sek:1 | ipucu:0
+2026-10-04 11:51:24;erk;n0994:erk;das Rezept;reçete;die Rezept;falsch;das Rezept;sek:4 | ipucu:0
+2026-10-04 11:51:30;wort;n0869:wort;die Operation;ameliyat;die Operation;richtig;die Operation;sek:5 | ipucu:0
+2026-10-04 11:51:33;art;n1048:art;der Schnee;Schnee;der;richtig;der Schnee;sek:2 | ipucu:0
+2026-10-04 11:53:12;paket;p03:0;die Anmeldung;Anmeldung beim Bürgeramt;anmeldung;fast;Anmeldung;groß/klein: isim büyük harfle
