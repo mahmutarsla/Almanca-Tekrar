@@ -755,3 +755,13 @@
 2026-10-04 11:59:42;satz;v673:satz;zweifeln an;Niemand _____ an ihrem Talent für die Kunst.;zweifelt;richtig;zweifelt;sek:9 | ipucu:0
 2026-10-04 11:59:47;bed;v121:bed;sich beschäftigen mit;sich beschäftigen mit;uğraşmak, ilgilenmek;richtig;(bir şeyle) uğraşmak, ilgilenmek;sek:5 | ipucu:0
 2026-10-04 12:00:06;abr;v629:abr;sich(D) vorstellen;(bir şeyi) hayal etmek, gözünde canlandırmak;sich vorsehen?;fast;sich(D) vorstellen (Akk);artikel/çekim | öneri:falsch | sek:12 | ipucu:0
+2026-10-04 12:00:13;prod;w0171:prod;folgend;aşağıdaki, sonraki;folgend;richtig;folgend;sek:6 | ipucu:0
+2026-10-04 12:00:16;bed;v125:bed;sich beschweren bei;sich beschweren bei;şikâyette bulunmak;richtig;(birine) şikâyette bulunmak;sek:3 | ipucu:0
+2026-10-04 12:00:27;yeni;v590;sich verlaufen;;;neu;;
+2026-10-04 12:00:33;nsatz;n0433:nsatz;die Geduld;Bitte haben Sie etwas _____.;Geduld;richtig;Geduld;sek:6 | ipucu:0
+2026-10-04 12:00:49;wort;n0432:wort;das Gedicht;şiir;das Ge?;falsch;das Gedicht;kelime yanlış | sek:14 | ipucu:0
+2026-10-04 12:00:57;nsatz;n0682:nsatz;die Kritik;Es gibt viel _____ an der Politik der Regierung.;Kritik;richtig;Kritik;sek:7 | ipucu:0
+2026-10-04 12:01:02;wort;n0433:wort;die Geduld;sabır;die Geduld;richtig;die Geduld;sek:4 | ipucu:0
+2026-10-04 12:01:05;abr;v069:abr;ausfüllen;doldurmak (form);ausfüllen;richtig;ausfüllen (Akk);sek:3 | ipucu:0
+2026-10-04 12:01:10;yeni;x1479;die Aussage;;;neu;;
+2026-10-04 12:01:17;nsatz;n0432:nsatz;das Gedicht;Kennst du ein schönes _____?;Geduld;falsch;Gedicht;artikel/çekim | sek:3 | ipucu:0
