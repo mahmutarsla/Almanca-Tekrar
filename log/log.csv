@@ -799,3 +799,14 @@
 2026-10-04 12:13:20;art;n1320:art;die Versichertenkarte;Versichertenkarte;die;richtig;die Versichertenkarte;sek:2 | ipucu:0
 2026-10-04 12:13:22;art;n0994:art;das Rezept;Rezept;der;falsch;das Rezept;artikel: der → das | sek:1 | ipucu:0
 2026-10-04 12:13:28;abr;v592:abr;sich verletzen;yaralanmak;sich verletzen;richtig;sich verletzen;sek:6 | ipucu:0
+2026-10-04 12:13:38;erk;n0994:erk;das Rezept;reçete;das Rezept;fast;das Rezept;yavaş | sek:8 | ipucu:0
+2026-10-04 12:13:40;art;n0973:art;der Regen;Regen;der;richtig;der Regen;sek:1 | ipucu:0
+2026-10-04 12:13:41;art;n0055:art;die Apotheke;Apotheke;die;richtig;die Apotheke;sek:1 | ipucu:0
+2026-10-04 12:13:43;art;n0994:art;das Rezept;Rezept;der;falsch;das Rezept;artikel: der → das | sek:1 | ipucu:0
+2026-10-04 12:13:45;art;n1179:art;die Tablette;Tablette;die;richtig;die Tablette;sek:1 | ipucu:0
+2026-10-04 12:13:50;wort;n0889:wort;der Pass;pasaport;der Pass;richtig;der Pass;sek:3 | ipucu:0
+2026-10-04 12:13:53;art;n0432:art;das Gedicht;Gedicht;das;richtig;das Gedicht;sek:2 | ipucu:0
+2026-10-04 12:13:55;art;n0957:art;der Rat;Rat;der;richtig;der Rat;sek:1 | ipucu:0
+2026-10-04 12:14:00;art;n0994:art;das Rezept;Rezept;das;fast;das Rezept;sek:4 | ipucu:0
+2026-10-04 12:14:03;art;n0972:art;die Regel;Regel;die;richtig;die Regel;sek:2 | ipucu:0
+2026-10-04 12:14:07;erk;n0055:erk;die Apotheke;die Apotheke;eczane;richtig;eczane;sek:3 | ipucu:0
