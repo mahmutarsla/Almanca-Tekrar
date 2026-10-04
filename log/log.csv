@@ -698,3 +698,16 @@
 2026-10-04 11:49:21;erk;n0790:erk;die Miete;die Miete;kira;richtig;kira;sek:3 | ipucu:0
 2026-10-04 11:49:23;art;n1424:art;das Zimmer;Zimmer;das;richtig;das Zimmer;sek:2 | ipucu:0
 2026-10-04 11:49:29;pretest;n0047:erk;der Antrag;der Antrag;başvuru, dilekçe;neu;başvuru, dilekçe;yavaş
+2026-10-04 11:49:39;erk;n1316:erk;der Vermieter;ev sahibi (kiraya veren);der Vermieter;fast;der Vermieter;yavaş | sek:6 | ipucu:0
+2026-10-04 11:49:41;art;n0111:art;der Balkon;Balkon;der;richtig;der Balkon;sek:2 | ipucu:0
+2026-10-04 11:49:50;erk;n0047:erk;der Antrag;başvuru, dilekçe;die Antrag;falsch;der Antrag;sek:8 | ipucu:0
+2026-10-04 11:49:52;art;n0790:art;die Miete;Miete;die;richtig;die Miete;sek:1 | ipucu:0
+2026-10-04 11:49:57;erk;n1325:erk;der Vertrag;sözleşme;der Vertrag;richtig;der Vertrag;sek:4 | ipucu:0
+2026-10-04 11:49:59;art;n1316:art;der Vermieter;Vermieter;der;richtig;der Vermieter;sek:1 | ipucu:0
+2026-10-04 11:50:01;art;n1325:art;der Vertrag;Vertrag;der;richtig;der Vertrag;sek:2 | ipucu:0
+2026-10-04 11:50:06;erk;n0047:erk;der Antrag;başvuru, dilekçe;der Antrag;richtig;der Antrag;sek:4 | ipucu:0
+2026-10-04 11:50:08;art;n1077:art;das Seminar;Seminar;das;richtig;das Seminar;sek:1 | ipucu:0
+2026-10-04 11:50:09;art;n0617:art;die Kindheit;Kindheit;die;richtig;die Kindheit;sek:1 | ipucu:0
+2026-10-04 11:50:11;art;n0028:art;die Änderung;Änderung;die;richtig;die Änderung;sek:1 | ipucu:0
+2026-10-04 11:50:13;art;n1354:art;die Wahrheit;Wahrheit;die;richtig;die Wahrheit;sek:1 | ipucu:0
+2026-10-04 11:50:34;wort;n0869:wort;die Operation;ameliyat;das Operation;fast;die Operation;artikel: das → die | öneri:falsch | sek:11 | ipucu:0
