@@ -775,3 +775,13 @@
 2026-10-04 12:02:44;abr;v125:abr;sich beschweren bei;(birine) şikâyette bulunmak;sich beschweren bei;richtig;sich beschweren bei (bei + Dat);hâl yazılmadı (bei + Dat) | öneri:fast | sek:10 | ipucu:0
 2026-10-04 12:02:56;abr;v119:abr;sich beruhigen;sakinleşmek;sich beruhigen;richtig;sich beruhigen;sek:11 | ipucu:0
 2026-10-04 12:03:00;wort;n0660:wort;die Kosten;masraflar (çoğul);die Kosten;richtig;die Kosten;sek:4 | ipucu:0
+2026-10-04 12:03:12;abr;v642:abr;sich wenden an;(birine) başvurmak;sich wenden an7;richtig;sich wenden an (an + Akk);edat | öneri:falsch | sek:8 | ipucu:0
+2026-10-04 12:03:16;abr;v672:abr;zustimmen;(birine) katılmak, onaylamak;zustimmen;richtig;zustimmen (Dat);sek:3 | ipucu:0
+2026-10-04 12:03:40;frm;v626:frm;vorschlagen;vorschlagen — du Präsens;du vorschlägst;fast;schlägst vor;edat, artikel/çekim | öneri:falsch | sek:14 | ipucu:0
+2026-10-04 12:03:55;luecke;v590:satz;sich verlaufen;Gestern haben wir uns im Wald _____. Wir haben erst eine Stunde später den richtigen Weg gefunden.;verzihctet;falsch;verlaufen;artikel/çekim | sek:14 | ipucu:0
+2026-10-04 12:04:05;wort;n0682:wort;die Kritik;eleştiri;die Kritik;richtig;die Kritik;sek:6 | ipucu:0
+2026-10-04 12:04:23;stamm;v243:stamm;fahren;fahren — Präsens (er/sie), Präteritum, Perfekt;fahrt, fuhr, gefahren;richtig;fährt, fuhr, ist gefahren;Präsens (er/sie): fährt, Perfekt: ist gefahren | öneri:falsch | sek:14 | ipucu:0
+2026-10-04 12:04:32;wort;n1286:wort;die Unterschrift;imza;die Unterscrift;fast;die Unterschrift;yazım | sek:7 | ipucu:0
+2026-10-04 12:04:57;stamm;v242:stamm;essen;essen — Präsens (er/sie), Präteritum, Perfekt;er isst, er aß, er hat gegessen ;richtig;isst, aß, hat gegessen;sek:24 | ipucu:0
+2026-10-04 12:05:08;satz;v590:satz;sich verlaufen;Gestern haben wir uns im Wald _____. Wir haben erst eine Stunde später den richtigen Weg gefunden.;verlauft;falsch;verlaufen;artikel/çekim | sek:8 | ipucu:0
+2026-10-04 12:05:30;stamm;v527:stamm;treffen;treffen — Präsens (er/sie), Präteritum, Perfekt;er trefft, er trof, er hat getroffen;falsch;trifft, traf, hat getroffen;Präsens (er/sie): trifft, Präteritum: traf | öneri:fast | sek:18 | ipucu:0
