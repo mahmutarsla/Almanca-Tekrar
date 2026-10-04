@@ -765,3 +765,13 @@
 2026-10-04 12:01:05;abr;v069:abr;ausfüllen;doldurmak (form);ausfüllen;richtig;ausfüllen (Akk);sek:3 | ipucu:0
 2026-10-04 12:01:10;yeni;x1479;die Aussage;;;neu;;
 2026-10-04 12:01:17;nsatz;n0432:nsatz;das Gedicht;Kennst du ein schönes _____?;Geduld;falsch;Gedicht;artikel/çekim | sek:3 | ipucu:0
+2026-10-04 12:01:21;wort;n0432:wort;das Gedicht;şiir;das Gedicht;richtig;das Gedicht;sek:4 | ipucu:0
+2026-10-04 12:01:25;nsatz;n0660:nsatz;die Kosten;Die _____ für die Reise bekomme ich von der Firma.;Kosten;richtig;Kosten;sek:4 | ipucu:0
+2026-10-04 12:01:32;luecke;v592:satz;sich verletzen;Ich habe mich an der Hand _____.;verletzt;richtig;verletzt;sek:7 | ipucu:0
+2026-10-04 12:01:44;abr;v119:abr;sich beruhigen;sakinleşmek;sich ausruhen;falsch;sich beruhigen;farklı | sek:8 | ipucu:0
+2026-10-04 12:01:54;nsatz;n0432:nsatz;das Gedicht;Kennst du ein schönes _____?;Gedicht;richtig;Gedicht;sek:7 | ipucu:0
+2026-10-04 12:02:20;abr;v642:abr;sich wenden an;(birine) başvurmak;;falsch;sich wenden an (an + Akk);bilmiyorum | sek:25 | ipucu:0
+2026-10-04 12:02:27;abr;v672:abr;zustimmen;(birine) katılmak, onaylamak;;falsch;zustimmen (Dat);bilmiyorum | sek:6 | ipucu:0
+2026-10-04 12:02:44;abr;v125:abr;sich beschweren bei;(birine) şikâyette bulunmak;sich beschweren bei;richtig;sich beschweren bei (bei + Dat);hâl yazılmadı (bei + Dat) | öneri:fast | sek:10 | ipucu:0
+2026-10-04 12:02:56;abr;v119:abr;sich beruhigen;sakinleşmek;sich beruhigen;richtig;sich beruhigen;sek:11 | ipucu:0
+2026-10-04 12:03:00;wort;n0660:wort;die Kosten;masraflar (çoğul);die Kosten;richtig;die Kosten;sek:4 | ipucu:0
