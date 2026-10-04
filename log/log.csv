@@ -785,3 +785,7 @@
 2026-10-04 12:04:57;stamm;v242:stamm;essen;essen — Präsens (er/sie), Präteritum, Perfekt;er isst, er aß, er hat gegessen ;richtig;isst, aß, hat gegessen;sek:24 | ipucu:0
 2026-10-04 12:05:08;satz;v590:satz;sich verlaufen;Gestern haben wir uns im Wald _____. Wir haben erst eine Stunde später den richtigen Weg gefunden.;verlauft;falsch;verlaufen;artikel/çekim | sek:8 | ipucu:0
 2026-10-04 12:05:30;stamm;v527:stamm;treffen;treffen — Präsens (er/sie), Präteritum, Perfekt;er trefft, er trof, er hat getroffen;falsch;trifft, traf, hat getroffen;Präsens (er/sie): trifft, Präteritum: traf | öneri:fast | sek:18 | ipucu:0
+2026-10-04 12:05:44;stamm;v346:stamm;kommen;kommen — Präsens (er/sie), Präteritum, Perfekt;er kommt, er kam, er hat gekommen;fast;kommt, kam, ist gekommen;yardımcı fiil: ist | öneri:falsch | sek:11 | ipucu:0
+2026-10-04 12:06:15;stamm;v347:stamm;können;können — Präsens (er/sie), Präteritum;kann, könnte, ne bileyim amk modal verblerin perfektini sorma diyorum ya ;falsch;kann, konnte;Präteritum: konnte | öneri:fast | sek:29 | ipucu:0
+2026-10-04 12:06:19;wort;n0025:wort;das Amt;resmî daire;der Amt;fast;das Amt;artikel: der → das | öneri:falsch | sek:3 | ipucu:0
+2026-10-04 12:06:26;satz;v590:satz;sich verlaufen;Gestern haben wir uns im Wald _____. Wir haben erst eine Stunde später den richtigen Weg gefunden.;verlaufen;richtig;verlaufen;sek:5 | ipucu:0
