@@ -916,3 +916,13 @@
 2026-10-06 17:28:13;frm;v620:frm;verzichten auf;verzichten auf — er / sie Perfekt;hat verzicht;falsch;hat verzichtet;artikel/çekim | sek:6 | ipucu:0
 2026-10-06 21:11:21;nsatz;n0889:nsatz;der Pass;Im Hotel brauchst du bei der Anmeldung deinen _____.;Pass;richtig;Pass;sek:6 | ipucu:0
 2026-10-06 21:11:34;frm;v111:frm;sich bemühen um;sich bemühen um — er / sie Perfekt;er hat sich bemüht;richtig;hat sich bemüht;sek:10 | ipucu:0
+2026-10-06 21:11:50;nsatz;n1286:nsatz;die Unterschrift;Auf dem Schreiben fehlt die _____.;unterschrift;richtig;Unterschrift;sek:15 | ipucu:0
+2026-10-06 21:11:58;abr;v629:abr;sich(D) vorstellen;(bir şeyi) hayal etmek, gözünde canlandırmak;sich vorstellen;richtig;sich(D) vorstellen (Akk);sek:7 | ipucu:0
+2026-10-06 21:12:04;nsatz;n0037:nsatz;die Anmeldung;Wo bekomme ich die Formulare für die _____?;Anmeldung;richtig;Anmeldung;sek:6 | ipucu:0
+2026-10-06 21:12:09;satz;v429:satz;regnen;Es hat gestern den ganzen Tag _____.;regnet;falsch;geregnet;farklı | sek:3 | ipucu:0
+2026-10-06 21:12:20;frm;v620:frm;verzichten auf;verzichten auf — er / sie Perfekt;hat verzicht;fast;hat verzichtet;artikel/çekim | öneri:falsch | sek:9 | ipucu:0
+2026-10-06 21:12:30;nsatz;w0171:nsatz;folgend;Mehr Informationen auf den _____ Seiten.;folgenden;richtig;folgenden;sek:10 | ipucu:0
+2026-10-06 21:12:36;abr;v673:abr;zweifeln an;(bir şeyden) şüphe etmek;zweifeln an;richtig;zweifeln an (an + Dat);hâl yazılmadı (an + Dat) | öneri:fast | sek:4 | ipucu:0
+2026-10-06 21:12:40;nsatz;n0869:nsatz;die Operation;Seit der _____ kann ich mein Knie nicht mehr bewegen.;Operation;richtig;Operation;sek:3 | ipucu:0
+2026-10-06 21:13:40;satz;v629:satz;sich(D) vorstellen;Düşünsene, sınavı geçtim!;Stellst du dich vor, dass ich die Prüfung besteht.;fast;Stell dir vor, ich habe die Prüfung bestanden!;artikel/çekim, yardımcı fiil | öneri:falsch | sek:42 | ipucu:0
+2026-10-06 21:13:55;frm;v646:frm;widersprechen;widersprechen — er / sie Perfekt;hat widerspricht;falsch;hat widersprochen;artikel/çekim | sek:13 | ipucu:0
