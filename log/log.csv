@@ -861,3 +861,7 @@
 2026-10-06 08:18:01;nsatz;n0432:nsatz;das Gedicht;Kennst du ein schönes _____?;Gedacht;falsch;Gedicht;yazım | öneri:fast | sek:5 | ipucu:0
 2026-10-06 08:18:04;abr;v149:abr;blitzen;şimşek çakmak;blitzen;richtig;blitzen;sek:3 | ipucu:0
 2026-10-06 08:18:13;nsatz;n0682:nsatz;die Kritik;Dieser Film hat sehr gute _____ bekommen.;Kritike;fast;Kritiken;artikel/çekim | öneri:falsch | sek:7 | ipucu:0
+2026-10-06 08:18:35;satz;v590:satz;sich verlaufen;Gestern haben wir uns im Wald _____. Wir haben erst eine Stunde später den richtigen Weg gefunden.;verlauft;fast;verlaufen;artikel/çekim | öneri:falsch | sek:17 | ipucu:0
+2026-10-06 08:18:58;stamm;v610:stamm;verstehen;verstehen — Präsens (er/sie), Präteritum, Perfekt;versteht, verstand, hat verstanden;richtig;versteht, verstand, hat verstanden;sek:22 | ipucu:0
+2026-10-06 08:19:03;nsatz;n0432:nsatz;das Gedicht;Kennst du ein schönes _____?;Gedicht;richtig;Gedicht;sek:4 | ipucu:0
+2026-10-06 08:19:11;wort;n0025:wort;das Amt;resmî daire;der Amt;fast;das Amt;artikel: der → das | öneri:falsch | sek:4 | ipucu:0
