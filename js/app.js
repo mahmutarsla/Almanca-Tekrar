@@ -405,25 +405,37 @@
 
   const dikkatAktiv = () => session.dikkatBis > session.q;
 
+  // Aynı kelime: en az IZ_ABSTAND soru arayla; günde en çok 4 (bugün öğrenilen) / 2 (eski) kez — artikel, anlam, yazma hepsi dahil.
+  // Kısa arayla tekrar = kısa süreli bellekten cevap (ezber değil); aralıklı tekrar kalıcı.
+  const IZ_ABSTAND = 6;
+  function iz() { const d = tag(); if (!S.iz || S.iz.tag !== d) S.iz = { tag: d, qq: 0, n: {}, q: {} }; return S.iz; }
+  const izCap = id => (S.items[id] && S.items[id].seit && tag(S.items[id].seit) === tag()) ? 4 : 2;
+  function izOk(id, abstand = IZ_ABSTAND) {
+    const z = iz();
+    if ((z.n[id] || 0) >= izCap(id)) return false;
+    return z.q[id] == null || z.qq - z.q[id] >= abstand;
+  }
+  function izNote(id) { if (!id) return; const z = iz(); z.qq++; z.n[id] = (z.n[id] || 0) + 1; z.q[id] = z.qq; }
   // ertesi günün başı: bugün iki kez yanlış yapılan kart bugün bir daha gelmesin
   function morgen(t) { const d = new Date(t); d.setHours(0, 0, 0, 0); d.setDate(d.getDate() + 1); return d.getTime(); }
   function waehle() {
     const m = session.modus;
     // 1) oturum içi yanlışların tekrarı (4 soru sonra)
-    const rq = session.requeue.findIndex(r => r.nach <= session.q && S.karten[r.uid] && FILTER[m](r.uid));
+    const rq = session.requeue.findIndex(r => r.nach <= session.q && S.karten[r.uid] && FILTER[m](r.uid) && izOk(itemOf(r.uid)));
     if (rq >= 0) { const r = session.requeue.splice(rq, 1)[0]; return { uid: r.uid, requeue: r }; }
     // 1b) her ~6 soruda bir: bugün öğrendiğin bir kelimeyi Türkçeden Almancaya yazdır (kelime başına günde en çok 2)
     if (session.q > 0 && session.q % 6 === 5 && session.letzteHeute !== session.q && m !== 'paket') {
       session.letzteHeute = session.q;
       const d = tag(), gf = session.heuteGefragt = session.heuteGefragt || {};
-      const c = Object.entries(S.items).filter(([id, it]) => it.seit && tag(it.seit) === d && !it.bekannt && !it.a1 && kind(id) !== 'p' && gueltig(id + ':x') && (gf[id] || 0) < 2 && id !== session.sonItem && now() - it.seit > 120000).map(([id]) => id);
+      const c = Object.entries(S.items).filter(([id, it]) => it.seit && tag(it.seit) === d && !it.bekannt && !it.a1 && kind(id) !== 'p' && gueltig(id + ':x') && (gf[id] || 0) < 1 && izOk(id) && id !== session.sonItem && now() - it.seit > 120000).map(([id]) => id);
       if (c.length) { const id = pick(c); gf[id] = (gf[id] || 0) + 1; return { uid: id + ':' + ({ n: 'wort', w: 'prod', v: 'abr' })[kind(id)], heute: true }; }
     }
 
     const filter = FILTER[m];
-    let due = faellig(filter);
+    const dueAlle = faellig(filter);
+    let due = dueAlle.filter(u => izOk(itemOf(u)));
     // birikme: ara verdiysen önce tekrarlar
-    session.stau = due.length > STAU ? due.length : 0;
+    session.stau = dueAlle.length > STAU ? dueAlle.length : 0;
     // Hızlı tur / Paket: yazma tekrarları (Karışık) birikmişse yeni kelime yok; kolay kısmı yapıp zoru atlamaya karşı
     session.schreibStau = (m === 'blitz' || m === 'paket') ? faellig(FILTER.normal).length : 0;
     if (session.schreibStau <= STAU) session.schreibStau = 0;
@@ -440,8 +452,16 @@
     if (!due.length) {
       // öğrenme aşamasındaki kartlar (yeni ya da az önce yanlış) 15 dk içindeyse öne çekilir
       // az önce cevaplanan kart (2 dk) ve son öğe hemen geri gelmez; aynı soruyu art arda sormasın
-      const bald = Object.keys(S.karten).filter(u => { const c = S.karten[u]; return (c.neu || c.lastG === 1 || c.lern === 1) && c.due - now() < 15 * 60000 && !(c.last && now() - c.last < 120000) && itemOf(u) !== session.sonItem && filter(u) && gueltig(u); });
+      const bald = Object.keys(S.karten).filter(u => { const c = S.karten[u]; return (c.neu || c.lastG === 1 || c.lern === 1) && izOk(itemOf(u)) && c.due - now() < 15 * 60000 && !(c.last && now() - c.last < 120000) && itemOf(u) !== session.sonItem && filter(u) && gueltig(u); });
       if (bald.length) due = bald;
+    }
+    // başka soru yoksa: aralığı 3 soruya indir (günlük üst sınır kalır); önce vadesi gelenler, sonra öğrenme adımındakiler
+    if (!due.length) due = dueAlle.filter(u => izOk(itemOf(u), 3));
+    if (!due.length) due = Object.keys(S.karten).filter(u => { const c = S.karten[u]; return (c.neu || c.lern === 1) && c.due - now() < 15 * 60000 && izOk(itemOf(u), 3) && filter(u) && gueltig(u); });
+    // hâlâ yoksa (çok az öğe): sınırı dolmamış, en uzun süredir sorulmayan; az önceki öğe hariç
+    if (!due.length) {
+      const z = iz();
+      due = dueAlle.filter(u => izOk(itemOf(u), 1) && itemOf(u) !== session.sonItem).sort((a, b) => (z.q[itemOf(a)] || 0) - (z.q[itemOf(b)] || 0)).slice(0, 1);
     }
     if (!due.length) {
       if (m === 'zayif' || session.extra) {
@@ -1547,6 +1567,7 @@
       return;
     }
     const sel = waehle();
+    if (sel) izNote(sel.uid ? itemOf(sel.uid) : (sel.pretest || sel.neu || sel.stammNeu));
     hinweisRender();
     $('#durum-satiri').innerHTML = '';
     if (!sel) {
@@ -1710,7 +1731,7 @@
     if (!q || q.typ !== 'licht') return;
     if (now() < q.lichtAb) { flash('Bir kez oku, sonra devam.'); return; }
     leichtEinfuehren(q.id, { quelle: session.modus });
-    session.requeue.push({ uid: q.uid, nach: session.q + 3, mal: 0, neu: true });
+    session.requeue.push({ uid: q.uid, nach: session.q + IZ_ABSTAND, mal: 0, neu: true });
     session.q++;
     save();
     zeige();
@@ -1799,7 +1820,8 @@
     }
     // ilk başarılı hatırlamadan sonra çekim ve cümle birimleri açılır
     if (q.typ === 'abr' && g >= 2) {
-      ['stamm', 'satz', 'refl'].forEach((u, i) => { if (unitsOf(q.id).includes(u)) neueKarte(q.id + ':' + u, t + (i + 2) * 3 * 60000); });
+      // aynı gün 9 soru olmasın: cümle ertesi gün, çekim 2, dönüşlü 3 gün sonra
+      ['satz', 'stamm', 'refl'].forEach((u, i) => { if (unitsOf(q.id).includes(u)) neueKarte(q.id + ':' + u, morgen(t) + i * DAY + 4 * 3600000); });
     }
     // tanıma oturdu (S ≥ 3 gün) → yazarak üretim açılır
     if ((q.typ === 'erk' || q.typ === 'bed' || q.typ === 'art') && g >= 2 && !c.lern && c.reps >= 3) produktionFreigeben(q.id, t);
@@ -1836,7 +1858,7 @@
       const t = now();
       if (!S.items[q.id]) S.items[q.id] = { seit: t, quelle: 'stark' };
       if (bekannt) S.karten[q.uid] = FSRS.review({}, 4, t, S.einst.ret);
-      else { neueKarte(q.uid, t + 60000); session.requeue.push({ uid: q.uid, nach: session.q + 2, mal: 0, neu: true }); }
+      else { neueKarte(q.uid, t + 60000); session.requeue.push({ uid: q.uid, nach: session.q + IZ_ABSTAND, mal: 0, neu: true }); }
       neueKarte(q.id + ':bed', t + DAY);
       heuteM(session.modus).neu++;
       session.q++;
