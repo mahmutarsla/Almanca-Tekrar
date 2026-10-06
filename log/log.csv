@@ -911,3 +911,8 @@
 2026-10-06 17:27:28;nsatz;n0889:nsatz;der Pass;Ich muss meinen _____ verlängern lassen.;pass;richtig;Pass;sek:4 | ipucu:0
 2026-10-06 17:27:39;nsatz;n1286:nsatz;die Unterschrift;Auf dem Schreiben fehlt die _____.;unterscrift;richtig;Unterschrift;yazım | öneri:fast | sek:7 | ipucu:0
 2026-10-06 17:27:45;satz;v672:satz;zustimmen;Ich _____ dir in dieser Sache völlig _____.;stimme zu;richtig;stimme zu;sek:5 | ipucu:0
+2026-10-06 17:28:05;satz;v425:satz;rechnen mit;Mit so viel Regen habe ich nicht _____.;rechnen;falsch;gerechnet;farklı | sek:3 | ipucu:0
+2026-10-06 17:28:13;leech;v620;verzichten auf;(bir şeyden) vazgeçmek;;takiliyor;;günler:2026-10-02,2026-10-03,2026-10-06
+2026-10-06 17:28:13;frm;v620:frm;verzichten auf;verzichten auf — er / sie Perfekt;hat verzicht;falsch;hat verzichtet;artikel/çekim | sek:6 | ipucu:0
+2026-10-06 21:11:21;nsatz;n0889:nsatz;der Pass;Im Hotel brauchst du bei der Anmeldung deinen _____.;Pass;richtig;Pass;sek:6 | ipucu:0
+2026-10-06 21:11:34;frm;v111:frm;sich bemühen um;sich bemühen um — er / sie Perfekt;er hat sich bemüht;richtig;hat sich bemüht;sek:10 | ipucu:0
