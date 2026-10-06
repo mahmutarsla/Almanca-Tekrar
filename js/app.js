@@ -407,7 +407,7 @@
 
   // Aynı kelime: en az IZ_ABSTAND soru arayla; günde en çok 4 (bugün öğrenilen) / 2 (eski) kez — artikel, anlam, yazma hepsi dahil.
   // Kısa arayla tekrar = kısa süreli bellekten cevap (ezber değil); aralıklı tekrar kalıcı.
-  const IZ_ABSTAND = 6;
+  const IZ_ABSTAND = 12;
   function iz() { const d = tag(); if (!S.iz || S.iz.tag !== d) S.iz = { tag: d, qq: 0, n: {}, q: {} }; return S.iz; }
   const izCap = id => (S.items[id] && S.items[id].seit && tag(S.items[id].seit) === tag()) ? 4 : 2;
   function izOk(id, abstand = IZ_ABSTAND) {
@@ -455,17 +455,12 @@
       const bald = Object.keys(S.karten).filter(u => { const c = S.karten[u]; return (c.neu || c.lastG === 1 || c.lern === 1) && izOk(itemOf(u)) && c.due - now() < 15 * 60000 && !(c.last && now() - c.last < 120000) && itemOf(u) !== session.sonItem && filter(u) && gueltig(u); });
       if (bald.length) due = bald;
     }
-    // başka soru yoksa: aralığı 3 soruya indir (günlük üst sınır kalır); önce vadesi gelenler, sonra öğrenme adımındakiler
-    if (!due.length) due = dueAlle.filter(u => izOk(itemOf(u), 3));
-    if (!due.length) due = Object.keys(S.karten).filter(u => { const c = S.karten[u]; return (c.neu || c.lern === 1) && c.due - now() < 15 * 60000 && izOk(itemOf(u), 3) && filter(u) && gueltig(u); });
-    // hâlâ yoksa (çok az öğe): sınırı dolmamış, en uzun süredir sorulmayan; az önceki öğe hariç
-    if (!due.length) {
-      const z = iz();
-      due = dueAlle.filter(u => izOk(itemOf(u), 1) && itemOf(u) !== session.sonItem).sort((a, b) => (z.q[itemOf(a)] || 0) - (z.q[itemOf(b)] || 0)).slice(0, 1);
-    }
+    // aralık kuralı gevşetilmez: uygun soru yoksa yeni öğe (sınır dolmadıysa) ya da "şu an tekrar yok" — kısa döngü olmasın
+    if (!due.length && kannNeu) { const neu = naechsteNeu(); if (neu) { session.letzteNeu = session.q; return neu; } }
     if (!due.length) {
       if (m === 'zayif' || session.extra) {
-        const pool = Object.keys(S.karten).filter(u => filter(u) && gueltig(u) && S.karten[u].S);
+        // ekstra / Zayıflar: en zayıflar önce ama aynı aralık ve günlük sınır kuralıyla (8 kartlık döngü olmasın)
+        const pool = Object.keys(S.karten).filter(u => filter(u) && gueltig(u) && S.karten[u].S && izOk(itemOf(u)));
         if (!pool.length) return null;
         pool.sort((a, b) => FSRS.currentR(S.karten[a], now()) - FSRS.currentR(S.karten[b], now()));
         due = pool.slice(0, 8);
@@ -534,6 +529,10 @@
 
   // ---------- Tanıma (seçmeli) ----------
   // Çeldiriciler: aynı türden, anlamdaşı olmayan; yarısı tanıdığın kelimelerden (daha zor)
+  // şık olarak son 10 soruda çıkan kelime yine şık olmasın (aynı kelimeyi her soruda görme)
+  const ABLENK_PAUSE = 10;
+  const ablenkFrei = x => { const a = session.ablenk || {}; return a[x] == null || session.q - a[x] >= ABLENK_PAUSE; };
+  const ablenkMerke = ids => { const a = session.ablenk = session.ablenk || {}; ids.forEach(x => { a[x] = session.q; }); };
   function optionen(id) {
     const k = kind(id);
     const richtig = optTr(trOf(id));
@@ -544,11 +543,11 @@
     const verboten = new Set([trKey(trOf(id))]);
     // önce aynı konudan, aynı türden (Wettervorhersage → Wetterbericht, Temperatur …); sonra genel havuz
     const ths = THEMA_VON[id] || [];
-    const nah = shuffle([...new Set(ths.flatMap(t => thById[t].items))].filter(x => kind(x) === k && x !== id && gueltig(x + ':x')));
-    const bekannt = shuffle(pool.filter(x => S.items[x]));
-    const rest = shuffle(pool);
-    const out = [], texte = new Set([richtig]);
-    for (const x of nah.concat(bekannt.slice(0, 6), rest)) {
+    const nah = shuffle([...new Set(ths.flatMap(t => thById[t].items))].filter(x => kind(x) === k && x !== id && gueltig(x + ':x') && ablenkFrei(x))).slice(0, 2);
+    const bekannt = shuffle(pool.filter(x => S.items[x] && ablenkFrei(x)));
+    const rest = shuffle(pool.filter(ablenkFrei)).concat(shuffle(pool));
+    const out = [], texte = new Set([richtig]), ids = [];
+    for (const x of nah.concat(bekannt.slice(0, 1), rest)) {
       if (out.length >= 5) break;
       if (x === id || verboten.has(trKey(trOf(x)))) continue;
       const t = optTr(trOf(x));
@@ -557,8 +556,9 @@
       if (w(t).some(x => w(richtig).includes(x))) continue;
       if (!t || texte.has(t)) continue;
       texte.add(t); verboten.add(trKey(trOf(x)));
-      out.push({ t, ok: false });
+      out.push({ t, ok: false }); ids.push(x);
     }
+    ablenkMerke(ids.concat([id]));
     return shuffle(out.concat([{ t: richtig, ok: true }]));
   }
 
@@ -575,21 +575,23 @@
     const k = kind(id);
     const ziel = label(id);
     const ths = THEMA_VON[id] || [];
-    const nah = shuffle([...new Set(ths.flatMap(t => thById[t].items))].filter(x => kind(x) === k && x !== id && gueltig(x + ':x')));
-    const pool = k === 'n' ? NL.map(n => n.id) : k === 'v' ? VERBEN.map(v => v.id) : WOERTER.map(w => w.id);
-    const out = [], texte = new Set([ziel]), verboten = new Set([trKey(trOf(id))]);
+    const nah = shuffle([...new Set(ths.flatMap(t => thById[t].items))].filter(x => kind(x) === k && x !== id && gueltig(x + ':x') && ablenkFrei(x))).slice(0, 2);
+    const pool0 = k === 'n' ? NL.map(n => n.id) : k === 'v' ? VERBEN.map(v => v.id) : WOERTER.map(w => w.id);
+    const pool = shuffle(pool0.filter(ablenkFrei)).concat(shuffle(pool0));
+    const out = [], texte = new Set([ziel]), verboten = new Set([trKey(trOf(id))]), ids = [];
     if (k === 'n' && !byId[id].plOnly) {
       const falsch = shuffle(['der', 'die', 'das'].filter(a => a !== byId[id].art))[0] + ' ' + byId[id].lemma;
       out.push({ t: falsch, ok: false }); texte.add(falsch);
     }
-    for (const x of nah.concat(shuffle(pool))) {
+    for (const x of nah.concat(pool)) {
       if (out.length >= 5) break;
       if (verboten.has(trKey(trOf(x)))) continue;
       const t = label(x);
       if (texte.has(t)) continue;
       texte.add(t); verboten.add(trKey(trOf(x)));
-      out.push({ t, ok: false });
+      out.push({ t, ok: false }); ids.push(x);
     }
+    ablenkMerke(ids.concat([id]));
     return shuffle(out.concat([{ t: ziel, ok: true }]));
   }
   function frageErkennen(id) {
