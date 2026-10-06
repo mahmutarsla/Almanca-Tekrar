@@ -963,3 +963,11 @@
 2026-10-06 21:20:13;stamm;v173:stamm;dürfen;dürfen — Präsens (er/sie), Präteritum;darf, darf;falsch;darf, durfte;Präteritum: durfte | sek:11 | ipucu:0
 2026-10-06 21:20:54;abr;v590:abr;sich verlaufen;(yürürken) yolunu kaybetmek;sich verlieren;falsch;sich verlaufen;artikel/çekim | sek:39 | ipucu:0
 2026-10-06 21:21:04;wort;x1479:wort;die Aussage;ifade, beyan;Aussage;richtig;die Aussage;artikel eksik: isimle birlikte yaz | öneri:falsch | sek:7 | ipucu:0
+2026-10-06 21:22:58;paket;p04:0;das Semester;An der Uni;Semester;richtig;Semester;
+2026-10-06 21:23:08;paket;p04:1;die Universität;An der Uni;Üniverstät;falsch;Universität;farklı
+2026-10-06 21:23:55;paket;p04:2;sich anmelden für;An der Uni;anmelden;richtig;anmelden;
+2026-10-06 21:24:03;paket;p04:3;das Seminar;An der Uni;Seminar;richtig;Seminar;
+2026-10-06 21:24:07;paket;p04:4;der Dozent;An der Uni;Dozent;richtig;Dozent;
+2026-10-06 21:24:18;paket;p04:5;das Referat;An der Uni;Präsendation;falsch;Referat;farklı
+2026-10-06 21:24:27;paket;p04:6;die Prüfung;An der Uni;Prüfung;richtig;Prüfung;
+2026-10-06 21:24:33;paket;p04:7;der Kommilitone;An der Uni;da;falsch;Kommilitonen;farklı
