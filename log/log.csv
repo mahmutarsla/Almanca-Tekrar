@@ -936,3 +936,13 @@
 2026-10-06 21:15:27;nsatz;n0432:nsatz;das Gedicht;Kennst du ein schönes _____?;Geduld;falsch;Gedicht;artikel/çekim | sek:4 | ipucu:0
 2026-10-06 21:15:39;satz;v125:satz;sich beschweren bei;Die Kunden haben sich bei der Firma _____.;beschwert;richtig;beschwert;sek:11 | ipucu:0
 2026-10-06 21:15:55;stamm;v157:stamm;bringen;bringen — Präsens (er/sie), Präteritum, Perfekt;bringt, brach, hat gebracht;richtig;bringt, brachte, hat gebracht;Präteritum: brachte | öneri:falsch | sek:13 | ipucu:0
+2026-10-06 21:16:14;dikkat;;;;;cok-yanlis;;son8 yanlış:5 hızlı/boş:0
+2026-10-06 21:16:14;wort;n0179:wort;der Blitz;şimşek;der Donnern;falsch;der Blitz;kelime yanlış | sek:16 | ipucu:0
+2026-10-06 21:17:11;stamm;v643:stamm;werden;werden — Präsens (er/sie), Präteritum, Perfekt;;falsch;wird, wurde, ist geworden;bilmiyorum | sek:56 | ipucu:0
+2026-10-06 21:17:18;satz;v149:satz;blitzen;Gestern Abend gab es ein Gewitter. Es hat furchtbar _____ und gedonnert.;geblitzt;richtig;geblitzt;sek:7 | ipucu:0
+2026-10-06 21:17:30;wort;n1376:wort;die Wettervorhersage;hava tahmini;die Wetterskad;falsch;die Wettervorhersage;kelime yanlış | sek:10 | ipucu:0
+2026-10-06 21:17:34;nsatz;n0432:nsatz;das Gedicht;Kennst du ein schönes _____?;Gedicht;richtig;Gedicht;sek:3 | ipucu:0
+2026-10-06 21:17:41;wort;n0587:wort;die Kälte;soğuk;kühl;falsch;die Kälte;kelime yanlış | sek:5 | ipucu:0
+2026-10-06 21:17:47;prod;w0479:prod;trocken;kuru;trocken;richtig;trocken;sek:6 | ipucu:0
+2026-10-06 21:17:53;wort;n0179:wort;der Blitz;şimşek;der Blitz;richtig;der Blitz;sek:5 | ipucu:0
+2026-10-06 21:18:00;prod;w0290:prod;kühl;serin;Kalt;richtig;kühl;farklı | öneri:falsch | sek:4 | ipucu:0
