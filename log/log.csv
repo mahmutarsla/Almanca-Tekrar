@@ -956,3 +956,10 @@
 2026-10-06 21:19:06;wort;n1240:wort;das Training;antrenman;das Traning;richtig;das Training;yazım | öneri:fast | sek:14 | ipucu:0
 2026-10-06 21:19:10;prod;w0344:prod;nass;ıslak;nass;richtig;nass;sek:3 | ipucu:0
 2026-10-06 21:19:14;wort;n0524:wort;die Heimat;memleket, vatan;die Heimet;richtig;die Heimat;kelime yanlış | öneri:falsch | sek:3 | ipucu:0
+2026-10-06 21:19:19;wort;n0691:wort;die Kunst;sanat;der Kunst;fast;die Kunst;artikel: der → die | öneri:falsch | sek:3 | ipucu:0
+2026-10-06 21:19:33;wort;n1088:wort;die Situation;durum;die Situation;richtig;die Situation;sek:13 | ipucu:0
+2026-10-06 21:19:36;wort;n1179:wort;die Tablette;tablet (ilaç);die Tablette;richtig;die Tablette;sek:3 | ipucu:0
+2026-10-06 21:19:57;wort;n0207:wort;die Burg;kale, şato;der Kust;falsch;die Burg;kelime yanlış, artikel: die | sek:7 | ipucu:0
+2026-10-06 21:20:13;stamm;v173:stamm;dürfen;dürfen — Präsens (er/sie), Präteritum;darf, darf;falsch;darf, durfte;Präteritum: durfte | sek:11 | ipucu:0
+2026-10-06 21:20:54;abr;v590:abr;sich verlaufen;(yürürken) yolunu kaybetmek;sich verlieren;falsch;sich verlaufen;artikel/çekim | sek:39 | ipucu:0
+2026-10-06 21:21:04;wort;x1479:wort;die Aussage;ifade, beyan;Aussage;richtig;die Aussage;artikel eksik: isimle birlikte yaz | öneri:falsch | sek:7 | ipucu:0
