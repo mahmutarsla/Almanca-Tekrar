@@ -845,3 +845,13 @@
 2026-10-06 08:13:47;nsatz;n0433:nsatz;die Geduld;Bitte haben Sie etwas _____.;Geduld;richtig;Geduld;sek:4 | ipucu:0
 2026-10-06 08:13:51;abr;v592:abr;sich verletzen;yaralanmak;sich verletzen;richtig;sich verletzen;sek:4 | ipucu:0
 2026-10-06 08:15:31;satz;v423:satz;reagieren auf;"(bir şeye) tepki vermek | siz (samimi) | haber; mesaj | -mek istemek, kibar (möchten)";;falsch;Ihr möchtet auf die Nachricht reagieren.;bilmiyorum | sek:98 | ipucu:0
+2026-10-06 08:15:44;satz;v425:satz;rechnen mit;Mit solchen Schwierigkeiten hatten wir nicht _____.;rechnet;falsch;gerechnet;farklı | sek:11 | ipucu:0
+2026-10-06 08:16:00;stamm;v242:stamm;essen;essen — Präsens (er/sie), Präteritum, Perfekt;isst, aß, hat gegessen;richtig;isst, aß, hat gegessen;sek:15 | ipucu:0
+2026-10-06 08:16:06;satz;v111:satz;sich bemühen um;Ich werde mich um einen Termin _____.;bemühen;richtig;bemühen;sek:6 | ipucu:0
+2026-10-06 08:16:23;stamm;v243:stamm;fahren;fahren — Präsens (er/sie), Präteritum, Perfekt;fahrt, fuhr, gefahren;richtig;fährt, fuhr, ist gefahren;Präsens (er/sie): fährt, Perfekt: ist gefahren | öneri:falsch | sek:10 | ipucu:0
+2026-10-06 08:16:27;satz;v423:satz;reagieren auf;(bir şeye) tepki vermek | ben | e-posta | şimdiki / geniş zaman · Präsens;;falsch;Ich reagiere auf die E-Mail.;bilmiyorum | sek:4 | ipucu:0
+2026-10-06 08:16:39;satz;v425:satz;rechnen mit;Mit solchen Schwierigkeiten hatten wir nicht _____.;rechnen;fast;gerechnet;farklı | öneri:falsch | sek:9 | ipucu:0
+2026-10-06 08:16:50;abr;v125:abr;sich beschweren bei;(birine) şikâyette bulunmak;sich beschweren bei;richtig;sich beschweren bei (bei + Dat);hâl yazılmadı (bei + Dat) | öneri:fast | sek:8 | ipucu:0
+2026-10-06 08:17:06;leech;n0432;das Gedicht;şiir;;takiliyor;;günler:2026-10-03,2026-10-04,2026-10-06
+2026-10-06 08:17:06;nsatz;n0432:nsatz;das Gedicht;Kennst du ein schönes _____?;Gedahct;falsch;Gedicht;artikel/çekim | sek:13 | ipucu:0
+2026-10-06 08:17:16;abr;v069:abr;ausfüllen;doldurmak (form);ausfüllen;richtig;ausfüllen (Akk);sek:9 | ipucu:0
