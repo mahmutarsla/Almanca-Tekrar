@@ -926,3 +926,13 @@
 2026-10-06 21:12:40;nsatz;n0869:nsatz;die Operation;Seit der _____ kann ich mein Knie nicht mehr bewegen.;Operation;richtig;Operation;sek:3 | ipucu:0
 2026-10-06 21:13:40;satz;v629:satz;sich(D) vorstellen;Düşünsene, sınavı geçtim!;Stellst du dich vor, dass ich die Prüfung besteht.;fast;Stell dir vor, ich habe die Prüfung bestanden!;artikel/çekim, yardımcı fiil | öneri:falsch | sek:42 | ipucu:0
 2026-10-06 21:13:55;frm;v646:frm;widersprechen;widersprechen — er / sie Perfekt;hat widerspricht;falsch;hat widersprochen;artikel/çekim | sek:13 | ipucu:0
+2026-10-06 21:13:59;satz;v429:satz;regnen;Es hat gestern den ganzen Tag _____.;geregnet;richtig;geregnet;sek:4 | ipucu:0
+2026-10-06 21:14:06;abr;v626:abr;vorschlagen;(birine bir şeyi) önermek;vorschlagen;richtig;vorschlagen (Dat, Akk);sek:7 | ipucu:0
+2026-10-06 21:14:12;luecke;v119:satz;sich beruhigen;_____ Sie sich bitte. Es ist alles in Ordnung.;Beruhigen;richtig;Beruhigen;sek:6 | ipucu:0
+2026-10-06 21:14:33;satz;v423:satz;reagieren auf;Sie hat auf meine E-Mail nicht _____.;reagieren;falsch;reagiert;artikel/çekim | sek:16 | ipucu:0
+2026-10-06 21:14:55;stamm;v643:stamm;werden;werden — Präsens (er/sie), Präteritum, Perfekt;wird, wurd, hat geworden;falsch;wird, wurde, ist geworden;Präteritum: wurde, yardımcı fiil: ist | sek:18 | ipucu:0
+2026-10-06 21:15:04;satz;v149:satz;blitzen;Heute Nacht hat es stark _____.;blitzt;falsch;geblitzt;farklı | sek:8 | ipucu:0
+2026-10-06 21:15:13;frm;v646:frm;widersprechen;widersprechen — er / sie Perfekt;hat widersprochen;richtig;hat widersprochen;sek:8 | ipucu:0
+2026-10-06 21:15:27;nsatz;n0432:nsatz;das Gedicht;Kennst du ein schönes _____?;Geduld;falsch;Gedicht;artikel/çekim | sek:4 | ipucu:0
+2026-10-06 21:15:39;satz;v125:satz;sich beschweren bei;Die Kunden haben sich bei der Firma _____.;beschwert;richtig;beschwert;sek:11 | ipucu:0
+2026-10-06 21:15:55;stamm;v157:stamm;bringen;bringen — Präsens (er/sie), Präteritum, Perfekt;bringt, brach, hat gebracht;richtig;bringt, brachte, hat gebracht;Präteritum: brachte | öneri:falsch | sek:13 | ipucu:0
