@@ -817,3 +817,21 @@
 2026-10-06 08:11:48;art;n0111:art;der Balkon;Balkon;der;richtig;der Balkon;sek:1 | ipucu:0
 2026-10-06 08:11:50;art;n1424:art;das Zimmer;Zimmer;das;richtig;das Zimmer;sek:1 | ipucu:0
 2026-10-06 08:11:55;erk;n0790:erk;die Miete;kira;der Miete;falsch;die Miete;sek:3 | ipucu:0
+2026-10-06 08:11:57;art;n0051:art;die Anzeige;Anzeige;die;richtig;die Anzeige;sek:1 | ipucu:0
+2026-10-06 08:12:00;erk;n0111:erk;der Balkon;balkon;der Balkon;richtig;der Balkon;sek:3 | ipucu:0
+2026-10-06 08:12:02;art;n1390:art;die Wohnung;Wohnung;die;richtig;die Wohnung;sek:1 | ipucu:0
+2026-10-06 08:12:06;erk;w0171:erk;folgend;aşağıdaki, sonraki;folgend;richtig;folgend;sek:4 | ipucu:0
+2026-10-06 08:12:10;erk;n0790:erk;die Miete;die Miete;kira;richtig;kira;sek:4 | ipucu:0
+2026-10-06 08:12:14;erk;n1424:erk;das Zimmer;das Zimmer;oda;richtig;oda;sek:3 | ipucu:0
+2026-10-06 08:12:18;erk;n0051:erk;die Anzeige;ilan;die Anzeige;richtig;die Anzeige;sek:3 | ipucu:0
+2026-10-06 08:12:22;erk;n0869:erk;die Operation;die Operation;ameliyat;richtig;ameliyat;sek:4 | ipucu:0
+2026-10-06 08:12:27;erk;n1390:erk;die Wohnung;daire, ev;die Wohnung;richtig;die Wohnung;sek:5 | ipucu:0
+2026-10-06 08:12:31;erk;n0682:erk;die Kritik;eleştiri;die Kritik;richtig;die Kritik;sek:3 | ipucu:0
+2026-10-06 08:12:35;erk;w0139:erk;entschlossen;kararlı;entschlossen;richtig;entschlossen;sek:4 | ipucu:0
+2026-10-06 08:12:38;art;n1003:art;der Roman;Roman;das;falsch;der Roman;artikel: das → der | sek:2 | ipucu:0
+2026-10-06 08:12:40;art;n0520:art;der Hausmeister;Hausmeister;der;richtig;der Hausmeister;sek:2 | ipucu:0
+2026-10-06 08:12:42;art;n1336:art;das Visum;Visum;das;richtig;das Visum;sek:1 | ipucu:0
+2026-10-06 08:12:48;erk;w0114:erk;durcheinander;karmakarışık;durcheinander;richtig;durcheinander;sek:5 | ipucu:0
+2026-10-06 08:12:53;erk;n1044:erk;der Schmerz;ağrı;der Schmerz;richtig;der Schmerz;sek:5 | ipucu:0
+2026-10-06 08:12:55;art;n1003:art;der Roman;Roman;der;richtig;der Roman;sek:1 | ipucu:0
+2026-10-06 08:13:02;art;n1048:art;der Schnee;Schnee;der;fast;der Schnee;sek:4 | ipucu:0
