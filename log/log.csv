@@ -901,3 +901,13 @@
 2026-10-06 08:33:00;art;n0691:art;die Kunst;Kunst;die;richtig;die Kunst;sek:1 | ipucu:0
 2026-10-06 17:25:13;satz;v642:satz;sich wenden an;An wen kann ich mich _____?;wenden;richtig;wenden;sek:4 | ipucu:0
 2026-10-06 17:25:20;stamm;v347:stamm;können;können — Präsens (er/sie), Präteritum;kann, konnte;richtig;kann, konnte;sek:7 | ipucu:1
+2026-10-06 17:25:25;satz;v069:satz;ausfüllen;_____ Sie bitte dieses Formular _____!;füllen aus;richtig;Füllen aus;sek:5 | ipucu:0
+2026-10-06 17:25:41;stamm;v527:stamm;treffen;treffen — Präsens (er/sie), Präteritum, Perfekt;trifft, traf, hat getroffen;richtig;trifft, traf, hat getroffen;sek:15 | ipucu:0
+2026-10-06 17:26:03;luecke;v672:satz;zustimmen;Ich _____ dir in dieser Sache völlig _____.;zusitmmen ;falsch;stimme zu;edat | sek:18 | ipucu:0
+2026-10-06 17:26:56;nsatz;n0025:nsatz;das Amt;İş ve İşçi Bulma Kurumu otogarın yanında.;Mann befindet sich das Arbeitsamt neben dem Busbahnhof;falsch;Das Arbeitsamt befindet sich neben dem Busbahnhof.;groß/klein | sek:47 | ipucu:0
+2026-10-06 17:27:03;abr;v425:abr;rechnen mit;(bir şeyi) hesaba katmak, beklemek;Rechnen mit;richtig;rechnen mit (mit + Dat);hâl yazılmadı (mit + Dat) | öneri:fast | sek:5 | ipucu:0
+2026-10-06 17:27:13;nsatz;n0037:nsatz;die Anmeldung;Die _____ ist im Erdgeschoss, Zimmer 55.;anmeldung;richtig;Anmeldung;sek:10 | ipucu:0
+2026-10-06 17:27:23;frm;v111:frm;sich bemühen um;sich bemühen um — er / sie Perfekt;hat sich bemüht;richtig;hat sich bemüht;sek:9 | ipucu:0
+2026-10-06 17:27:28;nsatz;n0889:nsatz;der Pass;Ich muss meinen _____ verlängern lassen.;pass;richtig;Pass;sek:4 | ipucu:0
+2026-10-06 17:27:39;nsatz;n1286:nsatz;die Unterschrift;Auf dem Schreiben fehlt die _____.;unterscrift;richtig;Unterschrift;yazım | öneri:fast | sek:7 | ipucu:0
+2026-10-06 17:27:45;satz;v672:satz;zustimmen;Ich _____ dir in dieser Sache völlig _____.;stimme zu;richtig;stimme zu;sek:5 | ipucu:0
