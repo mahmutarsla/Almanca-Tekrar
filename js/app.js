@@ -469,7 +469,9 @@
     const lastItem = session.sonItem;
     const ordne = list => {
       // çok birikmişse hâlâ hatırlananlar önce (kurtarılabilenler); yoksa önce dünkü yanlışlar, sonra en eski vade
-      if (session.stau) list.sort((a, b) => FSRS.currentR(S.karten[b], now()) - FSRS.currentR(S.karten[a], now()));
+      // ama her 3. seçim en eski vade: en alttakiler günlerce beklemesin
+      if (session.stau && session.q % 3 !== 2) list.sort((a, b) => FSRS.currentR(S.karten[b], now()) - FSRS.currentR(S.karten[a], now()));
+      else if (session.stau) list.sort((a, b) => S.karten[a].due - S.karten[b].due);
       else {
         // önceki günlerden kalan yanlışlar önce; bugün yanlış yapılanlar diğer tekrarların önüne geçmez
         const d = tag(), eski = u => S.karten[u].lastG === 1 && !!S.karten[u].last && tag(S.karten[u].last) !== d;
@@ -477,6 +479,25 @@
       }
       return list.find(x => itemOf(x) !== lastItem) || list[0];
     };
+    // çekim (stamm): en az 6 soru arayla, günde en çok 5
+    const z = iz();
+    const stammOk = (session.letzteStamm == null || session.q - session.letzteStamm >= 6) && (z.stamm || 0) < 5;
+    if (!stammOk && due.some(u => typOf(u) !== 'stamm')) due = due.filter(u => typOf(u) !== 'stamm');
+    // her 5 soruda bir: öğrendiğin kelime gerçek bir metin cümlesinin içinde (DW / Klexikon / Goethe) — anlamı ne?
+    if (m !== 'paket' && m !== 'zayif' && session.q % 5 === 4 && session.letzteKontext !== session.q) {
+      session.letzteKontext = session.q;
+      // Hızlı tur: isim / kelime; Fiiller: fiil; diğer bölümler: hepsi (fiil anlamı kartları Karışık'ta da görünür)
+      const passt = u => m === 'blitz' ? kind(itemOf(u)) !== 'v' : m === 'verben' ? kind(itemOf(u)) === 'v' : (m === 'normal' || m === 'woerter' ? true : FILTER[m](u));
+      const kand = faellig(u => (typOf(u) === 'erk' || typOf(u) === 'bed') && passt(u))
+        .filter(u => izOk(itemOf(u)) && itemOf(u) !== lastItem && kontextSaetze(itemOf(u)).length);
+      if (kand.length) { const u = kand.sort((a, b) => S.karten[a].due - S.karten[b].due)[0]; return { uid: u, kontext: pick(kontextSaetze(itemOf(u))) }; }
+    }
+    // 1 günden fazla gecikmiş kart: her iki sorudan biri en eskisi (tür dengesi onları alta itmesin)
+    if (m !== 'blitz' && m !== 'paket' && session.q % 2 === 0) {
+      const alt = due.filter(u => now() - S.karten[u].due > DAY).sort((a, b) => S.karten[a].due - S.karten[b].due);
+      const u = alt.find(x => itemOf(x) !== lastItem);
+      if (u) return { uid: u };
+    }
     // dikkat dağınıkken kolay sorular (tanıma) önce
     if (dikkatAktiv()) {
       const leicht = due.filter(u => REKOG.has(typOf(u)));
@@ -513,6 +534,7 @@
     const lv = level(card);
     const base = { uid, id, typ, lv, start: now(), requeue: sel.requeue, heute: sel.heute };
     if (typ === 'pak') return Object.assign(base, paketWiederholung(id));
+    if ((typ === 'erk' || typ === 'bed') && sel.kontext) return Object.assign(base, frageKontext(id, sel.kontext));
     if (typ === 'erk' || typ === 'bed') return Object.assign(base, frageErkennen(id));
     if (typ === 'art') return Object.assign(base, frageArtikel(byId[id]));
     if (typ === 'wort') return Object.assign(base, frageWort(byId[id], lv));
@@ -607,6 +629,40 @@
       mc: true, optionen: optionen(id),
       html: `<div class="tur"><span>tanıma · anlamı ne?</span></div>${erkPrompt(id, '')}`,
       ziel: kurzTr(trOf(id)), frageText: label(id), modus: kind(id) === 'v' ? 'bed' : 'erk',
+      loesungHTML: () => `${deItemHTML(id)} = <b>${esc(trOf(id))}</b>`,
+      erkl: () => infoZeilen(id),
+    };
+  }
+
+  // ---------- Metinde gör: okuma metinlerinden gerçek cümle, kelime vurgulu ----------
+  let _kontextIdx = null;
+  function kontextSaetze(id) {
+    if (!_kontextIdx) {
+      _kontextIdx = {};
+      const m = formIdx();
+      LT.forEach(t => (t.text || '').split('\n').forEach(par => par.split(/(?<=[.!?])\s+/).forEach(satz => {
+        const ws = satz.split(/\s+/);
+        if (ws.length < 5 || ws.length > 24 || /^\d+ |—|@|https?:/.test(satz)) return;
+        const gesehen = new Set();
+        ws.forEach(w => {
+          const c = w.replace(/^[„“"(‚]+|[.,!?;:“"”)…’‘]+$/g, '');
+          const x = m.get(c) || m.get(c.charAt(0).toLowerCase() + c.slice(1));
+          if (!x || gesehen.has(x)) return;
+          gesehen.add(x);
+          const l = _kontextIdx[x] = _kontextIdx[x] || [];
+          if (l.length < 6) l.push({ s: satz, w: c, q: t.quelle });
+        });
+      })));
+    }
+    return _kontextIdx[id] || [];
+  }
+  function frageKontext(id, k) {
+    const satzHTML = esc(k.s).replace(new RegExp('(^|[^\\wäöüÄÖÜß])(' + k.w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')(?![\\wäöüÄÖÜß])'), '$1<mark>$2</mark>');
+    return {
+      mc: true, optionen: optionen(id),
+      html: `<div class="tur"><span class="yeni">metinde</span><span>bu cümlede işaretli kelime ne demek?</span></div>
+        <div class="soru de kontext-satz">${satzHTML}</div><div class="soluk">${esc(k.q || '')}</div>`,
+      ziel: kurzTr(trOf(id)), frageText: k.s, modus: kind(id) === 'v' ? 'bed' : 'erk', kontextQ: true,
       loesungHTML: () => `${deItemHTML(id)} = <b>${esc(trOf(id))}</b>`,
       erkl: () => infoZeilen(id),
     };
@@ -1570,6 +1626,7 @@
     }
     const sel = waehle();
     if (sel) izNote(sel.uid ? itemOf(sel.uid) : (sel.pretest || sel.neu || sel.stammNeu));
+    if (sel && sel.uid && typOf(sel.uid) === 'stamm') { session.letzteStamm = session.q; iz().stamm = (iz().stamm || 0) + 1; }
     hinweisRender();
     $('#durum-satiri').innerHTML = '';
     if (!sel) {
@@ -1794,6 +1851,8 @@
     const t = now();
     const alt = S.karten[q.uid] || {};
     const c = FSRS.review(alt, g, t, S.einst.ret);
+    // yeni öğrenilen kartların ilk tekrarları kısa aralıkla (2 gün ara verince unutulmasın): 2. ve 3. tekrar en çok 2 gün, sonra 4 gün
+    if (g >= 2 && (c.reps || 0) <= 5) c.due = Math.min(c.due, t + ((c.reps || 0) <= 3 ? 2 : 4) * DAY);
     delete c.neu;
     // öğrenme adımları (yeni kart): ilk gün 3 hatırlama (tanıtım → birkaç soru sonra → ~10 dk sonra), ertesi gün kesin tekrar
     const stufe = alt.lern != null ? alt.lern : (!alt.S ? 0 : null);

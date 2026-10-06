@@ -84,3 +84,10 @@ Son incelenen log satırı en alttaki notta yazar.
 - Kendine not: 30 öneri satırının 27'sinde cömert (24'ünde sistem "yanlış" derken küçük hata / doğru verdi; özellikle çekim: fahrt, trefft, bliebt).
 - Eklendi: 46 düzeltme (feedback.js), 2 kanca, 8 Partizip cümlesi.
 - Son incelenen log satırı: 2026-10-06 08:23:05.
+
+## 2026-10-06 (akşam) — tekrar düzeni
+
+- Döngü: aynı öğe 12 soru arayla, günde en çok 4 (yeni) / 2 (eski); ekstra / Zayıflar da bu sınıra uyar; şıklar son 10 soruda tekrar etmez.
+- Fiil anlamı (`bed`) kartları 3+ gündür alta kalıyordu (yalnız Fiiller bölümünde, tür dengesinde en küçük pay): gecikmiş kartlar artık öne.
+- Çekim sınırı (6 soru ara, günde 5). "Metinde" kartı (her 5 soruda bir, gerçek metin cümlesi). Genç kartlara kısa aralık.
+- Gerçek ilerleme dosyasıyla test: 175 soruda 1+ gün gecikmiş 199 → 100, öğe günde en çok 2×, en kısa ara 13 soru.

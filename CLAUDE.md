@@ -50,6 +50,9 @@
   Yeni kart öğrenme adımları: ilk gün 3 hatırlama (tanıtım → birkaç soru → ~10 dk), ertesi gün kesin tekrar; günlük yeni sınırları ayrı: `einst.neuWoerter` (25 kelime) ve `einst.neuVerben` (5 fiil); her ~6 soruda bugün öğrenilen bir öğe TR→DE yazdırılır.
   Seçmeli `erk` yarı yarıya ters yön (TR → DE, artikelli 6 şık, biri doğru ismin yanlış artikeli). `nsatz` yazma kartı oturunca açılır.
   Aynı öğe (bütün birimleri: artikel, anlam, yazma) en az 12 soru arayla ve günde en çok 4 (bugün öğrenilen) / 2 (eski) kez sorulur (`IZ_ABSTAND`, `izOk`, `S.iz`).
+  Her 5 soruda bir "metinde" kartı: vadesi gelen `erk`/`bed` kartı okuma metinlerinden (DW / Klexikon / Goethe) gerçek bir cümlede, kelime vurgulu, anlamı seçmeli (log modus `erk`/`bed`, frage = cümle).
+  1 günden fazla gecikmiş kartlar her iki soruda bir öne alınır; birikmede her 3. seçim en eski vade. Çekim (`stamm`) en az 6 soru arayla, günde en çok 5.
+  Genç kartlar (reps ≤ 5): ilk tekrarlar en çok 2 gün, sonra 4 gün ara.
   Yanlıştan sonra oturumda tek tekrar (başka cümle), ikinci yanlışta ertesi gün. Fiilin cümle / çekim / dönüşlü birimleri ilk başarılı anlamdan sonra 1 / 2 / 3 gün sonra açılır.
   Hızlı tur'da öğrenilen kelimenin yazma birimi tanıma/artikel kartı S ≥ 3 gün olunca açılır (fiilde hemen).
 - Mimari ve gerekçeler: `TASARIM.md`.
