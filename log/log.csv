@@ -865,3 +865,10 @@
 2026-10-06 08:18:58;stamm;v610:stamm;verstehen;verstehen — Präsens (er/sie), Präteritum, Perfekt;versteht, verstand, hat verstanden;richtig;versteht, verstand, hat verstanden;sek:22 | ipucu:0
 2026-10-06 08:19:03;nsatz;n0432:nsatz;das Gedicht;Kennst du ein schönes _____?;Gedicht;richtig;Gedicht;sek:4 | ipucu:0
 2026-10-06 08:19:11;wort;n0025:wort;das Amt;resmî daire;der Amt;fast;das Amt;artikel: der → das | öneri:falsch | sek:4 | ipucu:0
+2026-10-06 08:19:18;leech;v125;sich beschweren bei;(birine) şikâyette bulunmak;;takiliyor;;günler:2026-10-03,2026-10-04,2026-10-06
+2026-10-06 08:19:18;satz;v125:satz;sich beschweren bei;(birine) şikâyette bulunmak | o (erkek) | patron, şef (erkek) | -mek istemek (wollen), evet/hayır sorusu;;falsch;Will er sich beim Chef beschweren?;bilmiyorum | sek:5 | ipucu:0
+2026-10-06 08:19:34;satz;v626:satz;vorschlagen;Ich _____ _____, dass wir die Kosten teilen.;Ich schläge vor ;fast;schlage vor;umlaut/ß | öneri:falsch | sek:13 | ipucu:0
+2026-10-06 08:19:55;stamm;v346:stamm;kommen;kommen — Präsens (er/sie), Präteritum, Perfekt;kommt, kam, ist gekommen;richtig;kommt, kam, ist gekommen;sek:19 | ipucu:0
+2026-10-06 08:20:06;satz;v673:satz;zweifeln an;Viele Leute _____ an der Wettervorhersage für das Wochenende.;zweifelt;fast;zweifeln;artikel/çekim | öneri:falsch | sek:8 | ipucu:0
+2026-10-06 08:20:13;prod;w0171:prod;folgend;aşağıdaki, sonraki;folgende;fast;folgend;artikel/çekim | öneri:falsch | sek:5 | ipucu:0
+2026-10-06 08:20:19;satz;v125:satz;sich beschweren bei;(birine) şikâyette bulunmak | siz (samimi) | ev sahibi (kiraya veren) | geçmiş · Perfekt, olumsuz;;falsch;Ihr habt euch nicht bei eurem Vermieter beschwert.;bilmiyorum | sek:3 | ipucu:0
