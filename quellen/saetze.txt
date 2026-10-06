@@ -868,3 +868,187 @@ v117 | Im Seminar hat sie über ihre Heimat berichtet. | Seminerde memleketini a
 v626 | Der Hausmeister hat vorgeschlagen, dass wir den Keller zusammen aufräumen. | Kapıcı bodrumu birlikte toparlamamızı önerdi.
 v620 | Wegen der Schmerzen verzichte ich heute auf das Training. | Ağrılar yüzünden bugün antrenmandan vazgeçiyorum.
 v673 | Niemand zweifelt an ihrem Talent für die Kunst. | Kimse onun sanat yeteneğinden şüphe etmiyor.
+v029 | Ich habe mich für den Deutschkurs angemeldet. | Almanca kursuna kaydoldum.
+v029 | Wo kann man sich für die Prüfung anmelden? | Sınava nereden kaydolunabilir?
+v029 | Du musst dich bis Freitag anmelden. | Cumaya kadar kaydolman gerekiyor.
+v041 | Warum antwortest du mir nicht? | Neden bana cevap vermiyorsun?
+v041 | Er hat mir sofort geantwortet. | Bana hemen cevap verdi.
+v041 | Bitte antworten Sie auf die Frage. | Lütfen soruya cevap verin.
+v045 | Zieh dich warm an, es ist kalt draußen. | Sıkı giyin, dışarısı soğuk.
+v045 | Ich ziehe mich schnell an und komme dann. | Hemen giyinip geliyorum.
+v045 | Die Kinder haben sich allein angezogen. | Çocuklar kendi kendilerine giyindi.
+v047 | Ich arbeite gerade an einem Projekt. | Şu anda bir proje üzerinde çalışıyorum.
+v047 | Sie arbeitet seit Monaten an ihrer Doktorarbeit. | Aylardır doktora tezi üzerinde çalışıyor.
+v047 | Wir müssen noch an der Präsentation arbeiten. | Sunum üzerinde daha çalışmamız gerekiyor.
+v049 | Ich ärgere mich über den Lärm. | Gürültüye sinirleniyorum.
+v049 | Ärgere dich nicht über ihn! | Ona sinirlenme!
+v049 | Sie hat sich über die hohe Rechnung geärgert. | Yüksek faturaya sinirlendi.
+v063 | Reg dich nicht so auf! | Bu kadar sinirlenme!
+v063 | Er regt sich über jede Kleinigkeit auf. | Her küçük şeye sinirleniyor.
+v063 | Warum hast du dich so aufgeregt? | Neden bu kadar sinirlendin?
+v083 | Zieh bitte die Schuhe aus. | Lütfen ayakkabılarını çıkar.
+v083 | Ich ziehe mich aus und gehe ins Bett. | Soyunup yatağa gidiyorum.
+v083 | Das Kind hat sich allein ausgezogen. | Çocuk kendi kendine soyundu.
+v091 | Ich möchte mich bei Ihnen für die Hilfe bedanken. | Yardımınız için size teşekkür etmek istiyorum.
+v091 | Hast du dich schon für das Geschenk bedankt? | Hediye için teşekkür ettin mi?
+v091 | Er hat sich bei seiner Lehrerin bedankt. | Öğretmenine teşekkür etti.
+v098 | Wir beginnen jetzt mit dem Unterricht. | Şimdi derse başlıyoruz.
+v098 | Wann beginnst du mit der Arbeit? | İşe ne zaman başlıyorsun?
+v098 | Sie hat mit dem Studium begonnen. | Üniversite eğitimine başladı.
+v119 | Beruhigen Sie sich bitte! | Lütfen sakin olun!
+v119 | Nach dem Streit hat er sich schnell beruhigt. | Kavgadan sonra çabucak sakinleşti.
+v119 | Das Baby beruhigt sich nicht. | Bebek sakinleşmiyor.
+v124 | Die Nachbarn beschweren sich über den Lärm. | Komşular gürültüden şikâyet ediyor.
+v124 | Ich möchte mich über das Essen beschweren. | Yemekten şikâyet etmek istiyorum.
+v124 | Er beschwert sich immer über das Wetter. | Hep havadan şikâyet ediyor.
+v125 | Ich habe mich beim Chef beschwert. | Patrona şikâyette bulundum.
+v125 | Sie können sich beim Vermieter beschweren. | Ev sahibine şikâyette bulunabilirsiniz.
+v125 | Die Kunden haben sich bei der Firma beschwert. | Müşteriler firmaya şikâyette bulundu.
+v137 | Viele Studenten beteiligen sich an dem Projekt. | Birçok öğrenci projeye katılıyor.
+v137 | Möchtest du dich an den Kosten beteiligen? | Masraflara katılmak ister misin?
+v137 | Er hat sich nicht an der Diskussion beteiligt. | Tartışmaya katılmadı.
+v141 | Du musst dich mehr bewegen. | Daha çok hareket etmen lazım.
+v141 | Nach dem Unfall konnte er sich kaum bewegen. | Kazadan sonra neredeyse hiç hareket edemedi.
+v141 | Beweg dich nicht! | Kıpırdama!
+v144 | Ich bewerbe mich bei einer großen Firma. | Büyük bir firmaya başvuruyorum.
+v144 | Sie hat sich um einen Studienplatz beworben. | Üniversitede bir yer için başvurdu.
+v144 | Hast du dich schon bei der Bank beworben? | Bankaya başvurdun mu?
+v147 | Ich möchte Sie um einen Termin bitten. | Sizden bir randevu rica etmek istiyorum.
+v147 | Er hat mich um Hilfe gebeten. | Benden yardım istedi.
+v147 | Darf ich Sie um etwas bitten? | Sizden bir şey rica edebilir miyim?
+v160 | Ich danke dir für deine Hilfe. | Yardımın için sana teşekkür ederim.
+v160 | Wir danken Ihnen für Ihre Geduld. | Sabrınız için size teşekkür ederiz.
+v160 | Sie hat mir für das Geschenk gedankt. | Hediye için bana teşekkür etti.
+v168 | Wir haben lange über das Problem diskutiert. | Sorunu uzun uzun tartıştık.
+v168 | Im Kurs diskutieren wir über Politik. | Kursta siyaset hakkında tartışıyoruz.
+v168 | Darüber möchte ich nicht diskutieren. | Bunu tartışmak istemiyorum.
+v175 | Ich dusche mich jeden Morgen. | Her sabah duş alıyorum.
+v175 | Nach dem Sport duscht er sich. | Spordan sonra duş alıyor.
+v175 | Hast du dich schon geduscht? | Duş aldın mı?
+v184 | Wir haben uns auf einen Termin geeinigt. | Bir tarihte anlaştık.
+v184 | Die Parteien konnten sich nicht einigen. | Partiler anlaşamadı.
+v184 | Habt ihr euch auf einen Preis geeinigt? | Bir fiyatta anlaştınız mı?
+v209 | Ich möchte mich bei dir entschuldigen. | Senden özür dilemek istiyorum.
+v209 | Er hat sich für die Verspätung entschuldigt. | Gecikme için özür diledi.
+v209 | Du musst dich bei deiner Schwester entschuldigen. | Kız kardeşinden özür dilemen gerekiyor.
+v215 | Ich habe von dem Unfall erst heute erfahren. | Kazayı ancak bugün öğrendim.
+v215 | Wie hast du davon erfahren? | Bunu nasıl öğrendin?
+v215 | Wir haben aus der Zeitung von der Hochzeit erfahren. | Düğünü gazeteden öğrendik.
+v220 | Wir haben Ihren Brief erhalten. | Mektubunuzu aldık.
+v220 | Sie erhalten die Unterlagen per Post. | Belgeleri postayla alacaksınız.
+v220 | Ich habe noch keine Antwort erhalten. | Henüz bir cevap almadım.
+v222 | Im Urlaub habe ich mich gut erholt. | Tatilde iyi dinlendim.
+v222 | Sie erholt sich langsam von der Krankheit. | Hastalıktan yavaş yavaş kendine geliyor.
+v222 | Er muss sich von der Operation erholen. | Ameliyattan sonra dinlenmesi gerekiyor.
+v223 | Bitte erinnere mich an den Termin. | Lütfen bana randevuyu hatırlat.
+v223 | Das Foto erinnert mich an meine Kindheit. | Fotoğraf bana çocukluğumu hatırlatıyor.
+v223 | Kannst du mich morgen an den Arzttermin erinnern? | Yarın bana doktor randevusunu hatırlatabilir misin?
+v225 | Ich habe mich erkältet. | Üşüttüm.
+v225 | Zieh eine Jacke an, sonst erkältest du dich. | Bir ceket giy, yoksa üşütürsün.
+v225 | Im Winter erkälten sich viele Kinder. | Kışın birçok çocuk üşütüyor.
+v253 | Die Polizei hat den Dieb festgenommen. | Polis hırsızı gözaltına aldı.
+v253 | Zwei Männer wurden am Bahnhof festgenommen. | İstasyonda iki adam gözaltına alındı.
+v253 | Warum hat man ihn festgenommen? | Onu neden gözaltına aldılar?
+v275 | Ich fühle mich heute nicht gut. | Bugün kendimi iyi hissetmiyorum.
+v275 | Wie fühlst du dich in der neuen Stadt? | Yeni şehirde kendini nasıl hissediyorsun?
+v275 | Er fühlt sich allein. | Kendini yalnız hissediyor.
+v286 | Das gehört zu meinen Aufgaben. | Bu benim görevlerime dahil.
+v286 | Er gehört zu den besten Spielern. | En iyi oyunculardan biri.
+v286 | Gehört das Frühstück zum Preis? | Kahvaltı fiyata dahil mi?
+v307 | Was hältst du von dem Plan? | Plan hakkında ne düşünüyorsun?
+v307 | Ich halte nicht viel von diesem Film. | Bu filmi pek beğenmiyorum.
+v307 | Was halten Sie von meinem Vorschlag? | Önerim hakkında ne düşünüyorsunuz?
+v308 | Der Film handelt von einer Familie. | Film bir aileyi konu alıyor.
+v308 | Wovon handelt das Buch? | Kitap neyi konu alıyor?
+v308 | Der Text handelt von der Umwelt. | Metin çevreyi konu alıyor.
+v316 | Kannst du mir bei den Hausaufgaben helfen? | Ödevlerde bana yardım edebilir misin?
+v316 | Mein Bruder hilft mir beim Umzug. | Erkek kardeşim taşınmada bana yardım ediyor.
+v316 | Sie hat ihrer Mutter beim Kochen geholfen. | Annesine yemek yapmakta yardım etti.
+v327 | Ich informiere mich im Internet über die Uni. | İnternette üniversite hakkında bilgi ediniyorum.
+v327 | Hast du dich über die Kurse informiert? | Kurslar hakkında bilgi aldın mı?
+v327 | Sie müssen sich vorher über die Regeln informieren. | Önceden kurallar hakkında bilgi edinmeniz gerekiyor.
+v385 | Melde dich bei mir, wenn du in Bremen bist! | Bremen'deyken bana haber ver!
+v385 | Er hat sich seit Wochen nicht bei mir gemeldet. | Haftalardır bana haber vermedi.
+v385 | Bitte melden Sie sich bei der Rezeption. | Lütfen resepsiyona başvurun.
+v394 | Ich muss über deinen Vorschlag nachdenken. | Önerin hakkında düşünmem lazım.
+v394 | Er denkt oft über seine Zukunft nach. | Sık sık geleceği hakkında düşünüyor.
+v394 | Denk mal darüber nach! | Bunu bir düşün!
+v423 | Wie hat er auf die Nachricht reagiert? | Habere nasıl tepki verdi?
+v423 | Sie hat auf meine E-Mail nicht reagiert. | E-postama tepki vermedi.
+v423 | Der Lehrer reagiert ruhig auf die Frage. | Öğretmen soruya sakin bir şekilde tepki veriyor.
+v462 | Ich schreibe einen Brief an meine Oma. | Anneanneme bir mektup yazıyorum.
+v462 | Hast du schon an die Firma geschrieben? | Firmaya yazdın mı?
+v462 | Sie schreibt jede Woche an ihre Freundin. | Her hafta arkadaşına yazıyor.
+v473 | Setz dich bitte! | Lütfen otur!
+v473 | Darf ich mich neben dich setzen? | Yanına oturabilir miyim?
+v473 | Er hat sich ans Fenster gesetzt. | Pencerenin yanına oturdu.
+v482 | Ich sorge mich um dich. | Senin için endişeleniyorum.
+v482 | Die Eltern sorgen sich um ihre Tochter. | Anne baba kızları için endişeleniyor.
+v482 | Du musst dich nicht um mich sorgen. | Benim için endişelenmene gerek yok.
+v487 | Ich muss mit dir sprechen. | Seninle konuşmam lazım.
+v487 | Hast du schon mit dem Arzt gesprochen? | Doktorla konuştun mu?
+v487 | Sie spricht oft mit ihrer Mutter. | Annesiyle sık sık konuşuyor.
+v502 | Er ist an einem Herzinfarkt gestorben. | Kalp krizinden öldü.
+v502 | Früher sind viele Menschen an dieser Krankheit gestorben. | Eskiden birçok insan bu hastalıktan ölürdü.
+v502 | Ihr Großvater ist letztes Jahr gestorben. | Büyükbabası geçen yıl öldü.
+v509 | Ich streite mich oft mit meinem Bruder. | Erkek kardeşimle sık sık kavga ediyorum.
+v509 | Warum habt ihr euch gestritten? | Neden kavga ettiniz?
+v509 | Sie streiten sich immer über Geld. | Hep para yüzünden tartışıyorlar.
+v513 | Ich suche nach meinem Schlüssel. | Anahtarımı arıyorum.
+v513 | Die Polizei sucht nach dem Täter. | Polis faili arıyor.
+v513 | Wir suchen nach einer Lösung. | Bir çözüm arıyoruz.
+v520 | Ich habe gestern mit meiner Mutter telefoniert. | Dün annemle telefonda konuştum.
+v520 | Er telefoniert gerade mit seinem Chef. | Şu anda patronuyla telefonda konuşuyor.
+v520 | Kann ich kurz mit dir telefonieren? | Seninle kısaca telefonda konuşabilir miyim?
+v528 | Ich treffe mich heute mit Freunden. | Bugün arkadaşlarla buluşuyorum.
+v528 | Wo treffen wir uns? | Nerede buluşuyoruz?
+v528 | Sie hat sich mit ihrem Kollegen im Café getroffen. | İş arkadaşıyla kafede buluştu.
+v530 | Sie hat sich von ihrem Freund getrennt. | Erkek arkadaşından ayrıldı.
+v530 | Ich trenne mich nicht gern von meinen alten Sachen. | Eski eşyalarımdan ayrılmayı sevmem.
+v530 | Nach zehn Jahren haben sie sich getrennt. | On yıl sonra ayrıldılar.
+v545 | Du übertreibst! | Abartıyorsun!
+v545 | Er übertreibt immer, wenn er etwas erzählt. | Bir şey anlatırken hep abartıyor.
+v545 | Ich glaube, sie hat ein bisschen übertrieben. | Bence biraz abarttı.
+v554 | Ich ziehe mich schnell um. | Hemen üstümü değiştiriyorum.
+v554 | Nach der Arbeit zieht er sich um. | İşten sonra üstünü değiştiriyor.
+v554 | Du musst dich für das Fest umziehen. | Kutlama için üstünü değiştirmen gerekiyor.
+v556 | Ich habe mich lange mit ihr unterhalten. | Onunla uzun süre sohbet ettim.
+v556 | Worüber habt ihr euch unterhalten? | Ne hakkında sohbet ettiniz?
+v556 | Wir unterhalten uns gern mit den Nachbarn. | Komşularla sohbet etmeyi seviyoruz.
+v569 | Die Stadt hat sich sehr verändert. | Şehir çok değişti.
+v569 | Du hast dich überhaupt nicht verändert. | Hiç değişmemişsin.
+v569 | Seit dem Umzug hat sich viel verändert. | Taşınmadan beri çok şey değişti.
+v579 | Man kann Bremen nicht mit Berlin vergleichen. | Bremen Berlin'le karşılaştırılamaz.
+v579 | Ich vergleiche die Preise im Internet. | Fiyatları internette karşılaştırıyorum.
+v579 | Vergleich dich nicht immer mit anderen! | Kendini hep başkalarıyla karşılaştırma!
+v592 | Ich habe mich beim Kochen verletzt. | Yemek yaparken yaralandım.
+v592 | Bei dem Unfall hat sich niemand verletzt. | Kazada kimse yaralanmadı.
+v592 | Pass auf, dass du dich nicht verletzt! | Dikkat et, yaralanma!
+v593 | Er hat sich in eine Kollegin verliebt. | Bir iş arkadaşına âşık oldu.
+v593 | Ich habe mich sofort in die Stadt verliebt. | Şehre hemen âşık oldum.
+v593 | Sie haben sich im Urlaub verliebt. | Tatilde birbirlerine âşık oldular.
+v611 | Ich verstehe mich gut mit meiner Mitbewohnerin. | Ev arkadaşımla iyi anlaşıyorum.
+v611 | Er versteht sich nicht mit seinem Chef. | Patronuyla anlaşamıyor.
+v611 | Verstehst du dich gut mit deinen Eltern? | Annenle babanla iyi anlaşıyor musun?
+v628 | Darf ich mich vorstellen? Ich heiße Tuna. | Kendimi tanıtabilir miyim? Adım Tuna.
+v628 | Bitte stellen Sie sich kurz vor. | Lütfen kendinizi kısaca tanıtın.
+v628 | Im Kurs haben sich alle vorgestellt. | Kursta herkes kendini tanıttı.
+v629 | Ich kann mir das nicht vorstellen. | Bunu hayal edemiyorum.
+v629 | Stell dir vor, ich habe die Prüfung bestanden! | Düşünsene, sınavı geçtim!
+v633 | Ich habe dich vor ihm gewarnt. | Seni ona karşı uyarmıştım.
+v633 | Die Polizei warnt vor dem Sturm. | Polis fırtınaya karşı uyarıyor.
+v633 | Der Arzt hat ihn vor dem Rauchen gewarnt. | Doktor onu sigara içmeye karşı uyardı.
+v636 | Ich wasche mich mit kaltem Wasser. | Soğuk suyla yıkanıyorum.
+v636 | Wasch dir die Hände vor dem Essen! | Yemekten önce ellerini yıka!
+v636 | Die Katze wäscht sich. | Kedi kendini temizliyor.
+v642 | Bitte wenden Sie sich an die Rezeption. | Lütfen resepsiyona başvurun.
+v642 | An wen kann ich mich wenden? | Kime başvurabilirim?
+v642 | Bei Fragen wenden Sie sich an Frau Müller. | Sorularınız için Bayan Müller'e başvurun.
+v654 | Ich wundere mich über sein Verhalten. | Davranışına şaşırıyorum.
+v654 | Sie hat sich über das Geschenk gewundert. | Hediyeye şaşırdı.
+v654 | Wundere dich nicht, wenn er nicht kommt. | Gelmezse şaşırma.
+v656 | Ich wünsche mir ein neues Fahrrad. | Yeni bir bisiklet istiyorum.
+v656 | Sie wünscht sich mehr Zeit für die Familie. | Ailesine daha çok zaman ayırmayı diliyor.
+v668 | Ich komme mit der neuen Software nicht zurecht. | Yeni yazılımla başa çıkamıyorum.
+v668 | Kommst du mit deinem Mitbewohner gut zurecht? | Ev arkadaşınla iyi geçiniyor musun?
+v668 | Sie kommt mit dem Geld gut zurecht. | Parayla iyi idare ediyor.

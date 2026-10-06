@@ -3681,3 +3681,154 @@ Die Kinder spielen unten auf der Straße. | unten = aşağıda
 Frau Müller geht jeden Morgen um 8 Uhr aus dem Haus. | -
 Frau Özgen kommt aus der Türkei. | -
 Bitte bringen Sie zum Termin Ihre Versichertenkarte mit. | der Termin = randevu; mitbringen = yanında getirmek
+Ich habe mich für den Deutschkurs angemeldet. | der Deutschkurs = Almanca kursu
+Wo kann man sich für die Prüfung anmelden? | die Prüfung = sınav
+Du musst dich bis Freitag anmelden. | bis = -e kadar
+Er hat mir sofort geantwortet. | sofort = hemen
+Bitte antworten Sie auf die Frage. | die Frage = soru
+Zieh dich warm an, es ist kalt draußen. | warm = sıcak; draußen = dışarıda
+Ich ziehe mich schnell an und komme dann. | schnell = hızlı
+Die Kinder haben sich allein angezogen. | allein = yalnız, kendi başına
+Ich arbeite gerade an einem Projekt. | das Projekt = proje; gerade = şu anda
+Sie arbeitet seit Monaten an ihrer Doktorarbeit. | die Doktorarbeit = doktora tezi; seit = -den beri
+Wir müssen noch an der Präsentation arbeiten. | die Präsentation = sunum
+Ich ärgere mich über den Lärm. | der Lärm = gürültü
+Sie hat sich über die hohe Rechnung geärgert. | die Rechnung = fatura; hoch = yüksek
+Er regt sich über jede Kleinigkeit auf. | die Kleinigkeit = küçük şey, ayrıntı
+Zieh bitte die Schuhe aus. | der Schuh = ayakkabı
+Ich ziehe mich aus und gehe ins Bett. | das Bett = yatak
+Das Kind hat sich allein ausgezogen. | allein = kendi başına
+Ich möchte mich bei Ihnen für die Hilfe bedanken. | die Hilfe = yardım
+Hast du dich schon für das Geschenk bedankt? | das Geschenk = hediye
+Er hat sich bei seiner Lehrerin bedankt. | die Lehrerin = (kadın) öğretmen
+Wir beginnen jetzt mit dem Unterricht. | der Unterricht = ders
+Sie hat mit dem Studium begonnen. | das Studium = üniversite eğitimi
+Nach dem Streit hat er sich schnell beruhigt. | der Streit = kavga
+Das Baby beruhigt sich nicht. | das Baby = bebek
+Die Nachbarn beschweren sich über den Lärm. | der Nachbar = komşu; der Lärm = gürültü
+Er beschwert sich immer über das Wetter. | das Wetter = hava
+Ich habe mich beim Chef beschwert. | der Chef = patron, şef
+Sie können sich beim Vermieter beschweren. | der Vermieter = ev sahibi
+Die Kunden haben sich bei der Firma beschwert. | der Kunde = müşteri; die Firma = firma
+Viele Studenten beteiligen sich an dem Projekt. | das Projekt = proje
+Möchtest du dich an den Kosten beteiligen? | die Kosten = masraflar
+Er hat sich nicht an der Diskussion beteiligt. | die Diskussion = tartışma
+Nach dem Unfall konnte er sich kaum bewegen. | der Unfall = kaza; kaum = neredeyse hiç
+Ich bewerbe mich bei einer großen Firma. | die Firma = firma
+Sie hat sich um einen Studienplatz beworben. | der Studienplatz = üniversite kontenjanı
+Hast du dich schon bei der Bank beworben? | die Bank = banka
+Ich möchte Sie um einen Termin bitten. | der Termin = randevu
+Er hat mich um Hilfe gebeten. | die Hilfe = yardım
+Ich danke dir für deine Hilfe. | die Hilfe = yardım
+Wir danken Ihnen für Ihre Geduld. | die Geduld = sabır
+Sie hat mir für das Geschenk gedankt. | das Geschenk = hediye
+Wir haben lange über das Problem diskutiert. | das Problem = sorun
+Im Kurs diskutieren wir über Politik. | die Politik = siyaset
+Darüber möchte ich nicht diskutieren. | darüber = bunun hakkında
+Nach dem Sport duscht er sich. | der Sport = spor
+Wir haben uns auf einen Termin geeinigt. | der Termin = randevu, tarih
+Die Parteien konnten sich nicht einigen. | die Partei = parti
+Habt ihr euch auf einen Preis geeinigt? | der Preis = fiyat
+Er hat sich für die Verspätung entschuldigt. | die Verspätung = gecikme
+Du musst dich bei deiner Schwester entschuldigen. | die Schwester = kız kardeş
+Ich habe von dem Unfall erst heute erfahren. | der Unfall = kaza; erst = ancak
+Wie hast du davon erfahren? | davon = bundan
+Wir haben aus der Zeitung von der Hochzeit erfahren. | die Hochzeit = düğün; die Zeitung = gazete
+Wir haben Ihren Brief erhalten. | der Brief = mektup
+Sie erhalten die Unterlagen per Post. | die Unterlagen = belgeler
+Ich habe noch keine Antwort erhalten. | die Antwort = cevap
+Im Urlaub habe ich mich gut erholt. | der Urlaub = tatil
+Sie erholt sich langsam von der Krankheit. | die Krankheit = hastalık; langsam = yavaş
+Er muss sich von der Operation erholen. | die Operation = ameliyat
+Bitte erinnere mich an den Termin. | der Termin = randevu
+Das Foto erinnert mich an meine Kindheit. | die Kindheit = çocukluk
+Kannst du mich morgen an den Arzttermin erinnern? | der Arzttermin = doktor randevusu
+Zieh eine Jacke an, sonst erkältest du dich. | die Jacke = ceket; sonst = yoksa
+Im Winter erkälten sich viele Kinder. | der Winter = kış
+Die Polizei hat den Dieb festgenommen. | die Polizei = polis; der Dieb = hırsız
+Zwei Männer wurden am Bahnhof festgenommen. | der Bahnhof = istasyon
+Wie fühlst du dich in der neuen Stadt? | die Stadt = şehir
+Er fühlt sich allein. | allein = yalnız
+Das gehört zu meinen Aufgaben. | die Aufgabe = görev
+Er gehört zu den besten Spielern. | der Spieler = oyuncu
+Gehört das Frühstück zum Preis? | das Frühstück = kahvaltı; der Preis = fiyat
+Was hältst du von dem Plan? | der Plan = plan
+Ich halte nicht viel von diesem Film. | der Film = film
+Was halten Sie von meinem Vorschlag? | der Vorschlag = öneri
+Der Film handelt von einer Familie. | die Familie = aile
+Wovon handelt das Buch? | wovon = neyden, neyi
+Der Text handelt von der Umwelt. | die Umwelt = çevre; der Text = metin
+Kannst du mir bei den Hausaufgaben helfen? | die Hausaufgabe = ödev
+Mein Bruder hilft mir beim Umzug. | der Umzug = taşınma
+Ich informiere mich im Internet über die Uni. | die Uni = üniversite
+Hast du dich über die Kurse informiert? | der Kurs = kurs
+Sie müssen sich vorher über die Regeln informieren. | die Regel = kural; vorher = önceden
+Melde dich bei mir, wenn du in Bremen bist! | wenn = -ince, -diğinde
+Er hat sich seit Wochen nicht bei mir gemeldet. | seit Wochen = haftalardır
+Bitte melden Sie sich bei der Rezeption. | die Rezeption = resepsiyon
+Ich muss über deinen Vorschlag nachdenken. | der Vorschlag = öneri
+Er denkt oft über seine Zukunft nach. | die Zukunft = gelecek
+Denk mal darüber nach! | darüber = bunun hakkında
+Wie hat er auf die Nachricht reagiert? | die Nachricht = haber, mesaj
+Sie hat auf meine E-Mail nicht reagiert. | die E-Mail = e-posta
+Der Lehrer reagiert ruhig auf die Frage. | ruhig = sakin; die Frage = soru
+Ich schreibe einen Brief an meine Oma. | der Brief = mektup; die Oma = büyükanne
+Hast du schon an die Firma geschrieben? | die Firma = firma
+Sie schreibt jede Woche an ihre Freundin. | die Freundin = (kız) arkadaş
+Darf ich mich neben dich setzen? | neben = yanına
+Er hat sich ans Fenster gesetzt. | das Fenster = pencere
+Die Eltern sorgen sich um ihre Tochter. | die Eltern = anne baba; die Tochter = kız evlat
+Hast du schon mit dem Arzt gesprochen? | der Arzt = doktor
+Er ist an einem Herzinfarkt gestorben. | der Herzinfarkt = kalp krizi
+Früher sind viele Menschen an dieser Krankheit gestorben. | die Krankheit = hastalık; früher = eskiden
+Ihr Großvater ist letztes Jahr gestorben. | der Großvater = büyükbaba
+Ich streite mich oft mit meinem Bruder. | der Bruder = erkek kardeş
+Sie streiten sich immer über Geld. | das Geld = para
+Ich suche nach meinem Schlüssel. | der Schlüssel = anahtar
+Die Polizei sucht nach dem Täter. | der Täter = fail
+Wir suchen nach einer Lösung. | die Lösung = çözüm
+Ich habe gestern mit meiner Mutter telefoniert. | gestern = dün
+Er telefoniert gerade mit seinem Chef. | der Chef = patron; gerade = şu anda
+Kann ich kurz mit dir telefonieren? | kurz = kısaca
+Sie hat sich mit ihrem Kollegen im Café getroffen. | der Kollege = iş arkadaşı
+Sie hat sich von ihrem Freund getrennt. | der Freund = erkek arkadaş
+Ich trenne mich nicht gern von meinen alten Sachen. | die Sache = eşya, şey
+Er übertreibt immer, wenn er etwas erzählt. | erzählen = anlatmak
+Ich glaube, sie hat ein bisschen übertrieben. | ein bisschen = biraz
+Ich ziehe mich schnell um. | schnell = hızlı
+Du musst dich für das Fest umziehen. | das Fest = kutlama, bayram
+Ich habe mich lange mit ihr unterhalten. | lange = uzun süre
+Worüber habt ihr euch unterhalten? | worüber = ne hakkında
+Wir unterhalten uns gern mit den Nachbarn. | der Nachbar = komşu
+Die Stadt hat sich sehr verändert. | die Stadt = şehir
+Du hast dich überhaupt nicht verändert. | überhaupt nicht = hiç
+Seit dem Umzug hat sich viel verändert. | der Umzug = taşınma
+Ich vergleiche die Preise im Internet. | der Preis = fiyat
+Vergleich dich nicht immer mit anderen! | andere = başkaları
+Bei dem Unfall hat sich niemand verletzt. | der Unfall = kaza; niemand = kimse
+Pass auf, dass du dich nicht verletzt! | aufpassen = dikkat etmek
+Er hat sich in eine Kollegin verliebt. | die Kollegin = (kadın) iş arkadaşı
+Ich habe mich sofort in die Stadt verliebt. | die Stadt = şehir; sofort = hemen
+Sie haben sich im Urlaub verliebt. | der Urlaub = tatil
+Ich verstehe mich gut mit meiner Mitbewohnerin. | die Mitbewohnerin = (kadın) ev arkadaşı
+Er versteht sich nicht mit seinem Chef. | der Chef = patron
+Verstehst du dich gut mit deinen Eltern? | die Eltern = anne baba
+Bitte stellen Sie sich kurz vor. | kurz = kısaca
+Im Kurs haben sich alle vorgestellt. | alle = herkes
+Stell dir vor, ich habe die Prüfung bestanden! | die Prüfung = sınav; bestehen = geçmek
+Die Polizei warnt vor dem Sturm. | der Sturm = fırtına; die Polizei = polis
+Der Arzt hat ihn vor dem Rauchen gewarnt. | der Arzt = doktor; das Rauchen = sigara içmek
+Ich wasche mich mit kaltem Wasser. | kalt = soğuk
+Wasch dir die Hände vor dem Essen! | die Hand = el
+Die Katze wäscht sich. | die Katze = kedi
+Bitte wenden Sie sich an die Rezeption. | die Rezeption = resepsiyon
+An wen kann ich mich wenden? | an wen = kime
+Bei Fragen wenden Sie sich an Frau Müller. | die Frage = soru
+Ich wundere mich über sein Verhalten. | das Verhalten = davranış
+Sie hat sich über das Geschenk gewundert. | das Geschenk = hediye
+Wundere dich nicht, wenn er nicht kommt. | wenn = -se, -ince
+Ich wünsche mir ein neues Fahrrad. | das Fahrrad = bisiklet
+Sie wünscht sich mehr Zeit für die Familie. | die Familie = aile
+Ich komme mit der neuen Software nicht zurecht. | die Software = yazılım
+Kommst du mit deinem Mitbewohner gut zurecht? | der Mitbewohner = ev arkadaşı
+Sie kommt mit dem Geld gut zurecht. | das Geld = para
