@@ -878,3 +878,12 @@
 2026-10-06 08:21:00;wort;n0869:wort;die Operation;ameliyat;die Operation;richtig;die Operation;sek:4 | ipucu:0
 2026-10-06 08:21:15;satz;v149:satz;blitzen;Gestern Abend gab es ein Gewitter. Es hat furchtbar _____ und gedonnert.;blitzt;falsch;geblitzt;farklı | sek:12 | ipucu:0
 2026-10-06 08:21:20;luecke;v429:satz;regnen;Es hat gestern den ganzen Tag _____.;geregnet;richtig;geregnet;sek:5 | ipucu:0
+2026-10-06 08:21:42;stamm;v527:stamm;treffen;treffen — Präsens (er/sie), Präteritum, Perfekt;trefft, traf, hat getroffen;richtig;trifft, traf, hat getroffen;Präsens (er/sie): trifft | öneri:fast | sek:18 | ipucu:0
+2026-10-06 08:21:50;satz;v629:satz;sich(D) vorstellen;Ich kann mir das nicht _____.;vorstellen;richtig;vorstellen;sek:8 | ipucu:0
+2026-10-06 08:22:02;stamm;v347:stamm;können;können — Präsens (er/sie), Präteritum;kann, konnte;richtig;kann, konnte;sek:11 | ipucu:0
+2026-10-06 08:22:06;luecke;v149:satz;blitzen;Gestern Abend gab es ein Gewitter. Es hat furchtbar _____ und gedonnert.;geblitzt;richtig;geblitzt;sek:5 | ipucu:0
+2026-10-06 08:22:13;satz;v069:satz;ausfüllen;_____ Sie bitte dieses Formular _____!;Füllen aus;richtig;Füllen aus;sek:6 | ipucu:0
+2026-10-06 08:22:48;stamm;v148:stamm;bleiben;bleiben — Präsens (er/sie), Präteritum, Perfekt;bliebt, blieb, ist gelblieben;richtig;bleibt, blieb, ist geblieben;Präsens (er/sie): bleibt, Perfekt: ist geblieben | öneri:falsch | sek:29 | ipucu:0
+2026-10-06 08:22:54;satz;v119:satz;sich beruhigen;_____ Sie sich bitte!;Ruhigen;fast;Beruhigen;farklı | öneri:falsch | sek:3 | ipucu:0
+2026-10-06 08:23:00;frm;v673:frm;zweifeln an;zweifeln an — er / sie Perfekt;hat gezweifelt;richtig;hat gezweifelt;sek:5 | ipucu:0
+2026-10-06 08:23:05;satz;v642:satz;sich wenden an;Bitte _____ Sie sich an die Rezeption.;wenden;richtig;wenden;sek:4 | ipucu:0
