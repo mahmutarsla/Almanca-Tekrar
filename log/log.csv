@@ -971,3 +971,13 @@
 2026-10-06 21:24:18;paket;p04:5;das Referat;An der Uni;Präsendation;falsch;Referat;farklı
 2026-10-06 21:24:27;paket;p04:6;die Prüfung;An der Uni;Prüfung;richtig;Prüfung;
 2026-10-06 21:24:33;paket;p04:7;der Kommilitone;An der Uni;da;falsch;Kommilitonen;farklı
+2026-10-06 21:24:39;paket;p04:8;die Mensa;An der Uni;Melsa;fast;Mensa;yazım
+2026-10-06 21:24:46;paket;p04:9;die Bibliothek;An der Uni;Bibliothek;richtig;Bibliothek;
+2026-10-06 21:24:46;paket;p04:pak;An der Uni;yeni paket;;fast;;puan:66
+2026-10-06 21:24:55;yeni;v589;sich verlassen auf;;;neu;;
+2026-10-06 21:25:02;satz;v509:satz;sich streiten mit;Ich _____ mich oft mit meinem Bruder.;streite;richtig;streite;sek:7 | ipucu:0
+2026-10-06 21:25:33;stamm;v119:stamm;sich beruhigen;beruhigen — Präsens (er/sie), Präteritum, Perfekt;sich beruhigt, sich beruhigt;falsch;beruhigt sich, beruhigte sich, hat sich beruhigt;Präsens (er/sie): beruhigt sich, Präteritum: beruhigte sich, Perfekt: hat sich beruhigt | sek:27 | ipucu:0
+2026-10-06 21:25:42;bed;v127:bed;besichtigen;besichtigen;gezmek;fast;(görülecek yeri) gezmek;yavaş | sek:7 | ipucu:0
+2026-10-06 21:25:48;wort;n0941:wort;die Prüfung;sınav;die Prüfung;richtig;die Prüfung;sek:6 | ipucu:0
+2026-10-06 21:25:54;satz;v125:satz;sich beschweren bei;Ich habe mich beim Chef _____.;beschwert;richtig;beschwert;sek:6 | ipucu:0
+2026-10-06 21:26:03;bed;v561:bed;unterschreiben;unterschreiben;imzalamak;fast;imzalamak;yavaş | sek:8 | ipucu:0
