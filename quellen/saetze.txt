@@ -1052,3 +1052,11 @@ v656 | Sie wünscht sich mehr Zeit für die Familie. | Ailesine daha çok zaman 
 v668 | Ich komme mit der neuen Software nicht zurecht. | Yeni yazılımla başa çıkamıyorum.
 v668 | Kommst du mit deinem Mitbewohner gut zurecht? | Ev arkadaşınla iyi geçiniyor musun?
 v668 | Sie kommt mit dem Geld gut zurecht. | Parayla iyi idare ediyor.
+v590 | Wir haben uns in der Altstadt verlaufen. | Eski şehirde yolumuzu kaybettik.
+v590 | Hast du dich schon wieder verlaufen? | Yine mi yolunu kaybettin?
+v425 | Mit so viel Regen habe ich nicht gerechnet. | Bu kadar yağmur beklemiyordum.
+v149 | Heute Nacht hat es stark geblitzt. | Bu gece çok şimşek çaktı.
+v626 | Sie hat einen Ausflug an den See vorgeschlagen. | Göle bir gezi önerdi.
+v646 | Ich muss dir leider widersprechen. | Maalesef sana itiraz etmem gerekiyor.
+v527 | Gestern habe ich zufällig meinen Lehrer getroffen. | Dün tesadüfen öğretmenime rastladım.
+v346 | Er ist zu spät zum Unterricht gekommen. | Derse geç geldi.

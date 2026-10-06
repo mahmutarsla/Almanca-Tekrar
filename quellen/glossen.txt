@@ -3832,3 +3832,11 @@ Sie wünscht sich mehr Zeit für die Familie. | die Familie = aile
 Ich komme mit der neuen Software nicht zurecht. | die Software = yazılım
 Kommst du mit deinem Mitbewohner gut zurecht? | der Mitbewohner = ev arkadaşı
 Sie kommt mit dem Geld gut zurecht. | das Geld = para
+Wir haben uns in der Altstadt verlaufen. | die Altstadt = eski şehir
+Hast du dich schon wieder verlaufen? | schon wieder = yine
+Mit so viel Regen habe ich nicht gerechnet. | der Regen = yağmur
+Heute Nacht hat es stark geblitzt. | stark = şiddetli
+Sie hat einen Ausflug an den See vorgeschlagen. | der Ausflug = gezi; der See = göl
+Ich muss dir leider widersprechen. | leider = maalesef
+Gestern habe ich zufällig meinen Lehrer getroffen. | zufällig = tesadüfen
+Er ist zu spät zum Unterricht gekommen. | der Unterricht = ders; zu spät = çok geç

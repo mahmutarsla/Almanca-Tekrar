@@ -71,3 +71,16 @@ Son incelenen log satırı en alttaki notta yazar.
   cümle aşamaları (ipuçlu boşluk → boşluk → tam cümle); Türkçe → Almanca seçmeli %75; yazma her gün; yazma birimi tanımadan bir gün sonra açılır.
 - Eklendi: 6 fiil + 6 kelime cümlesi, die Praxis ve der Rat için kanca.
 - Son incelenen log satırı: 2026-10-03 12:13:28.
+
+## 2026-10-06 — log incelemesi (2026-10-03 12:13 – 2026-10-06 08:23) + tekrar döngüsü düzeltmesi
+
+- Sorun (Tuna): yanlış yapılan öğe aynı cümleyle art arda geliyordu (sich verlaufen 3 dk'da 3×, reagieren auf, das Gedicht), diğer tekrarlar alta kalıyordu.
+  Düzeltme: yanlıştan sonra oturumda yalnız 1 tekrar (6 soru sonra, başka cümleyle; Goethe boşluğu az önce sorulduysa çeviri cümlesi);
+  orada da yanlışsa ertesi güne. Bugün yanlış yapılanlar kuyrukta öne geçmez (yalnız önceki günlerin yanlışları öne).
+- Cümlesi olmayan 62 fiile 184 çeviri cümlesi (kalıp üreticili "fiil | özne | nesne" sorusu artık çıkmıyor).
+- Hatalar: Partizip (verlaufen, gerechnet, geblitzt, vorgeschlagen, ist gekommen, getroffen), sich beschweren bei (3 gün yanlış → kanca),
+  das Gedicht ↔ gedacht (kanca), widersprechen, zustimmen, sich wenden an, könnte/konnte, -eln: ich zweifle.
+  Artikel: das Amt (2× der), die Operation, die Unterschrift, das Rezept (der/die), das Seminar, die Situation, der Roman, der Regen.
+- Kendine not: 30 öneri satırının 27'sinde cömert (24'ünde sistem "yanlış" derken küçük hata / doğru verdi; özellikle çekim: fahrt, trefft, bliebt).
+- Eklendi: 46 düzeltme (feedback.js), 2 kanca, 8 Partizip cümlesi.
+- Son incelenen log satırı: 2026-10-06 08:23:05.

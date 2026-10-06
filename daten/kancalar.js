@@ -5,4 +5,6 @@ window.KANCA = {
   n0926: "die Praxis → -is ile biten yabancı kelimeler die (die Praxis, die Basis); 'pratisyen hekimin muayenehanesi' kırmızı tabela",
   n0957: "der Rat → 'rahat' bir öğüt; der Rat, der Ratschlag (das Rathaus başka: belediye binası)",
   n0844: "der Nebel → 'nebula' (bulut); hava olayları çoğunlukla der: der Regen, der Schnee, der Nebel, der Wind, der Himmel (ama die Wolke, die Luft, das Eis)",
+  n0432: "das Gedicht → 'ge-DİK-t': şair dizeleri dik dik yazar; Ge- ile başlayan birçok isim das (das Gesicht, das Gefühl, das Gespräch), yeşil defter; gedacht (düşündü) ile karıştırma",
+  v125: "sich beschweren → 'beş vere': beş kere şikâyete gider; kime: bei (beim Chef), neyden: über (über den Lärm); schwer = ağır, içi ağır gelmiş",
 };

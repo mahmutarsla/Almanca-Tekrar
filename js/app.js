@@ -405,6 +405,8 @@
 
   const dikkatAktiv = () => session.dikkatBis > session.q;
 
+  // ertesi günün başı: bugün iki kez yanlış yapılan kart bugün bir daha gelmesin
+  function morgen(t) { const d = new Date(t); d.setHours(0, 0, 0, 0); d.setDate(d.getDate() + 1); return d.getTime(); }
   function waehle() {
     const m = session.modus;
     // 1) oturum içi yanlışların tekrarı (4 soru sonra)
@@ -453,7 +455,11 @@
     const ordne = list => {
       // çok birikmişse hâlâ hatırlananlar önce (kurtarılabilenler); yoksa önce dünkü yanlışlar, sonra en eski vade
       if (session.stau) list.sort((a, b) => FSRS.currentR(S.karten[b], now()) - FSRS.currentR(S.karten[a], now()));
-      else list.sort((a, b) => ((S.karten[b].lastG === 1) - (S.karten[a].lastG === 1)) || S.karten[a].due - S.karten[b].due);
+      else {
+        // önceki günlerden kalan yanlışlar önce; bugün yanlış yapılanlar diğer tekrarların önüne geçmez
+        const d = tag(), eski = u => S.karten[u].lastG === 1 && !!S.karten[u].last && tag(S.karten[u].last) !== d;
+        list.sort((a, b) => (eski(b) - eski(a)) || S.karten[a].due - S.karten[b].due);
+      }
       return list.find(x => itemOf(x) !== lastItem) || list[0];
     };
     // dikkat dağınıkken kolay sorular (tanıma) önce
@@ -860,7 +866,8 @@
   function frageSatz(v, lv) {
     const hist = S.kontext[v.id] || [];
     const ue = SAETZE[v.id] || [];
-    if (ue.length && (!v.lueckenListe.length || Math.random() < 0.75)) return frageUebersetzen(v, lv, ue, hist);
+    const lueckeFrei = v.lueckenListe.some(l => !hist.includes(l.text));
+    if (ue.length && (!v.lueckenListe.length || !lueckeFrei || Math.random() < 0.75)) return frageUebersetzen(v, lv, ue, hist);
     const useLuecke = v.lueckenListe.length > 0;
     if (!useLuecke && v.rahmen) {
       let u = null;
@@ -941,7 +948,7 @@
 
   function frageUebersetzen(v, lv, ue, hist) {
     const frei = ue.filter(x => !hist.includes(x.de));
-    const x = frei.length ? pick(frei) : pick(ue);
+    const x = frei.length ? pick(frei) : ue.slice().sort((a, b) => hist.lastIndexOf(a.de) - hist.lastIndexOf(b.de))[0];
     if (lv <= 1) {
       const q = frageLueckeStufe(v.id, x, lv, `<span class="chip vurgu">${esc(v.anz)}${v.obj.length ? ' · ' + esc(G.objMuster(v)) : ''}</span>`, 'satz');
       if (q) return q;
@@ -966,7 +973,7 @@
     const ue = NSAETZE[id] || [];
     const hist = S.kontext[id] || [];
     const frei = ue.filter(x => !hist.includes(x.de));
-    const x = frei.length ? pick(frei) : pick(ue);
+    const x = frei.length ? pick(frei) : ue.slice().sort((a, b) => hist.lastIndexOf(a.de) - hist.lastIndexOf(b.de))[0];
     const k = kind(id), wort = k === 'n' ? byId[id].lemma : wById[id].de;
     const art = k === 'n' ? (byId[id].plOnly ? 'die (Pl.)' : byId[id].art) : '';
     // ipucu azalır: 0 → artikel + baş harfler, 1 → artikel, 2+ → yok
@@ -1780,10 +1787,16 @@
     session.letzte.push(CAT[q.typ]);
     session.sonItem = q.id;
     if (!q.mc && !q.artFrage) dikkatNotieren(g > 1, q.ungezaehlt);
-    // oturum içi tekrar: yanlış → 4 soru sonra (en fazla 2 kez)
+    // oturum içi tekrar: yanlış → 6 soru sonra yalnız 1 kez (başka cümleyle); orada da yanlışsa bugün bir daha sorma, yarına
     const mal = q.requeue ? q.requeue.mal + 1 : 0;
     session.requeue = session.requeue.filter(r => r.uid !== q.uid);
-    if (g === 1 && mal < 2) session.requeue.push({ uid: q.uid, nach: session.q + 4, mal });
+    if (g === 1) {
+      const fh = session.falschHeute = session.falschHeute || {};
+      const schon = fh[q.uid] && fh[q.uid].tag === tag(t) ? fh[q.uid].n : 0;
+      fh[q.uid] = { tag: tag(t), n: schon + 1 };
+      if (mal < 1 && !schon) session.requeue.push({ uid: q.uid, nach: session.q + 6, mal });
+      else { c.due = Math.max(c.due, morgen(t)); delete c.lern; }
+    }
     // ilk başarılı hatırlamadan sonra çekim ve cümle birimleri açılır
     if (q.typ === 'abr' && g >= 2) {
       ['stamm', 'satz', 'refl'].forEach((u, i) => { if (unitsOf(q.id).includes(u)) neueKarte(q.id + ':' + u, t + (i + 2) * 3 * 60000); });
