@@ -887,3 +887,7 @@
 2026-10-06 08:22:54;satz;v119:satz;sich beruhigen;_____ Sie sich bitte!;Ruhigen;fast;Beruhigen;farklı | öneri:falsch | sek:3 | ipucu:0
 2026-10-06 08:23:00;frm;v673:frm;zweifeln an;zweifeln an — er / sie Perfekt;hat gezweifelt;richtig;hat gezweifelt;sek:5 | ipucu:0
 2026-10-06 08:23:05;satz;v642:satz;sich wenden an;Bitte _____ Sie sich an die Rezeption.;wenden;richtig;wenden;sek:4 | ipucu:0
+2026-10-06 08:31:33;leech;n0433;die Geduld;sabır;;takiliyor;;günler:2026-10-02,2026-10-03,2026-10-06
+2026-10-06 08:31:33;art;n0433:art;die Geduld;Geduld;der;falsch;die Geduld;artikel: der → die | sek:4 | ipucu:0
+2026-10-06 08:31:38;art;n0926:art;die Praxis;Praxis;die;fast;die Praxis;sek:4 | ipucu:0
+2026-10-06 08:31:40;art;n0524:art;die Heimat;Heimat;der;falsch;die Heimat;artikel: der → die | sek:2 | ipucu:0
