@@ -946,3 +946,13 @@
 2026-10-06 21:17:47;prod;w0479:prod;trocken;kuru;trocken;richtig;trocken;sek:6 | ipucu:0
 2026-10-06 21:17:53;wort;n0179:wort;der Blitz;şimşek;der Blitz;richtig;der Blitz;sek:5 | ipucu:0
 2026-10-06 21:18:00;prod;w0290:prod;kühl;serin;Kalt;richtig;kühl;farklı | öneri:falsch | sek:4 | ipucu:0
+2026-10-06 21:18:09;wort;n0313:wort;die Erlaubnis;izin;die Erlaubnis;richtig;die Erlaubnis;sek:8 | ipucu:0
+2026-10-06 21:18:18;wort;n1376:wort;die Wettervorhersage;hava tahmini;die Wettervorhersage;richtig;die Wettervorhersage;sek:8 | ipucu:0
+2026-10-06 21:18:25;wort;n0926:wort;die Praxis;muayenehane;die Praxis;richtig;die Praxis;sek:7 | ipucu:0
+2026-10-06 21:18:37;wort;n0587:wort;die Kälte;soğuk;die Kält;fast;die Kälte;kelime yanlış | öneri:falsch | sek:6 | ipucu:0
+2026-10-06 21:18:44;yeni;v509;sich streiten mit;;;neu;;
+2026-10-06 21:18:50;leech;n0207;die Burg;kale, şato;;takiliyor;;günler:2026-10-02,2026-10-03,2026-10-06
+2026-10-06 21:18:50;wort;n0207:wort;die Burg;kale, şato;d;falsch;die Burg;boş / rastgele | sayılmadı | sek:5 | ipucu:0
+2026-10-06 21:19:06;wort;n1240:wort;das Training;antrenman;das Traning;richtig;das Training;yazım | öneri:fast | sek:14 | ipucu:0
+2026-10-06 21:19:10;prod;w0344:prod;nass;ıslak;nass;richtig;nass;sek:3 | ipucu:0
+2026-10-06 21:19:14;wort;n0524:wort;die Heimat;memleket, vatan;die Heimet;richtig;die Heimat;kelime yanlış | öneri:falsch | sek:3 | ipucu:0
