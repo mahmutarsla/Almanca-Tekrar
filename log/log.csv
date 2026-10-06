@@ -891,3 +891,13 @@
 2026-10-06 08:31:33;art;n0433:art;die Geduld;Geduld;der;falsch;die Geduld;artikel: der → die | sek:4 | ipucu:0
 2026-10-06 08:31:38;art;n0926:art;die Praxis;Praxis;die;fast;die Praxis;sek:4 | ipucu:0
 2026-10-06 08:31:40;art;n0524:art;die Heimat;Heimat;der;falsch;die Heimat;artikel: der → die | sek:2 | ipucu:0
+2026-10-06 08:31:42;art;n0691:art;die Kunst;Kunst;der;falsch;die Kunst;artikel: der → die | sek:1 | ipucu:0
+2026-10-06 08:31:44;art;n1088:art;die Situation;Situation;die;richtig;die Situation;sek:1 | ipucu:0
+2026-10-06 08:31:48;erk;n0660:erk;die Kosten;die Kosten;masraflar;richtig;masraflar (çoğul);sek:3 | ipucu:0
+2026-10-06 08:31:51;erk;n1179:erk;die Tablette;tablet (ilaç);die Tablette;richtig;die Tablette;sek:3 | ipucu:0
+2026-10-06 08:31:54;art;n0433:art;die Geduld;Geduld;die;richtig;die Geduld;sek:2 | ipucu:0
+2026-10-06 08:31:55;art;n0869:art;die Operation;Operation;die;richtig;die Operation;sek:1 | ipucu:0
+2026-10-06 08:31:57;art;n0524:art;die Heimat;Heimat;die;richtig;die Heimat;sek:1 | ipucu:0
+2026-10-06 08:33:00;art;n0691:art;die Kunst;Kunst;die;richtig;die Kunst;sek:1 | ipucu:0
+2026-10-06 17:25:13;satz;v642:satz;sich wenden an;An wen kann ich mich _____?;wenden;richtig;wenden;sek:4 | ipucu:0
+2026-10-06 17:25:20;stamm;v347:stamm;können;können — Präsens (er/sie), Präteritum;kann, konnte;richtig;kann, konnte;sek:7 | ipucu:1
