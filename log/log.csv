@@ -1054,3 +1054,13 @@
 2026-10-07 07:16:33;leech;v590;sich verlaufen;(yürürken) yolunu kaybetmek;;takiliyor;;günler:2026-10-04,2026-10-06,2026-10-07
 2026-10-07 07:16:33;abr;v590:abr;sich verlaufen;(yürürken) yolunu kaybetmek;sich verandern;falsch;sich verlaufen;artikel/çekim | sek:25 | ipucu:0
 2026-10-07 07:17:19;leech;v119;sich beruhigen;sakinleşmek;;takiliyor;;günler:2026-10-04,2026-10-06,2026-10-07
+2026-10-07 07:17:19;stamm;v119:stamm;sich beruhigen;beruhigen — Präsens (er/sie), Präteritum, Perfekt;;falsch;beruhigt sich, beruhigte sich, hat sich beruhigt;bilmiyorum | sek:40 | ipucu:0
+2026-10-07 07:17:40;leech;v642;sich wenden an;(birine) başvurmak;;takiliyor;;günler:2026-10-04,2026-10-06,2026-10-07
+2026-10-07 07:17:40;stamm;v642:stamm;sich wenden an;wenden — Präsens (er/sie), Präteritum, Perfekt;;falsch;wendet sich, wendete sich, hat sich gewendet;bilmiyorum | sek:15 | ipucu:0
+2026-10-07 07:18:01;stamm;v643:stamm;werden;werden — Präsens (er/sie), Präteritum, Perfekt;wird, wurd, ist geworden;richtig;wird, wurde, ist geworden;Präteritum: wurde | öneri:falsch | sek:19 | ipucu:0
+2026-10-07 07:18:11;refl;v111:refl;sich bemühen um;Ich _____ mich um einen Studienplatz.;bemühe;richtig;bemühe;sek:10 | ipucu:0
+2026-10-07 07:18:18;abr;v423:abr;reagieren auf;(bir şeye) tepki vermek;reagieren auf;richtig;reagieren auf (auf + Akk);hâl yazılmadı (auf + Akk) | öneri:fast | sek:6 | ipucu:0
+2026-10-07 07:18:42;stamm;v629:stamm;sich(D) vorstellen;vorstellen — Präsens (er/sie), Präteritum, Perfekt;stellt vor, stellt;falsch;stellt sich vor, stellte sich vor, hat sich vorgestellt;Präsens (er/sie): stellt sich vor, Präteritum: stellte sich vor, Perfekt: hat sich vorgestellt | sek:19 | ipucu:0
+2026-10-07 07:19:19;stamm;v069:stamm;ausfüllen;ausfüllen — Präsens (er/sie), Präteritum, Perfekt;füllt aus, füllte aus, gefültet aus ;fast;füllt aus, füllte aus, hat ausgefüllt;Perfekt: hat ausgefüllt | öneri:falsch | sek:28 | ipucu:0
+2026-10-07 07:19:39;yeni;v278;sich fürchten vor;;;neu;;
+2026-10-07 07:19:44;wort;n0037:wort;die Anmeldung;"kayıt; resepsiyon";die Anmeldung;richtig;die Anmeldung;sek:4 | ipucu:0
