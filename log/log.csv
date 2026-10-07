@@ -989,3 +989,23 @@
 2026-10-07 06:58:26;erk;w0290:erk;kühl;serin;kühl;richtig;kühl;sek:5 | ipucu:1
 2026-10-07 06:58:29;erk;n0313:erk;die Erlaubnis;izin;die Erlaubnis;richtig;die Erlaubnis;sek:3 | ipucu:1
 2026-10-07 06:58:31;art;n1376:art;die Wettervorhersage;Wettervorhersage;die;richtig;die Wettervorhersage;sek:1 | ipucu:1
+2026-10-07 06:58:34;art;n1320:art;die Versichertenkarte;Versichertenkarte;die;richtig;die Versichertenkarte;sek:1 | ipucu:0
+2026-10-07 06:58:35;art;n0596:art;die Karriere;Karriere;die;richtig;die Karriere;sek:1 | ipucu:0
+2026-10-07 06:58:39;art;n1307:art;das Verhalten;Verhalten;das;richtig;das Verhalten;sek:3 | ipucu:0
+2026-10-07 06:58:41;art;n0293:art;die Energie;Energie;die;richtig;die Energie;sek:1 | ipucu:0
+2026-10-07 06:58:43;art;n1373:art;der Wettbewerb;Wettbewerb;der;richtig;der Wettbewerb;sek:1 | ipucu:0
+2026-10-07 06:58:51;erk;w0108:erk;drinnen;içeride;hier;falsch;drinnen;sek:6 | ipucu:0
+2026-10-07 06:58:53;art;n0297:art;die Entscheidung;Entscheidung;die;richtig;die Entscheidung;sek:2 | ipucu:0
+2026-10-07 06:58:55;art;n0869:art;die Operation;Operation;die;richtig;die Operation;sek:1 | ipucu:0
+2026-10-07 06:58:57;art;n0925:art;die Präsentation;Präsentation;die;richtig;die Präsentation;sek:2 | ipucu:0
+2026-10-07 06:59:01;art;n0937:art;das Projekt;Projekt;die;falsch;das Projekt;artikel: die → das | sek:3 | ipucu:0
+2026-10-07 06:59:04;art;n0047:art;der Antrag;Antrag;der;richtig;der Antrag;sek:2 | ipucu:0
+2026-10-07 06:59:11;erk;n0538:erk;die Hitze;sıcaklık (bunaltıcı);die Hitze;fast;die Hitze;yavaş | sek:6 | ipucu:0
+2026-10-07 06:59:14;erk;n1376:erk;die Wettervorhersage;hava tahmini;die Wettervorhersage;richtig;die Wettervorhersage;sek:3 | ipucu:0
+2026-10-07 06:59:17;art;n1375:art;der Wetterbericht;Wetterbericht;der;richtig;der Wetterbericht;sek:2 | ipucu:0
+2026-10-07 06:59:19;art;x1479:art;die Aussage;Aussage;die;richtig;die Aussage;sek:1 | ipucu:0
+2026-10-07 06:59:22;art;n1028:art;der Schatten;Schatten;der;richtig;der Schatten;sek:2 | ipucu:0
+2026-10-07 06:59:23;art;n1359:art;die Wärme;Wärme;die;richtig;die Wärme;sek:1 | ipucu:0
+2026-10-07 06:59:26;art;n1169:art;der Sturm;Sturm;der;richtig;der Sturm;sek:1 | ipucu:0
+2026-10-07 06:59:29;erk;w0108:erk;drinnen;içeride;drinnen;richtig;drinnen;sek:3 | ipucu:0
+2026-10-07 06:59:33;art;n0629:art;das Klima;Klima;der;falsch;das Klima;artikel: der → das | sek:3 | ipucu:0
