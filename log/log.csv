@@ -1009,3 +1009,17 @@
 2026-10-07 06:59:26;art;n1169:art;der Sturm;Sturm;der;richtig;der Sturm;sek:1 | ipucu:0
 2026-10-07 06:59:29;erk;w0108:erk;drinnen;içeride;drinnen;richtig;drinnen;sek:3 | ipucu:0
 2026-10-07 06:59:33;art;n0629:art;das Klima;Klima;der;falsch;das Klima;artikel: der → das | sek:3 | ipucu:0
+2026-10-07 06:59:35;art;n0179:art;der Blitz;Blitz;der;richtig;der Blitz;sek:1 | ipucu:0
+2026-10-07 06:59:37;art;n0248:art;der Donner;Donner;der;richtig;der Donner;sek:1 | ipucu:0
+2026-10-07 06:59:40;art;n0937:art;das Projekt;Projekt;die;falsch;das Projekt;artikel: die → das | sek:2 | ipucu:0
+2026-10-07 06:59:45;erk;n0047:erk;der Antrag;der Antrag;başvuru, dilekçe;richtig;başvuru, dilekçe;sek:4 | ipucu:0
+2026-10-07 06:59:47;art;n0538:art;die Hitze;Hitze;die;richtig;die Hitze;sek:1 | ipucu:0
+2026-10-07 06:59:53;erk;x1478:erk;das Frühjahr;ilkbahar;das Frühjahr;richtig;das Frühjahr;sek:5 | ipucu:0
+2026-10-07 06:59:57;art;n0474:art;das Gewitter;Gewitter;das;fast;das Gewitter;sek:4 | ipucu:0
+2026-10-07 07:00:02;art;n1038:art;der Schirm;Schirm;der;fast;der Schirm;sek:4 | ipucu:0
+2026-10-07 07:00:06;art;n1207:art;die Temperatur;Temperatur;die;richtig;die Temperatur;sek:3 | ipucu:0
+2026-10-07 07:00:08;art;n1379:art;der Wind;Wind;der;richtig;der Wind;sek:2 | ipucu:0
+2026-10-07 07:00:11;art;n1374:art;das Wetter;Wetter;das;richtig;das Wetter;sek:2 | ipucu:0
+2026-10-07 07:00:13;art;n1095:art;die Sonne;Sonne;die;richtig;die Sonne;sek:1 | ipucu:0
+2026-10-07 07:00:15;art;n0629:art;das Klima;Klima;das;richtig;das Klima;sek:1 | ipucu:0
+2026-10-07 07:00:20;erk;n1373:erk;der Wettbewerb;yarışma;der Wettbewerb;richtig;der Wettbewerb;sek:5 | ipucu:0
