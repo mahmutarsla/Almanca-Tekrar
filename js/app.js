@@ -167,6 +167,7 @@
     stark: { ad: 'Düzensiz fiiller', grup: 'Dilbilgisi', ziel: 20, neu: 5, neuTr: 'yeni düzensiz fiil (Präteritum + Perfekt)' },
     kalip: { ad: 'Kalıplar', grup: 'Yazma', ziel: 1, neu: 1, neuTr: 'okuma (soru yok)' },
     lesen: { ad: 'Okuma', grup: 'Yazma', ziel: 1, neu: 1, neuTr: 'metin + doğru/yanlış soruları' },
+    fiilmetin: { ad: 'Fiil metni', grup: 'Yazma', ziel: 1, neu: 0, neuTr: 'günün metni: fiil çekimleri' },
     yazma: { ad: 'Yazma', grup: 'Yazma', ziel: 1, neu: 1, neuTr: 'metin (3–4 günde bir)' },
     zayif: { ad: 'Zayıflar', grup: '', ziel: 10, neu: 0, neuTr: '' },
   };
@@ -214,7 +215,7 @@
     const k = kind(id);
     if (k === 'v') {
       const v = vById[id];
-      return ['bed', 'abr'].concat(v.frmDrill ? ['stamm'] : [], v.rahmen || v.lueckenListe.length || SAETZE[id] ? ['satz'] : [], v.reflDrill ? ['refl'] : []);
+      return ['bed', 'abr'].concat(v.frmDrill && v.stark ? ['stamm'] : [], v.rahmen || v.lueckenListe.length || SAETZE[id] ? ['satz'] : [], v.reflDrill ? ['refl'] : []);
     }
     if (k === 'w') return ['erk', 'prod'].concat(NSAETZE[id] ? ['nsatz'] : []);
     if (k === 'p') return ['pak'];
@@ -329,6 +330,7 @@
     stark: u => typOf(u) === 'stamm' || (typOf(u) === 'bed' && kind(itemOf(u)) === 'v' && !!(vById[itemOf(u)] || {}).stark),
     yazma: () => false,
     lesen: () => false,
+    fiilmetin: () => false,
     kalip: () => false,
   };
   // seçili konu
@@ -356,7 +358,9 @@
     return Object.keys(S.karten).filter(u => S.karten[u].due <= t && (!filterFn || filterFn(u)) && gueltig(u));
   }
   // veriden kaldırılmış öğelerin kartlarını atla
-  const gueltig = u => { const id = itemOf(u), k = kind(id); return k === 'v' ? !!vById[id] : k === 'w' ? !!wById[id] : k === 'p' ? !!pById[id] : !!(byId[id] && !byId[id].skip); };
+  // çekim (stamm) kartı: yalnız düzensiz fiil ve formlarını gördüysen (fiil metni / tanıtım)
+  const stammSichtbar = id => !!(vById[id] && vById[id].stark && S.formGesehen && S.formGesehen[id]);
+  const gueltig = u => { const id = itemOf(u), k = kind(id); if (typOf(u) === 'stamm' && !stammSichtbar(id)) return false; return k === 'v' ? !!vById[id] : k === 'w' ? !!wById[id] : k === 'p' ? !!pById[id] : !!(byId[id] && !byId[id].skip); };
 
   function schwach(id) {
     return unitsOf(id).some(u => { const c = S.karten[id + ':' + u]; return c && (c.lapses > 0 || c.lastG === 1); });
@@ -415,13 +419,14 @@
     if ((z.n[id] || 0) >= izCap(id)) return false;
     return z.q[id] == null || z.qq - z.q[id] >= abstand;
   }
+  const stammErlaubt = () => (session.letzteStamm == null || session.q - session.letzteStamm >= 8) && (iz().stamm || 0) < 4;
   function izNote(id) { if (!id) return; const z = iz(); z.qq++; z.n[id] = (z.n[id] || 0) + 1; z.q[id] = z.qq; }
   // ertesi günün başı: bugün iki kez yanlış yapılan kart bugün bir daha gelmesin
   function morgen(t) { const d = new Date(t); d.setHours(0, 0, 0, 0); d.setDate(d.getDate() + 1); return d.getTime(); }
   function waehle() {
     const m = session.modus;
     // 1) oturum içi yanlışların tekrarı (4 soru sonra)
-    const rq = session.requeue.findIndex(r => r.nach <= session.q && S.karten[r.uid] && FILTER[m](r.uid) && izOk(itemOf(r.uid)));
+    const rq = session.requeue.findIndex(r => r.nach <= session.q && S.karten[r.uid] && FILTER[m](r.uid) && izOk(itemOf(r.uid)) && gueltig(r.uid) && (typOf(r.uid) !== 'stamm' || stammErlaubt()));
     if (rq >= 0) { const r = session.requeue.splice(rq, 1)[0]; return { uid: r.uid, requeue: r }; }
     // 1b) her ~6 soruda bir: bugün öğrendiğin bir kelimeyi Türkçeden Almancaya yazdır (kelime başına günde en çok 2)
     if (session.q > 0 && session.q % 6 === 5 && session.letzteHeute !== session.q && m !== 'paket') {
@@ -481,8 +486,8 @@
     };
     // çekim (stamm): en az 6 soru arayla, günde en çok 5
     const z = iz();
-    const stammOk = (session.letzteStamm == null || session.q - session.letzteStamm >= 6) && (z.stamm || 0) < 5;
-    if (!stammOk && due.some(u => typOf(u) !== 'stamm')) due = due.filter(u => typOf(u) !== 'stamm');
+    // çekim: en az 8 soru arayla, günde en çok 4; başka soru olmasa da sınır aşılmaz
+    if (!stammErlaubt()) due = due.filter(u => typOf(u) !== 'stamm');
     // her 5 soruda bir: öğrendiğin kelime gerçek bir metin cümlesinin içinde (DW / Klexikon / Goethe) — anlamı ne?
     if (m !== 'paket' && m !== 'zayif' && session.q % 5 === 4 && session.letzteKontext !== session.q) {
       session.letzteKontext = session.q;
@@ -1112,6 +1117,7 @@
   const stammZiel = v => formen(v).map(x => x.soll).join(', ');
   function frageStammEinf(id) {
     const v = vById[id], fs = formen(v);
+    (S.formGesehen = S.formGesehen || {})[id] = tag();  // formlar burada gösteriliyor
     const abschreib = stammZiel(v);
     return { typ: 'einf', stamm: true, id, uid: id + ':stamm', abschreib, html: `
       <div class="tur"><span class="yeni">yeni fiil</span><span>${fs.map(x => x.et).join(' · ')}</span></div>
@@ -1489,6 +1495,140 @@
       <div class="sira">${L.aufgaben ? '' : '<button class="btn ana" data-act="lesen-fertig" type="button">Okudum</button>'}<button class="btn${L.aufgaben && Object.keys(session.lesenCevap).length === L.aufgaben.length ? ' ana' : ''}" data-act="lesen-baska" type="button">Başka metin</button></div>`;
     tastatur();
   }
+  // ================= Günün fiil metni =================
+  // Her gün (sabah 4'te değişir) gerçek bir metin (DW / Klexikon / Goethe): tam bilmediğin düzensiz fiillerin çekimli hâllerini en çok içeren.
+  // Fiil formları işaretli; basınca mastar + zaman + üç form. Sonra kısa test (hangi zaman?). Görülen fiillerin çekim sorusu ancak bundan sonra açılır.
+  const fvTag = () => tag(now() - 4 * 3600000);
+  let _fvIdx = null;
+  function fvIndex() {
+    if (_fvIdx) return _fvIdx;
+    _fvIdx = new Map();
+    const add = (form, v, zeit, pre) => { if (!form || form === v.inf) return; const l = _fvIdx.get(form) || []; if (!l.some(x => x.id === v.id && x.zeit === zeit)) l.push({ id: v.id, zeit, pre }); _fvIdx.set(form, l); };
+    VERBEN.forEach(v => {
+      if (!v.stark || !v.frmDrill || v.tier < 2) return;  // A1 fiilleri (gehen, kommen …) zaten biliniyor
+      if (/\s/.test(v.inf) || v.sp) return;  // çok kelimeli (bekannt geben, Angst haben): yanlış eşleşir
+      const pre = v.pre && !v.sp ? v.pre : '';  // ayrılabilen ön ek: cümlede ayrıca aranır
+      const f = G.praesensForms(v);
+      [0, 1, 2, 4].forEach(i => add(f[i], v, 'Präsens', pre));
+      if (v.ptForm) G.praeteritumForms(v.ptForm).forEach(x => add(x, v, 'Präteritum', pre));
+      (v.p2s || v.p2 || '').split(/[ /(]/).filter(x => x && x.length > 3).slice(0, 1).forEach(x => add(x, v, 'Perfekt (Partizip)', ''));
+    });
+    return _fvIdx;
+  }
+  // bir cümlede fiil formlarını bul; ayrılabilen fiilde ön ek cümlede yoksa ön eksiz fiil
+  function fvImSatz(satz) {
+    const idx = fvIndex(), roh = satz.split(/\s+/), toks = roh.map(t => t.replace(/^[„“"(‚]+|[.,!?;:“"”)…’‘]+$/g, ''));
+    // ayrılabilen ön ek: yan cümlenin sonunda (noktalamadan hemen önce ya da cümle sonu) — "fällt mir auf," evet, "an der Uni" hayır
+    const sonda = new Set(); roh.forEach((t, i) => { if (/[.,!?;:“"”)]$/.test(t) || i === roh.length - 1) sonda.add(i); });
+    const out = [];
+    toks.forEach((t, i) => {
+      const l = idx.get(t); if (!l) return;
+      let ende = i + 1; while (ende < toks.length && !sonda.has(ende - 1)) ende++;
+      const prefix = sonda.has(i) ? null : toks[Math.min(ende, toks.length) - 1];
+      const mitPre = l.filter(x => x.pre && x.pre === prefix), ohne = l.filter(x => !x.pre);
+      const x = (mitPre[0] || ohne[0]); if (x) out.push(Object.assign({ form: t }, x));
+    });
+    return out;
+  }
+  function fvZiele() {
+    // tam bilmediğin: öğrenilmiş ama zayıf (S < 7 gün) ya da hiç öğrenilmemiş B1/A2 fiilleri; çekimini daha önce görmediklerin önce
+    const fg = S.formGesehen || {};
+    const w = {};
+    VERBEN.forEach(v => {
+      if (!v.stark || !v.frmDrill) return;
+      const c = S.karten[v.id + ':bed'] || S.karten[v.id + ':abr'];
+      let p = S.items[v.id] ? (c && c.S >= 7 ? 0.5 : 3) : (v.tier >= 3 ? 1.2 : 1);
+      if (fg[v.id]) p *= 0.3;
+      w[v.id] = p;
+    });
+    return w;
+  }
+  function fvWaehlen() {
+    const d = fvTag(), h = S.fiilMetin = S.fiilMetin || {};
+    if (h[d] && LT.find(x => x.id === h[d].id)) return LT.find(x => x.id === h[d].id);
+    const benutzt = new Set(Object.values(h).map(x => x.id)), w = fvZiele();
+    let best = null, bestP = -1;
+    LT.forEach(t => {
+      if (benutzt.has(t.id)) return;
+      const ids = new Set(); (t.text || '').split(/(?<=[.!?])\s+/).forEach(s => fvImSatz(s).forEach(x => ids.add(x.id)));
+      const p = [...ids].reduce((a, id) => a + (w[id] || 0), 0) / Math.max(1, Math.sqrt((t.text || '').length / 800)) * (t.quelle === 'Klexikon' ? 0.8 : 1);
+      if (ids.size >= 3 && p > bestP) { bestP = p; best = t; }
+    });
+    if (best) { h[d] = { id: best.id }; save(); }
+    return best;
+  }
+  function fiilMetinRender() {
+    const L = fvWaehlen();
+    aktuell = { typ: 'lesen' };
+    $('#durum-satiri').innerHTML = '';
+    if (!L) { kart.innerHTML = '<div class="bos">Fiil metni bulunamadı.</div>'; return; }
+    session.lesen = L;
+    const st = session.fv && session.fv.id === L.id && session.fv.tag === fvTag() ? session.fv : (session.fv = { id: L.id, tag: fvTag(), test: null, i: 0, cevap: [] });
+    const funde = [];
+    const text = L.text.split('\n').map(par => '<p>' + par.split(/(?<=[.!?])\s+/).map(satz => {
+      const fs = fvImSatz(satz); fs.forEach(x => funde.push(Object.assign({ satz }, x)));
+      const formen = new Set(fs.map(x => x.form));
+      return esc(satz).split(/(\s+)/).map(w => { if (!/\S/.test(w)) return w; const c = w.replace(/^[„“"(‚]+|[.,!?;:“"”)…’‘]+$/g, ''); const f = formen.has(c) && fs.find(x => x.form === c); return f ? `<span class="lw fv" data-fv="${f.id}|${esc(f.form)}|${esc(f.zeit)}">${w}</span>` : `<span class="lw">${w}</span>`; }).join('');
+    }).join(' ') + '</p>').join('');
+    const verbs = [...new Map(funde.map(x => [x.id, x])).values()];
+    st.funde = funde;
+    const tabelle = `<table class="fv-tab"><tr><th>fiil</th>${formen(vById[verbs[0].id]).map(f => `<th>${esc(f.et)}</th>`).join('')}</tr>${verbs.map(x => { const v = vById[x.id]; return `<tr><td><b>${esc(v.anz)}</b><br><span class="soluk">${esc(v.tr)}</span></td>${formen(v).map(f => `<td>er ${esc(f.soll)}</td>`).join('')}${MODALV.has(v.inf) ? '<td>—</td>' : ''}</tr>`; }).join('')}</table>`;
+    let test = '';
+    if (st.test) {
+      const q = st.test[st.i];
+      if (q) {
+        const v = vById[q.id], c = st.cevap[st.i];
+        const opts = ['Präsens', 'Präteritum', 'Perfekt (Partizip)'];
+        test = `<div class="kural"><div class="soluk">Test ${st.i + 1} / ${st.test.length} · metinden: „${esc(q.satz)}“</div>
+          <div class="soru de"><mark>${esc(q.form)}</mark> → hangi zaman?</div>
+          <div class="gl-opts">${opts.map(o => `<button class="btn mini gl-opt${c == null ? '' : o === q.zeit ? ' ok' : o === c ? ' yanlis' : ''}" data-fvt="${esc(o)}" type="button"${c != null ? ' disabled' : ''}>${esc(o)}</button>`).join(' ')}</div>
+          ${c != null ? `<div>${c === q.zeit ? '✓' : '✗'} <b>${esc(q.form)}</b> = ${esc(v.anz)} (${esc(v.tr)}), ${esc(q.zeit)} · ${formen(v).map(f => 'er ' + esc(f.soll)).join(', ')}</div><div class="sira"><button class="btn ana" data-act="fv-weiter" type="button">Devam <kbd>Enter</kbd></button></div>` : ''}</div>`;
+      } else {
+        const r = st.test.filter((q, i) => st.cevap[i] === q.zeit).length;
+        test = `<div class="kural"><b>${r} / ${st.test.length}</b> doğru. Bu fiillerin çekim soruları yarından itibaren gelecek.</div>`;
+      }
+    }
+    kart.innerHTML = `<div class="tur"><span class="yeni">günün fiil metni</span><span>${esc(L.reihe || L.quelle)} · ${verbs.length} fiil işaretli · basınca mastarı ve zamanı</span></div>
+      <div class="soru">${esc(L.titel)}</div>
+      <div class="paket-text" id="lesen-text">${text}</div>
+      <div id="lesen-wort" class="kural" hidden></div>
+      <details class="ceviri" open><summary>Metindeki fiillerin formları (${verbs.length})</summary>${tabelle}</details>
+      ${test}
+      ${st.test ? '' : '<div class="sira"><button class="btn ana" data-act="fv-test" type="button">Okudum, teste geç</button></div>'}`;
+    tastatur();
+  }
+  function fvTestStart() {
+    const st = session.fv; if (!st || !st.funde) return;
+    const seen = new Set(), t = [];
+    shuffle(st.funde.slice()).forEach(x => { if (!seen.has(x.id) && t.length < 6) { seen.add(x.id); t.push(x); } });
+    st.test = t; st.i = 0; st.cevap = [];
+    fiilMetinRender();
+  }
+  function fvTestAntwort(z) {
+    const st = session.fv, q = st && st.test && st.test[st.i];
+    if (!q || st.cevap[st.i] != null) return;
+    st.cevap[st.i] = z;
+    logEintrag({ modus: 'fiilmetin', id: q.id, item: vById[q.id].anz, frage: q.form + ' | ' + q.satz, antwort: z, ergebnis: z === q.zeit ? 'richtig' : 'falsch', loesung: q.zeit, notiz: session.lesen.id });
+    fiilMetinRender();
+  }
+  function fvWeiter() {
+    const st = session.fv; if (!st || !st.test) return;
+    st.i++;
+    if (st.i >= st.test.length && !st.fertig) {
+      st.fertig = true;
+      const fg = S.formGesehen = S.formGesehen || {}, t = now();
+      [...new Set(st.funde.map(x => x.id))].forEach(id => {
+        fg[id] = fvTag();
+        // çekim sorusu: yalnız öğrendiğin fiillerde, yarından itibaren
+        if (S.items[id] && !S.karten[id + ':stamm'] && unitsOf(id).includes('stamm')) neueKarte(id + ':stamm', morgen(t) + 4 * 3600000);
+      });
+      heuteM('fiilmetin').n++;
+      logEintrag({ modus: 'fiilmetin', id: session.lesen.id, item: session.lesen.titel, frage: '', antwort: '', ergebnis: 'gelesen', loesung: '', notiz: `puan:${st.test.filter((q, i) => st.cevap[i] === q.zeit).length}/${st.test.length}` });
+      save(); renderPlan();
+    }
+    fiilMetinRender();
+  }
+
   function lesenWort(el) {
     const id = wortSuchen(el.textContent), box = $('#lesen-wort');
     document.querySelectorAll('#lesen-text .lw.aktiv').forEach(x => x.classList.remove('aktiv'));
@@ -1608,6 +1748,7 @@
     document.body.classList.toggle('genis', session.modus === 'kalip');
     if (session.modus === 'yazma') { yazmaRender(); return; }
     if (session.modus === 'lesen') { lesenRender(); return; }
+    if (session.modus === 'fiilmetin') { fiilMetinRender(); return; }
     if (session.modus === 'kalip') { kalipRender(); return; }
     const m = session.modus, d = heuteM(m);
     if (d.n >= ziel(m) && !session.zielGesehen[m]) {
@@ -2102,7 +2243,7 @@
     const chips = PLAN.map((m, i) => {
       const b = heuteM(m), z = ziel(m), ok = b.n >= z;
       return `<button class="plan-chip ${ok ? 'ok' : ''} ${session.modus === m ? 'aktif' : ''}" data-modus="${m}" type="button"><span class="no">${ok ? '✓' : i + 1}</span>${esc(MODI[m].ad)} <span class="sayi">${b.n}/${z}</span></button>`;
-    }).join('') + (yazmaFaellig() || heuteM('yazma').n ? `<button class="plan-chip ${heuteM('yazma').n ? 'ok' : ''} ${session.modus === 'yazma' ? 'aktif' : ''}" data-modus="yazma" type="button"><span class="no">${heuteM('yazma').n ? '✓' : 4}</span>Yazma <span class="sayi">metin</span></button>` : '') + `<button class="plan-chip ${heuteM('lesen').n ? 'ok' : ''} ${session.modus === 'lesen' ? 'aktif' : ''}" data-modus="lesen" type="button"><span class="no">${heuteM('lesen').n ? '✓' : '+'}</span>Okuma <span class="sayi">metin</span></button>` + `<button class="plan-chip ${session.modus === 'kalip' ? 'aktif' : ''}" data-modus="kalip" type="button"><span class="no">+</span>Kalıplar</button>`;
+    }).join('') + (yazmaFaellig() || heuteM('yazma').n ? `<button class="plan-chip ${heuteM('yazma').n ? 'ok' : ''} ${session.modus === 'yazma' ? 'aktif' : ''}" data-modus="yazma" type="button"><span class="no">${heuteM('yazma').n ? '✓' : 4}</span>Yazma <span class="sayi">metin</span></button>` : '') + `<button class="plan-chip ${heuteM('lesen').n ? 'ok' : ''} ${session.modus === 'lesen' ? 'aktif' : ''}" data-modus="lesen" type="button"><span class="no">${heuteM('lesen').n ? '✓' : '+'}</span>Okuma <span class="sayi">metin</span></button>` + `<button class="plan-chip ${heuteM('fiilmetin').n ? 'ok' : ''} ${session.modus === 'fiilmetin' ? 'aktif' : ''}" data-modus="fiilmetin" type="button"><span class="no">${heuteM('fiilmetin').n ? '✓' : '+'}</span>Fiil metni <span class="sayi">günün</span></button>` + `<button class="plan-chip ${session.modus === 'kalip' ? 'aktif' : ''}" data-modus="kalip" type="button"><span class="no">+</span>Kalıplar</button>`;
     const sayildi = d.n >= MIN_TAG;
     const bitti = PLAN.every(m => heuteM(m).n >= ziel(m));
     const min = bitti ? `✓ plan tamam${ghToken() ? ' · Claude\'a "sonuçlarıma bak" de' : ordner ? ' · log\'u pushla, Claude\'a "sonuçlarıma bak" de' : ''}` : sayildi ? '✓ gün sayıldı' : `gün için ${MIN_TAG - d.n} cevap daha`;
@@ -2235,6 +2376,9 @@
     const ef = e.target.closest('[data-einfuegen]');
     if (ef) { const ta = $('#metin'); if (ta) { const p0 = ta.selectionStart || ta.value.length; const t = ef.dataset.einfuegen.split(' / ')[0].replace(/ …$|…/g, ''); ta.value = ta.value.slice(0, p0) + t + ' ' + ta.value.slice(p0); ta.focus(); ta.dispatchEvent(new Event('input')); } return; }
     const lw = e.target.closest('.lw');
+    const fvt = e.target.closest('[data-fvt]');
+    if (fvt) { fvTestAntwort(fvt.dataset.fvt); return; }
+    if (lw && lw.dataset.fv) { const [id, form, zeit] = lw.dataset.fv.split('|'); const v = vById[id], box = $('#lesen-wort'); document.querySelectorAll('#lesen-text .lw.aktiv').forEach(x => x.classList.remove('aktiv')); lw.classList.add('aktiv'); box.hidden = false; box.innerHTML = `<b>${esc(form)}</b> → <b>${esc(v.anz)}</b> (${esc(v.tr)}) · <b>${esc(zeit)}</b><br>${formen(v).map(f => `${esc(f.et)}: er ${esc(f.soll)}`).join(' · ')}`; return; }
     if (lw) { lesenWort(lw); return; }
     const ga = e.target.closest('[data-ga]');
     if (ga) { const [i, v] = ga.dataset.ga.split(':'); goetheAntwort(+i, v); return; }
@@ -2258,6 +2402,8 @@
     else if (act === 'paket-weiter') paketWeiter();
     else if (act === 'metin-gonder') metinGonder();
     else if (act === 'lesen-baska') lesenRender(true);
+    else if (act === 'fv-test') fvTestStart();
+    else if (act === 'fv-weiter') fvWeiter();
     else if (act === 'lesen-fertig') { const L = session.lesen; (S.gelesen = S.gelesen || {})[L.id] = now(); heuteM('lesen').n++; logEintrag({ modus: 'lesen', id: L.id, item: L.titel, frage: L.thema, antwort: '', ergebnis: 'gelesen', loesung: '', notiz: L.url }); save(); renderPlan(); lesenRender(true); flash('Okundu ✓ Sıradaki metin.'); }
     else if (act === 'kalip-weiter') { session.kalipSeite = (session.kalipSeite || 0) + 1; kalipRender(); window.scrollTo(0, 0); }
     else if (act === 'kalip-zurueck') { session.kalipSeite = Math.max(0, (session.kalipSeite || 0) - 1); kalipRender(); window.scrollTo(0, 0); }
@@ -2281,6 +2427,7 @@
     if ($('#v-calis').hidden || !aktuell) return;
     const q = aktuell;
     const inInput = /^(INPUT|SELECT|TEXTAREA)$/.test(e.target.tagName);
+    if (q.typ === 'lesen' && session.modus === 'fiilmetin' && e.key === 'Enter' && document.querySelector('[data-act="fv-weiter"]')) { e.preventDefault(); fvWeiter(); return; }
     if (q.typ === 'yazma' || q.typ === 'lesen' || q.typ === 'kalip') return;
     if ((q.typ === 'pause' || q.typ === 'leer') && e.key === 'Enter' && !inInput) {
       e.preventDefault();

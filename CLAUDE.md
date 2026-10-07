@@ -40,6 +40,7 @@
   - Serbest yazma: `text` (id `a07` = `quellen/aufgaben.txt` görevi; antwort = metin, paragraflar ` ¶ `; notiz: kelime sayısı, zorunlu kelimeler)
   - Kalıplar: `quellen/kaliplar.txt` (fiil | Almanca | Türkçe; "Kalıplar" bölümü, "yazmaya ekle" ile yazma ekranına), `quellen/redemittel.txt` (yazma türü / konu kalıpları)
   - Okuma: `lesen` (Klexikon / DW metni okundu: ergebnis `gelesen`; Goethe Übungssatz görevi `quellen/goethe_lesen.json`: id `ge2:7` = ge2'nin 7. sorusu, antwort seçtiği, loesung doğrusu, görev sonu id `ge2` notiz `puan:2/3`. Metinler: `tools/klexikon.py`, `tools/dw_topthema.py` — okuma metnini ve sorularını Claude yazmaz), `lesen-wort` (metinde anlamına baktığı kelime: bilmediği kelimeler!)
+  - Günün fiil metni: `fiilmetin` (her gün 04:00'te değişen gerçek metin, A2/B1 düzensiz fiillerin çekimli hâlleri işaretli; id = fiil, frage `form | cümle`, antwort seçtiği zaman, loesung doğru zaman; metin sonu id = metin, ergebnis `gelesen`, notiz `puan:x/y`). Çekim (`stamm`) sorusu yalnız düzensiz fiillerde ve formları görüldükten sonra (`S.formGesehen`).
   - Paket: `paket` (id `p01:3` = 1. paketin 4. boşluğu; paket sonu `p01:pak`, notiz `puan:%`, `önce okudu`)
   - Durum: `dikkat` (ergebnis `bas-gec` = çok hızlı/boş, `cok-yanlis`), `leech` (ergebnis `takiliyor`: üç ayrı günde yanlış → kanca yaz)
   - ergebnis: `richtig`, `fast`, `falsch`, `neu`, `bekannt`
@@ -51,7 +52,7 @@
   Seçmeli `erk` yarı yarıya ters yön (TR → DE, artikelli 6 şık, biri doğru ismin yanlış artikeli). `nsatz` yazma kartı oturunca açılır.
   Aynı öğe (bütün birimleri: artikel, anlam, yazma) en az 12 soru arayla ve günde en çok 4 (bugün öğrenilen) / 2 (eski) kez sorulur (`IZ_ABSTAND`, `izOk`, `S.iz`).
   Her 5 soruda bir "metinde" kartı: vadesi gelen `erk`/`bed` kartı okuma metinlerinden (DW / Klexikon / Goethe) gerçek bir cümlede, kelime vurgulu, anlamı seçmeli (log modus `erk`/`bed`, frage = cümle).
-  1 günden fazla gecikmiş kartlar her iki soruda bir öne alınır; birikmede her 3. seçim en eski vade. Çekim (`stamm`) en az 6 soru arayla, günde en çok 5.
+  1 günden fazla gecikmiş kartlar her iki soruda bir öne alınır; birikmede her 3. seçim en eski vade. Çekim (`stamm`) en az 8 soru arayla, günde en çok 4; yalnız düzensiz fiil ve formları görüldüyse.
   Genç kartlar (reps ≤ 5): ilk tekrarlar en çok 2 gün, sonra 4 gün ara.
   Yanlıştan sonra oturumda tek tekrar (başka cümle), ikinci yanlışta ertesi gün. Fiilin cümle / çekim / dönüşlü birimleri ilk başarılı anlamdan sonra 1 / 2 / 3 gün sonra açılır.
   Hızlı tur'da öğrenilen kelimenin yazma birimi tanıma/artikel kartı S ≥ 3 gün olunca açılır (fiilde hemen).

@@ -332,3 +332,8 @@ body.genis #v-calis { max-width: none; }
 .fav-btn.an { background: var(--ok-soft); border-color: var(--ok); color: var(--ok); font-weight: 600; }
 .kontext-satz { font-size: 1.15rem; line-height: 1.7; font-weight: 400; }
 .kontext-satz mark { background: var(--warn-soft); color: inherit; padding: 0 .15em; border-radius: 3px; font-weight: 700; }
+.lw.fv { background: var(--accent-soft); border-bottom: 2px solid var(--accent); font-weight: 600; }
+.fv-tab { width: 100%; border-collapse: collapse; margin-top: .5rem; font-size: .95rem; }
+.fv-tab th, .fv-tab td { text-align: left; padding: .35rem .5rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+.fv-tab th { color: var(--muted); font-weight: 600; font-size: .85rem; }
+@media (max-width: 560px) { .fv-tab { font-size: .85rem; } .fv-tab th, .fv-tab td { padding: .3rem .25rem; } }
