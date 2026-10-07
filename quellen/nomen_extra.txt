@@ -54,3 +54,25 @@ der Grieche, -n | 2 | Yunan (erkek)
 der Russe, -n | 2 | Rus (erkek)
 der Pole, -n | 2 | Polonyalı (erkek)
 der Chinese, -n | 2 | Çinli (erkek)
+die Clique, -n | 3 | klik, arkadaş grubu
+die Harmonie | 3 | uyum, ahenk
+die Erwartung, -en | 3 | beklenti
+die Behauptung, -en | 3 | iddia
+der Ehegatte, -n | 3 | eş (koca)
+die Ehegattin, -nen | 3 | eş (karı)
+der Feind, -e | 3 | düşman
+die Feindin, -nen | 3 | (kadın) düşman
+die Beute | 3 | av
+die Ente, -n | 2 | ördek
+die Fliege, -n | 2 | sinek
+der Fuchs, ¨-e | 2 | tilki
+die Giraffe, -n | 2 | zürafa
+der Hirsch, -e | 2 | geyik
+das Krokodil, -e | 2 | timsah
+die Mücke, -n | 2 | sivrisinek
+der Pinguin, -e | 2 | penguen
+der Rabe, -n | 3 | kuzgun, karga
+die Schildkröte, -n | 2 | kaplumbağa
+die Schlagzeile, -n | 3 | manşet
+die Gegenwart | 3 | şimdiki zaman, günümüz
+die Konzentration | 3 | konsantrasyon, dikkat

@@ -337,3 +337,23 @@ body.genis #v-calis { max-width: none; }
 .fv-tab th, .fv-tab td { text-align: left; padding: .35rem .5rem; border-bottom: 1px solid var(--line); vertical-align: top; }
 .fv-tab th { color: var(--muted); font-weight: 600; font-size: .85rem; }
 @media (max-width: 560px) { .fv-tab { font-size: .85rem; } .fv-tab th, .fv-tab td { padding: .3rem .25rem; } }
+/* Ünite */
+.u-bar { height: 6px; background: var(--line); border-radius: 3px; margin: .3rem 0 .8rem; overflow: hidden; }
+.u-bar > div { height: 100%; background: var(--ok); }
+.u-satz { margin-top: .6rem; font-size: 1.1rem; line-height: 1.6; }
+.u-sort { flex-wrap: wrap; }
+.u-luecke { font: inherit; border: none; border-bottom: 2px solid var(--accent); background: var(--accent-soft); padding: 0 .2rem; min-width: 4ch; border-radius: 3px; color: inherit; }
+.u-luecke.ok { border-color: var(--ok); background: var(--ok-soft); }
+.u-luecke.yanlis { border-color: var(--bad); background: var(--bad-soft); }
+.u-dogru { color: var(--ok); }
+.u-text-body { line-height: 2.2; }
+.u-match { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
+.u-match > div { display: grid; gap: .4rem; align-content: start; }
+.u-m { text-align: left; white-space: normal; }
+.u-m.aktif { outline: 2px solid var(--accent); }
+.u-m.ok { background: var(--ok-soft); border-color: var(--ok); }
+.u-gebaut { min-height: 2.2rem; }
+.u-text { width: 100%; font: inherit; margin: .5rem 0; padding: .5rem; border: 1px solid var(--line); border-radius: 6px; background: transparent; color: inherit; box-sizing: border-box; }
+.plan-chip.vurgu { border-color: var(--accent); }
+.mc-opt.ok { background: var(--ok-soft); border-color: var(--ok); }
+.mc-opt.yanlis { background: var(--bad-soft); border-color: var(--bad); }

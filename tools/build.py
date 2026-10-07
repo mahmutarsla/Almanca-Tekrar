@@ -49,7 +49,7 @@ def plural_form(lemma, pl):
     return base if suf == "-" else base + suf.lstrip("-")
 
 
-WEAK_LIST = {"Mensch", "Herr", "Nachbar", "Bauer", "Bär", "Held", "Prinz", "Graf", "Kamerad",
+WEAK_LIST = {"Mensch", "Rabe", "Ehegatte", "Herr", "Nachbar", "Bauer", "Bär", "Held", "Prinz", "Graf", "Kamerad",
              "Soldat", "Automat", "Kandidat", "Pilot", "Architekt", "Präsident", "Student", "Patient",
              "Assistent", "Dozent", "Journalist", "Polizist", "Tourist", "Spezialist", "Praktikant",
              "Elefant", "Migrant", "Fotograf", "Typ", "Kunde", "Kollege", "Junge", "Name", "Experte",
@@ -648,6 +648,49 @@ for x in dw:
     if ps and ps[0].strip() == x["titel"].strip():
         x["text"] = "\n".join(ps[1:])
 dump("lesetexte_dw.js", "LESETEXTE_DW", dw)
+# Ünite (kitaptaki konu): quellen/unite1*.txt → daten/unite.js
+def unite_lesen(nr):
+    f = P("quellen", f"unite{nr}.txt")
+    if not os.path.exists(f): return None
+    U = {"id": f"u{nr}", "titel": "", "items": [], "texte": [], "aufgaben": []}
+    gruppe = ""
+    for line in open(f, encoding="utf-8"):
+        line = line.rstrip("\n")
+        if not line.strip() or line.startswith("#"): continue
+        if line.startswith("@titel "): U["titel"] = line[7:].strip(); continue
+        if line.startswith("@gruppe "): gruppe = line[8:].strip(); continue
+        p = [x.strip() for x in line.split("|")]
+        if len(p) != 7: errors.append(f"unite{nr}: {line}"); continue
+        typ, de, ex, tr, bsp, lk, bsptr = p
+        if lk and lk not in bsp: errors.append(f"unite{nr}: boşluk '{lk}' cümlede yok: {bsp}")
+        it = {"id": f"u{nr}-{len(U['items'])+1:03d}", "typ": typ, "de": de, "ex": ex, "tr": tr, "bsp": bsp, "lk": lk, "bspTr": bsptr, "gruppe": gruppe}
+        if typ == "n":
+            it["art"], it["lemma"] = de.split(" ", 1)
+        m = re.search(r"([\wäöüß]+(?: [\wäöüß]+)?, [\wäöüß]+(?: [\wäöüß]+)?, (?:hat|ist) [\wäöüß]+)", ex)
+        if typ == "v" and m: it["formen"] = m.group(1)
+        U["items"].append(it)
+    ft = P("quellen", f"unite{nr}_texte.txt")
+    if os.path.exists(ft):
+        cur = None
+        for line in open(ft, encoding="utf-8"):
+            line = line.rstrip("\n")
+            if line.startswith("#") and not line.startswith("## "): continue
+            if line.startswith("## "): cur = {"titel": line[3:].strip(), "tr": None, "teile": []}; U["texte"].append(cur); continue
+            if cur is None or not line.strip(): continue
+            if cur["tr"] is None: cur["tr"] = line.strip(); continue
+            for i, part in enumerate(re.split(r"\[([^\]]+)\]", line)):
+                if i % 2: cur["teile"].append({"f": part})
+                elif part: cur["teile"].append(part)
+    fa = P("quellen", f"unite{nr}_aufgaben.txt")
+    if os.path.exists(fa):
+        for line in open(fa, encoding="utf-8"):
+            if not line.strip() or line.startswith("#"): continue
+            t, de, tr, w = [x.strip() for x in line.split("|")]
+            U["aufgaben"].append({"id": f"u{nr}-a{len(U['aufgaben'])+1}", "titel": t, "de": de, "tr": tr, "woerter": [x.strip() for x in w.split(";")]})
+    return U
+_un = [u for u in [unite_lesen(1)] if u]
+dump("unite.js", "UNITE", _un)
+print(f"ünite: {sum(len(u['items']) for u in _un)} kelime, {sum(len(u['texte']) for u in _un)} metin")
 # Goethe Zertifikat B1 Übungssatz, Lesen Teil 1–5: orijinal sorular + çözümler
 gl = P("quellen", "goethe_lesen.json")
 dump("goethe_lesen.js", "GOETHE_LESEN", json.load(open(gl, encoding="utf-8")) if os.path.exists(gl) else [])

@@ -594,3 +594,9 @@ an | präp | 1 | -de (yanında, dikey yüzeyde) (+ D) / -e (+ A)
 auf | präp | 1 | üstünde (+ D) / üstüne (+ A)
 aus | präp | 1 | -den (içinden; memleket) (+ D)
 morgen | adv | 1 | yarın
+angeblich | adv | 3 | güya, iddiaya göre
+diplomatisch | adj | 3 | diplomatik, ölçülü
+eigen | adj | 3 | kendi (-ne ait)
+kommerziell | adj | 3 | ticari
+selbe | pron | 3 | aynı (im selben Haus)
+entgegen | präp | 3 | -e rağmen, aksine (+ G)

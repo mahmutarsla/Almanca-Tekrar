@@ -1,0 +1,113 @@
+# Ünite: kurstaki kitabın konusu (Freundschaft und Beziehungen). Tuna'nın listesi; örnek cümleler kitaptan (varsa) ya da Claude.
+# tür | kelime | ek (çoğul / çekim / edat) | Türkçe | örnek cümle | cümlede boşluk olacak kısım | cümlenin Türkçesi
+# tür: n isim (artikelli) · v fiil · a sıfat/zarf · x kalıp · k bağlaç/edat
+@titel Freundschaft und Beziehungen
+@gruppe Freundschaft
+n | die Clique | die Cliquen | klik, arkadaş grubu | Seit der Schule gehöre ich zu einer kleinen Clique. | Clique | Okuldan beri küçük bir arkadaş grubuna aitim.
+n | der Einfluss | die Einflüsse | etki | Meine Freunde haben einen großen Einfluss auf mich. | Einfluss | Arkadaşlarımın üzerimde büyük bir etkisi var.
+n | das Verständnis | (Sg.) · Verständnis haben für + A | anlayış | Ich habe Verständnis für deine Situation. | Verständnis | Durumuna anlayış gösteriyorum.
+v | sich verstehen | mit + D · versteht, verstand, hat verstanden | (biriyle) iyi anlaşmak | Ich verstehe mich gut mit meinem Mitbewohner. | verstehe | Ev arkadaşımla iyi anlaşıyorum.
+v | sich amüsieren | über + A | eğlenmek; (biriyle) dalga geçmek | Wir haben uns auf der Party gut amüsiert. | amüsiert | Partide çok eğlendik.
+v | schätzen | | tahmin etmek | Ich schätze, so tolle Freunde findet man selten. | schätze | Bence böyle harika arkadaşlar nadir bulunur.
+v | schätzen an | an + D | (birinde bir şeyi) takdir etmek | An meiner Freundin schätze ich vor allem ihre Ehrlichkeit. | schätze | Kız arkadaşımda en çok dürüstlüğünü takdir ediyorum.
+v | halten | hält, hielt, hat gehalten | sürmek, dayanmak (dostluk); tutmak | Unsere Freundschaft hält schon eine Ewigkeit. | hält | Dostluğumuz çok uzun zamandır sürüyor.
+x | aus den Augen verlieren | | (biriyle) irtibatı kaybetmek | Meine Freunde aus der Kindheit habe ich leider aus den Augen verloren. | verloren | Çocukluk arkadaşlarımla maalesef irtibatı kaybettim.
+x | alles beim Alten bleiben | | her şey eskisi gibi kalmak | Früher dachte ich, dass immer alles beim Alten bleibt. | Alten | Eskiden her şeyin hep eskisi gibi kalacağını düşünürdüm.
+x | eingespannt sein | | çok meşgul olmak | Ich bin beruflich stark eingespannt. | eingespannt | İş yüzünden çok meşgulüm.
+v | gehören zu | zu + D | -in arasında olmak, -e ait olmak | Er gehört zu meinen besten Freunden. | gehört | En iyi arkadaşlarımdan biridir.
+x | ins Gespräch kommen | mit + D | (biriyle) sohbete başlamak | Im Zug bin ich mit einer netten Frau ins Gespräch gekommen. | Gespräch | Trende hoş bir kadınla sohbete başladım.
+x | über den Weg laufen | + D | tesadüfen karşılaşmak | Gestern ist mir mein alter Lehrer über den Weg gelaufen. | Weg | Dün eski öğretmenime tesadüfen rastladım.
+@gruppe Konflikte
+n | der Konflikt | die Konflikte | çatışma, anlaşmazlık | Wir müssen den Konflikt schnell lösen. | Konflikt | Anlaşmazlığı çabuk çözmemiz gerekiyor.
+n | der Streit | die Streite | kavga, tartışma | Nach dem Streit haben wir nicht mehr miteinander gesprochen. | Streit | Kavgadan sonra artık birbirimizle konuşmadık.
+n | die Kritik | die Kritiken | eleştiri | Er kann keine Kritik akzeptieren. | Kritik | Hiç eleştiri kabul edemiyor.
+n | die Harmonie | (Sg.) | uyum, ahenk | In unserer Familie gibt es viel Harmonie. | Harmonie | Ailemizde çok uyum var.
+n | die Mahnung | die Mahnungen | ihtar, ödeme hatırlatması | Ich habe eine Mahnung bekommen, weil ich die Rechnung nicht bezahlt habe. | Mahnung | Faturayı ödemediğim için ihtar aldım.
+n | die Scheidung | die Scheidungen | boşanma | Nach der Scheidung wohnen die Kinder bei der Mutter. | Scheidung | Boşanmadan sonra çocuklar annenin yanında kalıyor.
+n | die Forderung | die Forderungen | talep | Die Arbeiter haben klare Forderungen. | Forderungen | İşçilerin net talepleri var.
+n | die Erwartung | die Erwartungen | beklenti | Meine Erwartungen waren zu hoch. | Erwartungen | Beklentilerim çok yüksekti.
+x | vor Gericht gehen | | mahkemeye gitmek | Wenn er nicht zahlt, gehe ich vor Gericht. | Gericht | Ödemezse mahkemeye giderim.
+n | die Behauptung | die Behauptungen | iddia | Das ist nur eine Behauptung, kein Beweis. | Behauptung | Bu sadece bir iddia, kanıt değil.
+v | behaupten | | iddia etmek | Er behauptet, dass er nichts gewusst hat. | behauptet | Hiçbir şey bilmediğini iddia ediyor.
+v | feststellen | trennbar: stellt fest | tespit etmek, fark etmek | Der Arzt hat nichts Schlimmes festgestellt. | festgestellt | Doktor kötü bir şey tespit etmedi.
+v | akzeptieren | | kabul etmek | Ich akzeptiere deine Entscheidung. | akzeptiere | Kararını kabul ediyorum.
+v | sich einigen | auf + A | (bir şeyde) anlaşmak, uzlaşmak | Wir haben uns auf einen Kompromiss geeinigt. | geeinigt | Bir uzlaşmada anlaştık.
+v | klären | | açıklığa kavuşturmak, halletmek | Wir sollten das Problem in Ruhe klären. | klären | Sorunu sakince halletmeliyiz.
+v | erleichtern | | kolaylaştırmak, rahatlatmak | Das Handy erleichtert uns den Alltag. | erleichtert | Cep telefonu günlük hayatımızı kolaylaştırıyor.
+v | beweisen | beweist, bewies, hat bewiesen | kanıtlamak | Kannst du das beweisen? | beweisen | Bunu kanıtlayabilir misin?
+v | sich aufregen | über + A · trennbar: regt sich auf | sinirlenmek | Reg dich nicht über jede Kleinigkeit auf! | Reg | Her küçük şeye sinirlenme!
+v | hassen | | nefret etmek | Ich hasse es, wenn jemand lügt. | hasse | Biri yalan söylediğinde nefret ederim.
+v | lügen | lügt, log, hat gelogen | yalan söylemek | Du hast schon wieder gelogen! | gelogen | Yine yalan söyledin!
+v | schweigen | schweigt, schwieg, hat geschwiegen | susmak | Sie hat den ganzen Abend geschwiegen. | geschwiegen | Bütün akşam sustu.
+v | stehlen | stiehlt, stahl, hat gestohlen | çalmak | Jemand hat mein Fahrrad gestohlen. | gestohlen | Biri bisikletimi çaldı.
+v | übertreiben | übertreibt, übertrieb, hat übertrieben | abartmak | Du übertreibst wirklich! | übertreibst | Gerçekten abartıyorsun!
+v | verhindern | | önlemek, engellemek | Wir konnten den Streit nicht verhindern. | verhindern | Kavgayı önleyemedik.
+v | sich verspäten | | gecikmek | Entschuldigung, ich habe mich verspätet. | verspätet | Özür dilerim, geciktim.
+v | zusammenstoßen | stößt zusammen, stieß zusammen, ist zusammengestoßen | çarpışmak | Zwei Autos sind auf der Kreuzung zusammengestoßen. | zusammengestoßen | Kavşakta iki araba çarpıştı.
+v | zwingen | zwingt, zwang, hat gezwungen | zorlamak | Niemand kann dich zwingen, hier zu bleiben. | zwingen | Kimse seni burada kalmaya zorlayamaz.
+a | angeblich | | güya, iddiaya göre | Er ist angeblich krank. | angeblich | Güya hasta.
+a | diplomatisch | | diplomatik, ölçülü | Sie hat sehr diplomatisch geantwortet. | diplomatisch | Çok diplomatik bir cevap verdi.
+@gruppe Personen
+a | arm | ärmer, am ärmsten | fakir | Viele Familien in der Stadt sind arm. | arm | Şehirde birçok aile fakir.
+a | berufstätig | | çalışan (bir işi olan) | Beide Eltern sind berufstätig. | berufstätig | Anne babanın ikisi de çalışıyor.
+x | bereit sein | zu + D | -e hazır olmak, razı olmak | Ich bin bereit zu einem Kompromiss. | bereit | Bir uzlaşmaya hazırım.
+a | erschöpft | | bitkin, çok yorgun | Nach der Arbeit bin ich total erschöpft. | erschöpft | İşten sonra tamamen bitkinim.
+n | der Ehegatte | die Ehegatten | eş (koca) | Der Ehegatte muss das Formular auch unterschreiben. | Ehegatte | Eşin de formu imzalaması gerekiyor.
+n | die Ehegattin | die Ehegattinnen | eş (karı) | Seine Ehegattin arbeitet als Ärztin. | Ehegattin | Eşi doktor olarak çalışıyor.
+n | der Feind | die Feinde | düşman | Aus Feinden können auch Freunde werden. | Feinden | Düşmanlar da arkadaş olabilir.
+n | die Feindin | die Feindinnen | (kadın) düşman | Sie war früher meine größte Feindin. | Feindin | Eskiden en büyük düşmanımdı.
+v | loben | | övmek | Der Lehrer hat mich für meine Arbeit gelobt. | gelobt | Öğretmen çalışmam için beni övdü.
+@gruppe Tiere
+v | beißen | beißt, biss, hat gebissen | ısırmak | Keine Angst, der Hund beißt nicht. | beißt | Korkma, köpek ısırmaz.
+v | fressen | frisst, fraß, hat gefressen | (hayvan) yemek | Die Katze frisst gerade. | frisst | Kedi şu an yemek yiyor.
+a | scharf | schärfer, am schärfsten | keskin; acı | Das Krokodil hat scharfe Zähne. | scharfe | Timsahın keskin dişleri var.
+a | kräftig | | güçlü, kuvvetli | Der Hirsch ist groß und kräftig. | kräftig | Geyik büyük ve güçlü.
+n | die Beute | (Sg.) | av | Der Fuchs bringt die Beute zu seinen Jungen. | Beute | Tilki avını yavrularına götürüyor.
+n | die Ente | die Enten | ördek | Im Park schwimmen viele Enten. | Enten | Parkta birçok ördek yüzüyor.
+n | die Fliege | die Fliegen | sinek | In der Küche ist eine Fliege. | Fliege | Mutfakta bir sinek var.
+n | der Fuchs | die Füchse | tilki | Der Fuchs ist sehr schlau. | Fuchs | Tilki çok kurnaz.
+n | die Giraffe | die Giraffen | zürafa | Die Giraffe hat einen langen Hals. | Giraffe | Zürafanın uzun bir boynu var.
+n | der Hirsch | die Hirsche | geyik | Im Wald haben wir einen Hirsch gesehen. | Hirsch | Ormanda bir geyik gördük.
+n | das Krokodil | die Krokodile | timsah | Das Krokodil liegt in der Sonne. | Krokodil | Timsah güneşte yatıyor.
+n | die Mücke | die Mücken | sivrisinek | Im Sommer gibt es hier viele Mücken. | Mücken | Yazın burada çok sivrisinek oluyor.
+n | der Pinguin | die Pinguine | penguen | Der Pinguin kann nicht fliegen. | Pinguin | Penguen uçamaz.
+n | der Rabe | die Raben | kuzgun, karga | Auf dem Dach sitzt ein schwarzer Rabe. | Rabe | Çatıda siyah bir kuzgun oturuyor.
+n | die Schildkröte | die Schildkröten | kaplumbağa | Die Schildkröte ist sehr langsam. | Schildkröte | Kaplumbağa çok yavaş.
+@gruppe Auf einer Versammlung
+n | die Versammlung | die Versammlungen | toplantı, meclis | Morgen gibt es eine Versammlung aller Mitarbeiter. | Versammlung | Yarın bütün çalışanların toplantısı var.
+n | die Teilnahme | (Sg.) | katılım | Die Teilnahme am Kurs ist kostenlos. | Teilnahme | Kursa katılım ücretsiz.
+n | die Mehrheit | die Mehrheiten | çoğunluk | Die Mehrheit war für den Vorschlag. | Mehrheit | Çoğunluk öneriden yanaydı.
+n | die Presse | (Sg.) | basın | Die Presse hat über den Streik berichtet. | Presse | Basın grev hakkında haber yaptı.
+n | die Vorstellung | die Vorstellungen | tanıtım; gösteri; hayal | Kommst du zur Vorstellung der neuen Präsidentin? | Vorstellung | Yeni başkanın tanıtımına geliyor musun?
+n | die Rede | die Reden | konuşma, nutuk | Der Bürgermeister hat eine lange Rede gehalten. | Rede | Belediye başkanı uzun bir konuşma yaptı.
+n | die Erhöhung | die Erhöhungen | artış, zam | Die Mitarbeiter fordern eine Erhöhung der Löhne. | Erhöhung | Çalışanlar maaşlara zam istiyor.
+v | beschließen | beschließt, beschloss, hat beschlossen | karar vermek (resmî) | Die Versammlung hat beschlossen, morgen zu streiken. | beschlossen | Toplantı yarın grev yapmaya karar verdi.
+v | streiken | | grev yapmak | Die Busfahrer streiken heute. | streiken | Otobüs şoförleri bugün grev yapıyor.
+a | geheim | | gizli | Die Wahl ist geheim. | geheim | Oylama gizli.
+@gruppe Andere Wörter
+n | die Ausgabe | die Ausgaben | (dergi) sayı; harcama | Lesen Sie den Artikel in der Juli-Ausgabe. | Juli-Ausgabe | Makaleyi temmuz sayısında okuyun.
+n | die Schlagzeile | die Schlagzeilen | manşet | Die Schlagzeile war auf der ersten Seite. | Schlagzeile | Manşet ilk sayfadaydı.
+n | die Einzelheit | die Einzelheiten | ayrıntı | Die Einzelheiten erkläre ich dir später. | Einzelheiten | Ayrıntıları sana sonra açıklarım.
+n | das Institut | die Institute | enstitü | Sie arbeitet an einem Institut der Universität. | Institut | Üniversitenin bir enstitüsünde çalışıyor.
+n | die Kabine | die Kabinen | kabin | Die Kabine im Schwimmbad ist besetzt. | Kabine | Yüzme havuzundaki kabin dolu.
+v | fürchten | | korkmak, endişe etmek | Ich fürchte, dass ich ihn als Freund verliere. | fürchte | Onu arkadaş olarak kaybetmekten korkuyorum.
+v | klicken | auf + A | tıklamak | Klicken Sie auf den Link. | Klicken | Bağlantıya tıklayın.
+v | stecken | in + D | (içinde) durmak, takılı olmak | Der Schlüssel steckt in der Tür. | steckt | Anahtar kapıda takılı duruyor.
+a | eigen | | kendi (-ne ait) | Ich möchte endlich eine eigene Wohnung. | eigene | Artık kendi evimi istiyorum.
+a | kommerziell | | ticari | Das ist ein kommerzielles Angebot. | kommerzielles | Bu ticari bir teklif.
+x | erhalten sein | | korunmuş olmak | Die Briefe sind alt, aber gut erhalten. | erhalten | Mektuplar eski ama iyi korunmuş.
+n | der Ersatz | (Sg.) | yedek, telafi | Wir brauchen einen Ersatz für den kranken Kollegen. | Ersatz | Hasta meslektaş için bir yedeğe ihtiyacımız var.
+n | die Gegenwart | (Sg.) | şimdiki zaman, günümüz | Der Film spielt in der Gegenwart. | Gegenwart | Film günümüzde geçiyor.
+n | die Gelegenheit | die Gelegenheiten | fırsat | Das ist eine gute Gelegenheit, Deutsch zu sprechen. | Gelegenheit | Bu Almanca konuşmak için iyi bir fırsat.
+n | der Grill | die Grills | ızgara, mangal | Am Wochenende machen wir den Grill an. | Grill | Hafta sonu mangalı yakıyoruz.
+n | die Konzentration | (Sg.) | konsantrasyon, dikkat | Für diese Aufgabe brauchst du viel Konzentration. | Konzentration | Bu görev için çok konsantrasyona ihtiyacın var.
+n | die Krankenkasse | die Krankenkassen | sağlık sigortası (kurumu) | Die Krankenkasse bezahlt den Arztbesuch. | Krankenkasse | Sağlık sigortası doktor ziyaretini ödüyor.
+n | die Pflicht | die Pflichten | görev, yükümlülük | Es ist meine Pflicht, pünktlich zu sein. | Pflicht | Dakik olmak benim görevim.
+a | selbe | | aynı | Inga und ich wohnen im selben Haus. | selben | Inga ile ben aynı evde oturuyoruz.
+n | der Tod | die Tode | ölüm | Nach dem Tod seines Vaters war er sehr traurig. | Tod | Babasının ölümünden sonra çok üzgündü.
+k | entgegen | + G | -e rağmen, aksine | Entgegen aller Erwartungen hat unsere Freundschaft gehalten. | Entgegen | Bütün beklentilere rağmen dostluğumuz sürdü.
+k | um | + A | civarı, etrafı | Wir wohnen in der Gegend um Leipzig. | um | Leipzig civarında oturuyoruz.
+k | bevor | | -meden önce | Bevor ich nach Deutschland kam, habe ich in Istanbul gewohnt. | Bevor | Almanya'ya gelmeden önce İstanbul'da oturuyordum.
+k | nachdem | | -dikten sonra | Nachdem wir gegessen hatten, sind wir spazieren gegangen. | Nachdem | Yemek yedikten sonra yürüyüşe çıktık.
+k | seitdem | seit / seitdem | -den beri | Seitdem du den Job gewechselt hast, bist du immer gestresst. | Seitdem | İş değiştirdiğinden beri hep streslisin.
+k | während | | -iken | Ich putze, während ich telefoniere. | während | Telefonla konuşurken temizlik yapıyorum.
