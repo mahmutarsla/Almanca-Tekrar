@@ -1024,3 +1024,13 @@
 2026-10-07 07:00:15;art;n0629:art;das Klima;Klima;das;richtig;das Klima;sek:1 | ipucu:0
 2026-10-07 07:00:20;erk;n1373:erk;der Wettbewerb;yarışma;der Wettbewerb;richtig;der Wettbewerb;sek:5 | ipucu:0
 2026-10-07 07:10:32;erk;n1307:erk;das Verhalten;das Verhalten;davranış;richtig;davranış;sek:4 | ipucu:0
+2026-10-07 07:11:21;nsatz;n0433:nsatz;die Geduld;Lütfen biraz sabırlı olun.;Bitte seinen Sie ein bisschen ;falsch;Bitte haben Sie etwas Geduld.;yardımcı fiil | sek:27 | ipucu:2
+2026-10-07 07:11:36;stamm;v610:stamm;verstehen;verstehen — Präsens (er/sie), Präteritum, Perfekt;versteht, verstand, hat verstanden;richtig;versteht, verstand, hat verstanden;sek:15 | ipucu:2
+2026-10-07 07:11:51;satz;v592:satz;sich verletzen;Pass auf, dass du dich nicht _____!;verzichst;falsch;verletzt;artikel/çekim | sek:13 | ipucu:1
+2026-10-07 07:11:55;abr;v149:abr;blitzen;şimşek çakmak;blitzen;richtig;blitzen;sek:3 | ipucu:2
+2026-10-07 07:12:02;satz;v509:satz;sich streiten mit;Sie _____ sich immer über Geld.;streiten;richtig;streiten;sek:6 | ipucu:0
+2026-10-07 07:12:07;satz;v429:satz;regnen;Es hat gestern den ganzen Tag _____.;geregnet;richtig;geregnet;sek:5 | ipucu:0
+2026-10-07 07:12:10;abr;v069:abr;ausfüllen;doldurmak (form);ausfüllen;richtig;ausfüllen (Akk);sek:3 | ipucu:2
+2026-10-07 07:12:15;satz;v590:satz;sich verlaufen;Hast du dich schon wieder _____?;verlaufen;richtig;verlaufen;sek:4 | ipucu:0
+2026-10-07 07:12:49;abr;v125:abr;sich beschweren bei;(birine) şikâyette bulunmak;beschweren bei d;fast;sich beschweren bei (bei + Dat);dönüşlü zamir | öneri:falsch | sek:12 | ipucu:2
+2026-10-07 07:12:55;satz;v672:satz;zustimmen;Ich _____ dir in dieser Sache völlig _____.;stimme zu;richtig;stimme zu;sek:5 | ipucu:0
