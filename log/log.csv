@@ -1044,3 +1044,13 @@
 2026-10-07 07:14:50;satz;v149:satz;blitzen;Heute Nacht hat es stark _____.;blitzt;falsch;geblitzt;farklı | sek:5 | ipucu:0
 2026-10-07 07:14:54;abr;v429:abr;regnen;yağmur yağmak;regnen;richtig;regnen;sek:3 | ipucu:2
 2026-10-07 07:15:03;satz;v423:satz;reagieren auf;Der Lehrer _____ ruhig auf die Frage.;reagiert;richtig;reagiert;sek:9 | ipucu:0
+2026-10-07 07:15:15;nsatz;n0432:nsatz;das Gedicht;Kennst du ein schönes _____?;Gedicht;richtig;Gedicht;sek:8 | ipucu:0
+2026-10-07 07:15:20;wort;n0941:wort;die Prüfung;sınav;die Prüfung;richtig;die Prüfung;sek:5 | ipucu:0
+2026-10-07 07:15:36;satz;v589:satz;sich verlassen auf;Du kannst dich auf mich _____. Ich helfe dir auf jeden Fall.;verlassen;richtig;verlassen;sek:16 | ipucu:0
+2026-10-07 07:15:45;stamm;v173:stamm;dürfen;dürfen — Präsens (er/sie), Präteritum;darf, durfte;richtig;darf, durfte;sek:9 | ipucu:0
+2026-10-07 07:15:54;frm;v673:frm;zweifeln an;zweifeln an — er / sie Perfekt;hat gezweifelt;richtig;hat gezweifelt;sek:8 | ipucu:0
+2026-10-07 07:16:01;satz;v425:satz;rechnen mit;Mit solchen Schwierigkeiten hatten wir nicht _____.;gerechnet;richtig;gerechnet;sek:7 | ipucu:0
+2026-10-07 07:16:06;nsatz;n0207:nsatz;die Burg;Von der _____ hat man eine schöne Aussicht.;Burg;richtig;Burg;sek:4 | ipucu:0
+2026-10-07 07:16:33;leech;v590;sich verlaufen;(yürürken) yolunu kaybetmek;;takiliyor;;günler:2026-10-04,2026-10-06,2026-10-07
+2026-10-07 07:16:33;abr;v590:abr;sich verlaufen;(yürürken) yolunu kaybetmek;sich verandern;falsch;sich verlaufen;artikel/çekim | sek:25 | ipucu:0
+2026-10-07 07:17:19;leech;v119;sich beruhigen;sakinleşmek;;takiliyor;;günler:2026-10-04,2026-10-06,2026-10-07
