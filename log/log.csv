@@ -1034,3 +1034,13 @@
 2026-10-07 07:12:15;satz;v590:satz;sich verlaufen;Hast du dich schon wieder _____?;verlaufen;richtig;verlaufen;sek:4 | ipucu:0
 2026-10-07 07:12:49;abr;v125:abr;sich beschweren bei;(birine) şikâyette bulunmak;beschweren bei d;fast;sich beschweren bei (bei + Dat);dönüşlü zamir | öneri:falsch | sek:12 | ipucu:2
 2026-10-07 07:12:55;satz;v672:satz;zustimmen;Ich _____ dir in dieser Sache völlig _____.;stimme zu;richtig;stimme zu;sek:5 | ipucu:0
+2026-10-07 07:13:31;nsatz;n0025:nsatz;das Amt;İş ve İşçi Bulma Kurumu otogarın yanında.;Das Arbeitsamt befindet sich neben dem Busbahnhof.;richtig;Das Arbeitsamt befindet sich neben dem Busbahnhof.;sek:36 | ipucu:0
+2026-10-07 07:13:41;frm;v673:frm;zweifeln an;zweifeln an — er / sie Perfekt;zweifelt;falsch;hat gezweifelt;yardımcı fiil | sek:7 | ipucu:1
+2026-10-07 07:13:47;luecke;v425:satz;rechnen mit;Mit solchen Schwierigkeiten hatten wir nicht _____.;rechnen;falsch;gerechnet;farklı | sek:4 | ipucu:0
+2026-10-07 07:13:54;nsatz;n0433:nsatz;die Geduld;Bitte haben Sie etwas _____.;Geduld;richtig;Geduld;sek:7 | ipucu:1
+2026-10-07 07:14:25;stamm;v148:stamm;bleiben;bleiben — Präsens (er/sie), Präteritum, Perfekt;bleibt, bliebt,ist geblieben;fast;bleibt, blieb, ist geblieben;Präteritum: blieb | öneri:falsch | sek:27 | ipucu:1
+2026-10-07 07:14:35;satz;v592:satz;sich verletzen;Ich habe mich beim Kochen _____.;verletzt;richtig;verletzt;sek:10 | ipucu:0
+2026-10-07 07:14:43;wort;n1286:wort;die Unterschrift;imza;der Unterschrift;fast;die Unterschrift;artikel: der → die | öneri:falsch | sek:4 | ipucu:1
+2026-10-07 07:14:50;satz;v149:satz;blitzen;Heute Nacht hat es stark _____.;blitzt;falsch;geblitzt;farklı | sek:5 | ipucu:0
+2026-10-07 07:14:54;abr;v429:abr;regnen;yağmur yağmak;regnen;richtig;regnen;sek:3 | ipucu:2
+2026-10-07 07:15:03;satz;v423:satz;reagieren auf;Der Lehrer _____ ruhig auf die Frage.;reagiert;richtig;reagiert;sek:9 | ipucu:0
