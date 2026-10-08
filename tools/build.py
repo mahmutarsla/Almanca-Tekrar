@@ -428,7 +428,8 @@ for n, s_ in lines(P("quellen", "woerter.txt")):
     for e in goethe:
         if e["typ"] == "andere":
             h = re.sub(r"\d+\.?$", "", e["head"]).strip()
-            if h.lower() == de.lower() or h.lower().rstrip("-") == de.lower() or (h.endswith("-") and de.lower().startswith(h.lower()[:-1])):
+            # "selb-" → selbe, "ander-" → andere (yalnız sıfat eki); "ein-" → einfach / eingespannt değil
+            if h.lower() == de.lower() or h.lower().rstrip("-") == de.lower() or (h.endswith("-") and de.lower().startswith(h.lower()[:-1]) and re.fullmatch(r"(e|er|es|en|em)?", de.lower()[len(h) - 1:])):
                 if e["bsp"]:
                     w["bsp"] = e["bsp"][:3]
                     break
@@ -540,6 +541,15 @@ def dump(name, var, data):
         f.write(";\n")
 
 
+# PDF satır kırılmasında yarım kalan Goethe örnekleri ("Herr Huber ist bis zum") gösterilmesin
+def tam_satz(b):
+    return bool(re.search(r"[.!?…“”\"]$", re.sub(r"(\s*\([^)]*\))+$", "", b.strip())))
+def kelime_var(x, b):
+    w = (x.get("lemma") or re.split(r"[\s…]", x.get("de") or "")[0] or "").lower()
+    return not w or w[:max(3, len(w) - 2)] in b.lower()
+for x in verben + nomen + woerter:
+    if x.get("bsp"):
+        x["bsp"] = [b for b in x["bsp"] if tam_satz(b) and ("inf" in x or kelime_var(x, b))]
 dump("verben.js", "VERBEN", verben)
 person_ids = {p["id"] for p in personen}
 for v in verben:

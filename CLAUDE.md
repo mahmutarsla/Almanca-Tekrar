@@ -37,10 +37,11 @@
   - Seçmeli (Hızlı tur): `erk` (isim/diğer DE→TR), `bed` (fiil DE→TR; sadece fiil + edat gösterilir), `art` (der/die/das), `pretest` (yeni kelime ön testi: ergebnis `bekannt` = biliyordu, `neu` = tanıtıldı)
   - Fiil çekimi: `stamm` (bütün fiiller; cevap "er-Präsens, Präteritum, Perfekt": fährt, fuhr, ist gefahren; modal fiillerde Perfekt yok: kann, konnte)
   - Cümle aşamaları (`satz`, `nsatz`): ipucu seviyesi 0 → ipuçlu boşluk, 1 → boşluk, 2+ → tam cümle çevirisi
+    Cümle havuzu (`satzPool` / `satzWahl`): kendi çeviri cümleleri + Goethe örnekleri + okuma metinlerinden gerçek cümleler; son görülenler (`S.kontext`) tekrar seçilmez, en eskisi döner. Az cümlesi olan öğeye `saetze.txt` / `wort_saetze.txt`'e cümle ekle.
   - Serbest yazma: `text` (id `a07` = `quellen/aufgaben.txt` görevi; antwort = metin, paragraflar ` ¶ `; notiz: kelime sayısı, zorunlu kelimeler)
   - Kalıplar: `quellen/kaliplar.txt` (fiil | Almanca | Türkçe; "Kalıplar" bölümü, "yazmaya ekle" ile yazma ekranına), `quellen/redemittel.txt` (yazma türü / konu kalıpları)
   - Okuma: `lesen` (Klexikon / DW metni okundu: ergebnis `gelesen`; Goethe Übungssatz görevi `quellen/goethe_lesen.json`: id `ge2:7` = ge2'nin 7. sorusu, antwort seçtiği, loesung doğrusu, görev sonu id `ge2` notiz `puan:2/3`. Metinler: `tools/klexikon.py`, `tools/dw_topthema.py` — okuma metnini ve sorularını Claude yazmaz), `lesen-wort` (metinde anlamına baktığı kelime: bilmediği kelimeler!)
-  - Günün fiil metni: `fiilmetin` (her gün 04:00'te değişen gerçek metin, A2/B1 düzensiz fiillerin çekimli hâlleri işaretli; id = fiil, frage `form | cümle`, antwort seçtiği zaman, loesung doğru zaman; metin sonu id = metin, ergebnis `gelesen`, notiz `puan:x/y`). Çekim (`stamm`) sorusu yalnız düzensiz fiillerde ve formları görüldükten sonra (`S.formGesehen`).
+  - Günün fiil metni: `fiilmetin` (her gün 04:00'te değişen gerçek metin, A2/B1 düzensiz fiillerin çekimli hâlleri işaretli; id = fiil, frage `form → hedef | cümle` (hedef: metindekinden başka zaman Präsens / Präteritum / Perfekt, ya da `mastar`), antwort seçtiği form, loesung doğru form; metin sonu id = metin, ergebnis `gelesen`, notiz `puan:x/y`). Çekim (`stamm`) sorusu yalnız düzensiz fiillerde ve formları görüldükten sonra (`S.formGesehen`).
   - Ünite: `unite` (kitaptaki konunun listesi; `quellen/uniteN.txt` + `uniteN_texte.txt` + `uniteN_aufgaben.txt` → `daten/unite.js`; id `u1-005` = kelime, frage = basamak `intro/mc/mcrev/art/lk/typ/formen` ya da `text/match/diktat/ordnen`; id `u1:t3` = 4. boşluklu metin, notiz `puan:x/y`; `u1:sort` ayırma sonucu `k:biliyor u:emin değil n:bilmiyor`; yazma görevleri modus `text`, id `u1-a1`).
   Yeni ünite: Tuna listeyi verince `quellen/unite2.txt` (biçim dosyanın başında), 6–8 boşluklu metin, 2 yazma görevi; `tools/build.py`'de `unite_lesen(2)` ekle. Goethe listesinde olmayan isimler `nomen_extra.txt`'e, sıfat/zarf/kalıp `woerter.txt` sonuna (her ünite kelimesinin ana listede karşılığı olsun).
   Aktif ünitenin kelimeleri Çalış'ta yeni öğe olarak önce gelir, metinleri boşluklu metin havuzuna girer. Ünite bitince `@geschlossen` ekle: açılışta ünitede çalışılmış (basamağa girmiş) kelimeler tekrar sistemine alınır, çalışılmayanlar alınmaz, bölüm gizlenir. Ünite 1 kapandı (15 kelime aktarıldı).
@@ -55,13 +56,16 @@
   Odak bölümleri (`MODI`): blitz (Hızlı tur), paket, normal (Karışık), verben, woerter, ndek, refl, thema, stark, lesen, fiilmetin, kalip, yazma, zayif, unite;
   her birinin hedefi/yeni sınırı ayrı, günlük sayaçlar `tage[gün].modi[bölüm]` (`bekannt`, `ungezaehlt` dahil). Hızlı tur'da fiil yok.
 - Birimler (`öğe:tür`): isim `erk`, `art`, `wort`, `nsatz` (kelime cümlesi, log modus `nsatz`), `ndek` · fiil `bed`, `abr`, `frm`, `satz`, `refl` · diğer `erk`, `prod` · paket `pak`.
-  Yeni kart öğrenme adımları: ilk gün 3 hatırlama (tanıtım → birkaç soru → ~10 dk), ertesi gün kesin tekrar; günlük yeni sınırları ayrı: `einst.neuWoerter` (25 kelime) ve `einst.neuVerben` (5 fiil); her ~6 soruda bugün öğrenilen bir öğe TR→DE yazdırılır.
+  Yeni kart öğrenme adımları (yalnız bugün tanıtılan öğede ya da ilk cevap tam doğru değilse): ilk gün 3 hatırlama (tanıtım → birkaç soru → ~10 dk), ertesi gün kesin tekrar;
+  eski öğenin yeni açılan kartı ilk seferde doğruysa doğrudan takvime (kardeş kartı S ≥ 7 ise ~8 gün sonra); günlük yeni sınırları ayrı: `einst.neuWoerter` (25 kelime) ve `einst.neuVerben` (5 fiil); her ~6 soruda bugün öğrenilen bir öğe TR→DE yazdırılır.
   Seçmeli `erk` yarı yarıya ters yön (TR → DE, artikelli 6 şık, biri doğru ismin yanlış artikeli). `nsatz` yazma kartı oturunca açılır.
   Fiil tanıtımında (kalıp kutusu) ve fiil sorularının açıklamasında `quellen/kaliplar.txt` kalıpları gösterilir (`kalipZeile`, `kalipKutu`).
   Aynı öğe (bütün birimleri: artikel, anlam, yazma) en az 12 soru arayla ve günde en çok 4 (bugün öğrenilen) / 2 (eski) kez sorulur (`IZ_ABSTAND`, `izOk`, `S.iz`).
   Her 5 soruda bir "metinde" kartı: vadesi gelen `erk`/`bed` kartı okuma metinlerinden (DW / Klexikon / Goethe) gerçek bir cümlede, kelime vurgulu, anlamı seçmeli (log modus `erk`/`bed`, frage = cümle).
   1 günden fazla gecikmiş kartlar her iki soruda bir öne alınır; birikmede her 3. seçim en eski vade. Çekim (`stamm`) en az 8 soru arayla, günde en çok 4; yalnız düzensiz fiil ve formları görüldüyse.
-  Genç kartlar (reps ≤ 5): ilk tekrarlar en çok 2 gün, sonra 4 gün ara.
+  Genç kartlar (reps ≤ 5): küçük hata ya da unutulmuşsa ilk tekrarlar en çok 2 gün, sonra 4 gün ara.
+  Kardeş kredisi (`kardesKredi`): yazarak doğru (wort → anlam + artikel, prod/nsatz → anlam, abr/satz → fiil anlamı; ters seçmeli → artikel) aynı öğenin kolay kartını sanal doğruyla ileri atar (son cevabı yanlış olan kart hariç).
+  Öğe serisi: bütün kartlarında art arda 4+ doğru → kardeş kartlar 12–21 gün ileri (`seriSeyrek`). A1 (tier 1) kelimelerin anlam kartı (`erk`/`bed`) sorulmaz, artikeli sorulur.
   Yanlıştan sonra oturumda tek tekrar (başka cümle), ikinci yanlışta ertesi gün. Fiilin cümle / çekim / dönüşlü birimleri ilk başarılı anlamdan sonra 1 / 2 / 3 gün sonra açılır.
   Hızlı tur'da öğrenilen kelimenin yazma birimi tanıma/artikel kartı S ≥ 3 gün olunca açılır (fiilde hemen).
 - Mimari ve gerekçeler: `TASARIM.md`.

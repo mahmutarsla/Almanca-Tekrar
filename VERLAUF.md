@@ -102,3 +102,21 @@ Son incelenen log satırı en alttaki notta yazar.
   übertreiben, verhindern); çalışılmayanlar alınmadı. Ünite metinleri boşluklu metin havuzunda. Ünite metninde görülmemiş kelime artık boşluk olmaz.
 - Fiil tanıtımında kalıp kutusu, fiil sorularının açıklamasında kalıp satırı.
 - Test: 4 günlük simülasyon (tekrar aralığı ≥ 12 soru, öğe günde ≤ 4), gerçek ilerleme dosyasıyla 93 adım (dengeli tür dağılımı), e2e duman testi.
+
+## 2026-10-08 (akşam) — veri incelemesi: bildiğin kelime neden hâlâ geliyor, cümle neden değişmiyor
+
+- Gerçek ilerleme (2026-10-08 21:25): 249 vadeli kartın 141'i hiç sorulmamış ek birim (ausfüllen'in anlam kartı, der Pass'ın anlam / artikel kartı …),
+  ~75'i hiç ya da son 3+ denemede yanlış yapılmamış öğelerden. Sebep: her kelimenin 3–5 ayrı kartı (anlam, artikel, yazma, cümle) ayrı takvimle,
+  yeni açılan her kart bilinen kelimede de 2 günde 3 kez soruluyordu; A1 kelimelerin (werden, der Supermarkt) anlamı soruluyordu.
+- Düzeltme: kardeş kredisi (yazarak doğru → aynı kelimenin anlam / artikel kartı ileri), öğrenme adımları yalnız bugün tanıtılan kelimede,
+  iyi bilinen kelimenin yeni kartı ilk seferde doğruysa ~8 gün sonra, A1 anlam kartları yok, art arda 4+ doğru → 12–21 gün (seri).
+  6 günlük simülasyon (günde 80 cevap): eski sistemde birikme 252 → 347, 6. gün 80 sorunun 48'i bilinen kelime; yenisinde 201 → 176, 21.
+- Cümle hep aynıydı: 125 öğrenilen öğenin 102'sinde 3'ten az cümle. Cümle havuzu (kendi + Goethe örneği + okuma metinleri, son görülen tekrar seçilmez)
+  ve 152 yeni çeviri cümlesi (67 öğe + cümlesi hiç olmayan 11 öğe). Şimdi 125 öğrenilen öğenin 124'ünde 3+ cümle (yalnız vor Gericht gehen'de yok).
+- Fiil metni testi: 6 cevabın 6'sı Präteritum'du. Artık metindekinden başka zamana geçiş (Präsens / Präteritum / Perfekt dengeli) ve mastar sorusu,
+  şıklar tipik hatalar (fliehte, ist geflieht, hat geflohen, fahrt).
+- Küçük hatalar: ayrılabilen fiil dizini (fährt → abfahren sanılıyordu), "metinde" kartında cümle ortasındaki isim fiil sanılıyordu (Schienen → scheinen),
+  eingespannt ipucu cevabı gösteriyordu, pakette artikelli cevap yanlış sayılıyordu, Goethe örnekleri yanlış kelimeye bağlanıyordu
+  ("ein-" → einfach / eingespannt, "un-" → und) ve yarım örnekler ("Herr Huber ist bis zum") gösteriliyordu.
+- Kanca: die Burg, sich beruhigen, sich wenden an, verzichten auf, die Geduld, sich verlaufen.
+- Düzeltme listesi (feedback.js) bu notta yazılmadı; son incelenen log satırı hâlâ 2026-10-06 08:23:05.

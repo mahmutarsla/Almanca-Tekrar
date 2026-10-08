@@ -600,5 +600,5 @@ eigen | adj | 3 | kendi (-ne ait)
 kommerziell | adj | 3 | ticari
 selbe | pron | 3 | aynı (im selben Haus)
 entgegen | präp | 3 | -e rağmen, aksine (+ G)
-eingespannt sein | andere | 3 | çok meşgul olmak (Ich bin beruflich stark eingespannt.)
+eingespannt sein | andere | 3 | çok meşgul olmak (iş yüzünden)
 vor Gericht gehen | andere | 3 | mahkemeye gitmek

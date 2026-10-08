@@ -1060,3 +1060,45 @@ v626 | Sie hat einen Ausflug an den See vorgeschlagen. | Göle bir gezi önerdi.
 v646 | Ich muss dir leider widersprechen. | Maalesef sana itiraz etmem gerekiyor.
 v527 | Gestern habe ich zufällig meinen Lehrer getroffen. | Dün tesadüfen öğretmenime rastladım.
 v346 | Er ist zu spät zum Unterricht gekommen. | Derse geç geldi.
+v169 | In der Nacht hat es laut gedonnert. | Gece gök yüksek sesle gürledi.
+v169 | Wenn es donnert, hat mein Hund Angst. | Gök gürlediğinde köpeğim korkar.
+v305 | Im April hat es plötzlich gehagelt. | Nisanda birden dolu yağdı.
+v305 | Wenn es hagelt, bleiben wir lieber im Haus. | Dolu yağdığında evde kalmayı tercih ederiz.
+v459 | Im Januar schneit es in Bremen nur selten. | Ocakta Bremen'de nadiren kar yağar.
+v459 | Es hat die ganze Nacht geschneit. | Bütün gece kar yağdı.
+v111 | Er bemüht sich um eine neue Stelle. | Yeni bir iş için çabalıyor.
+v111 | Wir haben uns sehr um eine Lösung bemüht. | Bir çözüm için çok çabaladık.
+v121 | In meiner Freizeit beschäftige ich mich gern mit Musik. | Boş zamanımda müzikle uğraşmayı severim.
+v121 | Mit diesem Thema haben wir uns lange beschäftigt. | Bu konuyla uzun süre uğraştık.
+v127 | Morgen besichtigen wir die Altstadt. | Yarın eski şehri geziyoruz.
+v127 | Wann können wir die Wohnung besichtigen? | Daireyi ne zaman gezip görebiliriz?
+v561 | Hast du den Mietvertrag schon unterschrieben? | Kira sözleşmesini imzaladın mı?
+v561 | Bitte unterschreiben Sie das Formular. | Lütfen formu imzalayın.
+v197 | Wir ziehen am ersten Mai in die neue Wohnung ein. | Bir mayısta yeni daireye taşınıyoruz.
+v197 | Wann bist du in die WG eingezogen? | WG'ye ne zaman taşındın?
+v069 | Ich habe den Fragebogen schon ausgefüllt. | Anketi zaten doldurdum.
+v069 | Füllst du das Formular für mich aus? | Formu benim için doldurur musun?
+v089 | Ich möchte eine Aufenthaltserlaubnis beantragen. | Oturma izni için başvurmak istiyorum.
+v089 | Wo kann man ein Visum beantragen? | Vize için nereye başvurulur?
+v030 | Hast du dich schon für den Sprachkurs angemeldet? | Dil kursuna kaydoldun mu?
+v030 | Ich melde mich heute für die Prüfung an. | Bugün sınava kaydoluyorum.
+v589 | Auf meinen Bruder kann ich mich immer verlassen. | Erkek kardeşime her zaman güvenebilirim.
+v589 | Du kannst dich nicht immer auf andere verlassen. | Her zaman başkalarına güvenemezsin.
+v232 | Ein Wörterbuch erleichtert das Lesen. | Sözlük okumayı kolaylaştırır.
+v232 | Die neue App hat mir die Arbeit sehr erleichtert. | Yeni uygulama işimi çok kolaylaştırdı.
+v142 | Er konnte nicht beweisen, dass er zu Hause war. | Evde olduğunu kanıtlayamadı.
+v142 | Die Studie beweist, dass Sport gesund ist. | Araştırma sporun sağlıklı olduğunu kanıtlıyor.
+v466 | Warum schweigst du die ganze Zeit? | Neden hep susuyorsun?
+v466 | Er hat lange geschwiegen und dann die Wahrheit gesagt. | Uzun süre sustu, sonra gerçeği söyledi.
+v584 | Regelmäßiger Sport kann viele Krankheiten verhindern. | Düzenli spor birçok hastalığı önleyebilir.
+v584 | Die Polizei hat einen Unfall verhindert. | Polis bir kazayı önledi.
+v605 | Kann mir der Arzt etwas gegen den Husten verschreiben? | Doktor bana öksürüğe karşı bir şey yazabilir mi?
+v272 | Ich friere, kannst du die Heizung anmachen? | Üşüyorum, kaloriferi açabilir misin?
+v447 | Die Sonne scheint, lass uns spazieren gehen. | Güneş parlıyor, hadi yürüyüşe çıkalım.
+v654 | Ich habe mich über den hohen Preis gewundert. | Yüksek fiyata şaşırdım.
+v125 | Wir haben uns beim Hausmeister über den Lärm beschwert. | Gürültüden kapıcıya şikâyet ettik.
+v425 | Wir rechnen mit etwa fünfzig Gästen. | Yaklaşık elli misafir bekliyoruz.
+v509 | Ich habe mich gestern mit meinem Mitbewohner gestritten. | Dün ev arkadaşımla kavga ettim.
+v278 | Mein kleiner Bruder fürchtet sich vor Hunden. | Küçük kardeşim köpeklerden korkuyor.
+v185 | Nach der Arbeit kaufe ich noch schnell ein. | İşten sonra hızlıca alışveriş yapıyorum.
+v063 | Mein Vater regt sich über die hohen Preise auf. | Babam yüksek fiyatlara sinirleniyor.

@@ -2502,3 +2502,113 @@ n1336 | das Visum | Für das Studium in Deutschland brauche ich ein Visum. | Alm
 w0165 | feucht | Die Wäsche ist noch feucht, sie muss noch trocknen. | Çamaşırlar hâlâ nemli, biraz daha kuruması lazım.
 w0138 | entlang | Gehen Sie die Straße entlang bis zur Apotheke. | Eczaneye kadar cadde boyunca yürüyün.
 w0103 | doppelt | In der Stadt ist die Miete fast doppelt so hoch wie auf dem Land. | Şehirde kira, kırsaldakinin neredeyse iki katı.
+n1044 | der Schmerz | Nach dem Sport hatte ich starke Schmerzen im Rücken. | Spordan sonra sırtımda şiddetli ağrılar vardı.
+n1044 | der Schmerz | Der Schmerz im Knie ist zum Glück weg. | Dizimdeki ağrı neyse ki geçti.
+n1320 | die Versichertenkarte | Ich habe meine Versichertenkarte zu Hause vergessen. | Sigorta kartımı evde unuttum.
+n1320 | die Versichertenkarte | Ohne Versichertenkarte müssen Sie den Arztbesuch selbst bezahlen. | Sigorta kartı olmadan doktor ziyaretini kendiniz ödemeniz gerekir.
+n1179 | die Tablette | Die Tabletten liegen im Badezimmer. | Tabletler banyoda duruyor.
+n1179 | die Tablette | Ich nehme abends eine Tablette gegen die Kopfschmerzen. | Akşamları baş ağrısına karşı bir tablet alıyorum.
+n1376 | die Wettervorhersage | Laut Wettervorhersage regnet es am Wochenende. | Hava tahminine göre hafta sonu yağmur yağacak.
+n1376 | die Wettervorhersage | Hast du heute schon die Wettervorhersage gelesen? | Bugün hava tahminini okudun mu?
+w0344 | nass | Meine Haare sind noch nass. | Saçlarım hâlâ ıslak.
+w0344 | nass | Leg die nasse Jacke nicht auf das Sofa! | Islak ceketi kanepeye koyma!
+n1373 | der Wettbewerb | Unser Chor nimmt an einem Wettbewerb teil. | Korumuz bir yarışmaya katılıyor.
+n1373 | der Wettbewerb | Den Wettbewerb hat eine Schule aus Hamburg gewonnen. | Yarışmayı Hamburg'dan bir okul kazandı.
+n1307 | das Verhalten | Sein Verhalten im Unterricht war nicht in Ordnung. | Dersteki davranışı uygun değildi.
+n1307 | das Verhalten | Die Lehrerin hat mit den Eltern über das Verhalten von Tim gesprochen. | Öğretmen anne babayla Tim'in davranışı hakkında konuştu.
+w0199 | gerecht | Ich finde diese Entscheidung nicht gerecht. | Bu kararı adil bulmuyorum.
+w0199 | gerecht | Die Arbeit muss gerecht verteilt werden. | İş adil bir şekilde paylaştırılmalı.
+w0109 | drüben | Siehst du das Café da drüben? | Karşıdaki kafeyi görüyor musun?
+w0109 | drüben | Meine Freundin wohnt drüben auf der anderen Straßenseite. | Kız arkadaşım karşıda, sokağın öbür tarafında oturuyor.
+w0172 | frech | Das Kind war sehr frech zu seiner Lehrerin. | Çocuk öğretmenine karşı çok arsızdı.
+w0172 | frech | Sei nicht so frech! | Bu kadar arsız olma!
+n0432 | das Gedicht | Im Deutschkurs haben wir ein Gedicht von Goethe gelesen. | Almanca kursunda Goethe'nin bir şiirini okuduk.
+n0432 | das Gedicht | Meine Tochter hat für ihre Oma ein Gedicht geschrieben. | Kızım büyükannesi için bir şiir yazdı.
+n0432 | das Gedicht | Kannst du das Gedicht auswendig? | Şiiri ezbere biliyor musun?
+w0114 | durcheinander | Nach der Party war die ganze Wohnung durcheinander. | Partiden sonra bütün ev karmakarışıktı.
+w0114 | durcheinander | Ich bin heute ganz durcheinander, ich habe schlecht geschlafen. | Bugün kafam çok karışık, kötü uyudum.
+n0051 | die Anzeige | Ich habe die Anzeige in der Zeitung gesehen und möchte mich bewerben. | İlanı gazetede gördüm ve başvurmak istiyorum.
+n0051 | die Anzeige | Wir haben eine Anzeige für unsere alte Waschmaschine ins Internet gestellt. | Eski çamaşır makinemiz için internete ilan verdik.
+n0111 | der Balkon | Im Sommer frühstücken wir auf dem Balkon. | Yazın balkonda kahvaltı yapıyoruz.
+n0111 | der Balkon | Auf unserem Balkon stehen viele Blumen. | Balkonumuzda çok çiçek var.
+n1316 | der Vermieter | Der Vermieter will die Miete erhöhen. | Ev sahibi kirayı artırmak istiyor.
+n1316 | der Vermieter | Ich muss den Vermieter wegen der kaputten Heizung anrufen. | Bozuk kalorifer yüzünden ev sahibini aramam lazım.
+n1325 | der Vertrag | Ich habe den Vertrag noch nicht unterschrieben. | Sözleşmeyi henüz imzalamadım.
+n1325 | der Vertrag | Mein Vertrag endet im Dezember. | Sözleşmem aralıkta bitiyor.
+w0139 | entschlossen | Sie ist entschlossen, in Deutschland zu studieren. | Almanya'da okumaya kararlı.
+w0139 | entschlossen | Er sprach mit entschlossener Stimme. | Kararlı bir sesle konuştu.
+n0869 | die Operation | Die Operation hat drei Stunden gedauert. | Ameliyat üç saat sürdü.
+n0869 | die Operation | Vor der Operation darf man nichts essen. | Ameliyattan önce hiçbir şey yemek yasak.
+w0171 | folgend | Beantworten Sie bitte die folgenden Fragen. | Lütfen aşağıdaki soruları cevaplayın.
+w0171 | folgend | Am folgenden Tag war das Wetter besser. | Ertesi gün hava daha iyiydi.
+n0047 | der Antrag | Den Antrag müssen Sie bis Ende des Monats abgeben. | Dilekçeyi ay sonuna kadar teslim etmeniz gerekiyor.
+n0047 | der Antrag | Mein Antrag auf ein Stipendium wurde angenommen. | Burs başvurum kabul edildi.
+n0384 | das Formular | Das Formular gibt es auch online. | Form internette de var.
+n0384 | das Formular | Ich verstehe dieses Formular nicht. Können Sie mir helfen? | Bu formu anlamıyorum. Bana yardım edebilir misiniz?
+n0889 | der Pass | Mein Pass ist nur noch drei Monate gültig. | Pasaportum sadece üç ay daha geçerli.
+n0889 | der Pass | Am Flughafen musste ich meinen Pass zeigen. | Havaalanında pasaportumu göstermem gerekti.
+n1286 | die Unterschrift | Hier fehlt noch Ihre Unterschrift. | Burada imzanız eksik.
+n1286 | die Unterschrift | Ohne Unterschrift ist der Vertrag nicht gültig. | İmza olmadan sözleşme geçerli değil.
+n0155 | die Bestätigung | Nach der Anmeldung bekommen Sie eine Bestätigung per E-Mail. | Kayıttan sonra e-postayla bir onay alırsınız.
+n0155 | die Bestätigung | Ich warte noch auf die Bestätigung von der Universität. | Hâlâ üniversiteden onay bekliyorum.
+n1389 | der Wohnsitz | Bei der Anmeldung müssen Sie Ihren neuen Wohnsitz angeben. | Kayıtta yeni ikametgâhınızı belirtmeniz gerekiyor.
+n1389 | der Wohnsitz | Mein Wohnsitz ist jetzt in Bremen. | İkametgâhım artık Bremen'de.
+n0137 | die Behörde | Für das Visum musste ich zu vielen Behörden gehen. | Vize için birçok resmî kuruma gitmem gerekti.
+n0137 | die Behörde | Die Behörde hat meinen Antrag noch nicht bearbeitet. | Kurum başvurumu henüz işleme almadı.
+n0969 | das Referat | Nächste Woche muss ich ein Referat über Bremen halten. | Gelecek hafta Bremen hakkında bir sunum yapmam gerekiyor.
+n0969 | das Referat | Das Referat war sehr gut vorbereitet. | Sunum çok iyi hazırlanmıştı.
+n0781 | die Mensa | Das Essen in der Mensa ist billig. | Yemekhanede yemek ucuz.
+n0781 | die Mensa | Treffen wir uns um zwölf vor der Mensa? | Saat on ikide yemekhanenin önünde buluşalım mı?
+n0169 | die Bibliothek | In der Bibliothek kann ich mich besser konzentrieren. | Kütüphanede daha iyi konsantre olabiliyorum.
+n0169 | die Bibliothek | Ich muss die Bücher bis Freitag in die Bibliothek zurückbringen. | Kitapları cumaya kadar kütüphaneye geri götürmem gerekiyor.
+n1094 | das Sonderangebot | Die Erdbeeren sind heute im Sonderangebot. | Çilekler bugün indirimde.
+n1094 | das Sonderangebot | Diesen Fernseher habe ich im Sonderangebot gekauft. | Bu televizyonu indirimde aldım.
+n0121 | das Bargeld | Kann ich hier auch mit Bargeld bezahlen? | Burada nakit de ödeyebilir miyim?
+n0121 | das Bargeld | Ich habe nie viel Bargeld dabei. | Yanımda hiçbir zaman çok nakit olmaz.
+n1254 | die Tüte | An der Kasse kostet eine Tüte zwanzig Cent. | Kasada bir poşet yirmi sent.
+n1254 | die Tüte | Ich bringe immer meine eigene Tüte mit. | Hep kendi poşetimi getiririm.
+n0948 | die Quittung | Bewahren Sie die Quittung gut auf. | Makbuzu iyi saklayın.
+n0948 | die Quittung | Ohne Quittung können Sie die Ware nicht umtauschen. | Fiş olmadan ürünü değiştiremezsiniz.
+n0753 | die Mahnung | Gestern kam schon die zweite Mahnung. | Dün ikinci ihtar da geldi.
+n0753 | die Mahnung | Nach der Mahnung habe ich die Rechnung sofort bezahlt. | İhtardan sonra faturayı hemen ödedim.
+n0381 | die Forderung | Die Gewerkschaft stellt neue Forderungen. | Sendika yeni taleplerde bulunuyor.
+n0381 | die Forderung | Diese Forderung ist nicht realistisch. | Bu talep gerçekçi değil.
+n0994 | das Rezept | Für dieses Medikament brauchen Sie ein Rezept. | Bu ilaç için reçeteye ihtiyacınız var.
+n0682 | die Kritik | Er kann mit Kritik nicht gut umgehen. | Eleştiriyle iyi başa çıkamıyor.
+n0433 | die Geduld | Mit kleinen Kindern braucht man viel Geduld. | Küçük çocuklarla çok sabır gerekir.
+w0103 | doppelt | Ich habe die Rechnung aus Versehen doppelt bezahlt. | Faturayı yanlışlıkla iki kez ödedim.
+n0037 | die Anmeldung | Die Anmeldung für den Kurs ist bis Montag möglich. | Kursa kayıt pazartesiye kadar mümkün.
+n0928 | der Preis | Der Preis für das Ticket ist zu hoch. | Biletin fiyatı çok yüksek.
+n1211 | der Termin | Ich habe morgen um zehn Uhr einen Termin beim Arzt. | Yarın saat onda doktorda randevum var.
+n1211 | der Termin | Können wir den Termin auf Freitag verschieben? | Randevuyu cumaya erteleyebilir miyiz?
+n1211 | der Termin | Beim Bürgeramt bekommt man nur schwer einen Termin. | Vatandaşlık dairesinden zor randevu alınıyor.
+x1478 | das Frühjahr | Im Frühjahr wollen wir umziehen. | İlkbaharda taşınmak istiyoruz.
+x1478 | das Frühjahr | Das Frühjahr war dieses Jahr sehr kalt. | Bu yıl ilkbahar çok soğuktu.
+x1478 | das Frühjahr | Die Wohnung ist erst im Frühjahr fertig. | Daire ancak ilkbaharda hazır olacak.
+w0108 | drinnen | Es regnet, wir bleiben heute drinnen. | Yağmur yağıyor, bugün içeride kalıyoruz.
+w0108 | drinnen | Drinnen ist es warm, draußen ist es kalt. | İçerisi sıcak, dışarısı soğuk.
+w0108 | drinnen | Ist jemand drinnen? | İçeride biri var mı?
+x1479 | die Aussage | Die Polizei hat seine Aussage aufgeschrieben. | Polis onun ifadesini yazdı.
+x1479 | die Aussage | Diese Aussage ist falsch. | Bu ifade yanlış.
+x1479 | die Aussage | Nach der Aussage des Zeugen war der Fahrer zu schnell. | Tanığın ifadesine göre sürücü çok hızlıydı.
+n1076 | das Semester | Im nächsten Semester belege ich einen Deutschkurs. | Gelecek dönem bir Almanca kursu alıyorum.
+n1076 | das Semester | Das Semester beginnt im Oktober. | Dönem ekimde başlıyor.
+n1076 | das Semester | Sie studiert im dritten Semester Informatik. | Bilgisayar biliminde üçüncü dönemde okuyor.
+x1483 | der Dozent | Der Dozent erklärt die Aufgabe noch einmal. | Öğretim görevlisi ödevi bir kez daha açıklıyor.
+x1483 | der Dozent | Ich habe dem Dozenten eine E-Mail geschrieben. | Öğretim görevlisine bir e-posta yazdım.
+x1483 | der Dozent | Der Dozent spricht sehr schnell, ich verstehe ihn kaum. | Öğretim görevlisi çok hızlı konuşuyor, onu neredeyse hiç anlamıyorum.
+x1484 | der Kommilitone | Mit meinen Kommilitonen lerne ich in der Bibliothek. | Sınıf arkadaşlarımla kütüphanede çalışıyorum.
+x1484 | der Kommilitone | Ein Kommilitone hat mir seine Notizen gegeben. | Bir sınıf arkadaşım bana notlarını verdi.
+x1484 | der Kommilitone | Ich habe einen Kommilitonen nach dem Weg gefragt. | Bir sınıf arkadaşıma yolu sordum.
+x1501 | die Clique | Am Wochenende treffe ich mich mit meiner Clique. | Hafta sonu arkadaş grubumla buluşuyorum.
+x1501 | die Clique | In unserer Clique sind alle sehr verschieden. | Grubumuzda herkes çok farklı.
+x1501 | die Clique | Er gehört nicht mehr zu unserer Clique. | O artık bizim grubumuzdan değil.
+w0599 | eingespannt sein | Ich bin diese Woche sehr eingespannt, wir können uns erst am Sonntag sehen. | Bu hafta çok meşgulüm, ancak pazar günü görüşebiliriz.
+w0599 | eingespannt sein | Meine Mutter ist beruflich stark eingespannt. | Annem iş yüzünden çok meşgul.
+w0599 | eingespannt sein | Weil er so eingespannt ist, hat er kaum Zeit für Hobbys. | Çok meşgul olduğu için hobilerine neredeyse hiç vakti yok.
+x1503 | die Erwartung | Der Film hat meine Erwartungen nicht erfüllt. | Film beklentilerimi karşılamadı.
+x1503 | die Erwartung | Meine Eltern haben hohe Erwartungen an mich. | Ailemin benden yüksek beklentileri var.
+x1503 | die Erwartung | Ich hatte keine großen Erwartungen an den Urlaub. | Tatilden büyük beklentilerim yoktu.
+x1504 | die Behauptung | Das ist nur eine Behauptung, du hast keine Beweise. | Bu sadece bir iddia, hiç kanıtın yok.
+x1504 | die Behauptung | Seine Behauptung stimmt nicht. | Onun iddiası doğru değil.
+x1504 | die Behauptung | Ich verstehe deine Behauptung nicht. | İddianı anlamıyorum.

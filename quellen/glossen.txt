@@ -3840,3 +3840,155 @@ Sie hat einen Ausflug an den See vorgeschlagen. | der Ausflug = gezi; der See = 
 Ich muss dir leider widersprechen. | leider = maalesef
 Gestern habe ich zufällig meinen Lehrer getroffen. | zufällig = tesadüfen
 Er ist zu spät zum Unterricht gekommen. | der Unterricht = ders; zu spät = çok geç
+Nach dem Sport hatte ich starke Schmerzen im Rücken. | der Rücken = sırt; stark = şiddetli
+Der Schmerz im Knie ist zum Glück weg. | das Knie = diz; zum Glück = neyse ki; weg sein = geçmiş olmak
+Ich habe meine Versichertenkarte zu Hause vergessen. | -
+Ohne Versichertenkarte müssen Sie den Arztbesuch selbst bezahlen. | der Arztbesuch = doktor ziyareti; selbst = kendiniz
+Die Tabletten liegen im Badezimmer. | -
+Ich nehme abends eine Tablette gegen die Kopfschmerzen. | die Kopfschmerzen = baş ağrısı; gegen = -e karşı
+Laut Wettervorhersage regnet es am Wochenende. | laut = -e göre
+Hast du heute schon die Wettervorhersage gelesen? | -
+In der Nacht hat es laut gedonnert. | laut = yüksek sesle
+Wenn es donnert, hat mein Hund Angst. | Angst haben = korkmak
+Im April hat es plötzlich gehagelt. | plötzlich = birden
+Wenn es hagelt, bleiben wir lieber im Haus. | lieber = tercihen, daha çok
+Meine Haare sind noch nass. | die Haare = saç; noch = hâlâ
+Leg die nasse Jacke nicht auf das Sofa! | die Jacke = ceket; das Sofa = kanepe
+Im Januar schneit es in Bremen nur selten. | selten = nadiren
+Es hat die ganze Nacht geschneit. | -
+Unser Chor nimmt an einem Wettbewerb teil. | der Chor = koro; teilnehmen an = katılmak
+Den Wettbewerb hat eine Schule aus Hamburg gewonnen. | gewinnen = kazanmak
+Sein Verhalten im Unterricht war nicht in Ordnung. | der Unterricht = ders; in Ordnung = uygun, yerinde
+Die Lehrerin hat mit den Eltern über das Verhalten von Tim gesprochen. | -
+Ich finde diese Entscheidung nicht gerecht. | die Entscheidung = karar
+Die Arbeit muss gerecht verteilt werden. | verteilen = paylaştırmak
+Siehst du das Café da drüben? | -
+Meine Freundin wohnt drüben auf der anderen Straßenseite. | die Straßenseite = sokağın bir tarafı; ander- = öbür
+Das Kind war sehr frech zu seiner Lehrerin. | -
+Sei nicht so frech! | -
+Im Deutschkurs haben wir ein Gedicht von Goethe gelesen. | -
+Meine Tochter hat für ihre Oma ein Gedicht geschrieben. | -
+Kannst du das Gedicht auswendig? | auswendig = ezbere
+Er bemüht sich um eine neue Stelle. | die Stelle = iş, pozisyon
+Wir haben uns sehr um eine Lösung bemüht. | die Lösung = çözüm
+Nach der Party war die ganze Wohnung durcheinander. | -
+Ich bin heute ganz durcheinander, ich habe schlecht geschlafen. | -
+In meiner Freizeit beschäftige ich mich gern mit Musik. | die Freizeit = boş zaman
+Mit diesem Thema haben wir uns lange beschäftigt. | das Thema = konu
+Ich habe die Anzeige in der Zeitung gesehen und möchte mich bewerben. | sich bewerben = (işe) başvurmak
+Wir haben eine Anzeige für unsere alte Waschmaschine ins Internet gestellt. | die Waschmaschine = çamaşır makinesi; ins Internet stellen = internete koymak
+Im Sommer frühstücken wir auf dem Balkon. | frühstücken = kahvaltı yapmak
+Auf unserem Balkon stehen viele Blumen. | die Blume = çiçek
+Der Vermieter will die Miete erhöhen. | die Miete = kira; erhöhen = artırmak
+Ich muss den Vermieter wegen der kaputten Heizung anrufen. | die Heizung = kalorifer; kaputt = bozuk; wegen = yüzünden
+Morgen besichtigen wir die Altstadt. | die Altstadt = eski şehir (tarihî merkez)
+Wann können wir die Wohnung besichtigen? | -
+Ich habe den Vertrag noch nicht unterschrieben. | unterschreiben = imzalamak
+Mein Vertrag endet im Dezember. | enden = bitmek
+Hast du den Mietvertrag schon unterschrieben? | der Mietvertrag = kira sözleşmesi
+Bitte unterschreiben Sie das Formular. | das Formular = form
+Wir ziehen am ersten Mai in die neue Wohnung ein. | -
+Wann bist du in die WG eingezogen? | die WG = paylaşımlı ev (Wohngemeinschaft)
+Sie ist entschlossen, in Deutschland zu studieren. | studieren = üniversitede okumak
+Er sprach mit entschlossener Stimme. | die Stimme = ses
+Die Operation hat drei Stunden gedauert. | dauern = sürmek
+Vor der Operation darf man nichts essen. | -
+Beantworten Sie bitte die folgenden Fragen. | beantworten = cevaplamak
+Am folgenden Tag war das Wetter besser. | -
+Den Antrag müssen Sie bis Ende des Monats abgeben. | abgeben = teslim etmek; das Ende = son
+Mein Antrag auf ein Stipendium wurde angenommen. | das Stipendium = burs; annehmen = kabul etmek
+Das Formular gibt es auch online. | -
+Ich verstehe dieses Formular nicht. Können Sie mir helfen? | -
+Ich habe den Fragebogen schon ausgefüllt. | der Fragebogen = anket, soru formu
+Füllst du das Formular für mich aus? | das Formular = form
+Mein Pass ist nur noch drei Monate gültig. | gültig = geçerli
+Am Flughafen musste ich meinen Pass zeigen. | der Flughafen = havaalanı
+Hier fehlt noch Ihre Unterschrift. | fehlen = eksik olmak
+Ohne Unterschrift ist der Vertrag nicht gültig. | der Vertrag = sözleşme; gültig = geçerli
+Nach der Anmeldung bekommen Sie eine Bestätigung per E-Mail. | die Anmeldung = kayıt
+Ich warte noch auf die Bestätigung von der Universität. | warten auf = beklemek
+Bei der Anmeldung müssen Sie Ihren neuen Wohnsitz angeben. | angeben = belirtmek; die Anmeldung = kayıt
+Mein Wohnsitz ist jetzt in Bremen. | -
+Für das Visum musste ich zu vielen Behörden gehen. | das Visum = vize
+Die Behörde hat meinen Antrag noch nicht bearbeitet. | der Antrag = başvuru; bearbeiten = işleme almak
+Ich möchte eine Aufenthaltserlaubnis beantragen. | die Aufenthaltserlaubnis = oturma izni
+Wo kann man ein Visum beantragen? | das Visum = vize
+Hast du dich schon für den Sprachkurs angemeldet? | der Sprachkurs = dil kursu
+Ich melde mich heute für die Prüfung an. | die Prüfung = sınav
+Nächste Woche muss ich ein Referat über Bremen halten. | ein Referat halten = sunum yapmak
+Das Referat war sehr gut vorbereitet. | vorbereiten = hazırlamak
+Das Essen in der Mensa ist billig. | -
+Treffen wir uns um zwölf vor der Mensa? | sich treffen = buluşmak
+In der Bibliothek kann ich mich besser konzentrieren. | sich konzentrieren = konsantre olmak
+Ich muss die Bücher bis Freitag in die Bibliothek zurückbringen. | zurückbringen = geri götürmek
+Auf meinen Bruder kann ich mich immer verlassen. | -
+Du kannst dich nicht immer auf andere verlassen. | andere = başkaları
+Die Erdbeeren sind heute im Sonderangebot. | die Erdbeere = çilek
+Diesen Fernseher habe ich im Sonderangebot gekauft. | der Fernseher = televizyon
+Kann ich hier auch mit Bargeld bezahlen? | -
+Ich habe nie viel Bargeld dabei. | dabeihaben = yanında olmak
+An der Kasse kostet eine Tüte zwanzig Cent. | die Kasse = kasa
+Ich bringe immer meine eigene Tüte mit. | eigen = kendi; mitbringen = yanında getirmek
+Bewahren Sie die Quittung gut auf. | aufbewahren = saklamak
+Ohne Quittung können Sie die Ware nicht umtauschen. | die Ware = ürün, mal; umtauschen = değiştirmek (mağazada)
+Gestern kam schon die zweite Mahnung. | -
+Nach der Mahnung habe ich die Rechnung sofort bezahlt. | die Rechnung = fatura; sofort = hemen
+Die Gewerkschaft stellt neue Forderungen. | die Gewerkschaft = sendika; Forderungen stellen = talepte bulunmak
+Diese Forderung ist nicht realistisch. | realistisch = gerçekçi
+Ein Wörterbuch erleichtert das Lesen. | das Wörterbuch = sözlük
+Die neue App hat mir die Arbeit sehr erleichtert. | die App = uygulama
+Er konnte nicht beweisen, dass er zu Hause war. | -
+Die Studie beweist, dass Sport gesund ist. | die Studie = araştırma; gesund = sağlıklı
+Warum schweigst du die ganze Zeit? | die ganze Zeit = hep, sürekli
+Er hat lange geschwiegen und dann die Wahrheit gesagt. | die Wahrheit = gerçek
+Regelmäßiger Sport kann viele Krankheiten verhindern. | regelmäßig = düzenli; die Krankheit = hastalık
+Die Polizei hat einen Unfall verhindert. | der Unfall = kaza
+Kann mir der Arzt etwas gegen den Husten verschreiben? | der Husten = öksürük
+Für dieses Medikament brauchen Sie ein Rezept. | das Medikament = ilaç
+Ich friere, kannst du die Heizung anmachen? | die Heizung = kalorifer; anmachen = açmak
+Die Sonne scheint, lass uns spazieren gehen. | spazieren gehen = yürüyüşe çıkmak
+Ich habe mich über den hohen Preis gewundert. | der Preis = fiyat
+Er kann mit Kritik nicht gut umgehen. | umgehen mit = başa çıkmak
+Mit kleinen Kindern braucht man viel Geduld. | -
+Ich habe die Rechnung aus Versehen doppelt bezahlt. | aus Versehen = yanlışlıkla; die Rechnung = fatura
+Wir haben uns beim Hausmeister über den Lärm beschwert. | der Hausmeister = kapıcı, bina görevlisi; der Lärm = gürültü
+Wir rechnen mit etwa fünfzig Gästen. | der Gast = misafir; etwa = yaklaşık
+Die Anmeldung für den Kurs ist bis Montag möglich. | möglich = mümkün
+Ich habe mich gestern mit meinem Mitbewohner gestritten. | der Mitbewohner = ev arkadaşı
+Mein kleiner Bruder fürchtet sich vor Hunden. | -
+Nach der Arbeit kaufe ich noch schnell ein. | -
+Der Preis für das Ticket ist zu hoch. | das Ticket = bilet
+Mein Vater regt sich über die hohen Preise auf. | die Preise = fiyatlar
+Ich habe morgen um zehn Uhr einen Termin beim Arzt. | -
+Können wir den Termin auf Freitag verschieben? | verschieben = ertelemek
+Beim Bürgeramt bekommt man nur schwer einen Termin. | das Bürgeramt = vatandaşlık dairesi; schwer = zor
+Im Frühjahr wollen wir umziehen. | umziehen = taşınmak
+Das Frühjahr war dieses Jahr sehr kalt. | -
+Die Wohnung ist erst im Frühjahr fertig. | erst = ancak; fertig = hazır
+Es regnet, wir bleiben heute drinnen. | -
+Drinnen ist es warm, draußen ist es kalt. | draußen = dışarıda
+Ist jemand drinnen? | jemand = biri
+Die Polizei hat seine Aussage aufgeschrieben. | aufschreiben = yazıya geçirmek
+Diese Aussage ist falsch. | -
+Nach der Aussage des Zeugen war der Fahrer zu schnell. | der Zeuge = tanık; der Fahrer = sürücü
+Im nächsten Semester belege ich einen Deutschkurs. | belegen = (ders) almak
+Das Semester beginnt im Oktober. | -
+Sie studiert im dritten Semester Informatik. | die Informatik = bilgisayar bilimi
+Der Dozent erklärt die Aufgabe noch einmal. | erklären = açıklamak; die Aufgabe = ödev, görev
+Ich habe dem Dozenten eine E-Mail geschrieben. | -
+Der Dozent spricht sehr schnell, ich verstehe ihn kaum. | kaum = neredeyse hiç
+Mit meinen Kommilitonen lerne ich in der Bibliothek. | die Bibliothek = kütüphane
+Ein Kommilitone hat mir seine Notizen gegeben. | die Notiz = not
+Ich habe einen Kommilitonen nach dem Weg gefragt. | nach dem Weg fragen = yol sormak
+Am Wochenende treffe ich mich mit meiner Clique. | sich treffen = buluşmak
+In unserer Clique sind alle sehr verschieden. | verschieden = farklı
+Er gehört nicht mehr zu unserer Clique. | gehören zu = -e ait olmak
+Ich bin diese Woche sehr eingespannt, wir können uns erst am Sonntag sehen. | erst = ancak
+Meine Mutter ist beruflich stark eingespannt. | beruflich = iş yüzünden, mesleki
+Weil er so eingespannt ist, hat er kaum Zeit für Hobbys. | kaum = neredeyse hiç
+Der Film hat meine Erwartungen nicht erfüllt. | erfüllen = karşılamak, yerine getirmek
+Meine Eltern haben hohe Erwartungen an mich. | -
+Ich hatte keine großen Erwartungen an den Urlaub. | -
+Das ist nur eine Behauptung, du hast keine Beweise. | der Beweis = kanıt
+Seine Behauptung stimmt nicht. | stimmen = doğru olmak
+Ich verstehe deine Behauptung nicht. | -
