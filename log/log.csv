@@ -1117,3 +1117,13 @@
 2026-10-08 21:04:15;erk;n0361:erk;das Fieber;ateş (hastalık);das Fieber;fast;das Fieber;yavaş | sek:8 | ipucu:1
 2026-10-08 21:04:19;abr;v592:abr;sich verletzen;yaralanmak;sich verletzen;richtig;sich verletzen;sek:4 | ipucu:2
 2026-10-08 21:04:31;satz;v278:satz;sich fürchten vor;Sie _____ sich vor Schlangen.;fürchte;falsch;fürchtet;artikel/çekim | sek:9 | ipucu:0
+2026-10-08 21:04:37;erk;n0047:erk;der Antrag;başvuru, dilekçe;der Antrag;richtig;der Antrag;sek:5 | ipucu:0
+2026-10-08 21:04:53;bed;v425:bed;rechnen mit;Denn wer Hakenkreuze, SS-Symbole oder Hitlergrüße zeigt, muss mit Geld- oder sogar Freiheitsstrafen rechnen.;hesaba katmak, beklemek;fast;(bir şeyi) hesaba katmak, beklemek;yavaş | sek:15 | ipucu:0
+2026-10-08 21:05:05;wort;n0433:wort;die Geduld;sabır;der Geduld;richtig;die Geduld;artikel: der → die | öneri:falsch | sek:6 | ipucu:0
+2026-10-08 21:05:19;akt;match;eşleştir;drinnen, nass, die Erlaubnis, der Antrag, frech, das Frühjahr;;fast;;hata:1
+2026-10-08 21:05:24;nsatz;n0207:nsatz;die Burg;Von der _____ hat man eine schöne Aussicht.;Burg;richtig;Burg;sek:3 | ipucu:0
+2026-10-08 21:05:35;refl;v629:refl;sich(D) vorstellen;Er _____ sich sein Leben in Deutschland schön _____.;stelle vor;falsch;stellt vor;artikel/çekim | sek:5 | ipucu:0
+2026-10-08 21:05:40;bed;v423:bed;reagieren auf;Die Politik hat nun reagiert: In vielen Städten dürfen Privatpersonen kein Wasser mehr aus Flüssen entnehmen.;tepki vermek;richtig;(bir şeye) tepki vermek;sek:4 | ipucu:0
+2026-10-08 21:05:51;satz;v589:satz;sich verlassen auf;Du kannst dich auf mich _____. Ich helfe dir auf jeden Fall.;verlassen;richtig;verlassen;sek:9 | ipucu:0
+2026-10-08 21:05:56;bed;v564:bed;untersuchen;untersuchen;muayene etmek, incelemek;richtig;muayene etmek, incelemek;sek:4 | ipucu:0
+2026-10-08 21:06:02;wort;n0037:wort;die Anmeldung;"kayıt; resepsiyon";die Anmeldung;richtig;die Anmeldung;sek:6 | ipucu:1
