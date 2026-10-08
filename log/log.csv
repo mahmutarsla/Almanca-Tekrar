@@ -1189,3 +1189,13 @@
 2026-10-08 21:27:51;lesen-wort;w0056;bereit;Streit in der WG;;neu;hazır;
 2026-10-08 21:27:53;lesen-wort;w0051;beide;Streit in der WG;;neu;her ikisi;
 2026-10-08 21:27:57;lesen-wort;w0056;bereit;Streit in der WG;;neu;hazır;
+2026-10-08 21:27:58;lesen-wort;w0051;beide;Streit in der WG;;neu;her ikisi;
+2026-10-08 21:28:35;akt;luecke:u1:t1;metinde boşluk;Das ist nur eine Behauptung! Ich habe mich sehr darüber aufgeregt, denn er übertreibt immer. Am Abend haben wir versucht, das Problem in Ruhe zu klären. Wir waren beide bereit zu einem Kompromiss. Am Ende haben wir uns auf einen Putzplan geeinigt.;Behauptung / aufgeregt / übertreibt / geeinigt;richtig;Behauptung / aufgeregt / übertreibt / geeinigt;puan:4/4
+2026-10-08 21:28:43;satz;v646:satz;widersprechen;Ich muss dir leider _____.;widersprechen;richtig;widersprechen;sek:7 | ipucu:1
+2026-10-08 21:29:37;bed;v626:bed;vorschlagen;In der Sendung haben sie deshalb vorgeschlagen, dass Bürogebäude anders geplant werden sollten.;önermek;fast;(birine bir şeyi) önermek;yavaş | sek:53 | ipucu:0
+2026-10-08 21:29:48;wort;n0381:wort;die Forderung;talep;die Foranderung;richtig;die Forderung;kelime yanlış | öneri:falsch | sek:8 | ipucu:0
+2026-10-08 21:29:55;bed;v177:bed;sich eignen für;sich eignen für;sunmak, teklif etmek;falsch;(bir şeye) uygun olmak;sek:6 | ipucu:0
+2026-10-08 21:29:59;bed;v197:bed;einziehen;einziehen;taşınmak;richtig;(yeni eve) taşınmak;sek:3 | ipucu:0
+2026-10-08 21:30:02;nsatz;n0660:nsatz;die Kosten;Die _____ für die Reise bekomme ich von der Firma.;Kosten;richtig;Kosten;sek:3 | ipucu:0
+2026-10-08 21:30:10;akt;ordnen:n0432;cümle dizme;Kennst du ein schönes Gedicht?;Kennst du ein schönes Gedicht;richtig;Kennst du ein schönes Gedicht?;
+2026-10-08 21:30:19;satz;v620:satz;verzichten auf;Ich _____ heute auf den Kaffee.;verzichte;richtig;verzichte;sek:8 | ipucu:1
