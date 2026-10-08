@@ -1127,3 +1127,15 @@
 2026-10-08 21:05:51;satz;v589:satz;sich verlassen auf;Du kannst dich auf mich _____. Ich helfe dir auf jeden Fall.;verlassen;richtig;verlassen;sek:9 | ipucu:0
 2026-10-08 21:05:56;bed;v564:bed;untersuchen;untersuchen;muayene etmek, incelemek;richtig;muayene etmek, incelemek;sek:4 | ipucu:0
 2026-10-08 21:06:02;wort;n0037:wort;die Anmeldung;"kayıt; resepsiyon";die Anmeldung;richtig;die Anmeldung;sek:6 | ipucu:1
+2026-10-08 21:06:08;paket;p01:0;das Fieber;Beim Arzt;Fieber;richtig;Fieber;
+2026-10-08 21:06:12;paket;p01:1;der Schmerz;Beim Arzt;Schmerzen;richtig;Schmerzen;
+2026-10-08 21:06:15;paket;p01:2;die Praxis;Beim Arzt;Praxis;richtig;Praxis;
+2026-10-08 21:06:18;paket;p01:3;der Termin;Beim Arzt;Termin;richtig;Termin;
+2026-10-08 21:06:25;paket;p01:4;die Versichertenkarte;Beim Arzt;Sichertenkarte;falsch;Versichertenkarte;farklı
+2026-10-08 21:06:31;paket;p01:5;untersuchen;Beim Arzt;untersucht;richtig;untersucht;
+2026-10-08 21:06:38;paket;p01:6;verschreiben;Beim Arzt;verschriebt;fast;verschreibt;biçim: metinde verschreibt
+2026-10-08 21:06:44;paket;p01:7;das Rezept;Beim Arzt;Rezept;richtig;Rezept;
+2026-10-08 21:06:49;paket;p01:8;die Apotheke;Beim Arzt;Apotheke;richtig;Apotheke;
+2026-10-08 21:06:54;paket;p01:9;die Tablette;Beim Arzt;die Tablette;falsch;Tablette;farklı
+2026-10-08 21:06:56;paket;p01:pak;Beim Arzt;paket tekrarı;;fast;;puan:76
+2026-10-08 21:07:12;prod;w0599:prod;eingespannt sein;çok meşgul olmak (Ich bin beruflich stark eingespannt.);entspanned sein;falsch;eingespannt sein;farklı | sek:11 | ipucu:0
