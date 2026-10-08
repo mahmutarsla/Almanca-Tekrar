@@ -1157,3 +1157,13 @@
 2026-10-08 21:12:08;satz;v509:satz;sich streiten mit;Warum habt ihr euch _____?;streitet;falsch;gestritten;farklı | sek:6 | ipucu:0
 2026-10-08 21:12:14;bed;v673:bed;zweifeln an;zweifeln an;şüphe etmek;richtig;(bir şeyden) şüphe etmek;sek:5 | ipucu:0
 2026-10-08 21:12:20;nsatz;n0869:nsatz;die Operation;Seit der _____ kann ich mein Knie nicht mehr bewegen.;Operation;richtig;Operation;sek:4 | ipucu:0
+2026-10-08 21:13:17;akt;diktat:n0926;dinle–yaz;Das ist die Theorie. In der Praxis ist vieles ganz anders.;Das ist die Theorie in der Praxis ist vieles ganz anders.;fast;Das ist die Theorie. In der Praxis ist vieles ganz anders.;büyük/küçük harf ya da umlaut
+2026-10-08 21:13:47;abr;v063:abr;sich aufregen über;(bir şeye) sinirlenmek, heyecanlanmak;;falsch;sich aufregen über (über + Akk);bilmiyorum | sek:15 | ipucu:0
+2026-10-08 21:13:52;erk;n0179:erk;der Blitz;der Blitz;şimşek;richtig;şimşek;sek:4 | ipucu:1
+2026-10-08 21:13:57;nsatz;w0171:nsatz;folgend;Mehr Informationen auf den _____ Seiten.;folgende;richtig;folgenden;artikel/çekim | öneri:falsch | sek:4 | ipucu:0
+2026-10-08 21:14:03;bed;v117:bed;berichten über;berichten über;"""siz"" diye hitap etmek";falsch;(bir şey hakkında) haber vermek, anlatmak;sek:5 | ipucu:0
+2026-10-08 21:14:24;bed;v590:bed;sich verlaufen;Eine solche Erkrankung verläuft aber viel schlimmer und gefährlicher.;yönetmek;falsch;(yürürken) yolunu kaybetmek;sek:15 | ipucu:0
+2026-10-08 21:14:34;abr;v629:abr;sich(D) vorstellen;(bir şeyi) hayal etmek, gözünde canlandırmak;vorstellen;richtig;sich(D) vorstellen (Akk);dönüşlü zamir | öneri:falsch | sek:6 | ipucu:1
+2026-10-08 21:14:47;wort;x1501:wort;die Clique;klik, arkadaş grubu;die Qlique;richtig;die Clique;yazım | öneri:fast | sek:7 | ipucu:0
+2026-10-08 21:14:55;refl;v111:refl;sich bemühen um;_____ Sie sich bitte nicht!;Bemühen;richtig;Bemühen;sek:6 | ipucu:0
+2026-10-08 21:15:00;abr;v142:abr;beweisen;kanıtlamak;beweisen;richtig;beweisen (Akk);sek:4 | ipucu:0
