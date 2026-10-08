@@ -23,22 +23,29 @@ sonra Claude'a "sonuçlarıma bak" demen yeter (push yok, telefonda da çalış�
 
 ## Günlük plan
 
-Çalış sekmesinin üstündeki şerit bugünün planı: **1 Hızlı tur → 2 Paket → 3 Karışık** (toplam ~25 dk).
-Uygulama yeni günde planın ilk bitmemiş adımıyla açılır. En az 10 sayılan cevap verdiğin gün seriye sayılır.
+Tek düğme: **Çalış** (günde 80 cevap, ~30–40 dk). Her şey tek akışta karışık gelir:
+seçmeli anlam ve der/die/das, Türkçeden Almancaya kelime / fiil yazma, cümle çevirisi, yeni kelime ön testi ve fiil tanıtımı,
+her 5 soruda bir **metinde** kartı (öğrendiğin kelime gerçek bir metin cümlesinde) ve her 7 soruda bir **ara etkinlik**:
 
-| Bölüm | Grup | Hedef | Günde yeni | Ne yapar |
-|---|---|---|---|---|
-| Hızlı tur | Ezber | 40 | 10 bilinmeyen kelime | Seçmeli anlam + der/die/das. Yeni kelime önce sınanır: biliyorsan tekrar yükü olmadan geçer. |
-| Düzensiz fiiller | Dilbilgisi | 20 | 5 fiil | gehen → ging, ist gegangen; anlamıyla birlikte. |
-| Yazma | Yazma | 1 metin | 3–4 günde bir | B1 Schreiben tarzı görev + öğrendiğin 5 kelime; Claude düzeltir. |
-| Konu | Ezber | 30 | 15 kelime | Seçtiğin B1 konusunun (Hava, Sağlık, Ev, İş … 17 konu) kelime ve fiilleri; sadece o konu. |
-| Paketler | Ezber | 10 | 1 paket | Bir sahnenin 10 kelimesi + kısa B1 metni, sonra metinde boşluk doldurma. |
-| Karışık | Yazarak | 20 | 4 öğe | Türkçe cümleyi Almancaya çevirme (849 cümle), TR→DE kelime / fiil, çekim, Goethe boşlukları. |
-| Fiiller | Yazarak | 20 | 3 fiil | Yalnız fiiller (her fiil ~4 soru açar). |
-| Kelimeler (yazarak) | Yazarak | 20 | 0 | Tanıdığın isim ve kelimeleri artikeliyle yazma. Hızlı tur'da öğrendiklerin buraya kendiliğinden gelir. |
-| n-Deklination | Dilbilgisi | 15 | 5 isim | den Kollegen, dem Studenten … |
-| Dönüşlü fiiller | Dilbilgisi | 15 | 3 fiil | mich / dich / sich … |
-| Zayıflar | | 10 | — | Yanlış yaptıkların; takılanlar (🪝) en üstte. |
+- **Metinde boşluk:** DW / Klexikon / Goethe / kitap ünitesi metninden 2–5 cümle. Yalnız daha önce gördüğün kelimeler boşluk olur,
+  görmediğin kelimeler yazılı durur (basınca anlamı); kelime kutusunda 2 çeldirici.
+- **Eşleştirme**, **dinle–yaz** (tarayıcı Almanca okur), **cümle dizme** (fiilin yeri), günde en çok bir **paket tekrarı**.
+- 25 cevaptan sonra **günün fiil metni**, sırası geldiyse 45 cevaptan sonra **yazma görevi** önerilir ("Sonra" denebilir).
+
+Uygulama açılınca Çalış'la başlar. En az 10 sayılan cevap verdiğin gün seriye sayılır.
+Belirli bir şeye odaklanmak istersen **Bölüm** listesinden tek tür seçebilirsin:
+
+| Odak bölümü | Hedef | Günde yeni | Ne yapar |
+|---|---|---|---|
+| Hızlı tur | 40 | 10 bilinmeyen kelime | Yalnız seçmeli anlam + der/die/das. |
+| Paketler | 10 | 1 paket | Bir sahnenin 10 kelimesi + kısa B1 metni, sonra metinde boşluk doldurma. |
+| Karışık / Fiiller / Kelimeler | 20 / 15 / 20 | 4 / 3 / 0 | Yalnız yazarak sorular. |
+| Konu | 30 | 15 kelime | Seçtiğin B1 konusunun (17 konu) kelime ve fiilleri. |
+| n-Deklination / Dönüşlü / Düzensiz fiiller | 15 / 15 / 20 | 5 / 3 / 5 | Dilbilgisi odakları. |
+| Okuma, Fiil metni, Kalıplar, Yazma, Zayıflar | | | Metin okuma, günün fiil metni, fiil kalıpları, serbest yazma, yanlışların. |
+
+Fiil tanıtımında ve fiil sorularının cevabında o fiilin **kalıpları** da gösterilir (Stell dir vor! · Ich kann mir das gut vorstellen.).
+Kitaptan yeni bir kelime listesi verirsen (ünite), o kelimeler Çalış'ta yeni kelime olarak önce gelir, ünitenin metinleri boşluklu metin olur.
 
 Hedefler ve sınırlar Ayarlar'dan değişir. Bir bölümde çalışınca diğerinin sayacı değişmez.
 

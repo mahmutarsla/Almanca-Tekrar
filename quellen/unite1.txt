@@ -2,6 +2,8 @@
 # tür | kelime | ek (çoğul / çekim / edat) | Türkçe | örnek cümle | cümlede boşluk olacak kısım | cümlenin Türkçesi
 # tür: n isim (artikelli) · v fiil · a sıfat/zarf · x kalıp · k bağlaç/edat
 @titel Freundschaft und Beziehungen
+# @geschlossen: ünite bitti (sınav geçti); çalışılan kelimeler tekrar sistemine aktarıldı, bölüm gizli. Metinler Çalış akışında boşluklu metin olarak kullanılır.
+@geschlossen
 @gruppe Freundschaft
 n | die Clique | die Cliquen | klik, arkadaş grubu | Seit der Schule gehöre ich zu einer kleinen Clique. | Clique | Okuldan beri küçük bir arkadaş grubuna aitim.
 n | der Einfluss | die Einflüsse | etki | Meine Freunde haben einen großen Einfluss auf mich. | Einfluss | Arkadaşlarımın üzerimde büyük bir etkisi var.

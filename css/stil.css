@@ -357,3 +357,7 @@ body.genis #v-calis { max-width: none; }
 .plan-chip.vurgu { border-color: var(--accent); }
 .mc-opt.ok { background: var(--ok-soft); border-color: var(--ok); }
 .mc-opt.yanlis { background: var(--bad-soft); border-color: var(--bad); }
+/* Tek akış */
+.plan-chip.ana-chip { font-size: 1.05em; padding-inline: .9rem; }
+.kalip-kutu { margin-top: .6rem; padding: .5rem .7rem; border-left: 3px solid var(--accent); background: var(--accent-soft); border-radius: 0 8px 8px 0; }
+.kalip-kutu .ornekler li { border-left: none; padding-left: 0; }

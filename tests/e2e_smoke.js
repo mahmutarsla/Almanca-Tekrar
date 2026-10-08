@@ -1,5 +1,5 @@
 // Tarayıcı duman testi (isteğe bağlı, Playwright gerekir): node tests/e2e_smoke.js
-// Gün 1: Hızlı tur hedefe kadar, bir paket baştan sona, Karışık; gün 2: yeniden açılış. Sayfa hatası olursa çıkış kodu 1.
+// Gün 1: Çalış (tek akış, ara etkinlikler dahil), bir paket baştan sona (odak), gün 2: yeniden açılış + Çalış. Sayfa hatası olursa çıkış kodu 1.
 const path = require('path');
 let chromium;
 try { ({ chromium } = require('playwright')); } catch (e) {
@@ -34,6 +34,20 @@ const DAY = 86400000;
   async function schritt() {
     const s = await st();
     if (s.typ === 'leer' || s.typ === 'pause') return s.typ;
+    if (s.typ === 'akt') {
+      const a = await p.evaluate(() => { const q = window.__tekrar.aktuell; return { art: q.art, wartet: !!q.wartet, blanks: q.blanks ? q.blanks.map(b => b.form) : null, ids: q.ids || null, satz: q.satz ? q.satz.de : null, order: q.toks ? q.toks.map((t, i) => [t.i, i]).sort((x, y) => x[0] - y[0]).map(x => x[1]) : null }; });
+      if (a.wartet) { await p.keyboard.press('Enter'); }
+      else if (a.art === 'angebot') await p.keyboard.press('0');
+      else {
+        if (a.art === 'luecke') { for (let i = 0; i < a.blanks.length; i++) await p.fill(`.u-luecke[data-al="${i}"]`, a.blanks[i]); await p.click('[data-akt="pruef"]'); }
+        else if (a.art === 'match') { for (const id of a.ids) { await p.click(`[data-am="L${id}"]`); await p.click(`[data-am="R${id}"]`); } }
+        else if (a.art === 'diktat') { await p.fill('#cevap', a.satz); await p.press('#cevap', 'Enter'); }
+        else if (a.art === 'ordnen') { for (const i of a.order) await p.click(`[data-ao="${i}"]`); await p.click('[data-akt="pruef"]'); }
+        await wait(60); await p.keyboard.press('Enter');
+      }
+      await wait(80);
+      return 'akt-' + a.art;
+    }
     if (s.typ === 'licht') { await bump(2500); await p.keyboard.press('Enter'); }
     else if (s.typ === 'einf') { await p.fill('#cevap', s.abschreib); await p.keyboard.press('Enter'); }
     else if (s.typ === 'paket') {
@@ -62,20 +76,22 @@ const DAY = 86400000;
     return s.typ || 'soru';
   }
   async function bolum(m, n) {
-    await p.click(`.plan-chip[data-modus="${m}"]`); await wait(100);
+    await p.selectOption('#odak', m); await wait(100);
     let r = '';
     for (let i = 0; i < n; i++) { r = await schritt(); if (r === 'leer' || r === 'pause') break; }
     const d = await p.evaluate(m => { const S = window.__tekrar.S; const t = Object.keys(S.tage).sort().pop(); return S.tage[t].modi[m]; }, m);
     console.log(m.padEnd(7), `${d.n} soru, ${d.neu} yeni, son: ${r}`);
     return d;
   }
-  const blitz = await bolum('blitz', 90);
+  const plan = await p.evaluate(() => document.querySelector('#plan').innerText);
+  const akis = await bolum('akis', 140);
   const paket = await bolum('paket', 40);
-  await bolum('normal', 40);
   await bump(DAY); await p.reload(); await wait(200);
-  await bolum('blitz', 30);
+  const akis2 = await bolum('akis', 60);
   const fehler = [];
-  if (blitz.n < 40) fehler.push('Hızlı tur hedefe ulaşmadı');
+  if (!/Çalış/.test(plan)) fehler.push('plan şeridinde Çalış yok');
+  if (akis.n < 40) fehler.push('Çalış akışı 40 cevaba ulaşmadı');
+  if (akis2.n < 20) fehler.push('2. gün Çalış akışı ilerlemedi');
   if (paket.n < 10) fehler.push('paket tamamlanmadı');
   if (errs.length) fehler.push('sayfa hataları: ' + errs.join(' | '));
   await b.close();

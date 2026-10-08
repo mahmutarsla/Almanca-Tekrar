@@ -91,3 +91,14 @@ Son incelenen log satırı en alttaki notta yazar.
 - Fiil anlamı (`bed`) kartları 3+ gündür alta kalıyordu (yalnız Fiiller bölümünde, tür dengesinde en küçük pay): gecikmiş kartlar artık öne.
 - Çekim sınırı (6 soru ara, günde 5). "Metinde" kartı (her 5 soruda bir, gerçek metin cümlesi). Genç kartlara kısa aralık.
 - Gerçek ilerleme dosyasıyla test: 175 soruda 1+ gün gecikmiş 199 → 100, öğe günde en çok 2×, en kısa ara 13 soru.
+
+## 2026-10-08 — tek akış (Çalış), ünite 1 kapandı, kalıplar
+
+- Tuna: çok fazla bölüm vardı → tek **Çalış** akışı (hedef 80): tanıma, yazma, cümle, yeni kelime / fiil ve her 7 soruda bir ara etkinlik
+  (metinde boşluk — gerçek metinden, yalnız görülmüş kelimeler boşluk; eşleştirme; dinle–yaz; cümle dizme; günde bir paket tekrarı),
+  25 cevaptan sonra fiil metni, 45'ten sonra yazma önerisi. Eski bölümler "Bölüm" listesinde odak olarak duruyor.
+- Ünite 1 (Freundschaft und Beziehungen) kapandı: ünitede çalışılan 15 kelime tekrar listesine alındı (die Clique, die Mahnung, die Forderung,
+  die Erwartung, die Behauptung, eingespannt sein, vor Gericht gehen, feststellen, sich einigen, erleichtern, beweisen, sich aufregen, schweigen,
+  übertreiben, verhindern); çalışılmayanlar alınmadı. Ünite metinleri boşluklu metin havuzunda. Ünite metninde görülmemiş kelime artık boşluk olmaz.
+- Fiil tanıtımında kalıp kutusu, fiil sorularının açıklamasında kalıp satırı.
+- Test: 4 günlük simülasyon (tekrar aralığı ≥ 12 soru, öğe günde ≤ 4), gerçek ilerleme dosyasıyla 93 adım (dengeli tür dağılımı), e2e duman testi.
