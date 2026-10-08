@@ -1139,3 +1139,13 @@
 2026-10-08 21:06:54;paket;p01:9;die Tablette;Beim Arzt;die Tablette;falsch;Tablette;farklı
 2026-10-08 21:06:56;paket;p01:pak;Beim Arzt;paket tekrarı;;fast;;puan:76
 2026-10-08 21:07:12;prod;w0599:prod;eingespannt sein;çok meşgul olmak (Ich bin beruflich stark eingespannt.);entspanned sein;falsch;eingespannt sein;farklı | sek:11 | ipucu:0
+2026-10-08 21:07:39;bed;v620:bed;verzichten auf;Müssen Profifußballspielerinnen wegen ihrer Karriere auf Kinder verzichten?;vazgeçmek;fast;(bir şeyden) vazgeçmek;yavaş | sek:26 | ipucu:0
+2026-10-08 21:07:45;satz;v278:satz;sich fürchten vor;Sie _____ sich vor Schlangen.;fürchtet;richtig;fürchtet;sek:5 | ipucu:0
+2026-10-08 21:08:06;nsatz;n0025:nsatz;das Amt;İş ve İşçi Bulma Kurumu otogarın yanında.;Das Arbeitsamt befindet sich neben dem Busbahnhof.;richtig;Das Arbeitsamt befindet sich neben dem Busbahnhof.;sek:21 | ipucu:0
+2026-10-08 21:09:50;fiilmetin;v630;wachsen;wuchs | Dort wuchs er mit seinen beiden jüngeren Schwestern auf.;Präteritum;richtig;Präteritum;dw78494909
+2026-10-08 21:09:56;fiilmetin;v588;verlassen;verließ | Mit 16 Jahren verließ Petros Äthiopien allein und kam 2012 nach Deutschland.;Präteritum;richtig;Präteritum;dw78494909
+2026-10-08 21:09:58;fiilmetin;v260;fliehen;floh | Mit 16 Jahren floh Amanal Petros aus Äthiopien allein nach Deutschland.;Präteritum;richtig;Präteritum;dw78494909
+2026-10-08 21:10:02;fiilmetin;v293;gewinnen;gewann | Wenige Monate später lief Petros bereits seinen ersten Zehn-Kilometer-Lauf – und gewann mit etwa zweieinhalb Minuten Vorsprung.;Perfekt (Partizip);falsch;Präteritum;dw78494909
+2026-10-08 21:10:04;fiilmetin;v220;erhalten;erhielt | 2015 erhielt er die deutsche Staatsbürgerschaft und konnte seitdem auch bei internationalen Wettkämpfen für Deutschland antreten.;Präteritum;richtig;Präteritum;dw78494909
+2026-10-08 21:10:06;fiilmetin;v051;auffallen;fiel | Hier fiel einem Betreuer sein Lauftalent auf, und er stellte einen Kontakt zu einem Leichtathletikverein her.;Präteritum;richtig;Präteritum;dw78494909
+2026-10-08 21:10:07;fiilmetin;dw78494909;Amanal Petros: Europameister mit Fluchtgeschichte;;;gelesen;;puan:5/6
