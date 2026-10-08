@@ -1149,3 +1149,11 @@
 2026-10-08 21:10:04;fiilmetin;v220;erhalten;erhielt | 2015 erhielt er die deutsche Staatsbürgerschaft und konnte seitdem auch bei internationalen Wettkämpfen für Deutschland antreten.;Präteritum;richtig;Präteritum;dw78494909
 2026-10-08 21:10:06;fiilmetin;v051;auffallen;fiel | Hier fiel einem Betreuer sein Lauftalent auf, und er stellte einen Kontakt zu einem Leichtathletikverein her.;Präteritum;richtig;Präteritum;dw78494909
 2026-10-08 21:10:07;fiilmetin;dw78494909;Amanal Petros: Europameister mit Fluchtgeschichte;;;gelesen;;puan:5/6
+2026-10-08 21:10:22;art;n0682:art;die Kritik;Kritik;die;richtig;die Kritik;sek:2 | ipucu:1
+2026-10-08 21:11:49;leech;v111;sich bemühen um;(bir şey için) çabalamak;;takiliyor;;günler:2026-10-02,2026-10-03,2026-10-08
+2026-10-08 21:11:49;refl;v111:refl;sich bemühen um;Er hat sich sehr um seine Gäste _____.;bemühen;falsch;bemüht;artikel/çekim | sek:16 | ipucu:0
+2026-10-08 21:11:57;abr;v142:abr;beweisen;kanıtlamak;beschwerten;falsch;beweisen (Akk);farklı | sek:5 | ipucu:0
+2026-10-08 21:12:00;art;n0587:art;die Kälte;Kälte;die;richtig;die Kälte;sek:2 | ipucu:1
+2026-10-08 21:12:08;satz;v509:satz;sich streiten mit;Warum habt ihr euch _____?;streitet;falsch;gestritten;farklı | sek:6 | ipucu:0
+2026-10-08 21:12:14;bed;v673:bed;zweifeln an;zweifeln an;şüphe etmek;richtig;(bir şeyden) şüphe etmek;sek:5 | ipucu:0
+2026-10-08 21:12:20;nsatz;n0869:nsatz;die Operation;Seit der _____ kann ich mein Knie nicht mehr bewegen.;Operation;richtig;Operation;sek:4 | ipucu:0
