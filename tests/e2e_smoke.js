@@ -43,6 +43,7 @@ const DAY = 86400000;
         else if (a.art === 'match') { for (const id of a.ids) { await p.click(`[data-am="L${id}"]`); await p.click(`[data-am="R${id}"]`); } }
         else if (a.art === 'diktat') { await p.fill('#cevap', a.satz); await p.press('#cevap', 'Enter'); }
         else if (a.art === 'ordnen') { for (const i of a.order) await p.click(`[data-ao="${i}"]`); await p.click('[data-akt="pruef"]'); }
+        else if (a.art === 'kontrol') { for (let i = 0; i < a.ids.length; i++) { await p.keyboard.press(i % 4 === 3 ? '2' : '1'); await wait(30); } await p.keyboard.press('Enter'); }
         await wait(60); await p.keyboard.press('Enter');
       }
       await wait(80);
@@ -88,7 +89,10 @@ const DAY = 86400000;
   const paket = await bolum('paket', 40);
   await bump(DAY); await p.reload(); await wait(200);
   const akis2 = await bolum('akis', 60);
+  const kontrol = await p.evaluate(() => window.__tekrar.S.log.filter(e => e.modus === 'kontrol').length);
+  console.log('kontrol listesi:', kontrol, 'satır');
   const fehler = [];
+  if (!kontrol) fehler.push('"gerçekten biliyor musun?" listesi hiç gelmedi');
   if (!/Çalış/.test(plan)) fehler.push('plan şeridinde Çalış yok');
   if (akis.n < 40) fehler.push('Çalış akışı 40 cevaba ulaşmadı');
   if (akis2.n < 20) fehler.push('2. gün Çalış akışı ilerlemedi');

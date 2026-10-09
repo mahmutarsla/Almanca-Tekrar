@@ -120,3 +120,9 @@ Son incelenen log satırı en alttaki notta yazar.
   ("ein-" → einfach / eingespannt, "un-" → und) ve yarım örnekler ("Herr Huber ist bis zum") gösteriliyordu.
 - Kanca: die Burg, sich beruhigen, sich wenden an, verzichten auf, die Geduld, sich verlaufen.
 - Düzeltme listesi (feedback.js) bu notta yazılmadı; son incelenen log satırı hâlâ 2026-10-06 08:23:05.
+
+## 2026-10-09 — "gerçekten biliyor musun?" listesi
+
+- Tuna: 20–30 tekrarda bir rastgele kelime / fiillerle toplu kontrol istedi. Çalış'ta 20–30 cevapta bir 8 kelimelik liste: biliyorum / bilmiyorum, sonra anlamı görünür ("yanılmışım" ile geri alınır).
+- Bilmiyorum: 3 örnek cümle (kendi + Goethe + gerçek metin), tanıma kartı unutuldu sayılır, oturumda ~8–12 soru sonra cümle içinde yeniden, bir hafta anlam sorusu cümle içinde, cümle kartı açılır, öteki kartlar en geç yarın.
+- "Sonuçlarıma bak"ta `kontrol` / `bilmiyor` kelimelerine yeni cümle yazılacak.

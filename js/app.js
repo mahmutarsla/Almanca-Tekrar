@@ -485,8 +485,17 @@
       if (c.length) { const id = pick(c); gf[id] = (gf[id] || 0) + 1; return { uid: id + ':' + ({ n: 'wort', w: 'prod', v: 'abr' })[kind(id)], heute: true }; }
     }
 
+    // Çalış: 20–30 cevapta bir "gerçekten biliyor musun?" listesi (rastgele öğrenilmiş kelime / fiil)
+    if (m === 'akis' && session.q > 0) {
+      if (session.kontrolBei == null) session.kontrolBei = session.q + 20 + Math.floor(Math.random() * 11);
+      if (session.q >= session.kontrolBei && session.letzteAkt !== session.q) {
+        session.kontrolBei = session.q + 20 + Math.floor(Math.random() * 11);
+        const a = aktKontrol();
+        if (a) { session.letzteAkt = session.q; return a; }
+      }
+    }
     // Çalış (tek akış): her 7 soruda bir ara etkinlik (metinde boşluk, eşleştirme, dinle-yaz, cümle dizme, paket tekrarı) ya da günün işi
-    if (m === 'akis' && session.q > 0 && session.q % 7 === 6 && session.letzteAkt !== session.q) {
+    if (m === 'akis' && session.q > 0 && session.q % 7 === 6 && session.letzteAkt !== session.q && session.q - (session.aktEnde ?? -99) >= 3) {
       session.letzteAkt = session.q;
       const a = aktWaehlen();
       if (a) return a;
@@ -613,6 +622,7 @@
     const base = { uid, id, typ, lv, start: now(), requeue: sel.requeue, heute: sel.heute };
     if (typ === 'pak') return Object.assign(base, paketWiederholung(id));
     if ((typ === 'erk' || typ === 'bed') && sel.kontext) return Object.assign(base, frageKontext(id, sel.kontext));
+    if ((typ === 'erk' || typ === 'bed') && ((S.items[id] || {}).satzBis || 0) > now()) { const k = satzKontext(id); if (k) return Object.assign(base, frageKontext(id, k), { kontext: k.s }); }
     if (typ === 'erk' || typ === 'bed') return Object.assign(base, frageErkennen(id));
     if (typ === 'art') return Object.assign(base, frageArtikel(byId[id]));
     if (typ === 'wort') return Object.assign(base, frageWort(byId[id], lv));
@@ -734,6 +744,11 @@
       })));
     }
     return _kontextIdx[id] || [];
+  }
+  // "bilmiyorum" dediğin kelimenin anlam sorusu bir hafta cümle içinde (her seferinde başka cümle)
+  function satzKontext(id) {
+    const w = satzWahl(id, 1), l = w && wortLuecke(id, w.x.de);
+    return l ? { s: w.x.de, w: l.answer.split(' ')[0], q: w.x.quelle || 'örnek cümle' } : null;
   }
   function frageKontext(id, k) {
     const satzHTML = esc(k.s).replace(new RegExp('(^|[^\\wäöüÄÖÜß])(' + k.w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')(?![\\wäöüÄÖÜß])'), '$1<mark>$2</mark>');
@@ -2044,6 +2059,55 @@
     kand.sort((a, b) => b.w - a.w);
     return { akt: art, satz: kand[0] };
   }
+  // "Gerçekten biliyor musun?": rastgele 8 öğrenilmiş (ya da ön testte bilinen) kelime / fiil; bugün sorulmamış, vadesi gelmemiş, son 5 günde kontrol edilmemiş
+  function aktKontrol() {
+    const t = now(), kz = S.kontrol || {}, z = iz();
+    const ids = Object.keys(S.items).filter(id => gesehen(id) && !(kz[id] && t - kz[id] < 5 * DAY) && !z.n[id] && !itemFaellig(id));
+    return ids.length >= 4 ? { akt: 'kontrol', ids: shuffle(ids).slice(0, 8), antw: {} } : null;
+  }
+  // bilmiyorum: tanıma kartı unutuldu sayılır (10 dk sonra yeniden, öğrenme adımları, Zayıflar), öteki kartlar en geç yarın;
+  // bir hafta anlam sorusu cümle içinde gelir, cümle kartı açılır
+  function kontrolBilmiyor(id, t) {
+    const it = S.items[id], rek = kind(id) === 'v' ? 'bed' : 'erk', k = S.karten[id + ':' + rek];
+    delete it.bekannt;
+    it.seri = 0;
+    it.satzBis = t + 7 * DAY;
+    S.karten[id + ':' + rek] = Object.assign(FSRS.review(k && k.S ? k : {}, 1, t, S.einst.ret), { lern: 0 });
+    // bu oturumda bir kez daha (cümle içinde), kalabalık tekrar kuyruğunu beklemeden
+    session.requeue.push({ uid: id + ':' + rek, nach: session.q + 8, mal: 0 });
+    unitsOf(id).forEach(u => { const c = S.karten[id + ':' + u]; if (u !== rek && c && c.S) { c.S = Math.min(c.S, 2); c.due = Math.min(c.due, morgen(t) + 6 * 3600000); } });
+    const su = kind(id) === 'v' ? 'satz' : 'nsatz';
+    if (unitsOf(id).includes(su)) neueKarte(id + ':' + su, t + DAY / 2);
+    leechPruefen(id);
+  }
+  function markiere(id, de) {
+    const l = wortLuecke(id, de);
+    let h = esc(de);
+    if (l) l.answer.split(' ').forEach(w => { h = h.replace(new RegExp('(^|[^\\wäöüÄÖÜß>])(' + esc(w).replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')(?![\\wäöüÄÖÜß])'), '$1<mark>$2</mark>'); });
+    return h;
+  }
+  function kontrolSaetze(id) {
+    const { own, extra } = satzPool(id), l = shuffle(own).concat(shuffle(extra)).slice(0, 3);
+    return l.length ? `<ul class="kt-saetze">${l.map(x => `<li>${markiere(id, x.de)}${x.tr ? `<div class="soluk">${esc(x.tr)}</div>` : x.quelle ? ` <span class="soluk">· ${esc(x.quelle)}</span>` : ''}</li>`).join('')}</ul>` : '';
+  }
+  function kontrolAntwort(code) {
+    const q = aktuell; if (!q || q.art !== 'kontrol' || q.wartet) return;
+    const i = code.lastIndexOf(':'), id = code.slice(0, i);
+    if (!q.ids.includes(id) || q.antw[id] === false) return;
+    q.antw[id] = code.slice(i + 1) === '1';
+    aktRender(q);
+  }
+  function kontrolBitti() {
+    const q = aktuell; if (!q || q.art !== 'kontrol' || q.wartet || q.ids.some(id => q.antw[id] == null)) return;
+    const t = now(), kz = S.kontrol = S.kontrol || {}, nicht = q.ids.filter(id => q.antw[id] === false);
+    q.ids.forEach(id => {
+      kz[id] = t;
+      if (!q.antw[id]) kontrolBilmiyor(id, t);
+      logEintrag({ modus: 'kontrol', id, item: label(id), frage: '', antwort: q.antw[id] ? 'biliyorum' : 'bilmiyorum', ergebnis: q.antw[id] ? 'biliyor' : 'bilmiyor', loesung: trOf(id), notiz: '' });
+    });
+    q.ergHTML = `<div class="kural">${nicht.length ? `Daha sık ve cümle içinde gelecek: <b>${nicht.map(id => esc(label(id))).join(', ')}</b>` : 'Hepsini biliyorsun.'}</div>`;
+    aktAbschluss(q, !nicht.length ? 'richtig' : nicht.length <= 2 ? 'fast' : 'falsch', '', '', `bilmiyor:${nicht.length}/${q.ids.length}`, q.ids);
+  }
   function aktWaehlen() {
     const hm = heuteM('akis'), off = session.aktAbgelehnt = session.aktAbgelehnt || {};
     // günün işleri: fiil metni (25+ cevaptan sonra), yazma (45+ cevaptan sonra, sırası geldiyse); "sonra" dersen bugün bir daha sorulmaz
@@ -2072,7 +2136,7 @@
     if (q.art === 'diktat' || q.art === 'ordnen') (S.aktSaetze = S.aktSaetze || {})[q.satz.de] = now();
     return q;
   }
-  const AKT_AD = { luecke: 'metinde boşluk', match: 'eşleştir', diktat: 'dinle–yaz', ordnen: 'cümle dizme', angebot: 'günün işi' };
+  const AKT_AD = { luecke: 'metinde boşluk', match: 'eşleştir', diktat: 'dinle–yaz', ordnen: 'cümle dizme', angebot: 'günün işi', kontrol: 'gerçekten biliyor musun?' };
   function aktRender(q) {
     $('#durum-satiri').innerHTML = '';
     let h = `<div class="tur"><span class="yeni">ara etkinlik</span><span>${esc(AKT_AD[q.art])}</span></div>`;
@@ -2106,6 +2170,18 @@
         <div class="sira"><button class="btn ana" data-sprich="${esc(q.satz.de)}" type="button">🔊 Dinle</button><button class="btn mini" data-sprich-yavas="${esc(q.satz.de)}" type="button">🐢 yavaş</button></div>
         <input id="cevap" class="cevap" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="duyduğun cümle"${q.erg ? ' disabled' : ''} value="${esc(q.eingabe || '')}">
         ${q.erg ? '' : '<div class="sira"><button class="btn ana" data-akt="pruef" type="button">Kontrol <kbd>Enter</kbd></button></div>'}`;
+    } else if (q.art === 'kontrol') {
+      const offen = q.ids.findIndex(id => q.antw[id] == null);
+      h += `<div class="soluk">Kelimeye bak, anlamını aklından söyle, sonra seç. Bilmiyorum → daha sık ve cümle içinde gelir.</div>
+        <div class="kt-liste">${q.ids.map((id, i) => {
+          const a = q.antw[id];
+          return `<div class="kt-satir${i === offen ? ' aktif' : ''}${a === true ? ' ok' : a === false ? ' yanlis' : ''}">
+            <div class="kt-ust"><span class="kt-de">${deItemHTML(id)}</span>
+            ${a == null ? `<span class="kt-btns"><button class="btn mini" data-kt="${id}:1" type="button">✓ biliyorum${i === offen ? ' <kbd>1</kbd>' : ''}</button><button class="btn mini" data-kt="${id}:0" type="button">✗ bilmiyorum${i === offen ? ' <kbd>2</kbd>' : ''}</button></span>`
+              : `<span class="kt-tr">= ${esc(trOf(id))}</span>${a === true && !q.wartet ? `<button class="btn mini" data-kt="${id}:0" type="button">yanılmışım</button>` : ''}`}</div>
+            ${a === false ? kontrolSaetze(id) : ''}</div>`;
+        }).join('')}</div>
+        ${offen < 0 && !q.wartet ? '<div class="sira"><button class="btn ana" data-akt="kt-bitti" type="button">Bitti <kbd>Enter</kbd></button></div>' : ''}`;
     } else if (q.art === 'ordnen') {
       h += `<div class="soluk">Cümleyi diz: ${esc(q.satz.tr)}</div><div class="soru de u-gebaut">${q.gew.map(i => esc(q.toks[i].w)).join(' ') || '…'}</div>
         <div class="chips">${q.toks.map((t, i) => `<button class="chip" data-ao="${i}" type="button"${q.gew.includes(i) || q.erg ? ' disabled' : ''}>${esc(t.w)}</button>`).join('')}</div>
@@ -2121,6 +2197,7 @@
   function aktAbschluss(q, urteil, antwort, loesung, notiz, ids) {
     zaehlen({}, urteil);
     session.q++;
+    session.aktEnde = session.q;
     (ids || []).forEach(izSeen);
     logEintrag({ modus: 'akt', id: q.art + (q.saetze ? ':' + q.saetze[0].q.id : q.satz ? ':' + q.satz.id : ''), item: AKT_AD[q.art], frage: q.saetze ? q.saetze.map(s => s.satz).join(' ').slice(0, 300) : q.satz ? q.satz.de : (q.ids || []).map(label).join(', '), antwort: antwort || '', ergebnis: urteil, loesung: loesung || '', notiz: notiz || '' });
     q.wartet = true;
@@ -2177,6 +2254,7 @@
     else if (a === 'weiter') zeige();
     else if (a === 'jetzt') { setModus(q.was); zeige(); }
     else if (a === 'spaeter') { session.aktAbgelehnt[q.was] = true; zeige(); }
+    else if (a === 'kt-bitti') kontrolBitti();
   }
 
   // ================= Günün fiil metni =================
@@ -3125,6 +3203,7 @@
     const lw = e.target.closest('.lw');
     const ak = e.target.closest('[data-akt]'); if (ak) { aktAktion(ak.dataset.akt); return; }
     const am = e.target.closest('[data-am]'); if (am) { aktMatch2(am.dataset.am); return; }
+    const kt = e.target.closest('[data-kt]'); if (kt) { kontrolAntwort(kt.dataset.kt); return; }
     const ao = e.target.closest('[data-ao]'); if (ao) { aktOrdnen(ao.dataset.ao); return; }
     const spy = e.target.closest('[data-sprich-yavas]'); if (spy) { sprich(spy.dataset.sprichYavas, 0.65); return; }
     const us = e.target.closest('[data-usort]'); if (us) { uSort(us.dataset.usort); return; }
@@ -3202,6 +3281,11 @@
       if (q.art === 'angebot' && !inInput) {
         if (e.key === 'Enter') { e.preventDefault(); aktAktion('jetzt'); } else if (e.key === '0' || e.key === 'Escape') { e.preventDefault(); aktAktion('spaeter'); }
         return;
+      }
+      if (q.art === 'kontrol' && !q.wartet && !inInput) {
+        const offen = q.ids.find(id => q.antw[id] == null);
+        if (offen && (e.key === '1' || e.key === '2')) { e.preventDefault(); kontrolAntwort(offen + ':' + (e.key === '1' ? 1 : 0)); return; }
+        if (!offen && e.key === 'Enter') { e.preventDefault(); kontrolBitti(); return; }
       }
       if (e.key !== 'Enter') return;
       if (q.wartet) { e.preventDefault(); zeige(); return; }

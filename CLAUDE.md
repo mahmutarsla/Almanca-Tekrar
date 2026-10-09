@@ -53,6 +53,8 @@
   tür dengesi hızlı (erk/bed/art) 4 : yazma 3 : cümle 3, aynı tür en fazla 2 kez üst üste; birikme eşiği 150 (diğer bölümlerde 80).
   Her 7 soruda bir ara etkinlik (log modus `akt`): `luecke` (gerçek metin pasajı, yalnız görülmüş kelimeler boşluk; id `luecke:<metin>`, notiz `puan:x/y`), `match` (eşleştirme, notiz `hata:n`),
   `diktat` (dinle–yaz; id `diktat:<öğe>`, antwort yazdığı, loesung cümle), `ordnen` (cümle dizme), günde en çok bir paket tekrarı; 25 cevaptan sonra fiil metni, 45'ten sonra yazma önerisi (`angebot`).
+  20–30 cevapta bir `kontrol` listesi ("gerçekten biliyor musun?": rastgele 8 öğrenilmiş / ön testte bilinen kelime; log modus `kontrol`, id = öğe, ergebnis `biliyor` / `bilmiyor`, loesung anlamı; özet satırı modus `akt`, notiz `bilmiyor:x/8`).
+  `bilmiyor`: tanıma kartı unutuldu sayılır (10 dk sonra + oturumda bir kez daha), öteki kartlar en geç yarın, bir hafta anlam sorusu cümle içinde (`satzBis`), cümle kartı açılır.
   Odak bölümleri (`MODI`): blitz (Hızlı tur), paket, normal (Karışık), verben, woerter, ndek, refl, thema, stark, lesen, fiilmetin, kalip, yazma, zayif, unite;
   her birinin hedefi/yeni sınırı ayrı, günlük sayaçlar `tage[gün].modi[bölüm]` (`bekannt`, `ungezaehlt` dahil). Hızlı tur'da fiil yok.
 - Birimler (`öğe:tür`): isim `erk`, `art`, `wort`, `nsatz` (kelime cümlesi, log modus `nsatz`), `ndek` · fiil `bed`, `abr`, `frm`, `satz`, `refl` · diğer `erk`, `prod` · paket `pak`.
@@ -94,6 +96,7 @@
    Her yeni cümle için `quellen/glossen.txt`'e de satır ekle: `Almanca cümle | die Regierung = hükümet; …` (hedef kelime ve A1 kelimeleri hariç;
    tam cümle sorusunda öğrencinin bilmediği kelimeler bu sözlükten gösterilir).
 5d. `lesen-wort` satırlarındaki kelimeler öğrencinin okurken bilmediği kelimeler: yeni cümle ve paketlerde öncelik ver.
+    `kontrol` satırlarında `bilmiyor` olan kelimeler de öyle: her birine 2–3 yeni çeviri cümlesi yaz (Tuna "bilmiyorum"da daha çok cümle istiyor).
    Yeni okuma metni için `quellen/pakete.txt`'e paket + `quellen/lesen.txt`'e 4 richtig/falsch ifadesi ekle.
 6. Paketler bittiyse ya da "yeni paket yaz" denirse `quellen/pakete.txt`'nin sonuna yeni paket ekle: bir sahne (konu değil:
    "postanede", "ev arkadaşıyla" gibi), 10 kelime (Goethe B1 listesinden; zayıf / takılan kelimelere öncelik), ~90–110 kelimelik

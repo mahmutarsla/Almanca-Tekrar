@@ -353,6 +353,16 @@ body.genis #v-calis { max-width: none; }
 .u-m.aktif { outline: 2px solid var(--accent); }
 .u-m.ok { background: var(--ok-soft); border-color: var(--ok); }
 .u-gebaut { min-height: 2.2rem; }
+.kt-liste { display: grid; gap: .35rem; margin: .5rem 0; }
+.kt-satir { border: 1px solid var(--line); border-radius: 8px; padding: .45rem .6rem; }
+.kt-satir.aktif { border-color: var(--accent); }
+.kt-satir.ok { background: var(--ok-soft); border-color: var(--ok); }
+.kt-satir.yanlis { background: var(--bad-soft); border-color: var(--bad); }
+.kt-ust { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem .6rem; }
+.kt-de { flex: 1 1 12rem; }
+.kt-btns { display: flex; gap: .4rem; flex-wrap: wrap; }
+.kt-saetze { margin: .4rem 0 0; padding-left: 1.1rem; font-size: .95rem; }
+.kt-saetze li { margin: .25rem 0; }
 .u-text { width: 100%; font: inherit; margin: .5rem 0; padding: .5rem; border: 1px solid var(--line); border-radius: 6px; background: transparent; color: inherit; box-sizing: border-box; }
 .plan-chip.vurgu { border-color: var(--accent); }
 .mc-opt.ok { background: var(--ok-soft); border-color: var(--ok); }
