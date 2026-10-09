@@ -1220,3 +1220,13 @@
 2026-10-09 11:33:54;erk;n0248:erk;der Donner;Dabei entsteht ein lauter Knall, der Donner.;gök gürültüsü;richtig;gök gürültüsü;sek:5 | ipucu:0
 2026-10-09 11:34:00;luecke;v629:satz;sich(D) vorstellen;Ich möchte mich _____: Mein Name ist Schuster.;vorstellen;richtig;vorstellen;sek:6 | ipucu:0
 2026-10-09 11:34:09;bed;v654:bed;sich wundern über;sich wundern über;şaşırmak;fast;(bir şeye) şaşırmak;yavaş | sek:8 | ipucu:0
+2026-10-09 11:34:19;refl;v111:refl;sich bemühen um;Wir haben uns sehr um eine Lösung _____.;bemüht;richtig;bemüht;sek:9 | ipucu:0
+2026-10-09 11:34:27;paket;p02:0;die Wohnung;Wohnungssuche;Wohnung;richtig;Wohnung;
+2026-10-09 11:34:30;paket;p02:1;die Anzeige;Wohnungssuche;Anzeige;richtig;Anzeige;
+2026-10-09 11:34:36;paket;p02:2;das Zimmer;Wohnungssuche;Zimmer;richtig;Zimmer;
+2026-10-09 11:34:39;paket;p02:3;der Balkon;Wohnungssuche;Balkon;richtig;Balkon;
+2026-10-09 11:34:43;paket;p02:4;die Miete;Wohnungssuche;Miete;richtig;Miete;
+2026-10-09 11:34:47;paket;p02:5;der Vermieter;Wohnungssuche;Vermieter;richtig;Vermieter;
+2026-10-09 11:34:59;paket;p02:6;besichtigen;Wohnungssuche;Sehen?;falsch;besichtigen;farklı
+2026-10-09 11:35:05;paket;p02:7;der Vertrag;Wohnungssuche;Antrag;falsch;Vertrag;farklı
+2026-10-09 11:35:11;paket;p02:8;unterschreiben;Wohnungssuche;verschrieben;falsch;unterschreibe;farklı
