@@ -1414,3 +1414,16 @@
 2026-10-09 14:09:04;kontrol;n1424;das Zimmer;sıradaki tekrar;biliyorum;biliyor;oda;kart:1
 2026-10-09 14:09:04;kontrol;n0051;die Anzeige;sıradaki tekrar;biliyorum;biliyor;"ilan; şikâyet (polise)";kart:1
 2026-10-09 14:09:04;kontrol;n1390;die Wohnung;sıradaki tekrar;biliyorum;biliyor;daire, ev;kart:1
+2026-10-09 14:09:04;kontrol;w0139;entschlossen;sıradaki tekrar;emin değilim;emin-degil;kararlı;kart:1
+2026-10-09 14:09:04;kontrol;n0520;der Hausmeister;sıradaki tekrar;bilmiyorum;bilmiyor;kapıcı, apartman görevlisi;kart:1
+2026-10-09 14:09:04;kontrol;n1336;das Visum;sıradaki tekrar;biliyorum;biliyor;vize;kart:1
+2026-10-09 14:09:04;kontrol;w0114;durcheinander;sıradaki tekrar;bilmiyorum;bilmiyor;karmakarışık;kart:1
+2026-10-09 14:09:04;kontrol;n1003;der Roman;sıradaki tekrar;emin değilim;emin-degil;roman;kart:2
+2026-10-09 14:09:04;kontrol;n0286;das Eis;sıradaki tekrar;biliyorum;biliyor;buz;kart:1
+2026-10-09 14:09:04;kontrol;n0536;der Himmel;sıradaki tekrar;emin değilim;emin-degil;gökyüzü;kart:1
+2026-10-09 14:09:04;kontrol;n0746;die Luft;sıradaki tekrar;emin değilim;emin-degil;hava;kart:1
+2026-10-09 14:09:04;kontrol;w0103;doppelt;sıradaki tekrar;emin değilim;emin-degil;çift, iki kat;kart:1
+2026-10-09 14:09:04;kontrol;w0138;entlang;sıradaki tekrar;emin değilim;emin-degil;boyunca (die Straße entlang);kart:1
+2026-10-09 14:09:04;kontrol;v509;sich streiten mit;sıradaki tekrar;emin değilim;emin-degil;(biriyle) kavga etmek, tartışmak;kart:2
+2026-10-09 14:09:04;kontrol;v589;sich verlassen auf;sıradaki tekrar;emin değilim;emin-degil;(birine / bir şeye) güvenmek;kart:1
+2026-10-09 14:09:04;akt;kontrol;gerçekten biliyor musun?;das Zimmer, die Anzeige, die Wohnung, entschlossen, der Hausmeister, das Visum, durcheinander, der Roman, das Eis, der Himmel, die Luft, doppelt, entlang, sich streiten mit, sich verlassen auf;;fast;;biliyor:5 emin-degil:8 bilmiyor:2
