@@ -1310,3 +1310,9 @@
 2026-10-09 12:18:08;nsatz;n0313:nsatz;die Erlaubnis;Eine Apotheke benötigt dafür eine besondere _____.;Erlaubnis;richtig;Erlaubnis;sek:6 | ipucu:0
 2026-10-09 12:18:12;pretest;w0100:erk;digital;digital;dijital;bekannt;dijital;sek:3
 2026-10-09 12:18:17;bed;v584:bed;verhindern;Schutzbleche über den Rädern verhindern, dass von den Rädern zu viel Dreck und Regenwasser hochspritzt.;engellemek, önlemek;richtig;engellemek, önlemek;sek:4 | ipucu:0
+2026-10-09 12:18:25;abr;v111:abr;sich bemühen um;(bir şey için) çabalamak;sich bescheren um;falsch;sich bemühen um (um + Akk);farklı | sek:6 | ipucu:0
+2026-10-09 12:18:38;akt;match;eşleştir;übertreiben, sich verletzen, frech, sich beschweren bei, die Geduld, drinnen;;fast;;hata:1
+2026-10-09 12:18:45;yeni;v262;folgen;;;neu;;
+2026-10-09 12:18:54;nsatz;n1376:nsatz;die Wettervorhersage;Laut _____ regnet es am Wochenende.;Wettervorhersage;richtig;Wettervorhersage;sek:8 | ipucu:0
+2026-10-09 12:18:59;leech;v177;sich eignen für;(bir şeye) uygun olmak;;takiliyor;;günler:2026-10-04,2026-10-08,2026-10-09
+2026-10-09 12:18:59;bed;v177:bed;sich eignen für;sich eignen für;almak , elde etmek;falsch;(bir şeye) uygun olmak;sek:4 | ipucu:0
