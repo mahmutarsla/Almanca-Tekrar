@@ -1380,3 +1380,27 @@
 2026-10-09 14:04:42;satz;v125:satz;sich beschweren bei;Sie können sich beim Vermieter _____.;beschweren;richtig;beschweren;sek:6 | ipucu:0
 2026-10-09 14:04:50;wort;n1354:wort;die Wahrheit;gerçek;warziet;falsch;die Wahrheit;kelime yanlış | sek:6 | ipucu:0
 2026-10-09 14:04:53;nsatz;n0753:nsatz;die Mahnung;Gestern kam schon die zweite _____.;Mahnung;richtig;Mahnung;sek:3 | ipucu:0
+2026-10-09 14:05:32;kontrol;n0207;die Burg;sıradaki tekrar;biliyorum;biliyor;kale, şato;kart:2
+2026-10-09 14:05:32;kontrol;n1044;der Schmerz;sıradaki tekrar;biliyorum;biliyor;ağrı;kart:1
+2026-10-09 14:05:32;kontrol;n1320;die Versichertenkarte;sıradaki tekrar;biliyorum;biliyor;sigorta kartı;kart:1
+2026-10-09 14:05:32;kontrol;n1048;der Schnee;sıradaki tekrar;emin değilim;emin-degil;kar;kart:1
+2026-10-09 14:05:32;kontrol;n0994;das Rezept;sıradaki tekrar;biliyorum;biliyor;"reçete; tarif";kart:2
+2026-10-09 14:05:32;kontrol;n0973;der Regen;sıradaki tekrar;biliyorum;biliyor;yağmur;kart:2
+2026-10-09 14:05:32;kontrol;n0055;die Apotheke;sıradaki tekrar;biliyorum;biliyor;eczane;kart:1
+2026-10-09 14:05:32;kontrol;n0957;der Rat;sıradaki tekrar;emin değilim;emin-degil;tavsiye, öğüt;kart:2
+2026-10-09 14:05:32;kontrol;n0972;die Regel;sıradaki tekrar;bilmiyorum;bilmiyor;kural;kart:2
+2026-10-09 14:05:32;kontrol;n0432;das Gedicht;sıradaki tekrar;biliyorum;biliyor;şiir;kart:1
+2026-10-09 14:05:32;kontrol;v425;rechnen mit;sıradaki tekrar;emin değilim;emin-degil;(bir şeyi) hesaba katmak, beklemek;kart:1
+2026-10-09 14:05:32;kontrol;n1325;der Vertrag;sıradaki tekrar;emin değilim;emin-degil;sözleşme;kart:1
+2026-10-09 14:05:32;kontrol;n1316;der Vermieter;sıradaki tekrar;biliyorum;biliyor;ev sahibi (kiraya veren);kart:1
+2026-10-09 14:05:32;kontrol;n0790;die Miete;sıradaki tekrar;biliyorum;biliyor;kira;kart:1
+2026-10-09 14:05:32;kontrol;n0111;der Balkon;sıradaki tekrar;biliyorum;biliyor;balkon;kart:1
+2026-10-09 14:05:32;akt;kontrol;gerçekten biliyor musun?;die Burg, der Schmerz, die Versichertenkarte, der Schnee, das Rezept, der Regen, die Apotheke, der Rat, die Regel, das Gedicht, rechnen mit, der Vertrag, der Vermieter, die Miete, der Balkon;;fast;;biliyor:10 emin-degil:4 bilmiyor:1
+2026-10-09 14:05:41;pretest;n1422:erk;das Ziel;das Ziel;hedef;bekannt;hedef;sek:3
+2026-10-09 14:05:44;art;n0957:art;der Rat;Rat;der;richtig;der Rat;sek:1 | ipucu:0
+2026-10-09 14:05:48;wort;n1048:wort;der Schnee;kar;der Schnee;richtig;der Schnee;sek:3 | ipucu:0
+2026-10-09 14:06:01;luecke;v262:satz;folgen;Es _____ die Nachrichten.;folgt;richtig;folgen;artikel/çekim | öneri:falsch | sek:4 | ipucu:0
+2026-10-09 14:06:05;pretest;n0244:erk;die Diskussion;die Diskussion;tartışma;bekannt;tartışma;sek:3
+2026-10-09 14:06:17;akt;match;eşleştir;zweifeln an, sich eignen für, frech, der Wohnsitz, beweisen, verzichten auf;;richtig;;hata:0
+2026-10-09 14:06:24;art;x1460:art;das Missverständnis;Missverständnis;der;falsch;das Missverständnis;artikel: der → das | sek:3 | ipucu:0
+2026-10-09 14:06:55;abr;v425:abr;rechnen mit;(bir şeyi) hesaba katmak, beklemek;rechnen mit;richtig;rechnen mit (mit + Dat);hâl yazılmadı (mit + Dat) | öneri:fast | sek:29 | ipucu:0
