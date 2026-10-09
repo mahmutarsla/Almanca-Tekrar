@@ -1346,3 +1346,19 @@
 2026-10-09 12:25:20;leech;w0344;nass;ıslak;;takiliyor;;günler:2026-10-02,2026-10-03,2026-10-09
 2026-10-09 12:25:20;nsatz;w0344:nsatz;nass;Leg die _____ Jacke nicht auf das Sofa!;nass;falsch;nasse;artikel/çekim | sek:3 | ipucu:0
 2026-10-09 12:25:58;kontrol;n0660;die Kosten;;biliyorum;biliyor;masraflar (çoğul);
+2026-10-09 12:25:58;kontrol;n1359;die Wärme;;biliyorum;biliyor;sıcaklık;
+2026-10-09 12:25:58;kontrol;w0566;bewölkt;;biliyorum;biliyor;bulutlu;
+2026-10-09 12:25:58;kontrol;w0119;eher;;bilmiyorum;bilmiyor;daha çok, daha ziyade;
+2026-10-09 12:25:58;kontrol;w0448;sonnig;;biliyorum;biliyor;güneşli;
+2026-10-09 12:25:58;kontrol;n1375;der Wetterbericht;;biliyorum;biliyor;hava raporu;
+2026-10-09 12:25:58;kontrol;w0171;folgend;;biliyorum;biliyor;aşağıdaki, sonraki;
+2026-10-09 12:25:58;kontrol;n1082;der Service;;biliyorum;biliyor;hizmet, servis;
+2026-10-09 12:25:58;akt;kontrol;gerçekten biliyor musun?;die Kosten, die Wärme, bewölkt, eher, sonnig, der Wetterbericht, folgend, der Service;;fast;;bilmiyor:1/8
+2026-10-09 12:26:05;pretest;n0914:erk;die Politik;die Politik;siyaset;neu;siyaset;yavaş
+2026-10-09 12:26:12;wort;n1077:wort;das Seminar;seminer;das Seminar;richtig;das Seminar;sek:4 | ipucu:0
+2026-10-09 12:26:19;bed;v184:bed;sich einigen auf;Man nennt die Kartoffel in einigen Gegenden auch Erdapfel.;anlaşmak, uzlaşmak;fast;(bir şeyde) anlaşmak, uzlaşmak;yavaş | sek:6 | ipucu:0
+2026-10-09 12:26:24;nsatz;n0524:nsatz;die Heimat;Ich lebe jetzt hier in Deutschland. Das ist meine neue _____.;Heimat;richtig;Heimat;sek:4 | ipucu:0
+2026-10-09 12:26:32;wort;n0617:wort;die Kindheit;çocukluk;die Kinderheit;fast;die Kindheit;kelime yanlış | öneri:falsch | sek:5 | ipucu:0
+2026-10-09 12:26:36;nsatz;n0691:nsatz;die Kunst;Ich verstehe nichts von moderner _____.;Kunst;richtig;Kunst;sek:3 | ipucu:0
+2026-10-09 12:26:54;wort;n0028:wort;die Änderung;değişiklik;die Veränderung;fast;die Änderung;kelime yanlış | öneri:falsch | sek:10 | ipucu:0
+2026-10-09 12:27:15;akt;diktat:v509;dinle–yaz;Warum habt ihr euch gestritten?;Warum habt ihr gestritten?;falsch;Warum habt ihr euch gestritten?;
