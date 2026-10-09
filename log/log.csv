@@ -1334,3 +1334,15 @@
 2026-10-09 12:24:03;akt;diktat:w0108;dinle–yaz;Drinnen ist es warm, draußen ist es kalt.;Drinnen ist es warm, draußen ist es kält. ;fast;Drinnen ist es warm, draußen ist es kalt.;yazım: Drinnen ist es warm, draußen ist es kalt.
 2026-10-09 12:24:19;bed;v142:bed;beweisen;Manchmal muss man auch in einer Prüfung beweisen, dass man für ein Fach wirklich geeignet ist.;kanıtlamak;fast;kanıtlamak;yavaş | sek:13 | ipucu:0
 2026-10-09 12:24:24;bed;v169:bed;donnern;donnern;gök gürlemek;richtig;gök gürlemek;sek:4 | ipucu:0
+2026-10-09 12:24:27;art;n1389:art;der Wohnsitz;Wohnsitz;die;falsch;der Wohnsitz;artikel: die → der | sek:2 | ipucu:0
+2026-10-09 12:24:32;erk;w0199:erk;gerecht;adaletli;gerecht;richtig;gerecht;sek:4 | ipucu:0
+2026-10-09 12:24:34;art;n1286:art;die Unterschrift;Unterschrift;die;richtig;die Unterschrift;sek:2 | ipucu:0
+2026-10-09 12:24:42;bed;v256:bed;feststellen;Dabei hat man festgestellt: Sie haben bestimmte Krankheiten seltener als Stadtkinder.;tespit etmek;fast;tespit etmek;yavaş | sek:7 | ipucu:0
+2026-10-09 12:24:52;abr;v620:abr;verzichten auf;(bir şeyden) vazgeçmek;verzichten auf;richtig;verzichten auf (auf + Akk);hâl yazılmadı (auf + Akk) | öneri:fast | sek:9 | ipucu:0
+2026-10-09 12:25:00;nsatz;n0587:nsatz;die Kälte;Bei dieser _____ fahre ich nicht mit dem Fahrrad.;Kälter;fast;Kälte;artikel/çekim | öneri:falsch | sek:5 | ipucu:0
+2026-10-09 12:25:05;nsatz;n1240:nsatz;das Training;Jeden Dienstag ist _____.;Training;richtig;Training;sek:5 | ipucu:0
+2026-10-09 12:25:13;abr;v545:abr;übertreiben;abartmak;über;falsch;übertreiben (Akk);artikel/çekim | sek:6 | ipucu:0
+2026-10-09 12:25:15;art;n0844:art;der Nebel;Nebel;der;richtig;der Nebel;sek:1 | ipucu:0
+2026-10-09 12:25:20;leech;w0344;nass;ıslak;;takiliyor;;günler:2026-10-02,2026-10-03,2026-10-09
+2026-10-09 12:25:20;nsatz;w0344:nsatz;nass;Leg die _____ Jacke nicht auf das Sofa!;nass;falsch;nasse;artikel/çekim | sek:3 | ipucu:0
+2026-10-09 12:25:58;kontrol;n0660;die Kosten;;biliyorum;biliyor;masraflar (çoğul);
