@@ -1291,3 +1291,13 @@
 2026-10-09 12:09:20;nsatz;n0179:nsatz;der Blitz;Die Elektrizität entlädt sich in einem _____.;Blitzt;falsch;Blitz;artikel/çekim | sek:7 | ipucu:0
 2026-10-09 12:09:30;satz;v590:satz;sich verlaufen;Eine solche Erkrankung _____ aber viel schlimmer und gefährlicher.;verlauft;richtig;verläuft;umlaut/ß | öneri:fast | sek:7 | ipucu:0
 2026-10-09 12:09:35;wort;n0524:wort;die Heimat;memleket, vatan;die Heimat;richtig;die Heimat;sek:4 | ipucu:0
+2026-10-09 12:09:41;erk;n1389:erk;der Wohnsitz;der Wohnsitz;ikametgâh;richtig;ikametgâh;sek:5 | ipucu:0
+2026-10-09 12:09:52;akt;match;eşleştir;das Amt, vorschlagen, sich beschweren bei, die Geduld, sich eignen für, die Kosten;;richtig;;hata:0
+2026-10-09 12:09:56;bed;v121:bed;sich beschäftigen mit;sich beschäftigen mit;uğraşmak, ilgilenmek;richtig;(bir şeyle) uğraşmak, ilgilenmek;sek:3 | ipucu:0
+2026-10-09 12:10:09;refl;v592:refl;sich verletzen;Bei dem Unfall hat sich niemand _____.;verletzen;falsch;verletzt;artikel/çekim | sek:10 | ipucu:0
+2026-10-09 12:10:15;nsatz;n0432:nsatz;das Gedicht;Kannst du das _____ auswendig?;Gedicht;richtig;Gedicht;sek:5 | ipucu:0
+2026-10-09 12:10:17;art;n1392:art;die Wolke;Wolke;die;richtig;die Wolke;sek:2 | ipucu:0
+2026-10-09 12:10:27;bed;v184:bed;sich einigen auf;Man nennt die Kartoffel in einigen Gegenden auch Erdapfel.;anlaşmak, uzlaşmak;fast;(bir şeyde) anlaşmak, uzlaşmak;yavaş | sek:9 | ipucu:0
+2026-10-09 12:10:33;refl;v629:refl;sich(D) vorstellen;Darf ich dir meine Frau _____?;vorstellen;richtig;vorstellen;sek:6 | ipucu:0
+2026-10-09 12:11:50;akt;diktat:v142;dinle–yaz;Wir können beweisen, dass Sie bei Rot über die Ampel gefahren sind.;Wir können beweisen, dass Sie bei rot über die Ampfel gefahren sind.;fast;Wir können beweisen, dass Sie bei Rot über die Ampel gefahren sind.;yazım: Wir können beweisen, dass Sie bei Rot über die Ampel gefahren sind.
+2026-10-09 12:12:06;nsatz;w0290:nsatz;kühl;Damit Städte _____ bleiben, müssten zum Beispiel Betonflächen entsiegelt werden.;kühl;fast;kühler;artikel/çekim | öneri:falsch | sek:5 | ipucu:0
