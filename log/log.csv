@@ -1404,3 +1404,13 @@
 2026-10-09 14:06:17;akt;match;eşleştir;zweifeln an, sich eignen für, frech, der Wohnsitz, beweisen, verzichten auf;;richtig;;hata:0
 2026-10-09 14:06:24;art;x1460:art;das Missverständnis;Missverständnis;der;falsch;das Missverständnis;artikel: der → das | sek:3 | ipucu:0
 2026-10-09 14:06:55;abr;v425:abr;rechnen mit;(bir şeyi) hesaba katmak, beklemek;rechnen mit;richtig;rechnen mit (mit + Dat);hâl yazılmadı (mit + Dat) | öneri:fast | sek:29 | ipucu:0
+2026-10-09 14:06:58;pretest;w0117:erk;eben;eben;daha çok, daha ziyade;neu;az önce;
+2026-10-09 14:07:08;nsatz;w0290:nsatz;kühl;Oben aber wird die Luft wieder _____, oder die warme Luft trifft auf kalte Luft.;kühl;falsch;kühler;artikel/çekim | sek:4 | ipucu:0
+2026-10-09 14:07:26;wort;n0914:wort;die Politik;siyaset;der Politik;falsch;die Politik;artikel: der → die | sek:14 | ipucu:0
+2026-10-09 14:07:28;art;n0937:art;das Projekt;Projekt;das;richtig;das Projekt;sek:2 | ipucu:0
+2026-10-09 14:08:11;akt;diktat:x1478;dinle–yaz;Die Wohnung ist erst im Frühjahr fertig.;Die Wohnung ist erst am Frühjahr fertig;fast;Die Wohnung ist erst im Frühjahr fertig.;yazım: Die Wohnung ist erst im Frühjahr fertig.
+2026-10-09 14:08:20;wort;n1325:wort;der Vertrag;sözleşme;der Vertrag;richtig;der Vertrag;sek:5 | ipucu:0
+2026-10-09 14:08:28;erk;n0972:erk;die Regel;Im Straßenverkehr sind viele Regeln zu beachten.;kural;fast;kural;yavaş | sek:7 | ipucu:0
+2026-10-09 14:09:04;kontrol;n1424;das Zimmer;sıradaki tekrar;biliyorum;biliyor;oda;kart:1
+2026-10-09 14:09:04;kontrol;n0051;die Anzeige;sıradaki tekrar;biliyorum;biliyor;"ilan; şikâyet (polise)";kart:1
+2026-10-09 14:09:04;kontrol;n1390;die Wohnung;sıradaki tekrar;biliyorum;biliyor;daire, ev;kart:1
