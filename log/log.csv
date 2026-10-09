@@ -1316,3 +1316,11 @@
 2026-10-09 12:18:54;nsatz;n1376:nsatz;die Wettervorhersage;Laut _____ regnet es am Wochenende.;Wettervorhersage;richtig;Wettervorhersage;sek:8 | ipucu:0
 2026-10-09 12:18:59;leech;v177;sich eignen für;(bir şeye) uygun olmak;;takiliyor;;günler:2026-10-04,2026-10-08,2026-10-09
 2026-10-09 12:18:59;bed;v177:bed;sich eignen für;sich eignen für;almak , elde etmek;falsch;(bir şeye) uygun olmak;sek:4 | ipucu:0
+2026-10-09 12:21:46;leech;v169;donnern;gök gürlemek;;takiliyor;;günler:2026-10-02,2026-10-03,2026-10-09
+2026-10-09 12:21:46;bed;v169:bed;donnern;donnern;dolu yağmak;falsch;gök gürlemek;sek:4 | ipucu:0
+2026-10-09 12:22:01;abr;v620:abr;verzichten auf;(bir şeyden) vazgeçmek;verlassen auf;falsch;verzichten auf (auf + Akk);artikel/çekim | sek:13 | ipucu:0
+2026-10-09 12:22:05;nsatz;n0926:nsatz;die Praxis;Es gibt auch Ärzte, die eine eigene _____ haben.;Praxis;richtig;Praxis;sek:3 | ipucu:0
+2026-10-09 12:22:07;art;n1286:art;die Unterschrift;Unterschrift;der;falsch;die Unterschrift;artikel: der → die | sek:2 | ipucu:0
+2026-10-09 12:22:12;erk;n0121:erk;das Bargeld;Unter Geld versteht man vor allem Bargeld: Münzen und Geldscheine.;nakit;richtig;nakit;sek:4 | ipucu:0
+2026-10-09 12:22:20;abr;v063:abr;sich aufregen über;(bir şeye) sinirlenmek, heyecanlanmak;sich ärgerten über;falsch;sich aufregen über (über + Akk);farklı | sek:7 | ipucu:0
+2026-10-09 12:22:31;akt;match;eşleştir;verzichten auf, der Antrag, drinnen, berichten über, frech, sich bemühen um;;richtig;;hata:0
