@@ -1241,3 +1241,13 @@
 2026-10-09 11:39:00;lesen-wort;w0213;gleichzeitig;Diskussionen um Leihmutterschaft;;neu;aynı anda;
 2026-10-09 11:44:04;lesen-wort;n0341;der Fall;Diskussionen um Leihmutterschaft;;neu;durum, vaka;
 2026-10-09 11:59:36;fiilmetin;v571;verbieten;verboten → Präsens | Diese Möglichkeit ist in Deutschland allerdings verboten.;verbot;falsch;verbietet;dw78140420
+2026-10-09 11:59:52;fiilmetin;v205;entscheiden;entschieden → Perfekt | Privat hatte er zu der Zeit schon entschieden, mit Funke ein Kind durch eine Leihmutter in den USA zu bekommen.;hat entscheidet;falsch;hat entschieden;dw78140420
+2026-10-09 11:59:59;fiilmetin;v644;werfen;warfen → mastar | Sie warfen ihm fehlende Glaubwürdigkeit und Doppelmoral vor.;werfen;richtig;werfen;dw78140420
+2026-10-09 12:00:10;fiilmetin;v367;leihen;leiht → Präteritum | Dabei ‚leiht‘ eine Frau dem Paar ihren Körper und bringt – meist gegen Geld – das Kind des Paares zur Welt.;leihte;falsch;lieh;dw78140420
+2026-10-09 12:00:30;fiilmetin;v122;beschließen;beschlossen → Perfekt | Auf einem Parteitag im Februar 2026 wurde beschlossen, dass sie weiter verboten bleiben soll – auch wenn die Frau eine Freundin oder Familienangehörige des Paares ist.;hat beschlossen;richtig;hat beschlossen;dw78140420
+2026-10-09 12:00:38;fiilmetin;v500;steigen;gestiegen → mastar | Durch den Fall war der politische Druck auf Spahn gestiegen – gerade auch in der eigenen Partei.;steigen;richtig;steigen;dw78140420
+2026-10-09 12:00:39;fiilmetin;dw78140420;Diskussionen um Leihmutterschaft;;;gelesen;;puan:3/6
+2026-10-09 12:00:42;art;n0047:art;der Antrag;Antrag;der;richtig;der Antrag;sek:2 | ipucu:0
+2026-10-09 12:02:26;leech;v673;zweifeln an;(bir şeyden) şüphe etmek;;takiliyor;;günler:2026-10-03,2026-10-07,2026-10-09
+2026-10-09 12:02:26;frm;v673:frm;zweifeln an;zweifeln an — er / sie Perfekt;zweifelte;falsch;hat gezweifelt;yardımcı fiil | sek:101 | ipucu:0
+2026-10-09 12:02:34;erk;n1316:erk;der Vermieter;Für jeden Quadratmeter des Zimmers arbeiten sie eine Stunde monatlich für ihren Vermieter oder ihre Vermieterin.;ev sahibi;fast;ev sahibi (kiraya veren);yavaş | sek:6 | ipucu:0
