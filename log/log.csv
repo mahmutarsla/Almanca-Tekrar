@@ -1324,3 +1324,13 @@
 2026-10-09 12:22:12;erk;n0121:erk;das Bargeld;Unter Geld versteht man vor allem Bargeld: Münzen und Geldscheine.;nakit;richtig;nakit;sek:4 | ipucu:0
 2026-10-09 12:22:20;abr;v063:abr;sich aufregen über;(bir şeye) sinirlenmek, heyecanlanmak;sich ärgerten über;falsch;sich aufregen über (über + Akk);farklı | sek:7 | ipucu:0
 2026-10-09 12:22:31;akt;match;eşleştir;verzichten auf, der Antrag, drinnen, berichten über, frech, sich bemühen um;;richtig;;hata:0
+2026-10-09 12:22:43;dikkat;;;;;cok-yanlis;;son8 yanlış:5 hızlı/boş:0
+2026-10-09 12:22:43;nsatz;n0587:nsatz;die Kälte;Bei _____ gibt es Hagel oder Schnee.;Kält;falsch;Kälte;artikel/çekim | sek:7 | ipucu:0
+2026-10-09 12:22:49;erk;n0137:erk;die Behörde;resmî kurum;die Behörde;richtig;die Behörde;sek:5 | ipucu:0
+2026-10-09 12:22:53;erk;n1279:erk;die Universität;Viele Ärzte können sich „Doktor“ nennen, wenn sie an der Universität auch die zusätzliche Prüfung dazu bestanden haben.;üniversite;richtig;üniversite;sek:3 | ipucu:0
+2026-10-09 12:22:57;art;n0844:art;der Nebel;Nebel;das;falsch;der Nebel;artikel: das → der | sek:2 | ipucu:0
+2026-10-09 12:23:00;abr;v262:abr;folgen;(birini) takip etmek;folgen;richtig;folgen (Dat);sek:3 | ipucu:0
+2026-10-09 12:23:04;art;x1478:art;das Frühjahr;Frühjahr;das;richtig;das Frühjahr;sek:3 | ipucu:0
+2026-10-09 12:24:03;akt;diktat:w0108;dinle–yaz;Drinnen ist es warm, draußen ist es kalt.;Drinnen ist es warm, draußen ist es kält. ;fast;Drinnen ist es warm, draußen ist es kalt.;yazım: Drinnen ist es warm, draußen ist es kalt.
+2026-10-09 12:24:19;bed;v142:bed;beweisen;Manchmal muss man auch in einer Prüfung beweisen, dass man für ein Fach wirklich geeignet ist.;kanıtlamak;fast;kanıtlamak;yavaş | sek:13 | ipucu:0
+2026-10-09 12:24:24;bed;v169:bed;donnern;donnern;gök gürlemek;richtig;gök gürlemek;sek:4 | ipucu:0
