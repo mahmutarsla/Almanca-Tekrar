@@ -1210,3 +1210,13 @@
 2026-10-09 11:32:28;art;n0925:art;die Präsentation;Präsentation;die;fast;die Präsentation;sek:10 | ipucu:1
 2026-10-09 11:32:35;wort;n0381:wort;die Forderung;talep;die Forderung;richtig;die Forderung;sek:6 | ipucu:0
 2026-10-09 11:32:44;satz;v423:satz;reagieren auf;Denn die Politik _____ langsam.;reagiert;richtig;reagiert;sek:9 | ipucu:0
+2026-10-09 11:32:48;erk;n0025:erk;das Amt;resmî daire;das Amt;richtig;das Amt;sek:3 | ipucu:0
+2026-10-09 11:33:03;erk;w0165:erk;feucht;Wenn man vom Klima spricht, ist gemeint, dass es irgendwo normalerweise warm oder kalt ist, dass es trocken oder feucht ist.;nemli;fast;nemli;yavaş | sek:14 | ipucu:0
+2026-10-09 11:33:09;abr;v119:abr;sich beruhigen;sakinleşmek;sich beruhigen;richtig;sich beruhigen;sek:5 | ipucu:0
+2026-10-09 11:33:25;akt;match;eşleştir;reagieren auf, das Gedicht, sich verletzen, sich verlaufen, sich beschweren bei, zweifeln an;;richtig;;hata:0
+2026-10-09 11:33:36;leech;v149;blitzen;şimşek çakmak;;takiliyor;;günler:2026-10-06,2026-10-07,2026-10-09
+2026-10-09 11:33:36;satz;v149:satz;blitzen;Ihre Augen _____ vor Freude.;blitzt;falsch;blitzen;artikel/çekim | sek:4 | ipucu:0
+2026-10-09 11:33:48;abr;v642:abr;sich wenden an;(birine) başvurmak;sich wenden an;richtig;sich wenden an (an + Akk);hâl yazılmadı (an + Akk) | öneri:fast | sek:7 | ipucu:0
+2026-10-09 11:33:54;erk;n0248:erk;der Donner;Dabei entsteht ein lauter Knall, der Donner.;gök gürültüsü;richtig;gök gürültüsü;sek:5 | ipucu:0
+2026-10-09 11:34:00;luecke;v629:satz;sich(D) vorstellen;Ich möchte mich _____: Mein Name ist Schuster.;vorstellen;richtig;vorstellen;sek:6 | ipucu:0
+2026-10-09 11:34:09;bed;v654:bed;sich wundern über;sich wundern über;şaşırmak;fast;(bir şeye) şaşırmak;yavaş | sek:8 | ipucu:0
