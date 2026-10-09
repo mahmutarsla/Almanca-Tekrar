@@ -1261,3 +1261,13 @@
 2026-10-09 12:03:45;abr;v423:abr;reagieren auf;(bir şeye) tepki vermek;reagieren auf;richtig;reagieren auf (auf + Akk);hâl yazılmadı (auf + Akk) | öneri:fast | sek:5 | ipucu:0
 2026-10-09 12:03:51;luecke;v119:satz;sich beruhigen;Ich kann Sie _____. Ihrem Sohn ist nichts passiert.;beruhigen;richtig;beruhigen;sek:6 | ipucu:0
 2026-10-09 12:03:54;art;n0384:art;das Formular;Formular;das;richtig;das Formular;sek:2 | ipucu:0
+2026-10-09 12:04:03;bed;v605:bed;verschreiben;In bestimmten Fällen kann der Arzt Medikamente verschreiben, die helfen.;yazmak;fast;(birine ilaç) yazmak;yavaş | sek:8 | ipucu:0
+2026-10-09 12:04:10;frm;v626:frm;vorschlagen;vorschlagen — er / sie Präsens;schlägt vor;richtig;schlägt vor;sek:7 | ipucu:1
+2026-10-09 12:05:21;akt;luecke:k57;metinde boşluk;Manche Fächer an Universitäten sind sehr beliebt. Dann gibt für diese Fächer weniger Studienplätze als Bewerber. Die Hochschulen müssen dann auswählen, wer dieses Fach studieren darf. Oft wird nach den Noten entschieden: Wer bessere Noten im Abitur hat, bekommt leichter einen Platz. Manchmal muss ma;Universitäten / beweisen / geeignet;richtig;Universitäten / beweisen / geeignet;puan:3/3
+2026-10-09 12:05:30;satz;v429:satz;regnen;_____ es nur kurz, nennt man das einen Schauer.;Regnet;richtig;Regnet;sek:8 | ipucu:0
+2026-10-09 12:05:40;frm;v673:frm;zweifeln an;zweifeln an — er / sie Perfekt;gezweifelt;richtig;hat gezweifelt;yardımcı fiil | öneri:falsch | sek:7 | ipucu:0
+2026-10-09 12:05:44;erk;n0994:erk;das Rezept;Viele Medikamente bekommt man nur, wenn man ein „Rezept“ dabei hat: Dazu muss ein Arzt den Patienten vorher untersucht haben und das Medikament „verschreiben“.;reçete;richtig;reçete;sek:3 | ipucu:0
+2026-10-09 12:05:56;satz;v278:satz;sich fürchten vor;Man sagt dann auch: Man _____ sich vor diesen Dingen.;fürchten;falsch;fürchtet;artikel/çekim | sek:10 | ipucu:0
+2026-10-09 12:06:00;bed;v089:bed;beantragen;beantragen;başvurmak;richtig;(resmî bir şey için) başvurmak;sek:4 | ipucu:0
+2026-10-09 12:06:04;abr;v672:abr;zustimmen;(birine) katılmak, onaylamak;zustimmen;richtig;zustimmen (Dat);sek:3 | ipucu:0
+2026-10-09 12:06:13;akt;ordnen:v278;cümle dizme;Mein kleiner Bruder fürchtet sich vor Hunden.;Mein Bruder fürchtet sich vor kleiner Hunden;falsch;Mein kleiner Bruder fürchtet sich vor Hunden.;
