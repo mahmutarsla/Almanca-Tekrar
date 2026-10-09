@@ -1271,3 +1271,13 @@
 2026-10-09 12:06:00;bed;v089:bed;beantragen;beantragen;başvurmak;richtig;(resmî bir şey için) başvurmak;sek:4 | ipucu:0
 2026-10-09 12:06:04;abr;v672:abr;zustimmen;(birine) katılmak, onaylamak;zustimmen;richtig;zustimmen (Dat);sek:3 | ipucu:0
 2026-10-09 12:06:13;akt;ordnen:v278;cümle dizme;Mein kleiner Bruder fürchtet sich vor Hunden.;Mein Bruder fürchtet sich vor kleiner Hunden;falsch;Mein kleiner Bruder fürchtet sich vor Hunden.;
+2026-10-09 12:06:35;bed;v561:bed;unterschreiben;Dann werden die entsprechenden Papiere unterschrieben und die Ehe ist geschlossen.;imzalamak;fast;imzalamak;yavaş | sek:10 | ipucu:0
+2026-10-09 12:06:47;nsatz;w0479:nsatz;trocken;Der Sommer 2026 ist so heiß und _____, dass die Pegel an Rhein und Donau so niedrig sind wie noch nie.;trocken;richtig;trocken;sek:9 | ipucu:0
+2026-10-09 12:06:54;wort;x1479:wort;die Aussage;ifade, beyan;die Aussage;richtig;die Aussage;sek:7 | ipucu:0
+2026-10-09 12:07:02;satz;v590:satz;sich verlaufen;Wir haben uns in der Altstadt _____.;verlauft;falsch;verlaufen;artikel/çekim | sek:6 | ipucu:0
+2026-10-09 12:07:07;erk;n0155:erk;die Bestätigung;onay;die Bestätigung;richtig;die Bestätigung;sek:5 | ipucu:0
+2026-10-09 12:07:14;erk;n0121:erk;das Bargeld;Unter Geld versteht man vor allem Bargeld: Münzen und Geldscheine.;nakit;fast;nakit;yavaş | sek:6 | ipucu:0
+2026-10-09 12:07:42;akt;luecke:u1:t2;metinde boşluk;Herr Weber hat seine Rechnung nicht bezahlt. Er hat schon drei Mahnungen bekommen. Die Firma hat jetzt eine klare Forderung: Er soll bis Freitag zahlen, sonst geht sie vor Gericht. Herr Weber sagt, er hat das Geld angeblich schon überwiesen. Aber er kann es nicht beweisen.;Mahnungen / Forderung / zustimmen;fast;Mahnungen / Forderung / beweisen;puan:2/3
+2026-10-09 12:07:55;refl;v642:refl;sich wenden an;Bitte _____ Sie sich an die Rezeption.;wenden;richtig;wenden;sek:4 | ipucu:0
+2026-10-09 12:08:03;erk;w0172:erk;frech;arsız, şımarık;frech;fast;frech;yavaş | sek:6 | ipucu:0
+2026-10-09 12:08:14;leech;v626;vorschlagen;(birine bir şeyi) önermek;;takiliyor;;günler:2026-10-02,2026-10-04,2026-10-09
