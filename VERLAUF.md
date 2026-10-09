@@ -102,3 +102,12 @@ Son incelenen log satırı en alttaki notta yazar.
   übertreiben, verhindern); çalışılmayanlar alınmadı. Ünite metinleri boşluklu metin havuzunda. Ünite metninde görülmemiş kelime artık boşluk olmaz.
 - Fiil tanıtımında kalıp kutusu, fiil sorularının açıklamasında kalıp satırı.
 - Test: 4 günlük simülasyon (tekrar aralığı ≥ 12 soru, öğe günde ≤ 4), gerçek ilerleme dosyasıyla 93 adım (dengeli tür dağılımı), e2e duman testi.
+
+## 2026-10-09 — sonuçlar (otomatik inceleme)
+
+- 2026-10-06 → 10-08, 320 satır. Çoğu doğru; zayıf noktalar: Partizip (gerechnet, geblitzt, geregnet, verzichtet, widersprochen, bemüht, gestritten),
+  benzer kelime karışıklığı (sich verlaufen/verändern/verlieren, eingespannt/entspannt, beweisen/beschweren, aufregen/anstrengen, Gedicht/Geduld, Burg/Kunst),
+  artikel (die Kunst, die Unterschrift, die Geduld, die Heimat, das Klima, das Projekt), çekim (werden: wurde, ist geworden; dürfen: durfte).
+- Eklendi: 42 düzeltme (feedback.js), 7 kanca (leech: Geduld, verzichten, Burg, verlaufen, beruhigen, wenden an, bemühen), 10 çeviri cümlesi + glossen.
+- Not: sistem notu bazı yerde cömert (öneri:falsch iken fast: hat verzicht, die Kält, der Kunst). 10-06 21:16 `dikkat cok-yanlis` — o gün hava durumu kelimeleri toplu yanlış, yavaş tekrar iyi olur.
+- Son incelenen log satırı: 2026-10-08 21:32:31.

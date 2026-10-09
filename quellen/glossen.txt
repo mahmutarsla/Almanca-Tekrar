@@ -3840,3 +3840,13 @@ Sie hat einen Ausflug an den See vorgeschlagen. | der Ausflug = gezi; der See = 
 Ich muss dir leider widersprechen. | leider = maalesef
 Gestern habe ich zufällig meinen Lehrer getroffen. | zufällig = tesadüfen
 Er ist zu spät zum Unterricht gekommen. | der Unterricht = ders; zu spät = çok geç
+Im Nebel haben wir uns auf dem Weg zur Burg verlaufen. | der Nebel = sis; die Burg = kale
+Mit etwas Geduld hat sich das Kind schnell beruhigt. | die Geduld = sabır; schnell = çabuk
+Wenn Sie ein Problem haben, wenden Sie sich bitte an das Amt. | das Problem = sorun; das Amt = kurum
+Er hat sich lange um einen Studienplatz bemüht. | der Studienplatz = üniversite kontenjanı
+Ich rege mich über die Kälte im Büro auf. | die Kälte = soğuk; das Büro = ofis
+Der Arzt konnte die Krankheit mit einem Test beweisen. | die Krankheit = hastalık; der Test = test
+Du übertreibst, die Kunst war gar nicht so teuer! | die Kunst = sanat; gar nicht = hiç değil
+Im Museum muss man nicht schweigen, aber leise sprechen. | das Museum = müze; leise = sessiz
+Wegen der Kälte verzichten wir auf den Ausflug. | wegen = yüzünden; der Ausflug = gezi
+Die Nachbarn haben sich gestern wegen der Miete gestritten. | der Nachbar = komşu; die Miete = kira

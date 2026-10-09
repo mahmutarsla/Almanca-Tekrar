@@ -1060,3 +1060,13 @@ v626 | Sie hat einen Ausflug an den See vorgeschlagen. | Göle bir gezi önerdi.
 v646 | Ich muss dir leider widersprechen. | Maalesef sana itiraz etmem gerekiyor.
 v527 | Gestern habe ich zufällig meinen Lehrer getroffen. | Dün tesadüfen öğretmenime rastladım.
 v346 | Er ist zu spät zum Unterricht gekommen. | Derse geç geldi.
+v590 | Im Nebel haben wir uns auf dem Weg zur Burg verlaufen. | Sisin içinde kaleye giderken yolumuzu kaybettik.
+v119 | Mit etwas Geduld hat sich das Kind schnell beruhigt. | Biraz sabırla çocuk çabucak sakinleşti.
+v642 | Wenn Sie ein Problem haben, wenden Sie sich bitte an das Amt. | Bir sorununuz varsa lütfen kuruma başvurun.
+v111 | Er hat sich lange um einen Studienplatz bemüht. | Uzun süre bir üniversite kontenjanı için uğraştı.
+v063 | Ich rege mich über die Kälte im Büro auf. | Ofisteki soğuğa sinirleniyorum.
+v142 | Der Arzt konnte die Krankheit mit einem Test beweisen. | Doktor hastalığı bir testle kanıtlayabildi.
+v545 | Du übertreibst, die Kunst war gar nicht so teuer! | Abartıyorsun, sanat eseri hiç de o kadar pahalı değildi!
+v466 | Im Museum muss man nicht schweigen, aber leise sprechen. | Müzede susmak gerekmez ama sessiz konuşmak gerekir.
+v620 | Wegen der Kälte verzichten wir auf den Ausflug. | Soğuk yüzünden geziden vazgeçiyoruz.
+v509 | Die Nachbarn haben sich gestern wegen der Miete gestritten. | Komşular dün kira yüzünden tartıştı.
