@@ -53,8 +53,12 @@
   tür dengesi hızlı (erk/bed/art) 4 : yazma 3 : cümle 3, aynı tür en fazla 2 kez üst üste; birikme eşiği 150 (diğer bölümlerde 80).
   Her 7 soruda bir ara etkinlik (log modus `akt`): `luecke` (gerçek metin pasajı, yalnız görülmüş kelimeler boşluk; id `luecke:<metin>`, notiz `puan:x/y`), `match` (eşleştirme, notiz `hata:n`),
   `diktat` (dinle–yaz; id `diktat:<öğe>`, antwort yazdığı, loesung cümle), `ordnen` (cümle dizme), günde en çok bir paket tekrarı; 25 cevaptan sonra fiil metni, 45'ten sonra yazma önerisi (`angebot`).
-  20–30 cevapta bir `kontrol` listesi ("gerçekten biliyor musun?": rastgele 8 öğrenilmiş / ön testte bilinen kelime; log modus `kontrol`, id = öğe, ergebnis `biliyor` / `bilmiyor`, loesung anlamı; özet satırı modus `akt`, notiz `bilmiyor:x/8`).
-  `bilmiyor`: tanıma kartı unutuldu sayılır (10 dk sonra + oturumda bir kez daha), öteki kartlar en geç yarın, bir hafta anlam sorusu cümle içinde (`satzBis`), cümle kartı açılır.
+  Ön kontrol (`kontrol`, Çalış): vadesi gelen kelime tekrarları önce 10–15'lik listede (en eski vade önce; yazma / cümle sorusu varsa Türkçesi gösterilir → Almancası, yoksa Almancası → anlamı + artikeli),
+  her satırda biliyorum / emin değilim / bilmiyorum, seçince cevap açılır. `biliyor`: o kelimenin vadesi gelen kartları kendi notuyla doğru sayılır (kartta `selbst`), hedefe sayılır;
+  `emin-degil`: kartlar hemen normal sorulur (sayım asıl soruda); `bilmiyor`: tanıma kartı unutuldu (oturumda ~12 soru sonra cümle içinde yeniden), vadesi gelmiş öteki kartlar 3 saat sonra,
+  bir hafta anlam sorusu cümle içinde (`satzBis`), cümle kartı açılır, 3 örnek cümle gösterilir. Bekleyen "emin değilim" kartları bitince sıradaki liste.
+  Listeye girmeyen (normal sorulan): bugün tanıtılan kelime, son 3 saatte sorulan kart, çekim / dönüşlü / n-Deklination. Tekrar yokken 20–30 cevapta bir rastgele 8 öğrenilmiş kelime ("gerçekten biliyor musun?").
+  Log: modus `kontrol`, id = öğe, frage `sıradaki tekrar` / `rastgele`, ergebnis `biliyor` / `emin-degil` / `bilmiyor`, loesung anlamı, notiz `kart:n`; özet satırı modus `akt`, id `kontrol`.
   Odak bölümleri (`MODI`): blitz (Hızlı tur), paket, normal (Karışık), verben, woerter, ndek, refl, thema, stark, lesen, fiilmetin, kalip, yazma, zayif, unite;
   her birinin hedefi/yeni sınırı ayrı, günlük sayaçlar `tage[gün].modi[bölüm]` (`bekannt`, `ungezaehlt` dahil). Hızlı tur'da fiil yok.
 - Birimler (`öğe:tür`): isim `erk`, `art`, `wort`, `nsatz` (kelime cümlesi, log modus `nsatz`), `ndek` · fiil `bed`, `abr`, `frm`, `satz`, `refl` · diğer `erk`, `prod` · paket `pak`.
@@ -97,6 +101,7 @@
    tam cümle sorusunda öğrencinin bilmediği kelimeler bu sözlükten gösterilir).
 5d. `lesen-wort` satırlarındaki kelimeler öğrencinin okurken bilmediği kelimeler: yeni cümle ve paketlerde öncelik ver.
     `kontrol` satırlarında `bilmiyor` olan kelimeler de öyle: her birine 2–3 yeni çeviri cümlesi yaz (Tuna "bilmiyorum"da daha çok cümle istiyor).
+    `biliyor` denip sonra yazmada / cümlede yanlış yapılan kelimeleri söyle (kendi notu cömert olabilir).
    Yeni okuma metni için `quellen/pakete.txt`'e paket + `quellen/lesen.txt`'e 4 richtig/falsch ifadesi ekle.
 6. Paketler bittiyse ya da "yeni paket yaz" denirse `quellen/pakete.txt`'nin sonuna yeni paket ekle: bir sahne (konu değil:
    "postanede", "ev arkadaşıyla" gibi), 10 kelime (Goethe B1 listesinden; zayıf / takılan kelimelere öncelik), ~90–110 kelimelik

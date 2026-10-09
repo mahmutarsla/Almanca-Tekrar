@@ -485,8 +485,16 @@
       if (c.length) { const id = pick(c); gf[id] = (gf[id] || 0) + 1; return { uid: id + ':' + ({ n: 'wort', w: 'prod', v: 'abr' })[kind(id)], heute: true }; }
     }
 
-    // Çalış: 20–30 cevapta bir "gerçekten biliyor musun?" listesi (rastgele öğrenilmiş kelime / fiil)
-    if (m === 'akis' && session.q > 0) {
+    // Çalış: sıradaki 10–15 tekrar önce listede (biliyorum / emin değilim / bilmiyorum); listedeki "emin değilim" kartları
+    // sorulunca (ya da aralık kuralı yüzünden şimdilik sorulamıyorsa) sıradaki liste
+    let triVar = false;
+    if (m === 'akis' && session.letzteAkt !== session.q && !triOffen().length) {
+      const a = aktTriage();
+      if (a) { session.letzteAkt = session.q; return a; }
+    }
+    if (m === 'akis') triVar = triOffen().length > 0 || faellig(u => FILTER.akis(u) && triFaehig(u) && !triGesehen(u)).length > 0;
+    // tekrar yokken: 20–30 cevapta bir "gerçekten biliyor musun?" (rastgele öğrenilmiş kelime / fiil)
+    if (m === 'akis' && session.q > 0 && !triVar) {
       if (session.kontrolBei == null) session.kontrolBei = session.q + 20 + Math.floor(Math.random() * 11);
       if (session.q >= session.kontrolBei && session.letzteAkt !== session.q) {
         session.kontrolBei = session.q + 20 + Math.floor(Math.random() * 11);
@@ -503,7 +511,7 @@
 
     const filter = FILTER[m];
     const dueAlle = faellig(filter);
-    let due = dueAlle.filter(u => izOk(itemOf(u)));
+    let due = dueAlle.filter(u => izOk(itemOf(u)) && triTor(u));
     // birikme: ara verdiysen önce tekrarlar
     session.stau = dueAlle.length > stauGrenze(m) ? dueAlle.length : 0;
     // Hızlı tur / Paket: yazma tekrarları (Karışık) birikmişse yeni kelime yok; kolay kısmı yapıp zoru atlamaya karşı
@@ -562,7 +570,7 @@
       session.letzteKontext = session.q;
       // Hızlı tur: isim / kelime; Fiiller: fiil; diğer bölümler: hepsi (fiil anlamı kartları Karışık'ta da görünür)
       const passt = u => m === 'blitz' ? kind(itemOf(u)) !== 'v' : m === 'verben' ? kind(itemOf(u)) === 'v' : (m === 'normal' || m === 'woerter' ? true : FILTER[m](u));
-      const kand = faellig(u => (typOf(u) === 'erk' || typOf(u) === 'bed') && passt(u))
+      const kand = faellig(u => (typOf(u) === 'erk' || typOf(u) === 'bed') && passt(u) && triTor(u))
         .filter(u => izOk(itemOf(u)) && itemOf(u) !== lastItem && kontextSaetze(itemOf(u)).length);
       if (kand.length) { const u = kand.sort((a, b) => S.karten[a].due - S.karten[b].due)[0]; return { uid: u, kontext: pick(kontextSaetze(itemOf(u))) }; }
     }
@@ -2059,6 +2067,27 @@
     kand.sort((a, b) => b.w - a.w);
     return { akt: art, satz: kand[0] };
   }
+  // Ön kontrol (Çalış): vadesi gelen bütün kelime tekrarları önce 10–15'lik listede (yazma sorusu varsa Türkçesi gösterilir: Almancasını söyle,
+  // yoksa Almancası: anlamını söyle). Listeye girmeyenler: bugün tanıtılan kelime (öğrenme adımları), son 3 saatte sorulan kart,
+  // çekim / dönüşlü / n-Deklination alıştırması — bunlar normal sorulur.
+  const TRI_TYP = new Set(['erk', 'bed', 'art', 'wort', 'prod', 'abr', 'satz', 'nsatz']), TRI_PROD = new Set(['wort', 'prod', 'abr', 'satz', 'nsatz']);
+  const triFaehig = u => {
+    const c = S.karten[u], it = S.items[itemOf(u)];
+    return TRI_TYP.has(typOf(u)) && !!c && !!it && !(it.seit && tag(it.seit) === tag()) && !(c.last && now() - c.last < 3 * 3600000);
+  };
+  const triGesehen = u => !!(session.tri && session.tri.uids.has(u));
+  const triTor = u => session.modus !== 'akis' || !triFaehig(u) || triGesehen(u);
+  const triOffen = () => session.tri ? [...session.tri.offen].filter(u => S.karten[u] && S.karten[u].due <= now() && gueltig(u) && izOk(itemOf(u))) : [];
+  function aktTriage() {
+    const by = new Map();
+    faellig(u => FILTER.akis(u) && triFaehig(u) && !triGesehen(u)).forEach(u => { const id = itemOf(u), d = S.karten[u].due; if (S.items[id] && (!by.has(id) || d < by.get(id))) by.set(id, d); });
+    const ids = [...by.keys()].sort((a, b) => by.get(a) - by.get(b)).slice(0, 15);
+    if (!ids.length) return null;
+    // yön: o kelimenin vadesi gelen yazma / cümle sorusu varsa Türkçe → Almanca, yoksa Almanca → anlam (isimde artikeliyle)
+    const yon = {}, artDa = {};
+    ids.forEach(id => { const us = faellig(u => itemOf(u) === id && triFaehig(u)); yon[id] = us.some(u => TRI_PROD.has(typOf(u))) ? 'tr' : 'de'; artDa[id] = us.some(u => typOf(u) === 'art'); });
+    return { akt: 'kontrol', tri: true, ids, antw: {}, yon, artDa };
+  }
   // "Gerçekten biliyor musun?": rastgele 8 öğrenilmiş (ya da ön testte bilinen) kelime / fiil; bugün sorulmamış, vadesi gelmemiş, son 5 günde kontrol edilmemiş
   function aktKontrol() {
     const t = now(), kz = S.kontrol || {}, z = iz();
@@ -2075,7 +2104,7 @@
     S.karten[id + ':' + rek] = Object.assign(FSRS.review(k && k.S ? k : {}, 1, t, S.einst.ret), { lern: 0 });
     // bu oturumda bir kez daha (cümle içinde), kalabalık tekrar kuyruğunu beklemeden
     session.requeue.push({ uid: id + ':' + rek, nach: session.q + 8, mal: 0 });
-    unitsOf(id).forEach(u => { const c = S.karten[id + ':' + u]; if (u !== rek && c && c.S) { c.S = Math.min(c.S, 2); c.due = Math.min(c.due, morgen(t) + 6 * 3600000); } });
+    unitsOf(id).forEach(u => { const c = S.karten[id + ':' + u]; if (u !== rek && c && c.S) { c.S = Math.min(c.S, 2); c.due = c.due <= t ? t + 3 * 3600000 : Math.min(c.due, morgen(t) + 6 * 3600000); } });
     const su = kind(id) === 'v' ? 'satz' : 'nsatz';
     if (unitsOf(id).includes(su)) neueKarte(id + ':' + su, t + DAY / 2);
     leechPruefen(id);
@@ -2092,21 +2121,34 @@
   }
   function kontrolAntwort(code) {
     const q = aktuell; if (!q || q.art !== 'kontrol' || q.wartet) return;
-    const i = code.lastIndexOf(':'), id = code.slice(0, i);
-    if (!q.ids.includes(id) || q.antw[id] === false) return;
-    q.antw[id] = code.slice(i + 1) === '1';
+    const i = code.lastIndexOf(':'), id = code.slice(0, i), a = code.slice(i + 1);
+    if (!q.ids.includes(id) || !'ben'.includes(a)) return;
+    q.antw[id] = a;
     aktRender(q);
   }
+  const KT_AD = { b: 'biliyorum', e: 'emin değilim', n: 'bilmiyorum' };
   function kontrolBitti() {
-    const q = aktuell; if (!q || q.art !== 'kontrol' || q.wartet || q.ids.some(id => q.antw[id] == null)) return;
-    const t = now(), kz = S.kontrol = S.kontrol || {}, nicht = q.ids.filter(id => q.antw[id] === false);
+    const q = aktuell; if (!q || q.art !== 'kontrol' || q.wartet || q.ids.some(id => !q.antw[id])) return;
+    const t = now(), kz = S.kontrol = S.kontrol || {}, n = { b: [], e: [], n: [] };
+    const tri = q.tri ? (session.tri = session.tri || { uids: new Set(), offen: new Set() }) : null;
     q.ids.forEach(id => {
+      const a = q.antw[id];
+      n[a].push(id);
       kz[id] = t;
-      if (!q.antw[id]) kontrolBilmiyor(id, t);
-      logEintrag({ modus: 'kontrol', id, item: label(id), frage: '', antwort: q.antw[id] ? 'biliyorum' : 'bilmiyorum', ergebnis: q.antw[id] ? 'biliyor' : 'bilmiyor', loesung: trOf(id), notiz: '' });
+      // listedeki tekrar kartları: biliyorum → bugünkü tekrarı yapılmış (doğru), emin değilim → şimdi normal sorulur
+      const uids = tri ? faellig(u => itemOf(u) === id && triFaehig(u) && !tri.uids.has(u)) : [];
+      uids.forEach(u => tri.uids.add(u));
+      if (a === 'n') kontrolBilmiyor(id, t);
+      else if (a === 'b') uids.forEach(u => { const c = Object.assign(FSRS.review(S.karten[u].S ? S.karten[u] : {}, 3, t, S.einst.ret), { selbst: (S.karten[u].selbst || 0) + 1 }); delete c.neu; delete c.lern; S.karten[u] = c; });
+      else if (tri) uids.forEach(u => tri.offen.add(u));
+      if (tri && a !== 'e') zaehlen({ typ: 'erk' }, a === 'b' ? 'richtig' : 'falsch');  // emin değilim: asıl soru sayılır
+      logEintrag({ modus: 'kontrol', id, item: label(id), frage: tri ? 'sıradaki tekrar' : 'rastgele', antwort: KT_AD[a], ergebnis: { b: 'biliyor', e: 'emin-degil', n: 'bilmiyor' }[a], loesung: trOf(id), notiz: tri ? `kart:${uids.length}` : '' });
     });
-    q.ergHTML = `<div class="kural">${nicht.length ? `Daha sık ve cümle içinde gelecek: <b>${nicht.map(id => esc(label(id))).join(', ')}</b>` : 'Hepsini biliyorsun.'}</div>`;
-    aktAbschluss(q, !nicht.length ? 'richtig' : nicht.length <= 2 ? 'fast' : 'falsch', '', '', `bilmiyor:${nicht.length}/${q.ids.length}`, q.ids);
+    const liste = ids => ids.map(id => esc(label(id))).join(', ');
+    q.ergHTML = `<div class="kural">${[n.b.length ? `✓ ${n.b.length} biliyorum${tri ? ': bugünkü tekrarları yapıldı' : ''}` : '', n.e.length ? `? ${n.e.length} emin değilim${tri ? ': şimdi soruluyor' : ''}` : '', n.n.length ? `✗ bilmiyorum, daha sık ve cümle içinde gelecek: <b>${liste(n.n)}</b>` : ''].filter(Boolean).join('<br>')}</div>`;
+    // emin değilim: hemen sorulabilir (listede görmek aralık sayılmaz); ötekiler normal aralıkla
+    if (tri) { const z = iz(); n.e.forEach(id => { if (z.q[id] != null) z.q[id] = Math.min(z.q[id], z.qq - IZ_ABSTAND); }); }
+    aktAbschluss(q, !n.n.length ? 'richtig' : n.n.length <= 2 ? 'fast' : 'falsch', '', '', `biliyor:${n.b.length} emin-degil:${n.e.length} bilmiyor:${n.n.length}`, n.b.concat(n.n), !!tri);
   }
   function aktWaehlen() {
     const hm = heuteM('akis'), off = session.aktAbgelehnt = session.aktAbgelehnt || {};
@@ -2137,9 +2179,10 @@
     return q;
   }
   const AKT_AD = { luecke: 'metinde boşluk', match: 'eşleştir', diktat: 'dinle–yaz', ordnen: 'cümle dizme', angebot: 'günün işi', kontrol: 'gerçekten biliyor musun?' };
+  const aktAd = q => q.art === 'kontrol' && q.tri ? 'sıradaki tekrarlar' : AKT_AD[q.art];
   function aktRender(q) {
     $('#durum-satiri').innerHTML = '';
-    let h = `<div class="tur"><span class="yeni">ara etkinlik</span><span>${esc(AKT_AD[q.art])}</span></div>`;
+    let h = `<div class="tur"><span class="yeni">${q.tri ? 'ön kontrol' : 'ara etkinlik'}</span><span>${esc(aktAd(q))}</span></div>`;
     if (q.art === 'angebot') {
       const fm = q.was === 'fiilmetin';
       h += `<div class="buyuk">${fm ? 'Günün fiil metni hazır' : 'Bugünün yazma görevi'}</div>
@@ -2171,15 +2214,17 @@
         <input id="cevap" class="cevap" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="duyduğun cümle"${q.erg ? ' disabled' : ''} value="${esc(q.eingabe || '')}">
         ${q.erg ? '' : '<div class="sira"><button class="btn ana" data-akt="pruef" type="button">Kontrol <kbd>Enter</kbd></button></div>'}`;
     } else if (q.art === 'kontrol') {
-      const offen = q.ids.findIndex(id => q.antw[id] == null);
-      h += `<div class="soluk">Kelimeye bak, anlamını aklından söyle, sonra seç. Bilmiyorum → daha sık ve cümle içinde gelir.</div>
+      const offen = q.ids.findIndex(id => !q.antw[id]);
+      h += `<div class="soluk">${q.tri ? 'Sıradaki tekrarların: Türkçe verilenin Almancasını (isimde artikeliyle), Almanca verilenin anlamını aklından söyle, sonra seç; cevap açılır.<br>Biliyorum → bugünkü tekrarı yapılmış sayılır · emin değilim → şimdi normal sorulur · ' : 'Almancasına bak, anlamını aklından söyle, sonra seç. '}bilmiyorum → daha sık ve cümle içinde gelir.</div>
         <div class="kt-liste">${q.ids.map((id, i) => {
-          const a = q.antw[id];
-          return `<div class="kt-satir${i === offen ? ' aktif' : ''}${a === true ? ' ok' : a === false ? ' yanlis' : ''}">
-            <div class="kt-ust"><span class="kt-de">${deItemHTML(id)}</span>
-            ${a == null ? `<span class="kt-btns"><button class="btn mini" data-kt="${id}:1" type="button">✓ biliyorum${i === offen ? ' <kbd>1</kbd>' : ''}</button><button class="btn mini" data-kt="${id}:0" type="button">✗ bilmiyorum${i === offen ? ' <kbd>2</kbd>' : ''}</button></span>`
-              : `<span class="kt-tr">= ${esc(trOf(id))}</span>${a === true && !q.wartet ? `<button class="btn mini" data-kt="${id}:0" type="button">yanılmışım</button>` : ''}`}</div>
-            ${a === false ? kontrolSaetze(id) : ''}</div>`;
+          const a = q.antw[id], tr = q.yon && q.yon[id] === 'tr';
+          const nackt = tr ? `<span class="kt-soru">${esc(kurzTr(trOf(id)))}</span> <span class="soluk">→ Almancası?</span>`
+            : (kind(id) === 'n' ? `<b>${esc(byId[id].lemma)}</b>${byId[id].plOnly ? ' <span class="soluk">(çoğul)</span>' : ''}` : deItemHTML(id)) + ` <span class="soluk">→ anlamı${q.artDa && q.artDa[id] ? ' + artikeli' : ''}?</span>`;
+          const btn = (k, t, kbd) => `<button class="btn mini${a === k ? ' secili' : ''}" data-kt="${id}:${k}" type="button"${q.wartet ? ' disabled' : ''}>${t}${i === offen ? ` <kbd>${kbd}</kbd>` : ''}</button>`;
+          return `<div class="kt-satir${i === offen ? ' aktif' : ''}${a === 'b' ? ' ok' : a === 'n' ? ' yanlis' : a === 'e' ? ' emin' : ''}">
+            <div class="kt-ust"><span class="kt-de">${a ? deItemHTML(id) + ` <span class="kt-tr">= ${esc(trOf(id))}</span>` : nackt}</span>
+            <span class="kt-btns">${btn('b', '✓ biliyorum', 1)}${btn('e', '? emin değilim', 2)}${btn('n', '✗ bilmiyorum', 3)}</span></div>
+            ${a === 'n' ? ((q.sz = q.sz || {})[id] = q.sz[id] || kontrolSaetze(id)) : ''}</div>`;
         }).join('')}</div>
         ${offen < 0 && !q.wartet ? '<div class="sira"><button class="btn ana" data-akt="kt-bitti" type="button">Bitti <kbd>Enter</kbd></button></div>' : ''}`;
     } else if (q.art === 'ordnen') {
@@ -2194,8 +2239,8 @@
     if (q.art === 'luecke' && !q.ok) { const i = document.querySelector('.u-luecke'); if (i) i.focus(); }
   }
   // etkinlik bitti: hedefe 1 cevap, görülen kelimeler aralık sayılır, log
-  function aktAbschluss(q, urteil, antwort, loesung, notiz, ids) {
-    zaehlen({}, urteil);
+  function aktAbschluss(q, urteil, antwort, loesung, notiz, ids, gezaehlt) {
+    if (!gezaehlt) zaehlen({}, urteil);
     session.q++;
     session.aktEnde = session.q;
     (ids || []).forEach(izSeen);
@@ -2815,6 +2860,7 @@
     // iyi bildiğin kelimenin (kardeş kartı ≥ 7 gün oturmuş) yeni açılan kartı ilk seferde doğru → "kolay" başlangıç (~8 gün sonra)
     if (!alt.S && g === 3 && stufe == null && unitsOf(q.id).some(u => u !== q.typ && ((S.karten[q.id + ':' + u] || {}).S || 0) >= 7)) Object.assign(c, FSRS.review({}, 4, t, S.einst.ret), { lastG: 3 });
     S.karten[q.uid] = c;
+    if (session.tri) session.tri.offen.delete(q.uid);
     // öğe serisi: kelimenin bütün kartlarında (anlam, artikel, yazma, cümle) art arda hızlı doğru → kelimeyi biliyorsun;
     // 4. doğrudan sonra kardeş kartlar da 12–21 gün ileri (her kart ayrı takvimle neredeyse her gün gelmesin). Yanlışta seri sıfırlanır.
     const itS = S.items[q.id];
@@ -3283,8 +3329,8 @@
         return;
       }
       if (q.art === 'kontrol' && !q.wartet && !inInput) {
-        const offen = q.ids.find(id => q.antw[id] == null);
-        if (offen && (e.key === '1' || e.key === '2')) { e.preventDefault(); kontrolAntwort(offen + ':' + (e.key === '1' ? 1 : 0)); return; }
+        const offen = q.ids.find(id => !q.antw[id]);
+        if (offen && /^[123]$/.test(e.key)) { e.preventDefault(); kontrolAntwort(offen + ':' + 'ben'[+e.key - 1]); return; }
         if (!offen && e.key === 'Enter') { e.preventDefault(); kontrolBitti(); return; }
       }
       if (e.key !== 'Enter') return;

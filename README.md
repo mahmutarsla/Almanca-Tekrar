@@ -31,8 +31,9 @@ her 5 soruda bir **metinde** kartı (öğrendiğin kelime gerçek bir metin cüm
   görmediğin kelimeler yazılı durur (basınca anlamı); kelime kutusunda 2 çeldirici.
 - **Eşleştirme**, **dinle–yaz** (tarayıcı Almanca okur), **cümle dizme** (fiilin yeri), günde en çok bir **paket tekrarı**.
 - 25 cevaptan sonra **günün fiil metni**, sırası geldiyse 45 cevaptan sonra **yazma görevi** önerilir ("Sonra" denebilir).
-- 20–30 cevapta bir **gerçekten biliyor musun?**: rastgele 8 öğrendiğin kelime / fiil, her birinde biliyorum / bilmiyorum (sonra anlamı görünür).
-  Bilmiyorum: 3 örnek cümle, kelime aynı oturumda ve bir hafta boyunca cümle içinde, daha sık gelir.
+- **Ön kontrol:** tekrarlar önce 10–15'lik listede gelir. Türkçesi verilenin Almancasını (isimde artikeliyle), Almancası verilenin anlamını aklından söyle,
+  sonra **biliyorum** (bugünkü tekrarı yapılmış sayılır) / **emin değilim** (hemen sorulur) / **bilmiyorum** (3 örnek cümle; daha sık ve bir hafta cümle içinde gelir).
+  Emin olmadıkların bitince sıradaki liste. Tekrar yokken 20–30 cevapta bir rastgele 8 kelimeyle "gerçekten biliyor musun?".
 
 Uygulama açılınca Çalış'la başlar. En az 10 sayılan cevap verdiğin gün seriye sayılır.
 Belirli bir şeye odaklanmak istersen **Bölüm** listesinden tek tür seçebilirsin:

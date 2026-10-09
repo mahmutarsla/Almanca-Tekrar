@@ -126,3 +126,6 @@ Son incelenen log satırı en alttaki notta yazar.
 - Tuna: 20–30 tekrarda bir rastgele kelime / fiillerle toplu kontrol istedi. Çalış'ta 20–30 cevapta bir 8 kelimelik liste: biliyorum / bilmiyorum, sonra anlamı görünür ("yanılmışım" ile geri alınır).
 - Bilmiyorum: 3 örnek cümle (kendi + Goethe + gerçek metin), tanıma kartı unutuldu sayılır, oturumda ~8–12 soru sonra cümle içinde yeniden, bir hafta anlam sorusu cümle içinde, cümle kartı açılır, öteki kartlar en geç yarın.
 - "Sonuçlarıma bak"ta `kontrol` / `bilmiyor` kelimelerine yeni cümle yazılacak.
+- Aynı gün (Tuna): liste 10–15 kelime olsun, "emin değilim" de olsun, her tekrar böyle değerlendirilsin → **ön kontrol**: vadesi gelen kelime tekrarları önce listede
+  (yazma sorusu varsa Türkçesi → Almancası, yoksa Almancası → anlamı), biliyorum = bugünkü tekrar yapılmış, emin değilim = hemen sorulur, bilmiyorum = sıklaşır + cümle.
+  Gerçek veriyle: 136 vadeli → 3 liste + 60 soruda 73'e indi. Telefon genişliğinde yatay taşma (Bölüm listesi) da düzeltildi.

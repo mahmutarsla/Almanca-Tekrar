@@ -43,7 +43,7 @@ const DAY = 86400000;
         else if (a.art === 'match') { for (const id of a.ids) { await p.click(`[data-am="L${id}"]`); await p.click(`[data-am="R${id}"]`); } }
         else if (a.art === 'diktat') { await p.fill('#cevap', a.satz); await p.press('#cevap', 'Enter'); }
         else if (a.art === 'ordnen') { for (const i of a.order) await p.click(`[data-ao="${i}"]`); await p.click('[data-akt="pruef"]'); }
-        else if (a.art === 'kontrol') { for (let i = 0; i < a.ids.length; i++) { await p.keyboard.press(i % 4 === 3 ? '2' : '1'); await wait(30); } await p.keyboard.press('Enter'); }
+        else if (a.art === 'kontrol') { for (let i = 0; i < a.ids.length; i++) { await p.keyboard.press('1112113'[i % 7]); await wait(30); } await p.keyboard.press('Enter'); }
         await wait(60); await p.keyboard.press('Enter');
       }
       await wait(80);

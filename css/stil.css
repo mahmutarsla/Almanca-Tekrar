@@ -218,7 +218,7 @@ main { max-width: 860px; margin: 0 auto; padding: 1.5rem 16px 4rem; }
 .btn.ana kbd { background: transparent; color: inherit; border-color: color-mix(in srgb, var(--accent-ink) 45%, transparent); }
 .odak-satir { display: flex; gap: .6rem; align-items: center; flex-wrap: wrap; margin-bottom: .6rem; }
 .odak-satir label { font-family: var(--f-mono); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
-.odak-satir select { padding: .35rem .5rem; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); }
+.odak-satir select { padding: .35rem .5rem; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); max-width: 100%; }
 .odak-satir .ust-bilgi { margin: 0; }
 .kural { background: var(--accent-soft); border-radius: 8px; padding: .5rem .75rem; font-size: .95rem; }
 /* Türkçe sayfada uppercase Almanca "i"yi "İ" yapıyor (WİR, İHR): bu etiketler küçük harf kalır */
@@ -358,9 +358,14 @@ body.genis #v-calis { max-width: none; }
 .kt-satir.aktif { border-color: var(--accent); }
 .kt-satir.ok { background: var(--ok-soft); border-color: var(--ok); }
 .kt-satir.yanlis { background: var(--bad-soft); border-color: var(--bad); }
+.kt-satir.emin { background: var(--warn-soft); border-color: var(--warn); }
+.kt-btns .btn.secili { outline: 2px solid var(--accent); }
+.kt-tr { color: var(--muted); }
+.kt-soru { font-weight: 600; }
 .kt-ust { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem .6rem; }
 .kt-de { flex: 1 1 12rem; }
-.kt-btns { display: flex; gap: .4rem; flex-wrap: wrap; }
+.kt-btns { display: flex; flex-wrap: wrap; gap: .3rem; }
+.kt-btns .btn { white-space: nowrap; padding: .25rem .45rem; font-size: .85rem; }
 .kt-saetze { margin: .4rem 0 0; padding-left: 1.1rem; font-size: .95rem; }
 .kt-saetze li { margin: .25rem 0; }
 .u-text { width: 100%; font: inherit; margin: .5rem 0; padding: .5rem; border: 1px solid var(--line); border-radius: 6px; background: transparent; color: inherit; box-sizing: border-box; }
