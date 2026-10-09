@@ -1301,3 +1301,7 @@
 2026-10-09 12:10:33;refl;v629:refl;sich(D) vorstellen;Darf ich dir meine Frau _____?;vorstellen;richtig;vorstellen;sek:6 | ipucu:0
 2026-10-09 12:11:50;akt;diktat:v142;dinle–yaz;Wir können beweisen, dass Sie bei Rot über die Ampel gefahren sind.;Wir können beweisen, dass Sie bei rot über die Ampfel gefahren sind.;fast;Wir können beweisen, dass Sie bei Rot über die Ampel gefahren sind.;yazım: Wir können beweisen, dass Sie bei Rot über die Ampel gefahren sind.
 2026-10-09 12:12:06;nsatz;w0290:nsatz;kühl;Damit Städte _____ bleiben, müssten zum Beispiel Betonflächen entsiegelt werden.;kühl;fast;kühler;artikel/çekim | öneri:falsch | sek:5 | ipucu:0
+2026-10-09 12:12:09;art;n0937:art;das Projekt;Projekt;der;falsch;das Projekt;artikel: der → das | sek:2 | ipucu:0
+2026-10-09 12:13:01;bed;v545:bed;übertreiben;Deswegen wird oft nicht an diese Menschen und ihre Bedürfnisse gedacht – und manchmal wird sogar behauptet, dass sie übertreiben.;abartmak;fast;abartmak;yavaş | sek:50 | ipucu:0
+2026-10-09 12:13:18;nsatz;n0179:nsatz;der Blitz;Wenn die Luft elektrisch aufgeladen ist, kommt es zu einer plötzlichen Entladung: Ein _____ sucht sich den Weg zum Erdboden.;Blitz;richtig;Blitz;sek:14 | ipucu:0
+2026-10-09 12:13:46;prod;w0599:prod;eingespannt sein;çok meşgul olmak (iş yüzünden);entspannend sein;falsch;eingespannt sein;farklı | sek:7 | ipucu:0
