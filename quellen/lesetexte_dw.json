@@ -2533,5 +2533,78 @@
    }
   ],
   "url": "https://learngerman.dw.com/de/ein-leben-mit-zwängen/l-79563608"
+ },
+ {
+  "id": "79596248",
+  "quelle": "DW Top-Thema",
+  "titel": "Mehr Rechenzentren für Europa",
+  "text": "Mehr Rechenzentren für Europa\nIn Europa sollen neue Rechenzentren gebaut werden, auch um selbst über  Daten bestimmen zu können. Doch die Zentren brauchen viel Strom und Wasser. Deshalb gibt es immer öfter Proteste gegen die Projekte.\nBei Diskussionen über Künstliche Intelligenz (KI) geht es meist um ihre Gefahren und darum, wie sie unseren Alltag beeinflusst. Dass sich durch die neue Technologie auch Städte und Landschaften verändern können, zeigt sich am Bau neuer Rechenzentren. Die meisten Anlagen befinden sich in den USA, doch inzwischen entstehen auch in Europa immer mehr dieser Zentren. Der Grund: Viele Länder und Unternehmen wollen ihre Daten lieber in Europa speichern.\nNeue Rechenzentren sollen in Zukunft nicht mehr nur in der Nähe großer Städte wie Frankfurt oder Paris stehen, sondern auch in kleineren Städten und Gemeinden. Dagegen gibt es regelmäßig Proteste. Im kleinen österreichischen Ort Kronstorf demonstrierten zuletzt mehrere Hundert Menschen gegen ein geplantes Google-Projekt. Und im französischen Dorf Étrechet traten sogar mehrere Kommunalpolitikerinnen zurück. Beide Projekte konnten trotz des Widerstands nicht gestoppt werden.\nDie Kritik der Gegner: Rechenzentren brauchen viel Energie, vor allem für die Server und ihre Kühlung. Das Google-Projekt in Étrechet soll bei voller Auslastung so viel Strom verbrauchen, wie ein Atomkraftwerk ungefähr produziert. Und in Finnland könnte der Stromverbrauch beim Bau aller geplanten Zentren im Vergleich zu 2025 um fast 40 Prozent steigen, so eine Prognose. Für die Kühlung von Rechenzentren wird außerdem viel Wasser benötigt. Dieses Wasser verdunstet teilweise oder kommt erwärmt zurück in andere Gewässer.\nWie man in Rechenzentren Ressourcen sparen kann, zeigt hingegen eine große Anlage in Marseille, die derzeit entsteht. Mit einem geschlossenen Wasserkreislauf, bei dem das Wasser immer wieder verwendet wird, kann dort der Energiebedarf für die Kühlung um 30 Prozent reduziert werden. In anderen Rechenzentren, vor allem in Skandinavien, wird die Abwärme der Server genutzt, um Hunderte Wohnungen zu heizen. Wahrscheinlich braucht es genau solche Innovationen, um die gesellschaftliche Akzeptanz von neuen Rechenzentren zu erhöhen.",
+  "glossar": [
+   {
+    "de": "Rechenzentrum, - zentren (n.)",
+    "erkl": "ein Gebäude oder Raum mit vielen Computern, die große Mengen an Daten speichern und verarbeiten"
+   },
+   {
+    "de": "KI (f., nur Singular)",
+    "erkl": "Abkürzung für: künstliche Intelligenz; ein Programm, das selbstständig Dinge erkennen, lernen und entscheiden kann"
+   },
+   {
+    "de": "zurück|treten",
+    "erkl": "hier: sein Amt abgeben"
+   },
+   {
+    "de": "kommunal",
+    "erkl": "zu einer Stadt oder Gemeinde gehörend"
+   },
+   {
+    "de": "Widerstand, -stände (m.)",
+    "erkl": "die Handlungen, mit denen man sich gegen etwas wehrt"
+   },
+   {
+    "de": "Server, - (m., aus dem Englischen)",
+    "erkl": "ein zentraler Computer, der mit anderen Computern verbunden ist"
+   },
+   {
+    "de": "Kühlung (f., nur Singular)",
+    "erkl": "die Tatsache, dass etwas kalt gehalten wird"
+   },
+   {
+    "de": "Auslastung, -en (f.)",
+    "erkl": "die Tatsache, wie stark etwas genutzt wird"
+   },
+   {
+    "de": "Atomkraftwerk, -e (n.)",
+    "erkl": "das Kernkraftwerk; ein Kraftwerk, in dem Strom durch Kernenergie hergestellt wird"
+   },
+   {
+    "de": "Prognose, -n (f.)",
+    "erkl": "die Aussage darüber, wie etwas in Zukunft sein wird"
+   },
+   {
+    "de": "verdunsten",
+    "erkl": "von einem flüssigen in einen gasförmigen Zustand übergehen"
+   },
+   {
+    "de": "erwärmt",
+    "erkl": "wärmer als davor"
+   },
+   {
+    "de": "Ressource, -n  (f.)",
+    "erkl": "hier: etwas, was in der Natur vorhanden ist und was man für etwas (z. B. für die Ernährung) braucht"
+   },
+   {
+    "de": "Wasserkreislauf, -läufe (m.)",
+    "erkl": "hier: ein System, bei dem Wasser immer wieder verwendet und nicht verbraucht wird"
+   },
+   {
+    "de": "Abwärme (f., nur Singular)",
+    "erkl": "Wärme, die von technischen Geräten oder Lebewesen erzeugt und an die Umgebung abgegeben wird"
+   },
+   {
+    "de": "Innovation, -en (f.)",
+    "erkl": "eine Erneuerung/Veränderung, die es in der Art und Weise vorher noch nicht gab"
+   }
+  ],
+  "url": "https://learngerman.dw.com/de/mehr-rechenzentren-für-europa/l-79596248"
  }
 ]
